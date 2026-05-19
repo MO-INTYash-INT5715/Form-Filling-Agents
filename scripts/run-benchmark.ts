@@ -9,9 +9,11 @@
  *   npm run test:domain -- academic      # Test specific domain
  */
 
-import { runFullBenchmark, runBenchmarkOnDomain } from '../src/benchmark/test-suite.ts';
-import { generateTestReport } from '../src/benchmark/test-runner.ts';
-import { BenchmarkAnalyzer } from '../src/benchmark/benchmark-analyzer.ts';
+import { runFullBenchmark, runBenchmarkOnDomain } from '../src/benchmark/test-suite';
+import { generateTestReport } from '../src/benchmark/test-runner';
+import { BenchmarkAnalyzer } from '../src/benchmark/benchmark-analyzer';
+import * as fs from 'fs';
+import * as path from 'path';
 
 async function main() {
   const args = process.argv.slice(2);
@@ -44,9 +46,6 @@ async function main() {
     console.log(analysisReport);
 
     // Save results to file
-    const fs = await import('fs');
-    const path = await import('path');
-    
     // Create results directory if it doesn't exist
     const resultsDir = './benchmark-results';
     if (!fs.existsSync(resultsDir)) {
@@ -58,6 +57,7 @@ async function main() {
     const analysisFile = path.join(resultsDir, `analysis-${timestamp}.json`);
 
     fs.writeFileSync(resultsFile, JSON.stringify(results, null, 2));
+    fs.writeFileSync(analysisFile, JSON.stringify(analysis, null, 2));
     fs.writeFileSync(analysisFile, JSON.stringify(analysis, null, 2));
 
     console.log(`\n✅ Results saved to: ${resultsFile}`);

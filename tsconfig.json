@@ -11,7 +11,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "declaration": true,
@@ -21,6 +21,14 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
+    }
+  },
+  "ts-node": {
+    "esm": true,
+    "experimentalEsm": true,
+    "compilerOptions": {
+      "module": "ESNext",
+      "moduleResolution": "node"
     }
   },
   "include": ["src/**/*"],

@@ -12,10 +12,12 @@
     "lint": "eslint src --ext .ts,.tsx",
     "type-check": "tsc --noEmit",
     "test": "jest",
-    "test:benchmark": "ts-node scripts/run-benchmark.ts",
-    "test:quick": "ts-node scripts/run-benchmark.ts --scenario quick",
-    "test:full": "ts-node scripts/run-benchmark.ts --scenario full",
-    "test:domain": "ts-node scripts/run-benchmark.ts --domain academic"
+    "test:diagnostic": "ts-node --project tsconfig.scripts.json scripts/diagnostic.ts",
+    "test:benchmark": "ts-node --project tsconfig.scripts.json scripts/run-benchmark.ts",
+    "test:quick": "ts-node --project tsconfig.scripts.json scripts/run-benchmark.ts --scenario quick",
+    "test:full": "ts-node --project tsconfig.scripts.json scripts/run-benchmark.ts --scenario full",
+    "test:domain": "ts-node --project tsconfig.scripts.json scripts/run-benchmark.ts --domain academic",
+    "test:fallback": "node scripts/fallback-runner.js"
   },
   "dependencies": {
     "react": "^18.2.0",
