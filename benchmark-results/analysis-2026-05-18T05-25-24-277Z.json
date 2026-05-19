@@ -1,0 +1,143 @@
+{
+  "overview": {
+    "totalTests": 25,
+    "passRate": 100,
+    "averageScore": 100
+  },
+  "byDomain": {
+    "Academic & Research": {
+      "domain": "Academic & Research",
+      "testCount": 5,
+      "averageCompletion": 100,
+      "averageClickAccuracy": 100,
+      "averageValueAccuracy": 100,
+      "overallScore": 100
+    },
+    "Professional & Business": {
+      "domain": "Professional & Business",
+      "testCount": 4,
+      "averageCompletion": 100,
+      "averageClickAccuracy": 100,
+      "averageValueAccuracy": 100,
+      "overallScore": 100
+    },
+    "Arts & Creative": {
+      "domain": "Arts & Creative",
+      "testCount": 3,
+      "averageCompletion": 100,
+      "averageClickAccuracy": 100,
+      "averageValueAccuracy": 100,
+      "overallScore": 100
+    },
+    "Technology & Software": {
+      "domain": "Technology & Software",
+      "testCount": 2,
+      "averageCompletion": 100,
+      "averageClickAccuracy": 100,
+      "averageValueAccuracy": 100,
+      "overallScore": 100
+    },
+    "Finance & Banking": {
+      "domain": "Finance & Banking",
+      "testCount": 3,
+      "averageCompletion": 100,
+      "averageClickAccuracy": 100,
+      "averageValueAccuracy": 100,
+      "overallScore": 100
+    },
+    "Healthcare & Medical": {
+      "domain": "Healthcare & Medical",
+      "testCount": 3,
+      "averageCompletion": 100,
+      "averageClickAccuracy": 100,
+      "averageValueAccuracy": 100,
+      "overallScore": 100
+    },
+    "Legal & Compliance": {
+      "domain": "Legal & Compliance",
+      "testCount": 3,
+      "averageCompletion": 100,
+      "averageClickAccuracy": 100,
+      "averageValueAccuracy": 100,
+      "overallScore": 100
+    },
+    "Construction & Manufacturing": {
+      "domain": "Construction & Manufacturing",
+      "testCount": 2,
+      "averageCompletion": 100,
+      "averageClickAccuracy": 100,
+      "averageValueAccuracy": 100,
+      "overallScore": 100
+    }
+  },
+  "byFieldType": {
+    "String": {
+      "fieldType": "String",
+      "testCount": 25,
+      "averageClickAccuracy": 100,
+      "averageValueAccuracy": 100,
+      "failureRate": 0
+    },
+    "Date": {
+      "fieldType": "Date",
+      "testCount": 22,
+      "averageClickAccuracy": 100,
+      "averageValueAccuracy": 100,
+      "failureRate": 0
+    },
+    "Dropdown": {
+      "fieldType": "Dropdown",
+      "testCount": 14,
+      "averageClickAccuracy": 100,
+      "averageValueAccuracy": 100,
+      "failureRate": 0
+    },
+    "FileUpload": {
+      "fieldType": "FileUpload",
+      "testCount": 16,
+      "averageClickAccuracy": 100,
+      "averageValueAccuracy": 100,
+      "failureRate": 0
+    },
+    "Description": {
+      "fieldType": "Description",
+      "testCount": 11,
+      "averageClickAccuracy": 100,
+      "averageValueAccuracy": 100,
+      "failureRate": 0
+    },
+    "Checkbox": {
+      "fieldType": "Checkbox",
+      "testCount": 6,
+      "averageClickAccuracy": 100,
+      "averageValueAccuracy": 100,
+      "failureRate": 0
+    },
+    "RadioButton": {
+      "fieldType": "RadioButton",
+      "testCount": 13,
+      "averageClickAccuracy": 100,
+      "averageValueAccuracy": 100,
+      "failureRate": 0
+    },
+    "NumericInput": {
+      "fieldType": "NumericInput",
+      "testCount": 8,
+      "averageClickAccuracy": 100,
+      "averageValueAccuracy": 100,
+      "failureRate": 0
+    }
+  },
+  "weakAreas": [],
+  "strongAreas": [
+    "Domain: Academic & Research (100.0%)",
+    "Domain: Professional & Business (100.0%)",
+    "Domain: Arts & Creative (100.0%)",
+    "Domain: Technology & Software (100.0%)",
+    "Domain: Finance & Banking (100.0%)"
+  ],
+  "recommendations": [
+    "Consider fine-tuning models on FormFactory dataset",
+    "Implement field dependency detection for complex forms"
+  ]
+}
