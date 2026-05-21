@@ -1,41 +1,159 @@
-Implementation notes and next steps
+# Implementation Plan — Form Filling Agent
 
-Purpose
-- Actionable checklist for engineering work: literature integration, architecture comparison, dataset improvements, and fine-tuning strategy.
+Last updated: 2026-05-21
+See [Flow.md](Flow.md) for the complete pipeline diagram.
 
-Tasks
-1. Literature consolidation
-	- Collect and summarize key findings from `FFA/Literature/*.md` into `Documentation/`.
-	- Extract methods that directly address spatial grounding and semantic field matching.
-2. Architecture comparison
-	- Produce a short matrix comparing: Extension + BrowserMCP, Extension + PlaywrightMCP, Server-hosted agent, and RPA-based flows.
-	- Evaluate per axis: privacy, reliability, ease of deployment, and anti-bot risks.
-3. Dataset & benchmark
-	- Audit the current dataset for coverage gaps (live URLs, multi-page flows, conditional logic).
-	- Add a small held-out set of live-site URLs for continuous evaluation.
-4. Model & training
-	- Prioritize a small, constrained-output local model for action emission (CLI/3B model) + a separate semantic matcher component.
-	- Use constrained decoding or schema-based output to avoid malformed actions; fine-tune only the semantic matcher if possible.
+---
 
-Notes
-- Bot detection, semantic matching, and dynamic forms are primary engineering risks — allocate early effort to mitigation strategies.
+## Purpose
 
-Extra notes (practical guidance)
+Actionable engineering checklist for building, isolating, and comparing every form-filling strategy against the FormFactory benchmark. Each strategy lives in its own folder — zero code overlap between implementations.
 
-- CLI/local LLMs: a small quantized model (3B class) can emit structured tool calls from a compact context (form schema + compact description). Benefits: low latency, offline, and low per-step cost. Tradeoffs: less robust on ambiguous cases; requires fine-tuning and a semantic matcher.
+---
 
-- Framework choices:
-	- PlaywrightMCP: good for dataset creation (accessibility snapshots) but launches its own browser instance.
-	- BrowserMCP: attaches to an existing Chrome tab via CDP — preferable for extension-driven, authenticated flows.
-	- Skyvern: full orchestration + anti-bot tooling; useful for complex multi-page workflows.
+## Guiding Principles
 
-- Fine-tuning & output constraints:
-	- Use constrained decoding or schema enforcement for action emission to guarantee valid tool calls.
-	- Separate semantic matching (embeddings / SFT) from action emission.
+1. **Isolation** — every `src/implementations/<name>/` folder is self-contained. It may only import from `src/types/` and `src/utils/`. No cross-implementation imports.
+2. **Shared contract** — all agents implement the same `Agent` interface (`name`, `analyze()`, `isApplicable()`).
+3. **Same benchmark** — all implementations are evaluated on the identical FormFactory harness (`src/benchmark/`). Results land in `benchmark-results/<name>/`.
+4. **Input Pipeline decoupled** — `UserProfile` JSON is the only input agents receive. The parser that produces it is swappable without touching agents.
 
-- Production risks to address early:
-	1. Bot detection (CAPTCHAs, anti-bot proxies) — consider scope limitations or human-in-loop strategies.
-	2. Dynamic conditional forms — re-snapshot the accessibility tree after each action.
-	3. Privacy/PII: avoid sending sensitive fields to cloud models without explicit consent.
+---
 
+## Implementation Tracker
 
+| # | Name | Folder | Status |
+|---|------|--------|--------|
+| 1 | Rule-Based DOM Inference | `src/implementations/rule-based/` | ✅ Baseline |
+| 2 | Embedding / Semantic Matcher | `src/implementations/embedding-matcher/` | 🔲 Planned |
+| 3 | VLM / Multimodal Agent | `src/implementations/vlm-agent/` | 🔲 Planned |
+| 4 | LLM Structured Output Agent | `src/implementations/llm-structured/` | 🔲 Planned |
+| 5 | Hybrid (DOM + VLM Fallback) | `src/implementations/hybrid/` | 🔲 Planned |
+
+---
+
+## Task Checklist
+
+### Phase 0 — Foundation & Restructuring
+
+- [ ] Create `src/implementations/` directory
+- [ ] Move existing agent code → `src/implementations/rule-based/agent.ts`
+- [ ] Extract keyword patterns → `src/implementations/rule-based/patterns.ts`
+- [ ] Add `UserProfile` type to `src/types/index.ts`
+- [ ] Wire `UserProfile` into `Agent.analyze()` signature
+- [ ] Create `benchmark-results/` sub-folders per implementation
+- [ ] Add per-implementation npm benchmark scripts (e.g. `test:impl -- rule-based`)
+
+### Phase 1 — Input Pipeline (Stub → Real)
+
+- [ ] Define `UserProfile` JSON schema in `src/types/index.ts`
+- [ ] Create `src/utils/input-pipeline.ts` stub that returns a hardcoded profile
+- [ ] Document extension points for future parsers (PDF, resume, clipboard)
+- [ ] Add consent/PII redaction hook in pipeline stub
+
+### Phase 2 — [IMPL-1] Rule-Based DOM Inference  *(refactor from existing)*
+
+- [ ] Create `src/implementations/rule-based/`
+- [ ] `agent.ts` — implements `Agent` interface, consumes `UserProfile`
+- [ ] `patterns.ts` — keyword dictionaries (email, name, company, address, …)
+- [ ] `README.md` — describes approach, known limitations
+- [ ] Run baseline benchmark → save to `benchmark-results/rule-based/`
+
+### Phase 3 — [IMPL-2] Embedding / Semantic Matcher
+
+- [ ] Create `src/implementations/embedding-matcher/`
+- [ ] `embedder.ts` — wraps a local embedding model (e.g. Transformers.js, `all-MiniLM-L6-v2`)
+- [ ] `agent.ts` — encodes field labels + profile keys, cosine-similarity match
+- [ ] `README.md` — model choice rationale, performance notes
+- [ ] Run benchmark → save to `benchmark-results/embedding-matcher/`
+
+### Phase 4 — [IMPL-3] VLM / Multimodal Agent
+
+- [ ] Create `src/implementations/vlm-agent/`
+- [ ] `screenshot.ts` — captures visible form region via `html2canvas` or Chrome tab capture API
+- [ ] `ruler.ts` — overlays pixel-scale ruler markers (FormFactory §4.2 strategy)
+- [ ] `agent.ts` — sends screenshot + form schema to VLM API (GPT-4o / Gemini / Qwen-VL); parses structured JSON response
+- [ ] `README.md` — API keys required, privacy notice, ruler usage
+- [ ] Run benchmark (with and without ruler) → save to `benchmark-results/vlm-agent/`
+
+### Phase 5 — [IMPL-4] LLM Structured Output Agent
+
+- [ ] Create `src/implementations/llm-structured/`
+- [ ] `tree-serializer.ts` — serializes accessibility tree / DOM to compact text representation
+- [ ] `schema-builder.ts` — generates JSON schema for constrained output (field-id → value)
+- [ ] `agent.ts` — calls local (Ollama / LM Studio) or cloud LLM with schema-enforced output
+- [ ] `README.md` — model options, constrained decoding setup, latency tradeoffs
+- [ ] Run benchmark → save to `benchmark-results/llm-structured/`
+
+### Phase 6 — [IMPL-5] Hybrid (DOM + VLM Fallback)
+
+- [ ] Create `src/implementations/hybrid/`
+- [ ] `confidence.ts` — computes per-field confidence score from rule-based pass
+- [ ] `agent.ts` — runs IMPL-1 first; for fields below confidence threshold, escalates to IMPL-3 (VLM)
+- [ ] `README.md` — confidence threshold tuning, expected latency profile
+- [ ] Run benchmark → save to `benchmark-results/hybrid/`
+
+### Phase 7 — Comparative Analysis
+
+- [ ] Collect all `benchmark-results/*/` JSON reports
+- [ ] Update comparison matrix in `Documentation/Flow.md` §6 with real numbers
+- [ ] Generate HTML report via `benchmark-analyzer.ts`
+- [ ] Identify best implementation per metric (click acc, value acc, speed, privacy)
+- [ ] Write `Documentation/Report.md` final analysis section
+
+---
+
+## Literature & Architecture Notes
+
+### CLI / Local LLMs
+- A small quantized model (3B class, e.g. Phi-3-mini, Llama-3.2) can emit structured tool calls from a compact context (form schema + user profile). Benefits: low latency, offline, low cost. Tradeoffs: less robust on ambiguous layouts.
+- Use constrained decoding or schema enforcement (`outlines`, `lm-format-enforcer`) to guarantee valid JSON output.
+
+### Framework Choices
+- **PlaywrightMCP** — good for dataset creation and headless snapshot generation. Launches its own browser.
+- **BrowserMCP** — attaches to an existing Chrome tab via CDP. Best for extension-driven, authenticated fills.
+- **Skyvern** — full orchestration + anti-bot tooling; useful for complex multi-page workflows.
+
+### Production Risks (address early)
+1. **Bot detection** (CAPTCHAs, Cloudflare) — scope limitations or human-in-loop.
+2. **Dynamic / conditional forms** — re-snapshot the accessibility tree after each action.
+3. **PII / privacy** — redact sensitive fields before sending to cloud models; prefer local models.
+4. **Shadow DOM / iframes** — extend `form-detection.ts` to pierce shadow roots.
+
+---
+
+## Verification Plan
+
+### Per-Implementation Automated Tests
+```bash
+# Quick sanity benchmark on a specific implementation
+npm run test:impl -- rule-based
+
+# Full FormFactory benchmark (all 1,250 instances) on a specific implementation
+npm run test:full -- rule-based
+
+# Compare all implementations side-by-side
+npm run test:compare
+```
+
+### Benchmark Metrics to Gate On
+| Metric | Minimum bar to ship implementation |
+|--------|------------------------------------|
+| Click Accuracy | ≥ 5% (above zero-shot VLM baseline) |
+| Value Accuracy | ≥ 50% |
+| Form Completion | ≥ 10% |
+
+### Manual Verification
+- Load extension in Chrome (Developer Mode, unpacked from `public/`)
+- Navigate to a real form (LinkedIn, Google Forms, Typeform)
+- Trigger fill, inspect console for errors and `FillingResult`
+
+---
+
+## References
+
+- FormFactory Paper: https://arxiv.org/abs/2506.01520
+- Pipeline diagram: [Flow.md](Flow.md)
+- Benchmark docs: `src/benchmark/README.md`
+- Architecture report: [Report.md](Report.md)
+- Testing guide: [TESTING.md](TESTING.md)
