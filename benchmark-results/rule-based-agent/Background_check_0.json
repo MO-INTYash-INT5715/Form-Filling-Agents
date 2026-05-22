@@ -1,0 +1,140 @@
+{
+  "formInstance": {
+    "formId": "Background_check",
+    "formName": "Background Check Authorization Form",
+    "domain": "Legal & Compliance",
+    "instanceIndex": 0,
+    "inputDocument": "I, John Michael Doe, hereby authorize the complete background check process, ensuring that all information provided herein is meticulously examined for accuracy and completeness. My personal details are as follows: I reside at 123 Elm St in Springfield, Illinois, 62704, and my date of birth is April 15, 1985. My Social Security Number is 123-45-6789. By consenting to this background check, I affirm that the information I have submitted is correct and truthful. I acknowledge that any false or misleading statements may lead to the rejection of my application.",
+    "goldAnswers": {
+      "First Name": "John",
+      "Middle Name": "Michael",
+      "Last Name": "Doe",
+      "Social Security Number": "123-45-6789",
+      "Date of Birth": "1985-04-15",
+      "Street Address": "123 Elm St",
+      "City": "Springfield",
+      "State": "IL",
+      "ZIP Code": "62704",
+      "I authorize the complete background check and verify that all provided information is accurate": true,
+      "I understand that providing false information may result in rejection of my application": true
+    },
+    "multiPage": false,
+    "formPath": "/legal-compliance/background-check"
+  },
+  "agentName": "rule-based-agent",
+  "fieldResults": [
+    {
+      "fieldId": "firstName",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "John",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "middleName",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Michael",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "lastName",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Doe",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "ssn",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "123-45-6789",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "dob",
+      "fieldType": "Date",
+      "predictedValue": "",
+      "goldValue": "1985-04-15",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "streetAddress",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "123 Elm St",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "city",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Springfield",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "state",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "IL",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "zipCode",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "62704",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "authorization",
+      "fieldType": "Checkbox",
+      "predictedValue": "true",
+      "goldValue": true,
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "truthfulness",
+      "fieldType": "Checkbox",
+      "predictedValue": "true",
+      "goldValue": true,
+      "clickAccurate": false,
+      "valueAccurate": true
+    }
+  ],
+  "atomicMetrics": {
+    "clickAccuracy": {
+      "String": 0,
+      "Date": 0,
+      "Checkbox": 0
+    },
+    "valueAccuracy": {
+      "String": 0,
+      "Date": 0,
+      "Checkbox": 100
+    },
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 18.181818181818183
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 18.181818181818183,
+    "fieldsAttempted": 2,
+    "fieldsCorrect": 2,
+    "totalFields": 11,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 18.181818181818183
+  },
+  "executionTimeMs": 1490,
+  "errors": [],
+  "submissionSucceeded": false
+}

@@ -1,0 +1,44 @@
+╔══════════════════════════════════════════════════════════════╗
+║      FormFactory Benchmark Report (Real Dataset)             ║
+╚══════════════════════════════════════════════════════════════╝
+
+  Agent:      rule-based-agent
+  Timestamp:  2026-05-22T06:42:38.247Z
+  Forms:      25
+  Instances:  25
+  Fields:     259
+  Runtime:    132.8s
+
+━━━ GLOBAL METRICS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Overall Click Accuracy:  0.00%
+  Overall Value Accuracy:  4.64%
+  Form Completion Rate:    4.64%
+  Fields Correct:          13 / 259
+
+━━━ PER FIELD TYPE (Click / Value) ━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Checkbox           Click:    0.0%  Value:   50.0%
+  Date               Click:    0.0%  Value:    0.0%
+  Description        Click:    0.0%  Value:    0.0%
+  Dropdown           Click:    0.0%  Value:   16.7%
+  NumericInput       Click:    0.0%  Value:    0.0%
+  String             Click:    0.0%  Value:    0.4%
+
+━━━ PER DOMAIN ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Academic & Research
+    Click: 0.0%  Value: 0.0%  Completion: 0.0%  (5 inst.)
+  Professional & Business
+    Click: 0.0%  Value: 5.6%  Completion: 5.6%  (4 inst.)
+  Arts & Creative
+    Click: 0.0%  Value: 7.4%  Completion: 7.4%  (3 inst.)
+  Technology & Software
+    Click: 0.0%  Value: 4.5%  Completion: 4.5%  (2 inst.)
+  Finance & Banking
+    Click: 0.0%  Value: 4.8%  Completion: 4.8%  (3 inst.)
+  Healthcare & Medical
+    Click: 0.0%  Value: 10.0%  Completion: 10.0%  (3 inst.)
+  Legal & Compliance
+    Click: 0.0%  Value: 6.1%  Completion: 6.1%  (3 inst.)
+  Construction & Manufacturing
+    Click: 0.0%  Value: 0.0%  Completion: 0.0%  (2 inst.)
+
+══════════════════════════════════════════════════════════════

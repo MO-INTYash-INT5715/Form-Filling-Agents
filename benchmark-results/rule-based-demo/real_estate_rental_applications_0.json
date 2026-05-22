@@ -1,0 +1,53 @@
+{
+  "formInstance": {
+    "formId": "real_estate_rental_applications",
+    "formName": "Real Estate Rental Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 0,
+    "inputDocument": "Amy Soto, residing at 325 Clark Tunnel in Christopherburgh, Alabama, ZIP Code 37382, is seeking a new rental opportunity. She can be reached at arthurperez@webb.com or via phone at 001-601-137-0101x270. Born on 1979/05/24, Amy is currently employed by Edwards PLC as an Environmental Manager with a monthly income of USD 13,121 and has held her position for 1 year. She is interested in relocating by 2025/01/26, with a preferred lease term of 6 months and a maximum monthly rent of USD 2,323. Amy has expressed a preference for properties Near public transport. She does not have any pets, and thus there are No pets to describe. In her Additional Comments, she notes, \"Prefer quiet and residential areas.\" Amy is a reliable and professional individual who will make a responsible tenant.",
+    "goldAnswers": {
+      "Full Name": "Amy Soto",
+      "Email Address": "arthurperez@webb.com",
+      "Phone Number": "001-601-137-0101x270",
+      "Date of Birth": "1979/05/24",
+      "Street Address": "325 Clark Tunnel",
+      "City": "Christopherburgh",
+      "State": "Alabama",
+      "ZIP Code": "37382",
+      "Current Employer": "Edwards PLC",
+      "Job Title": "Environmental manager",
+      "Monthly Income (USD)": 13121,
+      "Length of Employment": "1 year",
+      "Preferred Move-in Date": "2025/01/26",
+      "Preferred Lease Term": "6 months",
+      "Maximum Monthly Rent (USD)": 2323,
+      "Preferred Area": "Near public transport",
+      "Do you have any pets?": "No",
+      "If yes, please describe your pets": "No pets",
+      "Additional Comments": "Prefer quiet and residential areas."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/rental-application"
+  },
+  "agentName": "rule-based-demo",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/professional-business/rental-application\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/professional-business/rental-application\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  ],
+  "submissionSucceeded": false
+}

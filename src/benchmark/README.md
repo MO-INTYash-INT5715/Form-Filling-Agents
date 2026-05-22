@@ -1,218 +1,136 @@
-/**
- * FormFactory Benchmark Documentation and Usage Guide
- */
+# FormFactory Benchmark
 
-# FormFactory Benchmark Setup Guide
+Real benchmark harness aligned with the [FormFactory paper](https://arxiv.org/abs/2506.01520) (arXiv:2506.01520).
 
-This directory contains the implementation of the **FormFactory** benchmark for evaluating form-filling agents. Based on the paper: "FormFactory: An Interactive Benchmarking Suite for Multimodal Form-Filling Agents" (https://arxiv.org/abs/2506.01520)
+## Setup
 
-## Overview
+### 1. Clone the FormFactory Dataset Repo
 
-The benchmark consists of:
-- **25 forms** across **8 domains**
-- **13,800 annotated field-value pairs**
-- **Multiple field types**: String, Dropdown, Checkbox, Radio Button, Date, File Upload, etc.
-- **Atomic & Episodic evaluation** metrics
-- **Ruler-enhanced strategy** for improved spatial grounding
-
-## Quick Start
-
-### 1. Run Quick Benchmark
-```typescript
-import { runFullBenchmark } from './test-suite';
-import { generateTestReport } from './test-runner';
-
-const results = await runFullBenchmark();
-const report = generateTestReport(results);
-console.log(report);
+```bash
+git clone https://github.com/formfactory-ai/formfactory.git c:\Code\formfactory
 ```
 
-### 2. Test Specific Domain
-```typescript
-import { runBenchmarkOnDomain } from './test-suite';
+### 2. Start the Flask Server
 
-const results = await runBenchmarkOnDomain('Academic & Research', 5);
+In a **separate terminal**, run:
+
+```bash
+cd c:\Code\formfactory
+pip install -r requirements.txt   # Flask 2.3.*
+python app.py                      # → http://localhost:5000
 ```
 
-### 3. Create Custom Configuration
-```typescript
-import { createBenchmarkConfig, BENCHMARK_SCENARIOS } from './benchmark-config';
+Verify it works by opening http://localhost:5000 in your browser.
 
-// Use predefined scenario
-const config = BENCHMARK_SCENARIOS.WITH_RULER;
+### 3. Install Playwright
 
-// Or create custom
-const customConfig = createBenchmarkConfig({
-  domains: ['Finance & Banking'],
-  minFieldCount: 5,
-  useRulerEnhancement: true,
-});
+```bash
+npm install
+npm run benchmark:setup   # installs the Chromium browser
 ```
 
-## Supported Domains
+---
 
-1. **Academic & Research** (5 forms)
-2. **Professional & Business** (4 forms)
-3. **Arts & Creative** (3 forms)
-4. **Technology & Software** (2 forms)
-5. **Finance & Banking** (3 forms)
-6. **Healthcare & Medical** (3 forms)
-7. **Legal & Compliance** (3 forms)
-8. **Construction & Manufacturing** (2 forms)
+## Running the Benchmark
 
-## Supported Field Types
+| Command | Description |
+|---------|-------------|
+| `npm run benchmark:quick` | 1 instance × 25 forms — fast sanity check |
+| `npm run benchmark:full` | 50 instances × 25 forms — full paper scale (1,250 total) |
+| `npm run benchmark:watch` | Quick run with visible browser (headless=false) |
+| `npm run benchmark:list` | List all 25 form stems |
+| `npm run benchmark:form -- --form job_applications` | Single form |
+| `npm run benchmark:domain -- --domain "Finance & Banking"` | One domain |
 
-- **String**: Text input fields
-- **Dropdown**: Select lists
-- **Checkbox**: Multiple binary choices
-- **RadioButton**: Single choice among multiple options
-- **Date**: Date picker fields
-- **FileUpload**: File upload inputs
-- **NumericInput**: Numeric values
-- **Description**: Free-form text areas
-- **MultiCheckbox**: Multiple checkbox selections
+---
 
-## Evaluation Metrics
+## Dataset Structure
 
-### Atomic Level
-Tests individual field type performance:
-- **Click Accuracy**: How accurately the agent selects the right field (%)
-- **Value Accuracy**: How correctly the agent fills the field (%)
+The real dataset lives in `c:\Code\formfactory\data\`:
 
-Calculated separately for each field type.
-
-### Episodic Level
-End-to-end form completion metrics:
-- **Form Completion Rate**: Percentage of fields successfully filled (%)
-- **Average Click Accuracy**: Mean click accuracy across all fields (%)
-- **Average Value Accuracy**: Mean value accuracy across all fields (%)
-- **Overall Score**: Weighted combination of click and value accuracy (%)
-
-## Expected Performance (from Paper)
-
-The paper evaluates state-of-the-art MLLMs:
-
-| Model | Click Accuracy | Value Accuracy | Form Completion |
-|-------|---|---|---|
-| GPT-4o | 2.2% | 9.8% | 0.9% |
-| Gemini 2.5 Pro | 0.9% | 70.7% | 0.4% |
-| Claude 3.7 Sonnet | 0.0% | 58.0% | 0.0% |
-| Qwen-VL-Max | 4.6% | 72.7% | 1.1% |
-| Grok 3 | 3.0% | 70.7% | 0.0% |
-
-Our custom agents aim to improve upon these baselines.
-
-## Ruler-Enhanced Strategy
-
-From the paper (Section 4.2):
-
-The Ruler-Enhanced Strategy overlays pixel-scale markers along form edges to help the model infer spatial relationships more accurately. Enable with:
-
-```typescript
-const config = createBenchmarkConfig({
-  useRulerEnhancement: true,
-  rulerScale: 1.0, // Adjustment factor for ruler precision
-});
+```
+data/
+  data1/           ← Gold-answer JSON files (one per form)
+    job_applications.json       # Array of 50 objects: [{fieldLabel: value}, ...]
+    grant_applications.json
+    ... (25 files total)
+  data2/           ← Input documents (resumes, descriptions)
+    job_applications.txt        # 50 documents numbered "1. ..." "2. ..."
+    grant_applications.txt
+    ... (25 files total)
+  labeled-images/  ← Screenshots + bounding box annotations
+    A/             # Academic & Research forms
+    B/             # Professional & Business
+    ...
 ```
 
-Performance improvement: ~5-10% click accuracy on simple forms.
+## Forms Coverage
 
-## Advanced Usage
+| Domain | Forms |
+|--------|-------|
+| Academic & Research | Job Application, Grant Application, Paper Submission, Course Registration, Scholarship Application |
+| Professional & Business | Startup Funding, Rental Application, Workshop Registration, Membership Application |
+| Arts & Creative | Art Exhibition Submission, Literary Magazine Submission, Conference Speaker Application |
+| Technology & Software | Bug Report, IT Support Request |
+| Finance & Banking | Personal Loan, Bank Account Opening, Financial Planning |
+| Healthcare & Medical | Patient Consent, Medical Research Enrollment, Health Insurance |
+| Legal & Compliance | NDA, Background Check, Contractor Onboarding |
+| Construction & Manufacturing | Project Bid, Manufacturing Order |
 
-### Compare Multiple Agents
+**Total: 25 forms, 1,250 instances (50 per form), 13,800 field-value pairs**
+
+---
+
+## Evaluation Metrics (Paper §5.1.2)
+
+### Atomic (per field type)
+- **Click Accuracy** — Did the agent's click land within the correct element's bounding box?
+- **Value Accuracy** — Did the agent enter the correct value?
+  - Exact match (normalized) for all field types except `Description`
+  - BLEU-4 ≥ 30 for `Description` fields
+
+### Episodic (per form)
+- **Form Completion Rate** — % of fields correctly filled end-to-end
+
+### Field Types Evaluated
+`String` · `Dropdown` · `Checkbox` · `RadioButton` · `MultiCheckbox` · `Description` · `Date` · `NumericInput`
+
+---
+
+## Adding an Agent
+
+1. Create your agent in `src/implementations/<strategy>/`
+2. Implement the `BenchmarkAgent` interface:
+
 ```typescript
-import { compareAgents } from './test-suite';
+import type { BenchmarkAgent } from '../benchmark/runner';
+import type { FormInstance, AgentAction } from '../benchmark/types';
 
-const results = await compareAgents(['Agent1', 'Agent2', 'Agent3']);
-results.forEach(result => {
-  console.log(`${result.agent}: ${result.averageFormCompletion.toFixed(2)}%`);
-});
+export class MyAgent implements BenchmarkAgent {
+  name = 'my-agent';
+
+  async planActions(instance: FormInstance): Promise<AgentAction[]> {
+    // instance.inputDocument — the source text (resume, description, etc.)
+    // instance.goldAnswers  — field labels (NOT values — don't peek!)
+    // Return: array of {type, x?, y?, text?, fieldId?} actions
+    return [];
+  }
+}
 ```
 
-### Filter Benchmark by Complexity
-```typescript
-const config = BENCHMARK_SCENARIOS.COMPLEX_FORMS; // Forms with 15+ fields
+3. Import and run in `scripts/run-benchmark.ts`
 
-// Or custom filtering
-const customConfig = createBenchmarkConfig({
-  minFieldCount: 10,
-  maxFieldCount: 20,
-  fieldTypes: ['Dropdown', 'Date', 'Checkbox'],
-});
-```
+---
 
-### Generate HTML Report
-```typescript
-const config = createBenchmarkConfig({
-  generateReport: true,
-  reportFormat: 'html',
-  outputPath: './results/benchmark.html',
-});
-```
+## Paper Baseline Results
 
-## Integration with Extension
+Per the paper (Table 2), zero-shot MLLM performance:
 
-The benchmark is integrated with your form-filling agents:
+| Model | Click Acc | Value Acc | Completion |
+|-------|-----------|-----------|------------|
+| GPT-4o | ~2.2% | ~9.8% | <2% |
+| Gemini 2.5 Pro | ~3.1% | ~11.2% | <2% |
+| Claude Sonnet 3.7 | ~1.8% | ~8.4% | <2% |
 
-1. **CommercialFormAgent**: Rule-based filling using pattern matching
-2. **DocumentUploadAgent**: File upload field detection
-3. **AdaptiveFormAgent**: Intelligent agent routing
-
-Test your agents:
-```typescript
-import { BenchmarkTestRunner, type TestCase } from './test-runner';
-import { createMockTestCase } from './test-suite';
-
-const runner = new BenchmarkTestRunner();
-const testCase = createMockTestCase('Job Application for University Positions', 1);
-const result = await runner.runTestCase(testCase);
-
-console.log(`Completion: ${result.episodicMetric.formCompletionRate.toFixed(2)}%`);
-```
-
-## Extending the Benchmark
-
-### Add New Forms
-1. Update `formfactory-dataset.ts` with form specifications
-2. Add field type information to `FORM_FIELD_SPECS`
-3. Assign to appropriate domain in `FORMFACTORY_DATASET`
-
-### Add New Field Types
-1. Update `FieldType` union in `formfactory-dataset.ts`
-2. Add value generation logic in `test-suite.ts`
-3. Update evaluation metrics if needed in `evaluation-metrics.ts`
-
-### Add New Agents
-1. Implement the `Agent` interface
-2. Register in `AdaptiveFormAgent`
-3. Test using `BenchmarkTestRunner`
-
-## References
-
-- Paper: https://arxiv.org/abs/2506.01520
-- Project: https://formfactory-ai.github.io
-- Benchmark Code: Provided in this directory
-- Extension Agents: `/src/agents/form-agents.ts`
-
-## Notes
-
-- The benchmark currently uses mock data for testing. Connect to actual FormFactory platform for production evaluation.
-- PyAutoGUI-based execution (from the paper) is handled by content scripts and browser automation.
-- Evaluation respects the paper's methodology: Click accuracy for UI selection, Value accuracy for content (BLEU for descriptions).
-
-## Troubleshooting
-
-**Low Click Accuracy?**
-- Enable Ruler-Enhanced Strategy
-- Check field coordinate prediction
-- Increase visual grounding training
-
-**Low Value Accuracy?**
-- Improve semantic understanding of field labels
-- Better document parsing
-- More sophisticated field-value alignment
-
-**Timeout Issues?**
-- Increase `timeoutPerTest` in config
-- Reduce `batchSize`
-- Check for infinite loops in agent logic
+**No model surpasses 5% click accuracy**, underscoring the difficulty of the task.
+Our rule-based agent should achieve **higher value accuracy** (keyword matching) but **similar ~0% click accuracy** (no visual grounding).

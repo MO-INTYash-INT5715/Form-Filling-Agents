@@ -2,68 +2,132 @@
 
 /**
  * FormFactory Benchmark CLI Runner
+ *
+ * Prerequisites:
+ *   1. Clone the FormFactory repo:
+ *      git clone https://github.com/formfactory-ai/formfactory.git c:\Code\formfactory
+ *
+ *   2. Start the Flask server (in a separate terminal):
+ *      cd c:\Code\formfactory
+ *      pip install -r requirements.txt
+ *      python app.py
+ *
+ *   3. Install Playwright:
+ *      npm install playwright
+ *      npx playwright install chromium
+ *
  * Usage:
- *   npm run test:benchmark               # Run default benchmark
- *   npm run test:quick                   # Quick test
- *   npm run test:full                    # Full benchmark
- *   npm run test:domain -- academic      # Test specific domain
+ *   npm run benchmark:quick               # 1 instance per form, all 25 forms
+ *   npm run benchmark:full                # 50 instances per form (paper scale)
+ *   npm run benchmark:form -- --form job_applications
+ *   npm run benchmark:domain -- --domain "Finance & Banking"
+ *   npm run benchmark:watch               # headless=false, watch the browser
  */
 
-import { runFullBenchmark, runBenchmarkOnDomain } from '../src/benchmark/test-suite';
-import { generateTestReport } from '../src/benchmark/test-runner';
-import { BenchmarkAnalyzer } from '../src/benchmark/benchmark-analyzer';
-import * as fs from 'fs';
-import * as path from 'path';
+import { runBenchmark } from '../src/benchmark/runner';
+import { availableDomains, availableFormStems } from '../src/benchmark/dataset-loader';
+import { SCENARIOS } from '../src/benchmark/config';
+import type { BenchmarkConfig } from '../src/benchmark/config';
+
+// ---------------------------------------------------------------------------
+// Rule-based agent (placeholder — wires up src/implementations/rule-based)
+// ---------------------------------------------------------------------------
+// This demo agent simply reads the inputDocument and attempts naive keyword
+// extraction to fill fields. Replace with a real implementation.
+
+import { RuleBasedAgent } from '../src/implementations/rule-based/agent';
+
+// The Demo agent was here, replaced by RuleBasedAgent from implementations
+
+
+// ---------------------------------------------------------------------------
+// CLI argument parsing
+// ---------------------------------------------------------------------------
+
+function parseArgs(): {
+  scenario: 'quick' | 'full' | 'custom';
+  instances: number;
+  form?: string;
+  domain?: string;
+  watch: boolean;
+  serverUrl: string;
+} {
+  const args = process.argv.slice(2);
+  let scenario: 'quick' | 'full' | 'custom' = 'quick';
+  let instances = 1;
+  let form: string | undefined;
+  let domain: string | undefined;
+  let watch = false;
+  let serverUrl = 'http://localhost:5000';
+
+  for (let i = 0; i < args.length; i++) {
+    switch (args[i]) {
+      case '--quick':    scenario = 'quick'; instances = 1; break;
+      case '--full':     scenario = 'full';  instances = 50; break;
+      case '--watch':    watch = true; break;
+      case '--instances': instances = parseInt(args[++i] ?? '1', 10); scenario = 'custom'; break;
+      case '--form':     form = args[++i]; break;
+      case '--domain':   domain = args[++i]; break;
+      case '--server':   serverUrl = args[++i]; break;
+      case '--list-forms':
+        console.log('Available form stems:');
+        availableFormStems().forEach(s => console.log(' ', s));
+        process.exit(0);
+        break;
+      case '--list-domains':
+        console.log('Available domains:');
+        availableDomains().forEach(d => console.log(' ', d));
+        process.exit(0);
+        break;
+    }
+  }
+
+  return { scenario, instances, form, domain, watch, serverUrl };
+}
+
+// ---------------------------------------------------------------------------
+// Main
+// ---------------------------------------------------------------------------
 
 async function main() {
-  const args = process.argv.slice(2);
-  const scenario = args[0] === '--scenario' ? args[1] : 'full';
-  const domain = args[0] === '--domain' ? args[1] : null;
+  const { scenario, instances, form, domain, watch, serverUrl } = parseArgs();
 
-  console.log('🚀 FormFactory Benchmark Runner\n');
+  // Build domain filter → form stems
+  let formIds: string[] | undefined;
+  if (form) {
+    formIds = [form];
+  } else if (domain) {
+    const { FORM_CATALOGUE } = await import('../src/benchmark/dataset-loader');
+    formIds = FORM_CATALOGUE
+      .filter(f => f.domain.toLowerCase().includes(domain.toLowerCase()))
+      .map(f => f.dataStem);
+    if (formIds.length === 0) {
+      console.error(`No forms found for domain: "${domain}"`);
+      console.log('Use --list-domains to see available domains');
+      process.exit(1);
+    }
+  }
+
+  const config: Partial<BenchmarkConfig> = {
+    formFactoryServerUrl: serverUrl,
+    maxInstancesPerForm: instances,
+    headless: !watch,
+    formIds,
+  };
+
+  const agent = new RuleBasedAgent();
 
   try {
-    let results;
+    const report = await runBenchmark(agent, config);
 
-    if (domain) {
-      console.log(`📊 Testing domain: ${domain}\n`);
-      results = await runBenchmarkOnDomain(domain, 5);
-    } else if (scenario === 'quick') {
-      console.log('⚡ Running quick benchmark...\n');
-      results = await runFullBenchmark();
-    } else {
-      console.log('🔬 Running full benchmark...\n');
-      results = await runFullBenchmark();
-    }
-
-    // Generate main report
-    const report = generateTestReport(results);
-    console.log(report);
-
-    // Generate analysis
-    const analysis = BenchmarkAnalyzer.analyze(results.results);
-    const analysisReport = BenchmarkAnalyzer.generateReport(analysis);
-    console.log(analysisReport);
-
-    // Save results to file
-    // Create results directory if it doesn't exist
-    const resultsDir = './benchmark-results';
-    if (!fs.existsSync(resultsDir)) {
-      fs.mkdirSync(resultsDir, { recursive: true });
-    }
-
-    const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-    const resultsFile = path.join(resultsDir, `results-${timestamp}.json`);
-    const analysisFile = path.join(resultsDir, `analysis-${timestamp}.json`);
-
-    fs.writeFileSync(resultsFile, JSON.stringify(results, null, 2));
-    fs.writeFileSync(analysisFile, JSON.stringify(analysis, null, 2));
-    fs.writeFileSync(analysisFile, JSON.stringify(analysis, null, 2));
-
-    console.log(`\n✅ Results saved to: ${resultsFile}`);
-    console.log(`✅ Analysis saved to: ${analysisFile}`);
-  } catch (error) {
-    console.error('❌ Benchmark failed:', error);
+    // Exit code reflects success
+    process.exit(report.errors.length > 10 ? 1 : 0);
+  } catch (err) {
+    console.error('\n❌ Benchmark failed:', (err as Error).message);
+    console.error('\nTroubleshooting:');
+    console.error('  1. Is the Flask server running? → cd c:\\Code\\formfactory && python app.py');
+    console.error('  2. Is Playwright installed? → npm install playwright && npx playwright install chromium');
+    console.error('  3. Is the FormFactory repo cloned? → c:\\Code\\formfactory\\data\\ should exist');
     process.exit(1);
   }
 }

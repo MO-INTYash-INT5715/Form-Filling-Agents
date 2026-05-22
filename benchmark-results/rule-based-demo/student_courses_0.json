@@ -1,0 +1,44 @@
+{
+  "formInstance": {
+    "formId": "student_courses",
+    "formName": "Student Course Registration Form",
+    "domain": "Academic & Research",
+    "instanceIndex": 0,
+    "inputDocument": "1)[Your Contact Information]  \r\nJessica Kennedy  \r\nStudent ID: 88741153  \r\nEmail: wendy24@yahoo.com  \r\nPhone Number: 001-250-204-3652x75507  \r\n\r\n[Date]  \r\n[University Name]  \r\nOffice of Enrollment Services  \r\n[University Address]  \r\n\r\nDear Enrollment Services Team,\r\n\r\nI hope this message finds you well. My name is Jessica Kennedy, currently enrolled in the Software Engineering program, and I am writing to formally request enrollment in the upcoming Summer 2025 semester. \r\n\r\nI am particularly eager to advance my studies through participation in the course CS104 - Web Development, as it aligns perfectly with my academic and professional goals within the field of Software Engineering. This course reflects a vital step towards my aspiration to excel in web development and programming.\r\n\r\nPlease find below the detailed information pertinent to this enrollment request:\r\n\r\n- **Full Name:** Jessica Kennedy\r\n- **Student ID:** 88741153\r\n- **Email:** wendy24@yahoo.com\r\n- **Phone Number:** 001-250-204-3652x75507\r\n- **Semester:** Summer 2025\r\n- **Program:** Software Engineering\r\n- **Selected Courses:** CS104 - Web Development\r\n\r\nIn connection with my application, I would like to emphasize that I have no special requirements and thus align with the standard registration criteria. As per the course enrollment form, \"No special requirements.\" \r\n\r\nI am looking forward to the opportunity to undertake this course under your auspices and am available to provide any further information you might require in order to process this request promptly.\r\n\r\nThank you very much for considering my application. Looking forward to your positive response.\r\n\r\nWarm regards,\r\n\r\nJessica Kennedy\r\n\r\n2)[Your Name]  \r\n[Your Title]  \r\n[Your Institution]  \r\n[Date]  \r\n\r\nAdmissions Office  \r\n[University Name]  \r\n[University Address]  \r\n\r\nDear Admissions Committee,\r\n\r\nI hope this message finds you well. I am writing to formally request enrollment in selected courses for the upcoming Spring 2025 semester within the esteemed Software Engineering program at your institution.\r\n\r\nTo provide pertinent details, I am Michael Thomas, holding the Student ID 60653442. I can be reached via email at knicholson@yahoo.com or by telephone at 001-779-442-5639x3962.\r\n\r\nI am keen on enhancing my academic pursuits by enrolling in the following courses:",
+    "goldAnswers": {
+      "Full Name": "Jessica Kennedy",
+      "Student ID": 88741153,
+      "Email": "wendy24@yahoo.com",
+      "Phone Number": "001-250-204-3652x75507",
+      "Semester": "Summer 2025",
+      "Program": "Software Engineering",
+      "Selected Courses": [
+        "CS104 - Web Development"
+      ],
+      "Special Requirements or Comments": "No special requirements."
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/course-registration"
+  },
+  "agentName": "rule-based-demo",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/academic-research/course-registration\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/academic-research/course-registration\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  ],
+  "submissionSucceeded": false
+}
