@@ -11,14 +11,13 @@
     "start": "next start",
     "lint": "eslint src --ext .ts,.tsx",
     "type-check": "tsc --noEmit",
-    "test": "jest",
-    "test:diagnostic": "tsx --tsconfig tsconfig.scripts.json scripts/diagnostic.ts",
     "benchmark:rule-based:quick": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --quick --agent rule-based",
     "benchmark:rule-based:full": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --full --agent rule-based",
     "benchmark:mcp-agent:quick": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --quick --agent mcp-agent",
     "benchmark:mcp-agent:full": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --full --agent mcp-agent",
     "benchmark:setup": "playwright install chromium",
-    "benchmark:list": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --list-forms"
+    "benchmark:list": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --list-forms",
+    "benchmark:embedding": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --quick --agent embedding-matcher"
   },
   "dependencies": {
     "dotenv": "^17.4.2",
