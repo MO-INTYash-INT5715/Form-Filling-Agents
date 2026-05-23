@@ -54,6 +54,9 @@ export interface BenchmarkConfig {
   /** Pixel tolerance for click accuracy matching against bbox centroids */
   clickTolerancePx: number;
 
+  /** Optional path to a Chromium/Chrome executable to use instead of Playwright's downloaded browser */
+  browserExecutablePath?: string;
+
   // ---------------------------------------------------------------------------
   // Output
   // ---------------------------------------------------------------------------

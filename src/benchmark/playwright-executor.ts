@@ -132,9 +132,16 @@ export class PlaywrightFormExecutor {
 
   async init(): Promise<void> {
     const pw = await getPlaywright();
-    this.browser = await pw.chromium.launch({
-      headless: this.config.headless,
-    });
+    const launchOptions: any = { headless: this.config.headless };
+    // Allow overriding the Chromium executable via config or env var
+    const execPath = (this.config as any).browserExecutablePath || process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE;
+    if (execPath) {
+      launchOptions.executablePath = execPath;
+      // eslint-disable-next-line no-console
+      console.log('[playwright-executor] Using external Chromium executable:', execPath);
+    }
+
+    this.browser = await pw.chromium.launch(launchOptions);
     this.context = await this.browser.newContext({
       viewport: { width: 1280, height: 900 },
     });

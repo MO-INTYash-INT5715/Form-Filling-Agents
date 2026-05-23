@@ -127,6 +127,9 @@ async function main() {
   } else if (agentName === 'vision-agent') {
     const { VisionAgent } = await import('../src/implementations/vision-agent/agent');
     agent = new VisionAgent();
+  } else if (agentName === 'embedding-matcher' || agentName === 'embedding') {
+    const { EmbeddingMatcherAgent } = await import('../src/implementations/embedding-matcher/agent');
+    agent = new EmbeddingMatcherAgent();
   } else {
     agent = new RuleBasedAgent();
   }
