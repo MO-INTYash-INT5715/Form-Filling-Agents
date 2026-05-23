@@ -1,0 +1,43 @@
+{
+  "formInstance": {
+    "formId": "NDA",
+    "formName": "NDA Submission Form",
+    "domain": "Legal & Compliance",
+    "instanceIndex": 0,
+    "inputDocument": "On 2024/12/05, an individual known as John Doe, holding the position of Founder, initiated a Non-Disclosure Agreement (\"NDA\") for the purpose expressly defined as \"To protect intellectual property related to a new software development project, including source code, architecture, and design.\" This NDA, submitted by Mr. Doe, is set to remain active for a duration of 5 years. Mr. Doe, acting as both the Party and Representative, affirms that he has read and agrees to the terms of the Non-Disclosure Agreement and confirms that he has the authority to enter into this agreement.",
+    "goldAnswers": {
+      "Party Name": "John Doe",
+      "Party Type": "Individual",
+      "Purpose of NDA": "To protect intellectual property related to a new software development project, including source code, architecture, and design",
+      "Effective Date": "2024/12/05",
+      "Duration (Years)": 5,
+      "Representative Name": "John Doe",
+      "Title/Position": "Founder",
+      "I have read and agree to the terms of the Non-Disclosure Agreement": "Yes",
+      "I confirm that I have the authority to enter into this agreement": "Yes"
+    },
+    "multiPage": false,
+    "formPath": "/legal-compliance/nda-submission"
+  },
+  "agentName": "mcp-agent",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/legal-compliance/nda-submission\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/legal-compliance/nda-submission\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  ],
+  "submissionSucceeded": false
+}

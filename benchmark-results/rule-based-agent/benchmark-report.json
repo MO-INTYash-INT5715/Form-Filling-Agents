@@ -1,6 +1,6 @@
 {
   "agentName": "rule-based-agent",
-  "timestamp": "2026-05-22T06:42:38.247Z",
+  "timestamp": "2026-05-22T18:21:47.681Z",
   "config": {
     "formFactoryServerUrl": "http://localhost:5000",
     "formIds": "all",
@@ -350,7 +350,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 4602,
+      "executionTimeMs": 4537,
       "errors": [],
       "submissionSucceeded": true
     },
@@ -441,7 +441,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 31634,
+      "executionTimeMs": 31482,
       "errors": [],
       "submissionSucceeded": false
     },
@@ -545,7 +545,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1647,
+      "executionTimeMs": 1651,
       "errors": [],
       "submissionSucceeded": true
     },
@@ -663,7 +663,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1486,
+      "executionTimeMs": 1495,
       "errors": [],
       "submissionSucceeded": true
     },
@@ -850,7 +850,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1642,
+      "executionTimeMs": 1653,
       "errors": [],
       "submissionSucceeded": true
     },
@@ -1052,7 +1052,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 5.88235294117647
       },
-      "executionTimeMs": 1677,
+      "executionTimeMs": 1655,
       "errors": [],
       "submissionSucceeded": true
     },
@@ -1270,7 +1270,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 10.526315789473683
       },
-      "executionTimeMs": 1668,
+      "executionTimeMs": 1663,
       "errors": [],
       "submissionSucceeded": true
     },
@@ -1471,7 +1471,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 5.88235294117647
       },
-      "executionTimeMs": 1661,
+      "executionTimeMs": 1657,
       "errors": [],
       "submissionSucceeded": true
     },
@@ -1661,7 +1661,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1655,
+      "executionTimeMs": 1664,
       "errors": [],
       "submissionSucceeded": true
     },
@@ -1783,7 +1783,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 22.22222222222222
       },
-      "executionTimeMs": 1661,
+      "executionTimeMs": 1665,
       "errors": [],
       "submissionSucceeded": true
     },
@@ -1923,7 +1923,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1647,
+      "executionTimeMs": 1652,
       "errors": [],
       "submissionSucceeded": true
     },
@@ -2090,7 +2090,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1659,
+      "executionTimeMs": 1658,
       "errors": [],
       "submissionSucceeded": true
     },
@@ -2216,7 +2216,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1643,
+      "executionTimeMs": 1659,
       "errors": [],
       "submissionSucceeded": true
     },
@@ -2360,7 +2360,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 9.090909090909092
       },
-      "executionTimeMs": 31524,
+      "executionTimeMs": 31511,
       "errors": [],
       "submissionSucceeded": true
     },
@@ -2464,7 +2464,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 14.285714285714285
       },
-      "executionTimeMs": 1744,
+      "executionTimeMs": 1756,
       "errors": [],
       "submissionSucceeded": true
     },
@@ -2550,7 +2550,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 31791,
+      "executionTimeMs": 31801,
       "errors": [],
       "submissionSucceeded": true
     },
@@ -2648,7 +2648,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1732,
+      "executionTimeMs": 1747,
       "errors": [],
       "submissionSucceeded": false
     },
@@ -2779,7 +2779,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 30
       },
-      "executionTimeMs": 1514,
+      "executionTimeMs": 1520,
       "errors": [],
       "submissionSucceeded": false
     },
@@ -2896,7 +2896,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1408,
+      "executionTimeMs": 1427,
       "errors": [],
       "submissionSucceeded": false
     },
@@ -3014,7 +3014,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1412,
+      "executionTimeMs": 1431,
       "errors": [],
       "submissionSucceeded": false
     },
@@ -3143,7 +3143,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1424,
+      "executionTimeMs": 1426,
       "errors": [],
       "submissionSucceeded": false
     },
@@ -3283,7 +3283,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 18.181818181818183
       },
-      "executionTimeMs": 1490,
+      "executionTimeMs": 1481,
       "errors": [],
       "submissionSucceeded": false
     },
@@ -3428,7 +3428,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1421,
+      "executionTimeMs": 1417,
       "errors": [],
       "submissionSucceeded": false
     },
@@ -3571,7 +3571,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1425,
+      "executionTimeMs": 1416,
       "errors": [],
       "submissionSucceeded": false
     },
@@ -3726,11 +3726,11 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1421,
+      "executionTimeMs": 1440,
       "errors": [],
       "submissionSucceeded": false
     }
   ],
-  "totalExecutionTimeMs": 132802,
+  "totalExecutionTimeMs": 132645,
   "errors": []
 }

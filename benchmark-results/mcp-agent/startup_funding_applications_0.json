@@ -1,0 +1,204 @@
+{
+  "formInstance": {
+    "formId": "startup_funding_applications",
+    "formName": "Startup Funding Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 0,
+    "inputDocument": "Pinnacle Solutions, founded on 2020/08/29 and currently in the Growth stage, is seeking funding to enhance its operations. Under the leadership of Founder Kari Ibarra, the company is requesting a funding amount of USD 4,311,070 with an equity offered of 8%. The company is presently valued at USD 1,554,377. The purpose of the requested funding is hiring, which is crucial for the company's expansion efforts. Pinnacle Solutions operates a business model centered around a marketplace for freelancers offering digital services to small businesses and startups. The company's target market includes parents looking for eco-friendly and sustainable products for their children, a rapidly growing segment. With a current monthly revenue of USD 200,000 and a team size of 100, Pinnacle Solutions is poised for significant advancement. Excited to take the company to the next level, Pinnacle Solutions has an online presence through its company website, https://www.haynes-morales.com/, and Founder Kari Ibarra’s LinkedIn profile can be accessed at https://linkedin.com/in/kaylamills. For further queries, contact can be made via email at devin22@gmail.com or phone at 1738464335.",
+    "goldAnswers": {
+      "Company Name": "Pinnacle Solutions",
+      "Company Website": "https://www.haynes-morales.com/",
+      "Founding Date": "2020/08/29",
+      "Business Stage": "Growth",
+      "Founder Name": "Kari Ibarra",
+      "Email": "devin22@gmail.com",
+      "Phone Number": "1738464335",
+      "LinkedIn Profile": "https://linkedin.com/in/kaylamills",
+      "Funding Amount Required (USD)": 4311070,
+      "Equity Offered (%)": 8,
+      "Current Company Valuation (USD)": 1554377,
+      "Purpose of Funding": "Hiring",
+      "Business Model": "A marketplace for freelancers offering digital services to small businesses and startups.",
+      "Target Market": "Parents looking for eco-friendly and sustainable products for their children.",
+      "Current Monthly Revenue (USD)": 200000,
+      "Current Team Size": 100,
+      "Additional Comments": "Excited to take the company to the next level."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/startup-funding"
+  },
+  "agentName": "mcp-agent",
+  "fieldResults": [
+    {
+      "fieldId": "company_name",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Pinnacle Solutions",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "company_website",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "https://www.haynes-morales.com/",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "founding_date",
+      "fieldType": "Date",
+      "predictedValue": "",
+      "goldValue": "2020/08/29",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "business_stage",
+      "fieldType": "Dropdown",
+      "predictedValue": "",
+      "goldValue": "Growth",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "founder_name",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Kari Ibarra",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "founder_email",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "devin22@gmail.com",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "founder_phone",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "1738464335",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "linkedin_profile",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "https://linkedin.com/in/kaylamills",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "funding_amount",
+      "fieldType": "NumericInput",
+      "predictedValue": "",
+      "goldValue": 4311070,
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "equity_offered",
+      "fieldType": "NumericInput",
+      "predictedValue": "",
+      "goldValue": 8,
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "current_valuation",
+      "fieldType": "NumericInput",
+      "predictedValue": "",
+      "goldValue": 1554377,
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "funding_purpose",
+      "fieldType": "Description",
+      "predictedValue": "",
+      "goldValue": "Hiring",
+      "clickAccurate": false,
+      "valueAccurate": false,
+      "bleuScore": 0
+    },
+    {
+      "fieldId": "business_model",
+      "fieldType": "Description",
+      "predictedValue": "",
+      "goldValue": "A marketplace for freelancers offering digital services to small businesses and startups.",
+      "clickAccurate": false,
+      "valueAccurate": false,
+      "bleuScore": 0
+    },
+    {
+      "fieldId": "target_market",
+      "fieldType": "Description",
+      "predictedValue": "",
+      "goldValue": "Parents looking for eco-friendly and sustainable products for their children.",
+      "clickAccurate": false,
+      "valueAccurate": false,
+      "bleuScore": 0
+    },
+    {
+      "fieldId": "current_revenue",
+      "fieldType": "NumericInput",
+      "predictedValue": "",
+      "goldValue": 200000,
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "team_size",
+      "fieldType": "NumericInput",
+      "predictedValue": "",
+      "goldValue": 100,
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "additional_comments",
+      "fieldType": "Description",
+      "predictedValue": "",
+      "goldValue": "Excited to take the company to the next level.",
+      "clickAccurate": false,
+      "valueAccurate": false,
+      "bleuScore": 0
+    }
+  ],
+  "atomicMetrics": {
+    "clickAccuracy": {
+      "String": 0,
+      "Date": 0,
+      "Dropdown": 0,
+      "NumericInput": 0,
+      "Description": 0
+    },
+    "valueAccuracy": {
+      "String": 0,
+      "Date": 0,
+      "Dropdown": 0,
+      "NumericInput": 0,
+      "Description": 0
+    },
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 17,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 3207,
+  "errors": [
+    "Iterative agent failed: Connection error."
+  ],
+  "submissionSucceeded": true
+}

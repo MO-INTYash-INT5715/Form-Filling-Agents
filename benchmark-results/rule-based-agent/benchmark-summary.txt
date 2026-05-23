@@ -3,11 +3,11 @@
 ╚══════════════════════════════════════════════════════════════╝
 
   Agent:      rule-based-agent
-  Timestamp:  2026-05-22T06:42:38.247Z
+  Timestamp:  2026-05-22T18:21:47.681Z
   Forms:      25
   Instances:  25
   Fields:     259
-  Runtime:    132.8s
+  Runtime:    132.6s
 
 ━━━ GLOBAL METRICS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   Overall Click Accuracy:  0.00%

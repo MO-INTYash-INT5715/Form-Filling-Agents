@@ -51,6 +51,7 @@ function parseArgs(): {
   domain?: string;
   watch: boolean;
   serverUrl: string;
+  agentName: string;
 } {
   const args = process.argv.slice(2);
   let scenario: 'quick' | 'full' | 'custom' = 'quick';
@@ -59,6 +60,8 @@ function parseArgs(): {
   let domain: string | undefined;
   let watch = false;
   let serverUrl = 'http://localhost:5000';
+
+  let agentName = 'rule-based';
 
   for (let i = 0; i < args.length; i++) {
     switch (args[i]) {
@@ -69,6 +72,7 @@ function parseArgs(): {
       case '--form':     form = args[++i]; break;
       case '--domain':   domain = args[++i]; break;
       case '--server':   serverUrl = args[++i]; break;
+      case '--agent':    agentName = args[++i]; break;
       case '--list-forms':
         console.log('Available form stems:');
         availableFormStems().forEach(s => console.log(' ', s));
@@ -82,7 +86,7 @@ function parseArgs(): {
     }
   }
 
-  return { scenario, instances, form, domain, watch, serverUrl };
+  return { scenario, instances, form, domain, watch, serverUrl, agentName };
 }
 
 // ---------------------------------------------------------------------------
@@ -90,7 +94,7 @@ function parseArgs(): {
 // ---------------------------------------------------------------------------
 
 async function main() {
-  const { scenario, instances, form, domain, watch, serverUrl } = parseArgs();
+  const { scenario, instances, form, domain, watch, serverUrl, agentName } = parseArgs();
 
   // Build domain filter → form stems
   let formIds: string[] | undefined;
@@ -113,9 +117,19 @@ async function main() {
     maxInstancesPerForm: instances,
     headless: !watch,
     formIds,
+    agentName,
   };
 
-  const agent = new RuleBasedAgent();
+  let agent;
+  if (agentName === 'mcp-agent') {
+    const { MCPAgent } = await import('../src/implementations/mcp-agent/agent');
+    agent = new MCPAgent();
+  } else if (agentName === 'vision-agent') {
+    const { VisionAgent } = await import('../src/implementations/vision-agent/agent');
+    agent = new VisionAgent();
+  } else {
+    agent = new RuleBasedAgent();
+  }
 
   try {
     const report = await runBenchmark(agent, config);

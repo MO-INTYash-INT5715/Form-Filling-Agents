@@ -1,0 +1,93 @@
+{
+  "formInstance": {
+    "formId": "grant_applications",
+    "formName": "Grant or Research Funding Application",
+    "domain": "Academic & Research",
+    "instanceIndex": 0,
+    "inputDocument": "[Grant Application]\r\n\r\n**Applicant Information:**\r\n\r\nFirst Name: Diana  \r\nLast Name: Bridges  \r\nEmail: wmills@shields.net  \r\nGender: Female  \r\nDate of Birth: 1951/09/28  \r\n\r\nDear Grant Review Committee,\r\n\r\nMy name is Diana Bridges, and it is with great anticipation and gratitude that I submit this application for your consideration. From the lively suburbs of my cherished hometown, I have walked a distinctive path that has led me to seek the opportunity which your esteemed grant program now presents.\r\n\r\nHaving celebrated many meaningful years, I have become adept at navigating the confluence of personal and professional pursuits. My journey has been fervently documented through a long span of experiences that continue to fuel my unyielding zeal and commitment.\r\n\r\nBeing a part of your newsletter is passed up, as the heavens know I opt to untangle myself from virtual realms so captivating in their ability to divert focus. But rest assured, this is no reflection on my commitment to this pursuit, rather an intentional decision to insulate my creativity from the relentless tide of ubiquitous media.\r\n\r\nAdhering to these paths has emboldened me and solidified my ambitions which align closely with the stated goals of your program. The heart of this mission speaks genuinely to my experience and passion, and impels me to partake with earnest sincerity.\r\n\r\nWith ambition tempered by experience, I offer my cards, bared wholly and sincerely before you today.\r\n\r\nThank you graciously for considering my application and for providing individuals like me the chance to unfurl our ambitions and let them take wondrous flight under your stewardship.\r\n\r\nEarnestly,\r\n\r\nDiana Bridges  \r\n\r\n[End of Application]",
+    "goldAnswers": {
+      "First Name": "Diana",
+      "Last Name": "Bridges",
+      "Email": "wmills@shields.net",
+      "Gender": "Female",
+      "Date of Birth": "1951/09/28",
+      "Subscribe to Newsletter": false
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/grant-application"
+  },
+  "agentName": "mcp-agent",
+  "fieldResults": [
+    {
+      "fieldId": "First Name",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Diana",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "Last Name",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Bridges",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "Email",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "wmills@shields.net",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "Gender",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Female",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "Date of Birth",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "1951/09/28",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "Subscribe to Newsletter",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": false,
+      "clickAccurate": null,
+      "valueAccurate": false
+    }
+  ],
+  "atomicMetrics": {
+    "clickAccuracy": {
+      "String": 0
+    },
+    "valueAccuracy": {
+      "String": 0
+    },
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 6,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 2926,
+  "errors": [
+    "Iterative agent failed: Connection error."
+  ],
+  "submissionSucceeded": false
+}

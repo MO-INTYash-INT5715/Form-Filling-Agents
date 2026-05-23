@@ -1,0 +1,42 @@
+{
+  "formInstance": {
+    "formId": "Health_Insurance",
+    "formName": "Health Insurance Claim Form",
+    "domain": "Healthcare & Medical",
+    "instanceIndex": 0,
+    "inputDocument": "Emily Turner, the policyholder with the policy number A1234567890, respectfully submits this claim for a reimbursement following a healthcare service rendered. On January 15, 2024, Emily visited Dr. Alice Green, whose provider ID number is D12345, for a scheduled Doctor Consultation. The purpose of the consultation was to address a Diagnosis of General Checkup, Mild Fatigue. The costs associated with this consultation amounted to $250.00. Emily Turner hereby requests the processing of this claim through her health insurance coverage, trusting that all required details enclosed within this application will facilitate a timely evaluation and settlement.",
+    "goldAnswers": {
+      "Policy Number": "A1234567890",
+      "Policy Holder Name": "Emily Turner",
+      "Date of Service": "2024/01/15",
+      "Claim Amount ($)": 250,
+      "Type of Service": "Doctor Consultation",
+      "Diagnosis/Condition": "General Checkup, Mild Fatigue",
+      "Provider Name": "Dr. Alice Green",
+      "Provider ID Number": "D12345"
+    },
+    "multiPage": true,
+    "formPath": "/healthcare-medical/insurance-claim"
+  },
+  "agentName": "mcp-agent",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/healthcare-medical/insurance-claim\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/healthcare-medical/insurance-claim\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  ],
+  "submissionSucceeded": false
+}

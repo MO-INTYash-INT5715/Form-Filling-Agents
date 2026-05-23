@@ -290,6 +290,24 @@ export class PlaywrightFormExecutor {
          errors.push(`Iterative agent failed: ${(err as Error).message}`);
       }
 
+      // Extract the values that the agent actually filled into the DOM
+      const agentFills = new Map<string, { value: string }>();
+      for (const field of pageFields) {
+        try {
+          let val = '';
+          const selector = field.id ? `#${field.id}` : `[name="${field.name}"]`;
+          if (field.type === 'checkbox' || field.type === 'radio') {
+            const isChecked = await page.isChecked(selector);
+            val = isChecked ? 'true' : 'false';
+          } else {
+            val = await page.inputValue(selector);
+          }
+          agentFills.set(field.id || field.name, { value: val });
+        } catch (e) {
+          // Ignore errors for unreadable fields
+        }
+      }
+
       let submissionSucceeded = false;
       try {
         await page.click('[type="submit"], button[type="submit"], input[type="submit"]', { timeout: 5000 });
@@ -300,7 +318,7 @@ export class PlaywrightFormExecutor {
         errors.push('Form submission step failed or timed out');
       }
 
-      const fieldResults = this.scoreResults(pageFields, formInstance.goldAnswers, new Map(), []);
+      const fieldResults = this.scoreResults(pageFields, formInstance.goldAnswers, agentFills, []);
       const atomicMetrics = aggregateAtomicMetrics(fieldResults);
       const episodicMetrics = aggregateEpisodicMetrics(fieldResults);
 

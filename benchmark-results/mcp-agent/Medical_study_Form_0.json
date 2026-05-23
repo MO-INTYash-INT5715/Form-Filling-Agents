@@ -1,0 +1,42 @@
+{
+  "formInstance": {
+    "formId": "Medical_study_Form",
+    "formName": "Medical Research Study Enrollment",
+    "domain": "Healthcare & Medical",
+    "instanceIndex": 0,
+    "inputDocument": "**Medical Research Study Enrollment Application**\r\n\r\n---\r\n\r\n**Applicant Information:**\r\n\r\nI am pleased to submit my enrollment application for consideration in the upcoming medical research study. Please find my personal and medical details below as per your requirements:\r\n\r\n**Full Name:** Lily Chen\r\n\r\n**Age:** 32\r\n\r\n**Existing Medical Conditions:** As part of my health background, I have been diagnosed with Hypertension. \r\n\r\n**Current Medications:** I am currently taking Lisinopril to manage my medical condition effectively. \r\n\r\n**Study Preferences:**\r\n\r\nIn relation to study preferences, please note that I am particularly interested in participating in a Clinical Trial, as my preferred study type aligns with this format of research investigation.\r\n\r\n**Availability:**\r\n\r\nRegarding my participation frequency, I am readily available to contribute during weekdays. I believe this availability will fit the study schedule effectively.\r\n\r\n**Contact Information:**\r\n\r\nFor any communication or additional queries, I can be reached at the following:\r\n\r\n- **Email Address:** lily.chen123@gmail.com\r\n- **Phone Number:** (+86) 138 1234 5678\r\n\r\nPlease do not hesitate to reach out if any further information is required. I am enthusiastic about the opportunity to participate in this research study and contribute meaningfully to the medical field.\r\n\r\n\r\nThank you for considering my application.\r\n\r\nYours sincerely,\r\n\r\n**Lily Chen**",
+    "goldAnswers": {
+      "Full Name": "Lily Chen",
+      "Age": 32,
+      "Existing Medical Conditions": "Hypertension",
+      "Current Medications": "Lisinopril",
+      "Preferred Study Type": "Clinical Trial",
+      "Availability": "Weekdays",
+      "Email Address": "lily.chen123@gmail.com",
+      "Phone Number": "(+86) 138 1234 5678"
+    },
+    "multiPage": false,
+    "formPath": "/healthcare-medical/research-enrollment"
+  },
+  "agentName": "mcp-agent",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/healthcare-medical/research-enrollment\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/healthcare-medical/research-enrollment\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  ],
+  "submissionSucceeded": false
+}

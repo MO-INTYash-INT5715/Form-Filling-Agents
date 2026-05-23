@@ -13,16 +13,17 @@
     "type-check": "tsc --noEmit",
     "test": "jest",
     "test:diagnostic": "tsx --tsconfig tsconfig.scripts.json scripts/diagnostic.ts",
-    "benchmark:quick": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --quick",
-    "benchmark:full": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --full",
-    "benchmark:form": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts",
-    "benchmark:domain": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts",
-    "benchmark:watch": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --quick --watch",
+    "benchmark:rule-based:quick": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --quick --agent rule-based",
+    "benchmark:rule-based:full": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --full --agent rule-based",
+    "benchmark:mcp-agent:quick": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --quick --agent mcp-agent",
+    "benchmark:mcp-agent:full": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --full --agent mcp-agent",
     "benchmark:setup": "playwright install chromium",
     "benchmark:list": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --list-forms"
   },
   "dependencies": {
+    "dotenv": "^17.4.2",
     "next": "^14.0.0",
+    "openai": "^6.39.0",
     "playwright": "^1.44.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

@@ -1,0 +1,218 @@
+{
+  "formInstance": {
+    "formId": "real_estate_rental_applications",
+    "formName": "Real Estate Rental Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 0,
+    "inputDocument": "Amy Soto, residing at 325 Clark Tunnel in Christopherburgh, Alabama, ZIP Code 37382, is seeking a new rental opportunity. She can be reached at arthurperez@webb.com or via phone at 001-601-137-0101x270. Born on 1979/05/24, Amy is currently employed by Edwards PLC as an Environmental Manager with a monthly income of USD 13,121 and has held her position for 1 year. She is interested in relocating by 2025/01/26, with a preferred lease term of 6 months and a maximum monthly rent of USD 2,323. Amy has expressed a preference for properties Near public transport. She does not have any pets, and thus there are No pets to describe. In her Additional Comments, she notes, \"Prefer quiet and residential areas.\" Amy is a reliable and professional individual who will make a responsible tenant.",
+    "goldAnswers": {
+      "Full Name": "Amy Soto",
+      "Email Address": "arthurperez@webb.com",
+      "Phone Number": "001-601-137-0101x270",
+      "Date of Birth": "1979/05/24",
+      "Street Address": "325 Clark Tunnel",
+      "City": "Christopherburgh",
+      "State": "Alabama",
+      "ZIP Code": "37382",
+      "Current Employer": "Edwards PLC",
+      "Job Title": "Environmental manager",
+      "Monthly Income (USD)": 13121,
+      "Length of Employment": "1 year",
+      "Preferred Move-in Date": "2025/01/26",
+      "Preferred Lease Term": "6 months",
+      "Maximum Monthly Rent (USD)": 2323,
+      "Preferred Area": "Near public transport",
+      "Do you have any pets?": "No",
+      "If yes, please describe your pets": "No pets",
+      "Additional Comments": "Prefer quiet and residential areas."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/rental-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [
+    {
+      "fieldId": "full_name",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Amy Soto",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "email",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "arthurperez@webb.com",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "phone",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "001-601-137-0101x270",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "date_of_birth",
+      "fieldType": "Date",
+      "predictedValue": "",
+      "goldValue": "1979/05/24",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "current_street",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "325 Clark Tunnel",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "current_city",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Christopherburgh",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "current_state",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Alabama",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "current_zip",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "37382",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "employer_name",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Edwards PLC",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "job_title",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Environmental manager",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "monthly_income",
+      "fieldType": "NumericInput",
+      "predictedValue": "",
+      "goldValue": 13121,
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "employment_length",
+      "fieldType": "String",
+      "predictedValue": "1 year",
+      "goldValue": "1 year",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "preferred_move_date",
+      "fieldType": "Date",
+      "predictedValue": "",
+      "goldValue": "2025/01/26",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "lease_term",
+      "fieldType": "Dropdown",
+      "predictedValue": "6 months",
+      "goldValue": "6 months",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "max_rent",
+      "fieldType": "NumericInput",
+      "predictedValue": "",
+      "goldValue": 2323,
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "preferred_area",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Near public transport",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "pets",
+      "fieldType": "Dropdown",
+      "predictedValue": "",
+      "goldValue": "No",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "pet_details",
+      "fieldType": "Description",
+      "predictedValue": "No pets",
+      "goldValue": "No pets",
+      "clickAccurate": false,
+      "valueAccurate": false,
+      "bleuScore": 0
+    },
+    {
+      "fieldId": "additional_info",
+      "fieldType": "Description",
+      "predictedValue": "",
+      "goldValue": "Prefer quiet and residential areas.",
+      "clickAccurate": false,
+      "valueAccurate": false,
+      "bleuScore": 0
+    }
+  ],
+  "atomicMetrics": {
+    "clickAccuracy": {
+      "String": 0,
+      "Date": 0,
+      "NumericInput": 0,
+      "Dropdown": 0,
+      "Description": 0
+    },
+    "valueAccuracy": {
+      "String": 9.090909090909092,
+      "Date": 0,
+      "NumericInput": 0,
+      "Dropdown": 50,
+      "Description": 0
+    },
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 10.526315789473683
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 10.526315789473683,
+    "fieldsAttempted": 3,
+    "fieldsCorrect": 2,
+    "totalFields": 19,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 10.526315789473683
+  },
+  "executionTimeMs": 1642,
+  "errors": [],
+  "submissionSucceeded": true
+}

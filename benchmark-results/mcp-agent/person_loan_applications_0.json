@@ -1,0 +1,41 @@
+{
+  "formInstance": {
+    "formId": "person_loan_applications",
+    "formName": "Personal Loan Application Form",
+    "domain": "Finance & Banking",
+    "instanceIndex": 0,
+    "inputDocument": "John Stephen Tran is seeking to apply for a personal loan amounting to $28,521. The requested loan term is 60 months. Mr. Tran is currently employed part-time, with a consistent monthly income of $4,569. He has carefully assessed his financial situation and is confident in his ability to meet the repayment requirements over the specified term. Mr. Tran's dedication to managing this financial obligation is supported by his stable employment status and his clear understanding of the loan terms. Through this application, he hopes to successfully secure the necessary funds, demonstrating his commitment and financial responsibility.",
+    "goldAnswers": {
+      "First Name": "John",
+      "Middle Name": "Stephen",
+      "Last Name": "Tran",
+      "Loan Amount ($)": 28521,
+      "Loan Term (months)": "60 months",
+      "Employment Status": "Part time",
+      "Monthly Income ($)": 4569
+    },
+    "multiPage": false,
+    "formPath": "/finance-banking/personal-loan"
+  },
+  "agentName": "mcp-agent",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/finance-banking/personal-loan\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/finance-banking/personal-loan\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  ],
+  "submissionSucceeded": false
+}
