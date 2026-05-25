@@ -20,73 +20,11 @@
     "multiPage": false,
     "formPath": "/academic-research/paper-submission"
   },
-  "agentName": "rule-based",
-  "fieldResults": [
-    {
-      "fieldId": "author_name",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "Alice Johnson",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "email",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "alice.johnson@university.edu",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "paper_title",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "Advancements in Deep Learning for Image Recognition",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "abstract",
-      "fieldType": "Description",
-      "predictedValue": "",
-      "goldValue": "This paper explores recent innovations in deep learning models, focusing on their applications in image recognition and classification.",
-      "clickAccurate": false,
-      "valueAccurate": false,
-      "bleuScore": 0
-    },
-    {
-      "fieldId": "keywords",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": [
-        "Deep Learning",
-        "Image Recognition",
-        "Neural Networks"
-      ],
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "category",
-      "fieldType": "Dropdown",
-      "predictedValue": "",
-      "goldValue": "Artificial Intelligence",
-      "clickAccurate": false,
-      "valueAccurate": false
-    }
-  ],
+  "agentName": "rule-based-demo",
+  "fieldResults": [],
   "atomicMetrics": {
-    "clickAccuracy": {
-      "String": 0,
-      "Description": 0,
-      "Dropdown": 0
-    },
-    "valueAccuracy": {
-      "String": 0,
-      "Description": 0,
-      "Dropdown": 0
-    },
+    "clickAccuracy": {},
+    "valueAccuracy": {},
     "overallClickAccuracy": 0,
     "overallValueAccuracy": 0
   },
@@ -94,11 +32,13 @@
     "formCompletionRate": 0,
     "fieldsAttempted": 0,
     "fieldsCorrect": 0,
-    "totalFields": 6,
+    "totalFields": 0,
     "averageClickAccuracy": 0,
     "averageValueAccuracy": 0
   },
-  "executionTimeMs": 1626,
-  "errors": [],
-  "submissionSucceeded": true
+  "executionTimeMs": 0,
+  "errors": [
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/academic-research/paper-submission\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/academic-research/paper-submission\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  ],
+  "submissionSucceeded": false
 }

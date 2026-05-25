@@ -20,112 +20,25 @@
     "multiPage": false,
     "formPath": "/healthcare-medical/patient-consent"
   },
-  "agentName": "rule-based",
-  "fieldResults": [
-    {
-      "fieldId": "patientName",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "James Anderson",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "dateOfBirth",
-      "fieldType": "Date",
-      "predictedValue": "",
-      "goldValue": "1985/08/15",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "medicalRecordNumber",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "MRN123456789",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "procedureName",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "Knee Arthroscopy",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "surgeon",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "Dr. Robert Smith",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "procedureConsent",
-      "fieldType": "Checkbox",
-      "predictedValue": "true",
-      "goldValue": true,
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "questionConsent",
-      "fieldType": "Checkbox",
-      "predictedValue": "true",
-      "goldValue": true,
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "alternativesConsent",
-      "fieldType": "Checkbox",
-      "predictedValue": "true",
-      "goldValue": true,
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "emergencyName",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "Emily Anderson",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "emergencyPhone",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "+1 555-987-6543",
-      "clickAccurate": false,
-      "valueAccurate": false
-    }
-  ],
+  "agentName": "rule-based-demo",
+  "fieldResults": [],
   "atomicMetrics": {
-    "clickAccuracy": {
-      "String": 0,
-      "Date": 0,
-      "Checkbox": 0
-    },
-    "valueAccuracy": {
-      "String": 0,
-      "Date": 0,
-      "Checkbox": 100
-    },
+    "clickAccuracy": {},
+    "valueAccuracy": {},
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 30
+    "overallValueAccuracy": 0
   },
   "episodicMetrics": {
-    "formCompletionRate": 30,
-    "fieldsAttempted": 3,
-    "fieldsCorrect": 3,
-    "totalFields": 10,
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 30
+    "averageValueAccuracy": 0
   },
-  "executionTimeMs": 1521,
-  "errors": [],
+  "executionTimeMs": 0,
+  "errors": [
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/healthcare-medical/patient-consent\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/healthcare-medical/patient-consent\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  ],
   "submissionSucceeded": false
 }

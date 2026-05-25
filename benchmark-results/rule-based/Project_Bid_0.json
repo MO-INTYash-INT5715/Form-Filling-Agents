@@ -21,111 +21,11 @@
     "multiPage": false,
     "formPath": "/construction-manufacturing/project-bid"
   },
-  "agentName": "rule-based",
-  "fieldResults": [
-    {
-      "fieldId": "companyName",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "Greenfield Construction",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "licenseNumber",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "GC-203940",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "projectName",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "Office Building Renovation",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "bidAmount",
-      "fieldType": "NumericInput",
-      "predictedValue": "",
-      "goldValue": 850000,
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "projectDuration",
-      "fieldType": "NumericInput",
-      "predictedValue": "",
-      "goldValue": 24,
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "startDate",
-      "fieldType": "Date",
-      "predictedValue": "",
-      "goldValue": "2024/06/01",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "completionDate",
-      "fieldType": "Date",
-      "predictedValue": "",
-      "goldValue": "2024/12/01",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "Scope of Work",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "Full renovation of a commercial office building, including electrical and plumbing upgrades.",
-      "clickAccurate": null,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "workDescription",
-      "fieldType": "Description",
-      "predictedValue": "",
-      "goldValue": "The project will involve gutting the entire office building and rebuilding it with updated structural components, new wiring, plumbing, and HVAC systems. Interior finishes will include modern office layouts and upgraded fixtures.",
-      "clickAccurate": false,
-      "valueAccurate": false,
-      "bleuScore": 0
-    },
-    {
-      "fieldId": "contactName",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "John Parker",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "contactPhone",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "555-762-4923",
-      "clickAccurate": false,
-      "valueAccurate": false
-    }
-  ],
+  "agentName": "rule-based-demo",
+  "fieldResults": [],
   "atomicMetrics": {
-    "clickAccuracy": {
-      "String": 0,
-      "NumericInput": 0,
-      "Date": 0,
-      "Description": 0
-    },
-    "valueAccuracy": {
-      "String": 0,
-      "NumericInput": 0,
-      "Date": 0,
-      "Description": 0
-    },
+    "clickAccuracy": {},
+    "valueAccuracy": {},
     "overallClickAccuracy": 0,
     "overallValueAccuracy": 0
   },
@@ -133,11 +33,13 @@
     "formCompletionRate": 0,
     "fieldsAttempted": 0,
     "fieldsCorrect": 0,
-    "totalFields": 11,
+    "totalFields": 0,
     "averageClickAccuracy": 0,
     "averageValueAccuracy": 0
   },
-  "executionTimeMs": 1416,
-  "errors": [],
+  "executionTimeMs": 0,
+  "errors": [
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/construction-manufacturing/project-bid\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/construction-manufacturing/project-bid\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  ],
   "submissionSucceeded": false
 }

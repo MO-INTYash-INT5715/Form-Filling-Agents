@@ -19,99 +19,11 @@
     "multiPage": false,
     "formPath": "/legal-compliance/nda-submission"
   },
-  "agentName": "rule-based",
-  "fieldResults": [
-    {
-      "fieldId": "Party Name",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "John Doe",
-      "clickAccurate": null,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "partyType",
-      "fieldType": "Dropdown",
-      "predictedValue": "",
-      "goldValue": "Individual",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "purpose",
-      "fieldType": "Description",
-      "predictedValue": "",
-      "goldValue": "To protect intellectual property related to a new software development project, including source code, architecture, and design",
-      "clickAccurate": false,
-      "valueAccurate": false,
-      "bleuScore": 0
-    },
-    {
-      "fieldId": "startDate",
-      "fieldType": "Date",
-      "predictedValue": "",
-      "goldValue": "2024/12/05",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "duration",
-      "fieldType": "NumericInput",
-      "predictedValue": "",
-      "goldValue": 5,
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "repName",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "John Doe",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "repTitle",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "Founder",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "termsAgreed",
-      "fieldType": "Checkbox",
-      "predictedValue": "",
-      "goldValue": "Yes",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "authorityConfirm",
-      "fieldType": "Checkbox",
-      "predictedValue": "",
-      "goldValue": "Yes",
-      "clickAccurate": false,
-      "valueAccurate": false
-    }
-  ],
+  "agentName": "rule-based-demo",
+  "fieldResults": [],
   "atomicMetrics": {
-    "clickAccuracy": {
-      "String": 0,
-      "Dropdown": 0,
-      "Description": 0,
-      "Date": 0,
-      "NumericInput": 0,
-      "Checkbox": 0
-    },
-    "valueAccuracy": {
-      "String": 0,
-      "Dropdown": 0,
-      "Description": 0,
-      "Date": 0,
-      "NumericInput": 0,
-      "Checkbox": 0
-    },
+    "clickAccuracy": {},
+    "valueAccuracy": {},
     "overallClickAccuracy": 0,
     "overallValueAccuracy": 0
   },
@@ -119,11 +31,13 @@
     "formCompletionRate": 0,
     "fieldsAttempted": 0,
     "fieldsCorrect": 0,
-    "totalFields": 9,
+    "totalFields": 0,
     "averageClickAccuracy": 0,
     "averageValueAccuracy": 0
   },
-  "executionTimeMs": 1411,
-  "errors": [],
+  "executionTimeMs": 0,
+  "errors": [
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/legal-compliance/nda-submission\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/legal-compliance/nda-submission\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  ],
   "submissionSucceeded": false
 }

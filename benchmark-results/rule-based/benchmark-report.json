@@ -1,6 +1,6 @@
 {
-  "agentName": "rule-based",
-  "timestamp": "2026-05-22T19:00:40.144Z",
+  "agentName": "rule-based-demo",
+  "timestamp": "2026-05-22T02:32:23.479Z",
   "config": {
     "formFactoryServerUrl": "http://localhost:5000",
     "formIds": "all",
@@ -8,52 +8,28 @@
   },
   "totalForms": 25,
   "totalInstances": 25,
-  "totalFields": 259,
+  "totalFields": 0,
   "globalAtomic": {
-    "clickAccuracy": {
-      "String": 0,
-      "Description": 0,
-      "Dropdown": 0,
-      "NumericInput": 0,
-      "Date": 0,
-      "Checkbox": 0
-    },
-    "valueAccuracy": {
-      "String": 0.36363636363636365,
-      "Description": 0,
-      "Dropdown": 16.666666666666664,
-      "NumericInput": 0,
-      "Date": 0,
-      "Checkbox": 50
-    },
+    "clickAccuracy": {},
+    "valueAccuracy": {},
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 4.642867418099616
+    "overallValueAccuracy": 0
   },
   "globalEpisodic": {
-    "formCompletionRate": 4.642867418099616,
-    "fieldsAttempted": 27,
-    "fieldsCorrect": 13,
-    "totalFields": 259,
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 4.642867418099616
+    "averageValueAccuracy": 0
   },
   "byDomain": {
     "Academic & Research": {
       "domain": "Academic & Research",
       "instanceCount": 5,
       "atomic": {
-        "clickAccuracy": {
-          "String": 0,
-          "Description": 0,
-          "Dropdown": 0,
-          "NumericInput": 0
-        },
-        "valueAccuracy": {
-          "String": 0,
-          "Description": 0,
-          "Dropdown": 0,
-          "NumericInput": 0
-        },
+        "clickAccuracy": {},
+        "valueAccuracy": {},
         "overallClickAccuracy": 0,
         "overallValueAccuracy": 0
       },
@@ -61,7 +37,7 @@
         "formCompletionRate": 0,
         "fieldsAttempted": 0,
         "fieldsCorrect": 0,
-        "totalFields": 38,
+        "totalFields": 0,
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       }
@@ -70,200 +46,8 @@
       "domain": "Professional & Business",
       "instanceCount": 4,
       "atomic": {
-        "clickAccuracy": {
-          "String": 0,
-          "Date": 0,
-          "Dropdown": 0,
-          "NumericInput": 0,
-          "Description": 0
-        },
-        "valueAccuracy": {
-          "String": 2.272727272727273,
-          "Date": 0,
-          "Dropdown": 41.666666666666664,
-          "NumericInput": 0,
-          "Description": 0
-        },
-        "overallClickAccuracy": 0,
-        "overallValueAccuracy": 5.572755417956656
-      },
-      "episodic": {
-        "formCompletionRate": 5.572755417956656,
-        "fieldsAttempted": 8,
-        "fieldsCorrect": 4,
-        "totalFields": 69,
-        "averageClickAccuracy": 0,
-        "averageValueAccuracy": 5.572755417956656
-      }
-    },
-    "Arts & Creative": {
-      "domain": "Arts & Creative",
-      "instanceCount": 3,
-      "atomic": {
-        "clickAccuracy": {
-          "String": 0,
-          "Dropdown": 0,
-          "Checkbox": 0,
-          "Description": 0
-        },
-        "valueAccuracy": {
-          "String": 0,
-          "Dropdown": 25,
-          "Checkbox": 50,
-          "Description": 0
-        },
-        "overallClickAccuracy": 0,
-        "overallValueAccuracy": 7.407407407407407
-      },
-      "episodic": {
-        "formCompletionRate": 7.407407407407407,
-        "fieldsAttempted": 2,
-        "fieldsCorrect": 2,
-        "totalFields": 34,
-        "averageClickAccuracy": 0,
-        "averageValueAccuracy": 7.407407407407407
-      }
-    },
-    "Technology & Software": {
-      "domain": "Technology & Software",
-      "instanceCount": 2,
-      "atomic": {
-        "clickAccuracy": {
-          "String": 0,
-          "Dropdown": 0,
-          "Description": 0,
-          "NumericInput": 0
-        },
-        "valueAccuracy": {
-          "String": 0,
-          "Dropdown": 25,
-          "Description": 0,
-          "NumericInput": 0
-        },
-        "overallClickAccuracy": 0,
-        "overallValueAccuracy": 4.545454545454546
-      },
-      "episodic": {
-        "formCompletionRate": 4.545454545454546,
-        "fieldsAttempted": 9,
-        "fieldsCorrect": 1,
-        "totalFields": 20,
-        "averageClickAccuracy": 0,
-        "averageValueAccuracy": 4.545454545454546
-      }
-    },
-    "Finance & Banking": {
-      "domain": "Finance & Banking",
-      "instanceCount": 3,
-      "atomic": {
-        "clickAccuracy": {
-          "String": 0,
-          "NumericInput": 0,
-          "Dropdown": 0,
-          "Date": 0,
-          "Description": 0
-        },
-        "valueAccuracy": {
-          "String": 0,
-          "NumericInput": 0,
-          "Dropdown": 16.666666666666668,
-          "Date": 0,
-          "Description": 0
-        },
-        "overallClickAccuracy": 0,
-        "overallValueAccuracy": 4.761904761904762
-      },
-      "episodic": {
-        "formCompletionRate": 4.761904761904762,
-        "fieldsAttempted": 3,
-        "fieldsCorrect": 1,
-        "totalFields": 18,
-        "averageClickAccuracy": 0,
-        "averageValueAccuracy": 4.761904761904762
-      }
-    },
-    "Healthcare & Medical": {
-      "domain": "Healthcare & Medical",
-      "instanceCount": 3,
-      "atomic": {
-        "clickAccuracy": {
-          "String": 0,
-          "Date": 0,
-          "Checkbox": 0,
-          "NumericInput": 0,
-          "Description": 0,
-          "Dropdown": 0
-        },
-        "valueAccuracy": {
-          "String": 0,
-          "Date": 0,
-          "Checkbox": 100,
-          "NumericInput": 0,
-          "Description": 0,
-          "Dropdown": 0
-        },
-        "overallClickAccuracy": 0,
-        "overallValueAccuracy": 10
-      },
-      "episodic": {
-        "formCompletionRate": 10,
-        "fieldsAttempted": 3,
-        "fieldsCorrect": 3,
-        "totalFields": 26,
-        "averageClickAccuracy": 0,
-        "averageValueAccuracy": 10
-      }
-    },
-    "Legal & Compliance": {
-      "domain": "Legal & Compliance",
-      "instanceCount": 3,
-      "atomic": {
-        "clickAccuracy": {
-          "String": 0,
-          "Dropdown": 0,
-          "Description": 0,
-          "Date": 0,
-          "NumericInput": 0,
-          "Checkbox": 0
-        },
-        "valueAccuracy": {
-          "String": 0,
-          "Dropdown": 0,
-          "Description": 0,
-          "Date": 0,
-          "NumericInput": 0,
-          "Checkbox": 33.333333333333336
-        },
-        "overallClickAccuracy": 0,
-        "overallValueAccuracy": 6.060606060606061
-      },
-      "episodic": {
-        "formCompletionRate": 6.060606060606061,
-        "fieldsAttempted": 2,
-        "fieldsCorrect": 2,
-        "totalFields": 31,
-        "averageClickAccuracy": 0,
-        "averageValueAccuracy": 6.060606060606061
-      }
-    },
-    "Construction & Manufacturing": {
-      "domain": "Construction & Manufacturing",
-      "instanceCount": 2,
-      "atomic": {
-        "clickAccuracy": {
-          "String": 0,
-          "NumericInput": 0,
-          "Date": 0,
-          "Description": 0,
-          "Dropdown": 0
-        },
-        "valueAccuracy": {
-          "String": 0,
-          "NumericInput": 0,
-          "Date": 0,
-          "Description": 0,
-          "Dropdown": 0
-        },
+        "clickAccuracy": {},
+        "valueAccuracy": {},
         "overallClickAccuracy": 0,
         "overallValueAccuracy": 0
       },
@@ -271,7 +55,115 @@
         "formCompletionRate": 0,
         "fieldsAttempted": 0,
         "fieldsCorrect": 0,
-        "totalFields": 23,
+        "totalFields": 0,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 0
+      }
+    },
+    "Arts & Creative": {
+      "domain": "Arts & Creative",
+      "instanceCount": 3,
+      "atomic": {
+        "clickAccuracy": {},
+        "valueAccuracy": {},
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 0
+      },
+      "episodic": {
+        "formCompletionRate": 0,
+        "fieldsAttempted": 0,
+        "fieldsCorrect": 0,
+        "totalFields": 0,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 0
+      }
+    },
+    "Technology & Software": {
+      "domain": "Technology & Software",
+      "instanceCount": 2,
+      "atomic": {
+        "clickAccuracy": {},
+        "valueAccuracy": {},
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 0
+      },
+      "episodic": {
+        "formCompletionRate": 0,
+        "fieldsAttempted": 0,
+        "fieldsCorrect": 0,
+        "totalFields": 0,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 0
+      }
+    },
+    "Finance & Banking": {
+      "domain": "Finance & Banking",
+      "instanceCount": 3,
+      "atomic": {
+        "clickAccuracy": {},
+        "valueAccuracy": {},
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 0
+      },
+      "episodic": {
+        "formCompletionRate": 0,
+        "fieldsAttempted": 0,
+        "fieldsCorrect": 0,
+        "totalFields": 0,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 0
+      }
+    },
+    "Healthcare & Medical": {
+      "domain": "Healthcare & Medical",
+      "instanceCount": 3,
+      "atomic": {
+        "clickAccuracy": {},
+        "valueAccuracy": {},
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 0
+      },
+      "episodic": {
+        "formCompletionRate": 0,
+        "fieldsAttempted": 0,
+        "fieldsCorrect": 0,
+        "totalFields": 0,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 0
+      }
+    },
+    "Legal & Compliance": {
+      "domain": "Legal & Compliance",
+      "instanceCount": 3,
+      "atomic": {
+        "clickAccuracy": {},
+        "valueAccuracy": {},
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 0
+      },
+      "episodic": {
+        "formCompletionRate": 0,
+        "fieldsAttempted": 0,
+        "fieldsCorrect": 0,
+        "totalFields": 0,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 0
+      }
+    },
+    "Construction & Manufacturing": {
+      "domain": "Construction & Manufacturing",
+      "instanceCount": 2,
+      "atomic": {
+        "clickAccuracy": {},
+        "valueAccuracy": {},
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 0
+      },
+      "episodic": {
+        "formCompletionRate": 0,
+        "fieldsAttempted": 0,
+        "fieldsCorrect": 0,
+        "totalFields": 0,
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       }
@@ -294,51 +186,11 @@
         "multiPage": false,
         "formPath": "/academic-research/job-application"
       },
-      "agentName": "rule-based",
-      "fieldResults": [
-        {
-          "fieldId": "name",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Alice Zhang",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "position",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Software Engineer",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "department",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Engineering",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "cover_letter",
-          "fieldType": "Description",
-          "predictedValue": "",
-          "goldValue": "I am passionate about software development and excited to contribute my skills to the Engineering department.",
-          "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
-        }
-      ],
+      "agentName": "rule-based-demo",
+      "fieldResults": [],
       "atomicMetrics": {
-        "clickAccuracy": {
-          "String": 0,
-          "Description": 0
-        },
-        "valueAccuracy": {
-          "String": 0,
-          "Description": 0
-        },
+        "clickAccuracy": {},
+        "valueAccuracy": {},
         "overallClickAccuracy": 0,
         "overallValueAccuracy": 0
       },
@@ -346,13 +198,15 @@
         "formCompletionRate": 0,
         "fieldsAttempted": 0,
         "fieldsCorrect": 0,
-        "totalFields": 4,
+        "totalFields": 0,
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 2004,
-      "errors": [],
-      "submissionSucceeded": true
+      "executionTimeMs": 0,
+      "errors": [
+        "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/academic-research/job-application\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/academic-research/job-application\", waiting until \"domcontentloaded\"\u001b[22m\n"
+      ],
+      "submissionSucceeded": false
     },
     {
       "formInstance": {
@@ -372,64 +226,11 @@
         "multiPage": true,
         "formPath": "/academic-research/grant-application"
       },
-      "agentName": "rule-based",
-      "fieldResults": [
-        {
-          "fieldId": "First Name",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Diana",
-          "clickAccurate": null,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "Last Name",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Bridges",
-          "clickAccurate": null,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "Email",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "wmills@shields.net",
-          "clickAccurate": null,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "Gender",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Female",
-          "clickAccurate": null,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "Date of Birth",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "1951/09/28",
-          "clickAccurate": null,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "Subscribe to Newsletter",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": false,
-          "clickAccurate": null,
-          "valueAccurate": false
-        }
-      ],
+      "agentName": "rule-based-demo",
+      "fieldResults": [],
       "atomicMetrics": {
-        "clickAccuracy": {
-          "String": 0
-        },
-        "valueAccuracy": {
-          "String": 0
-        },
+        "clickAccuracy": {},
+        "valueAccuracy": {},
         "overallClickAccuracy": 0,
         "overallValueAccuracy": 0
       },
@@ -437,12 +238,14 @@
         "formCompletionRate": 0,
         "fieldsAttempted": 0,
         "fieldsCorrect": 0,
-        "totalFields": 6,
+        "totalFields": 0,
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 31505,
-      "errors": [],
+      "executionTimeMs": 0,
+      "errors": [
+        "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/academic-research/grant-application\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/academic-research/grant-application\", waiting until \"domcontentloaded\"\u001b[22m\n"
+      ],
       "submissionSucceeded": false
     },
     {
@@ -467,73 +270,11 @@
         "multiPage": false,
         "formPath": "/academic-research/paper-submission"
       },
-      "agentName": "rule-based",
-      "fieldResults": [
-        {
-          "fieldId": "author_name",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Alice Johnson",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "email",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "alice.johnson@university.edu",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "paper_title",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Advancements in Deep Learning for Image Recognition",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "abstract",
-          "fieldType": "Description",
-          "predictedValue": "",
-          "goldValue": "This paper explores recent innovations in deep learning models, focusing on their applications in image recognition and classification.",
-          "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
-        },
-        {
-          "fieldId": "keywords",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": [
-            "Deep Learning",
-            "Image Recognition",
-            "Neural Networks"
-          ],
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "category",
-          "fieldType": "Dropdown",
-          "predictedValue": "",
-          "goldValue": "Artificial Intelligence",
-          "clickAccurate": false,
-          "valueAccurate": false
-        }
-      ],
+      "agentName": "rule-based-demo",
+      "fieldResults": [],
       "atomicMetrics": {
-        "clickAccuracy": {
-          "String": 0,
-          "Description": 0,
-          "Dropdown": 0
-        },
-        "valueAccuracy": {
-          "String": 0,
-          "Description": 0,
-          "Dropdown": 0
-        },
+        "clickAccuracy": {},
+        "valueAccuracy": {},
         "overallClickAccuracy": 0,
         "overallValueAccuracy": 0
       },
@@ -541,13 +282,15 @@
         "formCompletionRate": 0,
         "fieldsAttempted": 0,
         "fieldsCorrect": 0,
-        "totalFields": 6,
+        "totalFields": 0,
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1626,
-      "errors": [],
-      "submissionSucceeded": true
+      "executionTimeMs": 0,
+      "errors": [
+        "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/academic-research/paper-submission\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/academic-research/paper-submission\", waiting until \"domcontentloaded\"\u001b[22m\n"
+      ],
+      "submissionSucceeded": false
     },
     {
       "formInstance": {
@@ -571,87 +314,11 @@
         "multiPage": true,
         "formPath": "/academic-research/course-registration"
       },
-      "agentName": "rule-based",
-      "fieldResults": [
-        {
-          "fieldId": "student_name",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Jessica Kennedy",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "student_id",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": 88741153,
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "email",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "wendy24@yahoo.com",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "phone",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "001-250-204-3652x75507",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "semester",
-          "fieldType": "Dropdown",
-          "predictedValue": "",
-          "goldValue": "Summer 2025",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "program",
-          "fieldType": "Dropdown",
-          "predictedValue": "",
-          "goldValue": "Software Engineering",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "Selected Courses",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": [
-            "CS104 - Web Development"
-          ],
-          "clickAccurate": null,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "comments",
-          "fieldType": "Description",
-          "predictedValue": "",
-          "goldValue": "No special requirements.",
-          "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
-        }
-      ],
+      "agentName": "rule-based-demo",
+      "fieldResults": [],
       "atomicMetrics": {
-        "clickAccuracy": {
-          "String": 0,
-          "Dropdown": 0,
-          "Description": 0
-        },
-        "valueAccuracy": {
-          "String": 0,
-          "Dropdown": 0,
-          "Description": 0
-        },
+        "clickAccuracy": {},
+        "valueAccuracy": {},
         "overallClickAccuracy": 0,
         "overallValueAccuracy": 0
       },
@@ -659,13 +326,15 @@
         "formCompletionRate": 0,
         "fieldsAttempted": 0,
         "fieldsCorrect": 0,
-        "totalFields": 8,
+        "totalFields": 0,
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1479,
-      "errors": [],
-      "submissionSucceeded": true
+      "executionTimeMs": 0,
+      "errors": [
+        "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/academic-research/course-registration\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/academic-research/course-registration\", waiting until \"domcontentloaded\"\u001b[22m\n"
+      ],
+      "submissionSucceeded": false
     },
     {
       "formInstance": {
@@ -701,144 +370,11 @@
         "multiPage": true,
         "formPath": "/academic-research/scholarship-application"
       },
-      "agentName": "rule-based",
-      "fieldResults": [
-        {
-          "fieldId": "firstName",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Nicholas",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "middleName",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Anne",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "lastName",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Collins",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "studentId",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": 22281229,
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "major",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Philosophy",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "gpa",
-          "fieldType": "NumericInput",
-          "predictedValue": "",
-          "goldValue": 3.19,
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "academicYear",
-          "fieldType": "Dropdown",
-          "predictedValue": "",
-          "goldValue": "Sophomore",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "financialAid",
-          "fieldType": "Dropdown",
-          "predictedValue": "",
-          "goldValue": "Other Scholarship",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "familyIncome",
-          "fieldType": "Dropdown",
-          "predictedValue": "",
-          "goldValue": 80303,
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "achievements",
-          "fieldType": "Description",
-          "predictedValue": "",
-          "goldValue": [
-            "Winner of the State Physics Olympiad",
-            "the Dean’s List Award for Outstanding Academic Performance"
-          ],
-          "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
-        },
-        {
-          "fieldId": "extracurricular",
-          "fieldType": "Description",
-          "predictedValue": "",
-          "goldValue": [
-            "Co-founder of the Campus Startup Initiative",
-            "President of the Student Council",
-            "Volunteer at the local community center",
-            "Coordinator of the Youth Empowerment Program"
-          ],
-          "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
-        },
-        {
-          "fieldId": "Statement of Purpose",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Being a first-generation college student, this scholarship is crucial for me to continue my education. It will allow me to focus on academic excellence while contributing to community service, helping me achieve my dream of becoming a leader in public health.",
-          "clickAccurate": null,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "reference1",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Kevin Walker",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "reference1Email",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "psolomon@yahoo.com",
-          "clickAccurate": false,
-          "valueAccurate": false
-        }
-      ],
+      "agentName": "rule-based-demo",
+      "fieldResults": [],
       "atomicMetrics": {
-        "clickAccuracy": {
-          "String": 0,
-          "NumericInput": 0,
-          "Dropdown": 0,
-          "Description": 0
-        },
-        "valueAccuracy": {
-          "String": 0,
-          "NumericInput": 0,
-          "Dropdown": 0,
-          "Description": 0
-        },
+        "clickAccuracy": {},
+        "valueAccuracy": {},
         "overallClickAccuracy": 0,
         "overallValueAccuracy": 0
       },
@@ -846,13 +382,15 @@
         "formCompletionRate": 0,
         "fieldsAttempted": 0,
         "fieldsCorrect": 0,
-        "totalFields": 14,
+        "totalFields": 0,
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1645,
-      "errors": [],
-      "submissionSucceeded": true
+      "executionTimeMs": 0,
+      "errors": [
+        "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/academic-research/scholarship-application\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/academic-research/scholarship-application\", waiting until \"domcontentloaded\"\u001b[22m\n"
+      ],
+      "submissionSucceeded": false
     },
     {
       "formInstance": {
@@ -883,178 +421,27 @@
         "multiPage": true,
         "formPath": "/professional-business/startup-funding"
       },
-      "agentName": "rule-based",
-      "fieldResults": [
-        {
-          "fieldId": "company_name",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Pinnacle Solutions",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "company_website",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "https://www.haynes-morales.com/",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "founding_date",
-          "fieldType": "Date",
-          "predictedValue": "",
-          "goldValue": "2020/08/29",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "business_stage",
-          "fieldType": "Dropdown",
-          "predictedValue": "Growth",
-          "goldValue": "Growth",
-          "clickAccurate": false,
-          "valueAccurate": true
-        },
-        {
-          "fieldId": "founder_name",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Kari Ibarra",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "founder_email",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "devin22@gmail.com",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "founder_phone",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "1738464335",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "linkedin_profile",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "https://linkedin.com/in/kaylamills",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "funding_amount",
-          "fieldType": "NumericInput",
-          "predictedValue": "",
-          "goldValue": 4311070,
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "equity_offered",
-          "fieldType": "NumericInput",
-          "predictedValue": "5",
-          "goldValue": 8,
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "current_valuation",
-          "fieldType": "NumericInput",
-          "predictedValue": "",
-          "goldValue": 1554377,
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "funding_purpose",
-          "fieldType": "Description",
-          "predictedValue": "",
-          "goldValue": "Hiring",
-          "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
-        },
-        {
-          "fieldId": "business_model",
-          "fieldType": "Description",
-          "predictedValue": "",
-          "goldValue": "A marketplace for freelancers offering digital services to small businesses and startups.",
-          "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
-        },
-        {
-          "fieldId": "target_market",
-          "fieldType": "Description",
-          "predictedValue": "",
-          "goldValue": "Parents looking for eco-friendly and sustainable products for their children.",
-          "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
-        },
-        {
-          "fieldId": "current_revenue",
-          "fieldType": "NumericInput",
-          "predictedValue": "",
-          "goldValue": 200000,
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "team_size",
-          "fieldType": "NumericInput",
-          "predictedValue": "20",
-          "goldValue": 100,
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "additional_comments",
-          "fieldType": "Description",
-          "predictedValue": "",
-          "goldValue": "Excited to take the company to the next level.",
-          "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
-        }
-      ],
+      "agentName": "rule-based-demo",
+      "fieldResults": [],
       "atomicMetrics": {
-        "clickAccuracy": {
-          "String": 0,
-          "Date": 0,
-          "Dropdown": 0,
-          "NumericInput": 0,
-          "Description": 0
-        },
-        "valueAccuracy": {
-          "String": 0,
-          "Date": 0,
-          "Dropdown": 100,
-          "NumericInput": 0,
-          "Description": 0
-        },
+        "clickAccuracy": {},
+        "valueAccuracy": {},
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 5.88235294117647
+        "overallValueAccuracy": 0
       },
       "episodicMetrics": {
-        "formCompletionRate": 5.88235294117647,
-        "fieldsAttempted": 3,
-        "fieldsCorrect": 1,
-        "totalFields": 17,
+        "formCompletionRate": 0,
+        "fieldsAttempted": 0,
+        "fieldsCorrect": 0,
+        "totalFields": 0,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 5.88235294117647
+        "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1644,
-      "errors": [],
-      "submissionSucceeded": true
+      "executionTimeMs": 0,
+      "errors": [
+        "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/professional-business/startup-funding\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/professional-business/startup-funding\", waiting until \"domcontentloaded\"\u001b[22m\n"
+      ],
+      "submissionSucceeded": false
     },
     {
       "formInstance": {
@@ -1087,192 +474,27 @@
         "multiPage": true,
         "formPath": "/professional-business/rental-application"
       },
-      "agentName": "rule-based",
-      "fieldResults": [
-        {
-          "fieldId": "full_name",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Amy Soto",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "email",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "arthurperez@webb.com",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "phone",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "001-601-137-0101x270",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "date_of_birth",
-          "fieldType": "Date",
-          "predictedValue": "",
-          "goldValue": "1979/05/24",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "current_street",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "325 Clark Tunnel",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "current_city",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Christopherburgh",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "current_state",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Alabama",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "current_zip",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "37382",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "employer_name",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Edwards PLC",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "job_title",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Environmental manager",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "monthly_income",
-          "fieldType": "NumericInput",
-          "predictedValue": "",
-          "goldValue": 13121,
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "employment_length",
-          "fieldType": "String",
-          "predictedValue": "1 year",
-          "goldValue": "1 year",
-          "clickAccurate": false,
-          "valueAccurate": true
-        },
-        {
-          "fieldId": "preferred_move_date",
-          "fieldType": "Date",
-          "predictedValue": "",
-          "goldValue": "2025/01/26",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "lease_term",
-          "fieldType": "Dropdown",
-          "predictedValue": "6 months",
-          "goldValue": "6 months",
-          "clickAccurate": false,
-          "valueAccurate": true
-        },
-        {
-          "fieldId": "max_rent",
-          "fieldType": "NumericInput",
-          "predictedValue": "",
-          "goldValue": 2323,
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "preferred_area",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Near public transport",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "pets",
-          "fieldType": "Dropdown",
-          "predictedValue": "",
-          "goldValue": "No",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "pet_details",
-          "fieldType": "Description",
-          "predictedValue": "No pets",
-          "goldValue": "No pets",
-          "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
-        },
-        {
-          "fieldId": "additional_info",
-          "fieldType": "Description",
-          "predictedValue": "",
-          "goldValue": "Prefer quiet and residential areas.",
-          "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
-        }
-      ],
+      "agentName": "rule-based-demo",
+      "fieldResults": [],
       "atomicMetrics": {
-        "clickAccuracy": {
-          "String": 0,
-          "Date": 0,
-          "NumericInput": 0,
-          "Dropdown": 0,
-          "Description": 0
-        },
-        "valueAccuracy": {
-          "String": 9.090909090909092,
-          "Date": 0,
-          "NumericInput": 0,
-          "Dropdown": 50,
-          "Description": 0
-        },
+        "clickAccuracy": {},
+        "valueAccuracy": {},
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 10.526315789473683
+        "overallValueAccuracy": 0
       },
       "episodicMetrics": {
-        "formCompletionRate": 10.526315789473683,
-        "fieldsAttempted": 3,
-        "fieldsCorrect": 2,
-        "totalFields": 19,
+        "formCompletionRate": 0,
+        "fieldsAttempted": 0,
+        "fieldsCorrect": 0,
+        "totalFields": 0,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 10.526315789473683
+        "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1642,
-      "errors": [],
-      "submissionSucceeded": true
+      "executionTimeMs": 0,
+      "errors": [
+        "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/professional-business/rental-application\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/professional-business/rental-application\", waiting until \"domcontentloaded\"\u001b[22m\n"
+      ],
+      "submissionSucceeded": false
     },
     {
       "formInstance": {
@@ -1303,177 +525,27 @@
         "multiPage": false,
         "formPath": "/professional-business/workshop-registration"
       },
-      "agentName": "rule-based",
-      "fieldResults": [
-        {
-          "fieldId": "full_name",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Daniel Brown",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "email",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "ahale@hotmail.com",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "phone",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "244-169-5801x7072",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "organization",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Wells-Wilson",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "workshop_type",
-          "fieldType": "Dropdown",
-          "predictedValue": "",
-          "goldValue": "Finance & Investment",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "session_date",
-          "fieldType": "Date",
-          "predictedValue": "",
-          "goldValue": "2025/02/02",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "session_time",
-          "fieldType": "Dropdown",
-          "predictedValue": "",
-          "goldValue": "6PM",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "delivery_mode",
-          "fieldType": "Dropdown",
-          "predictedValue": "",
-          "goldValue": "Hybrid",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "education_level",
-          "fieldType": "Dropdown",
-          "predictedValue": "",
-          "goldValue": "Master's Degree",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "experience_years",
-          "fieldType": "NumericInput",
-          "predictedValue": "",
-          "goldValue": 20,
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "current_role",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Armed forces training and education officer",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "dietary_requirements",
-          "fieldType": "Dropdown",
-          "predictedValue": "",
-          "goldValue": "Halal",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "accessibility_needs",
-          "fieldType": "Description",
-          "predictedValue": "",
-          "goldValue": "None",
-          "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
-        },
-        {
-          "fieldId": "payment_method",
-          "fieldType": "Dropdown",
-          "predictedValue": "Company Sponsored",
-          "goldValue": "Company Sponsored",
-          "clickAccurate": false,
-          "valueAccurate": true
-        },
-        {
-          "fieldId": "billing_address",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "USS Gonzalez\nFPO AE 24907",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "expectations",
-          "fieldType": "Description",
-          "predictedValue": "",
-          "goldValue": "I would like to improve my leadership and communication skills to manage my team more effectively.",
-          "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
-        },
-        {
-          "fieldId": "special_requests",
-          "fieldType": "Description",
-          "predictedValue": "",
-          "goldValue": "I would like to see examples of successful leadership strategies in small and medium-sized businesses.",
-          "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
-        }
-      ],
+      "agentName": "rule-based-demo",
+      "fieldResults": [],
       "atomicMetrics": {
-        "clickAccuracy": {
-          "String": 0,
-          "Dropdown": 0,
-          "Date": 0,
-          "NumericInput": 0,
-          "Description": 0
-        },
-        "valueAccuracy": {
-          "String": 0,
-          "Dropdown": 16.666666666666664,
-          "Date": 0,
-          "NumericInput": 0,
-          "Description": 0
-        },
+        "clickAccuracy": {},
+        "valueAccuracy": {},
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 5.88235294117647
+        "overallValueAccuracy": 0
       },
       "episodicMetrics": {
-        "formCompletionRate": 5.88235294117647,
-        "fieldsAttempted": 1,
-        "fieldsCorrect": 1,
-        "totalFields": 17,
+        "formCompletionRate": 0,
+        "fieldsAttempted": 0,
+        "fieldsCorrect": 0,
+        "totalFields": 0,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 5.88235294117647
+        "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1647,
-      "errors": [],
-      "submissionSucceeded": true
+      "executionTimeMs": 0,
+      "errors": [
+        "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/professional-business/workshop-registration\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/professional-business/workshop-registration\", waiting until \"domcontentloaded\"\u001b[22m\n"
+      ],
+      "submissionSucceeded": false
     },
     {
       "formInstance": {
@@ -1503,167 +575,27 @@
         "multiPage": true,
         "formPath": "/professional-business/membership-application"
       },
-      "agentName": "rule-based",
-      "fieldResults": [
-        {
-          "fieldId": "full_name",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "John Smith",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "email",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "john.smith@gmail.com",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "phone",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "555-0123",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "date_of_birth",
-          "fieldType": "Date",
-          "predictedValue": "",
-          "goldValue": "1990/01/15",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "membership_level",
-          "fieldType": "Dropdown",
-          "predictedValue": "",
-          "goldValue": "Student Member",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "membership_duration",
-          "fieldType": "Dropdown",
-          "predictedValue": "",
-          "goldValue": "1 Year",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "education_level",
-          "fieldType": "Dropdown",
-          "predictedValue": "",
-          "goldValue": "Bachelor's Degree",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "field_of_study",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Computer Science",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "professional_certifications",
-          "fieldType": "Description",
-          "predictedValue": "",
-          "goldValue": "None",
-          "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
-        },
-        {
-          "fieldId": "current_employer",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "University of Technology",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "job_title",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Student",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "years_experience",
-          "fieldType": "NumericInput",
-          "predictedValue": "",
-          "goldValue": 0,
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "industry",
-          "fieldType": "String",
-          "predictedValue": "Technology",
-          "goldValue": "Education",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "reference_name",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Dr. Emily Johnson",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "reference_email",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "emily.johnson@gmail.com",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "reference_relationship",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Professor",
-          "clickAccurate": false,
-          "valueAccurate": false
-        }
-      ],
+      "agentName": "rule-based-demo",
+      "fieldResults": [],
       "atomicMetrics": {
-        "clickAccuracy": {
-          "String": 0,
-          "Date": 0,
-          "Dropdown": 0,
-          "Description": 0,
-          "NumericInput": 0
-        },
-        "valueAccuracy": {
-          "String": 0,
-          "Date": 0,
-          "Dropdown": 0,
-          "Description": 0,
-          "NumericInput": 0
-        },
+        "clickAccuracy": {},
+        "valueAccuracy": {},
         "overallClickAccuracy": 0,
         "overallValueAccuracy": 0
       },
       "episodicMetrics": {
         "formCompletionRate": 0,
-        "fieldsAttempted": 1,
+        "fieldsAttempted": 0,
         "fieldsCorrect": 0,
-        "totalFields": 16,
+        "totalFields": 0,
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1654,
-      "errors": [],
-      "submissionSucceeded": true
+      "executionTimeMs": 0,
+      "errors": [
+        "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/professional-business/membership-application\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/professional-business/membership-application\", waiting until \"domcontentloaded\"\u001b[22m\n"
+      ],
+      "submissionSucceeded": false
     },
     {
       "formInstance": {
@@ -1686,106 +618,27 @@
         "multiPage": false,
         "formPath": "/arts-creative/exhibition-submission"
       },
-      "agentName": "rule-based",
-      "fieldResults": [
-        {
-          "fieldId": "Artist Name",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Amanda Lee",
-          "clickAccurate": null,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "Email Address",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "amanda.lee1985@gmail.com",
-          "clickAccurate": null,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "Artwork Title",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Enchanted Forest",
-          "clickAccurate": null,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "medium",
-          "fieldType": "Dropdown",
-          "predictedValue": "",
-          "goldValue": "Painting",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "Dimensions (in cm)",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "120 x 90 x 4",
-          "clickAccurate": null,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "Year Created",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": 2022,
-          "clickAccurate": null,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "Artwork Description",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "This painting depicts an otherworldly forest where rays of sunlight filter through the ancient trees, creating a dappled pattern on the forest floor. The rich, deep greens of the foliage contrast with the warm, golden hues of the sunlight, giving the scene an almost magical quality. Delicate wildflowers peek out from between the roots, adding splashes of color to the otherwise earthy palette. It's a representation of the tranquility and mystery that one might encounter in a hidden forest.",
-          "clickAccurate": null,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "exhibition_period",
-          "fieldType": "Dropdown",
-          "predictedValue": "Spring 2024",
-          "goldValue": "Spring 2024",
-          "clickAccurate": false,
-          "valueAccurate": true
-        },
-        {
-          "fieldId": "for_sale",
-          "fieldType": "Checkbox",
-          "predictedValue": "true",
-          "goldValue": true,
-          "clickAccurate": false,
-          "valueAccurate": true
-        }
-      ],
+      "agentName": "rule-based-demo",
+      "fieldResults": [],
       "atomicMetrics": {
-        "clickAccuracy": {
-          "String": 0,
-          "Dropdown": 0,
-          "Checkbox": 0
-        },
-        "valueAccuracy": {
-          "String": 0,
-          "Dropdown": 50,
-          "Checkbox": 100
-        },
+        "clickAccuracy": {},
+        "valueAccuracy": {},
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 22.22222222222222
+        "overallValueAccuracy": 0
       },
       "episodicMetrics": {
-        "formCompletionRate": 22.22222222222222,
-        "fieldsAttempted": 2,
-        "fieldsCorrect": 2,
-        "totalFields": 9,
+        "formCompletionRate": 0,
+        "fieldsAttempted": 0,
+        "fieldsCorrect": 0,
+        "totalFields": 0,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 22.22222222222222
+        "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1638,
-      "errors": [],
-      "submissionSucceeded": true
+      "executionTimeMs": 0,
+      "errors": [
+        "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/arts-creative/exhibition-submission\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/arts-creative/exhibition-submission\", waiting until \"domcontentloaded\"\u001b[22m\n"
+      ],
+      "submissionSucceeded": false
     },
     {
       "formInstance": {
@@ -1810,108 +663,11 @@
         "multiPage": false,
         "formPath": "/arts-creative/literary-submission"
       },
-      "agentName": "rule-based",
-      "fieldResults": [
-        {
-          "fieldId": "Author Name",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Emma Thompson",
-          "clickAccurate": null,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "Email Address",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "emma.thompson123@gmail.com",
-          "clickAccurate": null,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "Title",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "A Journey Through Time",
-          "clickAccurate": null,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "genre",
-          "fieldType": "Dropdown",
-          "predictedValue": "",
-          "goldValue": "Fiction",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "Word Count",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": 3200,
-          "clickAccurate": null,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "Abstract/Summary",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "A historical novel that delves into the life of a young woman living through wartime Europe.",
-          "clickAccurate": null,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "Manuscript File",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "None",
-          "clickAccurate": null,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "issue",
-          "fieldType": "Dropdown",
-          "predictedValue": "",
-          "goldValue": "Spring 2024",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "previously_published",
-          "fieldType": "Checkbox",
-          "predictedValue": "",
-          "goldValue": "No",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "simultaneous_submission",
-          "fieldType": "Checkbox",
-          "predictedValue": "",
-          "goldValue": "Yes",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "I agree to the submission guidelines and terms of publication",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Yes",
-          "clickAccurate": null,
-          "valueAccurate": false
-        }
-      ],
+      "agentName": "rule-based-demo",
+      "fieldResults": [],
       "atomicMetrics": {
-        "clickAccuracy": {
-          "String": 0,
-          "Dropdown": 0,
-          "Checkbox": 0
-        },
-        "valueAccuracy": {
-          "String": 0,
-          "Dropdown": 0,
-          "Checkbox": 0
-        },
+        "clickAccuracy": {},
+        "valueAccuracy": {},
         "overallClickAccuracy": 0,
         "overallValueAccuracy": 0
       },
@@ -1919,13 +675,15 @@
         "formCompletionRate": 0,
         "fieldsAttempted": 0,
         "fieldsCorrect": 0,
-        "totalFields": 11,
+        "totalFields": 0,
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1652,
-      "errors": [],
-      "submissionSucceeded": true
+      "executionTimeMs": 0,
+      "errors": [
+        "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/arts-creative/literary-submission\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/arts-creative/literary-submission\", waiting until \"domcontentloaded\"\u001b[22m\n"
+      ],
+      "submissionSucceeded": false
     },
     {
       "formInstance": {
@@ -1953,132 +711,11 @@
         "multiPage": true,
         "formPath": "/arts-creative/speaker-application"
       },
-      "agentName": "rule-based",
-      "fieldResults": [
-        {
-          "fieldId": "Full Name",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "John Adams",
-          "clickAccurate": null,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "Email Address",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "john.adams56@gmail.com",
-          "clickAccurate": null,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "Phone Number",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "123-456-7890",
-          "clickAccurate": null,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "organization",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Tech Innovations Inc.",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "Presentation Title",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "The Future of Artificial Intelligence in Visual Arts",
-          "clickAccurate": null,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "Topic Area",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Visual Arts",
-          "clickAccurate": null,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "Presentation Abstract",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "This presentation will explore how AI is being used in the creation of visual art, including generative art algorithms and AI-based design tools. We will examine the intersection of creativity and technology and discuss the ethical implications of AI in artistic expression.",
-          "clickAccurate": null,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "Learning Objectives",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "1. Understand the role of AI in visual arts. 2. Explore AI-generated artworks and their impact on the art world. 3. Discuss ethical considerations in AI-driven creativity.",
-          "clickAccurate": null,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "Professional Biography",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "John Adams is a renowned technologist and artist, bridging the gap between AI and visual arts. He has worked on multiple projects integrating AI with digital art, and his works have been exhibited in various international galleries.",
-          "clickAccurate": null,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "CV/Resume",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "None",
-          "clickAccurate": null,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "speaking_experience",
-          "fieldType": "Description",
-          "predictedValue": "",
-          "goldValue": "1. Keynote Speaker at ArtTech Symposium 2022. 2. Panelist at AI and Creativity Conference 2021.",
-          "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
-        },
-        {
-          "fieldId": "Presentation Format",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Lecture",
-          "clickAccurate": null,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "tech_requirements",
-          "fieldType": "Description",
-          "predictedValue": "",
-          "goldValue": "Projector, internet access, AI demo tools.",
-          "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
-        },
-        {
-          "fieldId": "I agree to the speaker guidelines and terms of participation",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Yes",
-          "clickAccurate": null,
-          "valueAccurate": false
-        }
-      ],
+      "agentName": "rule-based-demo",
+      "fieldResults": [],
       "atomicMetrics": {
-        "clickAccuracy": {
-          "String": 0,
-          "Description": 0
-        },
-        "valueAccuracy": {
-          "String": 0,
-          "Description": 0
-        },
+        "clickAccuracy": {},
+        "valueAccuracy": {},
         "overallClickAccuracy": 0,
         "overallValueAccuracy": 0
       },
@@ -2086,13 +723,15 @@
         "formCompletionRate": 0,
         "fieldsAttempted": 0,
         "fieldsCorrect": 0,
-        "totalFields": 14,
+        "totalFields": 0,
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1652,
-      "errors": [],
-      "submissionSucceeded": true
+      "executionTimeMs": 0,
+      "errors": [
+        "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/arts-creative/speaker-application\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/arts-creative/speaker-application\", waiting until \"domcontentloaded\"\u001b[22m\n"
+      ],
+      "submissionSucceeded": false
     },
     {
       "formInstance": {
@@ -2116,95 +755,11 @@
         "multiPage": false,
         "formPath": "/tech-software/bug-report"
       },
-      "agentName": "rule-based",
-      "fieldResults": [
-        {
-          "fieldId": "title",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "App crashes when opening the settings menu",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "severity",
-          "fieldType": "Dropdown",
-          "predictedValue": "",
-          "goldValue": "High",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "environment",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Production",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "browser",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "iOS 15.4, iPhone 12",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "steps",
-          "fieldType": "Description",
-          "predictedValue": "",
-          "goldValue": "1. Open the app. 2. Tap on the settings icon. 3. App crashes immediately.",
-          "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
-        },
-        {
-          "fieldId": "expected",
-          "fieldType": "Description",
-          "predictedValue": "",
-          "goldValue": "Settings menu should open without crashing.",
-          "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
-        },
-        {
-          "fieldId": "actual",
-          "fieldType": "Description",
-          "predictedValue": "",
-          "goldValue": "App crashes immediately when settings menu is opened.",
-          "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
-        },
-        {
-          "fieldId": "reporter",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "John Williams",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "email",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "john.williams87@gmail.com",
-          "clickAccurate": false,
-          "valueAccurate": false
-        }
-      ],
+      "agentName": "rule-based-demo",
+      "fieldResults": [],
       "atomicMetrics": {
-        "clickAccuracy": {
-          "String": 0,
-          "Dropdown": 0,
-          "Description": 0
-        },
-        "valueAccuracy": {
-          "String": 0,
-          "Dropdown": 0,
-          "Description": 0
-        },
+        "clickAccuracy": {},
+        "valueAccuracy": {},
         "overallClickAccuracy": 0,
         "overallValueAccuracy": 0
       },
@@ -2212,13 +767,15 @@
         "formCompletionRate": 0,
         "fieldsAttempted": 0,
         "fieldsCorrect": 0,
-        "totalFields": 9,
+        "totalFields": 0,
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1639,
-      "errors": [],
-      "submissionSucceeded": true
+      "executionTimeMs": 0,
+      "errors": [
+        "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/tech-software/bug-report\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/tech-software/bug-report\", waiting until \"domcontentloaded\"\u001b[22m\n"
+      ],
+      "submissionSucceeded": false
     },
     {
       "formInstance": {
@@ -2244,125 +801,27 @@
         "multiPage": false,
         "formPath": "/tech-software/support-request"
       },
-      "agentName": "rule-based",
-      "fieldResults": [
-        {
-          "fieldId": "requestType",
-          "fieldType": "Dropdown",
-          "predictedValue": "Network Issue",
-          "goldValue": "Network Issue",
-          "clickAccurate": false,
-          "valueAccurate": true
-        },
-        {
-          "fieldId": "priority",
-          "fieldType": "Dropdown",
-          "predictedValue": "High- Work Blocked",
-          "goldValue": "Urgent-System Down",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "subject",
-          "fieldType": "String",
-          "predictedValue": "CRM software not loading",
-          "goldValue": "Entire office network down",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "Brief description of the issue",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "All network access is down across the entire office.",
-          "clickAccurate": null,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "description",
-          "fieldType": "Description",
-          "predictedValue": "",
-          "goldValue": "Employees are unable to access the internet, file servers, or any internal systems. The issue started around 10:30 AM today.",
-          "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
-        },
-        {
-          "fieldId": "location",
-          "fieldType": "String",
-          "predictedValue": "Sales",
-          "goldValue": "All departments",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "affectedUsers",
-          "fieldType": "NumericInput",
-          "predictedValue": "20",
-          "goldValue": 50,
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "availableTime",
-          "fieldType": "String",
-          "predictedValue": "Mon-Fri 9AM-6PM",
-          "goldValue": "Mon-Fri 9AM-5PM",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "requesterName",
-          "fieldType": "String",
-          "predictedValue": "Emma Williams",
-          "goldValue": "Michael Johnson",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "requesterEmail",
-          "fieldType": "String",
-          "predictedValue": "emma.williams@company.com",
-          "goldValue": "michael.johnson@company.com",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "phoneNumber",
-          "fieldType": "String",
-          "predictedValue": "+1 555-7654",
-          "goldValue": "+1 555-9876",
-          "clickAccurate": false,
-          "valueAccurate": false
-        }
-      ],
+      "agentName": "rule-based-demo",
+      "fieldResults": [],
       "atomicMetrics": {
-        "clickAccuracy": {
-          "Dropdown": 0,
-          "String": 0,
-          "Description": 0,
-          "NumericInput": 0
-        },
-        "valueAccuracy": {
-          "Dropdown": 50,
-          "String": 0,
-          "Description": 0,
-          "NumericInput": 0
-        },
+        "clickAccuracy": {},
+        "valueAccuracy": {},
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 9.090909090909092
+        "overallValueAccuracy": 0
       },
       "episodicMetrics": {
-        "formCompletionRate": 9.090909090909092,
-        "fieldsAttempted": 9,
-        "fieldsCorrect": 1,
-        "totalFields": 11,
+        "formCompletionRate": 0,
+        "fieldsAttempted": 0,
+        "fieldsCorrect": 0,
+        "totalFields": 0,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 9.090909090909092
+        "averageValueAccuracy": 0
       },
-      "executionTimeMs": 31517,
-      "errors": [],
-      "submissionSucceeded": true
+      "executionTimeMs": 0,
+      "errors": [
+        "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/tech-software/support-request\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/tech-software/support-request\", waiting until \"domcontentloaded\"\u001b[22m\n"
+      ],
+      "submissionSucceeded": false
     },
     {
       "formInstance": {
@@ -2383,90 +842,27 @@
         "multiPage": false,
         "formPath": "/finance-banking/personal-loan"
       },
-      "agentName": "rule-based",
-      "fieldResults": [
-        {
-          "fieldId": "firstName",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "John",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "middleName",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Stephen",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "lastName",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Tran",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "loanAmount",
-          "fieldType": "NumericInput",
-          "predictedValue": "",
-          "goldValue": 28521,
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "loanTerm",
-          "fieldType": "Dropdown",
-          "predictedValue": "60 months",
-          "goldValue": "60 months",
-          "clickAccurate": false,
-          "valueAccurate": true
-        },
-        {
-          "fieldId": "employmentStatus",
-          "fieldType": "Dropdown",
-          "predictedValue": "",
-          "goldValue": "Part time",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "monthlyIncome",
-          "fieldType": "NumericInput",
-          "predictedValue": "",
-          "goldValue": 4569,
-          "clickAccurate": false,
-          "valueAccurate": false
-        }
-      ],
+      "agentName": "rule-based-demo",
+      "fieldResults": [],
       "atomicMetrics": {
-        "clickAccuracy": {
-          "String": 0,
-          "NumericInput": 0,
-          "Dropdown": 0
-        },
-        "valueAccuracy": {
-          "String": 0,
-          "NumericInput": 0,
-          "Dropdown": 50
-        },
+        "clickAccuracy": {},
+        "valueAccuracy": {},
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 14.285714285714285
+        "overallValueAccuracy": 0
       },
       "episodicMetrics": {
-        "formCompletionRate": 14.285714285714285,
-        "fieldsAttempted": 1,
-        "fieldsCorrect": 1,
-        "totalFields": 7,
+        "formCompletionRate": 0,
+        "fieldsAttempted": 0,
+        "fieldsCorrect": 0,
+        "totalFields": 0,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 14.285714285714285
+        "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1773,
-      "errors": [],
-      "submissionSucceeded": true
+      "executionTimeMs": 0,
+      "errors": [
+        "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/finance-banking/personal-loan\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/finance-banking/personal-loan\", waiting until \"domcontentloaded\"\u001b[22m\n"
+      ],
+      "submissionSucceeded": false
     },
     {
       "formInstance": {
@@ -2485,74 +881,27 @@
         "multiPage": false,
         "formPath": "/finance-banking/account-opening"
       },
-      "agentName": "rule-based",
-      "fieldResults": [
-        {
-          "fieldId": "fullName",
-          "fieldType": "String",
-          "predictedValue": "Rebecca Moore",
-          "goldValue": "George Dawson",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "dateOfBirth",
-          "fieldType": "Date",
-          "predictedValue": "",
-          "goldValue": "1957/08/01",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "Account Type",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Business Account",
-          "clickAccurate": null,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "idType",
-          "fieldType": "Dropdown",
-          "predictedValue": "",
-          "goldValue": "State ID",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "idNumber",
-          "fieldType": "String",
-          "predictedValue": "769415459",
-          "goldValue": 2868883095,
-          "clickAccurate": false,
-          "valueAccurate": false
-        }
-      ],
+      "agentName": "rule-based-demo",
+      "fieldResults": [],
       "atomicMetrics": {
-        "clickAccuracy": {
-          "String": 0,
-          "Date": 0,
-          "Dropdown": 0
-        },
-        "valueAccuracy": {
-          "String": 0,
-          "Date": 0,
-          "Dropdown": 0
-        },
+        "clickAccuracy": {},
+        "valueAccuracy": {},
         "overallClickAccuracy": 0,
         "overallValueAccuracy": 0
       },
       "episodicMetrics": {
         "formCompletionRate": 0,
-        "fieldsAttempted": 2,
+        "fieldsAttempted": 0,
         "fieldsCorrect": 0,
-        "totalFields": 5,
+        "totalFields": 0,
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 31772,
-      "errors": [],
-      "submissionSucceeded": true
+      "executionTimeMs": 0,
+      "errors": [
+        "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/finance-banking/account-opening\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/finance-banking/account-opening\", waiting until \"domcontentloaded\"\u001b[22m\n"
+      ],
+      "submissionSucceeded": false
     },
     {
       "formInstance": {
@@ -2572,71 +921,11 @@
         "multiPage": false,
         "formPath": "/finance-banking/financial-planning"
       },
-      "agentName": "rule-based",
-      "fieldResults": [
-        {
-          "fieldId": "name",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Benjamin Scott",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "email",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "ben.scott24@gmail.com",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "consultationType",
-          "fieldType": "Dropdown",
-          "predictedValue": "",
-          "goldValue": "Estate Planning",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "preferredDate",
-          "fieldType": "Date",
-          "predictedValue": "",
-          "goldValue": "2024/11/30",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "preferredTime",
-          "fieldType": "Dropdown",
-          "predictedValue": "",
-          "goldValue": "Evening (4:00 PM -6:00 PM)",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "comments",
-          "fieldType": "Description",
-          "predictedValue": "",
-          "goldValue": "Looking to discuss the creation of a living will and managing property distribution.",
-          "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
-        }
-      ],
+      "agentName": "rule-based-demo",
+      "fieldResults": [],
       "atomicMetrics": {
-        "clickAccuracy": {
-          "String": 0,
-          "Dropdown": 0,
-          "Date": 0,
-          "Description": 0
-        },
-        "valueAccuracy": {
-          "String": 0,
-          "Dropdown": 0,
-          "Date": 0,
-          "Description": 0
-        },
+        "clickAccuracy": {},
+        "valueAccuracy": {},
         "overallClickAccuracy": 0,
         "overallValueAccuracy": 0
       },
@@ -2644,12 +933,14 @@
         "formCompletionRate": 0,
         "fieldsAttempted": 0,
         "fieldsCorrect": 0,
-        "totalFields": 6,
+        "totalFields": 0,
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1739,
-      "errors": [],
+      "executionTimeMs": 0,
+      "errors": [
+        "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/finance-banking/financial-planning\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/finance-banking/financial-planning\", waiting until \"domcontentloaded\"\u001b[22m\n"
+      ],
       "submissionSucceeded": false
     },
     {
@@ -2674,113 +965,26 @@
         "multiPage": false,
         "formPath": "/healthcare-medical/patient-consent"
       },
-      "agentName": "rule-based",
-      "fieldResults": [
-        {
-          "fieldId": "patientName",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "James Anderson",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "dateOfBirth",
-          "fieldType": "Date",
-          "predictedValue": "",
-          "goldValue": "1985/08/15",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "medicalRecordNumber",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "MRN123456789",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "procedureName",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Knee Arthroscopy",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "surgeon",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Dr. Robert Smith",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "procedureConsent",
-          "fieldType": "Checkbox",
-          "predictedValue": "true",
-          "goldValue": true,
-          "clickAccurate": false,
-          "valueAccurate": true
-        },
-        {
-          "fieldId": "questionConsent",
-          "fieldType": "Checkbox",
-          "predictedValue": "true",
-          "goldValue": true,
-          "clickAccurate": false,
-          "valueAccurate": true
-        },
-        {
-          "fieldId": "alternativesConsent",
-          "fieldType": "Checkbox",
-          "predictedValue": "true",
-          "goldValue": true,
-          "clickAccurate": false,
-          "valueAccurate": true
-        },
-        {
-          "fieldId": "emergencyName",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Emily Anderson",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "emergencyPhone",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "+1 555-987-6543",
-          "clickAccurate": false,
-          "valueAccurate": false
-        }
-      ],
+      "agentName": "rule-based-demo",
+      "fieldResults": [],
       "atomicMetrics": {
-        "clickAccuracy": {
-          "String": 0,
-          "Date": 0,
-          "Checkbox": 0
-        },
-        "valueAccuracy": {
-          "String": 0,
-          "Date": 0,
-          "Checkbox": 100
-        },
+        "clickAccuracy": {},
+        "valueAccuracy": {},
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 30
+        "overallValueAccuracy": 0
       },
       "episodicMetrics": {
-        "formCompletionRate": 30,
-        "fieldsAttempted": 3,
-        "fieldsCorrect": 3,
-        "totalFields": 10,
+        "formCompletionRate": 0,
+        "fieldsAttempted": 0,
+        "fieldsCorrect": 0,
+        "totalFields": 0,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 30
+        "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1521,
-      "errors": [],
+      "executionTimeMs": 0,
+      "errors": [
+        "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/healthcare-medical/patient-consent\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/healthcare-medical/patient-consent\", waiting until \"domcontentloaded\"\u001b[22m\n"
+      ],
       "submissionSucceeded": false
     },
     {
@@ -2803,88 +1007,11 @@
         "multiPage": false,
         "formPath": "/healthcare-medical/research-enrollment"
       },
-      "agentName": "rule-based",
-      "fieldResults": [
-        {
-          "fieldId": "fullName",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Lily Chen",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "age",
-          "fieldType": "NumericInput",
-          "predictedValue": "",
-          "goldValue": 32,
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "existingConditions",
-          "fieldType": "Description",
-          "predictedValue": "",
-          "goldValue": "Hypertension",
-          "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
-        },
-        {
-          "fieldId": "medications",
-          "fieldType": "Description",
-          "predictedValue": "",
-          "goldValue": "Lisinopril",
-          "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
-        },
-        {
-          "fieldId": "studyType",
-          "fieldType": "Dropdown",
-          "predictedValue": "",
-          "goldValue": "Clinical Trial",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "availability",
-          "fieldType": "Dropdown",
-          "predictedValue": "",
-          "goldValue": "Weekdays",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "email",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "lily.chen123@gmail.com",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "phone",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "(+86) 138 1234 5678",
-          "clickAccurate": false,
-          "valueAccurate": false
-        }
-      ],
+      "agentName": "rule-based-demo",
+      "fieldResults": [],
       "atomicMetrics": {
-        "clickAccuracy": {
-          "String": 0,
-          "NumericInput": 0,
-          "Description": 0,
-          "Dropdown": 0
-        },
-        "valueAccuracy": {
-          "String": 0,
-          "NumericInput": 0,
-          "Description": 0,
-          "Dropdown": 0
-        },
+        "clickAccuracy": {},
+        "valueAccuracy": {},
         "overallClickAccuracy": 0,
         "overallValueAccuracy": 0
       },
@@ -2892,12 +1019,14 @@
         "formCompletionRate": 0,
         "fieldsAttempted": 0,
         "fieldsCorrect": 0,
-        "totalFields": 8,
+        "totalFields": 0,
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1415,
-      "errors": [],
+      "executionTimeMs": 0,
+      "errors": [
+        "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/healthcare-medical/research-enrollment\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/healthcare-medical/research-enrollment\", waiting until \"domcontentloaded\"\u001b[22m\n"
+      ],
       "submissionSucceeded": false
     },
     {
@@ -2920,89 +1049,11 @@
         "multiPage": true,
         "formPath": "/healthcare-medical/insurance-claim"
       },
-      "agentName": "rule-based",
-      "fieldResults": [
-        {
-          "fieldId": "policyNumber",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "A1234567890",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "policyHolder",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Emily Turner",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "serviceDate",
-          "fieldType": "Date",
-          "predictedValue": "",
-          "goldValue": "2024/01/15",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "claimAmount",
-          "fieldType": "NumericInput",
-          "predictedValue": "",
-          "goldValue": 250,
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "serviceType",
-          "fieldType": "Dropdown",
-          "predictedValue": "",
-          "goldValue": "Doctor Consultation",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "diagnosis",
-          "fieldType": "Description",
-          "predictedValue": "",
-          "goldValue": "General Checkup, Mild Fatigue",
-          "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
-        },
-        {
-          "fieldId": "providerName",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Dr. Alice Green",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "providerNumber",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "D12345",
-          "clickAccurate": false,
-          "valueAccurate": false
-        }
-      ],
+      "agentName": "rule-based-demo",
+      "fieldResults": [],
       "atomicMetrics": {
-        "clickAccuracy": {
-          "String": 0,
-          "Date": 0,
-          "NumericInput": 0,
-          "Dropdown": 0,
-          "Description": 0
-        },
-        "valueAccuracy": {
-          "String": 0,
-          "Date": 0,
-          "NumericInput": 0,
-          "Dropdown": 0,
-          "Description": 0
-        },
+        "clickAccuracy": {},
+        "valueAccuracy": {},
         "overallClickAccuracy": 0,
         "overallValueAccuracy": 0
       },
@@ -3010,12 +1061,14 @@
         "formCompletionRate": 0,
         "fieldsAttempted": 0,
         "fieldsCorrect": 0,
-        "totalFields": 8,
+        "totalFields": 0,
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1427,
-      "errors": [],
+      "executionTimeMs": 0,
+      "errors": [
+        "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/healthcare-medical/insurance-claim\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/healthcare-medical/insurance-claim\", waiting until \"domcontentloaded\"\u001b[22m\n"
+      ],
       "submissionSucceeded": false
     },
     {
@@ -3039,99 +1092,11 @@
         "multiPage": false,
         "formPath": "/legal-compliance/nda-submission"
       },
-      "agentName": "rule-based",
-      "fieldResults": [
-        {
-          "fieldId": "Party Name",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "John Doe",
-          "clickAccurate": null,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "partyType",
-          "fieldType": "Dropdown",
-          "predictedValue": "",
-          "goldValue": "Individual",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "purpose",
-          "fieldType": "Description",
-          "predictedValue": "",
-          "goldValue": "To protect intellectual property related to a new software development project, including source code, architecture, and design",
-          "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
-        },
-        {
-          "fieldId": "startDate",
-          "fieldType": "Date",
-          "predictedValue": "",
-          "goldValue": "2024/12/05",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "duration",
-          "fieldType": "NumericInput",
-          "predictedValue": "",
-          "goldValue": 5,
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "repName",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "John Doe",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "repTitle",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Founder",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "termsAgreed",
-          "fieldType": "Checkbox",
-          "predictedValue": "",
-          "goldValue": "Yes",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "authorityConfirm",
-          "fieldType": "Checkbox",
-          "predictedValue": "",
-          "goldValue": "Yes",
-          "clickAccurate": false,
-          "valueAccurate": false
-        }
-      ],
+      "agentName": "rule-based-demo",
+      "fieldResults": [],
       "atomicMetrics": {
-        "clickAccuracy": {
-          "String": 0,
-          "Dropdown": 0,
-          "Description": 0,
-          "Date": 0,
-          "NumericInput": 0,
-          "Checkbox": 0
-        },
-        "valueAccuracy": {
-          "String": 0,
-          "Dropdown": 0,
-          "Description": 0,
-          "Date": 0,
-          "NumericInput": 0,
-          "Checkbox": 0
-        },
+        "clickAccuracy": {},
+        "valueAccuracy": {},
         "overallClickAccuracy": 0,
         "overallValueAccuracy": 0
       },
@@ -3139,12 +1104,14 @@
         "formCompletionRate": 0,
         "fieldsAttempted": 0,
         "fieldsCorrect": 0,
-        "totalFields": 9,
+        "totalFields": 0,
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1411,
-      "errors": [],
+      "executionTimeMs": 0,
+      "errors": [
+        "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/legal-compliance/nda-submission\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/legal-compliance/nda-submission\", waiting until \"domcontentloaded\"\u001b[22m\n"
+      ],
       "submissionSucceeded": false
     },
     {
@@ -3170,121 +1137,26 @@
         "multiPage": false,
         "formPath": "/legal-compliance/background-check"
       },
-      "agentName": "rule-based",
-      "fieldResults": [
-        {
-          "fieldId": "firstName",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "John",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "middleName",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Michael",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "lastName",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Doe",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "ssn",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "123-45-6789",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "dob",
-          "fieldType": "Date",
-          "predictedValue": "",
-          "goldValue": "1985-04-15",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "streetAddress",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "123 Elm St",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "city",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Springfield",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "state",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "IL",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "zipCode",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "62704",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "authorization",
-          "fieldType": "Checkbox",
-          "predictedValue": "true",
-          "goldValue": true,
-          "clickAccurate": false,
-          "valueAccurate": true
-        },
-        {
-          "fieldId": "truthfulness",
-          "fieldType": "Checkbox",
-          "predictedValue": "true",
-          "goldValue": true,
-          "clickAccurate": false,
-          "valueAccurate": true
-        }
-      ],
+      "agentName": "rule-based-demo",
+      "fieldResults": [],
       "atomicMetrics": {
-        "clickAccuracy": {
-          "String": 0,
-          "Date": 0,
-          "Checkbox": 0
-        },
-        "valueAccuracy": {
-          "String": 0,
-          "Date": 0,
-          "Checkbox": 100
-        },
+        "clickAccuracy": {},
+        "valueAccuracy": {},
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 18.181818181818183
+        "overallValueAccuracy": 0
       },
       "episodicMetrics": {
-        "formCompletionRate": 18.181818181818183,
-        "fieldsAttempted": 2,
-        "fieldsCorrect": 2,
-        "totalFields": 11,
+        "formCompletionRate": 0,
+        "fieldsAttempted": 0,
+        "fieldsCorrect": 0,
+        "totalFields": 0,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 18.181818181818183
+        "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1493,
-      "errors": [],
+      "executionTimeMs": 0,
+      "errors": [
+        "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/legal-compliance/background-check\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/legal-compliance/background-check\", waiting until \"domcontentloaded\"\u001b[22m\n"
+      ],
       "submissionSucceeded": false
     },
     {
@@ -3310,113 +1182,11 @@
         "multiPage": true,
         "formPath": "/legal-compliance/contractor-onboarding"
       },
-      "agentName": "rule-based",
-      "fieldResults": [
-        {
-          "fieldId": "fullName",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Abigail Lewis",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "businessName",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Abigail's Digital Marketing Solutions",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "email",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "abigail.lewis.digital@outlook.com",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "phone",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "555-111-2222",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "taxId",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "12-1111111",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "businessType",
-          "fieldType": "Dropdown",
-          "predictedValue": "",
-          "goldValue": "Sole Proprietorship",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "serviceDescription",
-          "fieldType": "Description",
-          "predictedValue": "",
-          "goldValue": "Developing and implementing comprehensive digital marketing strategies, including search engine optimization (SEO) to improve website rankings, pay-per-click (PPC) advertising campaigns on platforms like Google Ads and Bing Ads, social media management across major platforms such as Facebook, Instagram, and Twitter to increase brand awareness and engagement, and content creation for blogs, articles, and social media posts to attract and retain customers.",
-          "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
-        },
-        {
-          "fieldId": "startDate",
-          "fieldType": "Date",
-          "predictedValue": "",
-          "goldValue": "2024/03/15",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "endDate",
-          "fieldType": "Date",
-          "predictedValue": "",
-          "goldValue": "2025/03/15",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "termsAgreed",
-          "fieldType": "Checkbox",
-          "predictedValue": "",
-          "goldValue": "Yes",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "confidentialityAgreed",
-          "fieldType": "Checkbox",
-          "predictedValue": "",
-          "goldValue": "Yes",
-          "clickAccurate": false,
-          "valueAccurate": false
-        }
-      ],
+      "agentName": "rule-based-demo",
+      "fieldResults": [],
       "atomicMetrics": {
-        "clickAccuracy": {
-          "String": 0,
-          "Dropdown": 0,
-          "Description": 0,
-          "Date": 0,
-          "Checkbox": 0
-        },
-        "valueAccuracy": {
-          "String": 0,
-          "Dropdown": 0,
-          "Description": 0,
-          "Date": 0,
-          "Checkbox": 0
-        },
+        "clickAccuracy": {},
+        "valueAccuracy": {},
         "overallClickAccuracy": 0,
         "overallValueAccuracy": 0
       },
@@ -3424,12 +1194,14 @@
         "formCompletionRate": 0,
         "fieldsAttempted": 0,
         "fieldsCorrect": 0,
-        "totalFields": 11,
+        "totalFields": 0,
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1416,
-      "errors": [],
+      "executionTimeMs": 0,
+      "errors": [
+        "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/legal-compliance/contractor-onboarding\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/legal-compliance/contractor-onboarding\", waiting until \"domcontentloaded\"\u001b[22m\n"
+      ],
       "submissionSucceeded": false
     },
     {
@@ -3455,111 +1227,11 @@
         "multiPage": false,
         "formPath": "/construction-manufacturing/project-bid"
       },
-      "agentName": "rule-based",
-      "fieldResults": [
-        {
-          "fieldId": "companyName",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Greenfield Construction",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "licenseNumber",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "GC-203940",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "projectName",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Office Building Renovation",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "bidAmount",
-          "fieldType": "NumericInput",
-          "predictedValue": "",
-          "goldValue": 850000,
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "projectDuration",
-          "fieldType": "NumericInput",
-          "predictedValue": "",
-          "goldValue": 24,
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "startDate",
-          "fieldType": "Date",
-          "predictedValue": "",
-          "goldValue": "2024/06/01",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "completionDate",
-          "fieldType": "Date",
-          "predictedValue": "",
-          "goldValue": "2024/12/01",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "Scope of Work",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Full renovation of a commercial office building, including electrical and plumbing upgrades.",
-          "clickAccurate": null,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "workDescription",
-          "fieldType": "Description",
-          "predictedValue": "",
-          "goldValue": "The project will involve gutting the entire office building and rebuilding it with updated structural components, new wiring, plumbing, and HVAC systems. Interior finishes will include modern office layouts and upgraded fixtures.",
-          "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
-        },
-        {
-          "fieldId": "contactName",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "John Parker",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "contactPhone",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "555-762-4923",
-          "clickAccurate": false,
-          "valueAccurate": false
-        }
-      ],
+      "agentName": "rule-based-demo",
+      "fieldResults": [],
       "atomicMetrics": {
-        "clickAccuracy": {
-          "String": 0,
-          "NumericInput": 0,
-          "Date": 0,
-          "Description": 0
-        },
-        "valueAccuracy": {
-          "String": 0,
-          "NumericInput": 0,
-          "Date": 0,
-          "Description": 0
-        },
+        "clickAccuracy": {},
+        "valueAccuracy": {},
         "overallClickAccuracy": 0,
         "overallValueAccuracy": 0
       },
@@ -3567,12 +1239,14 @@
         "formCompletionRate": 0,
         "fieldsAttempted": 0,
         "fieldsCorrect": 0,
-        "totalFields": 11,
+        "totalFields": 0,
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1416,
-      "errors": [],
+      "executionTimeMs": 0,
+      "errors": [
+        "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/construction-manufacturing/project-bid\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/construction-manufacturing/project-bid\", waiting until \"domcontentloaded\"\u001b[22m\n"
+      ],
       "submissionSucceeded": false
     },
     {
@@ -3599,122 +1273,11 @@
         "multiPage": true,
         "formPath": "/construction-manufacturing/order-request"
       },
-      "agentName": "rule-based",
-      "fieldResults": [
-        {
-          "fieldId": "companyName",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "GlobalTech Innovations",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "customerNumber",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "GTI-102938",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "productType",
-          "fieldType": "Dropdown",
-          "predictedValue": "",
-          "goldValue": "Custom Product",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "productDescription",
-          "fieldType": "Description",
-          "predictedValue": "",
-          "goldValue": "Customized AI-powered sensor array",
-          "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
-        },
-        {
-          "fieldId": "Product Specifications",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "High sensitivity, 5-meter range",
-          "clickAccurate": null,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "quantity",
-          "fieldType": "NumericInput",
-          "predictedValue": "",
-          "goldValue": 100,
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "dimensions",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "200 x 150 x 50",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "material",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "Aluminum, Silicon",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "specifications",
-          "fieldType": "Description",
-          "predictedValue": "",
-          "goldValue": "Real-time data processing, low power consumption, high data encryption standards, wireless connectivity with IoT capabilities",
-          "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
-        },
-        {
-          "fieldId": "qualityStandards",
-          "fieldType": "String",
-          "predictedValue": "",
-          "goldValue": "ISO 9001, CE certified",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "requiredDate",
-          "fieldType": "Date",
-          "predictedValue": "",
-          "goldValue": "2028/08/01",
-          "clickAccurate": false,
-          "valueAccurate": false
-        },
-        {
-          "fieldId": "shippingMethod",
-          "fieldType": "Dropdown",
-          "predictedValue": "",
-          "goldValue": "Express",
-          "clickAccurate": false,
-          "valueAccurate": false
-        }
-      ],
+      "agentName": "rule-based-demo",
+      "fieldResults": [],
       "atomicMetrics": {
-        "clickAccuracy": {
-          "String": 0,
-          "Dropdown": 0,
-          "Description": 0,
-          "NumericInput": 0,
-          "Date": 0
-        },
-        "valueAccuracy": {
-          "String": 0,
-          "Dropdown": 0,
-          "Description": 0,
-          "NumericInput": 0,
-          "Date": 0
-        },
+        "clickAccuracy": {},
+        "valueAccuracy": {},
         "overallClickAccuracy": 0,
         "overallValueAccuracy": 0
       },
@@ -3722,15 +1285,43 @@
         "formCompletionRate": 0,
         "fieldsAttempted": 0,
         "fieldsCorrect": 0,
-        "totalFields": 12,
+        "totalFields": 0,
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1414,
-      "errors": [],
+      "executionTimeMs": 0,
+      "errors": [
+        "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/construction-manufacturing/order-request\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/construction-manufacturing/order-request\", waiting until \"domcontentloaded\"\u001b[22m\n"
+      ],
       "submissionSucceeded": false
     }
   ],
-  "totalExecutionTimeMs": 129953,
-  "errors": []
+  "totalExecutionTimeMs": 31433,
+  "errors": [
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/academic-research/job-application\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/academic-research/job-application\", waiting until \"domcontentloaded\"\u001b[22m\n",
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/academic-research/grant-application\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/academic-research/grant-application\", waiting until \"domcontentloaded\"\u001b[22m\n",
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/academic-research/paper-submission\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/academic-research/paper-submission\", waiting until \"domcontentloaded\"\u001b[22m\n",
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/academic-research/course-registration\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/academic-research/course-registration\", waiting until \"domcontentloaded\"\u001b[22m\n",
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/academic-research/scholarship-application\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/academic-research/scholarship-application\", waiting until \"domcontentloaded\"\u001b[22m\n",
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/professional-business/startup-funding\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/professional-business/startup-funding\", waiting until \"domcontentloaded\"\u001b[22m\n",
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/professional-business/rental-application\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/professional-business/rental-application\", waiting until \"domcontentloaded\"\u001b[22m\n",
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/professional-business/workshop-registration\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/professional-business/workshop-registration\", waiting until \"domcontentloaded\"\u001b[22m\n",
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/professional-business/membership-application\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/professional-business/membership-application\", waiting until \"domcontentloaded\"\u001b[22m\n",
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/arts-creative/exhibition-submission\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/arts-creative/exhibition-submission\", waiting until \"domcontentloaded\"\u001b[22m\n",
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/arts-creative/literary-submission\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/arts-creative/literary-submission\", waiting until \"domcontentloaded\"\u001b[22m\n",
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/arts-creative/speaker-application\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/arts-creative/speaker-application\", waiting until \"domcontentloaded\"\u001b[22m\n",
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/tech-software/bug-report\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/tech-software/bug-report\", waiting until \"domcontentloaded\"\u001b[22m\n",
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/tech-software/support-request\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/tech-software/support-request\", waiting until \"domcontentloaded\"\u001b[22m\n",
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/finance-banking/personal-loan\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/finance-banking/personal-loan\", waiting until \"domcontentloaded\"\u001b[22m\n",
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/finance-banking/account-opening\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/finance-banking/account-opening\", waiting until \"domcontentloaded\"\u001b[22m\n",
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/finance-banking/financial-planning\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/finance-banking/financial-planning\", waiting until \"domcontentloaded\"\u001b[22m\n",
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/healthcare-medical/patient-consent\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/healthcare-medical/patient-consent\", waiting until \"domcontentloaded\"\u001b[22m\n",
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/healthcare-medical/research-enrollment\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/healthcare-medical/research-enrollment\", waiting until \"domcontentloaded\"\u001b[22m\n",
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/healthcare-medical/insurance-claim\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/healthcare-medical/insurance-claim\", waiting until \"domcontentloaded\"\u001b[22m\n",
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/legal-compliance/nda-submission\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/legal-compliance/nda-submission\", waiting until \"domcontentloaded\"\u001b[22m\n",
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/legal-compliance/background-check\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/legal-compliance/background-check\", waiting until \"domcontentloaded\"\u001b[22m\n",
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/legal-compliance/contractor-onboarding\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/legal-compliance/contractor-onboarding\", waiting until \"domcontentloaded\"\u001b[22m\n",
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/construction-manufacturing/project-bid\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/construction-manufacturing/project-bid\", waiting until \"domcontentloaded\"\u001b[22m\n",
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/construction-manufacturing/order-request\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/construction-manufacturing/order-request\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  ]
 }

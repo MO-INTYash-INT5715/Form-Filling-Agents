@@ -22,122 +22,11 @@
     "multiPage": true,
     "formPath": "/construction-manufacturing/order-request"
   },
-  "agentName": "rule-based",
-  "fieldResults": [
-    {
-      "fieldId": "companyName",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "GlobalTech Innovations",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "customerNumber",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "GTI-102938",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "productType",
-      "fieldType": "Dropdown",
-      "predictedValue": "",
-      "goldValue": "Custom Product",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "productDescription",
-      "fieldType": "Description",
-      "predictedValue": "",
-      "goldValue": "Customized AI-powered sensor array",
-      "clickAccurate": false,
-      "valueAccurate": false,
-      "bleuScore": 0
-    },
-    {
-      "fieldId": "Product Specifications",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "High sensitivity, 5-meter range",
-      "clickAccurate": null,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "quantity",
-      "fieldType": "NumericInput",
-      "predictedValue": "",
-      "goldValue": 100,
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "dimensions",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "200 x 150 x 50",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "material",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "Aluminum, Silicon",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "specifications",
-      "fieldType": "Description",
-      "predictedValue": "",
-      "goldValue": "Real-time data processing, low power consumption, high data encryption standards, wireless connectivity with IoT capabilities",
-      "clickAccurate": false,
-      "valueAccurate": false,
-      "bleuScore": 0
-    },
-    {
-      "fieldId": "qualityStandards",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "ISO 9001, CE certified",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "requiredDate",
-      "fieldType": "Date",
-      "predictedValue": "",
-      "goldValue": "2028/08/01",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "shippingMethod",
-      "fieldType": "Dropdown",
-      "predictedValue": "",
-      "goldValue": "Express",
-      "clickAccurate": false,
-      "valueAccurate": false
-    }
-  ],
+  "agentName": "rule-based-demo",
+  "fieldResults": [],
   "atomicMetrics": {
-    "clickAccuracy": {
-      "String": 0,
-      "Dropdown": 0,
-      "Description": 0,
-      "NumericInput": 0,
-      "Date": 0
-    },
-    "valueAccuracy": {
-      "String": 0,
-      "Dropdown": 0,
-      "Description": 0,
-      "NumericInput": 0,
-      "Date": 0
-    },
+    "clickAccuracy": {},
+    "valueAccuracy": {},
     "overallClickAccuracy": 0,
     "overallValueAccuracy": 0
   },
@@ -145,11 +34,13 @@
     "formCompletionRate": 0,
     "fieldsAttempted": 0,
     "fieldsCorrect": 0,
-    "totalFields": 12,
+    "totalFields": 0,
     "averageClickAccuracy": 0,
     "averageValueAccuracy": 0
   },
-  "executionTimeMs": 1414,
-  "errors": [],
+  "executionTimeMs": 0,
+  "errors": [
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/construction-manufacturing/order-request\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/construction-manufacturing/order-request\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  ],
   "submissionSucceeded": false
 }

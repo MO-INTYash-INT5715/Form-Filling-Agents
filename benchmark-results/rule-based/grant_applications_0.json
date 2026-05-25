@@ -16,64 +16,11 @@
     "multiPage": true,
     "formPath": "/academic-research/grant-application"
   },
-  "agentName": "rule-based",
-  "fieldResults": [
-    {
-      "fieldId": "First Name",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "Diana",
-      "clickAccurate": null,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "Last Name",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "Bridges",
-      "clickAccurate": null,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "Email",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "wmills@shields.net",
-      "clickAccurate": null,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "Gender",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "Female",
-      "clickAccurate": null,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "Date of Birth",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "1951/09/28",
-      "clickAccurate": null,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "Subscribe to Newsletter",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": false,
-      "clickAccurate": null,
-      "valueAccurate": false
-    }
-  ],
+  "agentName": "rule-based-demo",
+  "fieldResults": [],
   "atomicMetrics": {
-    "clickAccuracy": {
-      "String": 0
-    },
-    "valueAccuracy": {
-      "String": 0
-    },
+    "clickAccuracy": {},
+    "valueAccuracy": {},
     "overallClickAccuracy": 0,
     "overallValueAccuracy": 0
   },
@@ -81,11 +28,13 @@
     "formCompletionRate": 0,
     "fieldsAttempted": 0,
     "fieldsCorrect": 0,
-    "totalFields": 6,
+    "totalFields": 0,
     "averageClickAccuracy": 0,
     "averageValueAccuracy": 0
   },
-  "executionTimeMs": 31505,
-  "errors": [],
+  "executionTimeMs": 0,
+  "errors": [
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/academic-research/grant-application\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/academic-research/grant-application\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  ],
   "submissionSucceeded": false
 }

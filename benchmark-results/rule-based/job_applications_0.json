@@ -14,51 +14,11 @@
     "multiPage": false,
     "formPath": "/academic-research/job-application"
   },
-  "agentName": "rule-based",
-  "fieldResults": [
-    {
-      "fieldId": "name",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "Alice Zhang",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "position",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "Software Engineer",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "department",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "Engineering",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "cover_letter",
-      "fieldType": "Description",
-      "predictedValue": "",
-      "goldValue": "I am passionate about software development and excited to contribute my skills to the Engineering department.",
-      "clickAccurate": false,
-      "valueAccurate": false,
-      "bleuScore": 0
-    }
-  ],
+  "agentName": "rule-based-demo",
+  "fieldResults": [],
   "atomicMetrics": {
-    "clickAccuracy": {
-      "String": 0,
-      "Description": 0
-    },
-    "valueAccuracy": {
-      "String": 0,
-      "Description": 0
-    },
+    "clickAccuracy": {},
+    "valueAccuracy": {},
     "overallClickAccuracy": 0,
     "overallValueAccuracy": 0
   },
@@ -66,11 +26,13 @@
     "formCompletionRate": 0,
     "fieldsAttempted": 0,
     "fieldsCorrect": 0,
-    "totalFields": 4,
+    "totalFields": 0,
     "averageClickAccuracy": 0,
     "averageValueAccuracy": 0
   },
-  "executionTimeMs": 2004,
-  "errors": [],
-  "submissionSucceeded": true
+  "executionTimeMs": 0,
+  "errors": [
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/academic-research/job-application\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/academic-research/job-application\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  ],
+  "submissionSucceeded": false
 }

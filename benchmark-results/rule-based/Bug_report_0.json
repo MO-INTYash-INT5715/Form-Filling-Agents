@@ -20,95 +20,11 @@
     "multiPage": false,
     "formPath": "/tech-software/bug-report"
   },
-  "agentName": "rule-based",
-  "fieldResults": [
-    {
-      "fieldId": "title",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "App crashes when opening the settings menu",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "severity",
-      "fieldType": "Dropdown",
-      "predictedValue": "",
-      "goldValue": "High",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "environment",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "Production",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "browser",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "iOS 15.4, iPhone 12",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "steps",
-      "fieldType": "Description",
-      "predictedValue": "",
-      "goldValue": "1. Open the app. 2. Tap on the settings icon. 3. App crashes immediately.",
-      "clickAccurate": false,
-      "valueAccurate": false,
-      "bleuScore": 0
-    },
-    {
-      "fieldId": "expected",
-      "fieldType": "Description",
-      "predictedValue": "",
-      "goldValue": "Settings menu should open without crashing.",
-      "clickAccurate": false,
-      "valueAccurate": false,
-      "bleuScore": 0
-    },
-    {
-      "fieldId": "actual",
-      "fieldType": "Description",
-      "predictedValue": "",
-      "goldValue": "App crashes immediately when settings menu is opened.",
-      "clickAccurate": false,
-      "valueAccurate": false,
-      "bleuScore": 0
-    },
-    {
-      "fieldId": "reporter",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "John Williams",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "email",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "john.williams87@gmail.com",
-      "clickAccurate": false,
-      "valueAccurate": false
-    }
-  ],
+  "agentName": "rule-based-demo",
+  "fieldResults": [],
   "atomicMetrics": {
-    "clickAccuracy": {
-      "String": 0,
-      "Dropdown": 0,
-      "Description": 0
-    },
-    "valueAccuracy": {
-      "String": 0,
-      "Dropdown": 0,
-      "Description": 0
-    },
+    "clickAccuracy": {},
+    "valueAccuracy": {},
     "overallClickAccuracy": 0,
     "overallValueAccuracy": 0
   },
@@ -116,11 +32,13 @@
     "formCompletionRate": 0,
     "fieldsAttempted": 0,
     "fieldsCorrect": 0,
-    "totalFields": 9,
+    "totalFields": 0,
     "averageClickAccuracy": 0,
     "averageValueAccuracy": 0
   },
-  "executionTimeMs": 1639,
-  "errors": [],
-  "submissionSucceeded": true
+  "executionTimeMs": 0,
+  "errors": [
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/tech-software/bug-report\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/tech-software/bug-report\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  ],
+  "submissionSucceeded": false
 }
