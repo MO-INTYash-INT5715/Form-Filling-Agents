@@ -127,6 +127,15 @@ async function main() {
   } else if (agentName === 'vision-agent') {
     const { VisionAgent } = await import('../src/implementations/vision-agent/agent');
     agent = new VisionAgent();
+  } else if (agentName === 'vlm-agent') {
+    const { VLMAgent } = await import('../src/implementations/vlm-agent/agent');
+    agent = new VLMAgent();
+  } else if (agentName === 'llm-structured') {
+    const { LLMStructuredAgent } = await import('../src/implementations/llm-structured/agent');
+    agent = new LLMStructuredAgent();
+  } else if (agentName === 'hybrid') {
+    const { HybridAgent } = await import('../src/implementations/hybrid/agent');
+    agent = new HybridAgent();
   } else if (agentName === 'embedding-matcher' || agentName === 'embedding') {
     const { EmbeddingMatcherAgent } = await import('../src/implementations/embedding-matcher/agent');
     agent = new EmbeddingMatcherAgent();

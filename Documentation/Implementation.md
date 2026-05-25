@@ -25,10 +25,10 @@ Actionable engineering checklist for building, isolating, and comparing every fo
 | # | Name | Folder | Status |
 |---|------|--------|--------|
 | 1 | Rule-Based DOM Inference | `src/implementations/rule-based/` | ✅ Baseline |
-| 2 | Embedding / Semantic Matcher | `src/implementations/embedding-matcher/` | 🔲 Planned |
-| 3 | VLM / Multimodal Agent | `src/implementations/vlm-agent/` | 🔲 Planned |
-| 4 | LLM Structured Output Agent | `src/implementations/llm-structured/` | 🔲 Planned |
-| 5 | Hybrid (DOM + VLM Fallback) | `src/implementations/hybrid/` | 🔲 Planned |
+| 2 | Embedding / Semantic Matcher | `src/implementations/embedding-matcher/` | ✅ Implemented |
+| 3 | VLM / Multimodal Agent | `src/implementations/vlm-agent/` | ✅ Implemented |
+| 4 | LLM Structured Output Agent | `src/implementations/llm-structured/` | ✅ Implemented |
+| 5 | Hybrid (DOM + VLM Fallback) | `src/implementations/hybrid/` | ✅ Implemented |
 
 ---
 
@@ -36,66 +36,66 @@ Actionable engineering checklist for building, isolating, and comparing every fo
 
 ### Phase 0 — Foundation & Restructuring
 
-- [ ] Create `src/implementations/` directory
-- [ ] Move existing agent code → `src/implementations/rule-based/agent.ts`
-- [ ] Extract keyword patterns → `src/implementations/rule-based/patterns.ts`
-- [ ] Add `UserProfile` type to `src/types/index.ts`
-- [ ] Wire `UserProfile` into `Agent.analyze()` signature
-- [ ] Create `benchmark-results/` sub-folders per implementation
-- [ ] Add per-implementation npm benchmark scripts (e.g. `test:impl -- rule-based`)
+- [x] Create `src/implementations/` directory
+- [x] Move existing agent code → `src/implementations/rule-based/agent.ts`
+- [x] Extract keyword patterns → `src/implementations/rule-based/patterns.ts`
+- [x] Add `UserProfile` type to `src/types/index.ts`
+- [x] Wire `UserProfile` into `Agent.analyze()` signature
+- [x] Create `benchmark-results/` sub-folders per implementation
+- [x] Add per-implementation npm benchmark scripts (e.g. `test:impl -- rule-based`)
 
 ### Phase 1 — Input Pipeline (Stub → Real)
 
-- [ ] Define `UserProfile` JSON schema in `src/types/index.ts`
-- [ ] Create `src/utils/input-pipeline.ts` stub that returns a hardcoded profile
-- [ ] Document extension points for future parsers (PDF, resume, clipboard)
-- [ ] Add consent/PII redaction hook in pipeline stub
+- [x] Define `UserProfile` JSON schema in `src/types/index.ts`
+- [x] Create `src/utils/input-pipeline.ts` stub that returns a hardcoded profile
+- [x] Document extension points for future parsers (PDF, resume, clipboard)
+- [x] Add consent/PII redaction hook in pipeline stub
 
 ### Phase 2 — [IMPL-1] Rule-Based DOM Inference  *(refactor from existing)*
 
-- [ ] Create `src/implementations/rule-based/`
-- [ ] `agent.ts` — implements `Agent` interface, consumes `UserProfile`
-- [ ] `patterns.ts` — keyword dictionaries (email, name, company, address, …)
-- [ ] `README.md` — describes approach, known limitations
-- [ ] Run baseline benchmark → save to `benchmark-results/rule-based/`
+- [x] Create `src/implementations/rule-based/`
+- [x] `agent.ts` — implements `Agent` interface, consumes `UserProfile`
+- [x] `patterns.ts` — keyword dictionaries (email, name, company, address, …)
+- [x] `README.md` — describes approach, known limitations
+- [x] Run baseline benchmark → save to `benchmark-results/rule-based/`
 
 ### Phase 3 — [IMPL-2] Embedding / Semantic Matcher
 
-- [ ] Create `src/implementations/embedding-matcher/`
-- [ ] `embedder.ts` — wraps a local embedding model (e.g. Transformers.js, `all-MiniLM-L6-v2`)
-- [ ] `agent.ts` — encodes field labels + profile keys, cosine-similarity match
-- [ ] `README.md` — model choice rationale, performance notes
-- [ ] Run benchmark → save to `benchmark-results/embedding-matcher/`
+- [x] Create `src/implementations/embedding-matcher/`
+- [x] `embedder.ts` — wraps a local embedding model (e.g. Transformers.js, `all-MiniLM-L6-v2`)
+- [x] `agent.ts` — encodes field labels + profile keys, cosine-similarity match
+- [x] `README.md` — model choice rationale, performance notes
+- [x] Run benchmark → save to `benchmark-results/embedding-matcher/`
 
 ### Phase 4 — [IMPL-3] VLM / Multimodal Agent
 
-- [ ] Create `src/implementations/vlm-agent/`
-- [ ] `screenshot.ts` — captures visible form region via `html2canvas` or Chrome tab capture API
-- [ ] `ruler.ts` — overlays pixel-scale ruler markers (FormFactory §4.2 strategy)
-- [ ] `agent.ts` — sends screenshot + form schema to VLM API (GPT-4o / Gemini / Qwen-VL); parses structured JSON response
-- [ ] `README.md` — API keys required, privacy notice, ruler usage
-- [ ] Run benchmark (with and without ruler) → save to `benchmark-results/vlm-agent/`
+- [x] Create `src/implementations/vlm-agent/`
+- [x] `screenshot.ts` — captures visible form region via `html2canvas` or Chrome tab capture API
+- [x] `ruler.ts` — overlays pixel-scale ruler markers (FormFactory §4.2 strategy)
+- [x] `agent.ts` — sends screenshot + form schema to VLM API (GPT-4o / Gemini / Qwen-VL); parses structured JSON response
+- [x] `README.md` — API keys required, privacy notice, ruler usage
+- [x] Run benchmark (with and without ruler) → save to `benchmark-results/vlm-agent/`
 
 ### Phase 5 — [IMPL-4] LLM Structured Output Agent
 
-- [ ] Create `src/implementations/llm-structured/`
-- [ ] `tree-serializer.ts` — serializes accessibility tree / DOM to compact text representation
-- [ ] `schema-builder.ts` — generates JSON schema for constrained output (field-id → value)
-- [ ] `agent.ts` — calls local (Ollama / LM Studio) or cloud LLM with schema-enforced output
-- [ ] `README.md` — model options, constrained decoding setup, latency tradeoffs
-- [ ] Run benchmark → save to `benchmark-results/llm-structured/`
+- [x] Create `src/implementations/llm-structured/`
+- [x] `tree-serializer.ts` — serializes accessibility tree / DOM to compact text representation
+- [x] `schema-builder.ts` — generates JSON schema for constrained output (field-id → value)
+- [x] `agent.ts` — calls local (Ollama / LM Studio) or cloud LLM with schema-enforced output
+- [x] `README.md` — model options, constrained decoding setup, latency tradeoffs
+- [x] Run benchmark → save to `benchmark-results/llm-structured/`
 
 ### Phase 6 — [IMPL-5] Hybrid (DOM + VLM Fallback)
 
-- [ ] Create `src/implementations/hybrid/`
-- [ ] `confidence.ts` — computes per-field confidence score from rule-based pass
-- [ ] `agent.ts` — runs IMPL-1 first; for fields below confidence threshold, escalates to IMPL-3 (VLM)
-- [ ] `README.md` — confidence threshold tuning, expected latency profile
-- [ ] Run benchmark → save to `benchmark-results/hybrid/`
+- [x] Create `src/implementations/hybrid/`
+- [x] `confidence.ts` — computes per-field confidence score from rule-based pass
+- [x] `agent.ts` — runs IMPL-1 first; for fields below confidence threshold, escalates to IMPL-3 (VLM)
+- [x] `README.md` — confidence threshold tuning, expected latency profile
+- [x] Run benchmark → save to `benchmark-results/hybrid/`
 
 ### Phase 7 — Comparative Analysis
 
-- [ ] Collect all `benchmark-results/*/` JSON reports
+- [/] Collect all `benchmark-results/*/` JSON reports
 - [ ] Update comparison matrix in `Documentation/Flow.md` §6 with real numbers
 - [ ] Generate HTML report via `benchmark-analyzer.ts`
 - [ ] Identify best implementation per metric (click acc, value acc, speed, privacy)

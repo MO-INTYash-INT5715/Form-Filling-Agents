@@ -24,25 +24,144 @@
     "multiPage": true,
     "formPath": "/arts-creative/speaker-application"
   },
-  "agentName": "rule-based-demo",
-  "fieldResults": [],
+  "agentName": "rule-based",
+  "fieldResults": [
+    {
+      "fieldId": "Full Name",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "John Adams",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "Email Address",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "john.adams56@gmail.com",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "Phone Number",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "123-456-7890",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "organization",
+      "fieldType": "String",
+      "predictedValue": "Tech Innovations Inc.",
+      "goldValue": "Tech Innovations Inc.",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "Presentation Title",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "The Future of Artificial Intelligence in Visual Arts",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "Topic Area",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Visual Arts",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "Presentation Abstract",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "This presentation will explore how AI is being used in the creation of visual art, including generative art algorithms and AI-based design tools. We will examine the intersection of creativity and technology and discuss the ethical implications of AI in artistic expression.",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "Learning Objectives",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "1. Understand the role of AI in visual arts. 2. Explore AI-generated artworks and their impact on the art world. 3. Discuss ethical considerations in AI-driven creativity.",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "Professional Biography",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "John Adams is a renowned technologist and artist, bridging the gap between AI and visual arts. He has worked on multiple projects integrating AI with digital art, and his works have been exhibited in various international galleries.",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "CV/Resume",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "None",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "speaking_experience",
+      "fieldType": "Description",
+      "predictedValue": "",
+      "goldValue": "1. Keynote Speaker at ArtTech Symposium 2022. 2. Panelist at AI and Creativity Conference 2021.",
+      "clickAccurate": false,
+      "valueAccurate": false,
+      "bleuScore": 0
+    },
+    {
+      "fieldId": "Presentation Format",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Lecture",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "tech_requirements",
+      "fieldType": "Description",
+      "predictedValue": "",
+      "goldValue": "Projector, internet access, AI demo tools.",
+      "clickAccurate": false,
+      "valueAccurate": false,
+      "bleuScore": 0
+    },
+    {
+      "fieldId": "I agree to the speaker guidelines and terms of participation",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Yes",
+      "clickAccurate": null,
+      "valueAccurate": false
+    }
+  ],
   "atomicMetrics": {
-    "clickAccuracy": {},
-    "valueAccuracy": {},
+    "clickAccuracy": {
+      "String": 0,
+      "Description": 0
+    },
+    "valueAccuracy": {
+      "String": 8.333333333333332,
+      "Description": 0
+    },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 0
+    "overallValueAccuracy": 7.142857142857142
   },
   "episodicMetrics": {
-    "formCompletionRate": 0,
-    "fieldsAttempted": 0,
-    "fieldsCorrect": 0,
-    "totalFields": 0,
+    "formCompletionRate": 7.142857142857142,
+    "fieldsAttempted": 1,
+    "fieldsCorrect": 1,
+    "totalFields": 14,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 0
+    "averageValueAccuracy": 7.142857142857142
   },
-  "executionTimeMs": 0,
-  "errors": [
-    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/arts-creative/speaker-application\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/arts-creative/speaker-application\", waiting until \"domcontentloaded\"\u001b[22m\n"
-  ],
-  "submissionSucceeded": false
+  "executionTimeMs": 1677,
+  "errors": [],
+  "submissionSucceeded": true
 }

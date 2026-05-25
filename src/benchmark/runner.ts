@@ -20,7 +20,7 @@ import { PlaywrightFormExecutor } from './playwright-executor';
 import { mergeAtomicMetrics, mergeEpisodicMetrics } from './evaluation';
 import { createConfig } from './config';
 import type { BenchmarkConfig } from './config';
-import type { FormInstance, FormResult, BenchmarkReport, AgentAction } from './types';
+import type { FormInstance, FormResult, BenchmarkReport } from './types';
 
 import type { BenchmarkAgent } from './types';
 // ---------------------------------------------------------------------------

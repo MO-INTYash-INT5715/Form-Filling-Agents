@@ -364,7 +364,7 @@ export class PlaywrightFormExecutor {
       if (matched) {
         return matched.id ? `#${matched.id}` : `[name="${matched.name}"]`;
       }
-      return `[name="${fieldId}"], #${fieldId}`;
+      return '';
     };
 
     switch (action.type) {
@@ -373,7 +373,9 @@ export class PlaywrightFormExecutor {
           await page.mouse.click(action.x, action.y);
         } else if (action.fieldId) {
           const sel = getSelector(action.fieldId);
-          await page.click(sel).catch(() => {});
+          if (sel) {
+            await page.click(sel, { timeout: 1000 }).catch(() => {});
+          }
         }
         break;
 
@@ -386,18 +388,22 @@ export class PlaywrightFormExecutor {
           }
         } else if (action.fieldId && action.text !== undefined) {
           const sel = getSelector(action.fieldId);
-          await page.fill(sel, action.text).catch(() => {});
+          if (sel) {
+            await page.fill(sel, action.text, { timeout: 1000 }).catch(() => {});
+          }
         }
         break;
 
       case 'select':
         if (action.fieldId && action.text) {
           const sel = getSelector(action.fieldId);
-          await page.selectOption(sel, { label: action.text }).catch(async () => {
-            if (action.x != null && action.y != null) {
-              await page.mouse.click(action.x, action.y);
-            }
-          });
+          if (sel) {
+            await page.selectOption(sel, { label: action.text }, { timeout: 1000 }).catch(async () => {
+              if (action.x != null && action.y != null) {
+                await page.mouse.click(action.x, action.y);
+              }
+            });
+          }
         }
         break;
 
@@ -406,19 +412,23 @@ export class PlaywrightFormExecutor {
           await page.mouse.click(action.x, action.y);
         } else if (action.fieldId) {
           const sel = getSelector(action.fieldId);
-          await page.check(sel).catch(() => {});
+          if (sel) {
+            await page.check(sel, { timeout: 1000 }).catch(() => {});
+          }
         }
         break;
 
       case 'clear':
         if (action.fieldId) {
           const sel = getSelector(action.fieldId);
-          await page.fill(sel, '').catch(() => {});
+          if (sel) {
+            await page.fill(sel, '', { timeout: 1000 }).catch(() => {});
+          }
         }
         break;
 
       case 'submit':
-        await page.click('[type="submit"], button[type="submit"], input[type="submit"]').catch(() => {});
+        await page.click('[type="submit"], button[type="submit"], input[type="submit"]', { timeout: 1000 }).catch(() => {});
         break;
     }
   }

@@ -19,25 +19,104 @@
     "multiPage": false,
     "formPath": "/arts-creative/exhibition-submission"
   },
-  "agentName": "rule-based-demo",
-  "fieldResults": [],
+  "agentName": "rule-based",
+  "fieldResults": [
+    {
+      "fieldId": "Artist Name",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Amanda Lee",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "Email Address",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "amanda.lee1985@gmail.com",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "Artwork Title",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Enchanted Forest",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "medium",
+      "fieldType": "Dropdown",
+      "predictedValue": "Painting",
+      "goldValue": "Painting",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "Dimensions (in cm)",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "120 x 90 x 4",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "Year Created",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": 2022,
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "Artwork Description",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "This painting depicts an otherworldly forest where rays of sunlight filter through the ancient trees, creating a dappled pattern on the forest floor. The rich, deep greens of the foliage contrast with the warm, golden hues of the sunlight, giving the scene an almost magical quality. Delicate wildflowers peek out from between the roots, adding splashes of color to the otherwise earthy palette. It's a representation of the tranquility and mystery that one might encounter in a hidden forest.",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "exhibition_period",
+      "fieldType": "Dropdown",
+      "predictedValue": "Spring 2024",
+      "goldValue": "Spring 2024",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "for_sale",
+      "fieldType": "Checkbox",
+      "predictedValue": "true",
+      "goldValue": true,
+      "clickAccurate": false,
+      "valueAccurate": true
+    }
+  ],
   "atomicMetrics": {
-    "clickAccuracy": {},
-    "valueAccuracy": {},
+    "clickAccuracy": {
+      "String": 0,
+      "Dropdown": 0,
+      "Checkbox": 0
+    },
+    "valueAccuracy": {
+      "String": 0,
+      "Dropdown": 100,
+      "Checkbox": 100
+    },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 0
+    "overallValueAccuracy": 33.33333333333333
   },
   "episodicMetrics": {
-    "formCompletionRate": 0,
-    "fieldsAttempted": 0,
-    "fieldsCorrect": 0,
-    "totalFields": 0,
+    "formCompletionRate": 33.33333333333333,
+    "fieldsAttempted": 3,
+    "fieldsCorrect": 3,
+    "totalFields": 9,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 0
+    "averageValueAccuracy": 33.33333333333333
   },
-  "executionTimeMs": 0,
-  "errors": [
-    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/arts-creative/exhibition-submission\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/arts-creative/exhibition-submission\", waiting until \"domcontentloaded\"\u001b[22m\n"
-  ],
-  "submissionSucceeded": false
+  "executionTimeMs": 1661,
+  "errors": [],
+  "submissionSucceeded": true
 }

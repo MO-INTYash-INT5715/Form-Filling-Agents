@@ -7,6 +7,17 @@ export interface FormField {
     placeholder?: string;
     value?: string;
 }
+export interface UserProfile {
+    name: string;
+    email: string;
+    phone?: string;
+    company?: string;
+    address?: string;
+    website?: string;
+    linkedin?: string;
+    github?: string;
+    [key: string]: string | undefined;
+}
 export interface FormContext {
     url: string;
     title: string;

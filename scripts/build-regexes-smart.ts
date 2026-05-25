@@ -19,15 +19,15 @@ function buildSmartRegexes() {
     
     const parsed = JSON.parse(jsonStr);
     
-    // Use instance 1 for template inference
-    const gold = parsed['1'];
+    // Use instance 1 (index 0) for template inference
+    const gold = parsed[0];
     if (!gold) continue;
     
-    // We need to match instance 1 text from data2.
-    // The data2 file has entries like "1. <text>\n\n2. <text>"
-    const parts = txtStr.split(/^\d+\.\s+/m);
-    const inst1Text = parts[1] ? parts[1].trim() : txtStr.trim();
-    const cleanText = inst1Text.replace(/\n/g, ' ').replace(/\s+/g, ' ');
+    const normalized = txtStr.replace(/\r\n/g, '\n');
+    const nextMarkerIdx = normalized.search(/\n2[\.\)]\s?/);
+    const inst1Text = nextMarkerIdx !== -1 ? normalized.substring(0, nextMarkerIdx) : normalized;
+    const cleanInst1Text = inst1Text.replace(/^\d+[\.\)]\s*/, '').trim();
+    const cleanText = cleanInst1Text.replace(/\n/g, ' ').replace(/\s+/g, ' ');
 
     out += `formExtractors['${form}'] = (text: string) => {\n`;
     out += `  const cleanText = text.replace(/\\n/g, ' ').replace(/\\s+/g, ' ');\n`;

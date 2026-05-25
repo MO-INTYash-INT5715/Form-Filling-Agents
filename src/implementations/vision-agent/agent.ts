@@ -1,5 +1,6 @@
 import { Page } from 'playwright';
 import { BenchmarkAgent, FormInstance } from '../../benchmark/types';
+import { getLLMClient, getLLMModel } from '../../utils/llm';
 
 /**
  * Vision-Based LLM Agent
@@ -9,20 +10,22 @@ import { BenchmarkAgent, FormInstance } from '../../benchmark/types';
  */
 export class VisionAgent implements BenchmarkAgent {
   name = 'vision-agent';
+  private client;
+  private model: string;
 
-  constructor() {}
+  constructor() {
+    this.client = getLLMClient();
+    this.model = getLLMModel();
+  }
 
-  async planActions(
-    inputDocument: string,
-    formStructure: any
-  ): Promise<any[]> {
+  async planActions(_instance: FormInstance): Promise<any[]> {
     throw new Error('VisionAgent requires iterative execution via runIterative()');
   }
 
   async runIterative(
-    page: Page,
     instance: FormInstance,
-    onProgress?: (progress: number) => void
+    page: Page,
+    _onProgress?: (progress: number) => void
   ): Promise<void> {
     console.log(`[Vision Agent] Starting iterative visual execution for ${instance.formName}`);
     
@@ -35,10 +38,6 @@ export class VisionAgent implements BenchmarkAgent {
 
     let turn = 0;
     let isComplete = false;
-    
-    // We import OpenAI dynamically just for the vision agent for now
-    const OpenAI = (await import('openai')).default;
-    const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
     while (turn < 10 && !isComplete) {
       turn++;
@@ -50,8 +49,8 @@ export class VisionAgent implements BenchmarkAgent {
       console.log(`[Vision Agent] Turn ${turn}: Captured screenshot (${base64Image.length} bytes)`);
       
       try {
-        const response = await openai.chat.completions.create({
-          model: "gpt-4o",
+        const response = await this.client.chat.completions.create({
+          model: this.model,
           messages: [
             {
               role: "system",
@@ -60,7 +59,7 @@ export class VisionAgent implements BenchmarkAgent {
             {
               role: "user",
               content: [
-                { type: "text", text: `Form: ${instance.formName}\nDocument Context: ${inputDocument}` },
+                { type: "text", text: `Form: ${instance.formName}\nDocument Context: ${instance.inputDocument}` },
                 {
                   type: "image_url",
                   image_url: {

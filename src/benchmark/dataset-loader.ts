@@ -232,15 +232,34 @@ export const FORM_CATALOGUE: ReadonlyArray<{
  * We split on the numbered prefix pattern: /^\d+\.\s/m
  */
 function parseData2File(content: string): string[] {
-  // Split on lines that start with a number followed by ". "
-  const parts = content.split(/\n(?=\d+\.\s)/);
-  return parts
-    .map(part => {
-      // Remove leading "1. " prefix
-      const stripped = part.replace(/^\d+\.\s*/, '').trim();
-      return stripped;
-    })
-    .filter(Boolean);
+  const normalized = content.replace(/\r\n/g, '\n');
+  const instances: string[] = [];
+  let currentIdx = 1;
+  let searchPos = 0;
+  
+  while (currentIdx <= 50) {
+    const nextIdx = currentIdx + 1;
+    const regex = new RegExp(`\\n(?=${nextIdx}[\\.\\)]\\s?)`, 'g');
+    regex.lastIndex = searchPos;
+    
+    const match = regex.exec(normalized);
+    if (!match) {
+      const lastPart = normalized.substring(searchPos);
+      const stripped = lastPart.replace(/^\d+[\.\)]\s*/, '').trim();
+      if (stripped) instances.push(stripped);
+      break;
+    }
+    
+    const cutPos = match.index;
+    const part = normalized.substring(searchPos, cutPos);
+    const stripped = part.replace(/^\d+[\.\)]\s*/, '').trim();
+    if (stripped) instances.push(stripped);
+    
+    searchPos = cutPos + 1;
+    currentIdx++;
+  }
+  
+  return instances;
 }
 
 /**

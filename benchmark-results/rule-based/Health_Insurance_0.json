@@ -18,25 +18,101 @@
     "multiPage": true,
     "formPath": "/healthcare-medical/insurance-claim"
   },
-  "agentName": "rule-based-demo",
-  "fieldResults": [],
+  "agentName": "rule-based",
+  "fieldResults": [
+    {
+      "fieldId": "policyNumber",
+      "fieldType": "String",
+      "predictedValue": "A1234567890",
+      "goldValue": "A1234567890",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "policyHolder",
+      "fieldType": "String",
+      "predictedValue": "Emily Turner",
+      "goldValue": "Emily Turner",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "serviceDate",
+      "fieldType": "Date",
+      "predictedValue": "",
+      "goldValue": "2024/01/15",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "claimAmount",
+      "fieldType": "NumericInput",
+      "predictedValue": "250",
+      "goldValue": 250,
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "serviceType",
+      "fieldType": "Dropdown",
+      "predictedValue": "Doctor Consultation",
+      "goldValue": "Doctor Consultation",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "diagnosis",
+      "fieldType": "Description",
+      "predictedValue": "General Checkup, Mild Fatigue",
+      "goldValue": "General Checkup, Mild Fatigue",
+      "clickAccurate": false,
+      "valueAccurate": true,
+      "bleuScore": 100
+    },
+    {
+      "fieldId": "providerName",
+      "fieldType": "String",
+      "predictedValue": "Dr. Alice Green",
+      "goldValue": "Dr. Alice Green",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "providerNumber",
+      "fieldType": "String",
+      "predictedValue": "D12345",
+      "goldValue": "D12345",
+      "clickAccurate": false,
+      "valueAccurate": true
+    }
+  ],
   "atomicMetrics": {
-    "clickAccuracy": {},
-    "valueAccuracy": {},
+    "clickAccuracy": {
+      "String": 0,
+      "Date": 0,
+      "NumericInput": 0,
+      "Dropdown": 0,
+      "Description": 0
+    },
+    "valueAccuracy": {
+      "String": 100,
+      "Date": 0,
+      "NumericInput": 100,
+      "Dropdown": 100,
+      "Description": 100
+    },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 0
+    "overallValueAccuracy": 87.5
   },
   "episodicMetrics": {
-    "formCompletionRate": 0,
-    "fieldsAttempted": 0,
-    "fieldsCorrect": 0,
-    "totalFields": 0,
+    "formCompletionRate": 87.5,
+    "fieldsAttempted": 7,
+    "fieldsCorrect": 7,
+    "totalFields": 8,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 0
+    "averageValueAccuracy": 87.5
   },
-  "executionTimeMs": 0,
-  "errors": [
-    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/healthcare-medical/insurance-claim\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/healthcare-medical/insurance-claim\", waiting until \"domcontentloaded\"\u001b[22m\n"
-  ],
+  "executionTimeMs": 1463,
+  "errors": [],
   "submissionSucceeded": false
 }

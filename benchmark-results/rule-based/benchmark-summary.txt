@@ -2,38 +2,43 @@
 ║      FormFactory Benchmark Report (Real Dataset)             ║
 ╚══════════════════════════════════════════════════════════════╝
 
-  Agent:      rule-based-demo
-  Timestamp:  2026-05-22T02:32:23.479Z
+  Agent:      rule-based
+  Timestamp:  2026-05-25T03:08:03.036Z
   Forms:      25
   Instances:  25
-  Fields:     0
-  Runtime:    31.4s
+  Fields:     259
+  Runtime:    39.9s
 
 ━━━ GLOBAL METRICS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   Overall Click Accuracy:  0.00%
-  Overall Value Accuracy:  0.00%
-  Form Completion Rate:    0.00%
-  Fields Correct:          0 / 0
+  Overall Value Accuracy:  57.66%
+  Form Completion Rate:    57.66%
+  Fields Correct:          150 / 259
 
 ━━━ PER FIELD TYPE (Click / Value) ━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Checkbox           Click:    0.0%  Value:   50.0%
+  Date               Click:    0.0%  Value:   30.8%
+  Description        Click:    0.0%  Value:   17.6%
+  Dropdown           Click:    0.0%  Value:   71.9%
+  NumericInput       Click:    0.0%  Value:   74.2%
+  String             Click:    0.0%  Value:   72.8%
 
 ━━━ PER DOMAIN ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   Academic & Research
-    Click: 0.0%  Value: 0.0%  Completion: 0.0%  (5 inst.)
+    Click: 0.0%  Value: 56.7%  Completion: 56.7%  (5 inst.)
   Professional & Business
-    Click: 0.0%  Value: 0.0%  Completion: 0.0%  (4 inst.)
+    Click: 0.0%  Value: 69.2%  Completion: 69.2%  (4 inst.)
   Arts & Creative
-    Click: 0.0%  Value: 0.0%  Completion: 0.0%  (3 inst.)
+    Click: 0.0%  Value: 19.6%  Completion: 19.6%  (3 inst.)
   Technology & Software
-    Click: 0.0%  Value: 0.0%  Completion: 0.0%  (2 inst.)
+    Click: 0.0%  Value: 76.3%  Completion: 76.3%  (2 inst.)
   Finance & Banking
-    Click: 0.0%  Value: 0.0%  Completion: 0.0%  (3 inst.)
+    Click: 0.0%  Value: 50.2%  Completion: 50.2%  (3 inst.)
   Healthcare & Medical
-    Click: 0.0%  Value: 0.0%  Completion: 0.0%  (3 inst.)
+    Click: 0.0%  Value: 80.0%  Completion: 80.0%  (3 inst.)
   Legal & Compliance
-    Click: 0.0%  Value: 0.0%  Completion: 0.0%  (3 inst.)
+    Click: 0.0%  Value: 64.0%  Completion: 64.0%  (3 inst.)
   Construction & Manufacturing
-    Click: 0.0%  Value: 0.0%  Completion: 0.0%  (2 inst.)
+    Click: 0.0%  Value: 43.9%  Completion: 43.9%  (2 inst.)
 
 ══════════════════════════════════════════════════════════════
-⚠️  25 error(s) encountered (see benchmark-report.json)
