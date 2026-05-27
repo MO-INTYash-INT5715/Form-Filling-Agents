@@ -1,0 +1,36 @@
+{
+  "personal": {
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "email": "jane.doe+ffa-test@example.com",
+    "phone": "+1-555-0142",
+    "dateOfBirth": "1995-04-12",
+    "gender": "female"
+  },
+  "address": {
+    "line1": "100 Test Lane",
+    "city": "San Francisco",
+    "state": "CA",
+    "postalCode": "94107",
+    "country": "USA"
+  },
+  "professional": {
+    "currentTitle": "Software Engineer",
+    "company": "Acme Corp",
+    "yearsExperience": 5,
+    "linkedIn": "https://linkedin.com/in/janedoe-ffa-test",
+    "portfolio": "https://janedoe.example.com"
+  },
+  "education": [
+    {
+      "institution": "Test University",
+      "degree": "B.S.",
+      "field": "Computer Science",
+      "graduationYear": 2018
+    }
+  ],
+  "custom": {
+    "size": "medium",
+    "toppings": "cheese"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "ffa-playwright-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "End-to-end live-form filler driven by @playwright/mcp.",
+  "type": "module",
+  "scripts": {
+    "fill": "tsx src/index.ts fill",
+    "test": "tsx tests/smoke.test.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@playwright/mcp": "^0.0.27",
+    "openai": "^4.67.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.0",
+    "@types/node": "^20.14.0"
+  }
+}

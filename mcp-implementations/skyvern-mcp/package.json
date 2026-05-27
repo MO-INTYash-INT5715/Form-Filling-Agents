@@ -1,0 +1,16 @@
+{
+  "name": "ffa-skyvern-mcp",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Skyvern-MCP-driven live-form filler (planned).",
+  "type": "module",
+  "scripts": {
+    "fill": "tsx src/index.ts"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.0",
+    "@types/node": "^20.14.0"
+  }
+}

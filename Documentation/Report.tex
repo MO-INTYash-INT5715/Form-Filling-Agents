@@ -1,0 +1,292 @@
+% !TEX program = pdflatex
+% Form Filling Agents — Research Paper
+% Compile: pdflatex Report.tex   (run twice for refs)
+% This file is auto-regenerated alongside Report.md when major repo
+% changes are detected. See scripts/update-report.sh.
+
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstset{
+  basicstyle=\ttfamily\footnotesize,
+  breaklines=true,
+  frame=single,
+  columns=fullflexible,
+  keepspaces=true,
+  showstringspaces=false
+}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  citecolor=blue,
+  urlcolor=blue
+}
+
+\title{Form Filling Agents: A Comparative Study of\\
+Rule-Based, Embedding, LLM, VLM, and Hybrid Strategies\\
+on the FormFactory Benchmark}
+
+\author{
+  \IEEEauthorblockN{Yash Sarang}
+  \IEEEauthorblockA{Independent Research \\
+  Form Filling Agents Project \\
+  \texttt{github.com/...}}
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We study automated \emph{form filling} as a two-stage mapping problem:
+(i)~extracting structured values from unstructured user documents, and
+(ii)~resolving those values onto interactive DOM elements of an arbitrary
+web form. We implement and benchmark five isolated agent strategies ---
+rule-based, embedding-matcher, LLM-structured, vision-language model
+(VLM), and a DOM+VLM hybrid --- plus an MCP-orchestrated agent on the
+FormFactory benchmark (25 forms, 8 domains, $\approx 260$ ground-truth
+fields). The agents share a common \texttt{UserProfile} contract and are
+deployed across two delivery surfaces: a privacy-preserving browser
+extension and a server-side web portal. Current measurements show that a
+well-engineered rule-based baseline reaches $57.7\%$ value accuracy,
+while step-wise MCP agents collapse to $\approx 0.2\%$ without a
+per-step grounding layer. We propose a single-pass hybrid
+neuro-symbolic pipeline as the target end-state.
+\end{abstract}
+
+\begin{IEEEkeywords}
+form filling, web agents, large language models, vision-language models,
+benchmarking, browser automation, accessibility tree, Playwright.
+\end{IEEEkeywords}
+
+% --------------------------------------------------------------------
+\section{Introduction}
+% --------------------------------------------------------------------
+Web forms remain the dominant interface for transactional data entry:
+job applications, grant submissions, healthcare intake, registrations.
+Existing solutions --- browser autofill, RPA scripts, password managers
+--- either cover only trivial identity fields or require per-site
+engineering. Recent large language model (LLM) and vision-language model
+(VLM) advances make general-purpose form filling tractable but introduce
+trade-offs across accuracy, latency, cost, and privacy that are not yet
+well measured on heterogeneous form corpora.
+
+This work contributes:
+\begin{enumerate}
+  \item A reproducible agent contract (\texttt{Agent.analyze}) and
+        isolated-folder convention enabling fair comparison of
+        independently-developed strategies.
+  \item Five implemented archetypes plus an MCP variant evaluated on
+        the FormFactory benchmark.
+  \item A planned hybrid neuro-symbolic pipeline that motivates the
+        web-portal track of the repository.
+\end{enumerate}
+
+% --------------------------------------------------------------------
+\section{System Architecture}
+% --------------------------------------------------------------------
+The repository ships two parallel delivery tracks that share a common
+agent contract and \texttt{UserProfile} schema.
+
+\begin{lstlisting}
++---------------------+     +---------------------+
+|  Browser Extension  |     |     Web Portal      |
+|  (Chrome MV3 / FF)  |     |  (Next.js + PW)     |
++----------+----------+     +----------+----------+
+           |    UserProfile (JSON)     |
+           +-----------+---------------+
+                       v
+            +-----------------------+
+            | Agent Implementations |
+            | rule / emb / llm /    |
+            | vlm / hybrid / mcp    |
+            +----------+------------+
+                       v
+            +-----------------------+
+            | Executor (Playwright  |
+            | or DOM FormFiller)    |
+            +-----------------------+
+\end{lstlisting}
+
+\textbf{Key invariants.} (a)~Each
+\path{extension/src/implementations/<name>/} is self-contained and may
+only import from \texttt{src/types/} and \texttt{src/utils/}; no
+cross-agent coupling is permitted. (b)~Every agent implements the same
+\texttt{Agent} interface. (c)~All agents are evaluated on an identical
+FormFactory harness, with outputs persisted under
+\path{benchmark-results/<agent>/}. (d)~\texttt{UserProfile} is the only
+input contract. The extension produces it from
+\texttt{pipeline/input-pipeline.ts}; the portal produces it from
+\texttt{web-portal/src/parsers/document-parser.ts}.
+
+% --------------------------------------------------------------------
+\section{Agent Implementations}
+% --------------------------------------------------------------------
+\begin{table}[h]
+\centering
+\caption{Implemented agent archetypes.}
+\label{tab:agents}
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Agent} & \textbf{Approach} & \textbf{Cost} \\
+\midrule
+Rule-based        & Regex on label/name/id          & None         \\
+Embedding matcher & Cosine sim.\ (MiniLM, local)    & CPU          \\
+LLM-structured    & A11y tree + JSON-schema output  & API tokens   \\
+VLM agent         & Screenshot + ruler $\to$ bbox   & High API     \\
+Hybrid            & Rule then VLM fallback          & Adaptive     \\
+MCP agent         & Iterative tool calls (MCP)      & Very high    \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --------------------------------------------------------------------
+\section{Benchmark Harness}
+% --------------------------------------------------------------------
+\textbf{Dataset.} FormFactory --- 25 HTML forms across 8 domains
+(Academic, Professional, Healthcare, Legal, Civic, Financial, Commerce,
+Lifestyle), $\approx 260$ ground-truth fields.
+
+\textbf{Serving.} A local Flask server at
+\url{http://localhost:5000} exposes each template.
+
+\textbf{Execution.} \texttt{extension/scripts/run-benchmark.ts} drives a
+Playwright Chromium instance; each agent returns an
+\texttt{AgentAction[]} sequence
+(\texttt{type}, \texttt{click}, \texttt{select}).
+
+\textbf{Metrics.} Click accuracy, value accuracy, form completion rate,
+per-domain breakdown, per-field-type breakdown.
+
+% --------------------------------------------------------------------
+\section{Results}
+% --------------------------------------------------------------------
+Aggregated from \path{benchmark-results/*/benchmark-report.json}:
+
+\begin{table}[h]
+\centering
+\caption{Current aggregate benchmark results.}
+\label{tab:results}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+\textbf{Agent} & \textbf{Fields} & \textbf{Value Acc.} & \textbf{Completion} \\
+\midrule
+Rule-based         & 259 & $\mathbf{57.66\%}$ & $57.66\%$ \\
+MCP agent          & 116 & $\phantom{00}0.21\%$ & $\phantom{00}0.21\%$ \\
+Embedding matcher  & --- & pending & --- \\
+VLM agent          & --- & pending & --- \\
+LLM-structured     & --- & pending & --- \\
+Hybrid             & --- & pending & --- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Discussion.} The rule-based baseline is unexpectedly strong
+because FormFactory exposes stable \texttt{name}/\texttt{id} attributes
+and well-formed labels. The MCP agent's collapse is not a model failure
+but an evaluation mismatch: MCP-style agents act across many turns and
+frequently terminate before submission, leaving most fields
+unattempted ($4/116$ in the latest run). A per-step grounding layer or
+a turn budget per field is required for a fair comparison.
+
+% --------------------------------------------------------------------
+\section{Planned Approach: Hybrid Neuro-Symbolic Pipeline}
+% --------------------------------------------------------------------
+We target a single-pass pipeline rather than a step-wise loop:
+
+\begin{enumerate}
+  \item \textbf{Input (neural).} Document
+        $\to$ \texttt{UserProfile} JSON via an LLM with a fixed schema.
+  \item \textbf{DOM simplification (symbolic).} Page $\to$ minimal
+        accessibility graph of interactive elements.
+  \item \textbf{Semantic mapping (neural).} One LLM call maps
+        \texttt{UserProfile} keys $\to$ DOM element IDs, emitting a
+        strict $\{\text{fieldId}: \text{value}\}$ map.
+  \item \textbf{Execution (symbolic).} Playwright (portal) or
+        \texttt{FormFiller} (extension) applies the map deterministically;
+        a re-snapshot pass handles conditional sub-forms.
+  \item \textbf{Escalation (neural, on demand).} Unresolved or
+        low-confidence fields fall back to the VLM agent with
+        ruler-marked screenshots.
+\end{enumerate}
+
+This is the architecture the web-portal track
+(\path{web-portal/src/{parsers,scraper,filler}/}) is being built around.
+The browser extension retains the local-first, opt-in posture for users
+who decline a server in the loop.
+
+% --------------------------------------------------------------------
+\section{Roadmap}
+% --------------------------------------------------------------------
+\begin{enumerate}
+  \item Aggregate all \texttt{benchmark-results/*} into a unified
+        comparison matrix.
+  \item Wire the LLM-structured agent into the web-portal filler.
+  \item Replace document-parser stub with real \texttt{pdf-parse} /
+        \texttt{mammoth} pipelines.
+  \item Add per-step grounding to the MCP agent.
+  \item Add CI: headless benchmark on every PR.
+  \item Live-site evaluation harness on 10 real public forms.
+  \item Model proxy with PII redaction and key management.
+\end{enumerate}
+
+% --------------------------------------------------------------------
+\section{Conclusion}
+% --------------------------------------------------------------------
+A clean, isolated-folder architecture allows independently developed
+agent archetypes to be compared on identical footing. Early results
+indicate that simple symbolic methods are strong baselines on
+well-structured forms, while step-wise neural agents need explicit
+grounding before they justify their cost. The hybrid neuro-symbolic
+pipeline outlined above is the next milestone and is being built on the
+web-portal track.
+
+\section*{Reproducibility}
+\begin{lstlisting}[language=bash]
+# Extension
+cd extension
+npm install
+npm run build:extension
+npm run test:quick
+npm run test:impl -- rule-based
+
+# Web portal
+cd web-portal
+npm install
+npx playwright install chromium
+npm run dev
+\end{lstlisting}
+
+\section*{Acknowledgments}
+Built on the FormFactory benchmark, Playwright, and the
+WebExtensions API.
+
+\begin{thebibliography}{9}
+\bibitem{formfactory}
+  FormFactory Benchmark Suite.
+  Internal dataset; 25 forms, 8 domains, $\approx 260$ fields.
+
+\bibitem{playwright}
+  Microsoft. \emph{Playwright: Reliable end-to-end testing for modern
+  web apps}. \url{https://playwright.dev}
+
+\bibitem{som}
+  Yang, J., et al.
+  \emph{Set-of-Mark Prompting Unleashes Extraordinary Visual Grounding
+  in GPT-4V}. arXiv:2310.11441.
+
+\bibitem{mcp}
+  Anthropic. \emph{Model Context Protocol (MCP) Specification}.
+  \url{https://modelcontextprotocol.io}
+\end{thebibliography}
+
+\end{document}

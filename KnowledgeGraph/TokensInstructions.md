@@ -9,6 +9,9 @@
 
 Every tool schema, MCP server, and integration that loads at session start costs tokens before your first prompt.
 
+Follow caveman https://github.com/juliusbrussee/caveman to save tokens/credits 
+
+
 **Principles:**
 
 - Load tool schemas and integrations **lazily** — only fetch schemas for tools the session will actually use.

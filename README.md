@@ -1,6 +1,90 @@
-# Form Filling Agent Browser Extension
+# Form Filling Agents
 
-A multi-browser extension for AI-powered form filling agents designed to handle commercial forms and document uploads.
+AI-powered form filling — two parallel implementations sharing the same agent logic:
+
+| Implementation | Folder | Status |
+|---|---|---|
+| Browser Extension | [`extension/`](extension/) | Active development |
+| Web Portal | [`web-portal/`](web-portal/) | In progress |
+
+---
+
+## Quick Start
+
+```bash
+# Extension
+cd extension && npm install && npm run build
+
+# Web Portal
+cd web-portal && npm install && npm run dev
+```
+
+Root-level shortcuts (from repo root, requires dependencies installed in subfolders):
+
+```bash
+npm run extension:build           # compile extension scripts
+npm run portal:dev                # start portal dev server on :3001
+npm run benchmark:rule-based:quick
+```
+
+---
+
+## Repository Layout
+
+```
+├── extension/              # Browser Extension (Chrome MV3 / Firefox MV2)
+│   ├── src/                # TypeScript source
+│   │   ├── implementations/  # Agent strategies (rule-based, vlm, llm, hybrid…)
+│   │   ├── content/          # DOM content script
+│   │   ├── background/       # Service worker
+│   │   └── utils/            # form-detection, form-filler, storage
+│   ├── public/             # Manifests + compiled JS
+│   └── scripts/            # Benchmark CLI runner
+│
+├── web-portal/             # Web Portal (Next.js + Playwright server-side)
+│   ├── src/
+│   │   ├── parsers/        # Document → UserProfile (PDF, DOCX, TXT, JSON)
+│   │   ├── scraper/        # URL → ScrapedForm (Playwright headless)
+│   │   ├── filler/         # ScrapedForm + UserProfile → FillResult
+│   │   ├── api/            # Next.js API routes (/api/fill, /api/parse)
+│   │   └── types/          # Shared TypeScript types
+│   └── app/                # UI pages and components
+│
+├── benchmark-results/      # Benchmark outputs (shared, all implementations)
+├── Documentation/          # All project documentation
+│   ├── Brainstorm.md       # Implementation options overview
+│   ├── WebPortal.md        # Web portal detailed workflow
+│   ├── Implementation.md   # Extension agent implementation tracker
+│   ├── Flow.md             # End-to-end pipeline diagram
+│   ├── Report.md           # Design decisions & architecture report
+│   ├── Explanation.md      # Pipeline concepts explained
+│   ├── Literature_review.md
+│   ├── MultiModal-Benchmark.md
+│   ├── Running_Local_LLM.md
+│   └── TESTING.md
+└── KnowledgeGraph/         # Structured repo context for AI agents
+```
+
+---
+
+## Why two implementations?
+
+The **Browser Extension** runs agents locally inside the browser. It is fast, private, and requires no server.
+
+The **Web Portal** runs agents on a server. Users log in, upload documents (resume, ID, etc.), and submit a URL — the portal scrapes the form and fills it automatically using Playwright. It supports heavier models, stores user data persistently, and works without any browser plugin installed.
+
+The agent logic (`UserProfile` → field-value mapping) is designed to be reused between both.
+
+---
+
+## Documentation
+
+See [`Documentation/`](Documentation/) for the full set of docs. Key files:
+
+- [WebPortal.md](Documentation/WebPortal.md) — web portal workflow and architecture
+- [Implementation.md](Documentation/Implementation.md) — agent strategy tracker
+- [Brainstorm.md](Documentation/Brainstorm.md) — all implementation options considered
+- [Report.md](Documentation/Report.md) — design report and decisions
 
 ## Overview
 

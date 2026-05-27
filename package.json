@@ -1,23 +1,24 @@
 {
-  "name": "form-filling-agent-extension",
+  "name": "form-filling-agents",
   "version": "1.0.0",
-  "description": "Browser extension for AI-powered form filling agents",
+  "description": "AI-powered form filling agents — Browser Extension + Web Portal",
   "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "npm run build:extension && npm run build:next",
-    "build:extension": "tsc --project tsconfig.extension.json",
-    "build:next": "next build && next export",
-    "start": "next start",
-    "lint": "eslint src --ext .ts,.tsx",
-    "type-check": "tsc --noEmit",
-    "benchmark:rule-based:quick": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --quick --agent rule-based",
-    "benchmark:rule-based:full": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --full --agent rule-based",
-    "benchmark:mcp-agent:quick": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --quick --agent mcp-agent",
-    "benchmark:mcp-agent:full": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --full --agent mcp-agent",
-    "benchmark:setup": "playwright install chromium",
-    "benchmark:list": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --list-forms",
-    "benchmark:embedding": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --quick --agent embedding-matcher"
+    "extension:dev":   "cd extension && next dev",
+    "extension:build": "cd extension && tsc --project tsconfig.extension.json",
+    "extension:lint":  "cd extension && eslint src --ext .ts,.tsx",
+
+    "portal:dev":      "cd web-portal && next dev -p 3001",
+    "portal:build":    "cd web-portal && next build",
+    "portal:start":    "cd web-portal && next start -p 3001",
+
+    "benchmark:rule-based:quick":  "cd extension && tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --quick --agent rule-based",
+    "benchmark:rule-based:full":   "cd extension && tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --full  --agent rule-based",
+    "benchmark:mcp-agent:quick":   "cd extension && tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --quick --agent mcp-agent",
+    "benchmark:mcp-agent:full":    "cd extension && tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --full  --agent mcp-agent",
+    "benchmark:embedding":         "cd extension && tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --quick --agent embedding-matcher",
+    "benchmark:setup":             "cd extension && playwright install chromium",
+    "benchmark:list":              "cd extension && tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --list-forms"
   },
   "dependencies": {
     "dotenv": "^17.4.2",

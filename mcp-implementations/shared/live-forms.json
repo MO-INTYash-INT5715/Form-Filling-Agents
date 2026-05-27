@@ -1,0 +1,31 @@
+{
+  "$comment": "Curated live-form test set. Keep small (<=15) so a full run finishes in minutes. Add a form only if it is reasonably stable and ToS-permissive for automated testing.",
+  "forms": [
+    {
+      "id": "httpbin-form",
+      "url": "https://httpbin.org/forms/post",
+      "category": "test-harness",
+      "expectedFields": [
+        "personal.firstName",
+        "personal.phone",
+        "custom.size",
+        "custom.toppings"
+      ],
+      "notes": "Public test form. Safe baseline; no auth, no captcha."
+    },
+    {
+      "id": "w3schools-form",
+      "url": "https://www.w3schools.com/html/html_forms.asp",
+      "category": "test-harness",
+      "expectedFields": ["personal.firstName", "personal.lastName"],
+      "notes": "Embedded demo form on docs site. Stable selectors."
+    },
+    {
+      "id": "tiny-newsletter",
+      "url": "https://example.com/newsletter",
+      "category": "newsletter",
+      "expectedFields": ["personal.email"],
+      "notes": "PLACEHOLDER. Replace with a real opt-in form you control."
+    }
+  ]
+}

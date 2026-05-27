@@ -1,0 +1,207 @@
+{
+  "_comment": "FormFactory benchmark test profile — Alice Jane Zhang, covers all 25 forms across 8 domains",
+  "_version": "1.0",
+
+  "personal": {
+    "firstName": "Alice",
+    "middleName": "Jane",
+    "lastName": "Zhang",
+    "fullName": "Alice Jane Zhang",
+    "email": "alice.zhang@example.com",
+    "phone": "555-123-4567",
+    "dateOfBirth": "1990/03/15",
+    "age": 34,
+    "gender": "Female",
+    "ssn": "123-45-6789",
+    "address": {
+      "street": "123 Elm Street",
+      "city": "Springfield",
+      "state": "Illinois",
+      "stateCode": "IL",
+      "zip": "62704",
+      "country": "United States"
+    }
+  },
+
+  "professional": {
+    "currentTitle": "Software Engineer",
+    "company": "Tech Innovations Inc",
+    "accountNumber": "TI-102938",
+    "department": "Engineering",
+    "employmentStatus": "Full-time",
+    "monthlyIncome": 8500,
+    "annualIncome": 102000,
+    "lengthOfEmployment": "5 years",
+    "yearsExperience": 5,
+    "skills": ["Python", "TypeScript", "Machine Learning", "React", "Node.js"],
+    "linkedinUrl": "https://linkedin.com/in/alice-zhang",
+    "coverLetterBody": "I am passionate about software engineering and excited to bring my expertise in full-stack development and machine learning to your team. With 5 years of experience at Tech Innovations Inc, I have led multiple projects from design through deployment."
+  },
+
+  "education": [
+    {
+      "institution": "Massachusetts Institute of Technology",
+      "degree": "Bachelor of Science",
+      "field": "Computer Science",
+      "graduationYear": 2015,
+      "gpa": "3.85"
+    }
+  ],
+
+  "academic": {
+    "researchTitle": "Automated Form Filling using Neural Networks and NLP",
+    "researchArea": "Artificial Intelligence",
+    "paperAbstract": "This paper presents a novel approach to automated web form filling using a hybrid neural network and natural language processing system. Our method achieves 87% field accuracy on a diverse benchmark of 25 real-world form types.",
+    "keywords": "form automation, NLP, neural networks, web scraping, accessibility",
+    "primaryAuthors": "Alice Zhang, Bob Chen",
+    "targetConference": "NeurIPS 2025",
+    "submissionCategory": "Machine Learning",
+    "grantPurpose": "To fund research into AI-powered form automation for accessibility improvement",
+    "fundingAmount": 75000,
+    "institution": "MIT Computer Science Department"
+  },
+
+  "health": {
+    "policyNumber": "A1234567890",
+    "policyHolderName": "Alice Jane Zhang",
+    "dateOfService": "2024/01/15",
+    "claimAmount": 250,
+    "typeOfService": "Doctor Consultation",
+    "diagnosis": "General Checkup",
+    "providerName": "Dr. Robert Smith",
+    "providerIdNumber": "D12345",
+    "medicalConditions": "None",
+    "currentMedications": "None",
+    "studyPreference": "Clinical Trial",
+    "availability": "Weekdays"
+  },
+
+  "legal": {
+    "partyType": "Individual",
+    "ndaPurpose": "To protect intellectual property related to a new software development project, including source code, architecture, and design",
+    "effectiveDate": "2024/12/05",
+    "ndaDurationYears": 5,
+    "representativeName": "Alice Jane Zhang",
+    "titlePosition": "Software Engineer",
+    "authorizeBackgroundCheck": true,
+    "understandsConsequences": true,
+    "agreesToTerms": true
+  },
+
+  "finance": {
+    "loanAmount": 15000,
+    "loanTerm": "36 months",
+    "consultationType": "Estate Planning",
+    "preferredConsultationDate": "2025/06/15",
+    "preferredConsultationTime": "Morning (9:00 AM - 11:00 AM)",
+    "financialComments": "Looking to discuss investment strategies and long-term financial planning.",
+    "bankAccountType": "Checking",
+    "accountHolderName": "Alice Jane Zhang",
+    "routingNumber": "021000021",
+    "initialDeposit": 500
+  },
+
+  "rental": {
+    "preferredMoveInDate": "2025/07/01",
+    "preferredLeaseTerm": "12 months",
+    "maxMonthlyRent": 2000,
+    "preferredArea": "Near public transport",
+    "hasPets": "No",
+    "petDescription": "No pets",
+    "additionalComments": "Prefer quiet and residential areas."
+  },
+
+  "arts": {
+    "artworkTitle": "Digital Horizons",
+    "artworkMedium": "Digital Art",
+    "artworkYear": "2024",
+    "artworkDimensions": "1920 x 1080 px",
+    "artworkDescription": "A digital exploration of the intersection between technology and human creativity, rendered using generative AI techniques.",
+    "submissionCategory": "Digital Art",
+    "artistBio": "Alice Zhang is a software engineer and digital artist bridging technology and creative expression.",
+    "magazineSubmissionTitle": "The Algorithm Dreams",
+    "submissionGenre": "Science Fiction",
+    "wordCount": 4500,
+    "previousPublications": "None"
+  },
+
+  "conference": {
+    "talkTitle": "AI-Powered Form Automation: From Research to Production",
+    "talkAbstract": "This talk explores the journey of building an AI-powered form automation system, covering rule-based heuristics, semantic embeddings, and vision-language models.",
+    "sessionType": "Technical Talk",
+    "talkDuration": "45 minutes",
+    "speakerBio": "Alice Zhang is a Software Engineer at Tech Innovations Inc specializing in AI/ML systems.",
+    "requiresTravelExpenses": "No",
+    "targetAudience": "Software Engineers, Researchers"
+  },
+
+  "membership": {
+    "membershipType": "Individual",
+    "organizationType": "Professional Association",
+    "organizationName": "Tech Professionals Association",
+    "referralSource": "Colleague",
+    "membershipDuration": "1 year",
+    "newsletterSubscribe": false,
+    "volunteerInterest": true
+  },
+
+  "workshop": {
+    "workshopName": "Advanced TypeScript and Modern Web Development",
+    "dietaryRestrictions": "None",
+    "accessibilityRequirements": "None",
+    "emergencyContactName": "John Zhang",
+    "emergencyContactPhone": "555-987-6543",
+    "tshirtSize": "Medium",
+    "howDidYouHear": "Online"
+  },
+
+  "startup": {
+    "startupName": "AutoFill AI",
+    "founderName": "Alice Zhang",
+    "fundingAmountRequested": 500000,
+    "businessStage": "Early Stage",
+    "industry": "Technology",
+    "teamSize": 5,
+    "businessDescription": "AutoFill AI is developing an intelligent form automation platform that reduces manual data entry by 90% using NLP and computer vision.",
+    "revenueModel": "SaaS subscription",
+    "targetMarket": "Enterprise software companies and HR departments"
+  },
+
+  "manufacturing": {
+    "companyName": "Tech Innovations Inc",
+    "customerAccountNumber": "TI-102938",
+    "productType": "Custom Product",
+    "productDescription": "AI-powered sensor array for smart building automation",
+    "productSpecifications": "High sensitivity, 5-meter detection range, IoT-compatible",
+    "quantity": 100,
+    "dimensions": "200 x 150 x 50",
+    "material": "Aluminum, Silicon",
+    "technicalSpecs": "Real-time data processing, low power consumption, wireless connectivity with IoT",
+    "qualityStandards": "ISO 9001, CE certified",
+    "deliveryDate": "2025/12/01",
+    "shippingMethod": "Express"
+  },
+
+  "construction": {
+    "companyName": "Tech Innovations Inc",
+    "contractorLicenseNumber": "TI-203940",
+    "projectName": "Office Automation System Installation",
+    "bidAmount": 850000,
+    "estimatedDurationWeeks": 24,
+    "proposedStartDate": "2025/06/01",
+    "estimatedCompletionDate": "2025/12/01",
+    "scopeOfWork": "Full installation of AI-powered office automation systems.",
+    "workDescription": "The project will involve hardware installation, software deployment, staff training, and integration with existing systems.",
+    "contactPerson": "Alice Zhang",
+    "contactPhone": "555-123-4567"
+  },
+
+  "extra": {
+    "preferredLanguage": "English",
+    "timezone": "America/Chicago",
+    "subscribeToNewsletter": false,
+    "agreeToTerms": true,
+    "signature": "Alice Zhang",
+    "date": "2025/05/26"
+  }
+}
