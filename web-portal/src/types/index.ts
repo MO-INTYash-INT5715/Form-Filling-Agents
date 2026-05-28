@@ -33,13 +33,16 @@ export interface UserProfile {
   documents?: UserDocument[];
   /** Arbitrary extra fields parsed from uploaded docs */
   extra?: Record<string, string | string[]>;
+  custom?: Record<string, any>; // For test data like size, toppings
 }
 
 export interface AddressBlock {
+  line1?: string;
   street?: string;
   city?: string;
   state?: string;
   zip?: string;
+  postalCode?: string;
   country?: string;
 }
 
@@ -75,6 +78,7 @@ export interface ScrapedField {
   type: string;            // text | email | select | checkbox | radio | file | textarea
   required?: boolean;
   options?: string[];      // for select / radio
+  value?: string;          // for radio/checkbox - the value attribute
 }
 
 export interface ScrapedForm {
@@ -109,6 +113,10 @@ export interface FillResult {
   /** field id → reason it was skipped */
   skipped: Record<string, string>;
   screenshotBase64?: string;
+  screenshot?: string;     // Alternative format (data URI)
+  success?: boolean;
+  error?: string;
+  durationMs?: number;
 }
 
 // ── API Request / Response shapes ────────────────────────────────────────────
