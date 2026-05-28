@@ -9,6 +9,100 @@ export interface MCPTelemetry {
   llmCalls: number;
 }
 
+// ── JSON repair helpers ────────────────────────────────────────────────────────
+
+/** Strip control characters that break JSON.parse */
+function stripControlChars(s: string): string {
+  // eslint-disable-next-line no-control-regex
+  return s.replace(/[\x00-\x08\x0B\x0C\x0E-\x1F]/g, ' ');
+}
+
+/** Strip JS-style line comments from a JSON-like string */
+function stripLineComments(s: string): string {
+  return s.replace(/\/\/[^\n]*/g, '');
+}
+
+/** Best-effort JSON parse with multi-stage repair */
+function robustParse(raw: string): any {
+  const stages = [
+    raw,
+    raw.replace(/^```json\n?/, '').replace(/\n?```$/, '').trim(),
+    stripLineComments(raw).trim(),
+    stripControlChars(raw).trim(),
+    stripControlChars(stripLineComments(raw)).trim(),
+  ];
+
+  for (const s of stages) {
+    try { return JSON.parse(s); } catch { /* try next */ }
+    // try extracting a JSON array from inside a larger blob
+    const m = s.match(/\[[\s\S]*\]/);
+    if (m) try { return JSON.parse(m[0]); } catch { /* try next */ }
+  }
+  throw new Error(`Cannot parse LLM output: ${raw.slice(0, 300)}`);
+}
+
+// ── Date normalisation ─────────────────────────────────────────────────────────
+
+/** Try to convert any date-like string to YYYY-MM-DD */
+function normalizeDate(value: string): string {
+  if (!value) return value;
+  // Already YYYY-MM-DD
+  if (/^\d{4}-\d{2}-\d{2}$/.test(value)) return value;
+  // YYYY/MM/DD → YYYY-MM-DD
+  if (/^\d{4}\/\d{2}\/\d{2}$/.test(value)) return value.replace(/\//g, '-');
+  // MM/DD/YYYY or MM-DD-YYYY
+  const mdy = value.match(/^(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})$/);
+  if (mdy) return `${mdy[3]}-${mdy[1].padStart(2,'0')}-${mdy[2].padStart(2,'0')}`;
+  // DD/MM/YYYY — ambiguous, but try
+  const dmy = value.match(/^(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})$/);
+  if (dmy) return `${dmy[3]}-${dmy[2].padStart(2,'0')}-${dmy[1].padStart(2,'0')}`;
+  // Natural language via Date constructor
+  const d = new Date(value);
+  if (!isNaN(d.getTime())) {
+    return d.toISOString().slice(0, 10);
+  }
+  return value; // give up, pass as-is
+}
+
+// ── Fuzzy dropdown matcher ─────────────────────────────────────────────────────
+
+/** Pick the best matching option label for a desired value */
+async function selectFuzzy(page: Page, selector: string, desired: string): Promise<void> {
+  const options: string[] = await page.evaluate((sel) => {
+    const el = document.querySelector(sel) as HTMLSelectElement | null;
+    if (!el) return [];
+    return Array.from(el.options).map(o => o.label);
+  }, selector);
+
+  if (!options.length) return;
+
+  // 1. Exact
+  if (options.includes(desired)) {
+    await page.selectOption(selector, { label: desired }).catch(() => {});
+    return;
+  }
+
+  const norm = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, '');
+  const desiredNorm = norm(desired);
+
+  // 2. Case-insensitive / punctuation-stripped exact
+  const exact = options.find(o => norm(o) === desiredNorm);
+  if (exact) { await page.selectOption(selector, { label: exact }).catch(() => {}); return; }
+
+  // 3. Starts-with
+  const startsWith = options.find(o => norm(o).startsWith(desiredNorm) || desiredNorm.startsWith(norm(o)));
+  if (startsWith) { await page.selectOption(selector, { label: startsWith }).catch(() => {}); return; }
+
+  // 4. Contains
+  const contains = options.find(o => norm(o).includes(desiredNorm) || desiredNorm.includes(norm(o)));
+  if (contains) { await page.selectOption(selector, { label: contains }).catch(() => {}); return; }
+
+  // 5. Try value= as fallback
+  await page.selectOption(selector, { value: desired }).catch(() => {});
+}
+
+// ── Agent ──────────────────────────────────────────────────────────────────────
+
 export class MCPAgent implements BenchmarkAgent {
   name = 'mcp-agent';
   private client;
@@ -32,15 +126,17 @@ Your task is to fill the form based on this document:
 ${instance.inputDocument}
 ---
 You will receive the current DOM state (interactable fields with their type and label).
-You must output a JSON array of actions — no prose, no markdown, ONLY the JSON array:
+You must output a JSON array of actions — no prose, no markdown, no comments, ONLY valid JSON:
 [{ "action": "type", "selector": "#field_id", "value": "John" }, { "action": "finish" }]
-Supported actions: type (fill text), click (click element), select (pick dropdown option by label), check (toggle checkbox), finish (stop iteration).
+Supported actions: type (fill text), click (click element), select (pick dropdown option by EXACT label from the options list), check (toggle checkbox), finish (stop iteration).
+IMPORTANT: For date fields, ALWAYS use YYYY-MM-DD format (e.g. "1990-05-23").
+IMPORTANT: For select/dropdown, use the EXACT option label string from the Options list provided.
 Only use CSS selectors provided in the DOM state.`
     }];
 
     for (let i = 0; i < 10; i++) {
       const domState = await this.getDomState(page);
-      messages.push({ role: 'user', content: `Current DOM state:\n${domState}\n\nOutput ONLY a JSON array of actions.` });
+      messages.push({ role: 'user', content: `Current DOM state:\n${domState}\n\nOutput ONLY a valid JSON array of actions. No comments, no markdown.` });
 
       try {
         const options: any = {
@@ -62,34 +158,41 @@ Only use CSS selectors provided in the DOM state.`
         const reply = response.choices[0]?.message?.content || '[]';
         messages.push({ role: 'assistant', content: reply });
 
-        // Extract JSON array — handle both bare array and object-wrapped
-        let parsed: any;
-        const cleaned = reply.replace(/^```json\n?/, '').replace(/\n?```$/, '').trim();
-        try {
-          parsed = JSON.parse(cleaned);
-          // If Ollama wraps in {"actions": [...]} unwrap it
-          if (!Array.isArray(parsed) && Array.isArray(parsed.actions)) {
-            parsed = parsed.actions;
-          }
-        } catch {
-          // Try to extract array from inside a JSON object
-          const match = cleaned.match(/\[[\s\S]*\]/);
-          if (match) parsed = JSON.parse(match[0]);
-          else throw new Error(`Cannot parse LLM output as action array: ${cleaned.slice(0, 200)}`);
-        }
+        let parsed: any = robustParse(reply);
+        // Unwrap {actions: [...]} envelope
+        if (!Array.isArray(parsed) && Array.isArray(parsed?.actions)) parsed = parsed.actions;
+        if (!Array.isArray(parsed)) throw new Error(`Expected array, got: ${typeof parsed}`);
 
         let finished = false;
         for (const act of parsed) {
           console.log(`[MCP Agent] Executing:`, act);
           if (act.action === 'finish') { finished = true; break; }
-          if (act.action === 'type' && act.selector && act.value !== undefined) {
-            await page.fill(act.selector, String(act.value)).catch(() => {});
-          } else if (act.action === 'click' && act.selector) {
-            await page.click(act.selector).catch(() => {});
-          } else if (act.action === 'select' && act.selector && act.value) {
-            await page.selectOption(act.selector, { label: String(act.value) }).catch(() => {});
-          } else if (act.action === 'check' && act.selector) {
-            await page.check(act.selector).catch(() => {});
+
+          const sel: string = act.selector;
+          const val: string = String(act.value ?? '');
+
+          // Detect the actual element type to fix model action mistakes
+          const elInfo: { type: string; tag: string } = await page.evaluate((s) => {
+            const el = document.querySelector(s) as HTMLInputElement | null;
+            return el ? { type: el.type ?? '', tag: el.tagName.toLowerCase() } : { type: '', tag: '' };
+          }, sel).catch(() => ({ type: '', tag: '' }));
+
+          // Model sometimes emits "click" for date/text fields — coerce to type
+          const effectiveAction = (act.action === 'click' && (elInfo.type === 'date' || elInfo.type === 'text' || elInfo.tag === 'textarea'))
+            ? 'type' : act.action;
+
+          if (effectiveAction === 'type' && sel) {
+            const finalVal = elInfo.type === 'date' ? normalizeDate(val) : val;
+            await page.fill(sel, finalVal).catch(() => {});
+
+          } else if (effectiveAction === 'select' || (act.action === 'select' && sel)) {
+            await selectFuzzy(page, sel, val);
+
+          } else if (effectiveAction === 'click' && sel) {
+            await page.click(sel).catch(() => {});
+
+          } else if (act.action === 'check' && sel) {
+            await page.check(sel).catch(() => {});
           }
         }
         if (finished) break;
@@ -116,15 +219,22 @@ Only use CSS selectors provided in the DOM state.`
           const lbl = document.querySelector(`label[for="${el.id}"]`);
           if (lbl) label = lbl.textContent?.trim() || '';
         }
-        // For select, include options
         let options = '';
         if (el.tagName === 'SELECT') {
-          const opts = Array.from((el as HTMLSelectElement).options).map(o => o.label).join(', ');
+          const sel = el as HTMLSelectElement;
+          const opts = sel.options ? Array.from(sel.options)
+            .filter((o: HTMLOptionElement) => o.value !== '')
+            .map((o: HTMLOptionElement) => o.label)
+            .join(', ') : '';
           options = ` | Options: [${opts}]`;
         }
         const type = inp.type || el.tagName.toLowerCase();
         return `${el.tagName}[${type}] | Selector: ${selector} | Label: "${label}"${options}`;
       }).filter(Boolean).join('\n');
     });
+  }
+
+  async fillForm(instance: FormInstance, page: Page): Promise<void> {
+    return this.runIterative(instance, page);
   }
 }

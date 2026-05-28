@@ -37,7 +37,9 @@ export class LLMStructuredAgent implements BenchmarkAgent {
     const systemPrompt = `You are a structured form-filling assistant.
 Your task is to extract values from the provided input document to fill out the form fields.
 You MUST respond with a single, valid JSON object mapping the field labels directly to their extracted values.
-Do not output any introductory or concluding text. Respond ONLY with the JSON object.`;
+Do not output any introductory or concluding text. Respond ONLY with the JSON object.
+IMPORTANT: For any date field, output ONLY the value in YYYY-MM-DD format (e.g. "1990-05-23"). Never use slashes or natural language.
+IMPORTANT: For dropdown/select fields, use the EXACT option string shown in the field description.`;
 
     const userPrompt = `Input Document:
 ---

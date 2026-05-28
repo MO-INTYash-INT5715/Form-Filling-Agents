@@ -97,7 +97,19 @@ export function calculateBLEU(predicted: any, reference: any): number {
  */
 function normalize(s: any): string {
   if (s === null || s === undefined) return '';
-  return String(s).toLowerCase().trim().replace(/\s+/g, ' ');
+  let v = String(s).toLowerCase().trim().replace(/\s+/g, ' ');
+
+  // Normalize date formats: YYYY/MM/DD or MM/DD/YYYY or MM-DD-YYYY → YYYY-MM-DD
+  const slashDate = v.match(/^(\d{4})\/(\d{2})\/(\d{2})$/);
+  if (slashDate) return `${slashDate[1]}-${slashDate[2]}-${slashDate[3]}`;
+  const mdySlash = v.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
+  if (mdySlash) return `${mdySlash[3]}-${mdySlash[1].padStart(2,'0')}-${mdySlash[2].padStart(2,'0')}`;
+
+  // Normalize numbers: strip trailing zeros after decimal ("250.0" → "250", "250.00" → "250")
+  const num = Number(v);
+  if (!isNaN(num) && v !== '' && String(num) !== v) return String(num);
+
+  return v;
 }
 
 /**

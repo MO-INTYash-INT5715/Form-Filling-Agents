@@ -306,6 +306,14 @@ export class PlaywrightFormExecutor {
           if (field.type === 'checkbox' || field.type === 'radio') {
             const isChecked = await page.isChecked(selector);
             val = isChecked ? 'true' : 'false';
+          } else if (field.type === 'select-one' || field.type === 'select' || field.tag === 'select') {
+            // Read selected option LABEL (not value) to match gold answers which use display labels
+            val = await page.evaluate((sel) => {
+              const el = document.querySelector(sel) as HTMLSelectElement | null;
+              if (!el) return '';
+              const opt = el.options[el.selectedIndex];
+              return opt ? opt.label : '';
+            }, selector).catch(() => '') as string;
           } else {
             val = await page.inputValue(selector);
           }
