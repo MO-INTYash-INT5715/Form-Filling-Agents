@@ -44,12 +44,17 @@ function makeClient(): OpenAI {
     process.env.GITHUB_TOKEN ||
     process.env.LLM_API_KEY ||
     process.env.OPENAI_API_KEY;
-  if (!apiKey) {
+  
+  // For local Ollama, use a dummy key
+  const isLocal = baseURL.includes('localhost') || baseURL.includes('127.0.0.1');
+  const finalKey = apiKey || (isLocal ? 'ollama' : undefined);
+  
+  if (!finalKey) {
     throw new Error(
       "No API key found. Set GITHUB_TOKEN (recommended) or OPENAI_API_KEY in .env",
     );
   }
-  return new OpenAI({ apiKey, baseURL });
+  return new OpenAI({ apiKey: finalKey, baseURL });
 }
 
 function truncate(s: string, n: number): string {

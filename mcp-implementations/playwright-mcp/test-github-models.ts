@@ -18,16 +18,19 @@ async function testGitHubModels() {
   console.log('=== GitHub Models API Test ===\n');
   console.log(`Base URL: ${BASE_URL}`);
   console.log(`Model: ${MODEL}`);
-  console.log(`Token: ${GITHUB_TOKEN ? GITHUB_TOKEN.slice(0, 20) + '...' : '(not set)'}\n`);
+  console.log(`Token: ${GITHUB_TOKEN ? GITHUB_TOKEN.slice(0, 20) + '...' : '(not set — OK for local Ollama)'}\n`);
 
-  if (!GITHUB_TOKEN) {
-    console.error('❌ GITHUB_TOKEN not set in .env');
+  // For local Ollama, token is optional
+  const isLocal = BASE_URL.includes('localhost') || BASE_URL.includes('127.0.0.1');
+  
+  if (!GITHUB_TOKEN && !isLocal) {
+    console.error('❌ GITHUB_TOKEN not set in .env (required for non-local endpoints)');
     process.exit(1);
   }
 
   const client = new OpenAI({
     baseURL: BASE_URL,
-    apiKey: GITHUB_TOKEN,
+    apiKey: GITHUB_TOKEN || 'ollama', // Ollama doesn't validate the key
   });
 
   console.log('[1/3] Testing basic API connectivity...');
