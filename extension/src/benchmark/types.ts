@@ -163,6 +163,14 @@ export interface FormResult {
   atomicMetrics: AtomicMetrics;
   episodicMetrics: EpisodicMetrics;
   executionTimeMs: number;
+  /** Total prompt tokens consumed by LLM calls (undefined for non-LLM agents) */
+  tokensIn?: number;
+  /** Total completion tokens consumed by LLM calls (undefined for non-LLM agents) */
+  tokensOut?: number;
+  /** Total LLM-only inference wall-clock time in ms (excludes Playwright actions) */
+  llmTimeMs?: number;
+  /** Number of LLM round-trips made during form filling */
+  llmCalls?: number;
   errors: string[];
   /** Whether the Flask server confirmed a successful form submission */
   submissionSucceeded: boolean;
@@ -206,5 +214,10 @@ export interface BenchmarkReport {
   formResults: FormResult[];
   /** Total wall-clock time in ms */
   totalExecutionTimeMs: number;
+  /** Aggregated LLM token usage across all forms (undefined for non-LLM agents) */
+  totalTokensIn?: number;
+  totalTokensOut?: number;
+  totalLlmTimeMs?: number;
+  totalLlmCalls?: number;
   errors: string[];
 }

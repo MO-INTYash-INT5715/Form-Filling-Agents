@@ -17,7 +17,14 @@
     "benchmark:mcp-agent:full": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --full --agent mcp-agent",
     "benchmark:setup": "playwright install chromium",
     "benchmark:list": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --list-forms",
-    "benchmark:embedding": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --quick --agent embedding-matcher"
+    "benchmark:embedding": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --quick --agent embedding-matcher",
+    "benchmark:llm-structured:quick": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --quick --agent llm-structured",
+    "benchmark:hybrid:quick": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --quick --agent hybrid",
+    "benchmark:vlm-agent:quick": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --quick --agent vlm-agent",
+    "benchmark:vision-agent:quick": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --quick --agent vision-agent",
+    "ablation:quick": "tsx --tsconfig tsconfig.scripts.json scripts/ablation-study.ts --quick",
+    "ablation:full": "tsx --tsconfig tsconfig.scripts.json scripts/ablation-study.ts",
+    "ablation:agents": "tsx --tsconfig tsconfig.scripts.json scripts/ablation-study.ts --quick --agents"
   },
   "dependencies": {
     "dotenv": "^17.4.2",

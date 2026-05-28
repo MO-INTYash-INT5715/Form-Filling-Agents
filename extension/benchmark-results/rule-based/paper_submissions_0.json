@@ -1,0 +1,104 @@
+{
+  "formInstance": {
+    "formId": "paper_submissions",
+    "formName": "Paper Submission Form",
+    "domain": "Academic & Research",
+    "instanceIndex": 0,
+    "inputDocument": "Dear Conference Committee,\n\nI am writing to formally submit my paper for consideration at your esteemed conference. Attached to this application, you will find my paper entitled \"Advancements in Deep Learning for Image Recognition.\" Authored by me, Alice Johnson, this paper explores recent innovations in deep learning models, with a particular emphasis on their applications in image recognition and classification.\n\nThe paper delves into cutting-edge research in the field of deep learning, aiming to contribute to the existing body of knowledge by highlighting the significant advancements and their practical implications. The insights provided in the paper demonstrate how these developments can revolutionize the scope of image recognition technologies, making them more efficient and accurate.\n\nTo assist in categorizing the submission, please note that the relevant fields of interest include \"Deep Learning,\" \"Image Recognition,\" and \"Neural Networks.\" I am confident that this paper will add substantial value to the discussions on Artificial Intelligence at the conference.\n\nFor any further correspondence, you may reach me via email at alice.johnson@university.edu. I look forward to the opportunity to present my research and engage with fellow experts in the field.\n\nThank you for considering my submission.\n\nSincerely,\n\nAlice Johnson",
+    "goldAnswers": {
+      "Author Name": "Alice Johnson",
+      "Email": "alice.johnson@university.edu",
+      "Paper Title": "Advancements in Deep Learning for Image Recognition",
+      "Abstract": "This paper explores recent innovations in deep learning models, focusing on their applications in image recognition and classification.",
+      "Keywords": [
+        "Deep Learning",
+        "Image Recognition",
+        "Neural Networks"
+      ],
+      "Paper Category": "Artificial Intelligence"
+    },
+    "multiPage": false,
+    "formPath": "/academic-research/paper-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [
+    {
+      "fieldId": "author_name",
+      "fieldType": "String",
+      "predictedValue": "Alice Johnson",
+      "goldValue": "Alice Johnson",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "email",
+      "fieldType": "String",
+      "predictedValue": "alice.johnson@university.edu",
+      "goldValue": "alice.johnson@university.edu",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "paper_title",
+      "fieldType": "String",
+      "predictedValue": "Advancements in Deep Learning for Image Recognition",
+      "goldValue": "Advancements in Deep Learning for Image Recognition",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "abstract",
+      "fieldType": "Description",
+      "predictedValue": "",
+      "goldValue": "This paper explores recent innovations in deep learning models, focusing on their applications in image recognition and classification.",
+      "clickAccurate": false,
+      "valueAccurate": false,
+      "bleuScore": 0
+    },
+    {
+      "fieldId": "keywords",
+      "fieldType": "String",
+      "predictedValue": "Deep Learning",
+      "goldValue": [
+        "Deep Learning",
+        "Image Recognition",
+        "Neural Networks"
+      ],
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "category",
+      "fieldType": "Dropdown",
+      "predictedValue": "Artificial Intelligence",
+      "goldValue": "Artificial Intelligence",
+      "clickAccurate": false,
+      "valueAccurate": true
+    }
+  ],
+  "atomicMetrics": {
+    "clickAccuracy": {
+      "String": 0,
+      "Description": 0,
+      "Dropdown": 0
+    },
+    "valueAccuracy": {
+      "String": 100,
+      "Description": 0,
+      "Dropdown": 100
+    },
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 83.33333333333334
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 83.33333333333334,
+    "fieldsAttempted": 5,
+    "fieldsCorrect": 5,
+    "totalFields": 6,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 83.33333333333334
+  },
+  "executionTimeMs": 1528,
+  "errors": [],
+  "submissionSucceeded": true
+}

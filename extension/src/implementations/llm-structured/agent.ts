@@ -3,10 +3,20 @@ import { getLLMClient, getLLMModel } from '../../utils/llm';
 import { serializeFormFields } from './tree-serializer';
 import { buildJsonSchema, buildSchemaPrompt } from './schema-builder';
 
+/** Token + latency telemetry attached to the agent instance after each planActions() call */
+export interface LLMTelemetry {
+  tokensIn: number;
+  tokensOut: number;
+  llmTimeMs: number;
+  llmCalls: number;
+}
+
 export class LLMStructuredAgent implements BenchmarkAgent {
   name = 'llm-structured';
   private client;
   private model: string;
+  /** Populated after each planActions() call — read by runner for ablation metrics */
+  public lastTelemetry: LLMTelemetry = { tokensIn: 0, tokensOut: 0, llmTimeMs: 0, llmCalls: 0 };
 
   constructor() {
     this.client = getLLMClient();
@@ -45,6 +55,9 @@ ${schemaPrompt}
 `;
 
     let responseContent = '';
+    // Reset telemetry
+    this.lastTelemetry = { tokensIn: 0, tokensOut: 0, llmTimeMs: 0, llmCalls: 0 };
+
     try {
       const options: any = {
         model: this.model,
@@ -55,26 +68,27 @@ ${schemaPrompt}
         temperature: 0,
       };
 
-      // If we are using OpenAI, we can leverage structured outputs
       if (provider === 'openai') {
         options.response_format = {
           type: 'json_schema',
-          json_schema: {
-            name: 'form_fill_values',
-            strict: true,
-            schema: schema
-          }
+          json_schema: { name: 'form_fill_values', strict: true, schema }
         };
-      } else if (provider === 'ollama') {
-        // Ollama supports json format parameter
+      } else {
+        // Ollama and others: use top-level format param
         options.format = 'json';
       }
 
+      const t0 = Date.now();
       const response = await this.client.chat.completions.create(options);
+      this.lastTelemetry.llmTimeMs += Date.now() - t0;
+      this.lastTelemetry.llmCalls += 1;
+      this.lastTelemetry.tokensIn += response.usage?.prompt_tokens ?? 0;
+      this.lastTelemetry.tokensOut += response.usage?.completion_tokens ?? 0;
+
       responseContent = response.choices[0]?.message?.content || '{}';
     } catch (err) {
       console.error(`[LLM Structured Agent] API Call failed:`, err);
-      return actions; // Return empty actions as fallback
+      return actions;
     }
 
     try {
@@ -86,15 +100,12 @@ ${schemaPrompt}
         if (val === undefined || val === null) continue;
 
         if (typeof val === 'boolean') {
-          if (val) {
-            actions.push({ type: 'check', fieldId: key });
-          }
+          if (val) actions.push({ type: 'check', fieldId: key });
         } else if (Array.isArray(val)) {
           for (const item of val) {
             actions.push({ type: 'select', fieldId: key, text: String(item) });
           }
         } else {
-          // If the gold answer expects a boolean/array, let's normalize
           const expected = instance.goldAnswers[key];
           if (typeof expected === 'boolean') {
             const lowerVal = String(val).toLowerCase();
@@ -109,7 +120,7 @@ ${schemaPrompt}
         }
       }
     } catch (err) {
-      console.error(`[LLM Structured Agent] Failed to parse JSON content:`, responseContent, err);
+      console.error(`[LLM Structured Agent] Failed to parse JSON:`, responseContent.slice(0, 200), err);
     }
 
     return actions;

@@ -1,0 +1,122 @@
+{
+  "formInstance": {
+    "formId": "student_courses",
+    "formName": "Student Course Registration Form",
+    "domain": "Academic & Research",
+    "instanceIndex": 0,
+    "inputDocument": "[Your Contact Information]  \nJessica Kennedy  \nStudent ID: 88741153  \nEmail: wendy24@yahoo.com  \nPhone Number: 001-250-204-3652x75507  \n\n[Date]  \n[University Name]  \nOffice of Enrollment Services  \n[University Address]  \n\nDear Enrollment Services Team,\n\nI hope this message finds you well. My name is Jessica Kennedy, currently enrolled in the Software Engineering program, and I am writing to formally request enrollment in the upcoming Summer 2025 semester. \n\nI am particularly eager to advance my studies through participation in the course CS104 - Web Development, as it aligns perfectly with my academic and professional goals within the field of Software Engineering. This course reflects a vital step towards my aspiration to excel in web development and programming.\n\nPlease find below the detailed information pertinent to this enrollment request:\n\n- **Full Name:** Jessica Kennedy\n- **Student ID:** 88741153\n- **Email:** wendy24@yahoo.com\n- **Phone Number:** 001-250-204-3652x75507\n- **Semester:** Summer 2025\n- **Program:** Software Engineering\n- **Selected Courses:** CS104 - Web Development\n\nIn connection with my application, I would like to emphasize that I have no special requirements and thus align with the standard registration criteria. As per the course enrollment form, \"No special requirements.\" \n\nI am looking forward to the opportunity to undertake this course under your auspices and am available to provide any further information you might require in order to process this request promptly.\n\nThank you very much for considering my application. Looking forward to your positive response.\n\nWarm regards,\n\nJessica Kennedy",
+    "goldAnswers": {
+      "Full Name": "Jessica Kennedy",
+      "Student ID": 88741153,
+      "Email": "wendy24@yahoo.com",
+      "Phone Number": "001-250-204-3652x75507",
+      "Semester": "Summer 2025",
+      "Program": "Software Engineering",
+      "Selected Courses": [
+        "CS104 - Web Development"
+      ],
+      "Special Requirements or Comments": "No special requirements."
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/course-registration"
+  },
+  "agentName": "llm-structured",
+  "fieldResults": [
+    {
+      "fieldId": "student_name",
+      "fieldType": "String",
+      "predictedValue": "Jessica Kennedy",
+      "goldValue": "Jessica Kennedy",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "student_id",
+      "fieldType": "String",
+      "predictedValue": "88741153",
+      "goldValue": 88741153,
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "email",
+      "fieldType": "String",
+      "predictedValue": "wendy24@yahoo.com",
+      "goldValue": "wendy24@yahoo.com",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "phone",
+      "fieldType": "String",
+      "predictedValue": "001-250-204-3652x75507",
+      "goldValue": "001-250-204-3652x75507",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "semester",
+      "fieldType": "Dropdown",
+      "predictedValue": "Summer 2025",
+      "goldValue": "Summer 2025",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "program",
+      "fieldType": "Dropdown",
+      "predictedValue": "Software Engineering",
+      "goldValue": "Software Engineering",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "Selected Courses",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": [
+        "CS104 - Web Development"
+      ],
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "comments",
+      "fieldType": "Description",
+      "predictedValue": "No special requirements.",
+      "goldValue": "No special requirements.",
+      "clickAccurate": false,
+      "valueAccurate": false,
+      "bleuScore": 0
+    }
+  ],
+  "atomicMetrics": {
+    "clickAccuracy": {
+      "String": 0,
+      "Dropdown": 0,
+      "Description": 0
+    },
+    "valueAccuracy": {
+      "String": 80,
+      "Dropdown": 100,
+      "Description": 0
+    },
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 75
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 75,
+    "fieldsAttempted": 7,
+    "fieldsCorrect": 6,
+    "totalFields": 8,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 75
+  },
+  "executionTimeMs": 1488,
+  "errors": [],
+  "submissionSucceeded": true,
+  "tokensIn": 708,
+  "tokensOut": 123,
+  "llmTimeMs": 6599,
+  "llmCalls": 1
+}

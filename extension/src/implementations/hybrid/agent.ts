@@ -3,10 +3,18 @@ import type { FormInstance, BenchmarkAgent } from '../../benchmark/types';
 import { getLLMClient, getLLMModel } from '../../utils/llm';
 import { computeFieldsConfidence } from './confidence';
 
+export interface HybridTelemetry {
+  tokensIn: number;
+  tokensOut: number;
+  llmTimeMs: number;
+  llmCalls: number;
+}
+
 export class HybridAgent implements BenchmarkAgent {
   name = 'hybrid';
   private client;
   private model: string;
+  public lastTelemetry: HybridTelemetry = { tokensIn: 0, tokensOut: 0, llmTimeMs: 0, llmCalls: 0 };
 
   constructor() {
     this.client = getLLMClient();
@@ -15,6 +23,7 @@ export class HybridAgent implements BenchmarkAgent {
 
   async runIterative(instance: FormInstance, page: Page): Promise<void> {
     console.log(`[Hybrid Agent] Starting execution for ${instance.formName}`);
+    this.lastTelemetry = { tokensIn: 0, tokensOut: 0, llmTimeMs: 0, llmCalls: 0 };
 
     const keys = Object.keys(instance.goldAnswers || {});
     if (keys.length === 0) return;
@@ -89,6 +98,7 @@ Respond in this exact JSON format:
 `;
 
       try {
+        const t0llm = Date.now();
         const response = await this.client.chat.completions.create({
           model: this.model,
           messages: [
@@ -96,8 +106,14 @@ Respond in this exact JSON format:
             { role: 'user', content: userPrompt }
           ],
           temperature: 0,
-          response_format: { type: 'json_object' }
+          ...(process.env.LLM_PROVIDER === 'openai'
+            ? { response_format: { type: 'json_object' } }
+            : { format: 'json' }),
         });
+        this.lastTelemetry.llmCalls += 1;
+        this.lastTelemetry.llmTimeMs += Date.now() - t0llm;
+        this.lastTelemetry.tokensIn += response.usage?.prompt_tokens ?? 0;
+        this.lastTelemetry.tokensOut += response.usage?.completion_tokens ?? 0;
 
         const reply = response.choices[0]?.message?.content || '{}';
         const cleaned = reply.replace(/^```json\n?/, '').replace(/\n?```$/, '').trim();

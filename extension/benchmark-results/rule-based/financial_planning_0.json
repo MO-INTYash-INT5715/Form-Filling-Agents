@@ -1,0 +1,98 @@
+{
+  "formInstance": {
+    "formId": "financial_planning",
+    "formName": "Financial Planning Consultation Form",
+    "domain": "Finance & Banking",
+    "instanceIndex": 0,
+    "inputDocument": "Dear Financial Planning Team,\n\nI hope this message finds you well. My name is Benjamin Scott, and I am reaching out to request a consultation focused on estate planning. I am particularly interested in discussing the creation of a living will and managing property distribution. I am hoping to schedule this meeting on November 30, 2024, during the evening hours, ideally between 4:00 PM and 6:00 PM. Should you need to reach me for any further details, please feel free to contact me via email at ben.scott24@gmail.com. I look forward to your guidance on this matter and am eager to solidify my estate planning.\n\nThank you for your assistance.\n\nWarm regards,\n\nBenjamin Scott",
+    "goldAnswers": {
+      "Full Name": "Benjamin Scott",
+      "Email Address": "ben.scott24@gmail.com",
+      "Type of Consultation": "Estate Planning",
+      "Preferred Date": "2024/11/30",
+      "Preferred Time": "Evening (4:00 PM -6:00 PM)",
+      "Additional Comments": "Looking to discuss the creation of a living will and managing property distribution."
+    },
+    "multiPage": false,
+    "formPath": "/finance-banking/financial-planning"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [
+    {
+      "fieldId": "name",
+      "fieldType": "String",
+      "predictedValue": "Benjamin Scott",
+      "goldValue": "Benjamin Scott",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "email",
+      "fieldType": "String",
+      "predictedValue": "ben.scott24@gmail.com",
+      "goldValue": "ben.scott24@gmail.com",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "consultationType",
+      "fieldType": "Dropdown",
+      "predictedValue": "",
+      "goldValue": "Estate Planning",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "preferredDate",
+      "fieldType": "Date",
+      "predictedValue": "",
+      "goldValue": "2024/11/30",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "preferredTime",
+      "fieldType": "Dropdown",
+      "predictedValue": "",
+      "goldValue": "Evening (4:00 PM -6:00 PM)",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "comments",
+      "fieldType": "Description",
+      "predictedValue": "",
+      "goldValue": "Looking to discuss the creation of a living will and managing property distribution.",
+      "clickAccurate": false,
+      "valueAccurate": false,
+      "bleuScore": 0
+    }
+  ],
+  "atomicMetrics": {
+    "clickAccuracy": {
+      "String": 0,
+      "Dropdown": 0,
+      "Date": 0,
+      "Description": 0
+    },
+    "valueAccuracy": {
+      "String": 100,
+      "Dropdown": 0,
+      "Date": 0,
+      "Description": 0
+    },
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 33.33333333333333
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 33.33333333333333,
+    "fieldsAttempted": 2,
+    "fieldsCorrect": 2,
+    "totalFields": 6,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 33.33333333333333
+  },
+  "executionTimeMs": 1426,
+  "errors": [],
+  "submissionSucceeded": false
+}

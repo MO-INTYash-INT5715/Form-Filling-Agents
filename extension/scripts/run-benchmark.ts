@@ -126,9 +126,15 @@ async function main() {
     agent = new MCPAgent();
   } else if (agentName === 'vision-agent') {
     const { VisionAgent } = await import('../src/implementations/vision-agent/agent');
+    console.warn('\n⚠️  vision-agent requires a multimodal (vision) model.');
+    console.warn('   With text-only models (e.g. qwen2.5:7b) this will fail.');
+    console.warn('   Use: LLM_MODEL=qwen2.5vl:7b or LLM_MODEL=llava:13b\n');
     agent = new VisionAgent();
   } else if (agentName === 'vlm-agent') {
     const { VLMAgent } = await import('../src/implementations/vlm-agent/agent');
+    console.warn('\n⚠️  vlm-agent requires a multimodal (vision) model.');
+    console.warn('   With text-only models (e.g. qwen2.5:7b) this will fail.');
+    console.warn('   Use: LLM_MODEL=qwen2.5vl:7b or LLM_MODEL=llava:13b\n');
     agent = new VLMAgent();
   } else if (agentName === 'llm-structured') {
     const { LLMStructuredAgent } = await import('../src/implementations/llm-structured/agent');

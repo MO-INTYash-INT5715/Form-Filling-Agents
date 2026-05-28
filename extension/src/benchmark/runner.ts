@@ -102,6 +102,19 @@ export async function runBenchmark(
         } else {
           throw new Error('Agent must implement planActions or runIterative');
         }
+
+        // Capture LLM telemetry from agents that expose it
+        const tel = (agent as any).lastTelemetry;
+        if (tel) {
+          formResult.tokensIn = tel.tokensIn ?? 0;
+          formResult.tokensOut = tel.tokensOut ?? 0;
+          formResult.llmTimeMs = tel.llmTimeMs ?? 0;
+          formResult.llmCalls = tel.llmCalls ?? 0;
+          if (tel.tokensIn || tel.tokensOut) {
+            console.log(`   🧠 Tokens in: ${tel.tokensIn}  out: ${tel.tokensOut}  LLM ms: ${tel.llmTimeMs}  calls: ${tel.llmCalls}`);
+          }
+        }
+
         console.log(
           `   ✅ Value acc: ${formResult.episodicMetrics.averageValueAccuracy.toFixed(1)}%` +
           `  Click acc: ${formResult.episodicMetrics.averageClickAccuracy.toFixed(1)}%` +
@@ -112,7 +125,6 @@ export async function runBenchmark(
         }
       } catch (err) {
         console.error(`   ❌ Execution failed:`, (err as Error).message);
-        // Create empty result for this instance
         formResult = createEmptyFormResult(instance, config.agentName, (err as Error).message);
       }
 
@@ -239,6 +251,10 @@ function buildReport(
     byDomain,
     formResults: results,
     totalExecutionTimeMs: totalMs,
+    totalTokensIn: results.reduce((s, r) => s + (r.tokensIn ?? 0), 0) || undefined,
+    totalTokensOut: results.reduce((s, r) => s + (r.tokensOut ?? 0), 0) || undefined,
+    totalLlmTimeMs: results.reduce((s, r) => s + (r.llmTimeMs ?? 0), 0) || undefined,
+    totalLlmCalls: results.reduce((s, r) => s + (r.llmCalls ?? 0), 0) || undefined,
     errors: results.flatMap(r => r.errors),
   };
 }

@@ -1,0 +1,129 @@
+{
+  "formInstance": {
+    "formId": "NDA",
+    "formName": "NDA Submission Form",
+    "domain": "Legal & Compliance",
+    "instanceIndex": 0,
+    "inputDocument": "On 2024/12/05, an individual known as John Doe, holding the position of Founder, initiated a Non-Disclosure Agreement (\"NDA\") for the purpose expressly defined as \"To protect intellectual property related to a new software development project, including source code, architecture, and design.\" This NDA, submitted by Mr. Doe, is set to remain active for a duration of 5 years. Mr. Doe, acting as both the Party and Representative, affirms that he has read and agrees to the terms of the Non-Disclosure Agreement and confirms that he has the authority to enter into this agreement.",
+    "goldAnswers": {
+      "Party Name": "John Doe",
+      "Party Type": "Individual",
+      "Purpose of NDA": "To protect intellectual property related to a new software development project, including source code, architecture, and design",
+      "Effective Date": "2024/12/05",
+      "Duration (Years)": 5,
+      "Representative Name": "John Doe",
+      "Title/Position": "Founder",
+      "I have read and agree to the terms of the Non-Disclosure Agreement": "Yes",
+      "I confirm that I have the authority to enter into this agreement": "Yes"
+    },
+    "multiPage": false,
+    "formPath": "/legal-compliance/nda-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [
+    {
+      "fieldId": "Party Name",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "John Doe",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "partyType",
+      "fieldType": "Dropdown",
+      "predictedValue": "",
+      "goldValue": "Individual",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "purpose",
+      "fieldType": "Description",
+      "predictedValue": "To protect intellectual property related to a new software development project, including source code, architecture, and design",
+      "goldValue": "To protect intellectual property related to a new software development project, including source code, architecture, and design",
+      "clickAccurate": false,
+      "valueAccurate": true,
+      "bleuScore": 100
+    },
+    {
+      "fieldId": "startDate",
+      "fieldType": "Date",
+      "predictedValue": "2024/12/05",
+      "goldValue": "2024/12/05",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "duration",
+      "fieldType": "NumericInput",
+      "predictedValue": "5",
+      "goldValue": 5,
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "repName",
+      "fieldType": "String",
+      "predictedValue": "John Doe",
+      "goldValue": "John Doe",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "repTitle",
+      "fieldType": "String",
+      "predictedValue": "Founder",
+      "goldValue": "Founder",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "termsAgreed",
+      "fieldType": "Checkbox",
+      "predictedValue": "",
+      "goldValue": "Yes",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "authorityConfirm",
+      "fieldType": "Checkbox",
+      "predictedValue": "",
+      "goldValue": "Yes",
+      "clickAccurate": false,
+      "valueAccurate": false
+    }
+  ],
+  "atomicMetrics": {
+    "clickAccuracy": {
+      "String": 0,
+      "Dropdown": 0,
+      "Description": 0,
+      "Date": 0,
+      "NumericInput": 0,
+      "Checkbox": 0
+    },
+    "valueAccuracy": {
+      "String": 66.66666666666666,
+      "Dropdown": 0,
+      "Description": 100,
+      "Date": 100,
+      "NumericInput": 100,
+      "Checkbox": 0
+    },
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 55.55555555555556
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 55.55555555555556,
+    "fieldsAttempted": 5,
+    "fieldsCorrect": 5,
+    "totalFields": 9,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 55.55555555555556
+  },
+  "executionTimeMs": 1432,
+  "errors": [],
+  "submissionSucceeded": false
+}
