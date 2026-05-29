@@ -1,0 +1,108 @@
+{
+  "formInstance": {
+    "formId": "person_loan_applications",
+    "formName": "Personal Loan Application Form",
+    "domain": "Finance & Banking",
+    "instanceIndex": 0,
+    "inputDocument": "John Stephen Tran is seeking to apply for a personal loan amounting to $28,521. The requested loan term is 60 months. Mr. Tran is currently employed part-time, with a consistent monthly income of $4,569. He has carefully assessed his financial situation and is confident in his ability to meet the repayment requirements over the specified term. Mr. Tran's dedication to managing this financial obligation is supported by his stable employment status and his clear understanding of the loan terms. Through this application, he hopes to successfully secure the necessary funds, demonstrating his commitment and financial responsibility.",
+    "goldAnswers": {
+      "First Name": "John",
+      "Middle Name": "Stephen",
+      "Last Name": "Tran",
+      "Loan Amount ($)": 28521,
+      "Loan Term (months)": "60 months",
+      "Employment Status": "Part time",
+      "Monthly Income ($)": 4569
+    },
+    "multiPage": false,
+    "formPath": "/finance-banking/personal-loan"
+  },
+  "agentName": "mcp-agent",
+  "fieldResults": [
+    {
+      "fieldId": "firstName",
+      "fieldType": "String",
+      "predictedValue": "John",
+      "goldValue": "John",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "middleName",
+      "fieldType": "String",
+      "predictedValue": "Stephen",
+      "goldValue": "Stephen",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "lastName",
+      "fieldType": "String",
+      "predictedValue": "Tran",
+      "goldValue": "Tran",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "loanAmount",
+      "fieldType": "NumericInput",
+      "predictedValue": "28521",
+      "goldValue": 28521,
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "loanTerm",
+      "fieldType": "Dropdown",
+      "predictedValue": "60 months",
+      "goldValue": "60 months",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "employmentStatus",
+      "fieldType": "Dropdown",
+      "predictedValue": "Part-time",
+      "goldValue": "Part time",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "monthlyIncome",
+      "fieldType": "NumericInput",
+      "predictedValue": "4569",
+      "goldValue": 4569,
+      "clickAccurate": false,
+      "valueAccurate": true
+    }
+  ],
+  "atomicMetrics": {
+    "clickAccuracy": {
+      "String": 0,
+      "NumericInput": 0,
+      "Dropdown": 0
+    },
+    "valueAccuracy": {
+      "String": 100,
+      "NumericInput": 100,
+      "Dropdown": 50
+    },
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 85.71428571428571
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 85.71428571428571,
+    "fieldsAttempted": 7,
+    "fieldsCorrect": 6,
+    "totalFields": 7,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 85.71428571428571
+  },
+  "executionTimeMs": 36574,
+  "errors": [],
+  "submissionSucceeded": true,
+  "tokensIn": 502,
+  "tokensOut": 175,
+  "llmTimeMs": 34643,
+  "llmCalls": 1
+}

@@ -1,0 +1,148 @@
+{
+  "formInstance": {
+    "formId": "IT_support",
+    "formName": "IT Support Request Form",
+    "domain": "Technology & Software",
+    "instanceIndex": 0,
+    "inputDocument": "Subject: Entire office network down\n\nRequest Type: Network Issue  \nPriority Level: Urgent-System Down  \n\nHello,\n\nI am writing to report an urgent network issue affecting all departments, with all network access down across the entire office. The problem began around 10:30 AM today. As a result, employees are unable to access the internet, file servers, or any internal systems. The number of affected users is approximately 50.\n\nPlease prioritize this issue due to its critical nature, as it impacts all business operations. You may reach out to me during our preferred contact time, Mon-Fri 9AM-5PM, for any additional details or updates. Currently, there are no available screenshots to provide.\n\nFor further communication or assistance, please feel free to contact me directly at michael.johnson@company.com or via phone at +1 555-9876.\n\nThank you for your prompt attention to this urgent matter.\n\nBest regards,  \nMichael Johnson",
+    "goldAnswers": {
+      "Request Type": "Network Issue",
+      "Priority Level": "Urgent-System Down",
+      "Subject": "Entire office network down",
+      "Brief description of the issue": "All network access is down across the entire office.",
+      "Detailed Description": "Employees are unable to access the internet, file servers, or any internal systems. The issue started around 10:30 AM today.",
+      "Location/Department": "All departments",
+      "Number of Affected Users": 50,
+      "Preferred Contact Time": "Mon-Fri 9AM-5PM",
+      "Screenshots (Optional)": "None",
+      "Your Name": "Michael Johnson",
+      "Your Email": "michael.johnson@company.com",
+      "Contact Phone Number": "+1 555-9876"
+    },
+    "multiPage": false,
+    "formPath": "/tech-software/support-request"
+  },
+  "agentName": "mcp-agent",
+  "fieldResults": [
+    {
+      "fieldId": "requestType",
+      "fieldType": "Dropdown",
+      "predictedValue": "Network Issue",
+      "goldValue": "Network Issue",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "priority",
+      "fieldType": "Dropdown",
+      "predictedValue": "Urgent - System Down",
+      "goldValue": "Urgent-System Down",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "subject",
+      "fieldType": "String",
+      "predictedValue": "Entire office network down",
+      "goldValue": "Entire office network down",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "Brief description of the issue",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "All network access is down across the entire office.",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "description",
+      "fieldType": "Description",
+      "predictedValue": "Hello,\n\nI am writing to report an urgent network issue affecting all departments, with all network access down across the entire office. The problem began around 10:30 AM today. As a result, employees are unable to access the internet, file servers, or any internal systems. The number of affected users is approximately 50.\n\nPlease prioritize this issue due to its critical nature, as it impacts all business operations.",
+      "goldValue": "Employees are unable to access the internet, file servers, or any internal systems. The issue started around 10:30 AM today.",
+      "clickAccurate": false,
+      "valueAccurate": false,
+      "bleuScore": 23.77574842030755
+    },
+    {
+      "fieldId": "location",
+      "fieldType": "String",
+      "predictedValue": "Entire office",
+      "goldValue": "All departments",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "affectedUsers",
+      "fieldType": "NumericInput",
+      "predictedValue": "50",
+      "goldValue": 50,
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "availableTime",
+      "fieldType": "String",
+      "predictedValue": "Mon-Fri 9AM-5PM",
+      "goldValue": "Mon-Fri 9AM-5PM",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "requesterName",
+      "fieldType": "String",
+      "predictedValue": "Michael Johnson",
+      "goldValue": "Michael Johnson",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "requesterEmail",
+      "fieldType": "String",
+      "predictedValue": "michael.johnson@company.com",
+      "goldValue": "michael.johnson@company.com",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "phoneNumber",
+      "fieldType": "String",
+      "predictedValue": "+1 555-9876",
+      "goldValue": "+1 555-9876",
+      "clickAccurate": false,
+      "valueAccurate": true
+    }
+  ],
+  "atomicMetrics": {
+    "clickAccuracy": {
+      "Dropdown": 0,
+      "String": 0,
+      "Description": 0,
+      "NumericInput": 0
+    },
+    "valueAccuracy": {
+      "Dropdown": 50,
+      "String": 71.42857142857143,
+      "Description": 0,
+      "NumericInput": 100
+    },
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 63.63636363636363
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 63.63636363636363,
+    "fieldsAttempted": 10,
+    "fieldsCorrect": 7,
+    "totalFields": 11,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 63.63636363636363
+  },
+  "executionTimeMs": 40100,
+  "errors": [],
+  "submissionSucceeded": true,
+  "tokensIn": 652,
+  "tokensOut": 355,
+  "llmTimeMs": 38089,
+  "llmCalls": 1
+}

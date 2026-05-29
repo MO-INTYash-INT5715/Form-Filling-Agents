@@ -49,11 +49,11 @@
     {
       "fieldId": "abstract",
       "fieldType": "Description",
-      "predictedValue": "The paper explores recent innovations in deep learning models, with a particular emphasis on their applications in image recognition and classification. It delves into cutting-edge research aiming to contribute to the existing body of knowledge by highlighting significant advancements and their practical implications.",
+      "predictedValue": "The paper delves into cutting-edge research in the field of deep learning, aiming to contribute to the existing body of knowledge by highlighting the significant advancements and their practical implications. The insights provided in the paper demonstrate how these developments can revolutionize the scope of image recognition technologies, making them more efficient and accurate.",
       "goldValue": "This paper explores recent innovations in deep learning models, focusing on their applications in image recognition and classification.",
       "clickAccurate": false,
-      "valueAccurate": true,
-      "bleuScore": 30.13829963353144
+      "valueAccurate": false,
+      "bleuScore": 0
     },
     {
       "fieldId": "keywords",
@@ -84,25 +84,25 @@
     },
     "valueAccuracy": {
       "String": 100,
-      "Description": 100,
+      "Description": 0,
       "Dropdown": 100
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 100
+    "overallValueAccuracy": 83.33333333333334
   },
   "episodicMetrics": {
-    "formCompletionRate": 100,
+    "formCompletionRate": 83.33333333333334,
     "fieldsAttempted": 6,
-    "fieldsCorrect": 6,
+    "fieldsCorrect": 5,
     "totalFields": 6,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 100
+    "averageValueAccuracy": 83.33333333333334
   },
-  "executionTimeMs": 1487,
+  "executionTimeMs": 1574,
   "errors": [],
   "submissionSucceeded": true,
-  "tokensIn": 502,
-  "tokensOut": 131,
-  "llmTimeMs": 6742,
+  "tokensIn": 560,
+  "tokensOut": 144,
+  "llmTimeMs": 3283,
   "llmCalls": 1
 }

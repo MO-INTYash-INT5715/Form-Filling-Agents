@@ -1,0 +1,132 @@
+{
+  "formInstance": {
+    "formId": "Bug_report",
+    "formName": "Bug Reporting Form",
+    "domain": "Technology & Software",
+    "instanceIndex": 0,
+    "inputDocument": "Bug Report by John Williams\n\nBug Title: App crashes when opening the settings menu\n\nSeverity Level: High  \nEnvironment: Production  \nBrowser/Platform: iOS 15.4, iPhone 12  \n\nSteps to Reproduce: 1.Open the app. 2.Tap on the settings icon. 3.App crashes immediately.  \n\nExpected Behavior: Settings menu should open without crashing.  \nActual Behavior: App crashes immediately when settings menu is opened.  \n\nAttachments (Optional): None  \n\nReported by: John Williams  \nContact Information: john.williams87@gmail.com  \n\nThis bug has been observed in the Production environment on an iPhone 12 running iOS 15.4. The issue is of High severity as it prevents users from accessing the settings menu, impacting user experience significantly. There are no attachments provided with this report. Immediate attention to this bug would be appreciated to ensure smooth functionality of the app.",
+    "goldAnswers": {
+      "Bug Title": "App crashes when opening the settings menu",
+      "Severity Level": "High",
+      "Environment": "Production",
+      "Browser/Platform": "iOS 15.4, iPhone 12",
+      "Steps to Reproduce": "1. Open the app. 2. Tap on the settings icon. 3. App crashes immediately.",
+      "Expected Behavior": "Settings menu should open without crashing.",
+      "Actual Behavior": "App crashes immediately when settings menu is opened.",
+      "Attachments (Optional)": "None",
+      "Your Name": "John Williams",
+      "Your Email": "john.williams87@gmail.com"
+    },
+    "multiPage": false,
+    "formPath": "/tech-software/bug-report"
+  },
+  "agentName": "hybrid",
+  "fieldResults": [
+    {
+      "fieldId": "title",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "App crashes when opening the settings menu",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "severity",
+      "fieldType": "Dropdown",
+      "predictedValue": "",
+      "goldValue": "High",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "environment",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Production",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "browser",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "iOS 15.4, iPhone 12",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "steps",
+      "fieldType": "Description",
+      "predictedValue": "",
+      "goldValue": "1. Open the app. 2. Tap on the settings icon. 3. App crashes immediately.",
+      "clickAccurate": false,
+      "valueAccurate": false,
+      "bleuScore": 0
+    },
+    {
+      "fieldId": "expected",
+      "fieldType": "Description",
+      "predictedValue": "",
+      "goldValue": "Settings menu should open without crashing.",
+      "clickAccurate": false,
+      "valueAccurate": false,
+      "bleuScore": 0
+    },
+    {
+      "fieldId": "actual",
+      "fieldType": "Description",
+      "predictedValue": "",
+      "goldValue": "App crashes immediately when settings menu is opened.",
+      "clickAccurate": false,
+      "valueAccurate": false,
+      "bleuScore": 0
+    },
+    {
+      "fieldId": "reporter",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "John Williams",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "email",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "john.williams87@gmail.com",
+      "clickAccurate": false,
+      "valueAccurate": false
+    }
+  ],
+  "atomicMetrics": {
+    "clickAccuracy": {
+      "String": 0,
+      "Dropdown": 0,
+      "Description": 0
+    },
+    "valueAccuracy": {
+      "String": 0,
+      "Dropdown": 0,
+      "Description": 0
+    },
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 9,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 310373,
+  "errors": [
+    "Form submission step failed or timed out"
+  ],
+  "submissionSucceeded": false,
+  "tokensIn": 379,
+  "tokensOut": 73,
+  "llmTimeMs": 4476,
+  "llmCalls": 1
+}

@@ -1,0 +1,159 @@
+{
+  "formInstance": {
+    "formId": "Manufacturing_Order",
+    "formName": "Manufacturing Order Form",
+    "domain": "Construction & Manufacturing",
+    "instanceIndex": 0,
+    "inputDocument": "To: Manufacturing Department  \nFrom: GlobalTech Innovations  \nDate: [Today's Date]  \nSubject: Manufacturing Order Request for Customized AI-Powered Sensor Array\n\n---\n\nDear Manufacturing Team,\n\nGlobalTech Innovations (Account Number: GTI-102938) is excited to place a new manufacturing order for a custom product that builds upon our reputation for cutting-edge technological advancements. We request the production of 100 units of a specialized AI-powered sensor array, which embodies both sophistication and precision.\n\nThis custom product is designed to operate with a high level of sensitivity and efficiency within a range of 5 meters. The sensor arrays should measure precisely 200 x 150 x 50 in dimensions, ensuring seamless integration into various robust applications. The durability required for this product mandates the use of aluminum and silicon materials, enabling top-tier performance and reliability.\n\nCentral to this request are the technical specifications that distinguish these sensors. Each unit must exhibit advanced real-time data processing capabilities, leveraging low power consumption to optimize energy use. The sensor arrays will meet high data encryption standards, providing secure operation essential for modern demands. Furthermore, wireless connectivity will enhance integration with Internet of Things (IoT) systems, supporting a versatile deployment across multiple technological platforms.\n\nAdhering to rigorous quality standards is non-negotiable for us. As such, all units must conform to ISO 9001 and be CE certified, highlighting our commitment to superior quality and international compliance.\n\nThe successful completion of this request is critical to our strategic timeline, thus we emphasize the importance of the stipulated delivery date set for August 1, 2028. To expedite there accordingly, we prefer the express shipping method.\n\nWe trust in your esteemed capability to manufacture this sophisticated product with the solicited precision and expertise. Please confirm receipt of this order and provide any additional requirements or information needed to facilitate smooth production.\n\nThank you for your attention to this order, and we look forward to continuing our collaboration towards innovation and excellence.\n\nWarm regards,\n\n[Your Full Name]  \n[Your Position]  \nGlobalTech Innovations",
+    "goldAnswers": {
+      "Company Name": "GlobalTech Innovations",
+      "Customer Account Number": "GTI-102938",
+      "Product Type": "Custom Product",
+      "Product Description": "Customized AI-powered sensor array",
+      "Product Specifications": "High sensitivity, 5-meter range",
+      "Quantity": 100,
+      "Dimensions": "200 x 150 x 50",
+      "Material": "Aluminum, Silicon",
+      "Technical Specifications": "Real-time data processing, low power consumption, high data encryption standards, wireless connectivity with IoT capabilities",
+      "Quality Standards": "ISO 9001, CE certified",
+      "Required Delivery Date": "2028/08/01",
+      "Preferred Shipping Method": "Express"
+    },
+    "multiPage": true,
+    "formPath": "/construction-manufacturing/order-request"
+  },
+  "agentName": "mcp-agent",
+  "fieldResults": [
+    {
+      "fieldId": "companyName",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "GlobalTech Innovations",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "customerNumber",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "GTI-102938",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "productType",
+      "fieldType": "Dropdown",
+      "predictedValue": "Select product type",
+      "goldValue": "Custom Product",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "productDescription",
+      "fieldType": "Description",
+      "predictedValue": "",
+      "goldValue": "Customized AI-powered sensor array",
+      "clickAccurate": false,
+      "valueAccurate": false,
+      "bleuScore": 0
+    },
+    {
+      "fieldId": "Product Specifications",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "High sensitivity, 5-meter range",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "quantity",
+      "fieldType": "NumericInput",
+      "predictedValue": "",
+      "goldValue": 100,
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "dimensions",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "200 x 150 x 50",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "material",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Aluminum, Silicon",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "specifications",
+      "fieldType": "Description",
+      "predictedValue": "",
+      "goldValue": "Real-time data processing, low power consumption, high data encryption standards, wireless connectivity with IoT capabilities",
+      "clickAccurate": false,
+      "valueAccurate": false,
+      "bleuScore": 0
+    },
+    {
+      "fieldId": "qualityStandards",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "ISO 9001, CE certified",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "requiredDate",
+      "fieldType": "Date",
+      "predictedValue": "",
+      "goldValue": "2028/08/01",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "shippingMethod",
+      "fieldType": "Dropdown",
+      "predictedValue": "Select shipping method",
+      "goldValue": "Express",
+      "clickAccurate": false,
+      "valueAccurate": false
+    }
+  ],
+  "atomicMetrics": {
+    "clickAccuracy": {
+      "String": 0,
+      "Dropdown": 0,
+      "Description": 0,
+      "NumericInput": 0,
+      "Date": 0
+    },
+    "valueAccuracy": {
+      "String": 0,
+      "Dropdown": 0,
+      "Description": 0,
+      "NumericInput": 0,
+      "Date": 0
+    },
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 2,
+    "fieldsCorrect": 0,
+    "totalFields": 12,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 24860,
+  "errors": [],
+  "submissionSucceeded": false,
+  "tokensIn": 887,
+  "tokensOut": 380,
+  "llmTimeMs": 23431,
+  "llmCalls": 1
+}

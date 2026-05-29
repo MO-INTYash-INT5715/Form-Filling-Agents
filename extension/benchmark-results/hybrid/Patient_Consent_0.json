@@ -1,0 +1,135 @@
+{
+  "formInstance": {
+    "formId": "Patient_Consent",
+    "formName": "Patient Consent for Surgery",
+    "domain": "Healthcare & Medical",
+    "instanceIndex": 0,
+    "inputDocument": "James Anderson, born on August 15, 1985, with the medical record number MRN123456789, has given informed consent for a Knee Arthroscopy to be performed by Dr. Robert Smith. James acknowledges that he fully comprehends the nature of the procedure and the potential risks involved. Moreover, he has explored alternative treatments and understands them thoroughly. James further confirms that he has had ample opportunity to discuss any concerns or questions with his healthcare team and that they have provided satisfactory answers. In case of any emergencies, Emily Anderson will serve as the primary contact and can be reached at +1 555-987-6543.",
+    "goldAnswers": {
+      "Full Name": "James Anderson",
+      "Date of Birth": "1985/08/15",
+      "Medical Record Number": "MRN123456789",
+      "Name of Procedure": "Knee Arthroscopy",
+      "Surgeon/Physician Name": "Dr. Robert Smith",
+      "I understand the nature of the procedure and its associated risks": true,
+      "I have had the opportunity to ask questions and they have been answered satisfactorily": true,
+      "I understand the alternatives to this procedure": true,
+      "Emergency Contact Name": "Emily Anderson",
+      "Emergency Contact Phone": "+1 555-987-6543"
+    },
+    "multiPage": false,
+    "formPath": "/healthcare-medical/patient-consent"
+  },
+  "agentName": "hybrid",
+  "fieldResults": [
+    {
+      "fieldId": "patientName",
+      "fieldType": "String",
+      "predictedValue": "James Anderson",
+      "goldValue": "James Anderson",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "dateOfBirth",
+      "fieldType": "Date",
+      "predictedValue": "",
+      "goldValue": "1985/08/15",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "medicalRecordNumber",
+      "fieldType": "String",
+      "predictedValue": "MRN123456789",
+      "goldValue": "MRN123456789",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "procedureName",
+      "fieldType": "String",
+      "predictedValue": "Knee Arthroscopy",
+      "goldValue": "Knee Arthroscopy",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "surgeon",
+      "fieldType": "String",
+      "predictedValue": "Dr. Robert Smith",
+      "goldValue": "Dr. Robert Smith",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "procedureConsent",
+      "fieldType": "Checkbox",
+      "predictedValue": "false",
+      "goldValue": true,
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "questionConsent",
+      "fieldType": "Checkbox",
+      "predictedValue": "false",
+      "goldValue": true,
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "alternativesConsent",
+      "fieldType": "Checkbox",
+      "predictedValue": "false",
+      "goldValue": true,
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "emergencyName",
+      "fieldType": "String",
+      "predictedValue": "Emily Anderson",
+      "goldValue": "Emily Anderson",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "emergencyPhone",
+      "fieldType": "String",
+      "predictedValue": "+1 555-987-6543",
+      "goldValue": "+1 555-987-6543",
+      "clickAccurate": false,
+      "valueAccurate": true
+    }
+  ],
+  "atomicMetrics": {
+    "clickAccuracy": {
+      "String": 0,
+      "Date": 0,
+      "Checkbox": 0
+    },
+    "valueAccuracy": {
+      "String": 100,
+      "Date": 0,
+      "Checkbox": 0
+    },
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 60
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 60,
+    "fieldsAttempted": 9,
+    "fieldsCorrect": 6,
+    "totalFields": 10,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 60
+  },
+  "executionTimeMs": 11867,
+  "errors": [],
+  "submissionSucceeded": false,
+  "tokensIn": 453,
+  "tokensOut": 192,
+  "llmTimeMs": 10027,
+  "llmCalls": 1
+}

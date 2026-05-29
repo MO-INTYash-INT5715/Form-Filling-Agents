@@ -1,0 +1,194 @@
+{
+  "formInstance": {
+    "formId": "membership_application",
+    "formName": "Association Membership Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 0,
+    "inputDocument": "Dear Sir/Madam,\n\nI am writing to apply for membership with your esteemed professional association. My name is John Smith, and I currently work as a student at the University of Technology, pursuing my Bachelor's Degree in Computer Science.\n\nAs a dedicated student looking to further my career in the education industry, I believe that becoming a member of your organization would provide me with valuable resources, networking opportunities, and professional development support. I am eager to connect with like-minded individuals in the field and stay updated on the latest trends and advancements.\n\nDespite having no professional certifications and zero years of industry experience, I am determined to grow and learn within the field. With the guidance and mentorship from esteemed professionals such as Dr. Emily Johnson, a respected professor at my university, I am confident that I can bring a fresh perspective and contribute positively to the association.\n\nI am applying for a Student Member membership level with a membership duration of 1 year. I look forward to participating in workshops, seminars, and events to enhance my skills and knowledge in Computer Science. My passion for the industry drives me to constantly seek new learning opportunities and the chance to connect with experienced professionals.\n\nI am enthusiastic about the possibility of joining your association and am committed to actively engaging with its initiatives and offerings. I believe that by becoming a member, I can both benefit from and contribute to the community, ultimately furthering my career goals and aspirations.\n\nThank you for considering my application. I look forward to the opportunity to grow and develop alongside fellow members of the association.\n\nBest regards,\n\nJohn Smith\njohn.smith@gmail.com\n555-0123\n1990/01/15",
+    "goldAnswers": {
+      "Full Name": "John Smith",
+      "Email Address": "john.smith@gmail.com",
+      "Phone Number": "555-0123",
+      "Date of Birth": "1990/01/15",
+      "Membership Level": "Student Member",
+      "Membership Duration": "1 Year",
+      "Highest Education Level": "Bachelor's Degree",
+      "Field of Study": "Computer Science",
+      "Professional Certifications": "None",
+      "Current Employer": "University of Technology",
+      "Job Title": "Student",
+      "Years of Experience": 0,
+      "Industry": "Education",
+      "Reference Name": "Dr. Emily Johnson",
+      "Reference Email": "emily.johnson@gmail.com",
+      "Relationship to Reference": "Professor"
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/membership-application"
+  },
+  "agentName": "mcp-agent",
+  "fieldResults": [
+    {
+      "fieldId": "full_name",
+      "fieldType": "String",
+      "predictedValue": "John Smith",
+      "goldValue": "John Smith",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "email",
+      "fieldType": "String",
+      "predictedValue": "john.smith@gmail.com",
+      "goldValue": "john.smith@gmail.com",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "phone",
+      "fieldType": "String",
+      "predictedValue": "555-0123",
+      "goldValue": "555-0123",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "date_of_birth",
+      "fieldType": "Date",
+      "predictedValue": "1990-01-15",
+      "goldValue": "1990/01/15",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "membership_level",
+      "fieldType": "Dropdown",
+      "predictedValue": "Student Member",
+      "goldValue": "Student Member",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "membership_duration",
+      "fieldType": "Dropdown",
+      "predictedValue": "1 Year",
+      "goldValue": "1 Year",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "education_level",
+      "fieldType": "Dropdown",
+      "predictedValue": "Bachelor's Degree",
+      "goldValue": "Bachelor's Degree",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "field_of_study",
+      "fieldType": "String",
+      "predictedValue": "Computer Science",
+      "goldValue": "Computer Science",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "professional_certifications",
+      "fieldType": "Description",
+      "predictedValue": "",
+      "goldValue": "None",
+      "clickAccurate": false,
+      "valueAccurate": false,
+      "bleuScore": 0
+    },
+    {
+      "fieldId": "current_employer",
+      "fieldType": "String",
+      "predictedValue": "University of Technology",
+      "goldValue": "University of Technology",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "job_title",
+      "fieldType": "String",
+      "predictedValue": "Student",
+      "goldValue": "Student",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "years_experience",
+      "fieldType": "NumericInput",
+      "predictedValue": "0",
+      "goldValue": 0,
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "industry",
+      "fieldType": "String",
+      "predictedValue": "Education",
+      "goldValue": "Education",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "reference_name",
+      "fieldType": "String",
+      "predictedValue": "Dr. Emily Johnson",
+      "goldValue": "Dr. Emily Johnson",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "reference_email",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "emily.johnson@gmail.com",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "reference_relationship",
+      "fieldType": "String",
+      "predictedValue": "Professor",
+      "goldValue": "Professor",
+      "clickAccurate": false,
+      "valueAccurate": true
+    }
+  ],
+  "atomicMetrics": {
+    "clickAccuracy": {
+      "String": 0,
+      "Date": 0,
+      "Dropdown": 0,
+      "Description": 0,
+      "NumericInput": 0
+    },
+    "valueAccuracy": {
+      "String": 90,
+      "Date": 100,
+      "Dropdown": 100,
+      "Description": 0,
+      "NumericInput": 100
+    },
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 87.5
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 87.5,
+    "fieldsAttempted": 14,
+    "fieldsCorrect": 14,
+    "totalFields": 16,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 87.5
+  },
+  "executionTimeMs": 36763,
+  "errors": [],
+  "submissionSucceeded": true,
+  "tokensIn": 966,
+  "tokensOut": 504,
+  "llmTimeMs": 34769,
+  "llmCalls": 1
+}

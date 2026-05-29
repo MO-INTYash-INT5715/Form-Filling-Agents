@@ -1,0 +1,26 @@
+╔══════════════════════════════════════════════════════════════╗
+║      FormFactory Benchmark Report (Real Dataset)             ║
+╚══════════════════════════════════════════════════════════════╝
+
+  Agent:      llm-structured
+  Timestamp:  2026-05-28T18:13:34.752Z
+  Forms:      1
+  Instances:  1
+  Fields:     4
+  Runtime:    17.4s
+
+━━━ GLOBAL METRICS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Overall Click Accuracy:  0.00%
+  Overall Value Accuracy:  0.00%
+  Form Completion Rate:    0.00%
+  Fields Correct:          0 / 4
+
+━━━ PER FIELD TYPE (Click / Value) ━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Description        Click:    0.0%  Value:    0.0%
+  String             Click:    0.0%  Value:    0.0%
+
+━━━ PER DOMAIN ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Academic & Research
+    Click: 0.0%  Value: 0.0%  Completion: 0.0%  (1 inst.)
+
+══════════════════════════════════════════════════════════════

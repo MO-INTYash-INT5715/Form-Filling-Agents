@@ -101,10 +101,10 @@
     {
       "fieldId": "familyIncome",
       "fieldType": "Dropdown",
-      "predictedValue": "$80,303",
+      "predictedValue": "80303",
       "goldValue": 80303,
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "achievements",
@@ -167,25 +167,25 @@
     "valueAccuracy": {
       "String": 87.5,
       "NumericInput": 100,
-      "Dropdown": 33.33333333333333,
+      "Dropdown": 66.66666666666666,
       "Description": 100
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 78.57142857142857
+    "overallValueAccuracy": 85.71428571428571
   },
   "episodicMetrics": {
-    "formCompletionRate": 78.57142857142857,
+    "formCompletionRate": 85.71428571428571,
     "fieldsAttempted": 13,
-    "fieldsCorrect": 11,
+    "fieldsCorrect": 12,
     "totalFields": 14,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 78.57142857142857
+    "averageValueAccuracy": 85.71428571428571
   },
-  "executionTimeMs": 1650,
+  "executionTimeMs": 1649,
   "errors": [],
   "submissionSucceeded": true,
-  "tokensIn": 1041,
-  "tokensOut": 287,
-  "llmTimeMs": 15296,
+  "tokensIn": 1099,
+  "tokensOut": 286,
+  "llmTimeMs": 6975,
   "llmCalls": 1
 }

@@ -1,0 +1,3880 @@
+{
+  "agentName": "hybrid",
+  "timestamp": "2026-05-28T10:07:48.953Z",
+  "config": {
+    "formFactoryServerUrl": "http://localhost:5000",
+    "formIds": "all",
+    "instancesPerForm": 1
+  },
+  "totalForms": 25,
+  "totalInstances": 25,
+  "totalFields": 259,
+  "globalAtomic": {
+    "clickAccuracy": {
+      "String": 0,
+      "Description": 0,
+      "Dropdown": 0,
+      "NumericInput": 0,
+      "Date": 0,
+      "Checkbox": 0
+    },
+    "valueAccuracy": {
+      "String": 35.36666666666667,
+      "Description": 25,
+      "Dropdown": 5.2631578947368425,
+      "NumericInput": 24.166666666666668,
+      "Date": 0,
+      "Checkbox": 0
+    },
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 21.88336304218657
+  },
+  "globalEpisodic": {
+    "formCompletionRate": 21.88336304218657,
+    "fieldsAttempted": 82,
+    "fieldsCorrect": 54,
+    "totalFields": 259,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 21.88336304218657
+  },
+  "byDomain": {
+    "Academic & Research": {
+      "domain": "Academic & Research",
+      "instanceCount": 5,
+      "atomic": {
+        "clickAccuracy": {
+          "String": 0,
+          "Description": 0,
+          "Dropdown": 0,
+          "NumericInput": 0
+        },
+        "valueAccuracy": {
+          "String": 10,
+          "Description": 0,
+          "Dropdown": 0,
+          "NumericInput": 0
+        },
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 6.666666666666666
+      },
+      "episodic": {
+        "formCompletionRate": 6.666666666666666,
+        "fieldsAttempted": 5,
+        "fieldsCorrect": 2,
+        "totalFields": 38,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 6.666666666666666
+      }
+    },
+    "Professional & Business": {
+      "domain": "Professional & Business",
+      "instanceCount": 4,
+      "atomic": {
+        "clickAccuracy": {
+          "String": 0,
+          "Date": 0,
+          "Dropdown": 0,
+          "NumericInput": 0,
+          "Description": 0
+        },
+        "valueAccuracy": {
+          "String": 16.666666666666664,
+          "Date": 0,
+          "Dropdown": 0,
+          "NumericInput": 10,
+          "Description": 12.5
+        },
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 11.76470588235294
+      },
+      "episodic": {
+        "formCompletionRate": 11.76470588235294,
+        "fieldsAttempted": 12,
+        "fieldsCorrect": 8,
+        "totalFields": 69,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 11.76470588235294
+      }
+    },
+    "Arts & Creative": {
+      "domain": "Arts & Creative",
+      "instanceCount": 3,
+      "atomic": {
+        "clickAccuracy": {
+          "String": 0,
+          "Dropdown": 0,
+          "Checkbox": 0,
+          "Description": 0
+        },
+        "valueAccuracy": {
+          "String": 0,
+          "Dropdown": 0,
+          "Checkbox": 0,
+          "Description": 0
+        },
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 0
+      },
+      "episodic": {
+        "formCompletionRate": 0,
+        "fieldsAttempted": 0,
+        "fieldsCorrect": 0,
+        "totalFields": 34,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 0
+      }
+    },
+    "Technology & Software": {
+      "domain": "Technology & Software",
+      "instanceCount": 2,
+      "atomic": {
+        "clickAccuracy": {
+          "String": 0,
+          "Dropdown": 0,
+          "Description": 0,
+          "NumericInput": 0
+        },
+        "valueAccuracy": {
+          "String": 0,
+          "Dropdown": 0,
+          "Description": 0,
+          "NumericInput": 0
+        },
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 0
+      },
+      "episodic": {
+        "formCompletionRate": 0,
+        "fieldsAttempted": 0,
+        "fieldsCorrect": 0,
+        "totalFields": 20,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 0
+      }
+    },
+    "Finance & Banking": {
+      "domain": "Finance & Banking",
+      "instanceCount": 3,
+      "atomic": {
+        "clickAccuracy": {
+          "String": 0,
+          "NumericInput": 0,
+          "Dropdown": 0,
+          "Date": 0,
+          "Description": 0
+        },
+        "valueAccuracy": {
+          "String": 33.333333333333336,
+          "NumericInput": 0,
+          "Dropdown": 0,
+          "Date": 0,
+          "Description": 100
+        },
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 16.666666666666668
+      },
+      "episodic": {
+        "formCompletionRate": 16.666666666666668,
+        "fieldsAttempted": 3,
+        "fieldsCorrect": 3,
+        "totalFields": 18,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 16.666666666666668
+      }
+    },
+    "Healthcare & Medical": {
+      "domain": "Healthcare & Medical",
+      "instanceCount": 3,
+      "atomic": {
+        "clickAccuracy": {
+          "String": 0,
+          "Date": 0,
+          "Checkbox": 0,
+          "NumericInput": 0,
+          "Description": 0,
+          "Dropdown": 0
+        },
+        "valueAccuracy": {
+          "String": 100,
+          "Date": 0,
+          "Checkbox": 0,
+          "NumericInput": 50,
+          "Description": 50,
+          "Dropdown": 0
+        },
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 57.5
+      },
+      "episodic": {
+        "formCompletionRate": 57.5,
+        "fieldsAttempted": 22,
+        "fieldsCorrect": 15,
+        "totalFields": 26,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 57.5
+      }
+    },
+    "Legal & Compliance": {
+      "domain": "Legal & Compliance",
+      "instanceCount": 3,
+      "atomic": {
+        "clickAccuracy": {
+          "String": 0,
+          "Dropdown": 0,
+          "Description": 0,
+          "Date": 0,
+          "NumericInput": 0,
+          "Checkbox": 0
+        },
+        "valueAccuracy": {
+          "String": 78.05555555555556,
+          "Dropdown": 50,
+          "Description": 100,
+          "Date": 0,
+          "NumericInput": 100,
+          "Checkbox": 0
+        },
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 54.882154882154886
+      },
+      "episodic": {
+        "formCompletionRate": 54.882154882154886,
+        "fieldsAttempted": 26,
+        "fieldsCorrect": 17,
+        "totalFields": 31,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 54.882154882154886
+      }
+    },
+    "Construction & Manufacturing": {
+      "domain": "Construction & Manufacturing",
+      "instanceCount": 2,
+      "atomic": {
+        "clickAccuracy": {
+          "String": 0,
+          "NumericInput": 0,
+          "Date": 0,
+          "Description": 0,
+          "Dropdown": 0
+        },
+        "valueAccuracy": {
+          "String": 66.66666666666667,
+          "NumericInput": 25,
+          "Date": 0,
+          "Description": 0,
+          "Dropdown": 0
+        },
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 39.772727272727266
+      },
+      "episodic": {
+        "formCompletionRate": 39.772727272727266,
+        "fieldsAttempted": 14,
+        "fieldsCorrect": 9,
+        "totalFields": 23,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 39.772727272727266
+      }
+    }
+  },
+  "formResults": [
+    {
+      "formInstance": {
+        "formId": "job_applications",
+        "formName": "Job Application for University Positions",
+        "domain": "Academic & Research",
+        "instanceIndex": 0,
+        "inputDocument": "[Your Address]  \n[City, State, ZIP Code]  \n[Email Address]  \n[Phone Number]  \n[Date]  \n\n[Employer's Name]  \n[Company's Name]  \n[Company's Address]  \n[City, State, ZIP Code]  \n\nDear [Employer's Name],\n\nI am writing to express my interest in the Software Engineer position at [Company's Name], as advertised. My name is Alice Zhang, and I am eager to bring my passion for software development to your esteemed organization, specifically within the Engineering department.\n\nI am enthusiastic about the opportunity to contribute my skills and expertise to [Company's Name]. The prospect of joining the Engineering department excites me, as I believe it is the perfect environment for me to grow professionally while leveraging my capabilities to add substantial value to your team.\n\nThroughout my career, I have demonstrated a strong commitment to excellence in software engineering. I am confident in my ability to tackle challenges and deliver innovative solutions that align with the company's goals. The dynamic nature of the Engineering department at [Company's Name] ideally complements my skills, and I am certain I can contribute effectively to your team's success.\n\nI look forward to the possibility of discussing my application further with you. Thank you for considering my application. I am hopeful to bring my skills and enthusiasm for software engineering to [Company's Name].\n\nWarm regards,\n\nAlice Zhang",
+        "goldAnswers": {
+          "Applicant Name": "Alice Zhang",
+          "Position Applied For": "Software Engineer",
+          "Preferred Department": "Engineering",
+          "Cover Letter": "I am passionate about software development and excited to contribute my skills to the Engineering department."
+        },
+        "multiPage": false,
+        "formPath": "/academic-research/job-application"
+      },
+      "agentName": "hybrid",
+      "fieldResults": [
+        {
+          "fieldId": "name",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Alice Zhang",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "position",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Software Engineer",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "department",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Engineering",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "cover_letter",
+          "fieldType": "Description",
+          "predictedValue": "",
+          "goldValue": "I am passionate about software development and excited to contribute my skills to the Engineering department.",
+          "clickAccurate": false,
+          "valueAccurate": false,
+          "bleuScore": 0
+        }
+      ],
+      "atomicMetrics": {
+        "clickAccuracy": {
+          "String": 0,
+          "Description": 0
+        },
+        "valueAccuracy": {
+          "String": 0,
+          "Description": 0
+        },
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 0
+      },
+      "episodicMetrics": {
+        "formCompletionRate": 0,
+        "fieldsAttempted": 0,
+        "fieldsCorrect": 0,
+        "totalFields": 4,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 0
+      },
+      "executionTimeMs": 133748,
+      "errors": [
+        "Form submission step failed or timed out"
+      ],
+      "submissionSucceeded": false,
+      "tokensIn": 445,
+      "tokensOut": 156,
+      "llmTimeMs": 7891,
+      "llmCalls": 1
+    },
+    {
+      "formInstance": {
+        "formId": "grant_applications",
+        "formName": "Grant or Research Funding Application",
+        "domain": "Academic & Research",
+        "instanceIndex": 0,
+        "inputDocument": "[Grant Application]\n\n**Applicant Information:**\n\nFirst Name: Diana  \nLast Name: Bridges  \nEmail: wmills@shields.net  \nGender: Female  \nDate of Birth: 1951/09/28  \n\nDear Grant Review Committee,\n\nMy name is Diana Bridges, and it is with great anticipation and gratitude that I submit this application for your consideration. From the lively suburbs of my cherished hometown, I have walked a distinctive path that has led me to seek the opportunity which your esteemed grant program now presents.\n\nHaving celebrated many meaningful years, I have become adept at navigating the confluence of personal and professional pursuits. My journey has been fervently documented through a long span of experiences that continue to fuel my unyielding zeal and commitment.\n\nBeing a part of your newsletter is passed up, as the heavens know I opt to untangle myself from virtual realms so captivating in their ability to divert focus. But rest assured, this is no reflection on my commitment to this pursuit, rather an intentional decision to insulate my creativity from the relentless tide of ubiquitous media.\n\nAdhering to these paths has emboldened me and solidified my ambitions which align closely with the stated goals of your program. The heart of this mission speaks genuinely to my experience and passion, and impels me to partake with earnest sincerity.\n\nWith ambition tempered by experience, I offer my cards, bared wholly and sincerely before you today.\n\nThank you graciously for considering my application and for providing individuals like me the chance to unfurl our ambitions and let them take wondrous flight under your stewardship.\n\nEarnestly,\n\nDiana Bridges  \n\n[End of Application]",
+        "goldAnswers": {
+          "First Name": "Diana",
+          "Last Name": "Bridges",
+          "Email": "wmills@shields.net",
+          "Gender": "Female",
+          "Date of Birth": "1951/09/28",
+          "Subscribe to Newsletter": false
+        },
+        "multiPage": true,
+        "formPath": "/academic-research/grant-application"
+      },
+      "agentName": "hybrid",
+      "fieldResults": [
+        {
+          "fieldId": "First Name",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Diana",
+          "clickAccurate": null,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "Last Name",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Bridges",
+          "clickAccurate": null,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "Email",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "wmills@shields.net",
+          "clickAccurate": null,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "Gender",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Female",
+          "clickAccurate": null,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "Date of Birth",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "1951/09/28",
+          "clickAccurate": null,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "Subscribe to Newsletter",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": false,
+          "clickAccurate": null,
+          "valueAccurate": false
+        }
+      ],
+      "atomicMetrics": {
+        "clickAccuracy": {
+          "String": 0
+        },
+        "valueAccuracy": {
+          "String": 0
+        },
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 0
+      },
+      "episodicMetrics": {
+        "formCompletionRate": 0,
+        "fieldsAttempted": 0,
+        "fieldsCorrect": 0,
+        "totalFields": 6,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 0
+      },
+      "executionTimeMs": 3036,
+      "errors": [],
+      "submissionSucceeded": false,
+      "tokensIn": 465,
+      "tokensOut": 19,
+      "llmTimeMs": 1534,
+      "llmCalls": 1
+    },
+    {
+      "formInstance": {
+        "formId": "paper_submissions",
+        "formName": "Paper Submission Form",
+        "domain": "Academic & Research",
+        "instanceIndex": 0,
+        "inputDocument": "Dear Conference Committee,\n\nI am writing to formally submit my paper for consideration at your esteemed conference. Attached to this application, you will find my paper entitled \"Advancements in Deep Learning for Image Recognition.\" Authored by me, Alice Johnson, this paper explores recent innovations in deep learning models, with a particular emphasis on their applications in image recognition and classification.\n\nThe paper delves into cutting-edge research in the field of deep learning, aiming to contribute to the existing body of knowledge by highlighting the significant advancements and their practical implications. The insights provided in the paper demonstrate how these developments can revolutionize the scope of image recognition technologies, making them more efficient and accurate.\n\nTo assist in categorizing the submission, please note that the relevant fields of interest include \"Deep Learning,\" \"Image Recognition,\" and \"Neural Networks.\" I am confident that this paper will add substantial value to the discussions on Artificial Intelligence at the conference.\n\nFor any further correspondence, you may reach me via email at alice.johnson@university.edu. I look forward to the opportunity to present my research and engage with fellow experts in the field.\n\nThank you for considering my submission.\n\nSincerely,\n\nAlice Johnson",
+        "goldAnswers": {
+          "Author Name": "Alice Johnson",
+          "Email": "alice.johnson@university.edu",
+          "Paper Title": "Advancements in Deep Learning for Image Recognition",
+          "Abstract": "This paper explores recent innovations in deep learning models, focusing on their applications in image recognition and classification.",
+          "Keywords": [
+            "Deep Learning",
+            "Image Recognition",
+            "Neural Networks"
+          ],
+          "Paper Category": "Artificial Intelligence"
+        },
+        "multiPage": false,
+        "formPath": "/academic-research/paper-submission"
+      },
+      "agentName": "hybrid",
+      "fieldResults": [
+        {
+          "fieldId": "author_name",
+          "fieldType": "String",
+          "predictedValue": "Alice Johnson",
+          "goldValue": "Alice Johnson",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "email",
+          "fieldType": "String",
+          "predictedValue": "at alice",
+          "goldValue": "alice.johnson@university.edu",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "paper_title",
+          "fieldType": "String",
+          "predictedValue": "Advancements in Deep Learning for Image Recognition",
+          "goldValue": "Advancements in Deep Learning for Image Recognition",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "abstract",
+          "fieldType": "Description",
+          "predictedValue": "The paper delves into cutting-edge research in the field of deep learning, aiming to contribute to the existing body of knowledge by highlighting the significant advancements and their practical implications. The insights provided in the paper demonstrate how these developments can revolutionize the scope of image recognition technologies, making them more efficient and accurate.",
+          "goldValue": "This paper explores recent innovations in deep learning models, focusing on their applications in image recognition and classification.",
+          "clickAccurate": false,
+          "valueAccurate": false,
+          "bleuScore": 0
+        },
+        {
+          "fieldId": "keywords",
+          "fieldType": "String",
+          "predictedValue": "Deep Learning, Image Recognition, Neural Networks",
+          "goldValue": [
+            "Deep Learning",
+            "Image Recognition",
+            "Neural Networks"
+          ],
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "category",
+          "fieldType": "Dropdown",
+          "predictedValue": "",
+          "goldValue": "Artificial Intelligence",
+          "clickAccurate": false,
+          "valueAccurate": false
+        }
+      ],
+      "atomicMetrics": {
+        "clickAccuracy": {
+          "String": 0,
+          "Description": 0,
+          "Dropdown": 0
+        },
+        "valueAccuracy": {
+          "String": 50,
+          "Description": 0,
+          "Dropdown": 0
+        },
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 33.33333333333333
+      },
+      "episodicMetrics": {
+        "formCompletionRate": 33.33333333333333,
+        "fieldsAttempted": 5,
+        "fieldsCorrect": 2,
+        "totalFields": 6,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 33.33333333333333
+      },
+      "executionTimeMs": 37130,
+      "errors": [],
+      "submissionSucceeded": false,
+      "tokensIn": 407,
+      "tokensOut": 117,
+      "llmTimeMs": 5941,
+      "llmCalls": 1
+    },
+    {
+      "formInstance": {
+        "formId": "student_courses",
+        "formName": "Student Course Registration Form",
+        "domain": "Academic & Research",
+        "instanceIndex": 0,
+        "inputDocument": "[Your Contact Information]  \nJessica Kennedy  \nStudent ID: 88741153  \nEmail: wendy24@yahoo.com  \nPhone Number: 001-250-204-3652x75507  \n\n[Date]  \n[University Name]  \nOffice of Enrollment Services  \n[University Address]  \n\nDear Enrollment Services Team,\n\nI hope this message finds you well. My name is Jessica Kennedy, currently enrolled in the Software Engineering program, and I am writing to formally request enrollment in the upcoming Summer 2025 semester. \n\nI am particularly eager to advance my studies through participation in the course CS104 - Web Development, as it aligns perfectly with my academic and professional goals within the field of Software Engineering. This course reflects a vital step towards my aspiration to excel in web development and programming.\n\nPlease find below the detailed information pertinent to this enrollment request:\n\n- **Full Name:** Jessica Kennedy\n- **Student ID:** 88741153\n- **Email:** wendy24@yahoo.com\n- **Phone Number:** 001-250-204-3652x75507\n- **Semester:** Summer 2025\n- **Program:** Software Engineering\n- **Selected Courses:** CS104 - Web Development\n\nIn connection with my application, I would like to emphasize that I have no special requirements and thus align with the standard registration criteria. As per the course enrollment form, \"No special requirements.\" \n\nI am looking forward to the opportunity to undertake this course under your auspices and am available to provide any further information you might require in order to process this request promptly.\n\nThank you very much for considering my application. Looking forward to your positive response.\n\nWarm regards,\n\nJessica Kennedy",
+        "goldAnswers": {
+          "Full Name": "Jessica Kennedy",
+          "Student ID": 88741153,
+          "Email": "wendy24@yahoo.com",
+          "Phone Number": "001-250-204-3652x75507",
+          "Semester": "Summer 2025",
+          "Program": "Software Engineering",
+          "Selected Courses": [
+            "CS104 - Web Development"
+          ],
+          "Special Requirements or Comments": "No special requirements."
+        },
+        "multiPage": true,
+        "formPath": "/academic-research/course-registration"
+      },
+      "agentName": "hybrid",
+      "fieldResults": [
+        {
+          "fieldId": "student_name",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Jessica Kennedy",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "student_id",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": 88741153,
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "email",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "wendy24@yahoo.com",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "phone",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "001-250-204-3652x75507",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "semester",
+          "fieldType": "Dropdown",
+          "predictedValue": "",
+          "goldValue": "Summer 2025",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "program",
+          "fieldType": "Dropdown",
+          "predictedValue": "",
+          "goldValue": "Software Engineering",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "Selected Courses",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": [
+            "CS104 - Web Development"
+          ],
+          "clickAccurate": null,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "comments",
+          "fieldType": "Description",
+          "predictedValue": "",
+          "goldValue": "No special requirements.",
+          "clickAccurate": false,
+          "valueAccurate": false,
+          "bleuScore": 0
+        }
+      ],
+      "atomicMetrics": {
+        "clickAccuracy": {
+          "String": 0,
+          "Dropdown": 0,
+          "Description": 0
+        },
+        "valueAccuracy": {
+          "String": 0,
+          "Dropdown": 0,
+          "Description": 0
+        },
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 0
+      },
+      "episodicMetrics": {
+        "formCompletionRate": 0,
+        "fieldsAttempted": 0,
+        "fieldsCorrect": 0,
+        "totalFields": 8,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 0
+      },
+      "executionTimeMs": 340466,
+      "errors": [
+        "Form submission step failed or timed out"
+      ],
+      "submissionSucceeded": false,
+      "tokensIn": 576,
+      "tokensOut": 88,
+      "llmTimeMs": 4898,
+      "llmCalls": 1
+    },
+    {
+      "formInstance": {
+        "formId": "scholarship_applications",
+        "formName": "Scholarship Application for Students",
+        "domain": "Academic & Research",
+        "instanceIndex": 0,
+        "inputDocument": "Dear Scholarship Selection Committee,\n\nMy name is Nicholas Anne Collins, and I am a sophomore majoring in Philosophy at your esteemed institution. I am writing to express my sincere interest in applying for the scholarship opportunity available to students in need of financial assistance. \n\nAs a first-generation college student, I have worked hard to maintain a GPA of 3.19 while balancing my academic studies with various extracurricular activities. I am the proud recipient of the Dean's List Award for Outstanding Academic Performance and was also honored to be the winner of the State Physics Olympiad. These achievements are a testament to my dedication to academic excellence and my passion for learning.\n\nIn addition to my academic accomplishments, I am actively involved in extracurricular activities that allow me to contribute to my community. I am the co-founder of the Campus Startup Initiative, where I work with fellow students to foster innovation and entrepreneurship on campus. I also serve as the President of the Student Council, where I advocate for the needs of my peers and promote a sense of unity within our student body. Furthermore, I volunteer at the local community center and serve as the Coordinator of the Youth Empowerment Program, where I mentor and support at-risk youth in my community.\n\nDespite my dedication to both my academic studies and extracurricular activities, my family's annual income of $80,303 falls short of covering the cost of my education. I currently receive financial aid from another scholarship, but additional support is needed to alleviate the financial burden on my family and enable me to fully focus on my studies and community service.\n\nI believe that receiving this scholarship will not only help me achieve my academic and career goals but will also allow me to continue making a positive impact on my community. My ultimate goal is to become a leader in public health, and this scholarship will be instrumental in helping me realize that dream.\n\nI would be honored to be considered for this scholarship opportunity and am confident that with your support, I will continue to excel academically and make valuable contributions to my community. I have attached the contact information of my academic reference, Kevin Walker, who can attest to my academic abilities and character.\n\nThank you for considering my application. I look forward to the opportunity to contribute to the campus community and make a difference in the world.\n\nSincerely,\nNicholas Anne Collins\nStudent ID: 22281229\nEmail: nicholascollins@email.com\nPhone: (555) 123-4567\nAcademic Reference: Kevin Walker\nReference Email: psolomon@yahoo.com",
+        "goldAnswers": {
+          "First Name": "Nicholas",
+          "Middle Name": "Anne",
+          "Last Name": "Collins",
+          "Student ID": 22281229,
+          "Major/Field of Study": "Philosophy",
+          "Current GPA": 3.19,
+          "Academic Year": "Sophomore",
+          "Current Financial Aid": "Other Scholarship",
+          "Annual Family Income": 80303,
+          "Academic Achievements": [
+            "Winner of the State Physics Olympiad",
+            "the Dean’s List Award for Outstanding Academic Performance"
+          ],
+          "Extracurricular Activities": [
+            "Co-founder of the Campus Startup Initiative",
+            "President of the Student Council",
+            "Volunteer at the local community center",
+            "Coordinator of the Youth Empowerment Program"
+          ],
+          "Statement of Purpose": "Being a first-generation college student, this scholarship is crucial for me to continue my education. It will allow me to focus on academic excellence while contributing to community service, helping me achieve my dream of becoming a leader in public health.",
+          "Academic Reference": "Kevin Walker",
+          "Reference Email": "psolomon@yahoo.com"
+        },
+        "multiPage": true,
+        "formPath": "/academic-research/scholarship-application"
+      },
+      "agentName": "hybrid",
+      "fieldResults": [
+        {
+          "fieldId": "firstName",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Nicholas",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "middleName",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Anne",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "lastName",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Collins",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "studentId",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": 22281229,
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "major",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Philosophy",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "gpa",
+          "fieldType": "NumericInput",
+          "predictedValue": "",
+          "goldValue": 3.19,
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "academicYear",
+          "fieldType": "Dropdown",
+          "predictedValue": "",
+          "goldValue": "Sophomore",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "financialAid",
+          "fieldType": "Dropdown",
+          "predictedValue": "",
+          "goldValue": "Other Scholarship",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "familyIncome",
+          "fieldType": "Dropdown",
+          "predictedValue": "",
+          "goldValue": 80303,
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "achievements",
+          "fieldType": "Description",
+          "predictedValue": "",
+          "goldValue": [
+            "Winner of the State Physics Olympiad",
+            "the Dean’s List Award for Outstanding Academic Performance"
+          ],
+          "clickAccurate": false,
+          "valueAccurate": false,
+          "bleuScore": 0
+        },
+        {
+          "fieldId": "extracurricular",
+          "fieldType": "Description",
+          "predictedValue": "",
+          "goldValue": [
+            "Co-founder of the Campus Startup Initiative",
+            "President of the Student Council",
+            "Volunteer at the local community center",
+            "Coordinator of the Youth Empowerment Program"
+          ],
+          "clickAccurate": false,
+          "valueAccurate": false,
+          "bleuScore": 0
+        },
+        {
+          "fieldId": "Statement of Purpose",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Being a first-generation college student, this scholarship is crucial for me to continue my education. It will allow me to focus on academic excellence while contributing to community service, helping me achieve my dream of becoming a leader in public health.",
+          "clickAccurate": null,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "reference1",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Kevin Walker",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "reference1Email",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "psolomon@yahoo.com",
+          "clickAccurate": false,
+          "valueAccurate": false
+        }
+      ],
+      "atomicMetrics": {
+        "clickAccuracy": {
+          "String": 0,
+          "NumericInput": 0,
+          "Dropdown": 0,
+          "Description": 0
+        },
+        "valueAccuracy": {
+          "String": 0,
+          "NumericInput": 0,
+          "Dropdown": 0,
+          "Description": 0
+        },
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 0
+      },
+      "episodicMetrics": {
+        "formCompletionRate": 0,
+        "fieldsAttempted": 0,
+        "fieldsCorrect": 0,
+        "totalFields": 14,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 0
+      },
+      "executionTimeMs": 555972,
+      "errors": [
+        "Form submission step failed or timed out"
+      ],
+      "submissionSucceeded": false,
+      "tokensIn": 795,
+      "tokensOut": 147,
+      "llmTimeMs": 9677,
+      "llmCalls": 1
+    },
+    {
+      "formInstance": {
+        "formId": "startup_funding_applications",
+        "formName": "Startup Funding Application",
+        "domain": "Professional & Business",
+        "instanceIndex": 0,
+        "inputDocument": "Pinnacle Solutions, founded on 2020/08/29 and currently in the Growth stage, is seeking funding to enhance its operations. Under the leadership of Founder Kari Ibarra, the company is requesting a funding amount of USD 4,311,070 with an equity offered of 8%. The company is presently valued at USD 1,554,377. The purpose of the requested funding is hiring, which is crucial for the company's expansion efforts. Pinnacle Solutions operates a business model centered around a marketplace for freelancers offering digital services to small businesses and startups. The company's target market includes parents looking for eco-friendly and sustainable products for their children, a rapidly growing segment. With a current monthly revenue of USD 200,000 and a team size of 100, Pinnacle Solutions is poised for significant advancement. Excited to take the company to the next level, Pinnacle Solutions has an online presence through its company website, https://www.haynes-morales.com/, and Founder Kari Ibarra’s LinkedIn profile can be accessed at https://linkedin.com/in/kaylamills. For further queries, contact can be made via email at devin22@gmail.com or phone at 1738464335.",
+        "goldAnswers": {
+          "Company Name": "Pinnacle Solutions",
+          "Company Website": "https://www.haynes-morales.com/",
+          "Founding Date": "2020/08/29",
+          "Business Stage": "Growth",
+          "Founder Name": "Kari Ibarra",
+          "Email": "devin22@gmail.com",
+          "Phone Number": "1738464335",
+          "LinkedIn Profile": "https://linkedin.com/in/kaylamills",
+          "Funding Amount Required (USD)": 4311070,
+          "Equity Offered (%)": 8,
+          "Current Company Valuation (USD)": 1554377,
+          "Purpose of Funding": "Hiring",
+          "Business Model": "A marketplace for freelancers offering digital services to small businesses and startups.",
+          "Target Market": "Parents looking for eco-friendly and sustainable products for their children.",
+          "Current Monthly Revenue (USD)": 200000,
+          "Current Team Size": 100,
+          "Additional Comments": "Excited to take the company to the next level."
+        },
+        "multiPage": true,
+        "formPath": "/professional-business/startup-funding"
+      },
+      "agentName": "hybrid",
+      "fieldResults": [
+        {
+          "fieldId": "company_name",
+          "fieldType": "String",
+          "predictedValue": "Pinnacle Solutions",
+          "goldValue": "Pinnacle Solutions",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "company_website",
+          "fieldType": "String",
+          "predictedValue": "https://www.haynes-morales.com/",
+          "goldValue": "https://www.haynes-morales.com/",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "founding_date",
+          "fieldType": "Date",
+          "predictedValue": "",
+          "goldValue": "2020/08/29",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "business_stage",
+          "fieldType": "Dropdown",
+          "predictedValue": "",
+          "goldValue": "Growth",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "founder_name",
+          "fieldType": "String",
+          "predictedValue": "Kari Ibarra",
+          "goldValue": "Kari Ibarra",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "founder_email",
+          "fieldType": "String",
+          "predictedValue": "at devin22@gmail",
+          "goldValue": "devin22@gmail.com",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "founder_phone",
+          "fieldType": "String",
+          "predictedValue": "1738464335",
+          "goldValue": "1738464335",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "linkedin_profile",
+          "fieldType": "String",
+          "predictedValue": "can be accessed at https://linkedin",
+          "goldValue": "https://linkedin.com/in/kaylamills",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "funding_amount",
+          "fieldType": "NumericInput",
+          "predictedValue": "",
+          "goldValue": 4311070,
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "equity_offered",
+          "fieldType": "NumericInput",
+          "predictedValue": "8",
+          "goldValue": 8,
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "current_valuation",
+          "fieldType": "NumericInput",
+          "predictedValue": "",
+          "goldValue": 1554377,
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "funding_purpose",
+          "fieldType": "Description",
+          "predictedValue": "hiring",
+          "goldValue": "Hiring",
+          "clickAccurate": false,
+          "valueAccurate": false,
+          "bleuScore": 0
+        },
+        {
+          "fieldId": "business_model",
+          "fieldType": "Description",
+          "predictedValue": "marketplace for freelancers offering digital services to small businesses and startups",
+          "goldValue": "A marketplace for freelancers offering digital services to small businesses and startups.",
+          "clickAccurate": false,
+          "valueAccurate": true,
+          "bleuScore": 91.31007162822624
+        },
+        {
+          "fieldId": "target_market",
+          "fieldType": "Description",
+          "predictedValue": "parents looking for eco-friendly and sustainable products for their children",
+          "goldValue": "Parents looking for eco-friendly and sustainable products for their children.",
+          "clickAccurate": false,
+          "valueAccurate": true,
+          "bleuScore": 100
+        },
+        {
+          "fieldId": "current_revenue",
+          "fieldType": "NumericInput",
+          "predictedValue": "",
+          "goldValue": 200000,
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "team_size",
+          "fieldType": "NumericInput",
+          "predictedValue": "100",
+          "goldValue": 100,
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "additional_comments",
+          "fieldType": "Description",
+          "predictedValue": "For further queries, contact can be made via email at devin22@gmail.com or phone at 1738464335. Founder Kari Ibarra’s LinkedIn profile can be accessed at https://linkedin.com/in/kaylamills.",
+          "goldValue": "Excited to take the company to the next level.",
+          "clickAccurate": false,
+          "valueAccurate": false,
+          "bleuScore": 0
+        }
+      ],
+      "atomicMetrics": {
+        "clickAccuracy": {
+          "String": 0,
+          "Date": 0,
+          "Dropdown": 0,
+          "NumericInput": 0,
+          "Description": 0
+        },
+        "valueAccuracy": {
+          "String": 66.66666666666666,
+          "Date": 0,
+          "Dropdown": 0,
+          "NumericInput": 40,
+          "Description": 50
+        },
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 47.05882352941176
+      },
+      "episodicMetrics": {
+        "formCompletionRate": 47.05882352941176,
+        "fieldsAttempted": 12,
+        "fieldsCorrect": 8,
+        "totalFields": 17,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 47.05882352941176
+      },
+      "executionTimeMs": 48311,
+      "errors": [],
+      "submissionSucceeded": false,
+      "tokensIn": 636,
+      "tokensOut": 275,
+      "llmTimeMs": 16430,
+      "llmCalls": 1
+    },
+    {
+      "formInstance": {
+        "formId": "real_estate_rental_applications",
+        "formName": "Real Estate Rental Application",
+        "domain": "Professional & Business",
+        "instanceIndex": 0,
+        "inputDocument": "Amy Soto, residing at 325 Clark Tunnel in Christopherburgh, Alabama, ZIP Code 37382, is seeking a new rental opportunity. She can be reached at arthurperez@webb.com or via phone at 001-601-137-0101x270. Born on 1979/05/24, Amy is currently employed by Edwards PLC as an Environmental Manager with a monthly income of USD 13,121 and has held her position for 1 year. She is interested in relocating by 2025/01/26, with a preferred lease term of 6 months and a maximum monthly rent of USD 2,323. Amy has expressed a preference for properties Near public transport. She does not have any pets, and thus there are No pets to describe. In her Additional Comments, she notes, \"Prefer quiet and residential areas.\" Amy is a reliable and professional individual who will make a responsible tenant.",
+        "goldAnswers": {
+          "Full Name": "Amy Soto",
+          "Email Address": "arthurperez@webb.com",
+          "Phone Number": "001-601-137-0101x270",
+          "Date of Birth": "1979/05/24",
+          "Street Address": "325 Clark Tunnel",
+          "City": "Christopherburgh",
+          "State": "Alabama",
+          "ZIP Code": "37382",
+          "Current Employer": "Edwards PLC",
+          "Job Title": "Environmental manager",
+          "Monthly Income (USD)": 13121,
+          "Length of Employment": "1 year",
+          "Preferred Move-in Date": "2025/01/26",
+          "Preferred Lease Term": "6 months",
+          "Maximum Monthly Rent (USD)": 2323,
+          "Preferred Area": "Near public transport",
+          "Do you have any pets?": "No",
+          "If yes, please describe your pets": "No pets",
+          "Additional Comments": "Prefer quiet and residential areas."
+        },
+        "multiPage": true,
+        "formPath": "/professional-business/rental-application"
+      },
+      "agentName": "hybrid",
+      "fieldResults": [
+        {
+          "fieldId": "full_name",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Amy Soto",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "email",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "arthurperez@webb.com",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "phone",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "001-601-137-0101x270",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "date_of_birth",
+          "fieldType": "Date",
+          "predictedValue": "",
+          "goldValue": "1979/05/24",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "current_street",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "325 Clark Tunnel",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "current_city",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Christopherburgh",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "current_state",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Alabama",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "current_zip",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "37382",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "employer_name",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Edwards PLC",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "job_title",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Environmental manager",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "monthly_income",
+          "fieldType": "NumericInput",
+          "predictedValue": "",
+          "goldValue": 13121,
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "employment_length",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "1 year",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "preferred_move_date",
+          "fieldType": "Date",
+          "predictedValue": "",
+          "goldValue": "2025/01/26",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "lease_term",
+          "fieldType": "Dropdown",
+          "predictedValue": "",
+          "goldValue": "6 months",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "max_rent",
+          "fieldType": "NumericInput",
+          "predictedValue": "",
+          "goldValue": 2323,
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "preferred_area",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Near public transport",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "pets",
+          "fieldType": "Dropdown",
+          "predictedValue": "",
+          "goldValue": "No",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "pet_details",
+          "fieldType": "Description",
+          "predictedValue": "",
+          "goldValue": "No pets",
+          "clickAccurate": false,
+          "valueAccurate": false,
+          "bleuScore": 0
+        },
+        {
+          "fieldId": "additional_info",
+          "fieldType": "Description",
+          "predictedValue": "",
+          "goldValue": "Prefer quiet and residential areas.",
+          "clickAccurate": false,
+          "valueAccurate": false,
+          "bleuScore": 0
+        }
+      ],
+      "atomicMetrics": {
+        "clickAccuracy": {
+          "String": 0,
+          "Date": 0,
+          "NumericInput": 0,
+          "Dropdown": 0,
+          "Description": 0
+        },
+        "valueAccuracy": {
+          "String": 0,
+          "Date": 0,
+          "NumericInput": 0,
+          "Dropdown": 0,
+          "Description": 0
+        },
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 0
+      },
+      "episodicMetrics": {
+        "formCompletionRate": 0,
+        "fieldsAttempted": 0,
+        "fieldsCorrect": 0,
+        "totalFields": 19,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 0
+      },
+      "executionTimeMs": 706646,
+      "errors": [
+        "Form submission step failed or timed out"
+      ],
+      "submissionSucceeded": false,
+      "tokensIn": 606,
+      "tokensOut": 224,
+      "llmTimeMs": 10923,
+      "llmCalls": 1
+    },
+    {
+      "formInstance": {
+        "formId": "workshop_registrations",
+        "formName": "Educational Workshop Registration",
+        "domain": "Professional & Business",
+        "instanceIndex": 0,
+        "inputDocument": "Subject: Workshop Registration Request - Finance & Investment\n\nDear Workshop Coordination Team,\n\nI am writing to formally request registration for the upcoming Continuing Education workshop under the Finance & Investment category. Please find my details below for your reference.\n\nFull Name: Daniel Brown  \nEmail Address: ahale@hotmail.com  \nPhone Number: 244-169-5801x7072  \nOrganization/Company: Wells-Wilson  \n\nAs a professional with a Master's Degree and 20 years of experience currently serving as an Armed forces training and education officer, I am eager to enroll in this program. The workshop is scheduled for my preferred session date of 2025/02/02 at 6PM, to be attended in a Hybrid delivery mode. \n\nI have been endorsed to attend this workshop through a Company Sponsored payment method, with the corresponding Billing Address as follows: USS Gonzalez, FPO AE 24907.\n\nI am particularly keen on enhancing my leadership and communication skills to manage my team more effectively. Additionally, I would like to see examples of successful leadership strategies in small and medium-sized businesses, as reflected in my response to 'What do you hope to learn from this workshop?' and 'Any other special requests or comments?' respectively. \n\nRegarding dietary requirements, I require Halal meals; however, I have no specific accessibility needs.\n\nThank you very much for considering my request. Please let me know if you require any further information or documentation.\n\nSincerely,\n\nDaniel Brown",
+        "goldAnswers": {
+          "Full Name": "Daniel Brown",
+          "Email Address": "ahale@hotmail.com",
+          "Phone Number": "244-169-5801x7072",
+          "Organization/Company": "Wells-Wilson",
+          "Workshop Category": "Finance & Investment",
+          "Preferred Session Date": "2025/02/02",
+          "Preferred Time Slot": "6PM",
+          "Preferred Delivery Mode": "Hybrid",
+          "Highest Education Level": "Master's Degree",
+          "Years of Professional Experience": 20,
+          "Current Role/Position": "Armed forces training and education officer",
+          "Dietary Requirements": "Halal",
+          "Accessibility Requirements": "None",
+          "Payment Method": "Company Sponsored",
+          "Billing Address": "USS Gonzalez\nFPO AE 24907",
+          "What do you hope to learn from this workshop?": "I would like to improve my leadership and communication skills to manage my team more effectively.",
+          "Any other special requests or comments?": "I would like to see examples of successful leadership strategies in small and medium-sized businesses."
+        },
+        "multiPage": false,
+        "formPath": "/professional-business/workshop-registration"
+      },
+      "agentName": "hybrid",
+      "fieldResults": [
+        {
+          "fieldId": "full_name",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Daniel Brown",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "email",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "ahale@hotmail.com",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "phone",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "244-169-5801x7072",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "organization",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Wells-Wilson",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "workshop_type",
+          "fieldType": "Dropdown",
+          "predictedValue": "",
+          "goldValue": "Finance & Investment",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "session_date",
+          "fieldType": "Date",
+          "predictedValue": "",
+          "goldValue": "2025/02/02",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "session_time",
+          "fieldType": "Dropdown",
+          "predictedValue": "",
+          "goldValue": "6PM",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "delivery_mode",
+          "fieldType": "Dropdown",
+          "predictedValue": "",
+          "goldValue": "Hybrid",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "education_level",
+          "fieldType": "Dropdown",
+          "predictedValue": "",
+          "goldValue": "Master's Degree",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "experience_years",
+          "fieldType": "NumericInput",
+          "predictedValue": "",
+          "goldValue": 20,
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "current_role",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Armed forces training and education officer",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "dietary_requirements",
+          "fieldType": "Dropdown",
+          "predictedValue": "",
+          "goldValue": "Halal",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "accessibility_needs",
+          "fieldType": "Description",
+          "predictedValue": "",
+          "goldValue": "None",
+          "clickAccurate": false,
+          "valueAccurate": false,
+          "bleuScore": 0
+        },
+        {
+          "fieldId": "payment_method",
+          "fieldType": "Dropdown",
+          "predictedValue": "",
+          "goldValue": "Company Sponsored",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "billing_address",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "USS Gonzalez\nFPO AE 24907",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "expectations",
+          "fieldType": "Description",
+          "predictedValue": "",
+          "goldValue": "I would like to improve my leadership and communication skills to manage my team more effectively.",
+          "clickAccurate": false,
+          "valueAccurate": false,
+          "bleuScore": 0
+        },
+        {
+          "fieldId": "special_requests",
+          "fieldType": "Description",
+          "predictedValue": "",
+          "goldValue": "I would like to see examples of successful leadership strategies in small and medium-sized businesses.",
+          "clickAccurate": false,
+          "valueAccurate": false,
+          "bleuScore": 0
+        }
+      ],
+      "atomicMetrics": {
+        "clickAccuracy": {
+          "String": 0,
+          "Dropdown": 0,
+          "Date": 0,
+          "NumericInput": 0,
+          "Description": 0
+        },
+        "valueAccuracy": {
+          "String": 0,
+          "Dropdown": 0,
+          "Date": 0,
+          "NumericInput": 0,
+          "Description": 0
+        },
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 0
+      },
+      "episodicMetrics": {
+        "formCompletionRate": 0,
+        "fieldsAttempted": 0,
+        "fieldsCorrect": 0,
+        "totalFields": 17,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 0
+      },
+      "executionTimeMs": 589603,
+      "errors": [
+        "Form submission step failed or timed out"
+      ],
+      "submissionSucceeded": false,
+      "tokensIn": 651,
+      "tokensOut": 205,
+      "llmTimeMs": 13302,
+      "llmCalls": 1
+    },
+    {
+      "formInstance": {
+        "formId": "membership_application",
+        "formName": "Association Membership Application",
+        "domain": "Professional & Business",
+        "instanceIndex": 0,
+        "inputDocument": "Dear Sir/Madam,\n\nI am writing to apply for membership with your esteemed professional association. My name is John Smith, and I currently work as a student at the University of Technology, pursuing my Bachelor's Degree in Computer Science.\n\nAs a dedicated student looking to further my career in the education industry, I believe that becoming a member of your organization would provide me with valuable resources, networking opportunities, and professional development support. I am eager to connect with like-minded individuals in the field and stay updated on the latest trends and advancements.\n\nDespite having no professional certifications and zero years of industry experience, I am determined to grow and learn within the field. With the guidance and mentorship from esteemed professionals such as Dr. Emily Johnson, a respected professor at my university, I am confident that I can bring a fresh perspective and contribute positively to the association.\n\nI am applying for a Student Member membership level with a membership duration of 1 year. I look forward to participating in workshops, seminars, and events to enhance my skills and knowledge in Computer Science. My passion for the industry drives me to constantly seek new learning opportunities and the chance to connect with experienced professionals.\n\nI am enthusiastic about the possibility of joining your association and am committed to actively engaging with its initiatives and offerings. I believe that by becoming a member, I can both benefit from and contribute to the community, ultimately furthering my career goals and aspirations.\n\nThank you for considering my application. I look forward to the opportunity to grow and develop alongside fellow members of the association.\n\nBest regards,\n\nJohn Smith\njohn.smith@gmail.com\n555-0123\n1990/01/15",
+        "goldAnswers": {
+          "Full Name": "John Smith",
+          "Email Address": "john.smith@gmail.com",
+          "Phone Number": "555-0123",
+          "Date of Birth": "1990/01/15",
+          "Membership Level": "Student Member",
+          "Membership Duration": "1 Year",
+          "Highest Education Level": "Bachelor's Degree",
+          "Field of Study": "Computer Science",
+          "Professional Certifications": "None",
+          "Current Employer": "University of Technology",
+          "Job Title": "Student",
+          "Years of Experience": 0,
+          "Industry": "Education",
+          "Reference Name": "Dr. Emily Johnson",
+          "Reference Email": "emily.johnson@gmail.com",
+          "Relationship to Reference": "Professor"
+        },
+        "multiPage": true,
+        "formPath": "/professional-business/membership-application"
+      },
+      "agentName": "hybrid",
+      "fieldResults": [
+        {
+          "fieldId": "full_name",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "John Smith",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "email",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "john.smith@gmail.com",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "phone",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "555-0123",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "date_of_birth",
+          "fieldType": "Date",
+          "predictedValue": "",
+          "goldValue": "1990/01/15",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "membership_level",
+          "fieldType": "Dropdown",
+          "predictedValue": "",
+          "goldValue": "Student Member",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "membership_duration",
+          "fieldType": "Dropdown",
+          "predictedValue": "",
+          "goldValue": "1 Year",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "education_level",
+          "fieldType": "Dropdown",
+          "predictedValue": "",
+          "goldValue": "Bachelor's Degree",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "field_of_study",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Computer Science",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "professional_certifications",
+          "fieldType": "Description",
+          "predictedValue": "",
+          "goldValue": "None",
+          "clickAccurate": false,
+          "valueAccurate": false,
+          "bleuScore": 0
+        },
+        {
+          "fieldId": "current_employer",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "University of Technology",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "job_title",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Student",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "years_experience",
+          "fieldType": "NumericInput",
+          "predictedValue": "",
+          "goldValue": 0,
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "industry",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Education",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "reference_name",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Dr. Emily Johnson",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "reference_email",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "emily.johnson@gmail.com",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "reference_relationship",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Professor",
+          "clickAccurate": false,
+          "valueAccurate": false
+        }
+      ],
+      "atomicMetrics": {
+        "clickAccuracy": {
+          "String": 0,
+          "Date": 0,
+          "Dropdown": 0,
+          "Description": 0,
+          "NumericInput": 0
+        },
+        "valueAccuracy": {
+          "String": 0,
+          "Date": 0,
+          "Dropdown": 0,
+          "Description": 0,
+          "NumericInput": 0
+        },
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 0
+      },
+      "episodicMetrics": {
+        "formCompletionRate": 0,
+        "fieldsAttempted": 0,
+        "fieldsCorrect": 0,
+        "totalFields": 16,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 0
+      },
+      "executionTimeMs": 678350,
+      "errors": [
+        "Form submission step failed or timed out"
+      ],
+      "submissionSucceeded": false,
+      "tokensIn": 627,
+      "tokensOut": 134,
+      "llmTimeMs": 11935,
+      "llmCalls": 1
+    },
+    {
+      "formInstance": {
+        "formId": "Art_Exhibition_Submission_Form",
+        "formName": "Art Exhibition Submission Form",
+        "domain": "Arts & Creative",
+        "instanceIndex": 0,
+        "inputDocument": "Artist Amanda Lee, residing at the email address amanda.lee1985@gmail.com, is pleased to submit her artwork titled \"Enchanted Forest\" for consideration in your esteemed art exhibition. This remarkable piece, rendered in the medium of Painting, measures 120 x 90 x 4 cm and was created in the year 2022. \"This painting depicts an otherworldly forest where rays of sunlight filter through the ancient trees, creating a dappled pattern on the forest floor. The rich, deep greens of the foliage contrast with the warm, golden hues of the sunlight, giving the scene an almost magical quality. Delicate wildflowers peek out from between the roots, adding splashes of color to the otherwise earthy palette. It's a representation of the tranquility and mystery that one might encounter in a hidden forest.\" Amanda Lee expresses her preference for the exhibition period to take place in Spring 2024. Moreover, the artwork is available for sale, promising a valuable acquisition for collectors and art enthusiasts alike. The artist looks forward to the opportunity to present \"Enchanted Forest\" in a setting that appropriately appreciates its intricate beauty and profound narrative.",
+        "goldAnswers": {
+          "Artist Name": "Amanda Lee",
+          "Email Address": "amanda.lee1985@gmail.com",
+          "Artwork Title": "Enchanted Forest",
+          "Medium": "Painting",
+          "Dimensions (in cm)": "120 x 90 x 4",
+          "Year Created": 2022,
+          "Artwork Description": "This painting depicts an otherworldly forest where rays of sunlight filter through the ancient trees, creating a dappled pattern on the forest floor. The rich, deep greens of the foliage contrast with the warm, golden hues of the sunlight, giving the scene an almost magical quality. Delicate wildflowers peek out from between the roots, adding splashes of color to the otherwise earthy palette. It's a representation of the tranquility and mystery that one might encounter in a hidden forest.",
+          "Preferred Exhibition Period": "Spring 2024",
+          "Artwork is available for sale": true
+        },
+        "multiPage": false,
+        "formPath": "/arts-creative/exhibition-submission"
+      },
+      "agentName": "hybrid",
+      "fieldResults": [
+        {
+          "fieldId": "Artist Name",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Amanda Lee",
+          "clickAccurate": null,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "Email Address",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "amanda.lee1985@gmail.com",
+          "clickAccurate": null,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "Artwork Title",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Enchanted Forest",
+          "clickAccurate": null,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "medium",
+          "fieldType": "Dropdown",
+          "predictedValue": "",
+          "goldValue": "Painting",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "Dimensions (in cm)",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "120 x 90 x 4",
+          "clickAccurate": null,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "Year Created",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": 2022,
+          "clickAccurate": null,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "Artwork Description",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "This painting depicts an otherworldly forest where rays of sunlight filter through the ancient trees, creating a dappled pattern on the forest floor. The rich, deep greens of the foliage contrast with the warm, golden hues of the sunlight, giving the scene an almost magical quality. Delicate wildflowers peek out from between the roots, adding splashes of color to the otherwise earthy palette. It's a representation of the tranquility and mystery that one might encounter in a hidden forest.",
+          "clickAccurate": null,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "exhibition_period",
+          "fieldType": "Dropdown",
+          "predictedValue": "",
+          "goldValue": "Spring 2024",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "for_sale",
+          "fieldType": "Checkbox",
+          "predictedValue": "",
+          "goldValue": true,
+          "clickAccurate": false,
+          "valueAccurate": false
+        }
+      ],
+      "atomicMetrics": {
+        "clickAccuracy": {
+          "String": 0,
+          "Dropdown": 0,
+          "Checkbox": 0
+        },
+        "valueAccuracy": {
+          "String": 0,
+          "Dropdown": 0,
+          "Checkbox": 0
+        },
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 0
+      },
+      "episodicMetrics": {
+        "formCompletionRate": 0,
+        "fieldsAttempted": 0,
+        "fieldsCorrect": 0,
+        "totalFields": 9,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 0
+      },
+      "executionTimeMs": 377572,
+      "errors": [
+        "Form submission step failed or timed out"
+      ],
+      "submissionSucceeded": false,
+      "tokensIn": 468,
+      "tokensOut": 187,
+      "llmTimeMs": 11623,
+      "llmCalls": 1
+    },
+    {
+      "formInstance": {
+        "formId": "Literary_Magazine_Submission",
+        "formName": "Literary Magazine Submission Form",
+        "domain": "Arts & Creative",
+        "instanceIndex": 0,
+        "inputDocument": "Emma Thompson respectfully submits her work titled \"A Journey Through Time\" to your esteemed literary magazine. Her entry in the Fiction genre comprises a word count of 3200. Within this submission, the abstract/summary remains integral: \"A historical novel that delves into the life of a young woman living through wartime Europe.\" Unfortunately, the manuscript file is unavailable for submission at this moment. Emma has expressed a preference for her work to be considered for the Spring 2024 issue. It is noted that this work has not been previously published and is a simultaneous submission. Emma concurs with the submission guidelines and terms of publication. For any further correspondence, she can be reached at emma.thompson123@gmail.com.",
+        "goldAnswers": {
+          "Author Name": "Emma Thompson",
+          "Email Address": "emma.thompson123@gmail.com",
+          "Title": "A Journey Through Time",
+          "Genre": "Fiction",
+          "Word Count": 3200,
+          "Abstract/Summary": "A historical novel that delves into the life of a young woman living through wartime Europe.",
+          "Manuscript File": "None",
+          "Preferred Issue": "Spring 2024",
+          "This work has been previously published": "No",
+          "This is a simultaneous submission": "Yes",
+          "I agree to the submission guidelines and terms of publication": "Yes"
+        },
+        "multiPage": false,
+        "formPath": "/arts-creative/literary-submission"
+      },
+      "agentName": "hybrid",
+      "fieldResults": [
+        {
+          "fieldId": "Author Name",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Emma Thompson",
+          "clickAccurate": null,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "Email Address",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "emma.thompson123@gmail.com",
+          "clickAccurate": null,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "Title",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "A Journey Through Time",
+          "clickAccurate": null,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "genre",
+          "fieldType": "Dropdown",
+          "predictedValue": "",
+          "goldValue": "Fiction",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "Word Count",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": 3200,
+          "clickAccurate": null,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "Abstract/Summary",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "A historical novel that delves into the life of a young woman living through wartime Europe.",
+          "clickAccurate": null,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "Manuscript File",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "None",
+          "clickAccurate": null,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "issue",
+          "fieldType": "Dropdown",
+          "predictedValue": "",
+          "goldValue": "Spring 2024",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "previously_published",
+          "fieldType": "Checkbox",
+          "predictedValue": "",
+          "goldValue": "No",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "simultaneous_submission",
+          "fieldType": "Checkbox",
+          "predictedValue": "",
+          "goldValue": "Yes",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "I agree to the submission guidelines and terms of publication",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Yes",
+          "clickAccurate": null,
+          "valueAccurate": false
+        }
+      ],
+      "atomicMetrics": {
+        "clickAccuracy": {
+          "String": 0,
+          "Dropdown": 0,
+          "Checkbox": 0
+        },
+        "valueAccuracy": {
+          "String": 0,
+          "Dropdown": 0,
+          "Checkbox": 0
+        },
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 0
+      },
+      "episodicMetrics": {
+        "formCompletionRate": 0,
+        "fieldsAttempted": 0,
+        "fieldsCorrect": 0,
+        "totalFields": 11,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 0
+      },
+      "executionTimeMs": 401897,
+      "errors": [
+        "Form submission step failed or timed out"
+      ],
+      "submissionSucceeded": false,
+      "tokensIn": 399,
+      "tokensOut": 115,
+      "llmTimeMs": 5717,
+      "llmCalls": 1
+    },
+    {
+      "formInstance": {
+        "formId": "Conference_Speaker_Application",
+        "formName": "Conference Speaker Application Form",
+        "domain": "Arts & Creative",
+        "instanceIndex": 0,
+        "inputDocument": "John Adams, representing Tech Innovations Inc., submits an application to present at your conference. He can be contacted via email at john.adams56@gmail.com or phone at 123-456-7890. His presentation, titled \"The Future of Artificial Intelligence in Visual Arts,\" falls within the topic area of Visual Arts. This presentation will explore how AI is being used in the creation of visual art, including generative art algorithms and AI-based design tools. We will examine the intersection of creativity and technology and discuss the ethical implications of AI in artistic expression. The learning objectives for this presentation include understanding the role of AI in visual arts, exploring AI-generated artworks and their impact on the art world, and discussing ethical considerations in AI-driven creativity. John Adams is a renowned technologist and artist, bridging the gap between AI and visual arts. He has worked on multiple projects integrating AI with digital art, and his works have been exhibited in various international galleries. He has significant previous speaking experience, having served as a Keynote Speaker at ArtTech Symposium 2022 and as a panelist at AI and Creativity Conference 2021. The format of the presentation will be a lecture. He requires special technical requirements including a projector, internet access, and AI demo tools. John Adams has confirmed his agreement to the speaker guidelines and terms of participation.",
+        "goldAnswers": {
+          "Full Name": "John Adams",
+          "Email Address": "john.adams56@gmail.com",
+          "Phone Number": "123-456-7890",
+          "Organization/Institution": "Tech Innovations Inc.",
+          "Presentation Title": "The Future of Artificial Intelligence in Visual Arts",
+          "Topic Area": "Visual Arts",
+          "Presentation Abstract": "This presentation will explore how AI is being used in the creation of visual art, including generative art algorithms and AI-based design tools. We will examine the intersection of creativity and technology and discuss the ethical implications of AI in artistic expression.",
+          "Learning Objectives": "1. Understand the role of AI in visual arts. 2. Explore AI-generated artworks and their impact on the art world. 3. Discuss ethical considerations in AI-driven creativity.",
+          "Professional Biography": "John Adams is a renowned technologist and artist, bridging the gap between AI and visual arts. He has worked on multiple projects integrating AI with digital art, and his works have been exhibited in various international galleries.",
+          "CV/Resume": "None",
+          "Previous Speaking Experience": "1. Keynote Speaker at ArtTech Symposium 2022. 2. Panelist at AI and Creativity Conference 2021.",
+          "Presentation Format": "Lecture",
+          "Special Technical Requirements": "Projector, internet access, AI demo tools.",
+          "I agree to the speaker guidelines and terms of participation": "Yes"
+        },
+        "multiPage": true,
+        "formPath": "/arts-creative/speaker-application"
+      },
+      "agentName": "hybrid",
+      "fieldResults": [
+        {
+          "fieldId": "Full Name",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "John Adams",
+          "clickAccurate": null,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "Email Address",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "john.adams56@gmail.com",
+          "clickAccurate": null,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "Phone Number",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "123-456-7890",
+          "clickAccurate": null,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "organization",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Tech Innovations Inc.",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "Presentation Title",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "The Future of Artificial Intelligence in Visual Arts",
+          "clickAccurate": null,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "Topic Area",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Visual Arts",
+          "clickAccurate": null,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "Presentation Abstract",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "This presentation will explore how AI is being used in the creation of visual art, including generative art algorithms and AI-based design tools. We will examine the intersection of creativity and technology and discuss the ethical implications of AI in artistic expression.",
+          "clickAccurate": null,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "Learning Objectives",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "1. Understand the role of AI in visual arts. 2. Explore AI-generated artworks and their impact on the art world. 3. Discuss ethical considerations in AI-driven creativity.",
+          "clickAccurate": null,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "Professional Biography",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "John Adams is a renowned technologist and artist, bridging the gap between AI and visual arts. He has worked on multiple projects integrating AI with digital art, and his works have been exhibited in various international galleries.",
+          "clickAccurate": null,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "CV/Resume",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "None",
+          "clickAccurate": null,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "speaking_experience",
+          "fieldType": "Description",
+          "predictedValue": "",
+          "goldValue": "1. Keynote Speaker at ArtTech Symposium 2022. 2. Panelist at AI and Creativity Conference 2021.",
+          "clickAccurate": false,
+          "valueAccurate": false,
+          "bleuScore": 0
+        },
+        {
+          "fieldId": "Presentation Format",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Lecture",
+          "clickAccurate": null,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "tech_requirements",
+          "fieldType": "Description",
+          "predictedValue": "",
+          "goldValue": "Projector, internet access, AI demo tools.",
+          "clickAccurate": false,
+          "valueAccurate": false,
+          "bleuScore": 0
+        },
+        {
+          "fieldId": "I agree to the speaker guidelines and terms of participation",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Yes",
+          "clickAccurate": null,
+          "valueAccurate": false
+        }
+      ],
+      "atomicMetrics": {
+        "clickAccuracy": {
+          "String": 0,
+          "Description": 0
+        },
+        "valueAccuracy": {
+          "String": 0,
+          "Description": 0
+        },
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 0
+      },
+      "episodicMetrics": {
+        "formCompletionRate": 0,
+        "fieldsAttempted": 0,
+        "fieldsCorrect": 0,
+        "totalFields": 14,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 0
+      },
+      "executionTimeMs": 503066,
+      "errors": [
+        "Form submission step failed or timed out"
+      ],
+      "submissionSucceeded": false,
+      "tokensIn": 587,
+      "tokensOut": 368,
+      "llmTimeMs": 17131,
+      "llmCalls": 1
+    },
+    {
+      "formInstance": {
+        "formId": "Bug_report",
+        "formName": "Bug Reporting Form",
+        "domain": "Technology & Software",
+        "instanceIndex": 0,
+        "inputDocument": "Bug Report by John Williams\n\nBug Title: App crashes when opening the settings menu\n\nSeverity Level: High  \nEnvironment: Production  \nBrowser/Platform: iOS 15.4, iPhone 12  \n\nSteps to Reproduce: 1.Open the app. 2.Tap on the settings icon. 3.App crashes immediately.  \n\nExpected Behavior: Settings menu should open without crashing.  \nActual Behavior: App crashes immediately when settings menu is opened.  \n\nAttachments (Optional): None  \n\nReported by: John Williams  \nContact Information: john.williams87@gmail.com  \n\nThis bug has been observed in the Production environment on an iPhone 12 running iOS 15.4. The issue is of High severity as it prevents users from accessing the settings menu, impacting user experience significantly. There are no attachments provided with this report. Immediate attention to this bug would be appreciated to ensure smooth functionality of the app.",
+        "goldAnswers": {
+          "Bug Title": "App crashes when opening the settings menu",
+          "Severity Level": "High",
+          "Environment": "Production",
+          "Browser/Platform": "iOS 15.4, iPhone 12",
+          "Steps to Reproduce": "1. Open the app. 2. Tap on the settings icon. 3. App crashes immediately.",
+          "Expected Behavior": "Settings menu should open without crashing.",
+          "Actual Behavior": "App crashes immediately when settings menu is opened.",
+          "Attachments (Optional)": "None",
+          "Your Name": "John Williams",
+          "Your Email": "john.williams87@gmail.com"
+        },
+        "multiPage": false,
+        "formPath": "/tech-software/bug-report"
+      },
+      "agentName": "hybrid",
+      "fieldResults": [
+        {
+          "fieldId": "title",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "App crashes when opening the settings menu",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "severity",
+          "fieldType": "Dropdown",
+          "predictedValue": "",
+          "goldValue": "High",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "environment",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Production",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "browser",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "iOS 15.4, iPhone 12",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "steps",
+          "fieldType": "Description",
+          "predictedValue": "",
+          "goldValue": "1. Open the app. 2. Tap on the settings icon. 3. App crashes immediately.",
+          "clickAccurate": false,
+          "valueAccurate": false,
+          "bleuScore": 0
+        },
+        {
+          "fieldId": "expected",
+          "fieldType": "Description",
+          "predictedValue": "",
+          "goldValue": "Settings menu should open without crashing.",
+          "clickAccurate": false,
+          "valueAccurate": false,
+          "bleuScore": 0
+        },
+        {
+          "fieldId": "actual",
+          "fieldType": "Description",
+          "predictedValue": "",
+          "goldValue": "App crashes immediately when settings menu is opened.",
+          "clickAccurate": false,
+          "valueAccurate": false,
+          "bleuScore": 0
+        },
+        {
+          "fieldId": "reporter",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "John Williams",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "email",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "john.williams87@gmail.com",
+          "clickAccurate": false,
+          "valueAccurate": false
+        }
+      ],
+      "atomicMetrics": {
+        "clickAccuracy": {
+          "String": 0,
+          "Dropdown": 0,
+          "Description": 0
+        },
+        "valueAccuracy": {
+          "String": 0,
+          "Dropdown": 0,
+          "Description": 0
+        },
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 0
+      },
+      "episodicMetrics": {
+        "formCompletionRate": 0,
+        "fieldsAttempted": 0,
+        "fieldsCorrect": 0,
+        "totalFields": 9,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 0
+      },
+      "executionTimeMs": 310373,
+      "errors": [
+        "Form submission step failed or timed out"
+      ],
+      "submissionSucceeded": false,
+      "tokensIn": 379,
+      "tokensOut": 73,
+      "llmTimeMs": 4476,
+      "llmCalls": 1
+    },
+    {
+      "formInstance": {
+        "formId": "IT_support",
+        "formName": "IT Support Request Form",
+        "domain": "Technology & Software",
+        "instanceIndex": 0,
+        "inputDocument": "Subject: Entire office network down\n\nRequest Type: Network Issue  \nPriority Level: Urgent-System Down  \n\nHello,\n\nI am writing to report an urgent network issue affecting all departments, with all network access down across the entire office. The problem began around 10:30 AM today. As a result, employees are unable to access the internet, file servers, or any internal systems. The number of affected users is approximately 50.\n\nPlease prioritize this issue due to its critical nature, as it impacts all business operations. You may reach out to me during our preferred contact time, Mon-Fri 9AM-5PM, for any additional details or updates. Currently, there are no available screenshots to provide.\n\nFor further communication or assistance, please feel free to contact me directly at michael.johnson@company.com or via phone at +1 555-9876.\n\nThank you for your prompt attention to this urgent matter.\n\nBest regards,  \nMichael Johnson",
+        "goldAnswers": {
+          "Request Type": "Network Issue",
+          "Priority Level": "Urgent-System Down",
+          "Subject": "Entire office network down",
+          "Brief description of the issue": "All network access is down across the entire office.",
+          "Detailed Description": "Employees are unable to access the internet, file servers, or any internal systems. The issue started around 10:30 AM today.",
+          "Location/Department": "All departments",
+          "Number of Affected Users": 50,
+          "Preferred Contact Time": "Mon-Fri 9AM-5PM",
+          "Screenshots (Optional)": "None",
+          "Your Name": "Michael Johnson",
+          "Your Email": "michael.johnson@company.com",
+          "Contact Phone Number": "+1 555-9876"
+        },
+        "multiPage": false,
+        "formPath": "/tech-software/support-request"
+      },
+      "agentName": "hybrid",
+      "fieldResults": [
+        {
+          "fieldId": "requestType",
+          "fieldType": "Dropdown",
+          "predictedValue": "",
+          "goldValue": "Network Issue",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "priority",
+          "fieldType": "Dropdown",
+          "predictedValue": "",
+          "goldValue": "Urgent-System Down",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "subject",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Entire office network down",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "Brief description of the issue",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "All network access is down across the entire office.",
+          "clickAccurate": null,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "description",
+          "fieldType": "Description",
+          "predictedValue": "",
+          "goldValue": "Employees are unable to access the internet, file servers, or any internal systems. The issue started around 10:30 AM today.",
+          "clickAccurate": false,
+          "valueAccurate": false,
+          "bleuScore": 0
+        },
+        {
+          "fieldId": "location",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "All departments",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "affectedUsers",
+          "fieldType": "NumericInput",
+          "predictedValue": "",
+          "goldValue": 50,
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "availableTime",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Mon-Fri 9AM-5PM",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "requesterName",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Michael Johnson",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "requesterEmail",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "michael.johnson@company.com",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "phoneNumber",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "+1 555-9876",
+          "clickAccurate": false,
+          "valueAccurate": false
+        }
+      ],
+      "atomicMetrics": {
+        "clickAccuracy": {
+          "Dropdown": 0,
+          "String": 0,
+          "Description": 0,
+          "NumericInput": 0
+        },
+        "valueAccuracy": {
+          "Dropdown": 0,
+          "String": 0,
+          "Description": 0,
+          "NumericInput": 0
+        },
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 0
+      },
+      "episodicMetrics": {
+        "formCompletionRate": 0,
+        "fieldsAttempted": 0,
+        "fieldsCorrect": 0,
+        "totalFields": 11,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 0
+      },
+      "executionTimeMs": 404870,
+      "errors": [
+        "Form submission step failed or timed out"
+      ],
+      "submissionSucceeded": false,
+      "tokensIn": 466,
+      "tokensOut": 172,
+      "llmTimeMs": 38480,
+      "llmCalls": 1
+    },
+    {
+      "formInstance": {
+        "formId": "person_loan_applications",
+        "formName": "Personal Loan Application Form",
+        "domain": "Finance & Banking",
+        "instanceIndex": 0,
+        "inputDocument": "John Stephen Tran is seeking to apply for a personal loan amounting to $28,521. The requested loan term is 60 months. Mr. Tran is currently employed part-time, with a consistent monthly income of $4,569. He has carefully assessed his financial situation and is confident in his ability to meet the repayment requirements over the specified term. Mr. Tran's dedication to managing this financial obligation is supported by his stable employment status and his clear understanding of the loan terms. Through this application, he hopes to successfully secure the necessary funds, demonstrating his commitment and financial responsibility.",
+        "goldAnswers": {
+          "First Name": "John",
+          "Middle Name": "Stephen",
+          "Last Name": "Tran",
+          "Loan Amount ($)": 28521,
+          "Loan Term (months)": "60 months",
+          "Employment Status": "Part time",
+          "Monthly Income ($)": 4569
+        },
+        "multiPage": false,
+        "formPath": "/finance-banking/personal-loan"
+      },
+      "agentName": "hybrid",
+      "fieldResults": [
+        {
+          "fieldId": "firstName",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "John",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "middleName",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Stephen",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "lastName",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Tran",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "loanAmount",
+          "fieldType": "NumericInput",
+          "predictedValue": "",
+          "goldValue": 28521,
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "loanTerm",
+          "fieldType": "Dropdown",
+          "predictedValue": "",
+          "goldValue": "60 months",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "employmentStatus",
+          "fieldType": "Dropdown",
+          "predictedValue": "",
+          "goldValue": "Part time",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "monthlyIncome",
+          "fieldType": "NumericInput",
+          "predictedValue": "",
+          "goldValue": 4569,
+          "clickAccurate": false,
+          "valueAccurate": false
+        }
+      ],
+      "atomicMetrics": {
+        "clickAccuracy": {
+          "String": 0,
+          "NumericInput": 0,
+          "Dropdown": 0
+        },
+        "valueAccuracy": {
+          "String": 0,
+          "NumericInput": 0,
+          "Dropdown": 0
+        },
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 0
+      },
+      "episodicMetrics": {
+        "formCompletionRate": 0,
+        "fieldsAttempted": 0,
+        "fieldsCorrect": 0,
+        "totalFields": 7,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 0
+      },
+      "executionTimeMs": 280391,
+      "errors": [
+        "Form submission step failed or timed out"
+      ],
+      "submissionSucceeded": false,
+      "tokensIn": 321,
+      "tokensOut": 64,
+      "llmTimeMs": 4150,
+      "llmCalls": 1
+    },
+    {
+      "formInstance": {
+        "formId": "bank_account_applications",
+        "formName": "Bank Account Opening Form",
+        "domain": "Finance & Banking",
+        "instanceIndex": 0,
+        "inputDocument": "Dear Banking Officer,\n\nI am writing to apply for a Business Account and am excited about the opportunity to manage my financial affairs more effectively. My name is George Dawson, and I was born on August 1, 1957. To establish my identity, I have included my State ID, the number of which is 2868883095. I am confident that this account will meet my business needs, and I look forward to benefiting from your bank's services and support. Thank you for considering my application.\n\nSincerely,  \nGeorge Dawson",
+        "goldAnswers": {
+          "Full Name": "George Dawson",
+          "Date of Birth": "1957/08/01",
+          "Account Type": "Business Account",
+          "ID Type": "State ID",
+          "ID Number": 2868883095
+        },
+        "multiPage": false,
+        "formPath": "/finance-banking/account-opening"
+      },
+      "agentName": "hybrid",
+      "fieldResults": [
+        {
+          "fieldId": "fullName",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "George Dawson",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "dateOfBirth",
+          "fieldType": "Date",
+          "predictedValue": "",
+          "goldValue": "1957/08/01",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "Account Type",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Business Account",
+          "clickAccurate": null,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "idType",
+          "fieldType": "Dropdown",
+          "predictedValue": "",
+          "goldValue": "State ID",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "idNumber",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": 2868883095,
+          "clickAccurate": false,
+          "valueAccurate": false
+        }
+      ],
+      "atomicMetrics": {
+        "clickAccuracy": {
+          "String": 0,
+          "Date": 0,
+          "Dropdown": 0
+        },
+        "valueAccuracy": {
+          "String": 0,
+          "Date": 0,
+          "Dropdown": 0
+        },
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 0
+      },
+      "episodicMetrics": {
+        "formCompletionRate": 0,
+        "fieldsAttempted": 0,
+        "fieldsCorrect": 0,
+        "totalFields": 5,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 0
+      },
+      "executionTimeMs": 169434,
+      "errors": [
+        "Form submission step failed or timed out"
+      ],
+      "submissionSucceeded": false,
+      "tokensIn": 294,
+      "tokensOut": 64,
+      "llmTimeMs": 13484,
+      "llmCalls": 1
+    },
+    {
+      "formInstance": {
+        "formId": "financial_planning",
+        "formName": "Financial Planning Consultation Form",
+        "domain": "Finance & Banking",
+        "instanceIndex": 0,
+        "inputDocument": "Dear Financial Planning Team,\n\nI hope this message finds you well. My name is Benjamin Scott, and I am reaching out to request a consultation focused on estate planning. I am particularly interested in discussing the creation of a living will and managing property distribution. I am hoping to schedule this meeting on November 30, 2024, during the evening hours, ideally between 4:00 PM and 6:00 PM. Should you need to reach me for any further details, please feel free to contact me via email at ben.scott24@gmail.com. I look forward to your guidance on this matter and am eager to solidify my estate planning.\n\nThank you for your assistance.\n\nWarm regards,\n\nBenjamin Scott",
+        "goldAnswers": {
+          "Full Name": "Benjamin Scott",
+          "Email Address": "ben.scott24@gmail.com",
+          "Type of Consultation": "Estate Planning",
+          "Preferred Date": "2024/11/30",
+          "Preferred Time": "Evening (4:00 PM -6:00 PM)",
+          "Additional Comments": "Looking to discuss the creation of a living will and managing property distribution."
+        },
+        "multiPage": false,
+        "formPath": "/finance-banking/financial-planning"
+      },
+      "agentName": "hybrid",
+      "fieldResults": [
+        {
+          "fieldId": "name",
+          "fieldType": "String",
+          "predictedValue": "Benjamin Scott",
+          "goldValue": "Benjamin Scott",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "email",
+          "fieldType": "String",
+          "predictedValue": "ben.scott24@gmail.com",
+          "goldValue": "ben.scott24@gmail.com",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "consultationType",
+          "fieldType": "Dropdown",
+          "predictedValue": "",
+          "goldValue": "Estate Planning",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "preferredDate",
+          "fieldType": "Date",
+          "predictedValue": "",
+          "goldValue": "2024/11/30",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "preferredTime",
+          "fieldType": "Dropdown",
+          "predictedValue": "",
+          "goldValue": "Evening (4:00 PM -6:00 PM)",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "comments",
+          "fieldType": "Description",
+          "predictedValue": "discussing the creation of a living will and managing property distribution",
+          "goldValue": "Looking to discuss the creation of a living will and managing property distribution.",
+          "clickAccurate": false,
+          "valueAccurate": true,
+          "bleuScore": 74.46697386219441
+        }
+      ],
+      "atomicMetrics": {
+        "clickAccuracy": {
+          "String": 0,
+          "Dropdown": 0,
+          "Date": 0,
+          "Description": 0
+        },
+        "valueAccuracy": {
+          "String": 100,
+          "Dropdown": 0,
+          "Date": 0,
+          "Description": 100
+        },
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 50
+      },
+      "episodicMetrics": {
+        "formCompletionRate": 50,
+        "fieldsAttempted": 3,
+        "fieldsCorrect": 3,
+        "totalFields": 6,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 50
+      },
+      "executionTimeMs": 67468,
+      "errors": [],
+      "submissionSucceeded": false,
+      "tokensIn": 344,
+      "tokensOut": 96,
+      "llmTimeMs": 5566,
+      "llmCalls": 1
+    },
+    {
+      "formInstance": {
+        "formId": "Patient_Consent",
+        "formName": "Patient Consent for Surgery",
+        "domain": "Healthcare & Medical",
+        "instanceIndex": 0,
+        "inputDocument": "James Anderson, born on August 15, 1985, with the medical record number MRN123456789, has given informed consent for a Knee Arthroscopy to be performed by Dr. Robert Smith. James acknowledges that he fully comprehends the nature of the procedure and the potential risks involved. Moreover, he has explored alternative treatments and understands them thoroughly. James further confirms that he has had ample opportunity to discuss any concerns or questions with his healthcare team and that they have provided satisfactory answers. In case of any emergencies, Emily Anderson will serve as the primary contact and can be reached at +1 555-987-6543.",
+        "goldAnswers": {
+          "Full Name": "James Anderson",
+          "Date of Birth": "1985/08/15",
+          "Medical Record Number": "MRN123456789",
+          "Name of Procedure": "Knee Arthroscopy",
+          "Surgeon/Physician Name": "Dr. Robert Smith",
+          "I understand the nature of the procedure and its associated risks": true,
+          "I have had the opportunity to ask questions and they have been answered satisfactorily": true,
+          "I understand the alternatives to this procedure": true,
+          "Emergency Contact Name": "Emily Anderson",
+          "Emergency Contact Phone": "+1 555-987-6543"
+        },
+        "multiPage": false,
+        "formPath": "/healthcare-medical/patient-consent"
+      },
+      "agentName": "hybrid",
+      "fieldResults": [
+        {
+          "fieldId": "patientName",
+          "fieldType": "String",
+          "predictedValue": "James Anderson",
+          "goldValue": "James Anderson",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "dateOfBirth",
+          "fieldType": "Date",
+          "predictedValue": "",
+          "goldValue": "1985/08/15",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "medicalRecordNumber",
+          "fieldType": "String",
+          "predictedValue": "MRN123456789",
+          "goldValue": "MRN123456789",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "procedureName",
+          "fieldType": "String",
+          "predictedValue": "Knee Arthroscopy",
+          "goldValue": "Knee Arthroscopy",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "surgeon",
+          "fieldType": "String",
+          "predictedValue": "Dr. Robert Smith",
+          "goldValue": "Dr. Robert Smith",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "procedureConsent",
+          "fieldType": "Checkbox",
+          "predictedValue": "false",
+          "goldValue": true,
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "questionConsent",
+          "fieldType": "Checkbox",
+          "predictedValue": "false",
+          "goldValue": true,
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "alternativesConsent",
+          "fieldType": "Checkbox",
+          "predictedValue": "false",
+          "goldValue": true,
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "emergencyName",
+          "fieldType": "String",
+          "predictedValue": "Emily Anderson",
+          "goldValue": "Emily Anderson",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "emergencyPhone",
+          "fieldType": "String",
+          "predictedValue": "+1 555-987-6543",
+          "goldValue": "+1 555-987-6543",
+          "clickAccurate": false,
+          "valueAccurate": true
+        }
+      ],
+      "atomicMetrics": {
+        "clickAccuracy": {
+          "String": 0,
+          "Date": 0,
+          "Checkbox": 0
+        },
+        "valueAccuracy": {
+          "String": 100,
+          "Date": 0,
+          "Checkbox": 0
+        },
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 60
+      },
+      "episodicMetrics": {
+        "formCompletionRate": 60,
+        "fieldsAttempted": 9,
+        "fieldsCorrect": 6,
+        "totalFields": 10,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 60
+      },
+      "executionTimeMs": 11867,
+      "errors": [],
+      "submissionSucceeded": false,
+      "tokensIn": 453,
+      "tokensOut": 192,
+      "llmTimeMs": 10027,
+      "llmCalls": 1
+    },
+    {
+      "formInstance": {
+        "formId": "Medical_study_Form",
+        "formName": "Medical Research Study Enrollment",
+        "domain": "Healthcare & Medical",
+        "instanceIndex": 0,
+        "inputDocument": "**Medical Research Study Enrollment Application**\n\n---\n\n**Applicant Information:**\n\nI am pleased to submit my enrollment application for consideration in the upcoming medical research study. Please find my personal and medical details below as per your requirements:\n\n**Full Name:** Lily Chen\n\n**Age:** 32\n\n**Existing Medical Conditions:** As part of my health background, I have been diagnosed with Hypertension. \n\n**Current Medications:** I am currently taking Lisinopril to manage my medical condition effectively. \n\n**Study Preferences:**\n\nIn relation to study preferences, please note that I am particularly interested in participating in a Clinical Trial, as my preferred study type aligns with this format of research investigation.\n\n**Availability:**\n\nRegarding my participation frequency, I am readily available to contribute during weekdays. I believe this availability will fit the study schedule effectively.\n\n**Contact Information:**\n\nFor any communication or additional queries, I can be reached at the following:\n\n- **Email Address:** lily.chen123@gmail.com\n- **Phone Number:** (+86) 138 1234 5678\n\nPlease do not hesitate to reach out if any further information is required. I am enthusiastic about the opportunity to participate in this research study and contribute meaningfully to the medical field.\n\n\nThank you for considering my application.\n\nYours sincerely,\n\n**Lily Chen**",
+        "goldAnswers": {
+          "Full Name": "Lily Chen",
+          "Age": 32,
+          "Existing Medical Conditions": "Hypertension",
+          "Current Medications": "Lisinopril",
+          "Preferred Study Type": "Clinical Trial",
+          "Availability": "Weekdays",
+          "Email Address": "lily.chen123@gmail.com",
+          "Phone Number": "(+86) 138 1234 5678"
+        },
+        "multiPage": false,
+        "formPath": "/healthcare-medical/research-enrollment"
+      },
+      "agentName": "hybrid",
+      "fieldResults": [
+        {
+          "fieldId": "fullName",
+          "fieldType": "String",
+          "predictedValue": "Lily Chen",
+          "goldValue": "Lily Chen",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "age",
+          "fieldType": "NumericInput",
+          "predictedValue": "32",
+          "goldValue": 32,
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "existingConditions",
+          "fieldType": "Description",
+          "predictedValue": "Hypertension",
+          "goldValue": "Hypertension",
+          "clickAccurate": false,
+          "valueAccurate": false,
+          "bleuScore": 0
+        },
+        {
+          "fieldId": "medications",
+          "fieldType": "Description",
+          "predictedValue": "Lisinopril",
+          "goldValue": "Lisinopril",
+          "clickAccurate": false,
+          "valueAccurate": false,
+          "bleuScore": 0
+        },
+        {
+          "fieldId": "studyType",
+          "fieldType": "Dropdown",
+          "predictedValue": "",
+          "goldValue": "Clinical Trial",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "availability",
+          "fieldType": "Dropdown",
+          "predictedValue": "",
+          "goldValue": "Weekdays",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "email",
+          "fieldType": "String",
+          "predictedValue": "lily.chen123@gmail.com",
+          "goldValue": "lily.chen123@gmail.com",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "phone",
+          "fieldType": "String",
+          "predictedValue": "(+86) 138 1234 5678",
+          "goldValue": "(+86) 138 1234 5678",
+          "clickAccurate": false,
+          "valueAccurate": true
+        }
+      ],
+      "atomicMetrics": {
+        "clickAccuracy": {
+          "String": 0,
+          "NumericInput": 0,
+          "Description": 0,
+          "Dropdown": 0
+        },
+        "valueAccuracy": {
+          "String": 100,
+          "NumericInput": 100,
+          "Description": 0,
+          "Dropdown": 0
+        },
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 50
+      },
+      "episodicMetrics": {
+        "formCompletionRate": 50,
+        "fieldsAttempted": 6,
+        "fieldsCorrect": 4,
+        "totalFields": 8,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 50
+      },
+      "executionTimeMs": 66490,
+      "errors": [],
+      "submissionSucceeded": false,
+      "tokensIn": 471,
+      "tokensOut": 86,
+      "llmTimeMs": 4887,
+      "llmCalls": 1
+    },
+    {
+      "formInstance": {
+        "formId": "Health_Insurance",
+        "formName": "Health Insurance Claim Form",
+        "domain": "Healthcare & Medical",
+        "instanceIndex": 0,
+        "inputDocument": "Emily Turner, the policyholder with the policy number A1234567890, respectfully submits this claim for a reimbursement following a healthcare service rendered. On January 15, 2024, Emily visited Dr. Alice Green, whose provider ID number is D12345, for a scheduled Doctor Consultation. The purpose of the consultation was to address a Diagnosis of General Checkup, Mild Fatigue. The costs associated with this consultation amounted to $250.00. Emily Turner hereby requests the processing of this claim through her health insurance coverage, trusting that all required details enclosed within this application will facilitate a timely evaluation and settlement.",
+        "goldAnswers": {
+          "Policy Number": "A1234567890",
+          "Policy Holder Name": "Emily Turner",
+          "Date of Service": "2024/01/15",
+          "Claim Amount ($)": 250,
+          "Type of Service": "Doctor Consultation",
+          "Diagnosis/Condition": "General Checkup, Mild Fatigue",
+          "Provider Name": "Dr. Alice Green",
+          "Provider ID Number": "D12345"
+        },
+        "multiPage": true,
+        "formPath": "/healthcare-medical/insurance-claim"
+      },
+      "agentName": "hybrid",
+      "fieldResults": [
+        {
+          "fieldId": "policyNumber",
+          "fieldType": "String",
+          "predictedValue": "A1234567890",
+          "goldValue": "A1234567890",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "policyHolder",
+          "fieldType": "String",
+          "predictedValue": "Emily Turner",
+          "goldValue": "Emily Turner",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "serviceDate",
+          "fieldType": "Date",
+          "predictedValue": "",
+          "goldValue": "2024/01/15",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "claimAmount",
+          "fieldType": "NumericInput",
+          "predictedValue": "250.00",
+          "goldValue": 250,
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "serviceType",
+          "fieldType": "Dropdown",
+          "predictedValue": "consultation",
+          "goldValue": "Doctor Consultation",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "diagnosis",
+          "fieldType": "Description",
+          "predictedValue": "General Checkup, Mild Fatigue",
+          "goldValue": "General Checkup, Mild Fatigue",
+          "clickAccurate": false,
+          "valueAccurate": true,
+          "bleuScore": 100
+        },
+        {
+          "fieldId": "providerName",
+          "fieldType": "String",
+          "predictedValue": "Dr. Alice Green",
+          "goldValue": "Dr. Alice Green",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "providerNumber",
+          "fieldType": "String",
+          "predictedValue": "D12345",
+          "goldValue": "D12345",
+          "clickAccurate": false,
+          "valueAccurate": true
+        }
+      ],
+      "atomicMetrics": {
+        "clickAccuracy": {
+          "String": 0,
+          "Date": 0,
+          "NumericInput": 0,
+          "Dropdown": 0,
+          "Description": 0
+        },
+        "valueAccuracy": {
+          "String": 100,
+          "Date": 0,
+          "NumericInput": 0,
+          "Dropdown": 0,
+          "Description": 100
+        },
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 62.5
+      },
+      "episodicMetrics": {
+        "formCompletionRate": 62.5,
+        "fieldsAttempted": 7,
+        "fieldsCorrect": 5,
+        "totalFields": 8,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 62.5
+      },
+      "executionTimeMs": 11807,
+      "errors": [],
+      "submissionSucceeded": false,
+      "tokensIn": 342,
+      "tokensOut": 83,
+      "llmTimeMs": 9922,
+      "llmCalls": 1
+    },
+    {
+      "formInstance": {
+        "formId": "NDA",
+        "formName": "NDA Submission Form",
+        "domain": "Legal & Compliance",
+        "instanceIndex": 0,
+        "inputDocument": "On 2024/12/05, an individual known as John Doe, holding the position of Founder, initiated a Non-Disclosure Agreement (\"NDA\") for the purpose expressly defined as \"To protect intellectual property related to a new software development project, including source code, architecture, and design.\" This NDA, submitted by Mr. Doe, is set to remain active for a duration of 5 years. Mr. Doe, acting as both the Party and Representative, affirms that he has read and agrees to the terms of the Non-Disclosure Agreement and confirms that he has the authority to enter into this agreement.",
+        "goldAnswers": {
+          "Party Name": "John Doe",
+          "Party Type": "Individual",
+          "Purpose of NDA": "To protect intellectual property related to a new software development project, including source code, architecture, and design",
+          "Effective Date": "2024/12/05",
+          "Duration (Years)": 5,
+          "Representative Name": "John Doe",
+          "Title/Position": "Founder",
+          "I have read and agree to the terms of the Non-Disclosure Agreement": "Yes",
+          "I confirm that I have the authority to enter into this agreement": "Yes"
+        },
+        "multiPage": false,
+        "formPath": "/legal-compliance/nda-submission"
+      },
+      "agentName": "hybrid",
+      "fieldResults": [
+        {
+          "fieldId": "Party Name",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "John Doe",
+          "clickAccurate": null,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "partyType",
+          "fieldType": "Dropdown",
+          "predictedValue": "individual",
+          "goldValue": "Individual",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "purpose",
+          "fieldType": "Description",
+          "predictedValue": "To protect intellectual property related to a new software development project, including source code, architecture, and design.",
+          "goldValue": "To protect intellectual property related to a new software development project, including source code, architecture, and design",
+          "clickAccurate": false,
+          "valueAccurate": true,
+          "bleuScore": 100
+        },
+        {
+          "fieldId": "startDate",
+          "fieldType": "Date",
+          "predictedValue": "",
+          "goldValue": "2024/12/05",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "duration",
+          "fieldType": "NumericInput",
+          "predictedValue": "5",
+          "goldValue": 5,
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "repName",
+          "fieldType": "String",
+          "predictedValue": "John Doe",
+          "goldValue": "John Doe",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "repTitle",
+          "fieldType": "String",
+          "predictedValue": "Founder",
+          "goldValue": "Founder",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "termsAgreed",
+          "fieldType": "Checkbox",
+          "predictedValue": "false",
+          "goldValue": "Yes",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "authorityConfirm",
+          "fieldType": "Checkbox",
+          "predictedValue": "false",
+          "goldValue": "Yes",
+          "clickAccurate": false,
+          "valueAccurate": false
+        }
+      ],
+      "atomicMetrics": {
+        "clickAccuracy": {
+          "String": 0,
+          "Dropdown": 0,
+          "Description": 0,
+          "Date": 0,
+          "NumericInput": 0,
+          "Checkbox": 0
+        },
+        "valueAccuracy": {
+          "String": 66.66666666666666,
+          "Dropdown": 100,
+          "Description": 100,
+          "Date": 0,
+          "NumericInput": 100,
+          "Checkbox": 0
+        },
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 55.55555555555556
+      },
+      "episodicMetrics": {
+        "formCompletionRate": 55.55555555555556,
+        "fieldsAttempted": 7,
+        "fieldsCorrect": 5,
+        "totalFields": 9,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 55.55555555555556
+      },
+      "executionTimeMs": 21712,
+      "errors": [],
+      "submissionSucceeded": false,
+      "tokensIn": 422,
+      "tokensOut": 161,
+      "llmTimeMs": 20200,
+      "llmCalls": 1
+    },
+    {
+      "formInstance": {
+        "formId": "Background_check",
+        "formName": "Background Check Authorization Form",
+        "domain": "Legal & Compliance",
+        "instanceIndex": 0,
+        "inputDocument": "I, John Michael Doe, hereby authorize the complete background check process, ensuring that all information provided herein is meticulously examined for accuracy and completeness. My personal details are as follows: I reside at 123 Elm St in Springfield, Illinois, 62704, and my date of birth is April 15, 1985. My Social Security Number is 123-45-6789. By consenting to this background check, I affirm that the information I have submitted is correct and truthful. I acknowledge that any false or misleading statements may lead to the rejection of my application.",
+        "goldAnswers": {
+          "First Name": "John",
+          "Middle Name": "Michael",
+          "Last Name": "Doe",
+          "Social Security Number": "123-45-6789",
+          "Date of Birth": "1985-04-15",
+          "Street Address": "123 Elm St",
+          "City": "Springfield",
+          "State": "IL",
+          "ZIP Code": "62704",
+          "I authorize the complete background check and verify that all provided information is accurate": true,
+          "I understand that providing false information may result in rejection of my application": true
+        },
+        "multiPage": false,
+        "formPath": "/legal-compliance/background-check"
+      },
+      "agentName": "hybrid",
+      "fieldResults": [
+        {
+          "fieldId": "firstName",
+          "fieldType": "String",
+          "predictedValue": "John",
+          "goldValue": "John",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "middleName",
+          "fieldType": "String",
+          "predictedValue": "Michael",
+          "goldValue": "Michael",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "lastName",
+          "fieldType": "String",
+          "predictedValue": "Doe",
+          "goldValue": "Doe",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "ssn",
+          "fieldType": "String",
+          "predictedValue": "123-45-6789",
+          "goldValue": "123-45-6789",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "dob",
+          "fieldType": "Date",
+          "predictedValue": "",
+          "goldValue": "1985-04-15",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "streetAddress",
+          "fieldType": "String",
+          "predictedValue": "123 Elm St",
+          "goldValue": "123 Elm St",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "city",
+          "fieldType": "String",
+          "predictedValue": "Springfield",
+          "goldValue": "Springfield",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "state",
+          "fieldType": "String",
+          "predictedValue": "Illinois",
+          "goldValue": "IL",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "zipCode",
+          "fieldType": "String",
+          "predictedValue": "62704",
+          "goldValue": "62704",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "authorization",
+          "fieldType": "Checkbox",
+          "predictedValue": "false",
+          "goldValue": true,
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "truthfulness",
+          "fieldType": "Checkbox",
+          "predictedValue": "false",
+          "goldValue": true,
+          "clickAccurate": false,
+          "valueAccurate": false
+        }
+      ],
+      "atomicMetrics": {
+        "clickAccuracy": {
+          "String": 0,
+          "Date": 0,
+          "Checkbox": 0
+        },
+        "valueAccuracy": {
+          "String": 87.5,
+          "Date": 0,
+          "Checkbox": 0
+        },
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 63.63636363636363
+      },
+      "episodicMetrics": {
+        "formCompletionRate": 63.63636363636363,
+        "fieldsAttempted": 10,
+        "fieldsCorrect": 7,
+        "totalFields": 11,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 63.63636363636363
+      },
+      "executionTimeMs": 21230,
+      "errors": [],
+      "submissionSucceeded": false,
+      "tokensIn": 405,
+      "tokensOut": 142,
+      "llmTimeMs": 19711,
+      "llmCalls": 1
+    },
+    {
+      "formInstance": {
+        "formId": "Contrator_onboard",
+        "formName": "Contractor Onboarding Form",
+        "domain": "Legal & Compliance",
+        "instanceIndex": 0,
+        "inputDocument": "We are pleased to welcome Abigail Lewis, operating under the business name Abigail's Digital Marketing Solutions, as a valued contractor to our team. Abigail can be reached at abigail.lewis.digital@outlook.com or via phone at 555-111-2222. With a Tax ID/EIN of 12-1111111, Abigail is established as a Sole Proprietorship. She will be commencing her services with us on March 15, 2024, with an expected completion date of March 15, 2025. Her expertise lies in developing and implementing comprehensive digital marketing strategies, including search engine optimization (SEO) to improve website rankings, pay-per-click (PPC) advertising campaigns on platforms like Google Ads and Bing Ads, social media management across major platforms such as Facebook, Instagram, and Twitter to increase brand awareness and engagement, and content creation for blogs, articles, and social media posts to attract and retain customers. Abigail has confirmed her agreement to the terms and conditions of the contractor agreement and has also agreed to maintain confidentiality of all company information. We anticipate a successful collaboration and are excited about the contributions she will bring to advance our digital marketing efforts.",
+        "goldAnswers": {
+          "Full Name": "Abigail Lewis",
+          "Business Name (if applicable)": "Abigail's Digital Marketing Solutions",
+          "Email Address": "abigail.lewis.digital@outlook.com",
+          "Phone Number": "555-111-2222",
+          "Tax ID/EIN": "12-1111111",
+          "Business Type": "Sole Proprietorship",
+          "Services to be Provided": "Developing and implementing comprehensive digital marketing strategies, including search engine optimization (SEO) to improve website rankings, pay-per-click (PPC) advertising campaigns on platforms like Google Ads and Bing Ads, social media management across major platforms such as Facebook, Instagram, and Twitter to increase brand awareness and engagement, and content creation for blogs, articles, and social media posts to attract and retain customers.",
+          "Start Date": "2024/03/15",
+          "Expected End Date": "2025/03/15",
+          "I agree to the terms and conditions of the contractor agreement": "Yes",
+          "I agree to maintain confidentiality of all company information": "Yes"
+        },
+        "multiPage": true,
+        "formPath": "/legal-compliance/contractor-onboarding"
+      },
+      "agentName": "hybrid",
+      "fieldResults": [
+        {
+          "fieldId": "fullName",
+          "fieldType": "String",
+          "predictedValue": "Abigail Lewis",
+          "goldValue": "Abigail Lewis",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "businessName",
+          "fieldType": "String",
+          "predictedValue": "Abigail's Digital Marketing Solutions",
+          "goldValue": "Abigail's Digital Marketing Solutions",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "email",
+          "fieldType": "String",
+          "predictedValue": "abigail.lewis.digital@outlook.com",
+          "goldValue": "abigail.lewis.digital@outlook.com",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "phone",
+          "fieldType": "String",
+          "predictedValue": "555-111-2222",
+          "goldValue": "555-111-2222",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "taxId",
+          "fieldType": "String",
+          "predictedValue": "of 12-1111111",
+          "goldValue": "12-1111111",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "businessType",
+          "fieldType": "Dropdown",
+          "predictedValue": "soleProprietor",
+          "goldValue": "Sole Proprietorship",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "serviceDescription",
+          "fieldType": "Description",
+          "predictedValue": "developing and implementing comprehensive digital marketing strategies, including search engine optimization (SEO) to improve website rankings, pay-per-click (PPC) advertising campaigns on platforms like Google Ads and Bing Ads, social media management across major platforms such as Facebook, Instagram, and Twitter to increase brand awareness and engagement, and content creation for blogs, articles, and social media posts to attract and retain customers",
+          "goldValue": "Developing and implementing comprehensive digital marketing strategies, including search engine optimization (SEO) to improve website rankings, pay-per-click (PPC) advertising campaigns on platforms like Google Ads and Bing Ads, social media management across major platforms such as Facebook, Instagram, and Twitter to increase brand awareness and engagement, and content creation for blogs, articles, and social media posts to attract and retain customers.",
+          "clickAccurate": false,
+          "valueAccurate": true,
+          "bleuScore": 100
+        },
+        {
+          "fieldId": "startDate",
+          "fieldType": "Date",
+          "predictedValue": "",
+          "goldValue": "2024/03/15",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "endDate",
+          "fieldType": "Date",
+          "predictedValue": "",
+          "goldValue": "2025/03/15",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "termsAgreed",
+          "fieldType": "Checkbox",
+          "predictedValue": "false",
+          "goldValue": "Yes",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "confidentialityAgreed",
+          "fieldType": "Checkbox",
+          "predictedValue": "false",
+          "goldValue": "Yes",
+          "clickAccurate": false,
+          "valueAccurate": false
+        }
+      ],
+      "atomicMetrics": {
+        "clickAccuracy": {
+          "String": 0,
+          "Dropdown": 0,
+          "Description": 0,
+          "Date": 0,
+          "Checkbox": 0
+        },
+        "valueAccuracy": {
+          "String": 80,
+          "Dropdown": 0,
+          "Description": 100,
+          "Date": 0,
+          "Checkbox": 0
+        },
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 45.45454545454545
+      },
+      "episodicMetrics": {
+        "formCompletionRate": 45.45454545454545,
+        "fieldsAttempted": 9,
+        "fieldsCorrect": 5,
+        "totalFields": 11,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 45.45454545454545
+      },
+      "executionTimeMs": 25204,
+      "errors": [],
+      "submissionSucceeded": false,
+      "tokensIn": 554,
+      "tokensOut": 231,
+      "llmTimeMs": 23689,
+      "llmCalls": 1
+    },
+    {
+      "formInstance": {
+        "formId": "Project_Bid",
+        "formName": "Project Bid Submission Form",
+        "domain": "Construction & Manufacturing",
+        "instanceIndex": 0,
+        "inputDocument": "**Construction Project Bid Submission Report**\n\n**Project Overview**\n\nGreenfield Construction is pleased to submit a competitive bid for the proposed Office Building Renovation project. With Contractor License Number GC-203940, we not only bring expertise to this endeavor but also the highest standards of professionalism and quality. We are excited to work collaboratively to bring your vision to life, delivering a fully renovated commercial space that meets and exceeds your expectations.\n\n**Scope of Work and Detailed Work Description**\n\nOur proposal encompasses a full renovation of the commercial office building, ensuring all facets of the property are updated and optimized. We will start by completely gutting the existing infrastructure, allowing us to install updated structural components that provide long-lasting durability and compliance with modern building codes.\n\nThis renovation will include a comprehensive overhaul of the building's wiring and plumbing systems, alongside an updated HVAC installation. These upgrades ensure the property not only functions efficiently but also comfortably meets all modern standards. The interior of the office will be designed to feature contemporary layouts, providing a modern and welcoming atmosphere. The installation of upgraded fixtures will further enhance the aesthetic and functional quality of the interior spaces.\n\n**Financial and Temporal Considerations**\n\nAfter thorough examination and calculation, we propose a bid amount of $850,000. The renovation is scheduled to commence on June 1, 2024, with an expected duration of 24 weeks, leading to an estimated completion date of December 1, 2024. This timeline has been devised to ensure efficient workflow and high-quality results, minimizing any downtime for your operations.\n\n**Contact and Communication**\n\nThroughout the course of this project, communication will remain a top priority. John Parker will be your dedicated contact person, ensuring you can always reach us easily at 555-762-4923 for any inquiries or updates on the project status.\n\n**Commitment to Excellence**\n\nGreenfield Construction prides itself on adhering to strict quality standards and technical specifications, using top-grade materials to ensure all deliverables are up to par with our commitment as a trusted builder. We appreciate your consideration and look forward to the possibility of contributing to the successful upgrading of your office building.\n\nWe hope this bid meets your approval and assure you that we are prepared to meet all challenges this exciting renovation project may present. Thank you for the opportunity to propose our services for your Office Building Renovation project.",
+        "goldAnswers": {
+          "Company Name": "Greenfield Construction",
+          "Contractor License Number": "GC-203940",
+          "Project Name": "Office Building Renovation",
+          "Bid Amount ($)": 850000,
+          "Estimated Duration (weeks)": 24,
+          "Proposed Start Date": "2024/06/01",
+          "Estimated Completion Date": "2024/12/01",
+          "Scope of Work": "Full renovation of a commercial office building, including electrical and plumbing upgrades.",
+          "Detailed Work Description": "The project will involve gutting the entire office building and rebuilding it with updated structural components, new wiring, plumbing, and HVAC systems. Interior finishes will include modern office layouts and upgraded fixtures.",
+          "Contact Person": "John Parker",
+          "Phone Number": "555-762-4923"
+        },
+        "multiPage": false,
+        "formPath": "/construction-manufacturing/project-bid"
+      },
+      "agentName": "hybrid",
+      "fieldResults": [
+        {
+          "fieldId": "companyName",
+          "fieldType": "String",
+          "predictedValue": "Greenfield Construction",
+          "goldValue": "Greenfield Construction",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "licenseNumber",
+          "fieldType": "String",
+          "predictedValue": "GC-203940",
+          "goldValue": "GC-203940",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "projectName",
+          "fieldType": "String",
+          "predictedValue": "Office Building Renovation",
+          "goldValue": "Office Building Renovation",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "bidAmount",
+          "fieldType": "NumericInput",
+          "predictedValue": "",
+          "goldValue": 850000,
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "projectDuration",
+          "fieldType": "NumericInput",
+          "predictedValue": "24",
+          "goldValue": 24,
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "startDate",
+          "fieldType": "Date",
+          "predictedValue": "",
+          "goldValue": "2024/06/01",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "completionDate",
+          "fieldType": "Date",
+          "predictedValue": "",
+          "goldValue": "2024/12/01",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "Scope of Work",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "Full renovation of a commercial office building, including electrical and plumbing upgrades.",
+          "clickAccurate": null,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "workDescription",
+          "fieldType": "Description",
+          "predictedValue": "Completely gutting the existing infrastructure, installing updated structural components, overhauling wiring and plumbing systems, updating HVAC installation, designing contemporary layouts, and installing upgraded fixtures",
+          "goldValue": "The project will involve gutting the entire office building and rebuilding it with updated structural components, new wiring, plumbing, and HVAC systems. Interior finishes will include modern office layouts and upgraded fixtures.",
+          "clickAccurate": false,
+          "valueAccurate": false,
+          "bleuScore": 0
+        },
+        {
+          "fieldId": "contactName",
+          "fieldType": "String",
+          "predictedValue": "John Parker",
+          "goldValue": "John Parker",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "contactPhone",
+          "fieldType": "String",
+          "predictedValue": "555-762-4923",
+          "goldValue": "555-762-4923",
+          "clickAccurate": false,
+          "valueAccurate": true
+        }
+      ],
+      "atomicMetrics": {
+        "clickAccuracy": {
+          "String": 0,
+          "NumericInput": 0,
+          "Date": 0,
+          "Description": 0
+        },
+        "valueAccuracy": {
+          "String": 83.33333333333334,
+          "NumericInput": 50,
+          "Date": 0,
+          "Description": 0
+        },
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 54.54545454545454
+      },
+      "episodicMetrics": {
+        "formCompletionRate": 54.54545454545454,
+        "fieldsAttempted": 7,
+        "fieldsCorrect": 6,
+        "totalFields": 11,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 54.54545454545454
+      },
+      "executionTimeMs": 22045,
+      "errors": [],
+      "submissionSucceeded": false,
+      "tokensIn": 736,
+      "tokensOut": 152,
+      "llmTimeMs": 20512,
+      "llmCalls": 1
+    },
+    {
+      "formInstance": {
+        "formId": "Manufacturing_Order",
+        "formName": "Manufacturing Order Form",
+        "domain": "Construction & Manufacturing",
+        "instanceIndex": 0,
+        "inputDocument": "To: Manufacturing Department  \nFrom: GlobalTech Innovations  \nDate: [Today's Date]  \nSubject: Manufacturing Order Request for Customized AI-Powered Sensor Array\n\n---\n\nDear Manufacturing Team,\n\nGlobalTech Innovations (Account Number: GTI-102938) is excited to place a new manufacturing order for a custom product that builds upon our reputation for cutting-edge technological advancements. We request the production of 100 units of a specialized AI-powered sensor array, which embodies both sophistication and precision.\n\nThis custom product is designed to operate with a high level of sensitivity and efficiency within a range of 5 meters. The sensor arrays should measure precisely 200 x 150 x 50 in dimensions, ensuring seamless integration into various robust applications. The durability required for this product mandates the use of aluminum and silicon materials, enabling top-tier performance and reliability.\n\nCentral to this request are the technical specifications that distinguish these sensors. Each unit must exhibit advanced real-time data processing capabilities, leveraging low power consumption to optimize energy use. The sensor arrays will meet high data encryption standards, providing secure operation essential for modern demands. Furthermore, wireless connectivity will enhance integration with Internet of Things (IoT) systems, supporting a versatile deployment across multiple technological platforms.\n\nAdhering to rigorous quality standards is non-negotiable for us. As such, all units must conform to ISO 9001 and be CE certified, highlighting our commitment to superior quality and international compliance.\n\nThe successful completion of this request is critical to our strategic timeline, thus we emphasize the importance of the stipulated delivery date set for August 1, 2028. To expedite there accordingly, we prefer the express shipping method.\n\nWe trust in your esteemed capability to manufacture this sophisticated product with the solicited precision and expertise. Please confirm receipt of this order and provide any additional requirements or information needed to facilitate smooth production.\n\nThank you for your attention to this order, and we look forward to continuing our collaboration towards innovation and excellence.\n\nWarm regards,\n\n[Your Full Name]  \n[Your Position]  \nGlobalTech Innovations",
+        "goldAnswers": {
+          "Company Name": "GlobalTech Innovations",
+          "Customer Account Number": "GTI-102938",
+          "Product Type": "Custom Product",
+          "Product Description": "Customized AI-powered sensor array",
+          "Product Specifications": "High sensitivity, 5-meter range",
+          "Quantity": 100,
+          "Dimensions": "200 x 150 x 50",
+          "Material": "Aluminum, Silicon",
+          "Technical Specifications": "Real-time data processing, low power consumption, high data encryption standards, wireless connectivity with IoT capabilities",
+          "Quality Standards": "ISO 9001, CE certified",
+          "Required Delivery Date": "2028/08/01",
+          "Preferred Shipping Method": "Express"
+        },
+        "multiPage": true,
+        "formPath": "/construction-manufacturing/order-request"
+      },
+      "agentName": "hybrid",
+      "fieldResults": [
+        {
+          "fieldId": "companyName",
+          "fieldType": "String",
+          "predictedValue": "GlobalTech Innovations",
+          "goldValue": "GlobalTech Innovations",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "customerNumber",
+          "fieldType": "String",
+          "predictedValue": "GTI-102938",
+          "goldValue": "GTI-102938",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "productType",
+          "fieldType": "Dropdown",
+          "predictedValue": "",
+          "goldValue": "Custom Product",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "productDescription",
+          "fieldType": "Description",
+          "predictedValue": "A specialized AI-powered sensor array designed for high sensitivity and efficiency within a range of 5 meters, with advanced real-time data processing capabilities, low power consumption, high data encryption standards, and wireless connectivity.",
+          "goldValue": "Customized AI-powered sensor array",
+          "clickAccurate": false,
+          "valueAccurate": false,
+          "bleuScore": 6.61074021019606
+        },
+        {
+          "fieldId": "Product Specifications",
+          "fieldType": "String",
+          "predictedValue": "",
+          "goldValue": "High sensitivity, 5-meter range",
+          "clickAccurate": null,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "quantity",
+          "fieldType": "NumericInput",
+          "predictedValue": "",
+          "goldValue": 100,
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "dimensions",
+          "fieldType": "String",
+          "predictedValue": "200 x 150 x 50",
+          "goldValue": "200 x 150 x 50",
+          "clickAccurate": false,
+          "valueAccurate": true
+        },
+        {
+          "fieldId": "material",
+          "fieldType": "String",
+          "predictedValue": "Aluminum and silicon",
+          "goldValue": "Aluminum, Silicon",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "specifications",
+          "fieldType": "Description",
+          "predictedValue": "that distinguish these sensors",
+          "goldValue": "Real-time data processing, low power consumption, high data encryption standards, wireless connectivity with IoT capabilities",
+          "clickAccurate": false,
+          "valueAccurate": false,
+          "bleuScore": 0
+        },
+        {
+          "fieldId": "qualityStandards",
+          "fieldType": "String",
+          "predictedValue": "non-negotiable for us",
+          "goldValue": "ISO 9001, CE certified",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "requiredDate",
+          "fieldType": "Date",
+          "predictedValue": "",
+          "goldValue": "2028/08/01",
+          "clickAccurate": false,
+          "valueAccurate": false
+        },
+        {
+          "fieldId": "shippingMethod",
+          "fieldType": "Dropdown",
+          "predictedValue": "",
+          "goldValue": "Express",
+          "clickAccurate": false,
+          "valueAccurate": false
+        }
+      ],
+      "atomicMetrics": {
+        "clickAccuracy": {
+          "String": 0,
+          "Dropdown": 0,
+          "Description": 0,
+          "NumericInput": 0,
+          "Date": 0
+        },
+        "valueAccuracy": {
+          "String": 50,
+          "Dropdown": 0,
+          "Description": 0,
+          "NumericInput": 0,
+          "Date": 0
+        },
+        "overallClickAccuracy": 0,
+        "overallValueAccuracy": 25
+      },
+      "episodicMetrics": {
+        "formCompletionRate": 25,
+        "fieldsAttempted": 7,
+        "fieldsCorrect": 3,
+        "totalFields": 12,
+        "averageClickAccuracy": 0,
+        "averageValueAccuracy": 25
+      },
+      "executionTimeMs": 84519,
+      "errors": [],
+      "submissionSucceeded": false,
+      "tokensIn": 679,
+      "tokensOut": 205,
+      "llmTimeMs": 23010,
+      "llmCalls": 1
+    }
+  ],
+  "totalExecutionTimeMs": 5873416,
+  "totalTokensIn": 12528,
+  "totalTokensOut": 3756,
+  "totalLlmTimeMs": 315116,
+  "totalLlmCalls": 25,
+  "errors": [
+    "Form submission step failed or timed out",
+    "Form submission step failed or timed out",
+    "Form submission step failed or timed out",
+    "Form submission step failed or timed out",
+    "Form submission step failed or timed out",
+    "Form submission step failed or timed out",
+    "Form submission step failed or timed out",
+    "Form submission step failed or timed out",
+    "Form submission step failed or timed out",
+    "Form submission step failed or timed out",
+    "Form submission step failed or timed out",
+    "Form submission step failed or timed out",
+    "Form submission step failed or timed out"
+  ]
+}
