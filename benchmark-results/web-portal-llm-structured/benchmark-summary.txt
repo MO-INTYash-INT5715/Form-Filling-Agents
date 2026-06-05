@@ -1,0 +1,22 @@
+╔══════════════════════════════════════════════════════════════╗
+║  Web-Portal Benchmark — llm-structured                      ║
+╚══════════════════════════════════════════════════════════════╝
+
+  Forms:           25 / 25
+  Total fields:    161
+  Total filled:    102
+  Avg fill rate:   35.4%
+  Avg value acc.:  0.0%
+  Runtime:         47.4s
+
+━━━ PER DOMAIN ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Academic & Research                fill: 61%  va:  0%
+  Professional & Business            fill: 61%  va:  0%
+  Creative & Arts                    fill:  0%  va:  0%
+  IT & Technology                    fill:  0%  va:  0%
+  Finance & Banking                  fill: 67%  va:  0%
+  Healthcare                         fill:  0%  va:  0%
+  Legal & Compliance                 fill: 27%  va:  0%
+  Construction & Manufacturing       fill: 27%  va:  0%
+
+══════════════════════════════════════════════════════════════

@@ -1,0 +1,282 @@
+{
+  "agentName": "rule-based",
+  "timestamp": "2026-06-05T06:41:10.435Z",
+  "results": [
+    {
+      "form": "Job Application",
+      "domain": "Academic & Research",
+      "url": "http://localhost:5000/academic-research/job-application",
+      "fieldCount": 4,
+      "fillRate": 100,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 4,
+      "durationMs": 5920
+    },
+    {
+      "form": "Grant Application",
+      "domain": "Academic & Research",
+      "url": "http://localhost:5000/academic-research/grant-application",
+      "fieldCount": 9,
+      "fillRate": 77.77777777777779,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 7,
+      "durationMs": 2481
+    },
+    {
+      "form": "Paper Submission",
+      "domain": "Academic & Research",
+      "url": "http://localhost:5000/academic-research/paper-submission",
+      "fieldCount": 7,
+      "fillRate": 57.14285714285714,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 4,
+      "durationMs": 2140
+    },
+    {
+      "form": "Course Registration",
+      "domain": "Academic & Research",
+      "url": "http://localhost:5000/academic-research/course-registration",
+      "fieldCount": 11,
+      "fillRate": 27.27272727272727,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 3,
+      "durationMs": 2353
+    },
+    {
+      "form": "Scholarship Application",
+      "domain": "Academic & Research",
+      "url": "http://localhost:5000/academic-research/scholarship-application",
+      "fieldCount": 16,
+      "fillRate": 43.75,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 7,
+      "durationMs": 2045
+    },
+    {
+      "form": "Startup Funding",
+      "domain": "Professional & Business",
+      "url": "http://localhost:5000/professional-business/startup-funding",
+      "fieldCount": 18,
+      "fillRate": 61.111111111111114,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 11,
+      "durationMs": 2025
+    },
+    {
+      "form": "Rental Application",
+      "domain": "Professional & Business",
+      "url": "http://localhost:5000/professional-business/rental-application",
+      "fieldCount": 22,
+      "fillRate": 90.9090909090909,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 20,
+      "durationMs": 2002
+    },
+    {
+      "form": "Workshop Registration",
+      "domain": "Professional & Business",
+      "url": "http://localhost:5000/professional-business/workshop-registration",
+      "fieldCount": 17,
+      "fillRate": 41.17647058823529,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 7,
+      "durationMs": 2134
+    },
+    {
+      "form": "Membership Application",
+      "domain": "Professional & Business",
+      "url": "http://localhost:5000/professional-business/membership-application",
+      "fieldCount": 20,
+      "fillRate": 50,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 10,
+      "durationMs": 1990
+    },
+    {
+      "form": "Art Exhibition",
+      "domain": "Creative & Arts",
+      "url": "http://localhost:5000/creative-arts/art-exhibition",
+      "fieldCount": 0,
+      "fillRate": 0,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 0,
+      "durationMs": 1672
+    },
+    {
+      "form": "Literary Submission",
+      "domain": "Creative & Arts",
+      "url": "http://localhost:5000/creative-arts/literary-magazine",
+      "fieldCount": 0,
+      "fillRate": 0,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 0,
+      "durationMs": 1665
+    },
+    {
+      "form": "Conference Speaker",
+      "domain": "Creative & Arts",
+      "url": "http://localhost:5000/creative-arts/conference-speaker",
+      "fieldCount": 0,
+      "fillRate": 0,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 0,
+      "durationMs": 1660
+    },
+    {
+      "form": "Bug Report",
+      "domain": "IT & Technology",
+      "url": "http://localhost:5000/it-technology/bug-report",
+      "fieldCount": 0,
+      "fillRate": 0,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 0,
+      "durationMs": 1644
+    },
+    {
+      "form": "IT Support",
+      "domain": "IT & Technology",
+      "url": "http://localhost:5000/it-technology/it-support",
+      "fieldCount": 0,
+      "fillRate": 0,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 0,
+      "durationMs": 1654
+    },
+    {
+      "form": "Personal Loan",
+      "domain": "Finance & Banking",
+      "url": "http://localhost:5000/finance-banking/personal-loan",
+      "fieldCount": 7,
+      "fillRate": 100,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 7,
+      "durationMs": 1982
+    },
+    {
+      "form": "Bank Account",
+      "domain": "Finance & Banking",
+      "url": "http://localhost:5000/finance-banking/bank-account",
+      "fieldCount": 0,
+      "fillRate": 0,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 0,
+      "durationMs": 1659
+    },
+    {
+      "form": "Financial Planning",
+      "domain": "Finance & Banking",
+      "url": "http://localhost:5000/finance-banking/financial-planning",
+      "fieldCount": 6,
+      "fillRate": 100,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 6,
+      "durationMs": 2032
+    },
+    {
+      "form": "Patient Consent",
+      "domain": "Healthcare",
+      "url": "http://localhost:5000/healthcare/patient-consent",
+      "fieldCount": 0,
+      "fillRate": 0,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 0,
+      "durationMs": 1646
+    },
+    {
+      "form": "Medical Study",
+      "domain": "Healthcare",
+      "url": "http://localhost:5000/healthcare/medical-study",
+      "fieldCount": 0,
+      "fillRate": 0,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 0,
+      "durationMs": 1644
+    },
+    {
+      "form": "Health Insurance",
+      "domain": "Healthcare",
+      "url": "http://localhost:5000/healthcare/health-insurance",
+      "fieldCount": 0,
+      "fillRate": 0,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 0,
+      "durationMs": 1654
+    },
+    {
+      "form": "NDA",
+      "domain": "Legal & Compliance",
+      "url": "http://localhost:5000/legal-compliance/nda",
+      "fieldCount": 0,
+      "fillRate": 0,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 0,
+      "durationMs": 1647
+    },
+    {
+      "form": "Background Check",
+      "domain": "Legal & Compliance",
+      "url": "http://localhost:5000/legal-compliance/background-check",
+      "fieldCount": 11,
+      "fillRate": 81.81818181818183,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 9,
+      "durationMs": 2649
+    },
+    {
+      "form": "Contractor Onboarding",
+      "domain": "Legal & Compliance",
+      "url": "http://localhost:5000/legal-compliance/contractor-onboard",
+      "fieldCount": 0,
+      "fillRate": 0,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 0,
+      "durationMs": 1692
+    },
+    {
+      "form": "Project Bid",
+      "domain": "Construction & Manufacturing",
+      "url": "http://localhost:5000/construction-manufacturing/project-bid",
+      "fieldCount": 13,
+      "fillRate": 53.84615384615385,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 7,
+      "durationMs": 2230
+    },
+    {
+      "form": "Manufacturing Order",
+      "domain": "Construction & Manufacturing",
+      "url": "http://localhost:5000/construction-manufacturing/manufacturing-order",
+      "fieldCount": 0,
+      "fillRate": 0,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 0,
+      "durationMs": 1566
+    }
+  ],
+  "totalMs": 51799
+}

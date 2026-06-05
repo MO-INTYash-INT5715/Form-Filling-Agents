@@ -1,0 +1,283 @@
+{
+  "agentName": "embedding-matcher",
+  "timestamp": "2026-06-05T06:42:00.505Z",
+  "results": [
+    {
+      "form": "Job Application",
+      "domain": "Academic & Research",
+      "url": "http://localhost:5000/academic-research/job-application",
+      "fieldCount": 4,
+      "fillRate": 100,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 4,
+      "durationMs": 2073
+    },
+    {
+      "form": "Grant Application",
+      "domain": "Academic & Research",
+      "url": "http://localhost:5000/academic-research/grant-application",
+      "fieldCount": 9,
+      "fillRate": 77.77777777777779,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 7,
+      "durationMs": 2245
+    },
+    {
+      "form": "Paper Submission",
+      "domain": "Academic & Research",
+      "url": "http://localhost:5000/academic-research/paper-submission",
+      "fieldCount": 7,
+      "fillRate": 100,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 7,
+      "durationMs": 1965
+    },
+    {
+      "form": "Course Registration",
+      "domain": "Academic & Research",
+      "url": "http://localhost:5000/academic-research/course-registration",
+      "fieldCount": 0,
+      "fillRate": 0,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 0,
+      "durationMs": 398,
+      "error": "Scrape failed: browser.newPage: Target page, context or browser has been closed\nBrowser logs:\n\n<launching> C:\\Users\\intyash\\AppData\\Local\\ms-playwright\\chromium_headless_shell-1223\\chrome-headless-shell-win64\\chrome-headless-shell.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=C:\\Users\\intyash\\AppData\\Local\\Temp\\playwright_chromiumdev_profile-DRbIsa --remote-debugging-pipe --no-startup-window\n<launched> pid=3580"
+    },
+    {
+      "form": "Scholarship Application",
+      "domain": "Academic & Research",
+      "url": "http://localhost:5000/academic-research/scholarship-application",
+      "fieldCount": 16,
+      "fillRate": 87.5,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 14,
+      "durationMs": 2012
+    },
+    {
+      "form": "Startup Funding",
+      "domain": "Professional & Business",
+      "url": "http://localhost:5000/professional-business/startup-funding",
+      "fieldCount": 18,
+      "fillRate": 100,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 18,
+      "durationMs": 1993
+    },
+    {
+      "form": "Rental Application",
+      "domain": "Professional & Business",
+      "url": "http://localhost:5000/professional-business/rental-application",
+      "fieldCount": 22,
+      "fillRate": 100,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 22,
+      "durationMs": 2023
+    },
+    {
+      "form": "Workshop Registration",
+      "domain": "Professional & Business",
+      "url": "http://localhost:5000/professional-business/workshop-registration",
+      "fieldCount": 17,
+      "fillRate": 94.11764705882352,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 16,
+      "durationMs": 2114
+    },
+    {
+      "form": "Membership Application",
+      "domain": "Professional & Business",
+      "url": "http://localhost:5000/professional-business/membership-application",
+      "fieldCount": 20,
+      "fillRate": 95,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 19,
+      "durationMs": 2082
+    },
+    {
+      "form": "Art Exhibition",
+      "domain": "Creative & Arts",
+      "url": "http://localhost:5000/creative-arts/art-exhibition",
+      "fieldCount": 0,
+      "fillRate": 0,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 0,
+      "durationMs": 1669
+    },
+    {
+      "form": "Literary Submission",
+      "domain": "Creative & Arts",
+      "url": "http://localhost:5000/creative-arts/literary-magazine",
+      "fieldCount": 0,
+      "fillRate": 0,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 0,
+      "durationMs": 1641
+    },
+    {
+      "form": "Conference Speaker",
+      "domain": "Creative & Arts",
+      "url": "http://localhost:5000/creative-arts/conference-speaker",
+      "fieldCount": 0,
+      "fillRate": 0,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 0,
+      "durationMs": 4193
+    },
+    {
+      "form": "Bug Report",
+      "domain": "IT & Technology",
+      "url": "http://localhost:5000/it-technology/bug-report",
+      "fieldCount": 0,
+      "fillRate": 0,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 0,
+      "durationMs": 1567
+    },
+    {
+      "form": "IT Support",
+      "domain": "IT & Technology",
+      "url": "http://localhost:5000/it-technology/it-support",
+      "fieldCount": 0,
+      "fillRate": 0,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 0,
+      "durationMs": 1712
+    },
+    {
+      "form": "Personal Loan",
+      "domain": "Finance & Banking",
+      "url": "http://localhost:5000/finance-banking/personal-loan",
+      "fieldCount": 7,
+      "fillRate": 100,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 7,
+      "durationMs": 2270
+    },
+    {
+      "form": "Bank Account",
+      "domain": "Finance & Banking",
+      "url": "http://localhost:5000/finance-banking/bank-account",
+      "fieldCount": 0,
+      "fillRate": 0,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 0,
+      "durationMs": 1695
+    },
+    {
+      "form": "Financial Planning",
+      "domain": "Finance & Banking",
+      "url": "http://localhost:5000/finance-banking/financial-planning",
+      "fieldCount": 6,
+      "fillRate": 100,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 6,
+      "durationMs": 2106
+    },
+    {
+      "form": "Patient Consent",
+      "domain": "Healthcare",
+      "url": "http://localhost:5000/healthcare/patient-consent",
+      "fieldCount": 0,
+      "fillRate": 0,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 0,
+      "durationMs": 1700
+    },
+    {
+      "form": "Medical Study",
+      "domain": "Healthcare",
+      "url": "http://localhost:5000/healthcare/medical-study",
+      "fieldCount": 0,
+      "fillRate": 0,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 0,
+      "durationMs": 1735
+    },
+    {
+      "form": "Health Insurance",
+      "domain": "Healthcare",
+      "url": "http://localhost:5000/healthcare/health-insurance",
+      "fieldCount": 0,
+      "fillRate": 0,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 0,
+      "durationMs": 1743
+    },
+    {
+      "form": "NDA",
+      "domain": "Legal & Compliance",
+      "url": "http://localhost:5000/legal-compliance/nda",
+      "fieldCount": 0,
+      "fillRate": 0,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 0,
+      "durationMs": 3501
+    },
+    {
+      "form": "Background Check",
+      "domain": "Legal & Compliance",
+      "url": "http://localhost:5000/legal-compliance/background-check",
+      "fieldCount": 11,
+      "fillRate": 90.9090909090909,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 10,
+      "durationMs": 2004
+    },
+    {
+      "form": "Contractor Onboarding",
+      "domain": "Legal & Compliance",
+      "url": "http://localhost:5000/legal-compliance/contractor-onboard",
+      "fieldCount": 0,
+      "fillRate": 0,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 0,
+      "durationMs": 1698
+    },
+    {
+      "form": "Project Bid",
+      "domain": "Construction & Manufacturing",
+      "url": "http://localhost:5000/construction-manufacturing/project-bid",
+      "fieldCount": 13,
+      "fillRate": 100,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 13,
+      "durationMs": 2249
+    },
+    {
+      "form": "Manufacturing Order",
+      "domain": "Construction & Manufacturing",
+      "url": "http://localhost:5000/construction-manufacturing/manufacturing-order",
+      "fieldCount": 0,
+      "fillRate": 0,
+      "valueAccuracy": 0,
+      "matched": 0,
+      "attempted": 0,
+      "durationMs": 1664
+    }
+  ],
+  "totalMs": 50061
+}

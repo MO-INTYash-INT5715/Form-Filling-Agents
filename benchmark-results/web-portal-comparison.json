@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-06-05T06:42:47.884Z",
+  "summary": {
+    "rule-based": {
+      "fillRate": 35.3921748186454,
+      "valueAccuracy": 0
+    },
+    "embedding-matcher": {
+      "fillRate": 47.721021489403846,
+      "valueAccuracy": 0
+    },
+    "llm-structured": {
+      "fillRate": 35.3921748186454,
+      "valueAccuracy": 0
+    }
+  }
+}

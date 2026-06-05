@@ -1,7 +1,7 @@
 # Form-Filling Agents — Research Summary
 
 **Project:** Automated form-filling agents using LLMs, embeddings, and Model Context Protocol (MCP)  
-**Institution:** IIT Bombay (part of WabiSabi Tech portfolio)  
+**Institution:** IIT Bombay 
 **Duration:** May 2026  
 **Repository:** [github.com/MO-INTYash-INT5715/Form-Filling-Agents](https://github.com/MO-INTYash-INT5715/Form-Filling-Agents)  
 **Status:** ✅ Complete — Final ablation validated, all critical bugs fixed
