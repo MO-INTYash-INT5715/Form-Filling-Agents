@@ -1,0 +1,45 @@
+{
+  "formInstance": {
+    "formId": "Literary_Magazine_Submission",
+    "formName": "Literary Magazine Submission Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 4,
+    "inputDocument": "Liam Scott submits \"The Forgotten Path\" for consideration in your esteemed literary magazine. He can be reached at liam.scott92@gmail.com. This piece is a non-fiction work with a word count of 4200. The abstract/summary of the submission reads as follows: \"An exploration of forgotten histories and the significance of preserving our cultural heritage.\" Although there is no manuscript file provided at this time, Liam expresses a preference for publication in the Winter 2024 issue. This work has not been previously published and is currently a simultaneous submission. Liam affirms his agreement to the submission guidelines and terms of publication. Thank you for considering \"The Forgotten Path\" for your upcoming issue.",
+    "goldAnswers": {
+      "Author Name": "Liam Scott",
+      "Email Address": "liam.scott92@gmail.com",
+      "Title": "The Forgotten Path",
+      "Genre": "Non-Fiction",
+      "Word Count": 4200,
+      "Abstract/Summary": "An exploration of forgotten histories and the significance of preserving our cultural heritage.",
+      "Manuscript File": "None",
+      "Preferred Issue": "Winter 2024",
+      "This work has been previously published": "No",
+      "This is a simultaneous submission": "Yes",
+      "I agree to the submission guidelines and terms of publication": "Yes"
+    },
+    "multiPage": false,
+    "formPath": "/arts-creative/literary-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

@@ -1,0 +1,38 @@
+{
+  "formInstance": {
+    "formId": "job_applications",
+    "formName": "Job Application for University Positions",
+    "domain": "Academic & Research",
+    "instanceIndex": 29,
+    "inputDocument": "[Your Address]  \n[City, State, ZIP Code]  \n[Email Address]  \n[Phone Number]  \n[Date]  \n\nHiring Manager  \n[Company Name]  \n[Company Address]  \n[City, State, ZIP Code]  \n\nDear Hiring Manager,\n\nMy name is Amelia Li, and I am writing to express my strong interest in the position of Social Media Manager at your esteemed company. I am particularly drawn to this opportunity as it aligns perfectly with my career aspirations and allows me to work within the Marketing department, which I highly regard.\n\nI am excited to leverage my experience in social media marketing to help the Marketing department grow its online presence. With a robust track record of developing and implementing successful social media strategies, I am confident in my ability to effectively engage audiences and enhance brand recognition through creative and targeted campaigns.\n\nThank you for considering my application. I am eager to bring my passion for social media and marketing to your team and contribute to achieving your company's goals. I look forward to the possibility of discussing this exciting opportunity further.\n\nWarm regards,\n\nAmelia Li  \n[Your Contact Information]",
+    "goldAnswers": {
+      "Applicant Name": "Amelia Li",
+      "Position Applied For": "Social Media Manager",
+      "Preferred Department": "Marketing",
+      "Cover Letter": "I am excited to leverage my experience in social media marketing to help the Marketing department grow its online presence."
+    },
+    "multiPage": false,
+    "formPath": "/academic-research/job-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

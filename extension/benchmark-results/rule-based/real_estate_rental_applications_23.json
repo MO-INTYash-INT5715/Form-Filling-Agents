@@ -1,0 +1,53 @@
+{
+  "formInstance": {
+    "formId": "real_estate_rental_applications",
+    "formName": "Real Estate Rental Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 23,
+    "inputDocument": "Tanya Nguyen, a dedicated Medical Secretary at Maddox, Saunders and Lawrence, is seeking a rental opportunity in a location that aligns with her professional and personal preferences. Residing currently at 24831 Rubio Place, Rebeccamouth, Louisiana, 24711, Tanya can be reached via email at chentimothy@herring.biz or by phone at 422-850-4918x636. Born on January 30, 2007, she has spent the last year with her current employer, earning a monthly income of $9,259. With intentions to transition to a new residence by January 26, 2025, she is interested in a 12-month lease term. Tanya is prepared to allocate up to $4,246 monthly for rent, placing a particular emphasis on residing in the \"Waterfront\" area. Although she does not have any pets, she appreciates living environments characterized by tranquility, as emphasized in her \"Additional Comments\": \"Prefer quiet and residential areas.\" Tanya's application reflects her punctuality and dedication to finding a suitable living accommodation.",
+    "goldAnswers": {
+      "Full Name": "Tanya Nguyen",
+      "Email Address": "chentimothy@herring.biz",
+      "Phone Number": "422-850-4918x636",
+      "Date of Birth": "2007/01/30",
+      "Street Address": "24831 Rubio Place",
+      "City": "Rebeccamouth",
+      "State": "Louisiana",
+      "ZIP Code": "24711",
+      "Current Employer": "Maddox, Saunders and Lawrence",
+      "Job Title": "Medical secretary",
+      "Monthly Income (USD)": 9259,
+      "Length of Employment": "1 year",
+      "Preferred Move-in Date": "2025/01/26",
+      "Preferred Lease Term": "12 months",
+      "Maximum Monthly Rent (USD)": 4246,
+      "Preferred Area": "Waterfront",
+      "Do you have any pets?": "No",
+      "If yes, please describe your pets": "No pets",
+      "Additional Comments": "Prefer quiet and residential areas."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/rental-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

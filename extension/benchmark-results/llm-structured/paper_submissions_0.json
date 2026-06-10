@@ -25,31 +25,31 @@
     {
       "fieldId": "author_name",
       "fieldType": "String",
-      "predictedValue": "Alice Johnson",
+      "predictedValue": "",
       "goldValue": "Alice Johnson",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "email",
       "fieldType": "String",
-      "predictedValue": "alice.johnson@university.edu",
+      "predictedValue": "",
       "goldValue": "alice.johnson@university.edu",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "paper_title",
       "fieldType": "String",
-      "predictedValue": "Advancements in Deep Learning for Image Recognition",
+      "predictedValue": "",
       "goldValue": "Advancements in Deep Learning for Image Recognition",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "abstract",
       "fieldType": "Description",
-      "predictedValue": "The paper delves into cutting-edge research in the field of deep learning, aiming to contribute to the existing body of knowledge by highlighting the significant advancements and their practical implications. The insights provided in the paper demonstrate how these developments can revolutionize the scope of image recognition technologies, making them more efficient and accurate.",
+      "predictedValue": "",
       "goldValue": "This paper explores recent innovations in deep learning models, focusing on their applications in image recognition and classification.",
       "clickAccurate": false,
       "valueAccurate": false,
@@ -58,22 +58,22 @@
     {
       "fieldId": "keywords",
       "fieldType": "String",
-      "predictedValue": "Neural Networks",
+      "predictedValue": "",
       "goldValue": [
         "Deep Learning",
         "Image Recognition",
         "Neural Networks"
       ],
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "category",
       "fieldType": "Dropdown",
-      "predictedValue": "Artificial Intelligence",
+      "predictedValue": "",
       "goldValue": "Artificial Intelligence",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     }
   ],
   "atomicMetrics": {
@@ -83,26 +83,26 @@
       "Dropdown": 0
     },
     "valueAccuracy": {
-      "String": 100,
+      "String": 0,
       "Description": 0,
-      "Dropdown": 100
+      "Dropdown": 0
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 83.33333333333334
+    "overallValueAccuracy": 0
   },
   "episodicMetrics": {
-    "formCompletionRate": 83.33333333333334,
-    "fieldsAttempted": 6,
-    "fieldsCorrect": 5,
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
     "totalFields": 6,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 83.33333333333334
+    "averageValueAccuracy": 0
   },
-  "executionTimeMs": 1574,
+  "executionTimeMs": 1477,
   "errors": [],
   "submissionSucceeded": true,
-  "tokensIn": 560,
-  "tokensOut": 144,
-  "llmTimeMs": 3283,
-  "llmCalls": 1
+  "tokensIn": 0,
+  "tokensOut": 0,
+  "llmTimeMs": 0,
+  "llmCalls": 0
 }

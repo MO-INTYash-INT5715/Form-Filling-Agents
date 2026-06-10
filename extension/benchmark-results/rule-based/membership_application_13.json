@@ -1,0 +1,50 @@
+{
+  "formInstance": {
+    "formId": "membership_application",
+    "formName": "Association Membership Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 13,
+    "inputDocument": "Dear Professional Association Membership Committee,\n\nI am writing to apply for membership as a Professional Member of your esteemed organization. My name is Olivia Martinez, and I currently work as a Reporter at News Network in the field of Journalism. With a Bachelor's Degree in Journalism and four years of experience in the media industry, I am dedicated to furthering my career and professional development.\n\nI am excited about the opportunity to join your association and connect with fellow professionals in the industry. I believe that being a part of your organization will not only provide me with valuable networking opportunities but also enable me to stay updated on the latest trends and advancements in the field of Journalism.\n\nI am applying for a three-year membership as a Professional Member, as I am committed to investing in my professional growth and development. While I do not currently hold any professional certifications, I am constantly seeking opportunities to enhance my skills and knowledge through continued education and training.\n\nI have listed James Carter, Editor at News Network, as my reference, who can attest to my dedication and passion for journalism. I believe that my experience and background make me a strong candidate for membership in your association, and I am eager to contribute to and learn from the community of professionals within the organization.\n\nI look forward to the opportunity to be a part of your association and to participate in the various activities and events that you offer. Thank you for considering my application, and I hope to have the opportunity to join your organization soon.\n\nSincerely,\n\nOlivia Martinez\nEmail: olivia.martinez@yahoo.com\nPhone Number: 555-2345\nDate of Birth: 1989/11/11",
+    "goldAnswers": {
+      "Full Name": "Olivia Martinez",
+      "Email Address": "olivia.martinez@yahoo.com",
+      "Phone Number": "555-2345",
+      "Date of Birth": "1989/11/11",
+      "Membership Level": "Professional Member",
+      "Membership Duration": "3 Years",
+      "Highest Education Level": "Bachelor's Degree",
+      "Field of Study": "Journalism",
+      "Professional Certifications": "None",
+      "Current Employer": "News Network",
+      "Job Title": "Reporter",
+      "Years of Experience": 4,
+      "Industry": "Media",
+      "Reference Name": "James Carter",
+      "Reference Email": "james.carter@yahoo.com",
+      "Relationship to Reference": "Editor"
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/membership-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

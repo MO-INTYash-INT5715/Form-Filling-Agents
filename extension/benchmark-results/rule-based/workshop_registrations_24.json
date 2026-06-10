@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "workshop_registrations",
+    "formName": "Educational Workshop Registration",
+    "domain": "Professional & Business",
+    "instanceIndex": 24,
+    "inputDocument": "Subject: Workshop Registration Request for Andrew Chen\n\nDear Workshop Registration Team,\n\nI am writing to formally submit my registration for the upcoming workshop, scheduled to align with my professional and educational goals. Below are the details pertinent to my request:\n\nFull Name: Andrew Chen  \nEmail Address: gerald19@gmail.com  \nPhone Number: 082.761.0978  \nOrganization/Company: Ochoa-Lawson  \nWorkshop Category: Business & Management  \nPreferred Session Date: 2025/01/27  \nPreferred Time Slot: Evening  \nPreferred Delivery Mode: In-Person  \nHighest Education Level: PhD  \nYears of Professional Experience: 4  \nCurrent Role/Position: Waste management officer  \n\nI have specific dietary requirements which should be noted as Vegetarian, and I have listed no accessibility requirements. Payment for the session will be processed via Credit Card, and the corresponding Billing Address is 982 Davis Vista Suite 809, East Cassie, AL 91196.\n\nIn terms of my expectations for the workshop, I am interested in exploring financial tools and models that can help optimize business growth. Additionally, any other special requests or comments are as follows: I would prefer to focus on team-building strategies and techniques that can improve collaboration in diverse teams.\n\nThank you for considering my registration. I am eager to participate and look forward to the event. Please let me know if any further information or action is required from my side.\n\nWarm regards,\n\nAndrew Chen",
+    "goldAnswers": {
+      "Full Name": "Andrew Chen",
+      "Email Address": "gerald19@gmail.com",
+      "Phone Number": "082.761.0978",
+      "Organization/Company": "Ochoa-Lawson",
+      "Workshop Category": "Business & Management",
+      "Preferred Session Date": "2025/01/27",
+      "Preferred Time Slot": "evening",
+      "Preferred Delivery Mode": "In-Person",
+      "Highest Education Level": "PhD",
+      "Years of Professional Experience": 4,
+      "Current Role/Position": "Waste management officer",
+      "Dietary Requirements": "Vegetarian",
+      "Accessibility Requirements": "None",
+      "Payment Method": "Credit Card",
+      "Billing Address": "982 Davis Vista Suite 809\nEast Cassie, AL 91196",
+      "What do you hope to learn from this workshop?": "I am interested in exploring financial tools and models that can help optimize business growth.",
+      "Any other special requests or comments?": "I would prefer to focus on team-building strategies and techniques that can improve collaboration in diverse teams."
+    },
+    "multiPage": false,
+    "formPath": "/professional-business/workshop-registration"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

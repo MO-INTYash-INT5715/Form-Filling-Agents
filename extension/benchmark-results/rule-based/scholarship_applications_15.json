@@ -1,0 +1,58 @@
+{
+  "formInstance": {
+    "formId": "scholarship_applications",
+    "formName": "Scholarship Application for Students",
+    "domain": "Academic & Research",
+    "instanceIndex": 15,
+    "inputDocument": "[Your Name]  \n[Your Address]  \n[City, State, Zip]  \n[Your Email]  \n[Your Phone Number]  \n[Date]  \n\n[Scholarship Committee's Name]  \n[Scholarship Organization]  \n[Organization Address]  \n[City, State, Zip]  \n\nDear Esteemed Scholarship Committee,\n\nI am writing to apply for your esteemed scholarship, which I believe will significantly assist me in pursuing my academic and career goals in the field of Biology. My name is Patrick Matthew Smith, a sophomore at [Your University], where I am currently focused on advancing my knowledge in Biology. As a dedicated student with a student ID of 90577005, I aim to contribute positively to both my academic community and the broader field of environmental science.\n\nDespite my commitment to my studies, my current GPA of 2.66 does not reflect the hard work and passion I have for my field and the challenges that have come my way. My family's annual income of $42,061 limits my access to financial aid, which puts a considerable strain on my ability to continue my education without the pressure of financial burdens. I have not received any financial aid yet, which compounds my struggles, making this scholarship all the more crucial.\n\nI am proud to highlight several academic achievements that underscore my dedication to excellence. Among these, I won the State Physics Olympiad and published a research paper in the International Journal of Engineering. Furthermore, I received the Dean’s List Award for Outstanding Academic Performance and was a finalist in the National Robotics Championship. These achievements not only reflect my academic abilities but also my determination to excel in science and technology.\n\nIn addition to my academic pursuits, I have engaged in various extracurricular activities that showcase my leadership skills and commitment to community service. As the President of the Student Council and the Coordinator of the Youth Empowerment Program, I have developed essential skills in leadership and organizational management. Volunteering at the local community center has taught me the significance of giving back, while being a member of the University Debate Team has honed my critical thinking and communication skills.\n\nI am deeply passionate about advancing my knowledge in environmental science. My ultimate goal is to leverage the education I receive to impact sustainable development positively. Receiving this scholarship would alleviate financial burdens and enable me to focus entirely on my studies and extracurricular involvements, enhancing both my academic and personal growth.\n\nI respectfully ask you to consider my application for this scholarship. My academic reference, Zachary Schultz, is available for any inquiries regarding my achievements and character. He can be reached at michaelrobertson@yahoo.com. I am hopeful that with your support, I will be able to continue my educational journey and make meaningful contributions to our society through science and leadership.\n\nThank you for considering my application. I look forward to the potential opportunity to carry out my aspirations with your generous assistance.\n\nSincerely,\n\nPatrick Matthew Smith  \nStudent ID: 90577005  \n[Your University]  \n[Your Major/Field of Study]",
+    "goldAnswers": {
+      "First Name": "Patrick",
+      "Middle Name": "Matthew",
+      "Last Name": "Smith",
+      "Student ID": 90577005,
+      "Major/Field of Study": "Biology",
+      "Current GPA": 2.66,
+      "Academic Year": "Sophomore",
+      "Current Financial Aid": "None",
+      "Annual Family Income": 42061,
+      "Academic Achievements": [
+        "Winner of the State Physics Olympiad",
+        "Published a research paper in the International Journal of Engineering",
+        "Received the Dean’s List Award for Outstanding Academic Performance",
+        "Finalist in the National Robotics Championship"
+      ],
+      "Extracurricular Activities": [
+        "Coordinator of the Youth Empowerment Program",
+        "President of the Student Council",
+        "Volunteer at the local community center",
+        "Member of the University Debate Team"
+      ],
+      "Statement of Purpose": "I am deeply passionate about advancing my knowledge in the field of environmental science. This scholarship will enable me to continue my studies without the pressure of financial burdens, and I plan to use the knowledge gained to make an impact in sustainable development.",
+      "Academic Reference": "Zachary Schultz",
+      "Reference Email": "michaelrobertson@yahoo.com"
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/scholarship-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

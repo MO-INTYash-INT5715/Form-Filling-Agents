@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "workshop_registrations",
+    "formName": "Educational Workshop Registration",
+    "domain": "Professional & Business",
+    "instanceIndex": 22,
+    "inputDocument": "Subject: Workshop Registration Request\n\nDear Workshop Coordinator,\n\nI am writing to formally request registration for the upcoming \"Technology & IT\" workshop hosted by your esteemed institution. Please find the details of my registration below:\n\nFull Name: Mathew Ramos  \nEmail Address: itaylor@george.com  \nPhone Number: 578.645.7607  \nOrganization/Company: Hernandez-Spencer  \nWorkshop Category: Technology & IT  \nPreferred Session Date: 2025/01/30  \nPreferred Time Slot: 5PM  \nPreferred Delivery Mode: Hybrid  \nHighest Education Level: Bachelor's Degree  \nYears of Professional Experience: 18  \nCurrent Role/Position: Warehouse manager  \nDietary Requirements: Kosher  \nAccessibility Requirements: None  \nPayment Method: Company Sponsored  \nBilling Address: 6364 Kathryn Branch Suite 287 Christinashire, DE 94348\n\nWhat do you hope to learn from this workshop? I am excited to learn new skills in business management to better handle operational challenges.\n\nAny other special requests or comments? It would be beneficial to include some practical advice on managing financial risks and investments.\n\nI look forward to the opportunity to enhance my skills and contribute effectively to my role at Hernandez-Spencer. Thank you for considering my registration request.\n\nSincerely,\n\nMathew Ramos",
+    "goldAnswers": {
+      "Full Name": "Mathew Ramos",
+      "Email Address": "itaylor@george.com",
+      "Phone Number": "578.645.7607",
+      "Organization/Company": "Hernandez-Spencer",
+      "Workshop Category": "Technology & IT",
+      "Preferred Session Date": "2025/01/30",
+      "Preferred Time Slot": "5PM",
+      "Preferred Delivery Mode": "Hybrid",
+      "Highest Education Level": "Bachelor's Degree",
+      "Years of Professional Experience": 18,
+      "Current Role/Position": "Warehouse manager",
+      "Dietary Requirements": "Kosher",
+      "Accessibility Requirements": "None",
+      "Payment Method": "Company Sponsored",
+      "Billing Address": "6364 Kathryn Branch Suite 287\nChristinashire, DE 94348",
+      "What do you hope to learn from this workshop?": "I am excited to learn new skills in business management to better handle operational challenges.",
+      "Any other special requests or comments?": "It would be beneficial to include some practical advice on managing financial risks and investments."
+    },
+    "multiPage": false,
+    "formPath": "/professional-business/workshop-registration"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

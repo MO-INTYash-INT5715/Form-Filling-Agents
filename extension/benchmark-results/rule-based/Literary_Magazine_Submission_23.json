@@ -1,0 +1,45 @@
+{
+  "formInstance": {
+    "formId": "Literary_Magazine_Submission",
+    "formName": "Literary Magazine Submission Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 23,
+    "inputDocument": "Natalie Green respectfully submits her work titled \"Winds of Change\" to be considered for publication in your esteemed literary magazine. This submission falls under the genre of Poetry and contains a total of 100 words. The \"Abstract/Summary\" of this piece is as follows: \"A poetry collection capturing the essence of change and transformation in life.\" Natalie has opted to submit this work for the Winter 2024 issue. The manuscript file has not been included at this stage. Notably, this work has not been previously published, and it is currently being submitted simultaneously to other publications. Natalie fully agrees to the submission guidelines and terms of publication, and she can be reached for further correspondence at natalie.green77@outlook.com. Your careful consideration of this submission is greatly appreciated.",
+    "goldAnswers": {
+      "Author Name": "Natalie Green",
+      "Email Address": "natalie.green77@outlook.com",
+      "Title": "Winds of Change",
+      "Genre": "Poetry",
+      "Word Count": 100,
+      "Abstract/Summary": "A poetry collection capturing the essence of change and transformation in life.",
+      "Manuscript File": "None",
+      "Preferred Issue": "Winter 2024",
+      "This work has been previously published": "No",
+      "This is a simultaneous submission": "Yes",
+      "I agree to the submission guidelines and terms of publication": "Yes"
+    },
+    "multiPage": false,
+    "formPath": "/arts-creative/literary-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

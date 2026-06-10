@@ -1,20 +1,24 @@
+import * as dotenv from 'dotenv';
 import OpenAI from 'openai';
-import dotenv from 'dotenv';
+import { GoogleGenerativeAI } from '@google/generative-ai';
 
 dotenv.config();
 
 export function getLLMClient() {
   const provider = process.env.LLM_PROVIDER || 'ollama';
 
-  if (provider === 'openai' || provider === 'custom') {
+  if (provider === 'gemini') {
+    const apiKey = process.env.GEMINI_API_KEY;
+    if (!apiKey) throw new Error('GEMINI_API_KEY not set in .env');
+    return new GoogleGenerativeAI(apiKey);
+  } else if (provider === 'openai' || provider === 'custom') {
     return new OpenAI({
       apiKey: process.env.OPENAI_API_KEY || '',
-      baseURL: process.env.OPENAI_BASE_URL, // optional
+      baseURL: process.env.OPENAI_BASE_URL,
     });
   } else if (provider === 'ollama') {
-    // Ollama supports OpenAI SDK compatibility
     return new OpenAI({
-      apiKey: 'ollama', // Ollama doesn't require a real API key
+      apiKey: 'ollama',
       baseURL: process.env.OLLAMA_BASE_URL || 'http://localhost:11434/v1',
     });
   }
@@ -23,5 +27,9 @@ export function getLLMClient() {
 }
 
 export function getLLMModel(): string {
-  return process.env.LLM_MODEL || 'gemma3:12b';
+  return process.env.LLM_MODEL || 'gemini-1.5-flash';
+}
+
+export function getLLMProvider(): string {
+  return process.env.LLM_PROVIDER || 'ollama';
 }

@@ -1,0 +1,40 @@
+{
+  "formInstance": {
+    "formId": "grant_applications",
+    "formName": "Grant or Research Funding Application",
+    "domain": "Academic & Research",
+    "instanceIndex": 38,
+    "inputDocument": "**Grant Application**\n\n**Applicant Information**\n\nFirst Name: John  \nLast Name: Gay  \nEmail: paula65@gmail.com  \nGender: Female  \nDate of Birth: 1962/10/08  \n\nDear Grant Committee,\n\nI, John Gay, am delighted to submit this application for your esteemed consideration. My background, vividly reminiscent of the intricate tapestry of life's narratives, brings forth a unique blend of experiences and aspirations. As a female applicant, born on the vibrant date of October 8, 1962, my journey through the years has been both enriching and enlightening.\n\nTo maintain active engagement with the broader discourse in our field, I affirm my eagerness to subscribe to the newsletter. This ensures that I stay abreast of trends, stories of success, and opportunities that spark both professional and personal growth.\n\nThe email I have provided, paula65@gmail.com, will serve as the conduit for our correspondence. Through this communication channel, I remain open to feedback, updates, and the establishment of collaborative synergies, all of which I am certain will greatly enrich our ventures.\n\nWith appreciation for your time and consideration, I am hopeful our paths converge through this application, bringing forth opportunities woven with purpose and value.\n\nSincerely,\n\nJohn Gay",
+    "goldAnswers": {
+      "First Name": "John",
+      "Last Name": "Gay",
+      "Email": "paula65@gmail.com",
+      "Gender": "Female",
+      "Date of Birth": "1962/10/08",
+      "Subscribe to Newsletter": true
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/grant-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

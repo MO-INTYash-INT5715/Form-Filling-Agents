@@ -1,0 +1,45 @@
+{
+  "formInstance": {
+    "formId": "Literary_Magazine_Submission",
+    "formName": "Literary Magazine Submission Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 32,
+    "inputDocument": "Author Daniel Moore submits the fiction piece titled \"The Descent\" for your consideration. With a word count of 7200, this manuscript is aligned with the requirements for the Fall 2024 issue of your esteemed literary magazine. Daniel Moore can be reached at daniel.moore42@aol.com for further communication regarding this submission.\n\nThe piece is a psychological thriller that explores the descent into madness of a man haunted by his past. Despite this work having been previously published, it is not a simultaneous submission, emphasizing the author's commitment to your publication. The author acknowledges that there is no manuscript file attached but has agreed to the submission guidelines and terms of publication. Thank you for considering \"The Descent\" for your next publication.",
+    "goldAnswers": {
+      "Author Name": "Daniel Moore",
+      "Email Address": "daniel.moore42@aol.com",
+      "Title": "The Descent",
+      "Genre": "Fiction",
+      "Word Count": 7200,
+      "Abstract/Summary": "A psychological thriller that explores the descent into madness of a man haunted by his past.",
+      "Manuscript File": "None",
+      "Preferred Issue": "Fall 2024",
+      "This work has been previously published": "Yes",
+      "This is a simultaneous submission": "No",
+      "I agree to the submission guidelines and terms of publication": "Yes"
+    },
+    "multiPage": false,
+    "formPath": "/arts-creative/literary-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

@@ -1,0 +1,53 @@
+{
+  "formInstance": {
+    "formId": "real_estate_rental_applications",
+    "formName": "Real Estate Rental Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 41,
+    "inputDocument": "Amanda Patterson is seeking to relocate to a new home and is submitting her rental application for consideration. Currently residing at 14745 Michael Terrace in Lake Jason, Delaware, 58141, Amanda can be contacted for further information via her email at gpalmer@watkins.info or her phone at 302.877.5530. Born on 1985/10/23, Amanda is an established professional working as a Statistician at Fuller, Lindsey and Terry, with a substantial Monthly Income (USD) of 8275, and she has held her position for 10 years. Her preferred move-in date is set for 2025/01/21, with a desired lease term of 24 months and a maximum Monthly Rent (USD) of 3445. She expresses a strong interest in residing within a Preferred Area: \"Quiet neighborhood,\" to align with her preference for tranquility. Although Amanda does not have any pets, she states \"No pets\" for the query \"If yes, please describe your pets.\" Additionally, Amanda has shared her Additional Comments: \"Looking for a peaceful environment.\" Through this detailed application, Amanda hopes to find a residence that meets her aspirations and living requirements.",
+    "goldAnswers": {
+      "Full Name": "Amanda Patterson",
+      "Email Address": "gpalmer@watkins.info",
+      "Phone Number": "302.877.5530",
+      "Date of Birth": "1985/10/23",
+      "Street Address": "14745 Michael Terrace",
+      "City": "Lake Jason",
+      "State": "Delaware",
+      "ZIP Code": "58141",
+      "Current Employer": "Fuller, Lindsey and Terry",
+      "Job Title": "Statistician",
+      "Monthly Income (USD)": 8275,
+      "Length of Employment": "10 years",
+      "Preferred Move-in Date": "2025/01/21",
+      "Preferred Lease Term": "24 months",
+      "Maximum Monthly Rent (USD)": 3445,
+      "Preferred Area": "Quiet neighborhood",
+      "Do you have any pets?": "No",
+      "If yes, please describe your pets": "No pets",
+      "Additional Comments": "Looking for a peaceful environment."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/rental-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

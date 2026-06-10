@@ -1,0 +1,46 @@
+{
+  "formInstance": {
+    "formId": "student_courses",
+    "formName": "Student Course Registration Form",
+    "domain": "Academic & Research",
+    "instanceIndex": 31,
+    "inputDocument": "---\n\nSubject: Course Enrollment Request for Spring 2025\n\nDear Enrollment Office,\n\nI hope this message finds you well. My name is Kimberly Richardson, and I am thrilled to submit my request for enrollment in the upcoming Spring 2025 semester at your esteemed institution as part of the Software Engineering program.\n\nIn preparation for the semester, I am eager to immerse myself in the following courses, as they align closely with my academic goals and interests:\n\n1. **CS104 - Web Development**\n2. **CS101 - Introduction to Programming**\n3. **CS103 - Database Systems**\n\nThese courses reflect my passion for foundational as well as advanced areas of software engineering, and I am particularly enthusiastic about **CS104 - Web Development**, as it offers a great opportunity for me to delve into my interest in web technologies and frameworks.\n\nAs per your administrative requirements, please find my essential information below:\n\n- **Full Name:** Kimberly Richardson\n- **Student ID:** 5097885\n- **Email:** allisonmichelle@gmail.com\n- **Phone Number:** (541) 976-9846\n\nAdditionally, in the \"Special Requirements or Comments\" section, I would like to highlight: \"Looking forward to exploring web development.\" This captures my enthusiasm and willingness to expand my technical expertise in this fast-evolving field.\n\nI appreciate your kind assistance in processing my enrollment request and am looking forward to a rewarding educational experience at your institution.\n\nThank you for your attention to this matter. Please do not hesitate to contact me if you require any further information or documentation.\n\nWarm regards,\n\nKimberly Richardson\n\n---",
+    "goldAnswers": {
+      "Full Name": "Kimberly Richardson",
+      "Student ID": 5097885,
+      "Email": "allisonmichelle@gmail.com",
+      "Phone Number": "(541)976-9846",
+      "Semester": "Spring 2025",
+      "Program": "Software Engineering",
+      "Selected Courses": [
+        "CS104 - Web Development",
+        "CS101 - Introduction to Programming",
+        "CS103 - Database Systems"
+      ],
+      "Special Requirements or Comments": "Looking forward to exploring web development."
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/course-registration"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

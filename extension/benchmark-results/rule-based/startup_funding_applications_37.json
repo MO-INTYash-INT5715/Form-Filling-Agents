@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "startup_funding_applications",
+    "formName": "Startup Funding Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 37,
+    "inputDocument": "EcoGrow Solutions, founded on 2022/10/04, is pleased to submit this formal application for startup funding assistance. As we currently operate at the MVP stage, our primary mission is to revolutionize customer support for businesses through our AI-powered software solution. Our proprietary technology, aimed at college students and young professionals seeking affordable online learning options, represents a robust opportunity for strategic growth and innovation.\n\nWe currently boast a thriving business model with a reported monthly revenue of USD 500,000 and are proud of our dynamic team of 20 dedicated professionals. To scale our operations effectively, we are seeking a funding amount of USD 2,402,066, offering an equity of 16% in return. This funding will play a pivotal role in enhancing our operational capacities and propelling EcoGrow Solutions towards sustained success. Presently, our company is valued at USD 40,584,386, underscoring the solid foundation we have built.\n\nThe founder, Joseph Pham, can be reached for further discussion via email at natalieburns@martinez.com or phone at +1-979-191-9909x13822. For more insights into our company, please visit our website at http://www.brown-garza.com/ and LinkedIn profile at https://linkedin.com/in/christopherharrington. We are enthusiastic about the prospects of scaling the business with strategic investments and look forward to a mutually beneficial collaboration.",
+    "goldAnswers": {
+      "Company Name": "EcoGrow Solutions",
+      "Company Website": "http://www.brown-garza.com/",
+      "Founding Date": "2022/10/04",
+      "Business Stage": "MVP",
+      "Founder Name": "Joseph Pham",
+      "Email": "natalieburns@martinez.com",
+      "Phone Number": "+1-979-191-9909x13822",
+      "LinkedIn Profile": "https://linkedin.com/in/christopherharrington",
+      "Funding Amount Required (USD)": 2402066,
+      "Equity Offered (%)": 16,
+      "Current Company Valuation (USD)": 40584386,
+      "Purpose of Funding": "Operations",
+      "Business Model": "An AI-powered software solution that automates customer support for businesses.",
+      "Target Market": "College students and young professionals seeking affordable online learning options.",
+      "Current Monthly Revenue (USD)": 500000,
+      "Current Team Size": 20,
+      "Additional Comments": "Looking forward to scaling the business with strategic investments."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/startup-funding"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

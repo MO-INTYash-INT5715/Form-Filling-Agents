@@ -1,0 +1,44 @@
+{
+  "formInstance": {
+    "formId": "paper_submissions",
+    "formName": "Paper Submission Form",
+    "domain": "Academic & Research",
+    "instanceIndex": 26,
+    "inputDocument": "---\n\n**Paper Submission Application**\n\n---\n\n**Submission Details:**\n\nDear Editorial Board,\n\nI am writing to formally submit my manuscript for consideration in your upcoming publication. Please find below the essential details of my submission.\n\n**Author Information:**\n\nMy name is Amelia Roberts, and I am delighted to contribute to the discussion surrounding advanced technological solutions in cybersecurity. For any correspondence, I am readily available via email at amelia.roberts@techsystems.com. I hope to engage productively with your team and contribute to raising awareness around significant technological advancements.\n\n**Manuscript Title:**\n\n\"Artificial Intelligence in Cybersecurity: Enhancing Threat Detection\"\n\n**Abstract:**\n\nThe submitted paper, \"Artificial Intelligence in Cybersecurity: Enhancing Threat Detection,\" delves into the pivotal role that Artificial Intelligence (AI) plays in advancing cybersecurity measures. This work particularly emphasizes AI's potential for improving real-time threat detection and response, underlining its transformative impact in safeguarding digital infrastructures.\n\n**Core Keywords:**\n\nThe core areas that this paper addresses encompass \"AI,\" \"Cybersecurity,\" and \"Threat Detection.\" These keywords not only encapsulate the essence of the study but also frame its relevance within current innovative research.\n\n**Categorization:**\n\nIn alignment with your journal's thematic offerings, this manuscript is categorically positioned within the realm of \"Artificial Intelligence.\" It provides critical insights into the application of AI technologies within cybersecurity frameworks, aiming to enhance traditional threat response methodologies.\n\nShould there be any supplementary information required, please do not hesitate to contact me. I look forward to the possibility of my work contributing to the ongoing scholarly explorations cataloged by your esteemed journal.\n\nThank you for your time and consideration.\n\nSincerely,\n\nAmelia Roberts\n\n---\n\nThis application has been crafted based on your paper submission parameters. It upholds the integrity of content, facilitating a seamless review process for journal evaluators.",
+    "goldAnswers": {
+      "Author Name": "Amelia Roberts",
+      "Email": "amelia.roberts@techsystems.com",
+      "Paper Title": "Artificial Intelligence in Cybersecurity: Enhancing Threat Detection",
+      "Abstract": "This paper explores the role of AI in cybersecurity, focusing on its potential to improve threat detection and response in real-time.",
+      "Keywords": [
+        "AI",
+        "Cybersecurity",
+        "Threat Detection"
+      ],
+      "Paper Category": "Artificial Intelligence"
+    },
+    "multiPage": false,
+    "formPath": "/academic-research/paper-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

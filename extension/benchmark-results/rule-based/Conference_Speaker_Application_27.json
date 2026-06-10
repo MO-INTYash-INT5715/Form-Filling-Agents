@@ -1,0 +1,48 @@
+{
+  "formInstance": {
+    "formId": "Conference_Speaker_Application",
+    "formName": "Conference Speaker Application Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 27,
+    "inputDocument": "Lucas Harris, representing the Literary Review Institute, is honored to submit his application for consideration as a speaker at your esteemed conference. With the Presentation Title Exploring Narrative Structures in Non-linear Fiction, Lucas aims to delve into the Topic Area of Literature with profound expertise. The Presentation Abstract for this session will discuss the evolution of narrative structures in non-linear fiction, highlighting the innovative ways authors break traditional storytelling conventions to craft complex narratives. \n\nThe Learning Objectives for attendees include: learning about the techniques used in non-linear storytelling, understanding the narrative possibilities offered by non-linear structures, and exploring how non-linear fiction challenges readers' perceptions of time and story. Lucas Harris brings a wealth of experience, as reflected in his Professional Biography: he is a fiction writer and literary critic with several published works focusing on non-linear storytelling. He regularly contributes to literary journals and teaches creative writing, underscoring his command over the subject matter.\n\nAlthough his CV/Resume is not enclosed, Lucas's Previous Speaking Experience includes serving as a speaker at the Non-linear Fiction Symposium 2023 and a panelist at the Contemporary Storytelling Techniques Conference 2022, underscoring his capability to deliver impactful lectures in a Presentation Format. To ensure a seamless presentation, his Special Technical Requirements include a projector and sound system.\n\nLucas Harris is committed to adhering to the speaker guidelines and terms of participation, as evidenced by his agreement in advance. For any further communication, please reach out via Email Address: lucas.harris56@icloud.com or Phone Number: 345-678-9012. Thank you for considering this application from a passionate scholar eager to contribute to the conversation on non-linear fiction.",
+    "goldAnswers": {
+      "Full Name": "Lucas Harris",
+      "Email Address": "lucas.harris56@icloud.com",
+      "Phone Number": "345-678-9012",
+      "Organization/Institution": "Literary Review Institute",
+      "Presentation Title": "Exploring Narrative Structures in Non-linear Fiction",
+      "Topic Area": "Literature",
+      "Presentation Abstract": "This presentation will discuss the evolution of narrative structures in non-linear fiction. We will analyze how authors break traditional storytelling conventions to create innovative and complex narratives.",
+      "Learning Objectives": "1. Learn about the techniques used in non-linear storytelling. 2. Understand the narrative possibilities offered by non-linear structures. 3. Explore how non-linear fiction challenges readers’ perceptions of time and story.",
+      "Professional Biography": "Lucas Harris is a fiction writer and literary critic, with several published works focusing on non-linear storytelling. He regularly writes for literary journals and teaches creative writing.",
+      "CV/Resume": "None",
+      "Previous Speaking Experience": "1. Speaker at Non-linear Fiction Symposium 2023. 2. Panelist at Contemporary Storytelling Techniques Conference 2022.",
+      "Presentation Format": "Lecture",
+      "Special Technical Requirements": "Projector, sound system.",
+      "I agree to the speaker guidelines and terms of participation": "Yes"
+    },
+    "multiPage": true,
+    "formPath": "/arts-creative/speaker-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

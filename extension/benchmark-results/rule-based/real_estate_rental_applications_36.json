@@ -1,0 +1,53 @@
+{
+  "formInstance": {
+    "formId": "real_estate_rental_applications",
+    "formName": "Real Estate Rental Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 36,
+    "inputDocument": "Jody Smith, born on December 7, 1985, currently resides at 9981 Jeremy Forks, Grahamland, Arizona, 85281. In consideration for renting a suitable property, Jody can be contacted at jeremyyoung@meyers.com or via phone at 6739083027. Professionally, Jody is employed as a Planning and development surveyor at Smith, Rice and Ramos, where they have been working for the past 6 months. With a monthly income of $11,883, Jody seeks a residence with a maximum monthly rent of $3,826. The preferred initial move-in date for Jody is January 17, 2025, with a desired lease term of 24 months.\n\nJody is particularly interested in properties \"Near parks.\" Owning pets is a part of Jody’s household, specifically, \"Two rabbits.\" It is important to note that Jody \"Prefer quiet and residential areas.\" The application is complete with all necessary considerations and adheres to the required formal standards for potential tenancy.",
+    "goldAnswers": {
+      "Full Name": "Jody Smith",
+      "Email Address": "jeremyyoung@meyers.com",
+      "Phone Number": "6739083027",
+      "Date of Birth": "1985/12/07",
+      "Street Address": "9981 Jeremy Forks",
+      "City": "Grahamland",
+      "State": "Arizona",
+      "ZIP Code": "85281",
+      "Current Employer": "Smith, Rice and Ramos",
+      "Job Title": "Planning and development surveyor",
+      "Monthly Income (USD)": 11883,
+      "Length of Employment": "6 months",
+      "Preferred Move-in Date": "2025/01/17",
+      "Preferred Lease Term": "24 months",
+      "Maximum Monthly Rent (USD)": 3826,
+      "Preferred Area": "Near parks",
+      "Do you have any pets?": "Yes",
+      "If yes, please describe your pets": "Two rabbits",
+      "Additional Comments": "Prefer quiet and residential areas."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/rental-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

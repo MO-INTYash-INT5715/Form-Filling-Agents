@@ -1,0 +1,48 @@
+{
+  "formInstance": {
+    "formId": "Conference_Speaker_Application",
+    "formName": "Conference Speaker Application Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 25,
+    "inputDocument": "Liam Evans, representing the Art History Institute, is submitting a speaker application to present at your upcoming conference. With a professional background in art history, Liam is eager to deliver a lecture titled \"The Influence of Ancient Art on Modern Art Movements.\" The presentation will focus on the Topic Area of art history, providing an insightful examination of how ancient art continues to influence modern art movements. The presentation abstract outlines an exploration into examples of how artists throughout history have drawn inspiration from classical works and incorporated them into contemporary practices. Attendees can expect to achieve three primary learning objectives: learn how ancient art has shaped modern art movements, explore the evolution of artistic inspiration across centuries, and understand the continued relevance of classical art forms in today’s art scene.\n\nLiam Evans's professional biography highlights his extensive experience as an art historian with a focus on classical art and its influence on modern movements; he has written extensively on the subject and has curated exhibitions around the world. His previous speaking experience includes being a speaker at the Ancient Art Influence Symposium 2023 and a panelist at the Modern Art Movements Conference 2022. For this conference, the presentation format will be a lecture, and special technical requirements include a projector and sound system. Liam Evans has agreed to the speaker guidelines and terms of participation, and can be reached via email at liam.evans45@outlook.com or by phone at 234-567-8901.",
+    "goldAnswers": {
+      "Full Name": "Liam Evans",
+      "Email Address": "liam.evans45@outlook.com",
+      "Phone Number": "234-567-8901",
+      "Organization/Institution": "Art History Institute",
+      "Presentation Title": "The Influence of Ancient Art on Modern Art Movements",
+      "Topic Area": "Art History",
+      "Presentation Abstract": "In this presentation, we will examine how ancient art continues to influence modern art movements. We will discuss examples of how artists throughout history have been inspired by classical works and incorporated them into contemporary practices.",
+      "Learning Objectives": "1. Learn how ancient art has shaped modern art movements. 2. Explore the evolution of artistic inspiration across centuries. 3. Understand the continued relevance of classical art forms in today’s art scene.",
+      "Professional Biography": "Liam Evans is an art historian with a focus on classical art and its influence on modern movements. He has written extensively on the subject and has curated exhibitions around the world.",
+      "CV/Resume": "None",
+      "Previous Speaking Experience": "1. Speaker at Ancient Art Influence Symposium 2023. 2. Panelist at Modern Art Movements Conference 2022.",
+      "Presentation Format": "Lecture",
+      "Special Technical Requirements": "Projector, sound system.",
+      "I agree to the speaker guidelines and terms of participation": "Yes"
+    },
+    "multiPage": true,
+    "formPath": "/arts-creative/speaker-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

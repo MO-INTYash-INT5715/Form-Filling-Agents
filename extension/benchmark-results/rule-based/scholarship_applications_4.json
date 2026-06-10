@@ -1,0 +1,56 @@
+{
+  "formInstance": {
+    "formId": "scholarship_applications",
+    "formName": "Scholarship Application for Students",
+    "domain": "Academic & Research",
+    "instanceIndex": 4,
+    "inputDocument": "[Your Address]  \n[City, State, ZIP]  \n[Email Address]  \n[Phone Number]  \n[Date]  \n\nScholarship Selection Committee  \n[Scholarship Organization Name]  \n[Organization Address]  \n[City, State, ZIP]  \n\nDear Scholarship Selection Committee,\n\nMy name is Alan Steve Padilla, and I am a senior pursuing a degree in Economics at [Your University]. With a current GPA of 3.85, I am committed to academic excellence and am eager to broaden my understanding of concepts that are vital for our society today. My student ID is 46822305, and I am writing to humbly apply for the [Name of Scholarship]. \n\nIn addition to my academic pursuits, I have engaged deeply with my field and my community by participating in various organizations and competitions. I am proud to have been a finalist in the National Robotics Championship and to hold first place in the University Math Competition. I have also published a research paper in the International Journal of Engineering and emerged as the winner of the State Physics Olympiad. These achievements are a testament to my dedication to scholarship and innovative thinking.\n\nOutside the classroom, I co-founded the Campus Startup Initiative, a platform encouraging entrepreneurial spirit among fellow students, and I am an active member of the Environmental Awareness Club. My involvement in these groups has allowed me to work collaboratively on projects aimed at promoting sustainability and environmental responsibility—topics I am deeply passionate about.\n\nThe importance of financial support resonates with my current situation. My family has an annual income of $81,640, and while I have managed to finance my education through student loans, the financial burden can be daunting. Receiving this scholarship would alleviate much of that pressure, enabling me to focus my energies on my studies and extracurricular pursuits without the constant worry of financial constraints.\n\nMy goal is clear: I aspire to leverage my knowledge in economics to contribute meaningfully to sustainable development initiatives. This scholarship will empower me to continue my studies with fewer financial worries and allow me to delve deeper into learning how economic frameworks can be adapted to bolster environmental sustainability.\n\nI respectfully request your consideration of my application for this scholarship. It would be an honor to be selected, and I assure you that the investment in my education will not go unappreciated. For any academic references, I kindly list Gina Guerra, who can be reached at owatkins@smith-davis.info.\n\nThank you very much for your time and consideration. I appreciate the opportunity to share my journey, and I look forward to the possibility of contributing positively to our world in the future.\n\nWarm regards,\n\nAlan Steve Padilla  \nStudent ID: 46822305  \n[Your University]  \n[Your Major/Field of Study]",
+    "goldAnswers": {
+      "First Name": "Alan",
+      "Middle Name": "Steve",
+      "Last Name": "Padilla",
+      "Student ID": 46822305,
+      "Major/Field of Study": "Economics",
+      "Current GPA": 3.85,
+      "Academic Year": "Senior",
+      "Current Financial Aid": "Student Loans",
+      "Annual Family Income": 81640,
+      "Academic Achievements": [
+        "Finalist in the National Robotics Championship",
+        "First place in the University Math Competition",
+        "Published a research paper in the International Journal of Engineering",
+        "Winner of the State Physics Olympiad"
+      ],
+      "Extracurricular Activities": [
+        "Member of the Environmental Awareness Club",
+        "Co-founder of the Campus Startup Initiative"
+      ],
+      "Statement of Purpose": "I am deeply passionate about advancing my knowledge in the field of environmental science. This scholarship will enable me to continue my studies without the pressure of financial burdens, and I plan to use the knowledge gained to make an impact in sustainable development.",
+      "Academic Reference": "Gina Guerra",
+      "Reference Email": "owatkins@smith-davis.info"
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/scholarship-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

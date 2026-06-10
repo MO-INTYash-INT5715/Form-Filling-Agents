@@ -1,0 +1,48 @@
+{
+  "formInstance": {
+    "formId": "Conference_Speaker_Application",
+    "formName": "Conference Speaker Application Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 45,
+    "inputDocument": "Amelia Scott, affiliated with the Digital Arts Institute, submits her application for the upcoming conference within the Digital Media topic area. She proposes a lecture with the Presentation Title \"The Future of AI in Digital Art Creation.\" This engaging Presentation Abstract states that in this presentation, we will explore the future of artificial intelligence (AI) in the creation of digital art. We will discuss how AI tools are revolutionizing the artistic process, allowing artists to create complex works with minimal effort while pushing the boundaries of creativity. The comprehensive Learning Objectives for attendees are to understand the role of AI in digital art creation, explore the potential of AI to innovate artistic techniques, and learn about the ethical considerations and future trends in AI-driven art.\n\nAmelia's Professional Biography highlights her expertise as a digital artist and AI researcher specializing in the intersection of art and technology. She has created several AI-driven art projects and is a leading advocate for the integration of AI in creative industries. Her Previous Speaking Experience includes being a speaker at the AI and Art Conference 2023 and a panelist at the Digital Art Futures Symposium 2022. She requires a computer, projector, and AI art software as Special Technical Requirements for her presentation. For further correspondence, Amelia can be reached at amelia.scott31@gmail.com or via phone at 234-567-8901. She agrees to the speaker guidelines and terms of participation for the conference.",
+    "goldAnswers": {
+      "Full Name": "Amelia Scott",
+      "Email Address": "amelia.scott31@gmail.com",
+      "Phone Number": "234-567-8901",
+      "Organization/Institution": "Digital Arts Institute",
+      "Presentation Title": "The Future of AI in Digital Art Creation",
+      "Topic Area": "Digital Media",
+      "Presentation Abstract": "In this presentation, we will explore the future of artificial intelligence (AI) in the creation of digital art. We will discuss how AI tools are revolutionizing the artistic process, allowing artists to create complex works with minimal effort while pushing the boundaries of creativity.",
+      "Learning Objectives": "1. Understand the role of AI in digital art creation. 2. Explore the potential of AI to innovate artistic techniques. 3. Learn about the ethical considerations and future trends in AI-driven art.",
+      "Professional Biography": "Amelia Scott is a digital artist and AI researcher specializing in the intersection of art and technology. She has created several AI-driven art projects and is a leading advocate for the integration of AI in creative industries.",
+      "CV/Resume": "None",
+      "Previous Speaking Experience": "1. Speaker at AI and Art Conference 2023. 2. Panelist at Digital Art Futures Symposium 2022.",
+      "Presentation Format": "Lecture",
+      "Special Technical Requirements": "Computer, projector, AI art software.",
+      "I agree to the speaker guidelines and terms of participation": "Yes"
+    },
+    "multiPage": true,
+    "formPath": "/arts-creative/speaker-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "workshop_registrations",
+    "formName": "Educational Workshop Registration",
+    "domain": "Professional & Business",
+    "instanceIndex": 15,
+    "inputDocument": "Subject: Workshop Registration Request for Brandon Armstrong\n\nDear Workshop Coordination Team,\n\nI am writing to formally register for an upcoming workshop in the Leadership & Communication category. Please find the details of my registration request as follows.\n\nFull Name: Brandon Armstrong  \nEmail Address: leonardsmith@weiss.biz  \nPhone Number: +1-755-874-6247x94542  \nOrganization/Company: Walls-Taylor  \n\nI would like to attend the session scheduled for the date of 2025/01/27, with a preferred time slot in the morning. I am particularly interested in the Hybrid delivery mode for this session.\n\nAs an individual with an Associate Degree and 2 years of professional experience, I am presently serving in the capacity of a Production designer, theatre/television/film. In this workshop, I look forward to learning effective strategies for improving productivity and leading successful teams. \n\nMy dietary requirements indicate Other (Please specify). Additionally, I do not have any specific accessibility requirements at this time. \n\nThe billing address for any correspondence or payment details is as follows:  \n437 Santiago Mountain,  \nConniebury, FL 47764  \n\nFor the transaction, I will be using Bank Transfer as my chosen payment method. \n\nAny other special requests or comments from my side include: It would be great if we could have a session on the integration of modern technologies with traditional business models.\n\nThank you for considering my registration. I look forward to your confirmation and any further steps required from my end to facilitate my participation.\n\nWarm regards,\n\nBrandon Armstrong",
+    "goldAnswers": {
+      "Full Name": "Brandon Armstrong",
+      "Email Address": "leonardsmith@weiss.biz",
+      "Phone Number": "+1-755-874-6247x94542",
+      "Organization/Company": "Walls-Taylor",
+      "Workshop Category": "Leadership & Communication",
+      "Preferred Session Date": "2025/01/27",
+      "Preferred Time Slot": "morning",
+      "Preferred Delivery Mode": "Hybrid",
+      "Highest Education Level": "Associate Degree",
+      "Years of Professional Experience": 2,
+      "Current Role/Position": "Production designer, theatre/television/film",
+      "Dietary Requirements": "Other (Please specify)",
+      "Accessibility Requirements": "None",
+      "Payment Method": "Bank Transfer",
+      "Billing Address": "437 Santiago Mountain\nConniebury, FL 47764",
+      "What do you hope to learn from this workshop?": "I look forward to learning effective strategies for improving productivity and leading successful teams.",
+      "Any other special requests or comments?": "It would be great if we could have a session on the integration of modern technologies with traditional business models."
+    },
+    "multiPage": false,
+    "formPath": "/professional-business/workshop-registration"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

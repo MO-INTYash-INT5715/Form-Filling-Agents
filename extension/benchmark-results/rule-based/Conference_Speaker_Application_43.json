@@ -1,0 +1,48 @@
+{
+  "formInstance": {
+    "formId": "Conference_Speaker_Application",
+    "formName": "Conference Speaker Application Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 43,
+    "inputDocument": "Eleanor Martin, a literature professor and author with a specialization in magical realism, is applying to speak at an upcoming conference on Literature. Her presentation, titled \"The Impact of Magical Realism on Modern Literature,\" promises to engage attendees by delving into how this unique genre has shaped modern literature. The Presentation Abstract reads: This presentation will focus on how the genre of magical realism has shaped modern literature, highlighting key authors and works that blend the fantastical with the everyday. We will discuss the genre's cultural significance and its impact on storytelling. The session will fulfill the following Learning Objectives: 1. Understand the origins and evolution of magical realism. 2. Explore key works in the magical realism genre. 3. Learn how magical realism impacts modern narrative forms. Eleanor's Professional Biography notes her extensive expertise; she has published numerous articles and books and frequently speaks at international literary conferences. Her Previous Speaking Experience includes serving as a speaker at the Magical Realism in Literature Conference 2023 and as a panelist at the Global Literature Symposium 2022, demonstrating her capability to effectively deliver insightful presentations. For her upcoming Lecture, her Special Technical Requirements include a projector and sound system. Eleanor Martin can be reached via her Email Address at eleanor.martin99@aol.com, or by Phone Number at 123-456-7890, representing the Global Literature Foundation. She has agreed to the speaker guidelines and terms of participation, completing her application.",
+    "goldAnswers": {
+      "Full Name": "Eleanor Martin",
+      "Email Address": "eleanor.martin99@aol.com",
+      "Phone Number": "123-456-7890",
+      "Organization/Institution": "Global Literature Foundation",
+      "Presentation Title": "The Impact of Magical Realism on Modern Literature",
+      "Topic Area": "Literature",
+      "Presentation Abstract": "This presentation will focus on how the genre of magical realism has shaped modern literature, highlighting key authors and works that blend the fantastical with the everyday. We will discuss the genre's cultural significance and its impact on storytelling.",
+      "Learning Objectives": "1. Understand the origins and evolution of magical realism. 2. Explore key works in the magical realism genre. 3. Learn how magical realism impacts modern narrative forms.",
+      "Professional Biography": "Eleanor Martin is a literature professor and author specializing in magical realism. She has published articles and books on the subject and frequently speaks at international literary conferences.",
+      "CV/Resume": "None",
+      "Previous Speaking Experience": "1. Speaker at Magical Realism in Literature Conference 2023. 2. Panelist at Global Literature Symposium 2022.",
+      "Presentation Format": "Lecture",
+      "Special Technical Requirements": "Projector, sound system.",
+      "I agree to the speaker guidelines and terms of participation": "Yes"
+    },
+    "multiPage": true,
+    "formPath": "/arts-creative/speaker-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

@@ -1,0 +1,48 @@
+{
+  "formInstance": {
+    "formId": "Conference_Speaker_Application",
+    "formName": "Conference Speaker Application Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 46,
+    "inputDocument": "Henry Miller, representing the Creative Writing Institute, is pleased to submit his application for a presentation at your esteemed conference. Mr. Miller can be reached at henry.miller44@outlook.com or by phone at 345-678-9012. His presentation, \"Mastering the Art of Writing Flash Fiction,\" falls within the domain of Creative Writing, focusing on how to craft impactful and concise stories. It promises an in-depth look at writing flash fiction, focusing on how to create compelling narratives with limited word counts. Key Learning Objectives of this presentation include the ability to learn the structure and techniques of flash fiction, understand the importance of brevity in storytelling, and explore how to evoke strong emotions in short narratives. As delineated in his Professional Biography, Henry Miller is a well-known flash fiction writer and educator, with numerous publications in prestigious literary journals and extensive experience leading workshops on writing short, impactful fiction. He has an impressive Previous Speaking Experience, having been a speaker at the Flash Fiction Writers Conference 2023 and a workshop leader at the Creative Writing Symposium 2022. The session is proposed in Workshop format, requiring the following Special Technical Requirements: Projector, computer, handouts. Mr. Miller is committed to contributing to the conference and agrees to the speaker guidelines and terms of participation.",
+    "goldAnswers": {
+      "Full Name": "Henry Miller",
+      "Email Address": "henry.miller44@outlook.com",
+      "Phone Number": "345-678-9012",
+      "Organization/Institution": "Creative Writing Institute",
+      "Presentation Title": "Mastering the Art of Writing Flash Fiction",
+      "Topic Area": "Creative Writing",
+      "Presentation Abstract": "This presentation will provide an in-depth look at writing flash fiction, focusing on how to craft impactful and concise stories. We will explore various techniques to develop strong characters and themes within the limited word count.",
+      "Learning Objectives": "1. Learn the structure and techniques of flash fiction. 2. Understand the importance of brevity in storytelling. 3. Explore how to evoke strong emotions in short narratives.",
+      "Professional Biography": "Henry Miller is a well-known flash fiction writer and educator. He has published numerous stories in prestigious literary journals and leads workshops on writing short, impactful fiction.",
+      "CV/Resume": "None",
+      "Previous Speaking Experience": "1. Speaker at Flash Fiction Writers Conference 2023. 2. Workshop leader at Creative Writing Symposium 2022.",
+      "Presentation Format": "Workshop",
+      "Special Technical Requirements": "Projector, computer, handouts.",
+      "I agree to the speaker guidelines and terms of participation": "Yes"
+    },
+    "multiPage": true,
+    "formPath": "/arts-creative/speaker-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

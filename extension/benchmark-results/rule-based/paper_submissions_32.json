@@ -1,0 +1,44 @@
+{
+  "formInstance": {
+    "formId": "paper_submissions",
+    "formName": "Paper Submission Form",
+    "domain": "Academic & Research",
+    "instanceIndex": 32,
+    "inputDocument": "**Application for Paper Submission**\n\n**Title:** Exploring the Use of AI in Climate Change Solutions\n\n**Submitted by:** Isabel Scott  \n**Contact Email:** isabel.scott@universe.com\n\n---\n\n**Abstract:**  \nThis paper investigates how AI technologies are being applied to combat climate change, with a focus on energy optimization and predictive climate models. The research highlights both the current advancements and potential future developments in the field, underscoring the transformative impact of artificial intelligence in environmental conservation and mitigation strategies.\n\n**Keywords:** AI, Climate Change, Energy Optimization\n\n**Category:** Environmental Science\n\n---\n\nDear Review Board,\n\nI am writing to submit my research paper titled \"Exploring the Use of AI in Climate Change Solutions\" under the Environmental Science category. This scholarly work delves into the synergy between artificial intelligence and environmental preservation, emphasizing its promising applications against the growing threat of climate deterioration.\n\nIn the paper, I endeavor to present a detailed analysis focused on energy optimization through AI, as well as leveraging predictive climate models. Contributions of AI in forecasting climate phenomena and devising strategic interventions for sustainability are explored elaborately.\n\nI have ensured that the research embodies a comprehensive exploration of current technological advances while shedding light on potential innovations that can drive ecological conservation efforts forward. The keywords associated with this paper—AI, Climate Change, and Energy Optimization—underscore its key focus areas and relevance in ongoing scientific discourse.\n\nI believe this paper will contribute significantly to the ongoing dialogues in Environmental Science, particularly in the integration of artificial intelligence for environmental welfare. I appreciate your consideration for inclusion and am looking forward to your feedback.\n\nThank you for considering this submission.\n\nSincerely,\n\nIsabel Scott",
+    "goldAnswers": {
+      "Author Name": "Isabel Scott",
+      "Email": "isabel.scott@universe.com",
+      "Paper Title": "Exploring the Use of AI in Climate Change Solutions",
+      "Abstract": "This paper investigates how AI technologies are being applied to combat climate change, with a focus on energy optimization and predictive climate models.",
+      "Keywords": [
+        "AI",
+        "Climate Change",
+        "Energy Optimization"
+      ],
+      "Paper Category": "Environmental Science"
+    },
+    "multiPage": false,
+    "formPath": "/academic-research/paper-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

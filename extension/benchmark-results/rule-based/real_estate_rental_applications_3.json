@@ -1,0 +1,53 @@
+{
+  "formInstance": {
+    "formId": "real_estate_rental_applications",
+    "formName": "Real Estate Rental Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 3,
+    "inputDocument": "Kathryn Hamilton, an experienced Television camera operator currently employed at Calderon LLC for 2 years, respectfully submits her rental application. Residing at 7356 Hill Run, South Margaretfurt, Wisconsin, 09319, she wishes to discuss potential tenancy opportunities. With a monthly income of USD 9510, Kathryn is seeking a rental property with a Maximum Monthly Rent of USD 1200. The ideal residence would facilitate her preferred move-in date of 2025/01/16 under a 12-month lease term. Emphasizing a strong preference for accommodation Near public transport, Kathryn also highlights the necessity for good connectivity to the city center. As a pet owner, she declares the presence of a Dog, medium-sized. Should you require further communication, Kathryn is readily reachable via email at annahutchinson@yahoo.com or by phone at +1-373-717-9013x86592.",
+    "goldAnswers": {
+      "Full Name": "Kathryn Hamilton",
+      "Email Address": "annahutchinson@yahoo.com",
+      "Phone Number": "+1-373-717-9013x86592",
+      "Date of Birth": "1999/12/30",
+      "Street Address": "7356 Hill Run",
+      "City": "South Margaretfurt",
+      "State": "Wisconsin",
+      "ZIP Code": "09319",
+      "Current Employer": "Calderon LLC",
+      "Job Title": "Television camera operator",
+      "Monthly Income (USD)": 9510,
+      "Length of Employment": "2 years",
+      "Preferred Move-in Date": "2025/01/16",
+      "Preferred Lease Term": "12 months",
+      "Maximum Monthly Rent (USD)": 1200,
+      "Preferred Area": "Near public transport",
+      "Do you have any pets?": "Yes",
+      "If yes, please describe your pets": "Dog, medium-sized",
+      "Additional Comments": "Needs good connectivity to the city center."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/rental-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

@@ -1,0 +1,40 @@
+{
+  "formInstance": {
+    "formId": "grant_applications",
+    "formName": "Grant or Research Funding Application",
+    "domain": "Academic & Research",
+    "instanceIndex": 20,
+    "inputDocument": "---\n\n**Grant Application**\n\n**Applicant Information**\n\n- **Full Name:** April Thomas  \n- **Email Address:** christopherhunt@hotmail.com  \n- **Gender:** Male  \n- **Date of Birth:** 29th December 1960  \n\n**Application Narrative**\n\nDear Grant Committee,\n\nI am writing to express my sincere interest in the grant opportunity provided by your esteemed organization. My name is April Thomas, and I am a male applicant born on the 29th of December, 1960. With great attention to detail and a commitment to adhering to all application guidelines, I present my candidacy for your consideration.\n\nI consider myself a devoted individual who believes in the transformative power of opportunities such as this. Despite the gender-neutrality of my name, please note my identification as a male applicant. I understand the importance of clarity and accuracy in any formal application process, thus I have provided my contact email—christopherhunt@hotmail.com—for any further communication you might require.\n\nIn the pursuit of maintaining an up-to-date and relevant skill set, I have decided not to subscribe to any newsletters at the current moment. This choice allows me to focus primarily on direct communication and updates pertaining to this grant application, ensuring that nothing distracts from my dedication to this endeavor.\n\nAdditionally, my life experiences have endowed me with a unique perspective and a wealth of knowledge, all of which I am eager to utilize in service of the mission this grant supports. By granting me this opportunity, you foster a relationship with someone who not only cherishes meticulous organization and clear communication but is also wholly committed to furthering your cause.\n\nThank you for considering my application. I hope that my personal story and professional ambitions align with the goals of your program, and I look forward to the opportunity to contribute and grow artistically under your guidance.\n\nWarm regards,\n\nApril Thomas\n\n---",
+    "goldAnswers": {
+      "First Name": "April",
+      "Last Name": "Thomas",
+      "Email": "christopherhunt@hotmail.com",
+      "Gender": "Male",
+      "Date of Birth": "1960/12/29",
+      "Subscribe to Newsletter": false
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/grant-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

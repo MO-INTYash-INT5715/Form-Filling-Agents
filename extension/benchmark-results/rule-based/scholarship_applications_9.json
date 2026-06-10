@@ -1,0 +1,57 @@
+{
+  "formInstance": {
+    "formId": "scholarship_applications",
+    "formName": "Scholarship Application for Students",
+    "domain": "Academic & Research",
+    "instanceIndex": 9,
+    "inputDocument": "### Scholarship Application\n\n**Applicant Information**  \n**First Name:** Julie  \n**Middle Name:** Taylor  \n**Last Name:** Powell  \n**Student ID:** 69668325  \n**Major/Field of Study:** Mathematics  \n**Current Academic Year:** Freshman  \n**Current GPA:** 3.07  \n**Current Financial Aid:** Student Loans  \n\n**Personal Financial Background**  \nComing from a family with an annual income of $87,788, my current financial situation has necessitated the reliance on student loans to pursue my education. Despite the challenges, my family has instilled in me the importance of education and community service, values that I strive to uphold in my academic and personal endeavors.\n\n**Academic Achievements**  \nMy dedication to academics has been demonstrated through various achievements, including receiving the Dean's List Award for Outstanding Academic Performance and ranking in the top 5% in the International Chemistry Olympiad. Additionally, I have showcased my problem-solving and innovative skills as the winner of the National Science Fair and as a finalist in the National Robotics Championship. Each of these accomplishments has not only enriched my knowledge but has also inspired me to further explore the depths of my chosen field.\n\n**Extracurricular Activities**  \nAlongside my academic pursuits, I actively engage in extracurricular activities. I serve as the Coordinator of the Youth Empowerment Program, where I devise initiatives aimed at fostering growth and leadership skills among our youth. My commitment to service extends to organizing charity events for the Red Cross, aimed at support for those in need, and volunteering at our local community center. These experiences have reinforced my belief in the importance of giving back to the community and instilled in me a sense of responsibility towards social causes.\n\n**Statement of Purpose**  \nI am deeply passionate about advancing my knowledge in the field of Mathematics. While my primary interest lies in solving complex problems through a mathematical lens, I believe in applying this knowledge to real-world environmental challenges. This scholarship would alleviate the financial burdens that accompany my education, allowing me to focus more intently on my studies without the looming stress of financial constraints. My aspiration is to utilize the knowledge gained through my studies to make meaningful contributions to sustainable development efforts, creating solutions that positively impact our world.\n\n**Academic Reference**  \nI would like to highlight the support of my academic reference, Lisa Morse, who can attest to my commitment and performance in my studies. She can be reached at the email address: owashington@moore.com.\n\nIn conclusion, I am eager for the opportunity to secure this scholarship, which I believe will not only support my educational journey but also enhance my ability to make a difference in our community and beyond. Thank you for considering my application. I look forward to the opportunity to contribute to the field of Mathematics and be a positive force in society.",
+    "goldAnswers": {
+      "First Name": "Julie",
+      "Middle Name": "Taylor",
+      "Last Name": "Powell",
+      "Student ID": 69668325,
+      "Major/Field of Study": "Mathematics",
+      "Current GPA": 3.07,
+      "Academic Year": "Freshman",
+      "Current Financial Aid": "Student Loans",
+      "Annual Family Income": 87788,
+      "Academic Achievements": [
+        "Received the Dean’s List Award for Outstanding Academic Performance",
+        "Top 5% in the International Chemistry Olympiad",
+        "Winner of the National Science Fair",
+        "Finalist in the National Robotics Championship"
+      ],
+      "Extracurricular Activities": [
+        "Coordinator of the Youth Empowerment Program",
+        "Organized charity events for the Red Cross",
+        "Volunteer at the local community center"
+      ],
+      "Statement of Purpose": "I am deeply passionate about advancing my knowledge in the field of environmental science. This scholarship will enable me to continue my studies without the pressure of financial burdens, and I plan to use the knowledge gained to make an impact in sustainable development.",
+      "Academic Reference": "Lisa Morse",
+      "Reference Email": "owashington@moore.com"
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/scholarship-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

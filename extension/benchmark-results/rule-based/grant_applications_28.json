@@ -1,0 +1,40 @@
+{
+  "formInstance": {
+    "formId": "grant_applications",
+    "formName": "Grant or Research Funding Application",
+    "domain": "Academic & Research",
+    "instanceIndex": 28,
+    "inputDocument": "---\n\n**Grant Application**\n\n**Applicant Information**  \n- **Name:** Joseph Smith  \n- **Email:** jondennis@yahoo.com  \n- **Gender:** Male  \n- **Date of Birth:** 1973/09/27  \n\nDear Grant Committee,\n\nMy name is Joseph Smith, and I am applying for this grant with utmost sincerity and enthusiasm. I believe my background and strong dedication make me a perfect candidate for consideration.\n\nHaving subscribed to the Newsletter, I ensure my proactive involvement in staying informed about all the updates and advancements relevant to the field. It reflects my commitment to engage continuously and keep abreast of opportunities and initiatives that can further enhance my contributions.\n\nThe importance of professional development and continuous learning drives me as an individual, and I am relentless in seeking avenues that celebrate and propound personal growth. This is not simply an academic pursuit; for me, it is a life endeavor rooted deeply in my character since my birth on the 27th of September, 1973.\n\nMy consistent communication via my email, jondennis@yahoo.com, ensures that I am reachable and responsive. This is part of my effort to remain connected and available to contribute actively to any communications or follow-ups that may arise relative to this grant application process.\n\nI am gratefully eager to embrace the possibilities that this grant could provide, allowing me to expand my contributions both in scope and in depth. I entertain this opportunity with warmth and hope you will consider this expression as a testament to my dedicated ambitions and integrity.\n\nThank you for considering my application. I am looking forward to the possibility of contributing meaningfully with the support of this esteemed grant.\n\nWarmest regards,\n\n**Joseph Smith**\n\n---",
+    "goldAnswers": {
+      "First Name": "Joseph",
+      "Last Name": "Smith",
+      "Email": "jondennis@yahoo.com",
+      "Gender": "Male",
+      "Date of Birth": "1973/09/27",
+      "Subscribe to Newsletter": true
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/grant-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

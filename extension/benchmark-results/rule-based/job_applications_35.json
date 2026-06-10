@@ -1,0 +1,38 @@
+{
+  "formInstance": {
+    "formId": "job_applications",
+    "formName": "Job Application for University Positions",
+    "domain": "Academic & Research",
+    "instanceIndex": 35,
+    "inputDocument": "[Your Address]  \n[City, State, ZIP Code]  \n[Your Email Address]  \n[Your Phone Number]  \n[Date]  \n\n[Employer's Name]  \n[Company's Name]  \n[Company's Address]  \n[City, State, ZIP Code]  \n\nDear [Employer's Name],\n\nI am writing to express my interest in the Talent Acquisition Specialist position within the Human Resources department at [Company's Name], as advertised. My name is Harper Wu, and I have a strong background in recruitment and talent acquisition, making me excited to help the HR department bring in top talent.\n\nThroughout my career, I have honed my skills in identifying and securing exceptional candidates who not only meet but exceed expectations. I am eager to apply these skills at [Company's Name] and contribute to the growth and success of the Human Resources team.\n\nThank you for considering my application. I look forward to the opportunity to discuss how I can contribute to the continued success of [Company's Name].\n\nSincerely,\n\nHarper Wu",
+    "goldAnswers": {
+      "Applicant Name": "Harper Wu",
+      "Position Applied For": "Talent Acquisition Specialist",
+      "Preferred Department": "Human Resources",
+      "Cover Letter": "With a strong background in recruitment and talent acquisition, I am excited to help the HR department bring in top talent."
+    },
+    "multiPage": false,
+    "formPath": "/academic-research/job-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

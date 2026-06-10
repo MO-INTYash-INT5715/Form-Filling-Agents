@@ -1,0 +1,40 @@
+{
+  "formInstance": {
+    "formId": "grant_applications",
+    "formName": "Grant or Research Funding Application",
+    "domain": "Academic & Research",
+    "instanceIndex": 22,
+    "inputDocument": "**Grant Application**\n\n**Applicant Information**  \n\n- **Name:** Angela Solis  \n- **Email Address:** pnguyen@gmail.com  \n- **Gender:** Female  \n- **Date of Birth:** 1975/02/20  \n\n**Newsletter Subscription:**  \nI have chosen to subscribe to the newsletter to stay informed about relevant updates and insights that could benefit my endeavors.\n\n**Personal Statement:**  \n\nGreetings Committee,\n\nMy name is Angela Solis. Throughout my life, I have committed myself to both personal and professional growth. Born on the 20th of February, 1975, I have amassed a wealth of experience that I bring forth in my quest for this grant. It is with great eagerness that I express my intention to access the resources and opportunities this grant will provide.  \n\nMy decision to subscribe to the newsletter reflects my proactive approach to maintaining connectivity with pioneering thoughts and pivotal opportunities. I am confident that the insights gained will greatly enhance my ability to contribute positively to the community.  \n\nThank you kindly for your consideration. I am hopeful for the possibility to further express my dedication and fervor through the generous support from your distinguished grant.  \n\nWarm regards,  \n\nAngela Solis",
+    "goldAnswers": {
+      "First Name": "Angela",
+      "Last Name": "Solis",
+      "Email": "pnguyen@gmail.com",
+      "Gender": "Female",
+      "Date of Birth": "1975/02/20",
+      "Subscribe to Newsletter": true
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/grant-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

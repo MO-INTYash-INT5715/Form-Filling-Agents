@@ -1,0 +1,56 @@
+{
+  "formInstance": {
+    "formId": "scholarship_applications",
+    "formName": "Scholarship Application for Students",
+    "domain": "Academic & Research",
+    "instanceIndex": 32,
+    "inputDocument": "Dear Scholarship Committee,\n\nMy name is Alexander Michael Koch, and I am a senior majoring in Political Science at our esteemed university. I am writing to apply for the scholarship opportunity available to support my academic journey.\n\nI come from a humble background with an annual family income of $27,884. Currently, my academic achievements include being recognized on the Dean's List for outstanding performance and securing the first place in the University Math Competition. These accomplishments demonstrate my commitment to excellence in my studies.\n\nApart from my academic pursuits, I am extensively involved in extracurricular activities on campus. I am the co-founder of the Campus Startup Initiative, a member of the Environmental Awareness Club, the University Debate Team, and also serve as the coordinator of the Youth Empowerment Program. These activities have not only broadened my horizons but have also enhanced my leadership and communication skills.\n\nMy GPA stands at 2.94, and I currently rely on grants for financial aid. However, this scholarship would alleviate the financial burden on my family and me, allowing me to focus solely on my studies and complete my degree successfully. My ultimate goal is to pursue a career in data science, where I aspire to contribute towards solving global challenges.\n\nI am confident in my ability to excel in this field, given my passion for learning and dedication to making a difference. I am grateful for your consideration of my application and would like to express my appreciation to my academic reference, Christy Jordan, whose contact email is melissa61@gmail.com.\n\nThank you for this opportunity to apply for the scholarship. I look forward to the possibility of contributing to the betterment of our society through the knowledge and skills I gain during my academic journey.\n\nSincerely,\nAlexander Michael Koch (Student ID: 986084)",
+    "goldAnswers": {
+      "First Name": "Alexander",
+      "Middle Name": "Michael",
+      "Last Name": "Koch",
+      "Student ID": 986084,
+      "Major/Field of Study": "Political Science",
+      "Current GPA": 2.94,
+      "Academic Year": "Senior",
+      "Current Financial Aid": "Grants",
+      "Annual Family Income": 27884,
+      "Academic Achievements": [
+        "Received the Dean’s List Award for Outstanding Academic Performance",
+        "First place in the University Math Competition"
+      ],
+      "Extracurricular Activities": [
+        "Co-founder of the Campus Startup Initiative",
+        "Member of the Environmental Awareness Club",
+        "Member of the University Debate Team",
+        "Coordinator of the Youth Empowerment Program"
+      ],
+      "Statement of Purpose": "This scholarship will allow me to focus on my studies and complete my degree without worrying about financial constraints. It will help me pursue a career in data science, where I plan to contribute to solving global challenges.",
+      "Academic Reference": "Christy Jordan",
+      "Reference Email": "melissa61@gmail.com"
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/scholarship-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

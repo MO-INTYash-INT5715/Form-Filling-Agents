@@ -1,0 +1,53 @@
+{
+  "formInstance": {
+    "formId": "real_estate_rental_applications",
+    "formName": "Real Estate Rental Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 28,
+    "inputDocument": "Monica Ryan, born on December 7, 1998, currently resides at 1133 Sean Creek in Sanchezberg, Alaska, ZIP Code 82498. She can be contacted via email at elizabethryan@williams.com or by phone at 001-205-445-4578x670. Employed by Leach Ltd as a Technical author, Monica has been with the company for 1 year, earning a monthly income of $9,324. She is seeking a rental property with a maximum monthly rent of $4,760. Monica is planning for a move-in date of January 11, 2025, and is interested in a 12-month lease term. Her preferred area is noted as a \"Quiet neighborhood.\" Monica does have a pet and describes them as \"Dog, medium-sized.\" She has expressed a preference for \"quiet and residential areas\" in her additional comments.",
+    "goldAnswers": {
+      "Full Name": "Monica Ryan",
+      "Email Address": "elizabethryan@williams.com",
+      "Phone Number": "001-205-445-4578x670",
+      "Date of Birth": "1998/12/07",
+      "Street Address": "1133 Sean Creek",
+      "City": "Sanchezberg",
+      "State": "Alaska",
+      "ZIP Code": "82498",
+      "Current Employer": "Leach Ltd",
+      "Job Title": "Technical author",
+      "Monthly Income (USD)": 9324,
+      "Length of Employment": "1 year",
+      "Preferred Move-in Date": "2025/01/11",
+      "Preferred Lease Term": "12 months",
+      "Maximum Monthly Rent (USD)": 4760,
+      "Preferred Area": "Quiet neighborhood",
+      "Do you have any pets?": "Yes",
+      "If yes, please describe your pets": "Dog, medium-sized",
+      "Additional Comments": "Prefer quiet and residential areas."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/rental-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

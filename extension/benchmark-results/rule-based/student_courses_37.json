@@ -1,0 +1,45 @@
+{
+  "formInstance": {
+    "formId": "student_courses",
+    "formName": "Student Course Registration Form",
+    "domain": "Academic & Research",
+    "instanceIndex": 37,
+    "inputDocument": "Subject: Course Enrollment Request for Fall 2025 Semester\n\nDear Enrollment Office,\n\nI hope this message finds you well. I am writing to formally request enrollment for the upcoming Fall 2025 semester. Below, I provide comprehensive details pertinent to my enrollment request, ensuring that all necessary information is enclosed herein.\n\nFirstly, allow me to introduce myself. I am Robert Davis, a diligent student within the Information Technology program. My Student ID is 79404404. I am eager to continue my education and expand my knowledge in the field of Information Technology through the esteemed courses offered by your department.\n\nIn pursuit of my academic goals, I am seeking enrollment in the following selected courses:\n\n1. CS102 - Data Structures\n2. CS104 - Web Development\n\nThese courses are integral to my program and will undoubtedly enhance my understanding and skills in technology.\n\nPlease feel free to contact me at your convenience should there be any further information required. My email address is christopherdominguez@hotmail.com, and I can also be reached via phone at 160-035-5757x728.\n\nMoreover, I would like to note that I have No special requirements.\n\nThank you for considering my application. I eagerly anticipate your positive response, allowing me the opportunity to partake in the forthcoming semester's courses.\n\nWarm regards,\n\nRobert Davis  \n(Student ID: 79404404)",
+    "goldAnswers": {
+      "Full Name": "Robert Davis",
+      "Student ID": 79404404,
+      "Email": "christopherdominguez@hotmail.com",
+      "Phone Number": "160-035-5757x728",
+      "Semester": "Fall 2025",
+      "Program": "Information Technology",
+      "Selected Courses": [
+        "CS102 - Data Structures",
+        "CS104 - Web Development"
+      ],
+      "Special Requirements or Comments": "No special requirements."
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/course-registration"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

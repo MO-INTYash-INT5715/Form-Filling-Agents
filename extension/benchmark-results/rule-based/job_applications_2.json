@@ -1,0 +1,38 @@
+{
+  "formInstance": {
+    "formId": "job_applications",
+    "formName": "Job Application for University Positions",
+    "domain": "Academic & Research",
+    "instanceIndex": 2,
+    "inputDocument": "[Your Address]  \n[City, State, ZIP Code]  \n[Email Address]  \n[Phone Number]  \n[Date]  \n\nHiring Manager  \n[Company's Name]  \n[Company's Address]  \n[City, State, ZIP Code]  \n\nDear Hiring Manager,\n\nMy name is Maria Chen, and I am writing to express my interest in the Marketing Manager position at [Company's Name], as advertised. I am keen to join your esteemed company’s Marketing department, where I am confident that my skills and experience would be of great value.\n\nI am excited to bring my extensive marketing experience to the Marketing team to help drive brand growth. Over the years, I have honed my ability to develop and implement strategic marketing plans that improve brand visibility and propel market engagement. My expertise lies not only in formulating effective strategies but also in executing them to achieve and exceed organizational goals.\n\nHaving always admired [Company's Name] for its commitment to innovation and excellence in the marketing sphere, I am eager to contribute to your success. I am particularly enthusiastic about this opportunity because it aligns perfectly with my career aspirations and my passion for marketing.\n\nThank you for considering my application. I look forward to the possibility of discussing this exciting opportunity further.\n\nSincerely,\n\nMaria Chen",
+    "goldAnswers": {
+      "Applicant Name": "Maria Chen",
+      "Position Applied For": "Marketing Manager",
+      "Preferred Department": "Marketing",
+      "Cover Letter": "I am excited to bring my extensive marketing experience to the Marketing team to help drive brand growth."
+    },
+    "multiPage": false,
+    "formPath": "/academic-research/job-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

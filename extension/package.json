@@ -24,7 +24,14 @@
     "benchmark:vision-agent:quick": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --quick --agent vision-agent",
     "ablation:quick": "tsx --tsconfig tsconfig.scripts.json scripts/ablation-study.ts --quick",
     "ablation:full": "tsx --tsconfig tsconfig.scripts.json scripts/ablation-study.ts",
-    "ablation:agents": "tsx --tsconfig tsconfig.scripts.json scripts/ablation-study.ts --quick --agents"
+    "ablation:agents": "tsx --tsconfig tsconfig.scripts.json scripts/ablation-study.ts --quick --agents",
+    "benchmark:rule-based": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --agent rule-based",
+    "benchmark:llm-structured": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --agent llm-structured",
+    "benchmark:mcp-agent": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --agent mcp-agent",
+    "benchmark:vlm-agent": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --agent vlm-agent",
+    "benchmark:vision-agent": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --agent vision-agent",
+    "benchmark:hybrid": "tsx --tsconfig tsconfig.scripts.json scripts/run-benchmark.ts --agent hybrid",
+    "ablation": "tsx --tsconfig tsconfig.scripts.json scripts/ablation-study.ts"
   },
   "dependencies": {
     "dotenv": "^17.4.2",

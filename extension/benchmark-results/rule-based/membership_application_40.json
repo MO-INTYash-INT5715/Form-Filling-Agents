@@ -1,0 +1,46 @@
+{
+  "formInstance": {
+    "formId": "membership_application",
+    "formName": "Association Membership Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 40,
+    "inputDocument": "[Your Name]\n[Your Address]\n[City, State, Zip]\n[Email Address]\n[Phone Number]\n[Date]\n\n[Professional Association Name]\n[Membership Committee]\n[Address]\n[City, State, Zip]\n\nDear Membership Committee,\n\nI am writing to express my interest in becoming a Professional Member of [Professional Association Name]. My name is Emma White, and I currently work as an Art Director at Creative Minds. I hold a Bachelor's degree in Graphic Design and have accumulated 4 years of experience in the field.\n\nI believe that joining [Professional Association Name] will provide me with valuable networking opportunities, access to industry resources, and professional development opportunities to further my career in graphic design. As an active member, I am eager to contribute my skills and knowledge to the association while also learning from fellow members and industry experts.\n\nMy professional reference, Michael Brown, can attest to my dedication, creativity, and ability to work collaboratively within a team. I am committed to staying current with trends and advancements in graphic design and strive to uphold the highest standards of professionalism in my work.\n\nI am confident that my background and experience make me a strong candidate for Professional Membership in [Professional Association Name]. I am committed to contributing positively to the association and am excited about the prospect of growing both personally and professionally through my involvement.\n\nThank you for considering my application. I look forward to the opportunity to become a member of [Professional Association Name] and contribute to the vibrant community of professionals in the graphic design industry.\n\nSincerely,\n\nEmma White",
+    "goldAnswers": {
+      "name": "Emma White",
+      "email": "emma.white@example.com",
+      "phone": "555-1010",
+      "date_of_birth": "1994-08-22",
+      "degree": "Bachelor's in Graphic Design",
+      "experience_years": 4,
+      "current_position": "Art Director at Creative Minds",
+      "membership_type": "Professional Member",
+      "reference": {
+        "name": "Michael Brown",
+        "contact": "michael.brown@example.com"
+      }
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/membership-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

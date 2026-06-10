@@ -1,0 +1,45 @@
+{
+  "formInstance": {
+    "formId": "student_courses",
+    "formName": "Student Course Registration Form",
+    "domain": "Academic & Research",
+    "instanceIndex": 33,
+    "inputDocument": "[Your Name]  \n[Your Address]  \n[City, State, Zip Code]  \n[Email Address]  \n[Phone Number]  \n[Date]  \n\nAdmissions Office  \n[Institution Name]  \n[Address]  \n[City, State, Zip Code]  \n\nSubject: Course Enrollment Request for Spring 2025 Semester  \n\nDear Admissions Committee,  \n\nI hope this message finds you well. My name is April Moore, and I am writing to formally request enrollment in specific courses for the upcoming Spring 2025 semester as part of my studies in the Information Technology program.  \n\nEnclosed below, I have detailed my personal and academic information pertinent to this enrollment request:  \n\n- **Student ID:** 91417254  \n- **Email:** kevinfarrell@mcgee.net  \n- **Phone Number:** +1-897-125-8749x80026  \n\nFor the Spring 2025 semester, I have selected the following courses to enhance my foundational skills and advance my knowledge in key areas of Information Technology:  \n\n1. **CS101 - Introduction to Programming**  \n2. **CS103 - Database Systems**  \n\nBoth courses align perfectly with my academic and career aspirations and are crucial components as I progress in my chosen field. Furthermore, I kindly request your attention to my special requirements during this semester. As stated in my course enrollment form, I will need additional support with coding, a necessity to ensure my successful understanding and application of programming principles.  \n\nI assure you of my utmost dedication to my studies and look forward to contributing positively to the classroom environment. Should there be any further information you require, please do not hesitate to contact me via email or phone.  \n\nThank you for considering my application. I am eagerly anticipating your favorable response and the opportunity to commence my courses under your esteemed faculty's guidance.  \n\nWarm regards,  \n\nApril Moore  \n[Handwritten Signature or Electronic Signature after printing, if applicable]  \n[Your LinkedIn Profile or Website, if relevant]",
+    "goldAnswers": {
+      "Full Name": "April Moore",
+      "Student ID": 91417254,
+      "Email": "kevinfarrell@mcgee.net",
+      "Phone Number": "+1-897-125-8749x80026",
+      "Semester": "Spring 2025",
+      "Program": "Information Technology",
+      "Selected Courses": [
+        "CS101 - Introduction to Programming",
+        "CS103 - Database Systems"
+      ],
+      "Special Requirements or Comments": "Need additional support with coding."
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/course-registration"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

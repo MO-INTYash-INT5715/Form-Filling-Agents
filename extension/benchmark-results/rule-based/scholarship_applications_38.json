@@ -1,0 +1,56 @@
+{
+  "formInstance": {
+    "formId": "scholarship_applications",
+    "formName": "Scholarship Application for Students",
+    "domain": "Academic & Research",
+    "instanceIndex": 38,
+    "inputDocument": "**Scholarship Application**\n\n**Applicant Information:**\n\n- **First Name:** Gregory  \n- **Middle Name:** Laura  \n- **Last Name:** White  \n- **Student ID:** 43067727  \n- **Major/Field of Study:** Sociology  \n- **Current GPA:** 2.87  \n- **Academic Year:** Senior  \n- **Current Financial Aid:** Grants  \n- **Annual Family Income:** $99,575  \n\n---\n\n**Dear Scholarship Committee,**\n\nI am writing to apply for the scholarship that aims to support passionate and dedicated students like myself. My name is Gregory Laura White, and I am currently a senior majoring in Sociology. Throughout my academic journey, I have always been driven to excel and make a positive impact on society. With a GPA of 2.87, I have continuously sought to challenge myself and expand my horizons, which is reflected in my academic achievements.\n\nI have been fortunate to receive recognition for my efforts, such as the Dean’s List Award for Outstanding Academic Performance, which highlights my dedication and hard work. Additionally, I take pride in being a finalist in the National Robotics Championship and placing in the top 5% in the International Chemistry Olympiad. These experiences have not only honed my analytical and problem-solving skills but also taught me the importance of collaboration and innovation. Furthermore, being a winner of the National Science Fair has fueled my passion for learning and exploration within various fields of study.\n\nAs a well-rounded student, I fine-tune my leadership and interpersonal skills through various extracurricular activities. I contribute to my local community by volunteering at the community center, where I assist in outreach programs that aim to uplift and support underprivileged neighborhoods. Furthermore, I have taken on the responsibility of organizing charity events for the Red Cross, which has deepened my understanding of social issues and fostered my commitment to community service.\n\nThe purpose of this scholarship extends beyond financial assistance for my education. I harbored a deep passion for environmental science, and this scholarship will enable me to continue my studies without the pressure of financial burdens. With the knowledge I cultivate, I aspire to make a substantial impact in sustainable development. This vision aligns perfectly with my long-term goals of advocating for responsible social and environmental policies that prioritize community wellbeing and ecological health.\n\nI have sought guidance from esteemed educators throughout my academic career, and I have been fortunate to have mentors like Alexander Terry, who has greatly influenced my studies and aspirations. He would be glad to provide a reference regarding my academic performance and dedication to my field of study, and can be reached at joseph77@hotmail.com.\n\nAs I reflect on my journey thus far, I am deeply motivated to further my education in a way that positively influences the world around me. This scholarship will provide me with the opportunity to fulfill this goal, ensuring that financial constraints do not hinder my academic pursuits.\n\nThank you for considering my application. I am eager to potentially represent your esteemed scholarship program, and I look forward to the prospect of making a meaningful contribution to our society through my studies.\n\nSincerely,  \nGregory Laura White",
+    "goldAnswers": {
+      "First Name": "Gregory",
+      "Middle Name": "Laura",
+      "Last Name": "White",
+      "Student ID": 43067727,
+      "Major/Field of Study": "Sociology",
+      "Current GPA": 2.87,
+      "Academic Year": "Senior",
+      "Current Financial Aid": "Grants",
+      "Annual Family Income": 99575,
+      "Academic Achievements": [
+        "Received the Dean’s List Award for Outstanding Academic Performance",
+        "Finalist in the National Robotics Championship",
+        "Top 5% in the International Chemistry Olympiad",
+        "Winner of the National Science Fair"
+      ],
+      "Extracurricular Activities": [
+        "Volunteer at the local community center",
+        "Organized charity events for the Red Cross"
+      ],
+      "Statement of Purpose": "I am deeply passionate about advancing my knowledge in the field of environmental science. This scholarship will enable me to continue my studies without the pressure of financial burdens, and I plan to use the knowledge gained to make an impact in sustainable development.",
+      "Academic Reference": "Alexander Terry",
+      "Reference Email": "joseph77@hotmail.com"
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/scholarship-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

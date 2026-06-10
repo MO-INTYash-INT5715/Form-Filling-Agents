@@ -1,0 +1,44 @@
+{
+  "formInstance": {
+    "formId": "student_courses",
+    "formName": "Student Course Registration Form",
+    "domain": "Academic & Research",
+    "instanceIndex": 47,
+    "inputDocument": "Subject: Course Enrollment Request for Fall 2025 Semester\n\nDear Enrollment Office,\n\nI hope this message finds you well. My name is Mary Tucker, and I am writing to formally request enrollment in the Data Science program for the upcoming Fall 2025 semester. As a dedicated student eager to expand my knowledge and skills, I am keenly interested in commencing my journey with the selected courses as specified below.\n\n**Personal Details:**\n\n- Full Name: Mary Tucker\n- Student ID: 44170163\n- Email: whitelauren@carter.com\n- Phone Number: 001-079-734-2368\n\n**Program Information:**\n- Program: Data Science\n- Semester: Fall 2025\n\n**Course Selection:**\n- CS101 - Introduction to Programming\n\nI am enthusiastic about further broadening my understanding of computational theories and their practical applications, particularly through the Initial CS101 module. Additionally, I have aspirations to delve into various aspects of technology, as stated in my special requirements: \"Looking forward to exploring web development.\" This specific interest is one I am thrilled to pursue alongside the foundational elements of this program.\n\nPlease consider this correspondence as a formal request for enrollment in the aforementioned course. I am readily available should you require any additional information for my enrollment process and look forward to your positive response.\n\nThank you for your time and assistance.\n\nWarm regards,\n\nMary Tucker  \nStudent ID: 44170163  \nEmail: whitelauren@carter.com  \nPhone: 001-079-734-2368",
+    "goldAnswers": {
+      "Full Name": "Mary Tucker",
+      "Student ID": 44170163,
+      "Email": "whitelauren@carter.com",
+      "Phone Number": "001-079-734-2368",
+      "Semester": "Fall 2025",
+      "Program": "Data Science",
+      "Selected Courses": [
+        "CS101 - Introduction to Programming"
+      ],
+      "Special Requirements or Comments": "Looking forward to exploring web development."
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/course-registration"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

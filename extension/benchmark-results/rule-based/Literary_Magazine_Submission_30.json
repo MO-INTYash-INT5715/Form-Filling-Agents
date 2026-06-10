@@ -1,0 +1,45 @@
+{
+  "formInstance": {
+    "formId": "Literary_Magazine_Submission",
+    "formName": "Literary Magazine Submission Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 30,
+    "inputDocument": "Jack Carter submits for your consideration a work of Fiction titled \"Forgotten Legends.\" With a Word Count of 5800, this captivating narrative immerses readers in \"A fantastical adventure set in a world of myths and forgotten gods.\" Jack Carter has indicated a Preferred Issue of Spring 2024 for publication. Notably, this work has not been previously published, and it is a simultaneous submission. The author has agreed to the submission guidelines and terms of publication. Although the Manuscript File has not been included, further communication can be conducted via Email Address: jack.carter77@icloud.com.",
+    "goldAnswers": {
+      "Author Name": "Jack Carter",
+      "Email Address": "jack.carter77@icloud.com",
+      "Title": "Forgotten Legends",
+      "Genre": "Fiction",
+      "Word Count": 5800,
+      "Abstract/Summary": "A fantastical adventure set in a world of myths and forgotten gods.",
+      "Manuscript File": "None",
+      "Preferred Issue": "Spring 2024",
+      "This work has been previously published": "No",
+      "This is a simultaneous submission": "Yes",
+      "I agree to the submission guidelines and terms of publication": "Yes"
+    },
+    "multiPage": false,
+    "formPath": "/arts-creative/literary-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

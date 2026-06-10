@@ -1,0 +1,44 @@
+{
+  "formInstance": {
+    "formId": "paper_submissions",
+    "formName": "Paper Submission Form",
+    "domain": "Academic & Research",
+    "instanceIndex": 19,
+    "inputDocument": "**Paper Submission Application**\n\n**To Whom It May Concern,**\n\nI am writing to formally submit my research paper for consideration entitled \"Understanding Neural Networks in Deep Learning.\" This work is a comprehensive exploration of the fundamental concepts inherent to neural networks and their pivotal applications in the realm of deep learning, with a focus on their impact on image and speech recognition. As an academic deeply embedded in this field, I hope to contribute meaningfully to the ongoing discourse in artificial intelligence.\n\nThe abstract of my paper provides a succinct overview and is crafted to eloquently encapsulate the scope of the research by asserting, \"This paper explores the fundamental concepts of neural networks and their applications in deep learning, especially in image and speech recognition.\" This study offers valuable insights that I believe will be of genuine interest to a wide array of scholars and practitioners working within this domain.\n\nIn order to highlight the central themes addressed in my paper, I have pinpointed the following keywords: \"Neural Networks,\" \"Deep Learning,\" and \"AI\". These terms precisely indicate the scholarly emphasis and technological elements discussed.\n\nThe paper is categorized under \"Artificial Intelligence,\" a category that underscores not only the core disciplines around which the content revolves but also aligns perfectly with the interests and mission of the journals that are purveyors of cutting-edge research in this exciting and ever-evolving field.\n\nShould any further information or clarification be required, I am fully open to facilitating further inquiries or providing additional data as needed. I sincerely appreciate the opportunity to present my paper, which I believe stands as a testament to both innovative thought and rigorous academic research.\n\nThank you for considering this submission. I look forward to the potential opportunity of contributing to your publication's distinguished tradition of excellence.\n\nWarm regards,\n\nMatthew Adams  \nmatthew.adams@university.edu",
+    "goldAnswers": {
+      "Author Name": "Matthew Adams",
+      "Email": "matthew.adams@university.edu",
+      "Paper Title": "Understanding Neural Networks in Deep Learning",
+      "Abstract": "This paper explores the fundamental concepts of neural networks and their applications in deep learning, especially in image and speech recognition.",
+      "Keywords": [
+        "Neural Networks",
+        "Deep Learning",
+        "AI"
+      ],
+      "Paper Category": "Artificial Intelligence"
+    },
+    "multiPage": false,
+    "formPath": "/academic-research/paper-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

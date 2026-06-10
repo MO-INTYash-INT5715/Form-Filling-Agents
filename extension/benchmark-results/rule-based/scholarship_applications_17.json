@@ -1,0 +1,54 @@
+{
+  "formInstance": {
+    "formId": "scholarship_applications",
+    "formName": "Scholarship Application for Students",
+    "domain": "Academic & Research",
+    "instanceIndex": 17,
+    "inputDocument": "Dear Scholarship Committee,\n\nMy name is Heather Miguel Carter, and I am a freshman majoring in Engineering with a current GPA of 2.66 at this esteemed institution. I am applying for the scholarship opportunity to assist in financing my education and pursue my passion for computer engineering.\n\nDespite facing financial challenges, I have managed to excel academically, being recognized as a finalist in the National Robotics Championship and receiving the Dean’s List Award for Outstanding Academic Performance. These achievements are a testament to my dedication and hard work towards my academic endeavors.\n\nIn addition to my academic achievements, I am actively involved in extracurricular activities, such as organizing charity events for the Red Cross and being a member of the Environmental Awareness Club. These experiences have not only broadened my perspective but also instilled in me the values of leadership, teamwork, and social responsibility.\n\nI come from a family with an annual income of $50,798 and currently rely on student loans for financial aid. This scholarship would alleviate the financial burden on my family and allow me to focus more on my studies and extracurricular activities. With this support, I aim to conduct research in cutting-edge technologies, contributing to innovation in the tech industry.\n\nI have attached a statement of purpose outlining my aspirations and how this scholarship will enable me to achieve my long-term career goals. Moreover, my academic reference, Kaylee Ashley, can attest to my academic capabilities and dedication to my field of study.\n\nI am truly grateful for your consideration of my application and the opportunity to further my education through your generous support. Thank you for your time and consideration.\n\nSincerely,\nHeather Miguel Carter\nStudent ID: 4813002\nMajor/Field of Study: Engineering\nEmail: jill73@gmail.com",
+    "goldAnswers": {
+      "First Name": "Heather",
+      "Middle Name": "Miguel",
+      "Last Name": "Carter",
+      "Student ID": 4813002,
+      "Major/Field of Study": "Engineering",
+      "Current GPA": 2.66,
+      "Academic Year": "Freshman",
+      "Current Financial Aid": "Student Loans",
+      "Annual Family Income": 50798,
+      "Academic Achievements": [
+        "Finalist in the National Robotics Championship",
+        "Received the Dean’s List Award for Outstanding Academic Performance"
+      ],
+      "Extracurricular Activities": [
+        "Organized charity events for the Red Cross",
+        "Member of the Environmental Awareness Club"
+      ],
+      "Statement of Purpose": "With a strong interest in computer engineering, this scholarship will provide me the resources to further my education and conduct research in cutting-edge technologies, helping me achieve my long-term career goals of innovating in the tech industry.",
+      "Academic Reference": "Kaylee Ashley",
+      "Reference Email": "jill73@gmail.com"
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/scholarship-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

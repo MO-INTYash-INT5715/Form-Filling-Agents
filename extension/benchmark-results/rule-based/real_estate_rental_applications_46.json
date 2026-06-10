@@ -1,0 +1,53 @@
+{
+  "formInstance": {
+    "formId": "real_estate_rental_applications",
+    "formName": "Real Estate Rental Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 46,
+    "inputDocument": "Michael Hamilton, a resident of 47281 Michael Ports, Lake Susanshire, Oklahoma, 42519, is submitting his rental application for consideration. Born on 1970/11/18, Michael is currently employed at Berg-Robinson, where he holds the position of Scientist, marine. With a monthly income of 2871 USD and a tenure of 1 year at his current job, Michael is keen on relocating to a new residence. His preferred move-in date is 2025/01/17, and he is seeking a lease term of 12 months, with the ability to accommodate a maximum monthly rent of 3883 USD.\n\nMichael specifies the \"Preferred Area\" as Near public transport, highlighting his intent to reside within accessible public transit options. While he confirms having no pets, his application includes a required field clarifying: \"If yes, please describe your pets\" as No pets. Additionally, Michael includes \"Additional Comments\" to further inform potential landlords that he would \"Prefer quiet and residential areas.\"\n\nFor communications, Michael Hamilton is available via email at david66@ramos-hester.com or by phone at 092.329.9339x33792. His attention to detail and commitment to securing a suitable home make him a diligent and reliable prospective tenant.",
+    "goldAnswers": {
+      "Full Name": "Michael Hamilton",
+      "Email Address": "david66@ramos-hester.com",
+      "Phone Number": "092.329.9339x33792",
+      "Date of Birth": "1970/11/18",
+      "Street Address": "47281 Michael Ports",
+      "City": "Lake Susanshire",
+      "State": "Oklahoma",
+      "ZIP Code": "42519",
+      "Current Employer": "Berg-Robinson",
+      "Job Title": "Scientist, marine",
+      "Monthly Income (USD)": 2871,
+      "Length of Employment": "1 year",
+      "Preferred Move-in Date": "2025/01/17",
+      "Preferred Lease Term": "12 months",
+      "Maximum Monthly Rent (USD)": 3883,
+      "Preferred Area": "Near public transport",
+      "Do you have any pets?": "No",
+      "If yes, please describe your pets": "No pets",
+      "Additional Comments": "Prefer quiet and residential areas."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/rental-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

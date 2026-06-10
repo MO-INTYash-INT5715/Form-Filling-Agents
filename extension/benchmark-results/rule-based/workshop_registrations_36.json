@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "workshop_registrations",
+    "formName": "Educational Workshop Registration",
+    "domain": "Professional & Business",
+    "instanceIndex": 36,
+    "inputDocument": "Subject: Workshop Registration Request for Continuing Education\n\nDear [Workshop Coordinator's Name],\n\nI am writing to formally register for the upcoming workshop under the Technology & IT category. My name is Jacob Olson, and I represent the organization Richard, Berger and Mcneil. I am keen to attend the session scheduled for January 4, 2025, at 3PM, which will be conducted online. Please find below my registration details:\n\nFull Name: Jacob Olson  \nEmail Address: blairwilliam@hotmail.com  \nPhone Number: 425-997-3888  \nOrganization/Company: Richard, Berger and Mcneil  \nWorkshop Category: Technology & IT  \nPreferred Session Date: 2025/01/04  \nPreferred Time Slot: 3PM  \nPreferred Delivery Mode: Online  \nHighest Education Level: Master's Degree  \nYears of Professional Experience: 16  \nCurrent Role/Position: Data scientist  \nDietary Requirements: Kosher  \nAccessibility Requirements: None  \nPayment Method: Credit Card  \nBilling Address: 1478 Bradley Fork Suite 247  \nNew Danielland, ND 36498  \n\nAs a data scientist, I am excited to learn new skills in business management to better handle operational challenges. I am particularly interested in hands-on learning opportunities and would prefer an interactive format. \n\nPlease let me know if there are any further steps I should take to complete this registration. You may reach me via my email or phone for any additional information required. I am looking forward to participating in the workshop and enhancing my professional skills.\n\nThank you for facilitating this opportunity.\n\nSincerely,\n\nJacob Olson",
+    "goldAnswers": {
+      "Full Name": "Jacob Olson",
+      "Email Address": "blairwilliam@hotmail.com",
+      "Phone Number": "425-997-3888",
+      "Organization/Company": "Richard, Berger and Mcneil",
+      "Workshop Category": "Technology & IT",
+      "Preferred Session Date": "2025/01/04",
+      "Preferred Time Slot": "3PM",
+      "Preferred Delivery Mode": "Online",
+      "Highest Education Level": "Master's Degree",
+      "Years of Professional Experience": 16,
+      "Current Role/Position": "Data scientist",
+      "Dietary Requirements": "Kosher",
+      "Accessibility Requirements": "None",
+      "Payment Method": "Credit Card",
+      "Billing Address": "1478 Bradley Fork Suite 247\nNew Danielland, ND 36498",
+      "What do you hope to learn from this workshop?": "I am excited to learn new skills in business management to better handle operational challenges.",
+      "Any other special requests or comments?": "I am particularly interested in hands-on learning opportunities and would prefer an interactive format."
+    },
+    "multiPage": false,
+    "formPath": "/professional-business/workshop-registration"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

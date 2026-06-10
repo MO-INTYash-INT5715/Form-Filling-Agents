@@ -1,0 +1,53 @@
+{
+  "formInstance": {
+    "formId": "real_estate_rental_applications",
+    "formName": "Real Estate Rental Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 9,
+    "inputDocument": "Corey Keller, born on 2002/02/25, is a prospective tenant seeking a rental property. He currently resides at 345 Thomas Cape Suite 553, South Maria, Missouri, 64302. Corey is employed by Doyle Inc, where he has been working as a Building surveyor for the past 5 years, earning a monthly income of $12,855. His preferred move-in date for a new property is 2025/01/18, with a desired lease term of 12 months. Corey is looking for properties where the maximum monthly rent is $4,029 and has a strong preference for locations Near parks. He acknowledges having pets, yet mentions, \"No pets.\" Additionally, Corey notes his preference, \"Prefer quiet and residential areas.\" For correspondence, please reach him via email at utravis@hotmail.com or by phone at +1-159-723-9083x1950.",
+    "goldAnswers": {
+      "Full Name": "Corey Keller",
+      "Email Address": "utravis@hotmail.com",
+      "Phone Number": "+1-159-723-9083x1950",
+      "Date of Birth": "2002/02/25",
+      "Street Address": "345 Thomas Cape Suite 553",
+      "City": "South Maria",
+      "State": "Missouri",
+      "ZIP Code": "64302",
+      "Current Employer": "Doyle Inc",
+      "Job Title": "Building surveyor",
+      "Monthly Income (USD)": 12855,
+      "Length of Employment": "5 years",
+      "Preferred Move-in Date": "2025/01/18",
+      "Preferred Lease Term": "12 months",
+      "Maximum Monthly Rent (USD)": 4029,
+      "Preferred Area": "Near parks",
+      "Do you have any pets?": "Yes",
+      "If yes, please describe your pets": "No pets",
+      "Additional Comments": "Prefer quiet and residential areas."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/rental-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

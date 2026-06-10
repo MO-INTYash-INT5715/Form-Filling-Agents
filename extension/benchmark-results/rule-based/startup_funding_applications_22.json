@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "startup_funding_applications",
+    "formName": "Startup Funding Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 22,
+    "inputDocument": "Venture Forge, an innovative startup founded on 2023/02/07, is in the Idea stage and seeks to secure funding for its groundbreaking vision. The company operates a marketplace for freelancers offering digital services to small businesses and startups, targeting parents looking for eco-friendly and sustainable products for their children. Under the leadership of Mr. Corey Patterson, Venture Forge seeks a funding amount of USD 1,810,755 to enhance its Research and Development initiatives. This investment is poised to further elevate the company's estimated valuation of USD 36,723,021. In exchange, an equity offering of 30% is presented. At present, Venture Forge boasts a team of 50 high-caliber professionals and achieves a current monthly revenue of USD 200,000. The company is poised for international expansion, demonstrating substantial growth potential. Prospective investors are invited to explore the company website at https://www.martin.biz for further insights and to connect with Mr. Corey Patterson via their LinkedIn profile at https://linkedin.com/in/zimmermanamber. For direct communication, please contact Mr. Patterson at jbutler@bullock-scott.com or (432)495-5862x600. Your consideration and support in this venture will be immensely valued.",
+    "goldAnswers": {
+      "Company Name": "Venture Forge",
+      "Company Website": "https://www.martin.biz/",
+      "Founding Date": "2023/02/07",
+      "Business Stage": "Idea",
+      "Founder Name": "Mr. Corey Patterson",
+      "Email": "jbutler@bullock-scott.com",
+      "Phone Number": "(432)495-5862x600",
+      "LinkedIn Profile": "https://linkedin.com/in/zimmermanamber",
+      "Funding Amount Required (USD)": 1810755,
+      "Equity Offered (%)": 30,
+      "Current Company Valuation (USD)": 36723021,
+      "Purpose of Funding": "Research and Development",
+      "Business Model": "A marketplace for freelancers offering digital services to small businesses and startups.",
+      "Target Market": "Parents looking for eco-friendly and sustainable products for their children.",
+      "Current Monthly Revenue (USD)": 200000,
+      "Current Team Size": 50,
+      "Additional Comments": "Ready to expand internationally."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/startup-funding"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

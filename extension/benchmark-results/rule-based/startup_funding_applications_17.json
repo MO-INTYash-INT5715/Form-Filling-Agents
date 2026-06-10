@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "startup_funding_applications",
+    "formName": "Startup Funding Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 17,
+    "inputDocument": "AlphaShift Enterprises, an innovative company founded on 2022/05/08, is currently in its Growth stage and seeks to advance its business objectives with a request for funding. Under the leadership of Founder Lisa Garza, and with a strong online presence highlighted by the company website at http://phillips.com/ and a professional LinkedIn profile at https://linkedin.com/in/barnesjennifer, AlphaShift Enterprises endeavors to secure a funding amount of 2,631,462 USD. In exchange for this investment, 10% equity in the company is offered, with the current company valuation standing at 1,483,730 USD.\n\nThe purpose of this requested funding is to facilitate Product Development, which is essential for scaling operations necessary to meet market demands. AlphaShift Enterprises operates a business model focused on being a platform for online education, offering courses in coding, data science, and business. The identified target market includes tech companies and startups that require cloud infrastructure and data storage solutions, sectors known for their burgeoning needs and rapid growth potential.\n\nWith a current monthly revenue of 200,000 USD and a dedicated team of 20 professionals, AlphaShift Enterprises is well-positioned to leverage this funding to enhance its offerings and expand its market footprint. Additional comments from the founder reflect enthusiasm: “Excited to take the company to the next level.” Interested parties can reach out via email at eshepherd@lewis-singleton.com or phone at 198-816-2252 for further engagement.",
+    "goldAnswers": {
+      "Company Name": "AlphaShift Enterprises",
+      "Company Website": "http://phillips.com/",
+      "Founding Date": "2022/05/08",
+      "Business Stage": "Growth",
+      "Founder Name": "Lisa Garza",
+      "Email": "eshepherd@lewis-singleton.com",
+      "Phone Number": "198-816-2252",
+      "LinkedIn Profile": "https://linkedin.com/in/barnesjennifer",
+      "Funding Amount Required (USD)": 2631462,
+      "Equity Offered (%)": 10,
+      "Current Company Valuation (USD)": 1483730,
+      "Purpose of Funding": "Product Development",
+      "Business Model": "A platform for online education offering courses in coding, data science, and business.",
+      "Target Market": "Tech companies and startups requiring cloud infrastructure and data storage solutions.",
+      "Current Monthly Revenue (USD)": 200000,
+      "Current Team Size": 20,
+      "Additional Comments": "Excited to take the company to the next level."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/startup-funding"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

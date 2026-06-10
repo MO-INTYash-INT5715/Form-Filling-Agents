@@ -1,0 +1,58 @@
+{
+  "formInstance": {
+    "formId": "scholarship_applications",
+    "formName": "Scholarship Application for Students",
+    "domain": "Academic & Research",
+    "instanceIndex": 45,
+    "inputDocument": "Scholarship Application:\n\nDear Selection Committee,\n\nMy name is Debra Lindsey Collier, and I am currently a Junior majoring in Economics with a strong passion for environmental science. I am writing to apply for the scholarship opportunity to further my studies and make a positive impact in sustainable development.\n\nAs a dedicated student at this esteemed institution, I have maintained a GPA of 3.24 while being actively engaged in both academic and extracurricular activities. My academic achievements include being the winner of the State Physics Olympiad, receiving the Dean’s List Award for Outstanding Academic Performance, being a finalist in the National Robotics Championship, and winning the National Science Fair. These accomplishments reflect my commitment to excellence in my studies.\n\nBeyond academics, I believe in giving back to the community. I have volunteered at the local community center and served as the Coordinator of the Youth Empowerment Program. I am also a proud member of the University Debate Team and currently hold the position of President of the Student Council. These experiences have allowed me to develop leadership skills and a sense of responsibility towards creating positive change in society.\n\nThrough this scholarship, I hope to alleviate the financial burdens that come with pursuing higher education. With an annual family income of $60,362 and current financial aid in the form of grants, this scholarship would greatly support my academic journey and enable me to focus on my studies and research in the field of environmental science.\n\nMy academic reference, John Cooley, can attest to my dedication, hard work, and passion for learning. You may reach out to him via email at elizabethmunoz@yahoo.com for any recommendations about my character and academic abilities.\n\nIn conclusion, I am deeply committed to expanding my knowledge in environmental science and utilizing that knowledge to contribute positively to sustainable development. This scholarship would not only support my academic pursuits but also enable me to work towards a brighter and more sustainable future.\n\nThank you for considering my application.\n\nSincerely,\nDebra Lindsey Collier\nStudent ID: 51082916\nMajor/Field of Study: Economics\nAcademic Year: Junior",
+    "goldAnswers": {
+      "First Name": "Debra",
+      "Middle Name": "Lindsey",
+      "Last Name": "Collier",
+      "Student ID": 51082916,
+      "Major/Field of Study": "Economics",
+      "Current GPA": 3.24,
+      "Academic Year": "Junior",
+      "Current Financial Aid": "Grants",
+      "Annual Family Income": 60362,
+      "Academic Achievements": [
+        "Winner of the State Physics Olympiad",
+        "Received the Dean’s List Award for Outstanding Academic Performance",
+        "Finalist in the National Robotics Championship",
+        "Winner of the National Science Fair"
+      ],
+      "Extracurricular Activities": [
+        "Volunteer at the local community center",
+        "Coordinator of the Youth Empowerment Program",
+        "Member of the University Debate Team",
+        "President of the Student Council"
+      ],
+      "Statement of Purpose": "I am deeply passionate about advancing my knowledge in the field of environmental science. This scholarship will enable me to continue my studies without the pressure of financial burdens, and I plan to use the knowledge gained to make an impact in sustainable development.",
+      "Academic Reference": "John Cooley",
+      "Reference Email": "elizabethmunoz@yahoo.com"
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/scholarship-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

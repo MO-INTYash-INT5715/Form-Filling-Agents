@@ -1,0 +1,55 @@
+{
+  "formInstance": {
+    "formId": "scholarship_applications",
+    "formName": "Scholarship Application for Students",
+    "domain": "Academic & Research",
+    "instanceIndex": 13,
+    "inputDocument": "**Scholarship Application**\n\n**Applicant Information:**  \n**First Name:** Erica  \n**Middle Name:** Danielle  \n**Last Name:** Cannon  \n**Student ID:** 40406788  \n**Major/Field of Study:** Biology  \n**Current GPA:** 2.91  \n**Academic Year:** Freshman  \n**Current Financial Aid:** Other Scholarship  \n**Annual Family Income:** $76,424  \n\nDear Scholarship Committee,\n\nI am writing to express my sincere interest in applying for your scholarship program. My name is Erica Danielle Cannon, and I am a freshman majoring in Biology at [University Name]. As I embark on my academic journey, I am keen on harnessing the resources offered by this scholarship to elevate my education and broaden my horizons in the field of science and technology.\n\nDespite the challenges associated with being a first-year student, including adjusting to college life and navigating a rigorous curriculum, I have maintained my GPA of 2.91 while actively engaging in my studies and extracurricular activities. My pursuit of academic excellence has already led me to several significant achievements. I am proud to have published a research paper in the International Journal of Engineering, a moment that reaffirms my commitment to the scientific community. Additionally, I was a finalist in the National Robotics Championship and won the National Science Fair; these experiences have not only challenged me but fueled my passion for innovation.\n\nIn tandem with my academic endeavors, I value the importance of involvement in extracurricular activities. I am an active member of the Environmental Awareness Club, where I collaborate with peers to promote sustainability on campus. Participation in the University Debate Team has further honed my critical thinking and public speaking skills, allowing me to articulate my views effectively while learning to engage with differing perspectives.\n\nMy long-term career goal is to innovate within the technology sector, focusing on cutting-edge advancements that can enhance our understanding and application of biological systems. This scholarship would serve as a vital resource, enabling me to pursue my education more fully and invest time in research that aligns with these goals. With a keen interest in computer engineering intertwined with my biology major, I am eager to explore how these disciplines can converge to drive future innovations.\n\nI am grateful for the consideration of my application, and my academic reference, Yolanda Rodriguez, can attest to my dedication and potential. Please feel free to reach out to her at callahanmelinda@gmail.com for further insights into my academic performance and character.\n\nThank you for your time and consideration. I am hopeful for the opportunity to contribute positively to the community through my academic pursuits and various contributions.\n\nSincerely,  \nErica Danielle Cannon",
+    "goldAnswers": {
+      "First Name": "Erica",
+      "Middle Name": "Danielle",
+      "Last Name": "Cannon",
+      "Student ID": 40406788,
+      "Major/Field of Study": "Biology",
+      "Current GPA": 2.91,
+      "Academic Year": "Freshman",
+      "Current Financial Aid": "Other Scholarship",
+      "Annual Family Income": 76424,
+      "Academic Achievements": [
+        "Published a research paper in the International Journal of Engineering",
+        "Finalist in the National Robotics Championship",
+        "Winner of the National Science Fair"
+      ],
+      "Extracurricular Activities": [
+        "Member of the Environmental Awareness Club",
+        "Member of the University Debate Team"
+      ],
+      "Statement of Purpose": "With a strong interest in computer engineering, this scholarship will provide me the resources to further my education and conduct research in cutting-edge technologies, helping me achieve my long-term career goals of innovating in the tech industry.",
+      "Academic Reference": "Yolanda Rodriguez",
+      "Reference Email": "callahanmelinda@gmail.com"
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/scholarship-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

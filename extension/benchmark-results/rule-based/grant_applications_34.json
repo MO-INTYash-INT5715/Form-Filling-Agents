@@ -1,0 +1,40 @@
+{
+  "formInstance": {
+    "formId": "grant_applications",
+    "formName": "Grant or Research Funding Application",
+    "domain": "Academic & Research",
+    "instanceIndex": 34,
+    "inputDocument": "**Grant Application**\n\n**Applicant Information**\n\nFirst Name: Molly  \nLast Name: Anderson  \nEmail: david88@baker.com  \nGender: Male  \nDate of Birth: 1989/04/26  \n\n**Personal Statement**\n\nMolly Anderson, an applicant with utmost enthusiasm, cordially submits this grant application for your esteemed consideration. I believe that my commitment to excellence and the unique perspectives I bring as someone who consistently strives to make a meaningful impact align perfectly with the values your organization upholds. \n\nTo stay informed about the latest developments and opportunities provided by your organization, I have opted to subscribe to your newsletter. This choice reflects my proactive approach in remaining well-versed with valuable information and maintaining an ongoing connection with your community.\n\nThank you for considering my application. I am eager for the possibility of contributing in further meaningful ways through the support of this grant.\n\nSincerely,  \nMolly Anderson",
+    "goldAnswers": {
+      "First Name": "Molly",
+      "Last Name": "Anderson",
+      "Email": "david88@baker.com",
+      "Gender": "Male",
+      "Date of Birth": "1989/04/26",
+      "Subscribe to Newsletter": true
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/grant-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

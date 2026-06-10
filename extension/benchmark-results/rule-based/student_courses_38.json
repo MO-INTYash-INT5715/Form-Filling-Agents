@@ -1,0 +1,45 @@
+{
+  "formInstance": {
+    "formId": "student_courses",
+    "formName": "Student Course Registration Form",
+    "domain": "Academic & Research",
+    "instanceIndex": 38,
+    "inputDocument": "[Your Name]  \n[Your Position/Title]  \n[Department Name]  \n[University/Organization Name]  \n[Address]  \n[City, State, ZIP Code]  \n[Email Address]  \n[Phone Number]  \n[Date]  \n\nCourse Enrollment Office  \n[University/Organization Name]  \n[Department/Faculty Name]  \n[Address]  \n[City, State, ZIP Code]  \n\nDear Members of the Course Enrollment Committee,\n\nSubject: Course Enrollment Request for the Spring 2025 Semester\n\nI hope this correspondence finds you well. My name is Edward Pollard, identified by Student ID 56936821. It is with enthusiasm that I submit my request for course enrollment for the upcoming Spring 2025 semester within the esteemed Computer Science program.  \n\nFirstly, allow me to offer a brief introduction. I am currently pursuing my studies under the Computer Science curriculum, and through this correspondence, I wish to express my keen intent to contribute actively to a thriving academic community. \n\nIn alignment with my academic goals and aspirations, I hereby request enrollment in the following courses:  \n- **CS104 - Web Development**  \n- **CS101 - Introduction to Programming**  \n\nBoth courses are pivotal to my academic development within the realm of modern technological studies and will significantly enrich my understanding and expertise in the field.\n\nFor your reference, I am reachable via email at andreasweeney@hotmail.com or through my contact number, +1-688-593-8917x362, should you require any further information or discussion regarding this request. \n\nIn adherence to the enrollment protocol, allow me to acknowledge my anticipation for the semester and above all, my interest in the field of web development. As explicitly captured in my enrollment form, \"Looking forward to exploring web development.\"\n\nI convey my thanks in advance for considering this enrollment request and remain hopeful for a favorable response. Please contact me at any time should there be a need for additional documents or information.\n\nThank you for your attention and support.\n\nYours sincerely,\n\nEdward Pollard  \n[Your Address, if required]  \n[City, State, ZIP Code, if required]  \nedward.pollard@domain.com  \nPhone: +1-688-593-8917x362",
+    "goldAnswers": {
+      "Full Name": "Edward Pollard",
+      "Student ID": 56936821,
+      "Email": "andreasweeney@hotmail.com",
+      "Phone Number": "+1-688-593-8917x362",
+      "Semester": "Spring 2025",
+      "Program": "Computer Science",
+      "Selected Courses": [
+        "CS104 - Web Development",
+        "CS101 - Introduction to Programming"
+      ],
+      "Special Requirements or Comments": "Looking forward to exploring web development."
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/course-registration"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

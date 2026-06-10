@@ -28,174 +28,24 @@
     "formPath": "/professional-business/workshop-registration"
   },
   "agentName": "rule-based",
-  "fieldResults": [
-    {
-      "fieldId": "full_name",
-      "fieldType": "String",
-      "predictedValue": "Daniel Brown",
-      "goldValue": "Daniel Brown",
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "email",
-      "fieldType": "String",
-      "predictedValue": "ahale@hotmail.com",
-      "goldValue": "ahale@hotmail.com",
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "phone",
-      "fieldType": "String",
-      "predictedValue": "244-169-5801x7072",
-      "goldValue": "244-169-5801x7072",
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "organization",
-      "fieldType": "String",
-      "predictedValue": "Wells-Wilson",
-      "goldValue": "Wells-Wilson",
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "workshop_type",
-      "fieldType": "Dropdown",
-      "predictedValue": "Finance & Investment",
-      "goldValue": "Finance & Investment",
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "session_date",
-      "fieldType": "Date",
-      "predictedValue": "2025/02/02",
-      "goldValue": "2025/02/02",
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "session_time",
-      "fieldType": "Dropdown",
-      "predictedValue": "6PM",
-      "goldValue": "6PM",
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "delivery_mode",
-      "fieldType": "Dropdown",
-      "predictedValue": "Hybrid",
-      "goldValue": "Hybrid",
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "education_level",
-      "fieldType": "Dropdown",
-      "predictedValue": "Master's Degree",
-      "goldValue": "Master's Degree",
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "experience_years",
-      "fieldType": "NumericInput",
-      "predictedValue": "20",
-      "goldValue": 20,
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "current_role",
-      "fieldType": "String",
-      "predictedValue": "Armed forces training and education officer",
-      "goldValue": "Armed forces training and education officer",
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "dietary_requirements",
-      "fieldType": "Dropdown",
-      "predictedValue": "Halal",
-      "goldValue": "Halal",
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "accessibility_needs",
-      "fieldType": "Description",
-      "predictedValue": "",
-      "goldValue": "None",
-      "clickAccurate": false,
-      "valueAccurate": false,
-      "bleuScore": 0
-    },
-    {
-      "fieldId": "payment_method",
-      "fieldType": "Dropdown",
-      "predictedValue": "Company Sponsored",
-      "goldValue": "Company Sponsored",
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "billing_address",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "USS Gonzalez\nFPO AE 24907",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "expectations",
-      "fieldType": "Description",
-      "predictedValue": "",
-      "goldValue": "I would like to improve my leadership and communication skills to manage my team more effectively.",
-      "clickAccurate": false,
-      "valueAccurate": false,
-      "bleuScore": 0
-    },
-    {
-      "fieldId": "special_requests",
-      "fieldType": "Description",
-      "predictedValue": "",
-      "goldValue": "I would like to see examples of successful leadership strategies in small and medium-sized businesses.",
-      "clickAccurate": false,
-      "valueAccurate": false,
-      "bleuScore": 0
-    }
-  ],
+  "fieldResults": [],
   "atomicMetrics": {
-    "clickAccuracy": {
-      "String": 0,
-      "Dropdown": 0,
-      "Date": 0,
-      "NumericInput": 0,
-      "Description": 0
-    },
-    "valueAccuracy": {
-      "String": 83.33333333333334,
-      "Dropdown": 100,
-      "Date": 100,
-      "NumericInput": 100,
-      "Description": 0
-    },
+    "clickAccuracy": {},
+    "valueAccuracy": {},
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 76.47058823529412
+    "overallValueAccuracy": 0
   },
   "episodicMetrics": {
-    "formCompletionRate": 76.47058823529412,
-    "fieldsAttempted": 13,
-    "fieldsCorrect": 13,
-    "totalFields": 17,
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 76.47058823529412
+    "averageValueAccuracy": 0
   },
-  "executionTimeMs": 1656,
-  "errors": [],
-  "submissionSucceeded": true
+  "executionTimeMs": 0,
+  "errors": [
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/professional-business/workshop-registration\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/professional-business/workshop-registration\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  ],
+  "submissionSucceeded": false
 }

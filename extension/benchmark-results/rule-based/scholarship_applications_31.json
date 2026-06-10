@@ -1,0 +1,58 @@
+{
+  "formInstance": {
+    "formId": "scholarship_applications",
+    "formName": "Scholarship Application for Students",
+    "domain": "Academic & Research",
+    "instanceIndex": 31,
+    "inputDocument": "Dear Scholarship Selection Committee,\n\nMy name is Jesus Tonya Obrien, and I am currently a sophomore majoring in Biology at our esteemed institution. I am excited to submit my application for your scholarship opportunity, as I am eager to continue my academic journey and further my passion for learning and research.\n\nThroughout my time as a student, I have consistently maintained a GPA of 3.19 and have been fortunate to receive grants as part of my financial aid package. However, with an annual family income of $47,600, additional financial support would greatly ease the burden of tuition and expenses, allowing me to focus more on my studies and extracurricular activities.\n\nIn terms of my academic achievements, I am proud to have been recognized as the winner of the National Science Fair, received the Dean’s List Award for Outstanding Academic Performance, ranked in the top 5% in the International Chemistry Olympiad, and secured first place in the University Math Competition. These achievements are a testament to my dedication, hard work, and commitment to excellence in my studies.\n\nBeyond the classroom, I am actively involved in various extracurricular activities that allow me to give back to the community and further develop my leadership skills. I volunteer at the local community center, serve as the coordinator of the Youth Empowerment Program, participate in the University Debate Team, and am a member of the Environmental Awareness Club. These experiences have not only enriched my college experience but have also taught me valuable life lessons about teamwork, communication, and social responsibility.\n\nMy statement of purpose reflects my deep interest in computer engineering and my aspirations to conduct research in cutting-edge technologies. I am confident that receiving this scholarship will provide me with the resources necessary to pursue my academic goals and ultimately achieve my long-term career ambitions of innovating in the tech industry.\n\nI am grateful to have Cindy Bailey as my academic reference, and I have also provided her contact information should you need further verification of my academic and personal qualities.\n\nThank you for considering my application. I am truly grateful for the opportunity to be considered for this scholarship and look forward to the possibility of continuing my education with your support.\n\nSincerely,\n\nJesus Tonya Obrien\nStudent ID: 46036603\nEmail: tonya.obrien@email.com",
+    "goldAnswers": {
+      "First Name": "Jesus",
+      "Middle Name": "Tonya",
+      "Last Name": "Obrien",
+      "Student ID": 46036603,
+      "Major/Field of Study": "Biology",
+      "Current GPA": 3.19,
+      "Academic Year": "Sophomore",
+      "Current Financial Aid": "Grants",
+      "Annual Family Income": 47600,
+      "Academic Achievements": [
+        "Winner of the National Science Fair",
+        "Received the Dean’s List Award for Outstanding Academic Performance",
+        "Top 5% in the International Chemistry Olympiad",
+        "First place in the University Math Competition"
+      ],
+      "Extracurricular Activities": [
+        "Volunteer at the local community center",
+        "Coordinator of the Youth Empowerment Program",
+        "Member of the University Debate Team",
+        "Member of the Environmental Awareness Club"
+      ],
+      "Statement of Purpose": "With a strong interest in computer engineering, this scholarship will provide me the resources to further my education and conduct research in cutting-edge technologies, helping me achieve my long-term career goals of innovating in the tech industry.",
+      "Academic Reference": "Cindy Bailey",
+      "Reference Email": "alyssaabbott@dalton.com"
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/scholarship-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

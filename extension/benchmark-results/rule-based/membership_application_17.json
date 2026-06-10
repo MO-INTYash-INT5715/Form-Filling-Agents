@@ -1,0 +1,50 @@
+{
+  "formInstance": {
+    "formId": "membership_application",
+    "formName": "Association Membership Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 17,
+    "inputDocument": "Dear Professional Association Membership Committee,\n\nI am writing to apply for membership at your esteemed association as a Student Member for a duration of one year. My name is Sophia Robinson, and I can be reached at sophia.robinson@yahoo.com or 555-7891.\n\nI was born on April 15, 1990, and currently hold a Bachelor's Degree in Marketing. Although I do not possess any professional certifications at this time, I am eager to further my knowledge and skills in the field through association with your organization.\n\nI am currently employed as a Student Intern at State University, where I am gaining practical experience in the education industry. While my years of experience may be limited, I am dedicated to expanding my professional network and learning from experienced professionals in the field.\n\nI have been referred to your association by Dr. Samuel Green, my instructor at State University. Dr. Green can be reached at samuel.green@yahoo.com should you wish to verify my application. I have provided his contact details as my reference to confirm my relationship with him.\n\nI believe that joining your association will provide me with numerous opportunities for growth and networking within the field of marketing. I am eager to participate in workshops, events, and discussions that will enrich my understanding of the industry.\n\nThank you for considering my application. I look forward to the possibility of becoming a member of your association and contributing to its community.\n\nSincerely,\n\nSophia Robinson",
+    "goldAnswers": {
+      "Full Name": "Sophia Robinson",
+      "Email Address": "sophia.robinson@yahoo.com",
+      "Phone Number": "555-7891",
+      "Date of Birth": "1990/04/15",
+      "Membership Level": "Student Member",
+      "Membership Duration": "1 Year",
+      "Highest Education Level": "Bachelor's Degree",
+      "Field of Study": "Marketing",
+      "Professional Certifications": "None",
+      "Current Employer": "State University",
+      "Job Title": "Student Intern",
+      "Years of Experience": 0,
+      "Industry": "Education",
+      "Reference Name": "Dr. Samuel Green",
+      "Reference Email": "samuel.green@yahoo.com",
+      "Relationship to Reference": "Instructor"
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/membership-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

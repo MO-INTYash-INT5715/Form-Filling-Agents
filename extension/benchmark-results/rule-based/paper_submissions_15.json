@@ -1,0 +1,44 @@
+{
+  "formInstance": {
+    "formId": "paper_submissions",
+    "formName": "Paper Submission Form",
+    "domain": "Academic & Research",
+    "instanceIndex": 15,
+    "inputDocument": "**Paper Submission Application**\n\n---\n\n**To: Conference Program Committee  \nFrom: Mason Taylor  \nEmail: mason.taylor@university.com**\n\n**Subject: Submission for the Upcoming Conference on Emerging Telecommunications Technologies**\n\nDear Members of the Program Committee,\n\nI am pleased to submit my paper for consideration at the upcoming conference, highlighting pioneering advancements in the field of telecommunications. The enclosed paper, `\"The Impact of 5G Networks on Global Connectivity,\"` delves into the pivotal role of 5G networks in reshaping the global communication landscape. This work stands at the intersection of significant technological progress and its application in seamless global data transmission, offering invaluable insights into future trends in telecommunication.\n\n**Abstract:**  \nWe explore the role of 5G networks in enhancing global communication infrastructure and enabling faster data transmission. The paper delves into how these networks revolutionize connectivity and contribute to building more resilient and efficient communication systems across the globe.\n\nTo facilitate a comprehensive understanding and further classify the core discussions of the paper, I have identified primary keywords: `5G Networks, Connectivity,` and `Telecommunication.` These terms encapsulate the essential aspects and focus of the study, ensuring that the content resonates well with the scope of the conference.\n\nCategorized under `Telecommunication,` the paper aligns with the thematic concentration of the event, offering a relevant and nuanced exploration of 5G networks’ implications on global networks.\n\nI believe that this submission will contribute meaningfully to the ongoing discourse around telecommunications and spark engaging discussions at the conference. Thank you for considering this paper for your esteemed event. Please find my contact information at the beginning of this application should you need to follow up for additional details or clarifications.\n\nThank you for your time and consideration.\n\nBest regards,\n\n**Mason Taylor**  \n[Contact Email: mason.taylor@university.com]",
+    "goldAnswers": {
+      "Author Name": "Mason Taylor",
+      "Email": "mason.taylor@university.com",
+      "Paper Title": "The Impact of 5G Networks on Global Connectivity",
+      "Abstract": "We explore the role of 5G networks in enhancing global communication infrastructure and enabling faster data transmission.",
+      "Keywords": [
+        "5G Networks",
+        "Connectivity",
+        "Telecommunication"
+      ],
+      "Paper Category": "Telecommunication"
+    },
+    "multiPage": false,
+    "formPath": "/academic-research/paper-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

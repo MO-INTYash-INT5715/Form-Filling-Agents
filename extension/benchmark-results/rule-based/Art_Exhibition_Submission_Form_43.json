@@ -1,0 +1,43 @@
+{
+  "formInstance": {
+    "formId": "Art_Exhibition_Submission_Form",
+    "formName": "Art Exhibition Submission Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 43,
+    "inputDocument": "Artist Name: Aria Stone is pleased to submit her artwork titled \"Whispers of the Sea\" for consideration in your esteemed exhibition. Contact details are provided as follows: Email Address - ariastone_art@hotmail.com. The artwork is a Sculpture with Dimensions (in cm) of 60 x 40 x 50, created in the Year Created: 2021. The Artwork Description provided is as follows: The sculpture depicts a mermaid - like figure emerging from a wave. Crafted from a combination of resin and seashells, the figure's body is smooth, with the shells adding a natural and textured element to her tail. Her outstretched hands seem to be reaching out to the viewer, as if sharing the secrets and whispers of the deep sea. The movement of the wave is beautifully captured, with the foam rendered in a delicate, frothy manner. Aria Stone would prefer to have her artwork exhibited in the Preferred Exhibition Period of Spring 2024. Additionally, the Artwork is available for sale. Thank you for considering this submission.",
+    "goldAnswers": {
+      "Artist Name": "Aria Stone",
+      "Email Address": "ariastone_art@hotmail.com",
+      "Artwork Title": "Whispers of the Sea",
+      "Medium": "Sculpture",
+      "Dimensions (in cm)": "60 x 40 x 50",
+      "Year Created": 2021,
+      "Artwork Description": "The sculpture depicts a mermaid - like figure emerging from a wave. Crafted from a combination of resin and seashells, the figure's body is smooth, with the shells adding a natural and textured element to her tail. Her outstretched hands seem to be reaching out to the viewer, as if sharing the secrets and whispers of the deep sea. The movement of the wave is beautifully captured, with the foam rendered in a delicate, frothy manner.",
+      "Preferred Exhibition Period": "Spring 2024",
+      "Artwork is available for sale": true
+    },
+    "multiPage": false,
+    "formPath": "/arts-creative/exhibition-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

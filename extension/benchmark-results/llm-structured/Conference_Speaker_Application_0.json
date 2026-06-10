@@ -53,10 +53,10 @@
     {
       "fieldId": "organization",
       "fieldType": "String",
-      "predictedValue": "Tech Innovations Inc.",
+      "predictedValue": "",
       "goldValue": "Tech Innovations Inc.",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "Presentation Title",
@@ -109,11 +109,11 @@
     {
       "fieldId": "speaking_experience",
       "fieldType": "Description",
-      "predictedValue": "ArtTech Symposium 2022 - Keynote Speaker; AI and Creativity Conference 2021 - Panelist",
+      "predictedValue": "",
       "goldValue": "1. Keynote Speaker at ArtTech Symposium 2022. 2. Panelist at AI and Creativity Conference 2021.",
       "clickAccurate": false,
-      "valueAccurate": true,
-      "bleuScore": 36.71035772322802
+      "valueAccurate": false,
+      "bleuScore": 0
     },
     {
       "fieldId": "Presentation Format",
@@ -126,11 +126,11 @@
     {
       "fieldId": "tech_requirements",
       "fieldType": "Description",
-      "predictedValue": "projector, internet access, AI demo tools",
+      "predictedValue": "",
       "goldValue": "Projector, internet access, AI demo tools.",
       "clickAccurate": false,
-      "valueAccurate": true,
-      "bleuScore": 100
+      "valueAccurate": false,
+      "bleuScore": 0
     },
     {
       "fieldId": "I agree to the speaker guidelines and terms of participation",
@@ -147,25 +147,25 @@
       "Description": 0
     },
     "valueAccuracy": {
-      "String": 8.333333333333332,
-      "Description": 100
+      "String": 0,
+      "Description": 0
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 21.428571428571427
+    "overallValueAccuracy": 0
   },
   "episodicMetrics": {
-    "formCompletionRate": 21.428571428571427,
-    "fieldsAttempted": 3,
-    "fieldsCorrect": 3,
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
     "totalFields": 14,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 21.428571428571427
+    "averageValueAccuracy": 0
   },
-  "executionTimeMs": 1622,
+  "executionTimeMs": 1654,
   "errors": [],
   "submissionSucceeded": true,
-  "tokensIn": 841,
-  "tokensOut": 335,
-  "llmTimeMs": 7643,
-  "llmCalls": 1
+  "tokensIn": 0,
+  "tokensOut": 0,
+  "llmTimeMs": 0,
+  "llmCalls": 0
 }

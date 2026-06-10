@@ -27,26 +27,26 @@
     {
       "fieldId": "requestType",
       "fieldType": "Dropdown",
-      "predictedValue": "Network Issue",
+      "predictedValue": "",
       "goldValue": "Network Issue",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "priority",
       "fieldType": "Dropdown",
-      "predictedValue": "Urgent-System Down",
+      "predictedValue": "",
       "goldValue": "Urgent-System Down",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "subject",
       "fieldType": "String",
-      "predictedValue": "Entire office network down",
+      "predictedValue": "",
       "goldValue": "Entire office network down",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "Brief description of the issue",
@@ -59,16 +59,16 @@
     {
       "fieldId": "description",
       "fieldType": "Description",
-      "predictedValue": "The problem began around 10:30 AM today. As a result, employees are unable to access the internet, file servers, or any internal systems. The number of affected users is approximately 50.",
+      "predictedValue": "",
       "goldValue": "Employees are unable to access the internet, file servers, or any internal systems. The issue started around 10:30 AM today.",
       "clickAccurate": false,
-      "valueAccurate": true,
-      "bleuScore": 51.97584423455896
+      "valueAccurate": false,
+      "bleuScore": 0
     },
     {
       "fieldId": "location",
       "fieldType": "String",
-      "predictedValue": "Entire office",
+      "predictedValue": "",
       "goldValue": "All departments",
       "clickAccurate": false,
       "valueAccurate": false
@@ -76,42 +76,42 @@
     {
       "fieldId": "affectedUsers",
       "fieldType": "NumericInput",
-      "predictedValue": "50",
+      "predictedValue": "",
       "goldValue": 50,
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "availableTime",
       "fieldType": "String",
-      "predictedValue": "Mon-Fri 9AM-5PM",
+      "predictedValue": "",
       "goldValue": "Mon-Fri 9AM-5PM",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "requesterName",
       "fieldType": "String",
-      "predictedValue": "Michael Johnson",
+      "predictedValue": "",
       "goldValue": "Michael Johnson",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "requesterEmail",
       "fieldType": "String",
-      "predictedValue": "michael.johnson@company.com",
+      "predictedValue": "",
       "goldValue": "michael.johnson@company.com",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "phoneNumber",
       "fieldType": "String",
-      "predictedValue": "+1 555-9876",
+      "predictedValue": "",
       "goldValue": "+1 555-9876",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     }
   ],
   "atomicMetrics": {
@@ -122,27 +122,27 @@
       "NumericInput": 0
     },
     "valueAccuracy": {
-      "Dropdown": 100,
-      "String": 71.42857142857143,
-      "Description": 100,
-      "NumericInput": 100
+      "Dropdown": 0,
+      "String": 0,
+      "Description": 0,
+      "NumericInput": 0
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 81.81818181818183
+    "overallValueAccuracy": 0
   },
   "episodicMetrics": {
-    "formCompletionRate": 81.81818181818183,
-    "fieldsAttempted": 10,
-    "fieldsCorrect": 9,
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
     "totalFields": 11,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 81.81818181818183
+    "averageValueAccuracy": 0
   },
-  "executionTimeMs": 1624,
+  "executionTimeMs": 1645,
   "errors": [],
   "submissionSucceeded": true,
-  "tokensIn": 702,
-  "tokensOut": 202,
-  "llmTimeMs": 4711,
-  "llmCalls": 1
+  "tokensIn": 0,
+  "tokensOut": 0,
+  "llmTimeMs": 0,
+  "llmCalls": 0
 }

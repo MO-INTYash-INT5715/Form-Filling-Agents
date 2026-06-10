@@ -1,0 +1,38 @@
+{
+  "formInstance": {
+    "formId": "job_applications",
+    "formName": "Job Application for University Positions",
+    "domain": "Academic & Research",
+    "instanceIndex": 10,
+    "inputDocument": "[Your Address]  \n[City, State, Zip Code]  \n[Email Address]  \n[Phone Number]  \n[Date]  \n\nHiring Manager  \n[Company Name]  \n[Company Address]  \n[City, State, Zip Code]  \n\nDear Hiring Manager,\n\nMy name is Grace Zhang, and I am writing to express my interest in the Financial Analyst position within your esteemed Finance department. I am particularly drawn to this opportunity due to my passion for finance and my dedication to delivering actionable financial insights. \n\nI am eager to bring my skills to your team and add value through my ability to analyze complex financial data. My goal is to support strategic decision-making processes, ensuring that your department thrives and meets its financial objectives.\n\nThank you for considering my application. I look forward to the opportunity to discuss how I can contribute to [Company Name] as a member of your Finance department.\n\nWarm regards,\n\nGrace Zhang",
+    "goldAnswers": {
+      "Applicant Name": "Grace Zhang",
+      "Position Applied For": "Financial Analyst",
+      "Preferred Department": "Finance",
+      "Cover Letter": "I am confident in my ability to analyze financial data and provide valuable insights to support decision-making in the Finance department."
+    },
+    "multiPage": false,
+    "formPath": "/academic-research/job-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

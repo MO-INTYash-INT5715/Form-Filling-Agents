@@ -17,82 +17,24 @@
     "formPath": "/finance-banking/financial-planning"
   },
   "agentName": "rule-based",
-  "fieldResults": [
-    {
-      "fieldId": "name",
-      "fieldType": "String",
-      "predictedValue": "Benjamin Scott",
-      "goldValue": "Benjamin Scott",
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "email",
-      "fieldType": "String",
-      "predictedValue": "ben.scott24@gmail.com",
-      "goldValue": "ben.scott24@gmail.com",
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "consultationType",
-      "fieldType": "Dropdown",
-      "predictedValue": "",
-      "goldValue": "Estate Planning",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "preferredDate",
-      "fieldType": "Date",
-      "predictedValue": "",
-      "goldValue": "2024/11/30",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "preferredTime",
-      "fieldType": "Dropdown",
-      "predictedValue": "",
-      "goldValue": "Evening (4:00 PM -6:00 PM)",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "comments",
-      "fieldType": "Description",
-      "predictedValue": "",
-      "goldValue": "Looking to discuss the creation of a living will and managing property distribution.",
-      "clickAccurate": false,
-      "valueAccurate": false,
-      "bleuScore": 0
-    }
-  ],
+  "fieldResults": [],
   "atomicMetrics": {
-    "clickAccuracy": {
-      "String": 0,
-      "Dropdown": 0,
-      "Date": 0,
-      "Description": 0
-    },
-    "valueAccuracy": {
-      "String": 100,
-      "Dropdown": 0,
-      "Date": 0,
-      "Description": 0
-    },
+    "clickAccuracy": {},
+    "valueAccuracy": {},
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 33.33333333333333
+    "overallValueAccuracy": 0
   },
   "episodicMetrics": {
-    "formCompletionRate": 33.33333333333333,
-    "fieldsAttempted": 2,
-    "fieldsCorrect": 2,
-    "totalFields": 6,
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 33.33333333333333
+    "averageValueAccuracy": 0
   },
-  "executionTimeMs": 1438,
-  "errors": [],
+  "executionTimeMs": 0,
+  "errors": [
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/finance-banking/financial-planning\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/finance-banking/financial-planning\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  ],
   "submissionSucceeded": false
 }

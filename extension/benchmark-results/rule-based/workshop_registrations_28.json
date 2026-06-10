@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "workshop_registrations",
+    "formName": "Educational Workshop Registration",
+    "domain": "Professional & Business",
+    "instanceIndex": 28,
+    "inputDocument": "Subject: Workshop Registration Request for Continuing Education\n\nDear Workshop Registration Team,\n\nI hope this message finds you well. I am writing to formally register for the upcoming workshop in the Technology & IT category. Please find my details outlined below for your records and processing.\n\nMy full name is Jeremy Fitzgerald, and my contact details are as follows: Email Address: oliverandrew@singleton.com, Phone Number: (731)335-3367x792. I am currently affiliated with Contreras, Ramsey and Edwards, where I hold the position of Geneticist, molecular.\n\nI am interested in the session scheduled for 2025/02/16 at 2 PM, with a preference for the Hybrid delivery mode. My highest education level is a PhD, and I have amassed 15 years of professional experience in my field.\n\nPlease note my dietary requirements are specified as Other (Please specify), and I have no special accessibility requirements. The preferred method of payment for this registration will be Bank Transfer.\n\nMy billing address for invoicing purposes is as follows:\n85480 Gonzalez Creek Apt. 294\nOconnorstad, KS 21983\n\nIn terms of learning objectives, I hope to gain a deeper understanding of digital marketing strategies to improve our company's online presence. Additionally, I would appreciate it if the workshop could include some real-life case studies or examples.\n\nThank you for processing my registration. I look forward to your confirmation and attending the workshop.\n\nBest regards,\n\nJeremy Fitzgerald",
+    "goldAnswers": {
+      "Full Name": "Jeremy Fitzgerald",
+      "Email Address": "oliverandrew@singleton.com",
+      "Phone Number": "(731)335-3367x792",
+      "Organization/Company": "Contreras, Ramsey and Edwards",
+      "Workshop Category": "Technology & IT",
+      "Preferred Session Date": "2025/02/16",
+      "Preferred Time Slot": "2PM",
+      "Preferred Delivery Mode": "Hybrid",
+      "Highest Education Level": "PhD",
+      "Years of Professional Experience": 15,
+      "Current Role/Position": "Geneticist, molecular",
+      "Dietary Requirements": "Other (Please specify)",
+      "Accessibility Requirements": "None",
+      "Payment Method": "Bank Transfer",
+      "Billing Address": "85480 Gonzalez Creek Apt. 294\nOconnorstad, KS 21983",
+      "What do you hope to learn from this workshop?": "I hope to gain a deeper understanding of digital marketing strategies to improve our company's online presence.",
+      "Any other special requests or comments?": "I would appreciate it if the workshop could include some real-life case studies or examples."
+    },
+    "multiPage": false,
+    "formPath": "/professional-business/workshop-registration"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

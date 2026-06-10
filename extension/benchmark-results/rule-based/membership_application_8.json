@@ -1,0 +1,50 @@
+{
+  "formInstance": {
+    "formId": "membership_application",
+    "formName": "Association Membership Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 8,
+    "inputDocument": "Dear Professional Association Membership Committee,\n\nI am writing to submit my application for Professional Membership within your esteemed organization. My name is Chris Anderson, and I am a dedicated and experienced Financial Analyst currently working at an Investment Group with seven years of invaluable expertise in the finance industry.\n\nI hold a Bachelor's Degree in Finance and have also achieved the prestigious CFA certification, demonstrating my commitment to professionalism and continuous learning within my field of study. My dedication to excellence is further exemplified by my membership level selection as a Professional Member for a duration of three years, showcasing my long-term commitment to upholding the core values and standards of your association.\n\nAs a professional working in the finance sector, I recognize the importance of networking and continuously expanding my knowledge and skills. I believe that becoming a member of your association will provide me with valuable opportunities for professional development, networking, and staying current on industry trends and best practices.\n\nI have included Karen Hill, a colleague at my current employer, as my reference. She can attest to my expertise, dedication, and contributions to the industry.\n\nI am eager to engage with like-minded professionals, contribute to the association, and further my own professional growth. I am confident that my background, qualifications, and experience make me a strong candidate for membership within your organization.\n\nThank you for considering my application. I look forward to the possibility of contributing to and benefiting from the collective knowledge and resources within your professional association.\n\nSincerely,\n\nChris Anderson\n[Email Address: chris.anderson@gmail.com]\nPhone Number: 555-6789\nDate of Birth: 1991/08/20\nEmployer: Investment Group\nJob Title: Financial Analyst\nIndustry: Finance\nYears of Experience: 7\nReference Name: Karen Hill\nReference Email: karen.hill@gmail.com",
+    "goldAnswers": {
+      "Full Name": "Chris Anderson",
+      "Email Address": "chris.anderson@gmail.com",
+      "Phone Number": "555-6789",
+      "Date of Birth": "1991/08/20",
+      "Membership Level": "Professional Member",
+      "Membership Duration": "3 Years",
+      "Highest Education Level": "Bachelor's Degree",
+      "Field of Study": "Finance",
+      "Professional Certifications": "CFA",
+      "Current Employer": "Investment Group",
+      "Job Title": "Financial Analyst",
+      "Years of Experience": 7,
+      "Industry": "Finance",
+      "Reference Name": "Karen Hill",
+      "Reference Email": "karen.hill@gmail.com",
+      "Relationship to Reference": "Colleague"
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/membership-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

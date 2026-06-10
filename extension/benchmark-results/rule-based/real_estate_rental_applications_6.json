@@ -1,0 +1,53 @@
+{
+  "formInstance": {
+    "formId": "real_estate_rental_applications",
+    "formName": "Real Estate Rental Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 6,
+    "inputDocument": "Caitlin Benson MD is submitting a rental application for consideration. Please find below the details to assist in evaluating this application efficiently. Caitlin can be reached via email at nwhite@ross.com or by phone at 985-962-2119x1424. Caitlin was born on 1981/01/29 and currently resides at 1985 Sanchez Manors in Port Bradley, Minnesota, ZIP Code 17208. Presently employed as a Chartered public finance accountant at Simmons-Boyd, Caitlin has been part of this establishment for 6 months with a commendable monthly income of USD 12,155. Seeking to relocate, Caitlin's preferred move-in date is set for 2025/02/16, with an interest in a lease term of 12 months, while the maximum monthly rent willing to be paid is USD 1,634. The preferred area for residency is described as Quiet neighborhood. Caitlin mentions having a pet in the household, specifically described as Parrot. Furthermore, Caitlin adds, \"Looking for a peaceful environment.\" This application presents Caitlin as a candidate who values tranquility and is seeking accommodations that suit this lifestyle preference.",
+    "goldAnswers": {
+      "Full Name": "Caitlin Benson MD",
+      "Email Address": "nwhite@ross.com",
+      "Phone Number": "985-962-2119x1424",
+      "Date of Birth": "1981/01/29",
+      "Street Address": "1985 Sanchez Manors",
+      "City": "Port Bradley",
+      "State": "Minnesota",
+      "ZIP Code": "17208",
+      "Current Employer": "Simmons-Boyd",
+      "Job Title": "Chartered public finance accountant",
+      "Monthly Income (USD)": 12155,
+      "Length of Employment": "6 months",
+      "Preferred Move-in Date": "2025/02/16",
+      "Preferred Lease Term": "12 months",
+      "Maximum Monthly Rent (USD)": 1634,
+      "Preferred Area": "Quiet neighborhood",
+      "Do you have any pets?": "Yes",
+      "If yes, please describe your pets": "Parrot",
+      "Additional Comments": "Looking for a peaceful environment."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/rental-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

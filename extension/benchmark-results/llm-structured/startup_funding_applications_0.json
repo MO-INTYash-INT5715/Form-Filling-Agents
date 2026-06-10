@@ -32,31 +32,31 @@
     {
       "fieldId": "company_name",
       "fieldType": "String",
-      "predictedValue": "Pinnacle Solutions",
+      "predictedValue": "",
       "goldValue": "Pinnacle Solutions",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "company_website",
       "fieldType": "String",
-      "predictedValue": "https://www.haynes-morales.com/",
+      "predictedValue": "",
       "goldValue": "https://www.haynes-morales.com/",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "founding_date",
       "fieldType": "Date",
-      "predictedValue": "2020-08-29",
+      "predictedValue": "",
       "goldValue": "2020/08/29",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "business_stage",
       "fieldType": "Dropdown",
-      "predictedValue": "Growth stage",
+      "predictedValue": "",
       "goldValue": "Growth",
       "clickAccurate": false,
       "valueAccurate": false
@@ -64,63 +64,63 @@
     {
       "fieldId": "founder_name",
       "fieldType": "String",
-      "predictedValue": "Kari Ibarra",
+      "predictedValue": "",
       "goldValue": "Kari Ibarra",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "founder_email",
       "fieldType": "String",
-      "predictedValue": "devin22@gmail.com",
+      "predictedValue": "",
       "goldValue": "devin22@gmail.com",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "founder_phone",
       "fieldType": "String",
-      "predictedValue": "1738464335",
+      "predictedValue": "",
       "goldValue": "1738464335",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "linkedin_profile",
       "fieldType": "String",
-      "predictedValue": "https://linkedin.com/in/kaylamills",
+      "predictedValue": "",
       "goldValue": "https://linkedin.com/in/kaylamills",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "funding_amount",
       "fieldType": "NumericInput",
-      "predictedValue": "4311070",
+      "predictedValue": "",
       "goldValue": 4311070,
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "equity_offered",
       "fieldType": "NumericInput",
-      "predictedValue": "8",
+      "predictedValue": "",
       "goldValue": 8,
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "current_valuation",
       "fieldType": "NumericInput",
-      "predictedValue": "1554377",
+      "predictedValue": "",
       "goldValue": 1554377,
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "funding_purpose",
       "fieldType": "Description",
-      "predictedValue": "hiring",
+      "predictedValue": "",
       "goldValue": "Hiring",
       "clickAccurate": false,
       "valueAccurate": false,
@@ -129,36 +129,36 @@
     {
       "fieldId": "business_model",
       "fieldType": "Description",
-      "predictedValue": "marketplace for freelancers offering digital services to small businesses and startups",
+      "predictedValue": "",
       "goldValue": "A marketplace for freelancers offering digital services to small businesses and startups.",
       "clickAccurate": false,
-      "valueAccurate": true,
-      "bleuScore": 91.31007162822624
+      "valueAccurate": false,
+      "bleuScore": 0
     },
     {
       "fieldId": "target_market",
       "fieldType": "Description",
-      "predictedValue": "parents looking for eco-friendly and sustainable products for their children",
+      "predictedValue": "",
       "goldValue": "Parents looking for eco-friendly and sustainable products for their children.",
       "clickAccurate": false,
-      "valueAccurate": true,
-      "bleuScore": 100
+      "valueAccurate": false,
+      "bleuScore": 0
     },
     {
       "fieldId": "current_revenue",
       "fieldType": "NumericInput",
-      "predictedValue": "200000",
+      "predictedValue": "",
       "goldValue": 200000,
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "team_size",
       "fieldType": "NumericInput",
-      "predictedValue": "100",
+      "predictedValue": "",
       "goldValue": 100,
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "additional_comments",
@@ -179,28 +179,28 @@
       "Description": 0
     },
     "valueAccuracy": {
-      "String": 100,
-      "Date": 100,
+      "String": 0,
+      "Date": 0,
       "Dropdown": 0,
-      "NumericInput": 100,
-      "Description": 50
+      "NumericInput": 0,
+      "Description": 0
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 82.35294117647058
+    "overallValueAccuracy": 0
   },
   "episodicMetrics": {
-    "formCompletionRate": 82.35294117647058,
-    "fieldsAttempted": 16,
-    "fieldsCorrect": 14,
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
     "totalFields": 17,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 82.35294117647058
+    "averageValueAccuracy": 0
   },
-  "executionTimeMs": 1653,
+  "executionTimeMs": 1649,
   "errors": [],
   "submissionSucceeded": true,
-  "tokensIn": 919,
-  "tokensOut": 247,
-  "llmTimeMs": 6313,
-  "llmCalls": 1
+  "tokensIn": 0,
+  "tokensOut": 0,
+  "llmTimeMs": 0,
+  "llmCalls": 0
 }

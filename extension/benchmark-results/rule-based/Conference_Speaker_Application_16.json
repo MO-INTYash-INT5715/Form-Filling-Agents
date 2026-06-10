@@ -1,0 +1,48 @@
+{
+  "formInstance": {
+    "formId": "Conference_Speaker_Application",
+    "formName": "Conference Speaker Application Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 16,
+    "inputDocument": "Ava Evans, from Creative Writing Collective, submits her application for consideration as a speaker at the upcoming conference. With the contact details ava.evans72@outlook.com and phone number 678-123-4567, Ava is eager to present on the topic area of Creative Writing. Her presentation, titled \"Building a Strong Narrative Voice in Fiction,\" aims to impart valuable insights on how writers can develop a strong, distinct narrative voice in fiction writing. The presentation abstract explains that it will cover techniques for creating authentic characters, setting tone, and maintaining consistency throughout a story. Participants will benefit from the outlined learning objectives: understanding how to define and develop a narrative voice, learning techniques for writing authentic, engaging characters, and exploring the role of tone and voice in crafting compelling narratives.\n\nAva brings a wealth of experience, highlighted in her professional biography. As a fiction writer and writing mentor with several published novels and short stories, she also teaches creative writing at the university level and regularly conducts writing workshops. Her previous speaking experience includes serving as a speaker at the Creative Fiction Writing Workshop 2022 and as a panelist at the Storytelling Conference 2021. For her workshop presentation format, she will require a computer, projector, and handouts as her special technical requirements. Despite not providing a CV/Resume, Ava agrees to the speaker guidelines and terms of participation, confident that her expertise and prior engagements make her a valuable addition to the speaker roster.",
+    "goldAnswers": {
+      "Full Name": "Ava Evans",
+      "Email Address": "ava.evans72@outlook.com",
+      "Phone Number": "678-123-4567",
+      "Organization/Institution": "Creative Writing Collective",
+      "Presentation Title": "Building a Strong Narrative Voice in Fiction",
+      "Topic Area": "Creative Writing",
+      "Presentation Abstract": "This presentation will focus on how writers can develop a strong, distinct narrative voice in fiction writing. We will discuss techniques for creating authentic characters, setting tone, and maintaining consistency throughout a story.",
+      "Learning Objectives": "1. Understand how to define and develop a narrative voice. 2. Learn techniques for writing authentic, engaging characters. 3. Explore the role of tone and voice in crafting compelling narratives.",
+      "Professional Biography": "Ava Evans is a fiction writer and writing mentor, with several published novels and short stories. She teaches creative writing at the university level and regularly conducts writing workshops.",
+      "CV/Resume": "None",
+      "Previous Speaking Experience": "1. Speaker at Creative Fiction Writing Workshop 2022. 2. Panelist at Storytelling Conference 2021.",
+      "Presentation Format": "Workshop",
+      "Special Technical Requirements": "Computer, projector, handouts.",
+      "I agree to the speaker guidelines and terms of participation": "Yes"
+    },
+    "multiPage": true,
+    "formPath": "/arts-creative/speaker-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

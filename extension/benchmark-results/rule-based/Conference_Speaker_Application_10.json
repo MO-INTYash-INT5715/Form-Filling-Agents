@@ -1,0 +1,48 @@
+{
+  "formInstance": {
+    "formId": "Conference_Speaker_Application",
+    "formName": "Conference Speaker Application Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 10,
+    "inputDocument": "Oliver Davis, affiliated with the Digital Arts Academy, is a speaker applicant with a profound background in digital media arts, particularly focusing on virtual reality. With contact details available at oliver.davis98@icloud.com and via phone at 234-678-9010, Oliver has delineated a presentation titled \"Exploring Virtual Reality in Digital Media Arts\" for the conference attendees. Concentrating within the domain of Digital Media, the Presentation Abstract specifically states that this session will examine the use of virtual reality (VR) in digital media arts, focusing on its applications in immersive experiences, virtual exhibitions, and interactive storytelling. We will discuss the creative possibilities and challenges of working in VR. Attendees will gain the following Learning Objectives: 1. Understand how VR is transforming digital media arts. 2. Learn about the tools and techniques for creating VR experiences. 3. Explore the potential future of immersive media in art and entertainment. \n\nHis Professional Biography highlights Oliver Davis as a digital media artist and VR specialist who has been working in immersive media for over 5 years, creating VR installations and interactive experiences for museums and galleries. While a CV/Resume is not provided, his Previous Speaking Experience includes roles as a speaker at Virtual Reality Arts Symposium 2023 and a workshop leader at Immersive Media Conference 2022, demonstrating his proficiency and experience in public speaking engagements. The Presentation Format for this submission is a Lecture.\n\nFor the success of this session, Oliver has specified Special Technical Requirements, namely VR headsets, projector, and a computer with VR setup. Oliver is committed to ensuring a seamless and insightful experience for the audience and has confirmed agreement to the speaker guidelines and terms of participation.",
+    "goldAnswers": {
+      "Full Name": "Oliver Davis",
+      "Email Address": "oliver.davis98@icloud.com",
+      "Phone Number": "234-678-9010",
+      "Organization/Institution": "Digital Arts Academy",
+      "Presentation Title": "Exploring Virtual Reality in Digital Media Arts",
+      "Topic Area": "Digital Media",
+      "Presentation Abstract": "This session will examine the use of virtual reality (VR) in digital media arts, focusing on its applications in immersive experiences, virtual exhibitions, and interactive storytelling. We will discuss the creative possibilities and challenges of working in VR.",
+      "Learning Objectives": "1. Understand how VR is transforming digital media arts. 2. Learn about the tools and techniques for creating VR experiences. 3. Explore the potential future of immersive media in art and entertainment.",
+      "Professional Biography": "Oliver Davis is a digital media artist and VR specialist. He has been working in immersive media for over 5 years, creating VR installations and interactive experiences for museums and galleries.",
+      "CV/Resume": "None",
+      "Previous Speaking Experience": "1. Speaker at Virtual Reality Arts Symposium 2023. 2. Workshop leader at Immersive Media Conference 2022.",
+      "Presentation Format": "Lecture",
+      "Special Technical Requirements": "VR headsets, projector, computer with VR setup.",
+      "I agree to the speaker guidelines and terms of participation": "Yes"
+    },
+    "multiPage": true,
+    "formPath": "/arts-creative/speaker-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

@@ -1,0 +1,38 @@
+{
+  "formInstance": {
+    "formId": "job_applications",
+    "formName": "Job Application for University Positions",
+    "domain": "Academic & Research",
+    "instanceIndex": 13,
+    "inputDocument": "[Your Address]  \n[City, State, Zip Code]  \n[Email Address]  \n[Phone Number]  \n[Date]  \n\n[Employer's Name]  \n[Company Name]  \n[Company Address]  \n[City, State, Zip Code]  \n\nDear [Employer's Name],  \n\nI am writing to express my interest in the Research Scientist position within the Research & Development department at [Company Name]. My name is Henry Li, and I am drawn to the opportunity to contribute to a team known for its commitment to groundbreaking research and innovation.\n\nWith a strong background in research and a passion for innovation, I am excited to contribute to the Research & Development team. Throughout my career, I have honed my abilities to conduct rigorous and impactful research, always with a curiosity to uncover new knowledge and develop practical solutions to pressing challenges. [Here, you may want to include any details about specific projects or experiences that highlight your qualifications.]\n\nI am particularly drawn to this opportunity at [Company Name] because of the company's dedication to advancing technology and fostering an environment that champions creativity and collaboration. I am confident that my skills and enthusiasm align well with the goals of your department.\n\nThank you for considering my application. I look forward to the possibility of discussing how my experience and skills align with the needs of your team. Please feel free to contact me at your earliest convenience.\n\nWarm regards,\n\nHenry Li  \n\n[Enclosure: Resume]",
+    "goldAnswers": {
+      "Applicant Name": "Henry Li",
+      "Position Applied For": "Research Scientist",
+      "Preferred Department": "Research & Development",
+      "Cover Letter": "With a strong background in research and a passion for innovation, I am excited to contribute to the Research & Development team."
+    },
+    "multiPage": false,
+    "formPath": "/academic-research/job-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

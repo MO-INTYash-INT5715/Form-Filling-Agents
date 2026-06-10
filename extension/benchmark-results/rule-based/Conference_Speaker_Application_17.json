@@ -1,0 +1,48 @@
+{
+  "formInstance": {
+    "formId": "Conference_Speaker_Application",
+    "formName": "Conference Speaker Application Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 17,
+    "inputDocument": "Lucas Bennett, representing the esteemed Arts & Media Center, is applying to speak at the upcoming conference with his presentation titled The Intersection of Art and Technology in Modern Photography, under the topic area of Visual Arts. With a presentation format of Lecture, Lucas aims to delve into the ways technological advancements, including digital editing software and drone photography, are influencing the field of photography. Through this session, attendees will explore how photographers are using these tools to push artistic boundaries. The learning objectives include understanding the role of technology in modern photography, learning about the use of digital editing and drones in creating artistic images, and exploring how technology has expanded the possibilities for photographers.\n\nLucas Bennett is adept in both photography and digital artistry, specializing in landscape and aerial photography. His innovative use of technology in art has become a hallmark of his professional work. His previous speaking experience is notable, having been a speaker at the Photography and Technology Conference 2023, and serving as a panelist at the Digital Arts Expo 2022. For his session, the special technical requirements include a computer, projector, camera equipment, and a drone.\n\nWith this application, Lucas Bennett agrees to the speaker guidelines and terms of participation and can be reached for further correspondence via his email, lucas.bennett48@aol.com, or phone number, 345-678-9012. Unfortunately, he has not provided a CV/Resume.",
+    "goldAnswers": {
+      "Full Name": "Lucas Bennett",
+      "Email Address": "lucas.bennett48@aol.com",
+      "Phone Number": "345-678-9012",
+      "Organization/Institution": "Arts & Media Center",
+      "Presentation Title": "The Intersection of Art and Technology in Modern Photography",
+      "Topic Area": "Visual Arts",
+      "Presentation Abstract": "This presentation will examine how technological advancements, including digital editing software and drone photography, are influencing the field of photography. We will explore how photographers are using these tools to push artistic boundaries.",
+      "Learning Objectives": "1. Understand the role of technology in modern photography. 2. Learn about the use of digital editing and drones in creating artistic images. 3. Explore how technology has expanded the possibilities for photographers.",
+      "Professional Biography": "Lucas Bennett is a professional photographer and digital artist specializing in landscape and aerial photography. He is known for his innovative use of technology in his art.",
+      "CV/Resume": "None",
+      "Previous Speaking Experience": "1. Speaker at Photography and Technology Conference 2023. 2. Panelist at Digital Arts Expo 2022.",
+      "Presentation Format": "Lecture",
+      "Special Technical Requirements": "Computer, projector, camera equipment, drone.",
+      "I agree to the speaker guidelines and terms of participation": "Yes"
+    },
+    "multiPage": true,
+    "formPath": "/arts-creative/speaker-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

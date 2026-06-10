@@ -1,0 +1,53 @@
+{
+  "formInstance": {
+    "formId": "real_estate_rental_applications",
+    "formName": "Real Estate Rental Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 34,
+    "inputDocument": "Edward Bryan is submitting a rental application for consideration. Mr. Bryan's contact details include his email, justin31@johnson.com, and phone number, +1-967-479-6355x9362. His date of birth is 1998/12/17. He currently resides at 7925 Raymond Union Suite 034, West Kristyshire, North Carolina, ZIP Code 27638. Professionally, Mr. Bryan is employed as a Scientist, audiological at Miller-Kelly, where he has a tenure of 10 years and earns a monthly income of 12,784 USD. He is seeking to move into a rental property on 2025/01/22, ideally under a lease term of 24 months, with a maximum monthly rent not exceeding 3,539 USD. His preferred area is \"Suburbs.\" Although he does not have any pets, Mr. Bryan wishes to highlight that he is \"Looking for family-friendly options.\" The information provided herein is accurate as per his knowledge and underscores his commitment to securing a suitable rental accommodation.",
+    "goldAnswers": {
+      "Full Name": "Edward Bryan",
+      "Email Address": "justin31@johnson.com",
+      "Phone Number": "+1-967-479-6355x9362",
+      "Date of Birth": "1998/12/17",
+      "Street Address": "7925 Raymond Union Suite 034",
+      "City": "West Kristyshire",
+      "State": "North Carolina",
+      "ZIP Code": "27638",
+      "Current Employer": "Miller-Kelly",
+      "Job Title": "Scientist, audiological",
+      "Monthly Income (USD)": 12784,
+      "Length of Employment": "10 years",
+      "Preferred Move-in Date": "2025/01/22",
+      "Preferred Lease Term": "24 months",
+      "Maximum Monthly Rent (USD)": 3539,
+      "Preferred Area": "Suburbs",
+      "Do you have any pets?": "No",
+      "If yes, please describe your pets": "No pets",
+      "Additional Comments": "Looking for family-friendly options."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/rental-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

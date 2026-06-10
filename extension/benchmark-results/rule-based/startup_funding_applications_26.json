@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "startup_funding_applications",
+    "formName": "Startup Funding Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 26,
+    "inputDocument": "GreenMatrix, accessible via our company website at http://jones.com/, was founded on 2022/07/30. At present, GreenMatrix is at the MVP business stage. This application for startup funding is spearheaded by our founder, Alan Costa. I can be reached via email at rosearroyo@gmail.com or by phone at 3448879575, and additional professional details are available on my LinkedIn profile at https://linkedin.com/in/mark42.\n\nWe are seeking a funding amount of USD 2,213,519, in exchange for which we are prepared to offer an equity stake of 18% in the company. Our valuation currently stands at USD 12,863,257. The primary purpose of this funding round is market expansion. GreenMatrix presents an AI-powered software solution that automates customer support for businesses, enhancing efficiency and scaling of communication operations.\n\nOur target market encompasses small and medium-sized businesses seeking affordable marketing automation tools. As of now, we have achieved a current monthly revenue of USD 300,000 with a team size of 50 dedicated professionals. We are looking for investors who share our vision to collaboratively propel GreenMatrix towards foreseen growth and success.",
+    "goldAnswers": {
+      "Company Name": "GreenMatrix",
+      "Company Website": "http://jones.com/",
+      "Founding Date": "2022/07/30",
+      "Business Stage": "MVP",
+      "Founder Name": "Alan Costa",
+      "Email": "rosearroyo@gmail.com",
+      "Phone Number": "3448879575",
+      "LinkedIn Profile": "https://linkedin.com/in/mark42",
+      "Funding Amount Required (USD)": 2213519,
+      "Equity Offered (%)": 18,
+      "Current Company Valuation (USD)": 12863257,
+      "Purpose of Funding": "Market Expansion",
+      "Business Model": "An AI-powered software solution that automates customer support for businesses.",
+      "Target Market": "Small and medium-sized businesses seeking affordable marketing automation tools.",
+      "Current Monthly Revenue (USD)": 300000,
+      "Current Team Size": 50,
+      "Additional Comments": "Looking for investors who share our vision."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/startup-funding"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "startup_funding_applications",
+    "formName": "Startup Funding Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 44,
+    "inputDocument": "Renewify, established on 2020/12/06 and accessible at http://hawkins.biz/, is at the \"Idea\" stage of business development. Under the leadership of its founder, Julia Franklin, the company is seeking a funding amount of 2,594,408 USD to advance its objectives, specifically for Research and Development. The purpose behind this request is to facilitate the growth and enhancement of our business model, which focuses on an AI-powered software solution that automates customer support for businesses. Our target market consists primarily of parents looking for eco-friendly and sustainable products for their children.\n\nRenewify offers an equity stake of 8% in exchange for the requested funding, based on a current company valuation of 23,757,453 USD. The organization presently generates a monthly revenue of 300,000 USD and boasts a dedicated team of 50 members. For further information or queries, please contact Julia Franklin via email at adam64@thomas.info, by phone at (520)163-7967x117, or visit our LinkedIn profile at https://linkedin.com/in/dana89. We are keen to leverage this opportunity to scale the business with strategic investments, as highlighted in our additional comments.",
+    "goldAnswers": {
+      "Company Name": "Renewify",
+      "Company Website": "http://hawkins.biz/",
+      "Founding Date": "2020/12/06",
+      "Business Stage": "Idea",
+      "Founder Name": "Julia Franklin",
+      "Email": "adam64@thomas.info",
+      "Phone Number": "(520)163-7967x117",
+      "LinkedIn Profile": "https://linkedin.com/in/dana89",
+      "Funding Amount Required (USD)": 2594408,
+      "Equity Offered (%)": 8,
+      "Current Company Valuation (USD)": 23757453,
+      "Purpose of Funding": "Research and Development",
+      "Business Model": "An AI-powered software solution that automates customer support for businesses.",
+      "Target Market": "Parents looking for eco-friendly and sustainable products for their children.",
+      "Current Monthly Revenue (USD)": 300000,
+      "Current Team Size": 50,
+      "Additional Comments": "Looking forward to scaling the business with strategic investments."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/startup-funding"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

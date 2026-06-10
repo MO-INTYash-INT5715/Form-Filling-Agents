@@ -1,0 +1,46 @@
+{
+  "formInstance": {
+    "formId": "student_courses",
+    "formName": "Student Course Registration Form",
+    "domain": "Academic & Research",
+    "instanceIndex": 7,
+    "inputDocument": "---\n\n**Course Enrollment Request**\n\n**To Whom It May Concern,**\n\nI hope this message finds you well. My name is **Raymond Howard**, identified by the Student ID: **86654678**. It is with great anticipation and dedication that I submit this formal request to enroll in selected courses for the forthcoming **Spring 2025** semester. Being a committed participant in the **Computer Science** program, I am eager to expand my academic horizon.\n\nHerein, I present the details pertinent to my enrollment:\n\n- **Selected Courses**:  \n  - **CS101**: Introduction to Programming  \n  - **CS104**: Web Development  \n  - **CS103**: Database Systems  \n\nMy communication details are outlined as follows for any necessary correspondence:\n- **Email**: acox@hotmail.com\n- **Phone Number**: 869-674-5233x1064\n\nAdditionally, I would like to specifically address the content in the \"Special Requirements or Comments\" section:  \n\"Looking forward to exploring web development.\"\n\nThese courses represent a vital step in my academic journey, and my commitment to engaging with the curriculum offered by your esteemed institution is of utmost enthusiasm. Your consideration of this request is greatly appreciated, and I am optimistic that the integration and insights from these modules will significantly augment my understanding of core computer science principles.\n\nThank you for your time and attention to this request. I eagerly await your favorable response.\n\nKind regards,\n\n**Raymond Howard**  \n\n---",
+    "goldAnswers": {
+      "Full Name": "Raymond Howard",
+      "Student ID": 86654678,
+      "Email": "acox@hotmail.com",
+      "Phone Number": "869-674-5233x1064",
+      "Semester": "Spring 2025",
+      "Program": "Computer Science",
+      "Selected Courses": [
+        "CS101 - Introduction to Programming",
+        "CS104 - Web Development",
+        "CS103 - Database Systems"
+      ],
+      "Special Requirements or Comments": "Looking forward to exploring web development."
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/course-registration"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

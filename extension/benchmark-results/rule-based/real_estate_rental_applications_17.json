@@ -1,0 +1,53 @@
+{
+  "formInstance": {
+    "formId": "real_estate_rental_applications",
+    "formName": "Real Estate Rental Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 17,
+    "inputDocument": "Stephen Perkins, currently residing at 45137 James Camp Apt. 946, Port Samanthashire, New York, 12505, is submitting this rental application for consideration. He can be contacted via email at bowenjoshua@beard.com or by phone at 001-487-749-1867x3335. Born on 1970/04/12, Mr. Perkins is employed as an Environmental manager with Evans Ltd, having held his position for 2 years, with a monthly income of USD 14,970. Mr. Perkins is seeking to relocate, with a preferred move-in date of 2025/02/09, and is interested in a lease term of 24 months. His preferred area is Near parks, with a maximum monthly rent budget of USD 1,173. At this time, Mr. Perkins does not have any pets—If yes, please describe your pets: \"No pets.\" As an enthusiastic prospective tenant, he remarks, \"Excited to find the right place.\"",
+    "goldAnswers": {
+      "Full Name": "Stephen Perkins",
+      "Email Address": "bowenjoshua@beard.com",
+      "Phone Number": "001-487-749-1867x3335",
+      "Date of Birth": "1970/04/12",
+      "Street Address": "45137 James Camp Apt. 946",
+      "City": "Port Samanthashire",
+      "State": "New York",
+      "ZIP Code": "12505",
+      "Current Employer": "Evans Ltd",
+      "Job Title": "Environmental manager",
+      "Monthly Income (USD)": 14970,
+      "Length of Employment": "2 years",
+      "Preferred Move-in Date": "2025/02/09",
+      "Preferred Lease Term": "24 months",
+      "Maximum Monthly Rent (USD)": 1173,
+      "Preferred Area": "Near parks",
+      "Do you have any pets?": "No",
+      "If yes, please describe your pets": "No pets",
+      "Additional Comments": "Excited to find the right place."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/rental-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

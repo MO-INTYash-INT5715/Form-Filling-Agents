@@ -1,0 +1,43 @@
+{
+  "formInstance": {
+    "formId": "Art_Exhibition_Submission_Form",
+    "formName": "Art Exhibition Submission Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 39,
+    "inputDocument": "Artist Quentin Chen is pleased to submit his artwork, \"City at Night,\" for consideration in your upcoming art exhibition. Quentin Chen can be reached via email at quentin.chen2003@yahoo.com. The artwork, created in 2024, is presented in the medium of Photography and measures 70 x 50 x 2 cm. The artwork description is as follows: \"The photograph shows a city at night, alive with lights. Skyscrapers are illuminated from top to bottom, their windows creating a pattern of light against the dark sky. The streets below are filled with cars, their headlights and taillights creating streams of color. Neon signs advertising various businesses add a splash of bright color to the scene. The reflection of the lights on the wet pavement after a recent rain adds an extra layer of beauty and complexity to the cityscape, making it a captivating view of urban nightlife.\" Quentin Chen expresses a preference for the exhibition period of Spring 2024 and confirms that the artwork is available for sale.",
+    "goldAnswers": {
+      "Artist Name": "Quentin Chen",
+      "Email Address": "quentin.chen2003@yahoo.com",
+      "Artwork Title": "City at Night",
+      "Medium": "Photography",
+      "Dimensions (in cm)": "70 x 50 x 2",
+      "Year Created": 2024,
+      "Artwork Description": "The photograph shows a city at night, alive with lights. Skyscrapers are illuminated from top to bottom, their windows creating a pattern of light against the dark sky. The streets below are filled with cars, their headlights and taillights creating streams of color. Neon signs advertising various businesses add a splash of bright color to the scene. The reflection of the lights on the wet pavement after a recent rain adds an extra layer of beauty and complexity to the cityscape, making it a captivating view of urban nightlife.",
+      "Preferred Exhibition Period": "Spring 2024",
+      "Artwork is available for sale": true
+    },
+    "multiPage": false,
+    "formPath": "/arts-creative/exhibition-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

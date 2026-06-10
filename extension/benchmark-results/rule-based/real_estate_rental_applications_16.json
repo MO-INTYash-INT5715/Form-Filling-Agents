@@ -1,0 +1,53 @@
+{
+  "formInstance": {
+    "formId": "real_estate_rental_applications",
+    "formName": "Real Estate Rental Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 16,
+    "inputDocument": "Stephen Turner, currently residing at 828 Ian Loop, Greenetown, Missouri, 17891, wishes to express his interest in renting a property. He can be reached via email at markchapman@hudson.com or by phone at 001-913-445-0440x8736. Born on 1981/06/04, Stephen is an Environmental consultant employed by Holloway, Russell and King, where he has diligently worked for the past 1 year. With a monthly income of 8683 USD, he is seeking a rental property with a maximum monthly rent of 3217 USD. Stephen intends to move in by 2025/01/08 and is interested in a lease term of 24 months. The preferred area for his new residence is \"Near public transport\". He has no pets, as indicated by the entry \"No pets\". Stephen has also expressed, “Excited to find the right place.” This application reflects his commitment to finding a suitable and convenient living arrangement.",
+    "goldAnswers": {
+      "Full Name": "Stephen Turner",
+      "Email Address": "markchapman@hudson.com",
+      "Phone Number": "001-913-445-0440x8736",
+      "Date of Birth": "1981/06/04",
+      "Street Address": "828 Ian Loop",
+      "City": "Greenetown",
+      "State": "Missouri",
+      "ZIP Code": "17891",
+      "Current Employer": "Holloway, Russell and King",
+      "Job Title": "Environmental consultant",
+      "Monthly Income (USD)": 8683,
+      "Length of Employment": "1 year",
+      "Preferred Move-in Date": "2025/01/08",
+      "Preferred Lease Term": "24 months",
+      "Maximum Monthly Rent (USD)": 3217,
+      "Preferred Area": "Near public transport",
+      "Do you have any pets?": "No",
+      "If yes, please describe your pets": "No pets",
+      "Additional Comments": "Excited to find the right place."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/rental-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

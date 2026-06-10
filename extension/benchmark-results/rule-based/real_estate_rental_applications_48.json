@@ -1,0 +1,53 @@
+{
+  "formInstance": {
+    "formId": "real_estate_rental_applications",
+    "formName": "Real Estate Rental Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 48,
+    "inputDocument": "Terry Mcclain hereby submits a formal rental application for your esteemed consideration. With a current residence at 0861 Chang Ramp, New Christopher, Florida, 58655, Terry has consistently demonstrated loyalty and dedication as a Financial trader with Frederick-Carter, boasting a stable monthly income of $13,115 over a span of 2 years. Prospective move-in is set for February 2, 2025, with a preference for a lease term of 6 months and a budgetary maximum monthly rent of $1,727. Aiming for tranquility and convenience, Terry Mcclain expresses a strong preference for areas located \"Near parks.\" Furthermore, it is pertinent to disclose the ownership of a pet described exactly as: \"Cat, very friendly.\" Anticipating a family-friendly environment, additional comments are noted as follows: \"Looking for family-friendly options.\" For further correspondence, Terry Mcclain can be reached via email at zyoung@gmail.com or by phone at +1-426-401-2881.",
+    "goldAnswers": {
+      "Full Name": "Terry Mcclain",
+      "Email Address": "zyoung@gmail.com",
+      "Phone Number": "+1-426-401-2881",
+      "Date of Birth": "1979/02/28",
+      "Street Address": "0861 Chang Ramp",
+      "City": "New Christopher",
+      "State": "Florida",
+      "ZIP Code": "58655",
+      "Current Employer": "Frederick-Carter",
+      "Job Title": "Financial trader",
+      "Monthly Income (USD)": 13115,
+      "Length of Employment": "2 years",
+      "Preferred Move-in Date": "2025/02/02",
+      "Preferred Lease Term": "6 months",
+      "Maximum Monthly Rent (USD)": 1727,
+      "Preferred Area": "Near parks",
+      "Do you have any pets?": "Yes",
+      "If yes, please describe your pets": "Cat, very friendly",
+      "Additional Comments": "Looking for family-friendly options."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/rental-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

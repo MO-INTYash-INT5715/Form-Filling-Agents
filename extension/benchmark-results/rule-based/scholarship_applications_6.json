@@ -1,0 +1,57 @@
+{
+  "formInstance": {
+    "formId": "scholarship_applications",
+    "formName": "Scholarship Application for Students",
+    "domain": "Academic & Research",
+    "instanceIndex": 6,
+    "inputDocument": "**Scholarship Application**\n\n**Applicant Information:**\n\n**Name:** James Aaron Brewer  \n**Student ID:** 23880848  \n**Major/Field of Study:** Philosophy  \n**Current GPA:** 3.14  \n**Academic Year:** Junior  \n**Current Financial Aid:** Student Loans  \n**Annual Family Income:** $62,058  \n\n---\n\nDear Scholarship Committee,\n\nMy name is James Aaron Brewer, a dedicated junior pursuing my major in Philosophy with a current GPA of 3.14. I am writing to express my sincere interest in your esteemed scholarship, which I believe will significantly impact my educational journey. Currently, my financial support comes primarily from student loans, placing a substantial burden on my ability to focus entirely on my studies.\n\nThroughout my academic career, I have consistently strived for excellence, achieving notable academic milestones that I am particularly proud of. I placed in the top 5% in the International Chemistry Olympiad and received the Dean’s List Award for Outstanding Academic Performance. In addition, I published a research paper in the International Journal of Engineering and emerged as the winner of the State Physics Olympiad. These experiences have significantly enhanced my analytical and critical thinking skills, reinforcing my commitment to my academic and personal growth.\n\nBeyond the classroom, I am deeply committed to community service and extracurricular engagement. As the Coordinator of the Youth Empowerment Program, I have had the privilege of leading initiatives that foster skills and opportunities for younger individuals in our community. My role as a volunteer at the local community center has allowed me to connect with diverse populations and gain valuable insights into various social issues. Furthermore, organizing charity events for the Red Cross highlights my dedication to making a positive difference in society.\n\nMy statement of purpose is simple yet profound: I am passionately dedicated to advancing my knowledge in environmental science. This scholarship will enable me to continue my studies without the persistent pressure of financial burdens, allowing me to immerse myself fully in my academic pursuits. You have the power to help shape not only my future but also the future of sustainable development and environmental inquiry, which I aspire to impact positively.\n\nI respectfully request your consideration of my application. I believe I have the academic achievements, extracurricular engagement, and a firm commitment to making a difference that qualifies me for this scholarship. Should you require any further information, please do not hesitate to contact my academic reference, Troy Graham, at destinygraham@yahoo.com.\n\nThank you for considering my application. I am eager for the opportunity to further my education and contribute meaningfully to our community.\n\nSincerely,  \nJames Aaron Brewer",
+    "goldAnswers": {
+      "First Name": "James",
+      "Middle Name": "Aaron",
+      "Last Name": "Brewer",
+      "Student ID": 23880848,
+      "Major/Field of Study": "Philosophy",
+      "Current GPA": 3.14,
+      "Academic Year": "Junior",
+      "Current Financial Aid": "Student Loans",
+      "Annual Family Income": 62058,
+      "Academic Achievements": [
+        "Top 5% in the International Chemistry Olympiad",
+        "Received the Dean’s List Award for Outstanding Academic Performance",
+        "Published a research paper in the International Journal of Engineering",
+        "Winner of the State Physics Olympiad"
+      ],
+      "Extracurricular Activities": [
+        "Coordinator of the Youth Empowerment Program",
+        "Volunteer at the local community center",
+        "Organized charity events for the Red Cross"
+      ],
+      "Statement of Purpose": "I am deeply passionate about advancing my knowledge in the field of environmental science. This scholarship will enable me to continue my studies without the pressure of financial burdens, and I plan to use the knowledge gained to make an impact in sustainable development.",
+      "Academic Reference": "Troy Graham",
+      "Reference Email": "destinygraham@yahoo.com"
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/scholarship-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

@@ -1,0 +1,45 @@
+{
+  "formInstance": {
+    "formId": "Literary_Magazine_Submission",
+    "formName": "Literary Magazine Submission Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 11,
+    "inputDocument": "Ava Thomas respectfully submits her work titled, \"The Light Beyond the Horizon,\" for consideration in the Winter 2024 issue of your esteemed literary magazine. Ava can be reached at ava.thomas37@gmail.com for any correspondence regarding this submission. \n\nClassified under the Genre of Non-Fiction, this piece encapsulates a Word Count of 3200 words. The work is aptly summarized in the Abstract/Summary, which reads: \"A memoir about overcoming personal challenges and finding hope in the most difficult times.\" \n\nAva Thomas affirms that \"The Light Beyond the Horizon\" has not been previously published and confirms that this is not a simultaneous submission. Additionally, Ava has reviewed and agrees to the submission guidelines and terms of publication. Please note that a manuscript file accompanies this submission, and Ava looks forward to the possibility of sharing this narrative with your readers.",
+    "goldAnswers": {
+      "Author Name": "Ava Thomas",
+      "Email Address": "ava.thomas37@gmail.com",
+      "Title": "The Light Beyond the Horizon",
+      "Genre": "Non-Fiction",
+      "Word Count": 3200,
+      "Abstract/Summary": "A memoir about overcoming personal challenges and finding hope in the most difficult times.",
+      "Manuscript File": "None",
+      "Preferred Issue": "Winter 2024",
+      "This work has been previously published": "No",
+      "This is a simultaneous submission": "No",
+      "I agree to the submission guidelines and terms of publication": "Yes"
+    },
+    "multiPage": false,
+    "formPath": "/arts-creative/literary-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

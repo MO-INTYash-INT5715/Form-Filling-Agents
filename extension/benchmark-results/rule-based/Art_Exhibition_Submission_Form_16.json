@@ -1,0 +1,43 @@
+{
+  "formInstance": {
+    "formId": "Art_Exhibition_Submission_Form",
+    "formName": "Art Exhibition Submission Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 16,
+    "inputDocument": "Quinn Chen respectfully submits their work for consideration in your esteemed art exhibition. The piece entitled \"City Lights at Dusk\" is a captivating example of Photography, with dimensions measuring 70 x 50 x 2 cm. Created in the year 2024, this artwork offers a vivid depiction as described: \"This photograph shows a cityscape at the transition between day and night. As the sun sets, the city lights begin to flicker on, creating a warm glow against the fading blue sky. The buildings, with their illuminated windows, stand out against the backdrop of the evening sky. The long shadows cast by the buildings add depth to the scene. It's a moment that captures the changing mood of the city as it prepares to embrace the night, a time when the city takes on a different, more mysterious character.\" Quinn Chen expresses a preference for participation in the Spring 2024 exhibition period. Additionally, the artwork is available for sale. Please direct correspondence to quinn.chen2001@qq.com. Your consideration of this submission is greatly appreciated.",
+    "goldAnswers": {
+      "Artist Name": "Quinn Chen",
+      "Email Address": "quinn.chen2001@qq.com",
+      "Artwork Title": "City Lights at Dusk",
+      "Medium": "Photography",
+      "Dimensions (in cm)": "70 x 50 x 2",
+      "Year Created": 2024,
+      "Artwork Description": "This photograph shows a cityscape at the transition between day and night. As the sun sets, the city lights begin to flicker on, creating a warm glow against the fading blue sky. The buildings, with their illuminated windows, stand out against the backdrop of the evening sky. The long shadows cast by the buildings add depth to the scene. It's a moment that captures the changing mood of the city as it prepares to embrace the night, a time when the city takes on a different, more mysterious character.",
+      "Preferred Exhibition Period": "Spring 2024",
+      "Artwork is available for sale": true
+    },
+    "multiPage": false,
+    "formPath": "/arts-creative/exhibition-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

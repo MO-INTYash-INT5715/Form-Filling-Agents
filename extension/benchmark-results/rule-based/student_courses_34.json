@@ -1,0 +1,46 @@
+{
+  "formInstance": {
+    "formId": "student_courses",
+    "formName": "Student Course Registration Form",
+    "domain": "Academic & Research",
+    "instanceIndex": 34,
+    "inputDocument": "Subject: Course Enrollment Request for Spring 2025\n\nDear Admissions Office,\n\nI hope this message finds you well. I am writing to formally request enrollment in the forthcoming courses for the Spring 2025 semester as outlined on my enrollment form. Please find my details and selected courses below for your consideration.\n\n**Full Name:**  \nAndrew Clayton\n\n**Student Identification Number:**  \n1000197\n\n**Contact Information:**  \n- Email: kempjoseph@gmail.com  \n- Phone: (041)386-7751x5379  \n\n**Academic Program:**  \nSoftware Engineering\n\n**Selected Courses for Enrollment:**  \n1. CS102 - Data Structures  \n2. CS103 - Database Systems  \n3. CS104 - Web Development  \n\nCurrently pursuing a specialization in Software Engineering, I am eager to advance my education with these essential courses. This selection aligns with the academic and professional goals I have set for myself, ensuring comprehensive skills development in critical areas of the field.\n\nPertinently, I would like to draw attention to my remark in the special requirements section of the form: \"Looking forward to exploring web development.\" It truly encapsulates my enthusiasm and anticipation for delving into this thriving discipline. Knowing the ever-growing importance of web technologies, I am extremely motivated to gain foundational expertise through CS104.\n\nI trust this request upholds the program's standards, and I kindly ask you to confirm my course enrollments at your earliest convenience. Should you require any further information, please do not hesitate to contact me via the provided email or phone number.\n\nThank you for your time and consideration.\n\nWarm regards,\n\nAndrew Clayton",
+    "goldAnswers": {
+      "Full Name": "Andrew Clayton",
+      "Student ID": 1000197,
+      "Email": "kempjoseph@gmail.com",
+      "Phone Number": "(041)386-7751x5379",
+      "Semester": "Spring 2025",
+      "Program": "Software Engineering",
+      "Selected Courses": [
+        "CS102 - Data Structures",
+        "CS103 - Database Systems",
+        "CS104 - Web Development"
+      ],
+      "Special Requirements or Comments": "Looking forward to exploring web development."
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/course-registration"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

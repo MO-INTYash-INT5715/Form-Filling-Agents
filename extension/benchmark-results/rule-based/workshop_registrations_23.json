@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "workshop_registrations",
+    "formName": "Educational Workshop Registration",
+    "domain": "Professional & Business",
+    "instanceIndex": 23,
+    "inputDocument": "Subject: Workshop Registration Request for Continuing Education\n\nDear Workshop Coordination Team,\n\nI am writing to formally submit my registration request for the Digital Marketing workshop under the Continuing Education program. Please find the relevant details below.\n\nMy full name is Justin Chavez, and my contact information is as follows: Email Address - rmoss@smith.org and Phone Number - 552.050.8178x103. I am currently associated with Hanson, Kane and Khan, where I hold the position of Engineer, aeronautical. I have achieved a PhD as my highest education level and have accumulated 19 years of professional experience in my field.\n\nI am particularly interested in attending the workshop on my preferred session date of 2025/01/01 during the morning slot. I wish to participate in the session through the In-Person delivery mode. My dietary requirement is Vegetarian, and I have no accessibility requirements at present.\n\nFor the payment of my registration, I intend to use the Bank Transfer method. Kindly direct the billing to the following address: 95729 Parks Isle, Jamesfurt, NH 32085.\n\nRegarding my expectations, I am excited to learn new skills in business management to better handle operational challenges. Moreover, I would like to mention a special request: it would be great if we could have a session on the integration of modern technologies with traditional business models.\n\nI trust this information is comprehensive for the registration process. Please let me know if you require any additional documentation or clarification.\n\nThank you for your attention to my request.\n\nWarm regards,\n\nJustin Chavez",
+    "goldAnswers": {
+      "Full Name": "Justin Chavez",
+      "Email Address": "rmoss@smith.org",
+      "Phone Number": "552.050.8178x103",
+      "Organization/Company": "Hanson, Kane and Khan",
+      "Workshop Category": "Digital Marketing",
+      "Preferred Session Date": "2025/01/01",
+      "Preferred Time Slot": "morning",
+      "Preferred Delivery Mode": "In-Person",
+      "Highest Education Level": "PhD",
+      "Years of Professional Experience": 19,
+      "Current Role/Position": "Engineer, aeronautical",
+      "Dietary Requirements": "Vegetarian",
+      "Accessibility Requirements": "None",
+      "Payment Method": "Bank Transfer",
+      "Billing Address": "95729 Parks Isle\nJamesfurt, NH 32085",
+      "What do you hope to learn from this workshop?": "I am excited to learn new skills in business management to better handle operational challenges.",
+      "Any other special requests or comments?": "It would be great if we could have a session on the integration of modern technologies with traditional business models."
+    },
+    "multiPage": false,
+    "formPath": "/professional-business/workshop-registration"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

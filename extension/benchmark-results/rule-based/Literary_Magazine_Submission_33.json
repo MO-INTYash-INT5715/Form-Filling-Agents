@@ -1,0 +1,45 @@
+{
+  "formInstance": {
+    "formId": "Literary_Magazine_Submission",
+    "formName": "Literary Magazine Submission Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 33,
+    "inputDocument": "Author: Oliver Gray  \nEmail: oliver.gray88@yahoo.com  \n\nTitle: Silent Waters  \nGenre: Poetry  \nWord Count: 120\n\nI am pleased to submit my work titled \"Silent Waters\" for consideration in your esteemed literary magazine. This poetry collection, comprising 120 carefully crafted words, delves into the profound themes of solitude, nature, and inner peace, as captured in the abstract: \"A collection of poems that explores the themes of solitude, nature, and inner peace.\" Originally published, this work is submitted exclusively to your magazine, as it is not part of any simultaneous submissions. Targeting the Spring 2024 issue aligns perfectly with the thematic essence of my poetry. I understand that currently, I am unable to provide a manuscript file but am eager to comply with any additional procedures necessary. Furthermore, I affirm my agreement to all submission guidelines and terms of publication. Thank you for considering \"Silent Waters\" for Spring 2024.",
+    "goldAnswers": {
+      "Author Name": "Oliver Gray",
+      "Email Address": "oliver.gray88@yahoo.com",
+      "Title": "Silent Waters",
+      "Genre": "Poetry",
+      "Word Count": 120,
+      "Abstract/Summary": "A collection of poems that explores the themes of solitude, nature, and inner peace.",
+      "Manuscript File": "None",
+      "Preferred Issue": "Spring 2024",
+      "This work has been previously published": "Yes",
+      "This is a simultaneous submission": "No",
+      "I agree to the submission guidelines and terms of publication": "Yes"
+    },
+    "multiPage": false,
+    "formPath": "/arts-creative/literary-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

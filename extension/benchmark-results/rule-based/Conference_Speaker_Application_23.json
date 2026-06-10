@@ -1,0 +1,48 @@
+{
+  "formInstance": {
+    "formId": "Conference_Speaker_Application",
+    "formName": "Conference Speaker Application Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 23,
+    "inputDocument": "Ethan Brown, a dedicated member of the Creative Writing Institute, is eager to contribute to the field of Creative Writing with his expertise. He seeks to present on the topic \"Mastering Dialogue: Writing Realistic Conversations in Fiction.\" Ethan's presentation aims to illuminate techniques for writing engaging and authentic dialogue, examining how it can reveal character, drive plot, and enhance story realism, as described in his Presentation Abstract. The Learning Objectives of his session are to enable attendees to learn techniques for writing realistic and engaging dialogue, understand how dialogue shapes character development, and explore the role of dialogue in advancing the plot.\n\nEthan brings a wealth of experience, as reflected in his Professional Biography. He is an accomplished fiction writer with numerous short stories and novels published, and he regularly teaches creative writing while conducting workshops on writing techniques. His Previous Speaking Experience includes serving as a speaker at the Writing Fictional Dialogue Workshop 2023 and as a panelist at the Storytelling Strategies Conference 2022. Ethan's Workshop will utilize a Projector, computer, and handouts, satisfying the Special Technical Requirements necessary for this format. By agreeing to the speaker guidelines and terms of participation, Ethan is fully committed to contributing a valuable and enriching presentation to the conference. Those wishing to contact him can do so at ethan.brown99@aol.com or via phone at 567-890-1234.",
+    "goldAnswers": {
+      "Full Name": "Ethan Brown",
+      "Email Address": "ethan.brown99@aol.com",
+      "Phone Number": "567-890-1234",
+      "Organization/Institution": "Creative Writing Institute",
+      "Presentation Title": "Mastering Dialogue: Writing Realistic Conversations in Fiction",
+      "Topic Area": "Creative Writing",
+      "Presentation Abstract": "In this presentation, we will explore techniques for writing authentic, engaging dialogue in fiction. We will look at how dialogue can reveal character, drive plot, and enhance the realism of a story.",
+      "Learning Objectives": "1. Learn techniques for writing realistic and engaging dialogue. 2. Understand how dialogue shapes character development. 3. Explore the role of dialogue in advancing the plot.",
+      "Professional Biography": "Ethan Brown is a fiction writer with numerous short stories and novels published. He teaches creative writing and frequently conducts workshops on writing techniques.",
+      "CV/Resume": "None",
+      "Previous Speaking Experience": "1. Speaker at Writing Fictional Dialogue Workshop 2023. 2. Panelist at Storytelling Strategies Conference 2022.",
+      "Presentation Format": "Workshop",
+      "Special Technical Requirements": "Projector, computer, handouts.",
+      "I agree to the speaker guidelines and terms of participation": "Yes"
+    },
+    "multiPage": true,
+    "formPath": "/arts-creative/speaker-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

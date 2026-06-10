@@ -1,0 +1,38 @@
+{
+  "formInstance": {
+    "formId": "job_applications",
+    "formName": "Job Application for University Positions",
+    "domain": "Academic & Research",
+    "instanceIndex": 47,
+    "inputDocument": "[Your Address]  \n[City, State, Zip Code]  \n[Email Address]  \n[Phone Number]  \n\n[Date]  \n\n[Employer's Name]  \n[Company's Name]  \n[Company's Address]  \n[City, State, Zip Code]  \n\nDear [Employer's Name],  \n\nMy name is Ava Davis, and I am writing to express my interest in the Customer Experience Specialist position at [Company's Name]. I am excited about the opportunity to contribute to the Preferred Department of Customer Service, as I am passionate about enhancing customer satisfaction and eager to improve customer interactions within your team.\n\nWith my keen interest in customer-centric roles and dedication to driving positive customer experiences, I believe I am well-suited to make a meaningful impact at [Company's Name]. I am particularly drawn to this position as it aligns perfectly with my goal of working in the Customer Service department to maximize customer satisfaction through effective communication and personalized service.\n\nMy commitment to delivering high-quality service experiences mirrors the exceptional standards upheld by [Company's Name], and I am eager to bring my skills and enthusiasm for customer interaction to your esteemed organization.\n\nThank you for considering my application. I look forward to the opportunity to discuss in more detail how I can contribute to the continued success of the Customer Service department at [Company's Name].\n\nSincerely,\n\nAva Davis  \n[Your Contact Information]",
+    "goldAnswers": {
+      "Applicant Name": "Ava Davis",
+      "Position Applied For": "Customer Experience Specialist",
+      "Preferred Department": "Customer Service",
+      "Cover Letter": "I am passionate about enhancing customer satisfaction and eager to improve customer interactions in the Customer Service department."
+    },
+    "multiPage": false,
+    "formPath": "/academic-research/job-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

@@ -1,0 +1,46 @@
+{
+  "formInstance": {
+    "formId": "membership_application",
+    "formName": "Association Membership Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 41,
+    "inputDocument": "Dear [Professional Association Name] Membership Committee,\n\nI am writing to apply for membership as a Corporate Member with [Professional Association Name]. My name is Oliver Smith, and I hold a Master's in Business Administration. With over 10 years of experience in the field, I currently serve as the Operations Manager at Global Corp.\n\nI believe that joining [Professional Association Name] will provide me with valuable networking opportunities, access to industry resources, and professional development support. As a Corporate Member, I am committed to contributing to the community and advancing the goals and values of the association.\n\nI was referred to [Professional Association Name] by Anna Johnson, whose contact information is provided below for reference:\n\nReference: \nName: Anna Johnson\nContact: anna.johnson@example.com\n\nI am enthusiastic about the opportunity to connect with like-minded professionals, share knowledge and best practices, and stay current on industry trends. I am confident that my background and expertise will be a valuable addition to the association, and I look forward to the possibility of membership.\n\nThank you for considering my application. I am eager to become an active member of [Professional Association Name] and contribute positively to the association's mission.\n\nSincerely,\nOliver Smith\nEmail: oliver.smith@example.com\nPhone: 555-2020\nDate of Birth: 1988-02-15.",
+    "goldAnswers": {
+      "name": "Oliver Smith",
+      "email": "oliver.smith@example.com",
+      "phone": "555-2020",
+      "date_of_birth": "1988-02-15",
+      "degree": "Master's in Business Administration",
+      "experience_years": 10,
+      "current_position": "Operations Manager at Global Corp",
+      "membership_type": "Corporate Member",
+      "reference": {
+        "name": "Anna Johnson",
+        "contact": "anna.johnson@example.com"
+      }
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/membership-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

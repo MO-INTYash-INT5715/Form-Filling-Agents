@@ -1,0 +1,43 @@
+{
+  "formInstance": {
+    "formId": "Art_Exhibition_Submission_Form",
+    "formName": "Art Exhibition Submission Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 47,
+    "inputDocument": "Artist Name: Lyra West is submitting an artwork titled \"Mechanical Menagerie\" for inclusion in the upcoming exhibition. Interested parties can reach out to the artist via Email Address: lyra_west_art@protonmail.com. This artwork, rendered in the Medium: Sculpture, boasts dimensions of Dimensions (in cm): 70 x 50 x 50. It was completed in the Year Created: 2021. \n\nThe Artwork Description: \"The sculpture presents a menagerie of mechanical animals. A mechanical lion, with gears and cogs visible in its body, stands proud, its eyes glowing with a metallic sheen. Next to it, a mechanical bird with wings made of polished metal plates is about to take flight. The use of industrial materials gives these animals a modern, steampunk - inspired look, while still maintaining their animalistic grace and presence.\" showcases Lyra's unique artistic vision and technical skill.\n\nLyra West has indicated a Preferred Exhibition Period: Spring 2024 for the presentation of this piece. Furthermore, the Artwork is available for sale, offering collectors a chance to acquire this remarkable fusion of modernity and classical animal representation.",
+    "goldAnswers": {
+      "Artist Name": "Lyra West",
+      "Email Address": "lyra_west_art@protonmail.com",
+      "Artwork Title": "Mechanical Menagerie",
+      "Medium": "Sculpture",
+      "Dimensions (in cm)": "70 x 50 x 50",
+      "Year Created": 2021,
+      "Artwork Description": "The sculpture presents a menagerie of mechanical animals. A mechanical lion, with gears and cogs visible in its body, stands proud, its eyes glowing with a metallic sheen. Next to it, a mechanical bird with wings made of polished metal plates is about to take flight. The use of industrial materials gives these animals a modern, steampunk - inspired look, while still maintaining their animalistic grace and presence.",
+      "Preferred Exhibition Period": "Spring 2024",
+      "Artwork is available for sale": true
+    },
+    "multiPage": false,
+    "formPath": "/arts-creative/exhibition-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

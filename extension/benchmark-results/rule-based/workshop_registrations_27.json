@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "workshop_registrations",
+    "formName": "Educational Workshop Registration",
+    "domain": "Professional & Business",
+    "instanceIndex": 27,
+    "inputDocument": "Subject: Workshop Registration Request for Thomas Baker\n\nDear Workshop Coordinator,\n\nI am writing to formally request registration for the upcoming workshop in the Digital Marketing category. Below are my details and preferences as provided in the Workshop Registration for Continuing Education form:\n\n- **Full Name:** Thomas Baker  \n- **Email Address:** hugheslawrence@gmail.com  \n- **Phone Number:** (451)502-8697x3436  \n- **Organization/Company:** Calderon Ltd  \n- **Workshop Category:** Digital Marketing  \n- **Preferred Session Date:** 2025/01/24  \n- **Preferred Time Slot:** 8PM  \n- **Preferred Delivery Mode:** In-Person  \n- **Highest Education Level:** Master's Degree  \n- **Years of Professional Experience:** 7  \n- **Current Role/Position:** Associate Professor  \n- **Dietary Requirements:** None  \n- **Accessibility Requirements:** None  \n- **Payment Method:** Credit Card  \n- **Billing Address:** 97627 Donna Fork Suite 206  \n  Curtischester, LA 56174  \n\nAdditionally, under the section \"What do you hope to learn from this workshop?\", I stated, \"I hope to acquire knowledge about investment strategies and financial planning for better decision-making in business.\" Furthermore, in response to \"Any other special requests or comments?\", I would like to emphasize that \"I am particularly interested in hands-on learning opportunities and would prefer an interactive format.\"\n\nThank you for considering my registration. I look forward to your confirmation and to participating in the workshop, gaining valuable insights and skills.\n\nKind regards,\n\nThomas Baker",
+    "goldAnswers": {
+      "Full Name": "Thomas Baker",
+      "Email Address": "hugheslawrence@gmail.com",
+      "Phone Number": "(451)502-8697x3436",
+      "Organization/Company": "Calderon Ltd",
+      "Workshop Category": "Digital Marketing",
+      "Preferred Session Date": "2025/01/24",
+      "Preferred Time Slot": "8PM",
+      "Preferred Delivery Mode": "In-Person",
+      "Highest Education Level": "Master's Degree",
+      "Years of Professional Experience": 7,
+      "Current Role/Position": "Associate Professor",
+      "Dietary Requirements": "None",
+      "Accessibility Requirements": "None",
+      "Payment Method": "Credit Card",
+      "Billing Address": "97627 Donna Fork Suite 206\nCurtischester, LA 56174",
+      "What do you hope to learn from this workshop?": "I hope to acquire knowledge about investment strategies and financial planning for better decision-making in business.",
+      "Any other special requests or comments?": "I am particularly interested in hands-on learning opportunities and would prefer an interactive format."
+    },
+    "multiPage": false,
+    "formPath": "/professional-business/workshop-registration"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

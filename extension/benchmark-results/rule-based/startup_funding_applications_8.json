@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "startup_funding_applications",
+    "formName": "Startup Funding Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 8,
+    "inputDocument": "Skyline Enterprises is pleased to submit this Startup Funding Application with the goal of securing financial support to propel our company's growth. Established on 2022/05/15, the e-commerce platform is strategically positioned at the Growth stage, providing an innovative solution that connects buyers and sellers of handmade products. Our company, championed by founder Richard Hart, utilizes the website found at [Skyline Enterprises Website](https://www.craig.info/) and holds a broad professional network through our [LinkedIn Profile](https://linkedin.com/in/kathleenperez).\n\nSkyline Enterprises is actively seeking a funding amount of 2,896,618 USD in exchange for offering 30% equity. This funding is crucial for advancing our Research and Development efforts and achieving sustained market growth. Our current company valuation stands at an impressive 49,795,013 USD, supported by a monthly revenue generation of 300,000 USD. With a dedicated team size of 5, we are positioned to swiftly leverage this investment.\n\nOur business model uniquely addresses the needs of parents seeking eco-friendly and sustainable products for their children, making our target market both promising and socially responsive. For additional inquiries or to discuss potential partnerships, please contact us via email at fmccarty@gmail.com or phone at 001-119-476-1418x06366. We are eager to establish long-term partnerships to drive our mutual success.",
+    "goldAnswers": {
+      "Company Name": "Skyline Enterprises",
+      "Company Website": "https://www.craig.info/",
+      "Founding Date": "2022/05/15",
+      "Business Stage": "Growth",
+      "Founder Name": "Richard Hart",
+      "Email": "fmccarty@gmail.com",
+      "Phone Number": "001-119-476-1418x06366",
+      "LinkedIn Profile": "https://linkedin.com/in/kathleenperez",
+      "Funding Amount Required (USD)": 2896618,
+      "Equity Offered (%)": 30,
+      "Current Company Valuation (USD)": 49795013,
+      "Purpose of Funding": "Research and Development",
+      "Business Model": "An e-commerce platform that connects buyers and sellers of handmade products.",
+      "Target Market": "Parents looking for eco-friendly and sustainable products for their children.",
+      "Current Monthly Revenue (USD)": 300000,
+      "Current Team Size": 5,
+      "Additional Comments": "We are seeking long-term partnerships to grow."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/startup-funding"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

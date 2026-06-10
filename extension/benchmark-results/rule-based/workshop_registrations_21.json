@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "workshop_registrations",
+    "formName": "Educational Workshop Registration",
+    "domain": "Professional & Business",
+    "instanceIndex": 21,
+    "inputDocument": "Dear Workshop Coordinator,\n\nI am writing to formally request registration for the upcoming workshop in the Business & Management category. My name is Katelyn Williamson, and I am currently employed at Wagner-Mejia, where I serve as a Health and safety inspector. I am eager to participate in the session scheduled for 2025/02/06 at 10AM, with a preference for the hybrid delivery mode.\n\nI hold an Associate Degree and have accrued 9 years of professional experience. This opportunity aligns with my goals, particularly as I hope to enhance my digital marketing knowledge to build stronger brand strategies and reach a wider audience. Furthermore, I would appreciate focusing on team-building strategies and techniques that can improve collaboration in diverse teams.\n\nFor logistical arrangements, my dietary requirement is Halal, and I have no specific accessibility requirements. The payment for the workshop will be Company Sponsored, under the billing address: 747 Michelle Station Suite 407, Douglaston, VA 47732.\n\nPlease feel free to contact me at heathermiller@gmail.com or on my phone at (862)401-2024x601 should you require any further information.\n\nThank you for considering my application. I look forward to the opportunity to attend and benefit from the workshop.\n\nSincerely,\nKatelyn Williamson",
+    "goldAnswers": {
+      "Full Name": "Katelyn Williamson",
+      "Email Address": "heathermiller@gmail.com",
+      "Phone Number": "(862)401-2024x601",
+      "Organization/Company": "Wagner-Mejia",
+      "Workshop Category": "Business & Management",
+      "Preferred Session Date": "2025/02/06",
+      "Preferred Time Slot": "10AM",
+      "Preferred Delivery Mode": "Hybrid",
+      "Highest Education Level": "Associate Degree",
+      "Years of Professional Experience": 9,
+      "Current Role/Position": "Health and safety inspector",
+      "Dietary Requirements": "Halal",
+      "Accessibility Requirements": "None",
+      "Payment Method": "Company Sponsored",
+      "Billing Address": "747 Michelle Station Suite 407\nDouglaston, VA 47732",
+      "What do you hope to learn from this workshop?": "I want to enhance my digital marketing knowledge to build stronger brand strategies and reach a wider audience.",
+      "Any other special requests or comments?": "I would prefer to focus on team-building strategies and techniques that can improve collaboration in diverse teams."
+    },
+    "multiPage": false,
+    "formPath": "/professional-business/workshop-registration"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

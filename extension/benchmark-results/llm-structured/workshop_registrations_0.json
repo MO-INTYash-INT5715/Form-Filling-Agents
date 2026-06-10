@@ -32,79 +32,79 @@
     {
       "fieldId": "full_name",
       "fieldType": "String",
-      "predictedValue": "Daniel Brown",
+      "predictedValue": "",
       "goldValue": "Daniel Brown",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "email",
       "fieldType": "String",
-      "predictedValue": "ahale@hotmail.com",
+      "predictedValue": "",
       "goldValue": "ahale@hotmail.com",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "phone",
       "fieldType": "String",
-      "predictedValue": "244-169-5801x7072",
+      "predictedValue": "",
       "goldValue": "244-169-5801x7072",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "organization",
       "fieldType": "String",
-      "predictedValue": "Wells-Wilson",
+      "predictedValue": "",
       "goldValue": "Wells-Wilson",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "workshop_type",
       "fieldType": "Dropdown",
-      "predictedValue": "Finance & Investment",
+      "predictedValue": "",
       "goldValue": "Finance & Investment",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "session_date",
       "fieldType": "Date",
-      "predictedValue": "2025-02-02",
+      "predictedValue": "",
       "goldValue": "2025/02/02",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "session_time",
       "fieldType": "Dropdown",
-      "predictedValue": "6PM",
+      "predictedValue": "",
       "goldValue": "6PM",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "delivery_mode",
       "fieldType": "Dropdown",
-      "predictedValue": "Hybrid",
+      "predictedValue": "",
       "goldValue": "Hybrid",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "education_level",
       "fieldType": "Dropdown",
-      "predictedValue": "Master's Degree",
+      "predictedValue": "",
       "goldValue": "Master's Degree",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "experience_years",
       "fieldType": "NumericInput",
-      "predictedValue": "20 years",
+      "predictedValue": "",
       "goldValue": 20,
       "clickAccurate": false,
       "valueAccurate": false
@@ -112,15 +112,15 @@
     {
       "fieldId": "current_role",
       "fieldType": "String",
-      "predictedValue": "Armed forces training and education officer",
+      "predictedValue": "",
       "goldValue": "Armed forces training and education officer",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "dietary_requirements",
       "fieldType": "Dropdown",
-      "predictedValue": "Halal meals",
+      "predictedValue": "",
       "goldValue": "Halal",
       "clickAccurate": false,
       "valueAccurate": false
@@ -137,15 +137,15 @@
     {
       "fieldId": "payment_method",
       "fieldType": "Dropdown",
-      "predictedValue": "Company Sponsored",
+      "predictedValue": "",
       "goldValue": "Company Sponsored",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "billing_address",
       "fieldType": "String",
-      "predictedValue": "USS Gonzalez, FPO AE 24907",
+      "predictedValue": "",
       "goldValue": "USS Gonzalez\nFPO AE 24907",
       "clickAccurate": false,
       "valueAccurate": false
@@ -153,20 +153,20 @@
     {
       "fieldId": "expectations",
       "fieldType": "Description",
-      "predictedValue": "Enhancing leadership and communication skills",
+      "predictedValue": "",
       "goldValue": "I would like to improve my leadership and communication skills to manage my team more effectively.",
       "clickAccurate": false,
       "valueAccurate": false,
-      "bleuScore": 7.409853791557794
+      "bleuScore": 0
     },
     {
       "fieldId": "special_requests",
       "fieldType": "Description",
-      "predictedValue": "See examples of successful leadership strategies in small and medium-sized businesses",
+      "predictedValue": "",
       "goldValue": "I would like to see examples of successful leadership strategies in small and medium-sized businesses.",
       "clickAccurate": false,
-      "valueAccurate": true,
-      "bleuScore": 71.65313105737893
+      "valueAccurate": false,
+      "bleuScore": 0
     }
   ],
   "atomicMetrics": {
@@ -178,28 +178,28 @@
       "Description": 0
     },
     "valueAccuracy": {
-      "String": 83.33333333333334,
-      "Dropdown": 83.33333333333334,
-      "Date": 100,
+      "String": 0,
+      "Dropdown": 0,
+      "Date": 0,
       "NumericInput": 0,
-      "Description": 33.33333333333333
+      "Description": 0
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 70.58823529411765
+    "overallValueAccuracy": 0
   },
   "episodicMetrics": {
-    "formCompletionRate": 70.58823529411765,
-    "fieldsAttempted": 16,
-    "fieldsCorrect": 12,
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
     "totalFields": 17,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 70.58823529411765
+    "averageValueAccuracy": 0
   },
-  "executionTimeMs": 1640,
+  "executionTimeMs": 1660,
   "errors": [],
   "submissionSucceeded": true,
-  "tokensIn": 968,
-  "tokensOut": 244,
-  "llmTimeMs": 5700,
-  "llmCalls": 1
+  "tokensIn": 0,
+  "tokensOut": 0,
+  "llmTimeMs": 0,
+  "llmCalls": 0
 }

@@ -1,0 +1,53 @@
+{
+  "formInstance": {
+    "formId": "real_estate_rental_applications",
+    "formName": "Real Estate Rental Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 38,
+    "inputDocument": "Brandon Sanchez is submitting this rental application for consideration. He can be reached via email at rparks@johnson.biz or phone at 001-331-540-9733x3825. Born on December 1, 2003, Brandon currently resides at 27971 Huffman Ways, Pacehaven, Colorado, ZIP Code 73273. He is employed by Butler-Buckley as a Product Designer, earning a monthly income of 5487 USD, with a tenure of 6 months in this role. Brandon is seeking a rental property with a preferred move-in date of January 10, 2025, and is interested in a lease term of 24 months. His maximum budget for monthly rent is 4242 USD. The preferred area is Downtown. Regarding his pet situation, Brandon has stated: \"Yes,\" he owns a \"Dog, medium-sized.\" Additional Comments provided by Brandon include: \"Looking for family-friendly options.\"",
+    "goldAnswers": {
+      "Full Name": "Brandon Sanchez",
+      "Email Address": "rparks@johnson.biz",
+      "Phone Number": "001-331-540-9733x3825",
+      "Date of Birth": "2003/12/01",
+      "Street Address": "27971 Huffman Ways",
+      "City": "Pacehaven",
+      "State": "Colorado",
+      "ZIP Code": "73273",
+      "Current Employer": "Butler-Buckley",
+      "Job Title": "Product designer",
+      "Monthly Income (USD)": 5487,
+      "Length of Employment": "6 months",
+      "Preferred Move-in Date": "2025/01/10",
+      "Preferred Lease Term": "24 months",
+      "Maximum Monthly Rent (USD)": 4242,
+      "Preferred Area": "Downtown",
+      "Do you have any pets?": "Yes",
+      "If yes, please describe your pets": "Dog, medium-sized",
+      "Additional Comments": "Looking for family-friendly options."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/rental-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

@@ -1,0 +1,56 @@
+{
+  "formInstance": {
+    "formId": "scholarship_applications",
+    "formName": "Scholarship Application for Students",
+    "domain": "Academic & Research",
+    "instanceIndex": 47,
+    "inputDocument": "**Scholarship Application**\n\n**Applicant Information:**\n\nName: Bradley Neil Hill  \nStudent ID: 49532707  \nMajor/Field of Study: Education  \nCurrent GPA: 3.96  \nAcademic Year: Senior  \nCurrent Financial Aid: None  \nAnnual Family Income: $96,495  \n\n---\n\n**Dear Scholarship Committee,**\n\nI am writing to express my sincere interest in the scholarship opportunity available for students pursuing a career in Education. My name is Bradley Neil Hill, and as a senior with a GPA of 3.96, I have committed myself to excelling academically while fully engaging in my university community.\n\nThroughout my academic journey, I have been honored to receive the Dean’s List Award for Outstanding Academic Performance, which reflects my dedication and hard work. Moreover, I was a finalist in the National Robotics Championship, an experience that not only challenged my technical skills but also kindled my interest in collaborative problem-solving and innovative thinking. Additionally, I have contributed to the field through a published research paper in the International Journal of Engineering, demonstrating my capability to engage seriously with pertinent issues.\n\nBeyond academics, I take great pride in being actively involved in extracurricular activities that foster community and leadership. As the President of the Student Council, I have honed my leadership skills, working collaboratively with peers to operationalize our ideas and serve the student body effectively. One of my proudest achievements was organizing various charity events in partnership with the Red Cross, where we successfully raised funds and awareness for pressing community needs. Furthermore, as a volunteer at the local community center, I have had the privilege of giving back and mentoring younger individuals, cultivating a passion for educational development that mirrors my own life’s purpose.\n\nEven as I balance these responsibilities, I uphold a clear vision of my future in education. My statement of purpose revolves around my deep passion for advancing knowledge in environmental science and its implications for sustainable development. I believe this scholarship will relieve the financial burdens that can hinder academic focus, thus allowing me to immerse myself completely in my studies. The knowledge and experience gained will be pivotal as I aspire to make significant contributions towards educating future generations on sustainability and responsible environmental stewardship.\n\nI am excited about the opportunity this scholarship represents, not just for my academic pursuits, but for the tangible impact I can make in my community and beyond. I am committed to leveraging my education for the betterment of society, nurturing an informed populace that cares for our planet.\n\nFor academic reference, I have provided the details of Richard Clay, who can be reached at atkinsonjohn@gmail.com. His insights can speak to my academic rigor and my dedication towards my field of study.\n\nThank you for considering my application. I eagerly await the possibilities this scholarship can unfold.\n\nSincerely,\n\nBradley Neil Hill  \n[Contact Information]  \n[Date]",
+    "goldAnswers": {
+      "First Name": "Bradley",
+      "Middle Name": "Neil",
+      "Last Name": "Hill",
+      "Student ID": 49532707,
+      "Major/Field of Study": "Education",
+      "Current GPA": 3.96,
+      "Academic Year": "Senior",
+      "Current Financial Aid": "None",
+      "Annual Family Income": 96495,
+      "Academic Achievements": [
+        "Received the Dean’s List Award for Outstanding Academic Performance",
+        "Finalist in the National Robotics Championship",
+        "Published a research paper in the International Journal of Engineering"
+      ],
+      "Extracurricular Activities": [
+        "President of the Student Council",
+        "Organized charity events for the Red Cross",
+        "Volunteer at the local community center"
+      ],
+      "Statement of Purpose": "I am deeply passionate about advancing my knowledge in the field of environmental science. This scholarship will enable me to continue my studies without the pressure of financial burdens, and I plan to use the knowledge gained to make an impact in sustainable development.",
+      "Academic Reference": "Richard Clay",
+      "Reference Email": "atkinsonjohn@gmail.com"
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/scholarship-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

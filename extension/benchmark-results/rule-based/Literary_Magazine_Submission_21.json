@@ -1,0 +1,45 @@
+{
+  "formInstance": {
+    "formId": "Literary_Magazine_Submission",
+    "formName": "Literary Magazine Submission Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 21,
+    "inputDocument": "Amelia Martinez, a dedicated writer whose contact is amelia.martinez61@yahoo.com, submits her non-fiction piece titled \"A Life in Motion\" for consideration. This work, with a word count of 5100, offers a compelling narrative woven into a biography about a famous dancer's struggles and triumphs in the face of adversity. The author presents this piece with consideration for inclusion in the Spring 2024 issue. Although this work has been previously published, it is not part of a simultaneous submission, and no manuscript file is attached at this time. Amelia Martinez agrees to the submission guidelines and terms of publication, demonstrating her commitment to the magazine's standards.",
+    "goldAnswers": {
+      "Author Name": "Amelia Martinez",
+      "Email Address": "amelia.martinez61@yahoo.com",
+      "Title": "A Life in Motion",
+      "Genre": "Non-Fiction",
+      "Word Count": 5100,
+      "Abstract/Summary": "A biography about a famous dancer's struggles and triumphs in the face of adversity.",
+      "Manuscript File": "None",
+      "Preferred Issue": "Spring 2024",
+      "This work has been previously published": "Yes",
+      "This is a simultaneous submission": "No",
+      "I agree to the submission guidelines and terms of publication": "Yes"
+    },
+    "multiPage": false,
+    "formPath": "/arts-creative/literary-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

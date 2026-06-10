@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "startup_funding_applications",
+    "formName": "Startup Funding Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 14,
+    "inputDocument": "BioGen Technologies respectfully submits this Startup Funding Application with the intent to secure funding in the amount of USD 1,871,143. Our company, founded by Deanna Reid, commenced operations on 2021/07/02 and is at the Early Revenue business stage. The funds will be utilized specifically for Market Expansion, aligning with our commitment to grow and serve our Target Market, which consists of small and medium-sized businesses seeking affordable marketing automation tools. As a company with a solid foundation, we are currently generating a monthly revenue of USD 100,000 and have a formidable team size of 20 personnel. BioGen Technologies offers a Software as a Service (SaaS) product, delivering comprehensive project management and team collaboration tools. Our Additional Comments include our preparedness to expand internationally. The Financing sought involves an Equity Offered of 22%, with the Current Company Valuation standing at USD 31,637,849. We invite you to review additional information about our company via our Company Website at http://www.harrison.com/ or connect with our Founder through the LinkedIn Profile https://linkedin.com/in/grahamrichard. For further communication, you may contact us via email at wchan@yahoo.com or phone at 421.536.4024x14258.",
+    "goldAnswers": {
+      "Company Name": "BioGen Technologies",
+      "Company Website": "http://www.harrison.com/",
+      "Founding Date": "2021/07/02",
+      "Business Stage": "Early Revenue",
+      "Founder Name": "Deanna Reid",
+      "Email": "wchan@yahoo.com",
+      "Phone Number": "421.536.4024x14258",
+      "LinkedIn Profile": "https://linkedin.com/in/grahamrichard",
+      "Funding Amount Required (USD)": 1871143,
+      "Equity Offered (%)": 22,
+      "Current Company Valuation (USD)": 31637849,
+      "Purpose of Funding": "Market Expansion",
+      "Business Model": "A SaaS product that provides businesses with project management and team collaboration tools.",
+      "Target Market": "Small and medium-sized businesses seeking affordable marketing automation tools.",
+      "Current Monthly Revenue (USD)": 100000,
+      "Current Team Size": 20,
+      "Additional Comments": "Ready to expand internationally."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/startup-funding"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

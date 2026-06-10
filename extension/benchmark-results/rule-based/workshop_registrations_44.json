@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "workshop_registrations",
+    "formName": "Educational Workshop Registration",
+    "domain": "Professional & Business",
+    "instanceIndex": 44,
+    "inputDocument": "Subject: Workshop Registration Request for Continuing Education\n\nDear Workshop Registration Team,\n\nI am writing to formally request registration for the upcoming workshop in the category of Leadership & Communication. Please find below my registration details:\n\nMy name is Kathleen Bell, and I am currently employed with Crane and Sons. You can contact me via email at perezcaroline@rosales.biz or by phone at 521.358.9633x55277. I hold a Bachelor's Degree and have accumulated 11 years of professional experience, currently serving as a Management consultant.\n\nI wish to attend the session scheduled for January 11, 2025, at 12 PM with a preferred delivery mode of Hybrid. My dietary requirement is Vegan, and I have no specific accessibility requirements.\n\nFor billing purposes, the payment method will be Company Sponsored, and the Billing Address is listed as:\n\n31115 Leslie Ford  \nHowardmouth, HI 75771\n\nIn terms of professional development, I hope to acquire knowledge about investment strategies and financial planning for better decision-making in business. Furthermore, I would like to see examples of successful leadership strategies in small and medium-sized businesses. \n\nI look forward to participating and gaining valuable insights from the workshop. Please feel free to reach out if you require any further information.\n\nThank you for considering my registration request.\n\nSincerely,\nKathleen Bell",
+    "goldAnswers": {
+      "Full Name": "Kathleen Bell",
+      "Email Address": "perezcaroline@rosales.biz",
+      "Phone Number": "521.358.9633x55277",
+      "Organization/Company": "Crane and Sons",
+      "Workshop Category": "Leadership & Communication",
+      "Preferred Session Date": "2025/01/11",
+      "Preferred Time Slot": "12PM",
+      "Preferred Delivery Mode": "Hybrid",
+      "Highest Education Level": "Bachelor's Degree",
+      "Years of Professional Experience": 11,
+      "Current Role/Position": "Management consultant",
+      "Dietary Requirements": "Vegan",
+      "Accessibility Requirements": "None",
+      "Payment Method": "Company Sponsored",
+      "Billing Address": "31115 Leslie Ford\nHowardmouth, HI 75771",
+      "What do you hope to learn from this workshop?": "I hope to acquire knowledge about investment strategies and financial planning for better decision-making in business.",
+      "Any other special requests or comments?": "I would like to see examples of successful leadership strategies in small and medium-sized businesses."
+    },
+    "multiPage": false,
+    "formPath": "/professional-business/workshop-registration"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

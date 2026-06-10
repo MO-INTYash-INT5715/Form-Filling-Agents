@@ -1,0 +1,45 @@
+{
+  "formInstance": {
+    "formId": "Literary_Magazine_Submission",
+    "formName": "Literary Magazine Submission Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 38,
+    "inputDocument": "Title: The Night Sky  \nAuthor: Megan Harris  \nContact: megan.harris91@aol.com  \n\nDear Editors,\n\nI am pleased to submit my piece titled \"The Night Sky\" for consideration in your esteemed literary magazine, under the \"Non-Fiction\" genre. The manuscript, extending over 5300 words, is a deep dive into the science of astronomy and its philosophical implications. I believe this work aligns well with the insights and themes your publication is known for exploring.\n\nThis submission is intended for the \"Summer 2024\" issue, and I am delighted to note that I agree to the submission guidelines and terms of publication. Please take into consideration that this work has been previously published and is not part of a simultaneous submission.\n\nUnfortunately, I am unable to attach the manuscript file at the moment, but I look forward to sharing it directly should you express interest in this submission.\n\nThank you for considering my work, as I value the opportunity to contribute to a platform as respected as yours.\n\nSincerely,  \nMegan Harris",
+    "goldAnswers": {
+      "Author Name": "Megan Harris",
+      "Email Address": "megan.harris91@aol.com",
+      "Title": "The Night Sky",
+      "Genre": "Non-Fiction",
+      "Word Count": 5300,
+      "Abstract/Summary": "A deep dive into the science of astronomy and its philosophical implications.",
+      "Manuscript File": "None",
+      "Preferred Issue": "Summer 2024",
+      "This work has been previously published": "Yes",
+      "This is a simultaneous submission": "No",
+      "I agree to the submission guidelines and terms of publication": "Yes"
+    },
+    "multiPage": false,
+    "formPath": "/arts-creative/literary-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

@@ -1,6 +1,6 @@
 import type { Page } from 'playwright';
 import type { FormInstance, BenchmarkAgent } from '../../benchmark/types';
-import { getLLMClient, getLLMModel } from '../../utils/llm';
+import { getLLMClient, getLLMModel, getLLMProvider } from '../../utils/llm';
 import { captureViewportBase64 } from './screenshot';
 import { injectRuler, removeRuler } from './ruler';
 
@@ -10,14 +10,16 @@ export interface VLMAgentConfig {
 
 export class VLMAgent implements BenchmarkAgent {
   name = 'vlm-agent';
-  private client;
+  private client: any;
   private model: string;
+  private provider: string;
   private useRuler: boolean;
 
   constructor(config: VLMAgentConfig = {}) {
     this.client = getLLMClient();
     this.model = getLLMModel();
-    this.useRuler = config.useRuler !== false; // Default to true
+    this.provider = getLLMProvider();
+    this.useRuler = config.useRuler !== false;
   }
 
   async runIterative(instance: FormInstance, page: Page): Promise<void> {
@@ -29,24 +31,19 @@ export class VLMAgent implements BenchmarkAgent {
       turn++;
       console.log(`[VLM Agent] Turn ${turn}...`);
 
-      // 1. Inject ruler if configured
       if (this.useRuler) {
         await injectRuler(page);
         await page.waitForTimeout(100);
       }
 
-      // 2. Capture screenshot
       const base64Image = await captureViewportBase64(page);
 
-      // 3. Remove ruler immediately after screenshot
       if (this.useRuler) {
         await removeRuler(page);
       }
 
-      // 4. Retrieve DOM inputs
       const domState = await this.getDomState(page);
 
-      // 5. Ask VLM to map input document fields to DOM elements
       const systemPrompt = `You are a visual web automation assistant.
 Your task is to fill the form in the screenshot based on the provided input document.
 You are given the list of interactable input elements in the DOM.
@@ -68,28 +65,58 @@ ${domState}
 `;
 
       try {
-        const response = await this.client.chat.completions.create({
-          model: this.model,
-          messages: [
-            { role: 'system', content: systemPrompt },
-            {
-              role: 'user',
-              content: [
-                { type: 'text', text: userPrompt },
-                {
-                  type: 'image_url',
-                  image_url: {
-                    url: `data:image/jpeg;base64,${base64Image}`
-                  }
-                }
-              ]
-            }
-          ],
-          temperature: 0,
-          response_format: { type: 'json_object' }
-        });
+        let reply: string;
 
-        const reply = response.choices[0]?.message?.content || '{}';
+        if (this.provider === 'gemini') {
+          const model = this.client.getGenerativeModel({ model: this.model });
+          
+          const imagePart = {
+            inlineData: {
+              data: base64Image,
+              mimeType: 'image/jpeg'
+            }
+          };
+
+          const result = await model.generateContent({
+            contents: [{
+              role: 'user',
+              parts: [
+                { text: systemPrompt + '\n\n' + userPrompt },
+                imagePart
+              ]
+            }],
+            generationConfig: {
+              temperature: 0,
+              responseMimeType: 'application/json'
+            }
+          });
+
+          reply = result.response.text() || '{}';
+        } else {
+          const response = await this.client.chat.completions.create({
+            model: this.model,
+            messages: [
+              { role: 'system', content: systemPrompt },
+              {
+                role: 'user',
+                content: [
+                  { type: 'text', text: userPrompt },
+                  {
+                    type: 'image_url',
+                    image_url: {
+                      url: `data:image/jpeg;base64,${base64Image}`
+                    }
+                  }
+                ]
+              }
+            ],
+            temperature: 0,
+            response_format: { type: 'json_object' }
+          });
+
+          reply = response.choices[0]?.message?.content || '{}';
+        }
+
         const cleaned = reply.replace(/^```json\n?/, '').replace(/\n?```$/, '').trim();
         const actionResult = JSON.parse(cleaned);
 
@@ -114,7 +141,6 @@ ${domState}
 
         if (actionResult.action === 'submit') {
           isComplete = true;
-          // Click submit button
           await page.click('[type="submit"], button[type="submit"], input[type="submit"]', { timeout: 2000 }).catch(() => {});
           break;
         }

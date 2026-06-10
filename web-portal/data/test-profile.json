@@ -1,6 +1,7 @@
 {
-  "_comment": "FormFactory benchmark test profile — Alice Jane Zhang, covers all 25 forms across 8 domains",
-  "_version": "2.0",
+  "_comment": "UPDATED 2026-06-05: Complete test profile covering ALL FormFactory benchmark fields. Based on web-portal/data/test-profile.json, expanded to match mcp-implementations/shared/user-profile.json comprehensive coverage.",
+  "_version": "3.0",
+  "_coverage": "25 forms across 8 domains: Academic, Health, Legal, Finance, Rental, Arts, Conference, Membership, Workshop, Startup, Manufacturing, Construction, IT Support, Bug Report",
 
   "personal": {
     "firstName": "Alice",
@@ -9,7 +10,9 @@
     "fullName": "Alice Jane Zhang",
     "email": "alice.zhang@example.com",
     "phone": "555-123-4567",
-    "dateOfBirth": "1990/03/15",
+    "phoneAlt": "+1-555-123-4567",
+    "dateOfBirth": "1990-03-15",
+    "dateOfBirthSlash": "1990/03/15",
     "age": 34,
     "gender": "Female",
     "ssn": "123-45-6789",
@@ -18,31 +21,50 @@
     "idNumber": "P123456789",
     "address": {
       "street": "123 Elm Street",
+      "line1": "123 Elm Street",
       "city": "Springfield",
       "state": "Illinois",
       "stateCode": "IL",
       "zip": "62704",
-      "country": "United States"
+      "postalCode": "62704",
+      "country": "United States",
+      "countryCode": "USA",
+      "fullAddress": "123 Elm Street, Springfield, IL 62704"
+    },
+    "emergencyContact": {
+      "name": "John Zhang",
+      "phone": "555-987-6543",
+      "relationship": "Spouse"
     }
   },
 
   "professional": {
     "currentTitle": "Software Engineer",
+    "jobTitle": "Software Engineer",
     "company": "Tech Innovations Inc",
+    "currentEmployer": "Tech Innovations Inc",
     "accountNumber": "TI-102938",
+    "customerAccountNumber": "TI-102938",
     "department": "Engineering",
     "employmentStatus": "Full-time",
     "monthlyIncome": 8500,
     "annualIncome": 102000,
     "lengthOfEmployment": "5 years",
     "yearsExperience": 5,
+    "yearsOfExperience": 5,
+    "yearsOfProfessionalExperience": 5,
     "industry": "Technology",
     "skills": ["Python", "TypeScript", "Machine Learning", "React", "Node.js"],
     "linkedinUrl": "https://linkedin.com/in/alice-zhang",
+    "portfolio": "https://alice-zhang.dev",
     "coverLetterBody": "I am passionate about software engineering and excited to bring my expertise in full-stack development and machine learning to your team. With 5 years of experience at Tech Innovations Inc, I have led multiple projects from design through deployment.",
-    "professionalBio": "Alice Zhang is a Software Engineer at Tech Innovations Inc specialising in AI/ML systems, with 5 years of experience building scalable full-stack applications.",
+    "professionalBio": "Alice Zhang is a Software Engineer at Tech Innovations Inc specializing in AI/ML systems, with 5 years of experience building scalable full-stack applications.",
+    "professionalBiography": "Alice Zhang is a Software Engineer at Tech Innovations Inc specializing in AI/ML systems.",
+    "speakerBio": "Alice Zhang is a Software Engineer at Tech Innovations Inc specializing in AI/ML systems.",
     "professionalCertifications": "AWS Certified Solutions Architect, Google Cloud Professional Data Engineer",
-    "highestEducationLevel": "Bachelor's Degree"
+    "highestEducationLevel": "Bachelor's Degree",
+    "cvResume": "Available upon request",
+    "previousSpeakingExperience": "Workshop presenter at PyCon 2023; lightning talk at NeurIPS 2024 student day."
   },
 
   "education": [
@@ -50,6 +72,7 @@
       "institution": "Massachusetts Institute of Technology",
       "degree": "Bachelor of Science",
       "field": "Computer Science",
+      "fieldOfStudy": "Computer Science",
       "graduationYear": 2015,
       "gpa": "3.85"
     }
@@ -60,7 +83,7 @@
     "currentGpa": "3.85",
     "currentFinancialAid": "Merit Scholarship",
     "annualFamilyIncome": 80000,
-    "academicAchievements": "Dean's List (2013–2015), Winner of the ACM Student Research Competition",
+    "academicAchievements": "Dean's List (2013-2015), Winner of the ACM Student Research Competition",
     "extracurricularActivities": "President of the Computer Science Society, Volunteer at local STEM outreach programme",
     "statementOfPurpose": "I seek to apply AI research to real-world accessibility challenges, and this scholarship would allow me to dedicate time to my thesis on automated form filling.",
     "academicReference": "Prof. Robert Chen, MIT CSAIL, robert.chen@mit.edu"
@@ -82,27 +105,29 @@
     "purposeOfFunding": "To fund research into AI-powered form automation for accessibility improvement",
     "fundingAmount": 75000,
     "fundingAmountRequired": 75000,
+    "fundingAmountRequested": 75000,
     "institution": "MIT Computer Science Department"
   },
 
   "health": {
     "policyNumber": "A1234567890",
     "policyHolderName": "Alice Jane Zhang",
-    "dateOfService": "2024/01/15",
+    "dateOfService": "2024-01-15",
+    "dateOfServiceSlash": "2024/01/15",
     "claimAmount": 250,
     "typeOfService": "Doctor Consultation",
     "diagnosis": "General Checkup",
     "providerName": "Dr. Robert Smith",
+    "surgeonName": "Dr. Robert Smith",
     "providerIdNumber": "D12345",
+    "medicalRecordNumber": "MRN-002938",
     "medicalConditions": "None",
     "existingMedicalConditions": "None",
     "currentMedications": "None",
     "studyPreference": "Clinical Trial",
     "preferredStudyType": "Clinical Trial",
     "availability": "Weekdays",
-    "medicalRecordNumber": "MRN-002938",
-    "nameOfProcedure": "Knee Arthroscopy",
-    "surgeonName": "Dr. Robert Smith"
+    "nameOfProcedure": "Knee Arthroscopy"
   },
 
   "legal": {
@@ -110,15 +135,21 @@
     "partyType": "Individual",
     "ndaPurpose": "To protect intellectual property related to a new software development project, including source code, architecture, and design",
     "purposeOfNda": "To protect intellectual property related to a new software development project, including source code, architecture, and design",
-    "effectiveDate": "2024/12/05",
+    "effectiveDate": "2024-12-05",
     "ndaDurationYears": 5,
     "representativeName": "Alice Jane Zhang",
     "titlePosition": "Software Engineer",
     "authorizeBackgroundCheck": true,
     "understandsConsequences": true,
     "agreesToTerms": true,
+    "agreeToTerms": true,
+    "agreeToSpeakerGuidelines": true,
+    "agreeToContractorTerms": true,
+    "agreeToConfidentiality": true,
     "taxIdEin": "12-3456789",
-    "businessType": "Sole Proprietorship"
+    "businessType": "Sole Proprietorship",
+    "signature": "Alice Zhang",
+    "date": "2025-06-05"
   },
 
   "finance": {
@@ -126,8 +157,8 @@
     "loanTerm": "36 months",
     "consultationType": "Estate Planning",
     "typeOfConsultation": "Estate Planning",
-    "preferredConsultationDate": "2025/06/15",
-    "preferredDate": "2025/06/15",
+    "preferredConsultationDate": "2025-06-15",
+    "preferredDate": "2025-06-15",
     "preferredConsultationTime": "Morning (9:00 AM - 11:00 AM)",
     "preferredTime": "Morning (9:00 AM - 11:00 AM)",
     "financialComments": "Looking to discuss investment strategies and long-term financial planning.",
@@ -142,7 +173,7 @@
   },
 
   "rental": {
-    "preferredMoveInDate": "2025/07/01",
+    "preferredMoveInDate": "2025-07-01",
     "preferredLeaseTerm": "12 months",
     "maxMonthlyRent": 2000,
     "preferredArea": "Near public transport",
@@ -174,8 +205,8 @@
     "abstractSummary": "A near-future story exploring what happens when AI learns to dream, told through the eyes of the engineer who built it.",
     "preferredIssue": "Spring 2025",
     "previousPublications": "None",
-    "simultaneousSubmission": false,
-    "previouslyPublished": false
+    "previouslyPublished": false,
+    "simultaneousSubmission": false
   },
 
   "conference": {
@@ -185,17 +216,12 @@
     "presentationAbstract": "This talk explores the journey of building an AI-powered form automation system, covering rule-based heuristics, semantic embeddings, and vision-language models.",
     "talkAbstract": "This talk explores the journey of building an AI-powered form automation system, covering rule-based heuristics, semantic embeddings, and vision-language models.",
     "learningObjectives": "1. Understand the landscape of form-filling automation techniques. 2. Compare rule-based vs ML approaches. 3. Apply best practices to production deployments.",
-    "professionalBiography": "Alice Zhang is a Software Engineer at Tech Innovations Inc specialising in AI/ML systems.",
-    "speakerBio": "Alice Zhang is a Software Engineer at Tech Innovations Inc specialising in AI/ML systems.",
-    "cvResume": "None",
-    "previousSpeakingExperience": "Workshop presenter at PyCon 2023; lightning talk at NeurIPS 2024 student day.",
     "presentationFormat": "Lecture",
     "sessionType": "Technical Talk",
     "talkDuration": "45 minutes",
     "specialTechnicalRequirements": "Projector, internet access, live demo machine.",
     "requiresTravelExpenses": "No",
-    "targetAudience": "Software Engineers, Researchers",
-    "agreeToSpeakerGuidelines": true
+    "targetAudience": "Software Engineers, Researchers"
   },
 
   "membership": {
@@ -205,38 +231,26 @@
     "organizationType": "Professional Association",
     "organizationName": "Tech Professionals Association",
     "referralSource": "Colleague",
-    "fieldOfStudy": "Computer Science",
-    "professionalCertifications": "AWS Certified Solutions Architect, Google Cloud Professional Data Engineer",
-    "highestEducationLevel": "Bachelor's Degree",
     "referenceName": "Dr. Robert Chen",
     "referenceEmail": "robert.chen@mit.edu",
     "relationshipToReference": "Former Professor",
-    "currentEmployer": "Tech Innovations Inc",
-    "jobTitle": "Software Engineer",
-    "yearsOfExperience": 5,
-    "industry": "Technology",
     "newsletterSubscribe": false,
+    "subscribeToNewsletter": false,
     "volunteerInterest": true
   },
 
   "workshop": {
     "workshopName": "Advanced TypeScript and Modern Web Development",
     "workshopCategory": "Technology & Software",
-    "preferredSessionDate": "2025/09/15",
+    "preferredSessionDate": "2025-09-15",
     "preferredTimeSlot": "9AM",
     "preferredDeliveryMode": "In-Person",
-    "highestEducationLevel": "Bachelor's Degree",
-    "yearsOfProfessionalExperience": 5,
     "currentRolePosition": "Software Engineer",
     "dietaryRestrictions": "None",
     "dietaryRequirements": "None",
     "accessibilityRequirements": "None",
-    "paymentMethod": "Company Sponsored",
-    "billingAddress": "123 Elm Street, Springfield, IL 62704",
     "whatToLearn": "Advanced TypeScript patterns, modern tooling, and best practices for large-scale web applications.",
     "specialRequests": "None",
-    "emergencyContactName": "John Zhang",
-    "emergencyContactPhone": "555-987-6543",
     "howDidYouHear": "Online"
   },
 
@@ -245,10 +259,8 @@
     "companyName": "AutoFill AI",
     "companyWebsite": "https://www.autofill-ai.example.com",
     "founderName": "Alice Zhang",
-    "foundingDate": "2022/01/15",
-    "fundingAmountRequested": 500000,
+    "foundingDate": "2022-01-15",
     "businessStage": "Early Stage",
-    "industry": "Technology",
     "teamSize": 5,
     "currentTeamSize": 5,
     "currentMonthlyRevenue": 25000,
@@ -257,46 +269,37 @@
     "businessDescription": "AutoFill AI is developing an intelligent form automation platform that reduces manual data entry by 90% using NLP and computer vision.",
     "businessModel": "SaaS subscription model with enterprise tier and usage-based pricing.",
     "revenueModel": "SaaS subscription",
-    "targetMarket": "Enterprise software companies and HR departments",
-    "purposeOfFunding": "Hiring and product development"
+    "targetMarket": "Enterprise software companies and HR departments"
   },
 
   "manufacturing": {
-    "companyName": "Tech Innovations Inc",
-    "customerAccountNumber": "TI-102938",
     "productType": "Custom Product",
     "productDescription": "AI-powered sensor array for smart building automation",
     "productSpecifications": "High sensitivity, 5-meter detection range, IoT-compatible",
     "quantity": 100,
-    "dimensions": "200 x 150 x 50",
     "material": "Aluminum, Silicon",
     "technicalSpecs": "Real-time data processing, low power consumption, wireless connectivity with IoT",
     "qualityStandards": "ISO 9001, CE certified",
-    "deliveryDate": "2025/12/01",
-    "requiredDeliveryDate": "2025/12/01",
+    "deliveryDate": "2025-12-01",
+    "requiredDeliveryDate": "2025-12-01",
     "shippingMethod": "Express",
     "preferredShippingMethod": "Express"
   },
 
   "construction": {
-    "companyName": "Tech Innovations Inc",
     "contractorLicenseNumber": "TI-203940",
     "projectName": "Office Automation System Installation",
     "bidAmount": 850000,
     "estimatedDurationWeeks": 24,
-    "proposedStartDate": "2025/06/01",
-    "estimatedCompletionDate": "2025/12/01",
+    "proposedStartDate": "2025-06-01",
+    "startDate": "2025-06-01",
+    "estimatedCompletionDate": "2025-12-01",
+    "expectedEndDate": "2025-12-01",
     "scopeOfWork": "Full installation of AI-powered office automation systems.",
     "workDescription": "The project will involve hardware installation, software deployment, staff training, and integration with existing systems.",
     "contactPerson": "Alice Zhang",
     "contactPhone": "555-123-4567",
-    "agreeToContractorTerms": true,
-    "agreeToConfidentiality": true,
-    "servicesProvided": "Software development, system integration, staff training, and ongoing maintenance.",
-    "startDate": "2025/06/01",
-    "expectedEndDate": "2025/12/01",
-    "taxIdEin": "12-3456789",
-    "businessType": "Corporation"
+    "servicesProvided": "Software development, system integration, staff training, and ongoing maintenance."
   },
 
   "itSupport": {
@@ -308,7 +311,8 @@
     "locationDepartment": "Engineering",
     "numberOfAffectedUsers": 12,
     "preferredContactTime": "Mon-Fri 9AM-5PM",
-    "screenshots": "None"
+    "screenshots": "None",
+    "attachments": "None"
   },
 
   "bugReport": {
@@ -318,17 +322,15 @@
     "browserPlatform": "Chrome 124, Windows 11",
     "stepsToReproduce": "1. Open the web portal. 2. Submit a URL with an iframe-embedded form. 3. Scraper throws TypeError: Cannot read property 'fields' of null.",
     "expectedBehavior": "Scraper should detect and extract fields from iframe-embedded forms.",
-    "actualBehavior": "Scraper crashes with a TypeError when encountering iframe-embedded forms.",
-    "numberOfAffectedUsers": 5,
-    "attachments": "None"
+    "actualBehavior": "Scraper crashes with a TypeError when encountering iframe-embedded forms."
   },
 
   "extra": {
     "preferredLanguage": "English",
     "timezone": "America/Chicago",
-    "subscribeToNewsletter": false,
-    "agreeToTerms": true,
-    "signature": "Alice Zhang",
-    "date": "2025/06/05"
+    "custom": {
+      "size": "medium",
+      "toppings": "cheese"
+    }
   }
 }

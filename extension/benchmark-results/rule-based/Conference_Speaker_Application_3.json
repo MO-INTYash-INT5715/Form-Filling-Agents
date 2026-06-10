@@ -1,0 +1,48 @@
+{
+  "formInstance": {
+    "formId": "Conference_Speaker_Application",
+    "formName": "Conference Speaker Application Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 3,
+    "inputDocument": "Michael Hughes, an eminent art historian associated with the Art History Institute, seeks to bring his vast knowledge and expertise to your conference through his application for a speaker role. He can be reached via email at michael.hughes82@gmail.com or by phone at 456-789-0123. In his proposed lecture presentation entitled Exploring Art History Through Digital Media, Michael aims to delve into the intersection of digital media and art history. This presentation will examine the ways in which digital media has revolutionized the study and presentation of art history. We will look at virtual museum tours, digitized collections, and the use of augmented reality in art exhibitions. He is particularly focused on the Art History topic area and aims to convey significant insights through his carefully designed learning objectives. Attendees will have the opportunity to 1. Understand how digital tools are enhancing art history education. 2. Explore virtual and augmented reality applications in art history. 3. Learn about the future of art history in the digital age.\n\nMichael Hughes’s professional biography reflects his dual proficiency in art history and digital media. He is an art historian and digital media expert with extensive experience in digital archiving and virtual exhibitions. He has worked with several museums to create interactive online art exhibitions and digital catalogs. His previous speaking experience includes being a speaker at the Virtual Art History Symposium 2022 and a presenter at the Digital Humanities Conference 2021, which demonstrates his capability to engage audiences on this critical and evolving subject.\n\nFor his presentation to be effective, Michael requires a virtual reality setup, projector, and internet access. He is committed to adhering to all speaker guidelines and terms of participation, ensuring a smooth and impactful contribution to the conference.",
+    "goldAnswers": {
+      "Full Name": "Michael Hughes",
+      "Email Address": "michael.hughes82@gmail.com",
+      "Phone Number": "456-789-0123",
+      "Organization/Institution": "Art History Institute",
+      "Presentation Title": "Exploring Art History Through Digital Media",
+      "Topic Area": "Art History",
+      "Presentation Abstract": "This presentation will examine the ways in which digital media has revolutionized the study and presentation of art history. We will look at virtual museum tours, digitized collections, and the use of augmented reality in art exhibitions.",
+      "Learning Objectives": "1. Understand how digital tools are enhancing art history education. 2. Explore virtual and augmented reality applications in art history. 3. Learn about the future of art history in the digital age.",
+      "Professional Biography": "Michael Hughes is an art historian and digital media expert with extensive experience in digital archiving and virtual exhibitions. He has worked with several museums to create interactive online art exhibitions and digital catalogs.",
+      "CV/Resume": "None",
+      "Previous Speaking Experience": "1. Speaker at Virtual Art History Symposium 2022. 2. Presenter at Digital Humanities Conference 2021.",
+      "Presentation Format": "Lecture",
+      "Special Technical Requirements": "Virtual reality setup, projector, internet access.",
+      "I agree to the speaker guidelines and terms of participation": "Yes"
+    },
+    "multiPage": true,
+    "formPath": "/arts-creative/speaker-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

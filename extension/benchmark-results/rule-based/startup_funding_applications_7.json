@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "startup_funding_applications",
+    "formName": "Startup Funding Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 7,
+    "inputDocument": "Urban Harvest is pleased to submit a Startup Funding Application for review. Operating under the website http://www.callahan-petty.info/, Urban Harvest was founded on 2024/01/04 and is currently at the Idea stage. The company is driven by Founder Nicole Smith, who can be reached via email at veronica31@smith.biz or by phone at (560)861-5297x928. Further professional details can be found on her LinkedIn profile at https://linkedin.com/in/petersonivan.\n\nUrban Harvest is requesting a funding amount of USD 2,445,524, offering 13% equity in return. With a current company valuation of USD 37,962,886, the primary purpose of this funding is for Product Development. Our business model revolves around an AI-powered software solution that automates customer support for businesses. Our target market consists of Millennials interested in fitness and healthy living, with a particular emphasis on plant-based products. \n\nAt present, Urban Harvest achieves a current monthly revenue of USD 300,000, supported by a robust team of 5 members. We are actively seeking long-term partnerships to grow, in alignment with our strategic objectives.",
+    "goldAnswers": {
+      "Company Name": "Urban Harvest",
+      "Company Website": "http://www.callahan-petty.info/",
+      "Founding Date": "2024/01/04",
+      "Business Stage": "Idea",
+      "Founder Name": "Nicole Smith",
+      "Email": "veronica31@smith.biz",
+      "Phone Number": "(560)861-5297x928",
+      "LinkedIn Profile": "https://linkedin.com/in/petersonivan",
+      "Funding Amount Required (USD)": 2445524,
+      "Equity Offered (%)": 13,
+      "Current Company Valuation (USD)": 37962886,
+      "Purpose of Funding": "Product Development",
+      "Business Model": "An AI-powered software solution that automates customer support for businesses.",
+      "Target Market": "Millennials interested in fitness and healthy living, with a focus on plant-based products.",
+      "Current Monthly Revenue (USD)": 300000,
+      "Current Team Size": 5,
+      "Additional Comments": "We are seeking long-term partnerships to grow."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/startup-funding"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

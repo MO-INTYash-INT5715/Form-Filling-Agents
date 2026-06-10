@@ -1,0 +1,45 @@
+{
+  "formInstance": {
+    "formId": "Literary_Magazine_Submission",
+    "formName": "Literary Magazine Submission Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 47,
+    "inputDocument": "Joshua Walker respectfully submits his work titled \"The Heart of the Beast\" for consideration in your esteemed literary magazine. He can be contacted via email at joshua.walker58@gmail.com. The submission is categorized under the genre of Non-Fiction and comprises a Word Count of 6200 words. The piece is an investigative piece into the psychological motivations behind monstrous crimes. Please note that the Manuscript File is currently unavailable. Joshua Walker expresses his preference for this work to be featured in the Winter 2024 issue. This work has been previously published, and it is not part of a simultaneous submission. Joshua Walker affirms his commitment by agreeing to the submission guidelines and terms of publication.",
+    "goldAnswers": {
+      "Author Name": "Joshua Walker",
+      "Email Address": "joshua.walker58@gmail.com",
+      "Title": "The Heart of the Beast",
+      "Genre": "Non-Fiction",
+      "Word Count": 6200,
+      "Abstract/Summary": "An investigative piece into the psychological motivations behind monstrous crimes.",
+      "Manuscript File": "None",
+      "Preferred Issue": "Winter 2024",
+      "This work has been previously published": "Yes",
+      "This is a simultaneous submission": "No",
+      "I agree to the submission guidelines and terms of publication": "Yes"
+    },
+    "multiPage": false,
+    "formPath": "/arts-creative/literary-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

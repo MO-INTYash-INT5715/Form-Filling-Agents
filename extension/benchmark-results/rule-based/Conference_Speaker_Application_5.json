@@ -1,0 +1,48 @@
+{
+  "formInstance": {
+    "formId": "Conference_Speaker_Application",
+    "formName": "Conference Speaker Application Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 5,
+    "inputDocument": "Olivia White, a digital media consultant from the Digital Media Institute, is submitting a speaker application for an upcoming conference. Her email address is olivia.white85@outlook.com, and she can be reached at 678-901-2345. Olivia is presenting on \"The Role of Social Media in Shaping Contemporary Art,\" a topic within the Digital Media area. This presentation will explore how social media platforms like Instagram, TikTok, and YouTube have altered the way artists create and distribute their work. We will examine the new opportunities for exposure and the challenges artists face in the digital world. Attendees will have the opportunity to understand the impact of social media on contemporary art, learn how artists can leverage social media for their careers, and explore the challenges of creating art in a digital-first world. With a Professional Biography stating Olivia White is a digital media consultant specializing in social media strategies for artists, and noting her experience working with several contemporary artists to build their digital presence and expand their reach online, she brings a wealth of expertise to the discussion. Her Previous Speaking Experience includes being a speaker at Digital Art Forum 2023 and a panelist at the Social Media and Art Conference 2022. Olivia prefers a Panel Discussion format and has specified Special Technical Requirements that include a projector, internet access, and social media accounts for demonstration. She agrees to the speaker guidelines and terms of participation for this event.",
+    "goldAnswers": {
+      "Full Name": "Olivia White",
+      "Email Address": "olivia.white85@outlook.com",
+      "Phone Number": "678-901-2345",
+      "Organization/Institution": "Digital Media Institute",
+      "Presentation Title": "The Role of Social Media in Shaping Contemporary Art",
+      "Topic Area": "Digital Media",
+      "Presentation Abstract": "This presentation will explore how social media platforms like Instagram, TikTok, and YouTube have altered the way artists create and distribute their work. We will examine the new opportunities for exposure and the challenges artists face in the digital world.",
+      "Learning Objectives": "1. Understand the impact of social media on contemporary art. 2. Learn how artists can leverage social media for their careers. 3. Explore the challenges of creating art in a digital-first world.",
+      "Professional Biography": "Olivia White is a digital media consultant specializing in social media strategies for artists. She has worked with several contemporary artists to build their digital presence and expand their reach online.",
+      "CV/Resume": "None",
+      "Previous Speaking Experience": "1. Speaker at Digital Art Forum 2023. 2. Panelist at Social Media and Art Conference 2022.",
+      "Presentation Format": "Panel Discussion",
+      "Special Technical Requirements": "Projector, internet access, social media accounts for demonstration.",
+      "I agree to the speaker guidelines and terms of participation": "Yes"
+    },
+    "multiPage": true,
+    "formPath": "/arts-creative/speaker-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

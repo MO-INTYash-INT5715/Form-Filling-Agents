@@ -1,0 +1,50 @@
+{
+  "formInstance": {
+    "formId": "membership_application",
+    "formName": "Association Membership Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 26,
+    "inputDocument": "Ella Martinez\nella.martinez@yahoo.com\n555-7892\n\nDear Professional Association Membership Review Board,\n\nI am writing to formally apply for membership with your esteemed Professional Association as a Professional Member for a period of 3 years. My name is Ella Martinez, and I hold a Bachelor's Degree in Social Work. I am currently a Licensed Social Worker at Community Services, where I have accumulated 4 years of experience in the social services industry.\n\nMy educational background and professional certifications have equipped me with the knowledge and skills necessary to excel in the field of social work. I am dedicated to making a positive impact on individuals and communities through my work. As a member of your association, I hope to further develop professionally, access valuable resources, and network with like-minded professionals who share my passion for social work.\n\nI believe that my experience, expertise, and commitment to the field align well with the values and objectives of your Professional Association. I have provided Karen White, my supervisor at Community Services, as a reference to attest to my skills, work ethic, and professionalism.\n\nI am confident that my membership with your Professional Association will not only benefit me personally but also contribute to the collective growth and advancement of our profession. I am excited about the possibility of joining your esteemed organization and contributing to its mission.\n\nThank you for considering my application. I look forward to the opportunity to be a part of your association and contribute to its continued success.\n\nSincerely,\n\nElla Martinez",
+    "goldAnswers": {
+      "Full Name": "Ella Martinez",
+      "Email Address": "ella.martinez@yahoo.com",
+      "Phone Number": "555-7892",
+      "Date of Birth": "1995/07/07",
+      "Membership Level": "Professional Member",
+      "Membership Duration": "3 Years",
+      "Highest Education Level": "Bachelor's Degree",
+      "Field of Study": "Social Work",
+      "Professional Certifications": "Licensed Social Worker",
+      "Current Employer": "Community Services",
+      "Job Title": "Social Worker",
+      "Years of Experience": 4,
+      "Industry": "Social Services",
+      "Reference Name": "Karen White",
+      "Reference Email": "karen.white@yahoo.com",
+      "Relationship to Reference": "Supervisor"
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/membership-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

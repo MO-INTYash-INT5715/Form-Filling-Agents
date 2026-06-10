@@ -1,0 +1,50 @@
+{
+  "formInstance": {
+    "formId": "membership_application",
+    "formName": "Association Membership Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 35,
+    "inputDocument": "Dear Professional Association Membership Committee,\n\nMy name is Noah Johnson, and I am applying for Professional Membership with your esteemed organization. I believe that my background and experience align exceptionally well with the values and goals of your association.\n\nI hold a Bachelor's Degree in Mechanical Engineering and have been working in the engineering industry for the past five years. Currently, I am employed as a Mechanical Engineer at Engineering Corp. My experience in this field has equipped me with the necessary skills and knowledge to contribute effectively to the ongoing discussions and initiatives within your association.\n\nI am seeking Professional Membership for a duration of three years, as I am committed to advancing my career and staying updated on the latest developments in the engineering industry. Although I do not currently hold any professional certifications, I am dedicated to continuous learning and professional development.\n\nAs a member of your association, I hope to network with other professionals in my field, access valuable resources and training opportunities, and contribute to the collective knowledge and growth of the engineering community. I have a strong passion for engineering and am eager to engage with like-minded individuals who share the same enthusiasm for the industry.\n\nFor your reference, my colleague Sarah Wilson can attest to my dedication to my work and my commitment to professional growth. Sarah can be reached at sarah.wilson@yahoo.com.\n\nI am confident that my experience, education, and passion for engineering make me a strong candidate for Professional Membership with your organization. I look forward to the opportunity to connect with other professionals in the field and contribute positively to the association.\n\nThank you for considering my application.\n\nSincerely,\nNoah Johnson\n\nContact Information:\nEmail: noah.johnson@yahoo.com\nPhone: 555-8904\nDate of Birth: 1990/04/25\nIndustry: Engineering\nJob Title: Mechanical Engineer\nYears of Experience: 5 years",
+    "goldAnswers": {
+      "Full Name": "Noah Johnson",
+      "Email Address": "noah.johnson@yahoo.com",
+      "Phone Number": "555-8904",
+      "Date of Birth": "1990/04/25",
+      "Membership Level": "Professional Member",
+      "Membership Duration": "3 Years",
+      "Highest Education Level": "Bachelor's Degree",
+      "Field of Study": "Mechanical Engineering",
+      "Professional Certifications": "None",
+      "Current Employer": "Engineering Corp.",
+      "Job Title": "Mechanical Engineer",
+      "Years of Experience": 5,
+      "Industry": "Engineering",
+      "Reference Name": "Sarah Wilson",
+      "Reference Email": "sarah.wilson@yahoo.com",
+      "Relationship to Reference": "Colleague"
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/membership-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

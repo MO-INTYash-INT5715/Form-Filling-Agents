@@ -1,0 +1,50 @@
+{
+  "formInstance": {
+    "formId": "membership_application",
+    "formName": "Association Membership Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 18,
+    "inputDocument": "Dear Professional Association Membership Review Committee,\n\nI am writing to formally apply for Corporate Membership within your esteemed professional association. My name is William Harris, and I can be reached at william.harris@hotmail.com or at 555-8902. \n\nI hold a Master's Degree in Information Systems and have acquired the CISSP certification to supplement my educational background. Currently employed as an IT Security Analyst at Tech Innovations, I have accumulated 12 years of experience within the Information Technology industry.\n\nI am seeking a 2-year Corporate Membership with your organization to further enhance my professional development and networking opportunities within the field. I believe that the resources and connections provided by your association will allow me to stay current on industry trends, expand my knowledge base, and network with like-minded professionals.\n\nAs a diligent and dedicated individual, I am constantly seeking growth opportunities in the fast-paced technology sector. My commitment to continuous learning and improvement aligns perfectly with the goals of your professional association.\n\nI have provided the reference information of Nancy Brown, my Manager at Tech Innovations, who can attest to my professionalism, work ethic, and dedication to the field of Information Technology.\n\nI am confident that my background, experience, and commitment to professional growth make me a strong candidate for membership within your association. I greatly appreciate your consideration of my application and look forward to the opportunity to contribute positively to your organization.\n\nSincerely,\n\nWilliam Harris",
+    "goldAnswers": {
+      "Full Name": "William Harris",
+      "Email Address": "william.harris@hotmail.com",
+      "Phone Number": "555-8902",
+      "Date of Birth": "1981/07/07",
+      "Membership Level": "Corporate Member",
+      "Membership Duration": "2 Years",
+      "Highest Education Level": "Master's Degree",
+      "Field of Study": "Information Systems",
+      "Professional Certifications": "CISSP",
+      "Current Employer": "Tech Innovations",
+      "Job Title": "IT Security Analyst",
+      "Years of Experience": 12,
+      "Industry": "Information Technology",
+      "Reference Name": "Nancy Brown",
+      "Reference Email": "nancy.brown@hotmail.com",
+      "Relationship to Reference": "Manager"
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/membership-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

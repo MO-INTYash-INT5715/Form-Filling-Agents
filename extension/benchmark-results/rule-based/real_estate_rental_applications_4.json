@@ -1,0 +1,53 @@
+{
+  "formInstance": {
+    "formId": "real_estate_rental_applications",
+    "formName": "Real Estate Rental Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 4,
+    "inputDocument": "Bryan Holmes, residing at 27932 Theresa Plaza, New Lisa, West Virginia, 03978, is interested in securing a rental property. He can be contacted at stewartsamantha@barnes.biz or via phone at 1353797400. Born on 1973/09/03, Bryan is currently employed as a Scientist, water quality with the Gregory Group, where he has worked for 1 year, earning a monthly income of $2907. He is seeking to move by 2025/02/09 with a preferred lease term of 24 months and is willing to accommodate a maximum monthly rent of $2258. Bryan is specifically looking for property in the Downtown area. He has indicated that he does not have any pets, as highlighted by the statement: \"No pets.\" Moreover, he has expressed a priority for family-friendly options, which is elaborated in the Additional Comments section: \"Looking for family-friendly options.\"",
+    "goldAnswers": {
+      "Full Name": "Bryan Holmes",
+      "Email Address": "stewartsamantha@barnes.biz",
+      "Phone Number": "1353797400",
+      "Date of Birth": "1973/09/03",
+      "Street Address": "27932 Theresa Plaza",
+      "City": "New Lisa",
+      "State": "West Virginia",
+      "ZIP Code": "03978",
+      "Current Employer": "Gregory Group",
+      "Job Title": "Scientist, water quality",
+      "Monthly Income (USD)": 2907,
+      "Length of Employment": "1 year",
+      "Preferred Move-in Date": "2025/02/09",
+      "Preferred Lease Term": "24 months",
+      "Maximum Monthly Rent (USD)": 2258,
+      "Preferred Area": "Downtown",
+      "Do you have any pets?": "No",
+      "If yes, please describe your pets": "No pets",
+      "Additional Comments": "Looking for family-friendly options."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/rental-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

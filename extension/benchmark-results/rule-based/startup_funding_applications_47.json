@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "startup_funding_applications",
+    "formName": "Startup Funding Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 47,
+    "inputDocument": "SolarFlare Energy, established on 2023/01/02, is pleased to submit this Startup Funding Application as part of our strategic objective to elevate our operations during the Growth stage of our business. Our ambition is directed by our founder, Ashley Phillips, who can be reached at daniel26@yahoo.com or via phone at 970-641-0191x37743. Further details about our team and mission can be found through our LinkedIn Profile at https://linkedin.com/in/csummers, as well as our Company Website at https://powers.com/.\n\nWe are a direct-to-consumer brand that specializes in selling health and wellness products, with an unwavering commitment to sustainability. Our current business model serves small and medium-sized businesses seeking affordable marketing automation tools, addressing a vital need in today's market landscape. \n\nWith a robust Current Monthly Revenue of 500000 USD and a dedicated team of 10, SolarFlare Energy is positioned to leverage additional funding for Product Development. We are seeking a Funding Amount of 4,079,817 USD, offering 7% equity in return, predicated on our Current Company Valuation of 31,535,715 USD.\n\nThe acquisition of this investment is critical as we aim to enhance our product offerings and significantly impact our target market. We are genuinely Excited to take the company to the next level and believe that with your partnership, we can achieve groundbreaking outcomes.",
+    "goldAnswers": {
+      "Company Name": "SolarFlare Energy",
+      "Company Website": "https://powers.com/",
+      "Founding Date": "2023/01/02",
+      "Business Stage": "Growth",
+      "Founder Name": "Ashley Phillips",
+      "Email": "daniel26@yahoo.com",
+      "Phone Number": "970-641-0191x37743",
+      "LinkedIn Profile": "https://linkedin.com/in/csummers",
+      "Funding Amount Required (USD)": 4079817,
+      "Equity Offered (%)": 7,
+      "Current Company Valuation (USD)": 31535715,
+      "Purpose of Funding": "Product Development",
+      "Business Model": "A direct-to-consumer brand selling health and wellness products with a focus on sustainability.",
+      "Target Market": "Small and medium-sized businesses seeking affordable marketing automation tools.",
+      "Current Monthly Revenue (USD)": 500000,
+      "Current Team Size": 10,
+      "Additional Comments": "Excited to take the company to the next level."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/startup-funding"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

@@ -1,0 +1,53 @@
+{
+  "formInstance": {
+    "formId": "real_estate_rental_applications",
+    "formName": "Real Estate Rental Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 11,
+    "inputDocument": "Matthew Cardenas, with the contact email kimberly85@gmail.com and phone number 0960644782, is seeking a rental property in the vicinity of New Randy, Louisiana, for which his current address is 9399 Smith Brook, ZIP code 91157. Born on March 30, 2002, Mr. Cardenas is employed as a Nutritional therapist at Kim-Gonzalez, a position he has held for 10 years, earning a monthly income of $2809. He wishes to relocate by February 13, 2025, and is interested in securing a lease term of 24 months, with a maximum monthly rent budget of $1618. His preferred area for relocation is \"Near parks,\" a specific requirement. A responsible pet owner, Mr. Cardenas has stated, \"Yes,\" to owning pets and provides the description \"Two rabbits,\" for them. Additionally, he notes, \"Looking for family-friendly options,\" as a crucial factor in his rental preference. Please consider this application for any suitable availabilities aligned with these criteria.",
+    "goldAnswers": {
+      "Full Name": "Matthew Cardenas",
+      "Email Address": "kimberly85@gmail.com",
+      "Phone Number": "0960644782",
+      "Date of Birth": "2002/03/30",
+      "Street Address": "9399 Smith Brook",
+      "City": "New Randy",
+      "State": "Louisiana",
+      "ZIP Code": "91157",
+      "Current Employer": "Kim-Gonzalez",
+      "Job Title": "Nutritional therapist",
+      "Monthly Income (USD)": 2809,
+      "Length of Employment": "10 years",
+      "Preferred Move-in Date": "2025/02/13",
+      "Preferred Lease Term": "24 months",
+      "Maximum Monthly Rent (USD)": 1618,
+      "Preferred Area": "Near parks",
+      "Do you have any pets?": "Yes",
+      "If yes, please describe your pets": "Two rabbits",
+      "Additional Comments": "Looking for family-friendly options."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/rental-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

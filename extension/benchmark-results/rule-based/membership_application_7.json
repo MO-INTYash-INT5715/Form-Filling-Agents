@@ -1,0 +1,50 @@
+{
+  "formInstance": {
+    "formId": "membership_application",
+    "formName": "Association Membership Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 7,
+    "inputDocument": "Dear Professional Association Membership Committee,\n\nI am writing to submit my application for Associate Membership in your esteemed organization. My name is Emily Johnson, and I am a Registered Nurse currently working at City Hospital in the healthcare industry with five years of experience.\n\nI hold a Master's Degree in Nursing and am certified as an RN, demonstrating my commitment to ongoing learning and professional development in the field. I believe that becoming a member of your association will provide me with valuable opportunities for networking, further education, and career advancement.\n\nMy reference, Dr. Paul Lewis, who is my supervisor at City Hospital, can attest to my dedication, skills, and professionalism in the workplace. I have consistently demonstrated a strong work ethic and a passion for providing high-quality patient care, and I am eager to continue growing in my career with the support and resources that your association offers.\n\nI am interested in a two-year membership with the goal of connecting with like-minded professionals, staying current on industry trends and best practices, and contributing to the advancement of the nursing profession. I believe that my background and experience make me a strong candidate for membership in your association.\n\nThank you for considering my application. I look forward to the opportunity to engage with fellow members and contribute to the growth and success of your organization.\n\nSincerely,\nEmily Johnson\nemily.johnson@hotmail.com\n555-5678\nDate of Birth: 1983/12/01",
+    "goldAnswers": {
+      "Full Name": "Emily Johnson",
+      "Email Address": "emily.johnson@hotmail.com",
+      "Phone Number": "555-5678",
+      "Date of Birth": "1983/12/01",
+      "Membership Level": "Associate Member",
+      "Membership Duration": "2 Years",
+      "Highest Education Level": "Master's Degree",
+      "Field of Study": "Nursing",
+      "Professional Certifications": "RN",
+      "Current Employer": "City Hospital",
+      "Job Title": "Registered Nurse",
+      "Years of Experience": 5,
+      "Industry": "Healthcare",
+      "Reference Name": "Dr. Paul Lewis",
+      "Reference Email": "paul.lewis@hotmail.com",
+      "Relationship to Reference": "Supervisor"
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/membership-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

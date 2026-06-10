@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "workshop_registrations",
+    "formName": "Educational Workshop Registration",
+    "domain": "Professional & Business",
+    "instanceIndex": 20,
+    "inputDocument": "Subject: Workshop Registration Request for Continuing Education\n\nDear Workshop Coordinator,\n\nI am writing to formally submit my registration request for the upcoming workshop in the Leadership & Communication category. Please find the details of my registration below, aligned with the requirements of the Continuing Education form:\n\nFull Name: Megan Watkins  \nEmail Address: walterramos@yahoo.com  \nPhone Number: 001-227-004-4459x965  \nOrganization/Company: Brown-Castillo  \nWorkshop Category: Leadership & Communication  \nPreferred Session Date: 2025/02/11  \nPreferred Time Slot: 10AM  \nPreferred Delivery Mode: In-Person  \nHighest Education Level: Associate Degree  \nYears of Professional Experience: 14  \nCurrent Role/Position: Regulatory affairs officer  \nDietary Requirements: None  \nAccessibility Requirements: None  \nPayment Method: Company Sponsored  \nBilling Address: 02050 Young Summit Apt. 952  \nNew Angie, NE 23917  \n\nWhat do you hope to learn from this workshop? I am excited to learn new skills in business management to better handle operational challenges.\n\nAny other special requests or comments? It would be great if we could have a session on the integration of modern technologies with traditional business models.\n\nI appreciate your consideration of my application. Should you require any further information, please feel free to contact me via email or phone. I look forward to the opportunity to enhance my professional skills through this workshop.\n\nThank you for your attention to my registration request.\n\nWarm regards,\n\nMegan Watkins",
+    "goldAnswers": {
+      "Full Name": "Megan Watkins",
+      "Email Address": "walterramos@yahoo.com",
+      "Phone Number": "001-227-004-4459x965",
+      "Organization/Company": "Brown-Castillo",
+      "Workshop Category": "Leadership & Communication",
+      "Preferred Session Date": "2025/02/11",
+      "Preferred Time Slot": "10AM",
+      "Preferred Delivery Mode": "In-Person",
+      "Highest Education Level": "Associate Degree",
+      "Years of Professional Experience": 14,
+      "Current Role/Position": "Regulatory affairs officer",
+      "Dietary Requirements": "None",
+      "Accessibility Requirements": "None",
+      "Payment Method": "Company Sponsored",
+      "Billing Address": "02050 Young Summit Apt. 952\nNew Angie, NE 23917",
+      "What do you hope to learn from this workshop?": "I am excited to learn new skills in business management to better handle operational challenges.",
+      "Any other special requests or comments?": "It would be great if we could have a session on the integration of modern technologies with traditional business models."
+    },
+    "multiPage": false,
+    "formPath": "/professional-business/workshop-registration"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

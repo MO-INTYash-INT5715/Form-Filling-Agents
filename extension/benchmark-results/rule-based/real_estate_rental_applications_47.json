@@ -1,0 +1,53 @@
+{
+  "formInstance": {
+    "formId": "real_estate_rental_applications",
+    "formName": "Real Estate Rental Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 47,
+    "inputDocument": "Lindsey Jacobson, with the email address hardysamuel@rodriguez.com and phone number (131)275-6055, is interested in renting a property. Born on 2003/04/07, Lindsey currently resides at 5638 Wise Oval, Youngville, Florida, 52873. Employed as a Trading Standards Officer at Garcia and Sons for the past 2 years, Lindsey earns a monthly income of 12,578 USD. The preferred move-in date is set for 2025/01/30 with a lease term preference of 6 months and a maximum monthly rent budget of 1,211 USD. A desire to live in the Suburbs has been expressed. Lindsey has pets, specifically a Parrot. Additional comments include that Lindsey is excited to find the right place.",
+    "goldAnswers": {
+      "Full Name": "Lindsey Jacobson",
+      "Email Address": "hardysamuel@rodriguez.com",
+      "Phone Number": "(131)275-6055",
+      "Date of Birth": "2003/04/07",
+      "Street Address": "5638 Wise Oval",
+      "City": "Youngville",
+      "State": "Florida",
+      "ZIP Code": "52873",
+      "Current Employer": "Garcia and Sons",
+      "Job Title": "Trading standards officer",
+      "Monthly Income (USD)": 12578,
+      "Length of Employment": "2 years",
+      "Preferred Move-in Date": "2025/01/30",
+      "Preferred Lease Term": "6 months",
+      "Maximum Monthly Rent (USD)": 1211,
+      "Preferred Area": "Suburbs",
+      "Do you have any pets?": "Yes",
+      "If yes, please describe your pets": "Parrot",
+      "Additional Comments": "Excited to find the right place."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/rental-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

@@ -1,0 +1,53 @@
+{
+  "formInstance": {
+    "formId": "real_estate_rental_applications",
+    "formName": "Real Estate Rental Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 33,
+    "inputDocument": "Kathryn Kennedy, born on November 28, 1975, is currently considering a rental opportunity and submits this rental application for review. Residing at 12657 Morgan Wall Apt. 741 in Debbieland, North Carolina, ZIP Code 91969, Kathryn can be contacted via email at samuelreynolds@moore-ortega.com or by phone at +1-833-552-1301x3477. With professional experience as a Media planner at Singh LLC, Kathryn has a stable monthly income of $8,408 and has been with the company for 1 year. The proposed move-in date is set for February 7, 2025, with a preference for a 12-month lease term. Kathryn intends to keep rental expenses under the maximum monthly rent of $3,863 and has specified the preferred area as \"Near parks.\" With no pets to consider, as confirmed by the response \"No,\" Kathryn is seeking an environment that aligns with the additional comments provided: \"Looking for a peaceful environment.\" This application reflects Kathryn's commitment to finding a residence that meets these specifications.",
+    "goldAnswers": {
+      "Full Name": "Kathryn Kennedy",
+      "Email Address": "samuelreynolds@moore-ortega.com",
+      "Phone Number": "+1-833-552-1301x3477",
+      "Date of Birth": "1975/11/28",
+      "Street Address": "12657 Morgan Wall Apt. 741",
+      "City": "Debbieland",
+      "State": "North Carolina",
+      "ZIP Code": "91969",
+      "Current Employer": "Singh LLC",
+      "Job Title": "Media planner",
+      "Monthly Income (USD)": 8408,
+      "Length of Employment": "1 year",
+      "Preferred Move-in Date": "2025/02/07",
+      "Preferred Lease Term": "12 months",
+      "Maximum Monthly Rent (USD)": 3863,
+      "Preferred Area": "Near parks",
+      "Do you have any pets?": "No",
+      "If yes, please describe your pets": "No pets",
+      "Additional Comments": "Looking for a peaceful environment."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/rental-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

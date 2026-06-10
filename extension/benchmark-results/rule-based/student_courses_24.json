@@ -1,0 +1,46 @@
+{
+  "formInstance": {
+    "formId": "student_courses",
+    "formName": "Student Course Registration Form",
+    "domain": "Academic & Research",
+    "instanceIndex": 24,
+    "inputDocument": "Subject: Course Enrollment Request for Fall 2025\n\nDear Admissions Office,\n\nI hope this message finds you well. My name is James Maldonado, and I am eager to submit my request for course enrollment in the upcoming Fall 2025 semester as part of the Data Science program. I am writing to formally express my desire to enroll in the courses specified below and include all pertinent details required for processing my request.\n\n**Student Details:**\n\n- **Full Name:** James Maldonado\n- **Student ID:** 86669151\n- **Email:** oliveramanda@johnson-rodriguez.com\n- **Phone Number:** 515-727-1036\n\n**Requested Courses for Enrollment:**\n\n1. CS101 - Introduction to Programming\n2. CS104 - Web Development\n3. CS103 - Database Systems\n\nWith great enthusiasm, I am particularly looking forward to the CS104 - Web Development course, as the skills gained will be instrumental in my journey within the Data Science realm. \n\nI would like to emphasize my commitment to diligently upholding the standards of excellence expected within the program. Additionally, please note the following comment: \"Looking forward to exploring web development.\"\n\nThank you for considering my request. I eagerly await your positive response and the opportunity to continue my education at your esteemed institution. Should you need any further information, please feel free to contact me via email or phone.\n\nWarm regards,\n\nJames Maldonado",
+    "goldAnswers": {
+      "Full Name": "James Maldonado",
+      "Student ID": 86669151,
+      "Email": "oliveramanda@johnson-rodriguez.com",
+      "Phone Number": "5157271036",
+      "Semester": "Fall 2025",
+      "Program": "Data Science",
+      "Selected Courses": [
+        "CS101 - Introduction to Programming",
+        "CS104 - Web Development",
+        "CS103 - Database Systems"
+      ],
+      "Special Requirements or Comments": "Looking forward to exploring web development."
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/course-registration"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

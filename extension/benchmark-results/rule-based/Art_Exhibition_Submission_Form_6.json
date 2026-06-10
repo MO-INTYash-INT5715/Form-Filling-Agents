@@ -1,0 +1,43 @@
+{
+  "formInstance": {
+    "formId": "Art_Exhibition_Submission_Form",
+    "formName": "Art Exhibition Submission Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 6,
+    "inputDocument": "Artist Grace Zhou respectfully submits the artwork \"Urban Solitude\" for consideration in your upcoming exhibition. Please direct any correspondence regarding this submission to the provided email address: grace.zhou55@yahoo.com. This piece, created in 2024, is a work of Photography with dimensions measuring 70 x 50 x 2 cm. The artwork is professionally executed and is described as follows: \"Urban Solitude is a thought - provoking photograph that captures a solitary figure walking along an empty city sidewalk at night. The tall, imposing buildings in the background are illuminated with cold, artificial light, creating a sense of isolation. The figure's silhouette stands out against the cityscape, emphasizing their aloneness in the midst of a large, bustling city. The contrast between the vastness of the urban environment and the single individual prompts the viewer to reflect on the experience of solitude in modern life.\" Grace Zhou expresses a preference for exhibiting this artwork during the Spring 2024 period. Furthermore, \"Urban Solitude\" is available for sale. Your consideration of this submission is greatly appreciated, and Grace looks forward to the opportunity to present this thought-provoking work to your esteemed audience.",
+    "goldAnswers": {
+      "Artist Name": "Grace Zhou",
+      "Email Address": "grace.zhou55@yahoo.com",
+      "Artwork Title": "Urban Solitude",
+      "Medium": "Photography",
+      "Dimensions (in cm)": "70 x 50 x 2",
+      "Year Created": 2024,
+      "Artwork Description": "Urban Solitude is a thought - provoking photograph that captures a solitary figure walking along an empty city sidewalk at night. The tall, imposing buildings in the background are illuminated with cold, artificial light, creating a sense of isolation. The figure's silhouette stands out against the cityscape, emphasizing their aloneness in the midst of a large, bustling city. The contrast between the vastness of the urban environment and the single individual prompts the viewer to reflect on the experience of solitude in modern life.",
+      "Preferred Exhibition Period": "Spring 2024",
+      "Artwork is available for sale": true
+    },
+    "multiPage": false,
+    "formPath": "/arts-creative/exhibition-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

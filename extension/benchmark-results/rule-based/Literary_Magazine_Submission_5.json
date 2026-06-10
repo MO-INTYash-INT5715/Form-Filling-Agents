@@ -1,0 +1,45 @@
+{
+  "formInstance": {
+    "formId": "Literary_Magazine_Submission",
+    "formName": "Literary Magazine Submission Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 5,
+    "inputDocument": "Olivia Brown is pleased to submit her work titled \"Whispers in the Dark\" for consideration in your esteemed literary magazine. Olivia can be reached at olivia.brown456@yahoo.com for any correspondence regarding this submission. The submitted piece belongs to the Fiction genre and spans 6,500 words. The Abstract/Summary is as follows: \"A thriller about a small town with dark secrets that start to unravel when a new resident arrives.\" The manuscript file has not been included at this time. Olivia expresses her interest in having this work considered for the Spring 2024 issue of your publication. Please be advised that this work has not been previously published, and Olivia is confirming this as a simultaneous submission. Furthermore, Olivia agrees to the submission guidelines and terms of publication. She looks forward to the opportunity of potentially contributing to your magazine with her engaging and suspenseful tale.",
+    "goldAnswers": {
+      "Author Name": "Olivia Brown",
+      "Email Address": "olivia.brown456@yahoo.com",
+      "Title": "Whispers in the Dark",
+      "Genre": "Fiction",
+      "Word Count": 6500,
+      "Abstract/Summary": "A thriller about a small town with dark secrets that start to unravel when a new resident arrives.",
+      "Manuscript File": "None",
+      "Preferred Issue": "Spring 2024",
+      "This work has been previously published": "No",
+      "This is a simultaneous submission": "Yes",
+      "I agree to the submission guidelines and terms of publication": "Yes"
+    },
+    "multiPage": false,
+    "formPath": "/arts-creative/literary-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "startup_funding_applications",
+    "formName": "Startup Funding Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 10,
+    "inputDocument": "SmartEdge Solutions, established on 2020/10/05, is seeking a funding amount of USD 1,023,489. Our company operates at the MVP stage and is currently valued at USD 16,766,370. The equity offered for this investment is 18%. As a business, we are a platform for online education offering courses in coding, data science, and business. Our target market consists of millennials interested in fitness and healthy living, with a focus on plant-based products. We have a current monthly revenue of USD 300,000 and a dedicated team size of 20. The purpose of this funding round is to allocate resources towards hiring. Led by our founder, Amanda Bray, whose profile is accessible at https://linkedin.com/in/derek79, we are eager to discuss how this strategic investment will propel our growth. Contact can be made via carl61@yahoo.com or 001-995-160-4118x201. Additional comments are that we are looking forward to scaling the business with strategic investments and more information about our company can be found on our website at https://www.fowler-johnson.com/.",
+    "goldAnswers": {
+      "Company Name": "SmartEdge Solutions",
+      "Company Website": "https://www.fowler-johnson.com/",
+      "Founding Date": "2020/10/05",
+      "Business Stage": "MVP",
+      "Founder Name": "Amanda Bray",
+      "Email": "carl61@yahoo.com",
+      "Phone Number": "001-995-160-4118x201",
+      "LinkedIn Profile": "https://linkedin.com/in/derek79",
+      "Funding Amount Required (USD)": 1023489,
+      "Equity Offered (%)": 18,
+      "Current Company Valuation (USD)": 16766370,
+      "Purpose of Funding": "Hiring",
+      "Business Model": "A platform for online education offering courses in coding, data science, and business.",
+      "Target Market": "Millennials interested in fitness and healthy living, with a focus on plant-based products.",
+      "Current Monthly Revenue (USD)": 300000,
+      "Current Team Size": 20,
+      "Additional Comments": "Looking forward to scaling the business with strategic investments."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/startup-funding"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

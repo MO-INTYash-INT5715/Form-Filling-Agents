@@ -1,0 +1,45 @@
+{
+  "formInstance": {
+    "formId": "student_courses",
+    "formName": "Student Course Registration Form",
+    "domain": "Academic & Research",
+    "instanceIndex": 20,
+    "inputDocument": "[Your Address]  \n[City, State, ZIP Code]  \n[Email Address]  \n[Phone Number]  \n[Date]  \n\nAdmissions Office  \n[Name of Institution]  \n[Institution's Address]  \n[City, State, ZIP Code]\n\nDear [Recipient's Name or Admissions Team],\n\nSubject: Formal Course Enrollment Request for Spring 2025\n\nI trust this message finds you well and thriving in your endeavors at [Institution's Name]. My name is Andrew Hernandez, a prospective student eager to embark on a remarkable academic journey in the field of Data Science at your prestigious institution. \n\nWith the upcoming Spring 2025 semester approaching, I am submitting my formal request to enroll in two esteemed courses specifically designed to enhance and nurture my foundational skills in this field. As outlined in my details below, this enrollment is not only a strategic step in my educational journey but also a deep-seated commitment to contributing to the thriving academic community at your institution.\n\nMy student profile is highlighted by the following specifics:\n\n- **Full Name:** Andrew Hernandez\n- **Student ID:** 84056153\n- **Email:** fernandezmichael@miller.com\n- **Phone Number:** 016.456.6553\n- **Program of Study:** Data Science\n\nI have carefully selected the following courses to solidify my understanding and expand my competence:\n\n1. **CS101 - Introduction to Programming**\n2. **CS103 - Database Systems**\n\nThese courses represent a critical integration point for my studies, and I am confident they align perfectly with both my academic and professional aspirations.\n\nI would also like to bring to your attention that I currently have **no special requirements** or additional accommodations needed at this time. I assure you that all additional comments or considerations have been accurately represented under the 'Special Requirements or Comments' section of my enrollment form, with the unchanged expression: \"No special requirements.\"\n\nI eagerly anticipate the privilege of joining the engaging and scholarly environment at [Institution's Name]. Please don't hesitate to reach out via my provided contact information should you require any further clarifications or documents pertaining to this request.\n\nThank you for considering my request. I look forward to a favorable response and the opportunity to contribute positively to [Institution's Name].\n\nWarm regards,\n\nAndrew Hernandez\n\n---\n\n[Optional: Enclosures or attachments, if applicable]",
+    "goldAnswers": {
+      "Full Name": "Andrew Hernandez",
+      "Student ID": 84056153,
+      "Email": "fernandezmichael@miller.com",
+      "Phone Number": "016.456.6553",
+      "Semester": "Spring 2025",
+      "Program": "Data Science",
+      "Selected Courses": [
+        "CS101 - Introduction to Programming",
+        "CS103 - Database Systems"
+      ],
+      "Special Requirements or Comments": "No special requirements."
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/course-registration"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

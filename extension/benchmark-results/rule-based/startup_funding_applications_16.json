@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "startup_funding_applications",
+    "formName": "Startup Funding Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 16,
+    "inputDocument": "BioGen Technologies, established on 2019/07/22, is currently at the Growth stage. Our company operates a business model that functions as a marketplace for freelancers offering digital services to small businesses and startups. The purpose of this communication is to formally request a funding amount of USD 1,896,039. This injection of capital is critical for our Research and Development initiatives, aimed at enhancing our market offerings and expanding internationally, as noted in our additional comments. With a current company valuation of USD 23,120,300 and presenting an equity offer of 13%, we request this funding to drive our mission forward. Our company website, https://kaiser.com/, provides additional insights into our operations. Founded by Charlene Abbott, BioGen Technologies currently has a team size of 10 and generates a current monthly revenue of USD 200,000. We target freelancers and small business owners who require a platform to find clients for digital work. For further discussions or inquiries, I can be reached via email at richardmccarty@romero.com or by phone at 658.892.8436x7465. Additionally, my LinkedIn profile can be accessed at https://linkedin.com/in/phopkins for more professional engagement. We are hopeful for a collaborative opportunity, and we are eager to discuss this proposal further.",
+    "goldAnswers": {
+      "Company Name": "BioGen Technologies",
+      "Company Website": "https://kaiser.com/",
+      "Founding Date": "2019/07/22",
+      "Business Stage": "Growth",
+      "Founder Name": "Charlene Abbott",
+      "Email": "richardmccarty@romero.com",
+      "Phone Number": "658.892.8436x7465",
+      "LinkedIn Profile": "https://linkedin.com/in/phopkins",
+      "Funding Amount Required (USD)": 1896039,
+      "Equity Offered (%)": 13,
+      "Current Company Valuation (USD)": 23120300,
+      "Purpose of Funding": "Research and Development",
+      "Business Model": "A marketplace for freelancers offering digital services to small businesses and startups.",
+      "Target Market": "Freelancers and small business owners who need a platform to find clients for digital work.",
+      "Current Monthly Revenue (USD)": 200000,
+      "Current Team Size": 10,
+      "Additional Comments": "Ready to expand internationally."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/startup-funding"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

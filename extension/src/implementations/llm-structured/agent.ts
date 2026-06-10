@@ -1,9 +1,8 @@
 import type { FormInstance, AgentAction, BenchmarkAgent } from '../../benchmark/types';
-import { getLLMClient, getLLMModel } from '../../utils/llm';
+import { getLLMClient, getLLMModel, getLLMProvider } from '../../utils/llm';
 import { serializeFormFields } from './tree-serializer';
 import { buildJsonSchema, buildSchemaPrompt } from './schema-builder';
 
-/** Token + latency telemetry attached to the agent instance after each planActions() call */
 export interface LLMTelemetry {
   tokensIn: number;
   tokensOut: number;
@@ -13,14 +12,15 @@ export interface LLMTelemetry {
 
 export class LLMStructuredAgent implements BenchmarkAgent {
   name = 'llm-structured';
-  private client;
+  private client: any;
   private model: string;
-  /** Populated after each planActions() call — read by runner for ablation metrics */
+  private provider: string;
   public lastTelemetry: LLMTelemetry = { tokensIn: 0, tokensOut: 0, llmTimeMs: 0, llmCalls: 0 };
 
   constructor() {
     this.client = getLLMClient();
     this.model = getLLMModel();
+    this.provider = getLLMProvider();
   }
 
   async planActions(instance: FormInstance): Promise<AgentAction[]> {
@@ -31,8 +31,6 @@ export class LLMStructuredAgent implements BenchmarkAgent {
     const serializedFields = serializeFormFields(keys, instance.goldAnswers);
     const schema = buildJsonSchema(keys, instance.goldAnswers);
     const schemaPrompt = buildSchemaPrompt(keys, instance.goldAnswers);
-
-    const provider = process.env.LLM_PROVIDER || 'ollama';
 
     const systemPrompt = `You are a structured form-filling assistant.
 Your task is to extract values from the provided input document to fill out the form fields.
@@ -57,37 +55,63 @@ ${schemaPrompt}
 `;
 
     let responseContent = '';
-    // Reset telemetry
     this.lastTelemetry = { tokensIn: 0, tokensOut: 0, llmTimeMs: 0, llmCalls: 0 };
 
     try {
-      const options: any = {
-        model: this.model,
-        messages: [
-          { role: 'system', content: systemPrompt },
-          { role: 'user', content: userPrompt }
-        ],
-        temperature: 0,
-      };
-
-      if (provider === 'openai') {
-        options.response_format = {
-          type: 'json_schema',
-          json_schema: { name: 'form_fill_values', strict: true, schema }
-        };
-      } else {
-        // Ollama and others: use top-level format param
-        options.format = 'json';
-      }
-
       const t0 = Date.now();
-      const response = await this.client.chat.completions.create(options);
-      this.lastTelemetry.llmTimeMs += Date.now() - t0;
-      this.lastTelemetry.llmCalls += 1;
-      this.lastTelemetry.tokensIn += response.usage?.prompt_tokens ?? 0;
-      this.lastTelemetry.tokensOut += response.usage?.completion_tokens ?? 0;
 
-      responseContent = response.choices[0]?.message?.content || '{}';
+      if (this.provider === 'gemini') {
+        const model = this.client.getGenerativeModel({ model: this.model });
+        
+        const result = await model.generateContent({
+          contents: [{
+            role: 'user',
+            parts: [{ text: systemPrompt + '\n\n' + userPrompt }]
+          }],
+          generationConfig: {
+            temperature: 0,
+            responseMimeType: 'application/json',
+            responseSchema: schema
+          }
+        });
+
+        this.lastTelemetry.llmTimeMs += Date.now() - t0;
+        this.lastTelemetry.llmCalls += 1;
+
+        const usage = result.response.usageMetadata;
+        if (usage) {
+          this.lastTelemetry.tokensIn += usage.promptTokenCount ?? 0;
+          this.lastTelemetry.tokensOut += usage.candidatesTokenCount ?? 0;
+        }
+
+        responseContent = result.response.text() || '{}';
+      } else {
+        const options: any = {
+          model: this.model,
+          messages: [
+            { role: 'system', content: systemPrompt },
+            { role: 'user', content: userPrompt }
+          ],
+          temperature: 0,
+        };
+
+        if (this.provider === 'openai') {
+          options.response_format = {
+            type: 'json_schema',
+            json_schema: { name: 'form_fill_values', strict: true, schema }
+          };
+        } else {
+          options.format = 'json';
+        }
+
+        const response = await this.client.chat.completions.create(options);
+        this.lastTelemetry.llmTimeMs += Date.now() - t0;
+        this.lastTelemetry.llmCalls += 1;
+        this.lastTelemetry.tokensIn += response.usage?.prompt_tokens ?? 0;
+        this.lastTelemetry.tokensOut += response.usage?.completion_tokens ?? 0;
+
+        responseContent = response.choices[0]?.message?.content || '{}';
+      }
     } catch (err) {
       console.error(`[LLM Structured Agent] API Call failed:`, err);
       return actions;

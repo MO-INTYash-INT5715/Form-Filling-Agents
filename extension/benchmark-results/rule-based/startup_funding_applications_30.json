@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "startup_funding_applications",
+    "formName": "Startup Funding Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 30,
+    "inputDocument": "Quantum Leap Technologies, accessible via our company website at [williams.info](http://williams.info/), formally submits this application for startup funding. Established on 2022/10/09, our company is currently in the Early Revenue stage. Our esteemed founder, Marie Brown, can be contacted at pamelawilliams@gmail.com or via phone at 361.206.8264x2540. Our LinkedIn profile is available at [https://linkedin.com/in/hernandezdavid](https://linkedin.com/in/hernandezdavid). We request a funding amount of 2,561,142 USD, in exchange for an equity offering of 6%. The current valuation of our company stands at 45,730,384 USD. The primary purpose of the funding is Product Development. We operate a business model that functions as a marketplace for freelancers offering digital services to small businesses and startups. Our target market comprises tech companies and startups requiring cloud infrastructure and data storage solutions. As of now, we have a current monthly revenue of 500,000 USD and a dedicated team size of 20. In closing, we are excited to take the company to the next level and appreciate your consideration of our application.",
+    "goldAnswers": {
+      "Company Name": "Quantum Leap Technologies",
+      "Company Website": "http://williams.info/",
+      "Founding Date": "2022/10/09",
+      "Business Stage": "Early Revenue",
+      "Founder Name": "Marie Brown",
+      "Email": "pamelawilliams@gmail.com",
+      "Phone Number": "361.206.8264x2540",
+      "LinkedIn Profile": "https://linkedin.com/in/hernandezdavid",
+      "Funding Amount Required (USD)": 2561142,
+      "Equity Offered (%)": 6,
+      "Current Company Valuation (USD)": 45730384,
+      "Purpose of Funding": "Product Development",
+      "Business Model": "A marketplace for freelancers offering digital services to small businesses and startups.",
+      "Target Market": "Tech companies and startups requiring cloud infrastructure and data storage solutions.",
+      "Current Monthly Revenue (USD)": 500000,
+      "Current Team Size": 20,
+      "Additional Comments": "Excited to take the company to the next level."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/startup-funding"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

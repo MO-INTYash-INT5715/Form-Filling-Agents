@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "startup_funding_applications",
+    "formName": "Startup Funding Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 45,
+    "inputDocument": "Renewify, located online at [http://anderson-fisher.com/](http://anderson-fisher.com/), was founded on 2023/06/29 and is currently in the Early Revenue stage of business. Led by Founder Jessica Ferguson, who can be reached via email at robertgordon@rhodes.biz or phone at 001-394-623-3819x48689, and whose professional background is detailed on their [LinkedIn Profile](https://linkedin.com/in/brandon52), the company seeks a funding amount of USD 3,252,364. In exchange, Renewify is offering 29% equity based on a current company valuation of USD 23,516,419. The primary purpose of the funding is to support Operations. Renewify features a business model centered around a SaaS product that provides businesses with project management and team collaboration tools. Renewify's target market comprises tech companies and startups requiring cloud infrastructure and data storage solutions. Currently, the company generates USD 500,000 in monthly revenue, supported by a team of 100 employees. In conclusion, Renewify is enthusiastic about the opportunity to elevate the company's growth trajectory and is eager to engage with potential investors who share the vision of elevating the company to the next level.",
+    "goldAnswers": {
+      "Company Name": "Renewify",
+      "Company Website": "http://anderson-fisher.com/",
+      "Founding Date": "2023/06/29",
+      "Business Stage": "Early Revenue",
+      "Founder Name": "Jessica Ferguson",
+      "Email": "robertgordon@rhodes.biz",
+      "Phone Number": "001-394-623-3819x48689",
+      "LinkedIn Profile": "https://linkedin.com/in/brandon52",
+      "Funding Amount Required (USD)": 3252364,
+      "Equity Offered (%)": 29,
+      "Current Company Valuation (USD)": 23516419,
+      "Purpose of Funding": "Operations",
+      "Business Model": "A SaaS product that provides businesses with project management and team collaboration tools.",
+      "Target Market": "Tech companies and startups requiring cloud infrastructure and data storage solutions.",
+      "Current Monthly Revenue (USD)": 500000,
+      "Current Team Size": 100,
+      "Additional Comments": "Excited to take the company to the next level."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/startup-funding"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

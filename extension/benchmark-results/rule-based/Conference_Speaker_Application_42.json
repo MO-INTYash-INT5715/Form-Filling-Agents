@@ -1,0 +1,48 @@
+{
+  "formInstance": {
+    "formId": "Conference_Speaker_Application",
+    "formName": "Conference Speaker Application Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 42,
+    "inputDocument": "Benjamin Johnson, representing the Performing Arts Academy, is excited to submit his presentation titled \"The Use of Digital Projections in Live Theater\" for consideration in the upcoming conference in the Performing Arts topic area. Benjamin can be reached at benjamin.johnson88@yahoo.com or via phone at 890-123-4567. Aiming to deliver an enriching experience, this presentation will explore how digital projections are used in live theater performances to enhance storytelling and create immersive environments. The attendees will gain insights into successful productions that have incorporated digital media into their stage design. \n\nThe learning objectives of this presentation include understanding the role of digital projections in modern theater, exploring how digital media can transform stage design and storytelling, and learning about the technical aspects of incorporating projections into live performances. With a rich professional biography, Benjamin Johnson is a stage designer and multimedia artist who specializes in the use of digital projections in theater. He has worked on numerous productions, blending traditional stagecraft with modern digital media and has previous speaking experience as a speaker at the Theater and Digital Media Symposium 2023 and as a workshop leader at the Visual Arts in Theater Conference 2022. \n\nThis workshop will require special technical requirements, including a projector, sound system, and stage setup. Benjamin Johnson agrees to the speaker guidelines and terms of participation and looks forward to contributing to the conference.",
+    "goldAnswers": {
+      "Full Name": "Benjamin Johnson",
+      "Email Address": "benjamin.johnson88@yahoo.com",
+      "Phone Number": "890-123-4567",
+      "Organization/Institution": "Performing Arts Academy",
+      "Presentation Title": "The Use of Digital Projections in Live Theater",
+      "Topic Area": "Performing Arts",
+      "Presentation Abstract": "This presentation will explore how digital projections are used in live theater performances to enhance storytelling and create immersive environments. We will look at examples of successful productions that have incorporated digital media into their stage design.",
+      "Learning Objectives": "1. Understand the role of digital projections in modern theater. 2. Explore how digital media can transform stage design and storytelling. 3. Learn about the technical aspects of incorporating projections into live performances.",
+      "Professional Biography": "Benjamin Johnson is a stage designer and multimedia artist who specializes in the use of digital projections in theater. He has worked on numerous productions, blending traditional stagecraft with modern digital media.",
+      "CV/Resume": "None",
+      "Previous Speaking Experience": "1. Speaker at Theater and Digital Media Symposium 2023. 2. Workshop leader at Visual Arts in Theater Conference 2022.",
+      "Presentation Format": "Workshop",
+      "Special Technical Requirements": "Projector, sound system, stage setup.",
+      "I agree to the speaker guidelines and terms of participation": "Yes"
+    },
+    "multiPage": true,
+    "formPath": "/arts-creative/speaker-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

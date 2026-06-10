@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "workshop_registrations",
+    "formName": "Educational Workshop Registration",
+    "domain": "Professional & Business",
+    "instanceIndex": 45,
+    "inputDocument": "Subject: Workshop Registration Request: Leadership & Communication\n\nDear Workshop Coordinator,\n\nI am writing to formally request registration for the upcoming workshop in the Leadership & Communication category, scheduled for February 16, 2025. My name is Christine Lopez, and I am currently employed at Payne, Rodriguez and Wilson. As a professional with 13 years of experience, my current role/position is Teacher, English as a foreign language, and I am eager to deepen my knowledge and expand my skills through this workshop.\n\nMy preferred mode of delivery is In-Person, and I would appreciate being accommodated for the session at 9 PM. I hold a Bachelor's Degree and am driven to continue my professional development by exploring financial tools and models that can help optimize business growth.\n\nFor administrative purposes, please use the following billing address: 164 Gomez Pass, North Alanfort, DE 24988. I will be making the payment via Credit Card.\n\nIt is essential to mention my dietary requirements: Halal. Thankfully, I do not have any accessibility requirements. Additionally, I would like to suggest that it would be great if we could have a session on the integration of modern technologies with traditional business models.\n\nThank you for considering my application. I am looking forward to the unique learning opportunities that this workshop promises.\n\nSincerely,\nChristine Lopez  \n(Tel: (516)362-2018x3914)  \n(Email: stoutsuzanne@ward.info)",
+    "goldAnswers": {
+      "Full Name": "Christine Lopez",
+      "Email Address": "stoutsuzanne@ward.info",
+      "Phone Number": "(516)362-2018x3914",
+      "Organization/Company": "Payne, Rodriguez and Wilson",
+      "Workshop Category": "Leadership & Communication",
+      "Preferred Session Date": "2025/02/16",
+      "Preferred Time Slot": "9PM",
+      "Preferred Delivery Mode": "In-Person",
+      "Highest Education Level": "Bachelor's Degree",
+      "Years of Professional Experience": 13,
+      "Current Role/Position": "Teacher, English as a foreign language",
+      "Dietary Requirements": "Halal",
+      "Accessibility Requirements": "None",
+      "Payment Method": "Credit Card",
+      "Billing Address": "164 Gomez Pass\nNorth Alanfort, DE 24988",
+      "What do you hope to learn from this workshop?": "I am interested in exploring financial tools and models that can help optimize business growth.",
+      "Any other special requests or comments?": "It would be great if we could have a session on the integration of modern technologies with traditional business models."
+    },
+    "multiPage": false,
+    "formPath": "/professional-business/workshop-registration"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

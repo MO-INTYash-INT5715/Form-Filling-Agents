@@ -1,0 +1,57 @@
+{
+  "formInstance": {
+    "formId": "scholarship_applications",
+    "formName": "Scholarship Application for Students",
+    "domain": "Academic & Research",
+    "instanceIndex": 39,
+    "inputDocument": "Dear Scholarship Committee,\n\nMy name is Brittany Marie Valentine, and I am currently a freshman majoring in Business Administration with a current GPA of 3.18. I am writing to apply for the scholarship opportunity to further my education and career in the field of environmental science.\n\nGrowing up, I have always been passionate about environmental conservation and sustainability. My academic achievements, including winning the State Physics Olympiad, the National Science Fair, publishing a research paper in the International Journal of Engineering, and being in the top 5% of the International Chemistry Olympiad, reflect my dedication to learning and excelling in the sciences.\n\nIn addition to my academic achievements, I am actively involved in extracurricular activities such as volunteering at the local community center, co-founding the Campus Startup Initiative, and organizing charity events for the Red Cross. These experiences have not only enriched my understanding of community service but have also taught me the importance of leadership and teamwork.\n\nWith an annual family income of $64,977 and current financial aid being another scholarship, receiving this scholarship would greatly alleviate the financial burden on my family and allow me to focus on my studies and pursue my passion for environmental science without added pressures.\n\nI am committed to using the knowledge and skills gained through this scholarship to make a positive impact in sustainable development. My academic reference, Jenny Delgado, can attest to my dedication, hard work, and passion for environmental science. You can contact her at fhunter@gmail.com for any additional information.\n\nI am deeply grateful for your consideration of my application and the opportunity to further my education with your support. Thank you for considering my application.\n\nSincerely,\nBrittany Marie Valentine\n[Student ID: 45034587]",
+    "goldAnswers": {
+      "First Name": "Brittany",
+      "Middle Name": "Marie",
+      "Last Name": "Valentine",
+      "Student ID": 45034587,
+      "Major/Field of Study": "Business Administration",
+      "Current GPA": 3.18,
+      "Academic Year": "Freshman",
+      "Current Financial Aid": "Other Scholarship",
+      "Annual Family Income": 64977,
+      "Academic Achievements": [
+        "Winner of the State Physics Olympiad",
+        "Winner of the National Science Fair",
+        "Published a research paper in the International Journal of Engineering",
+        "Top 5% in the International Chemistry Olympiad"
+      ],
+      "Extracurricular Activities": [
+        "Volunteer at the local community center",
+        "Co-founder of the Campus Startup Initiative",
+        "Organized charity events for the Red Cross"
+      ],
+      "Statement of Purpose": "I am deeply passionate about advancing my knowledge in the field of environmental science. This scholarship will enable me to continue my studies without the pressure of financial burdens, and I plan to use the knowledge gained to make an impact in sustainable development.",
+      "Academic Reference": "Jenny Delgado",
+      "Reference Email": "fhunter@gmail.com"
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/scholarship-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

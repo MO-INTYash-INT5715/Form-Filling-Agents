@@ -1,0 +1,48 @@
+{
+  "formInstance": {
+    "formId": "Conference_Speaker_Application",
+    "formName": "Conference Speaker Application Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 35,
+    "inputDocument": "Elena Roberts, representing the Creative Writing Institute, is an accomplished flash fiction writer and instructor with a notable presence in the literary community. She is seeking to contribute her expertise to the upcoming conference with a workshop titled \"The Art of Writing Flash Fiction,\" aligning with the topic area of Creative Writing. In her presentation, Elena aims to delve into the art of writing flash fiction, emphasizing the creation of compelling, complete stories within a limited word count. Attendees will benefit from a discussion on techniques for concise storytelling, character development, and impactful endings. The session promises to equip participants with the ability to craft effective flash fiction, understand the importance of brevity in storytelling, and explore techniques for writing impactful short stories. With a robust background in literature, Elena's professional biography includes numerous published works in literary journals and conducting writing workshops focused on short fiction. Her previous speaking experience is well-rounded, including speaking engagements at the Flash Fiction Workshop 2023 and as a panelist at the Short Story Writers Conference 2022. For this workshop, her special technical requirements include the use of a projector, computer, and handouts. Elena is committed to adhering to the speaker guidelines and terms of participation of the conference. She can be contacted via email at elena.roberts45@gmail.com or by phone at 234-567-8901 for further information.",
+    "goldAnswers": {
+      "Full Name": "Elena Roberts",
+      "Email Address": "elena.roberts45@gmail.com",
+      "Phone Number": "234-567-8901",
+      "Organization/Institution": "Creative Writing Institute",
+      "Presentation Title": "The Art of Writing Flash Fiction",
+      "Topic Area": "Creative Writing",
+      "Presentation Abstract": "This presentation will explore the art of writing flash fiction, focusing on how to create compelling, complete stories within a limited word count. We will discuss techniques for concise storytelling, character development, and impactful endings.",
+      "Learning Objectives": "1. Learn how to craft effective flash fiction. 2. Understand the importance of brevity in storytelling. 3. Explore techniques for writing impactful short stories.",
+      "Professional Biography": "Elena Roberts is a flash fiction writer and instructor. She has published numerous works in literary journals and teaches writing workshops focused on short fiction.",
+      "CV/Resume": "None",
+      "Previous Speaking Experience": "1. Speaker at Flash Fiction Workshop 2023. 2. Panelist at Short Story Writers Conference 2022.",
+      "Presentation Format": "Workshop",
+      "Special Technical Requirements": "Projector, computer, handouts.",
+      "I agree to the speaker guidelines and terms of participation": "Yes"
+    },
+    "multiPage": true,
+    "formPath": "/arts-creative/speaker-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

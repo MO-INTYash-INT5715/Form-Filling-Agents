@@ -1,0 +1,45 @@
+{
+  "formInstance": {
+    "formId": "Literary_Magazine_Submission",
+    "formName": "Literary Magazine Submission Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 39,
+    "inputDocument": "Oliver White, residing at the email address oliver.white59@gmail.com, is pleased to submit his piece entitled \"Beneath the Surface\" to your esteemed literary magazine. This Fiction manuscript spans a Word Count of 4000 and is a psychological thriller that takes place in a small coastal town filled with dark secrets. Oliver has chosen not to attach a Manuscript File at this time. He expresses a preference for publication in your Fall 2024 issue. It is noteworthy that this work has not been previously published, although it is currently a simultaneous submission. Oliver affirms that he agrees to the submission guidelines and terms of publication set forth by your magazine.",
+    "goldAnswers": {
+      "Author Name": "Oliver White",
+      "Email Address": "oliver.white59@gmail.com",
+      "Title": "Beneath the Surface",
+      "Genre": "Fiction",
+      "Word Count": 4000,
+      "Abstract/Summary": "A psychological thriller that takes place in a small coastal town filled with dark secrets.",
+      "Manuscript File": "None",
+      "Preferred Issue": "Fall 2024",
+      "This work has been previously published": "No",
+      "This is a simultaneous submission": "Yes",
+      "I agree to the submission guidelines and terms of publication": "Yes"
+    },
+    "multiPage": false,
+    "formPath": "/arts-creative/literary-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

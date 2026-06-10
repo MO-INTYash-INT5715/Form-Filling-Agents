@@ -1,0 +1,38 @@
+{
+  "formInstance": {
+    "formId": "job_applications",
+    "formName": "Job Application for University Positions",
+    "domain": "Academic & Research",
+    "instanceIndex": 7,
+    "inputDocument": "[Your Address]  \nMichael Zhang  \n[City, State, Zip Code]  \n[Your Email Address]  \n[Your Phone Number]  \n[Date]\n\n[Employer's Name]  \n[Company's Name]  \n[Company's Address]  \n[City, State, Zip Code]\n\nDear [Employer's Name]:\n\nI am writing to express my interest in the Software Developer position within the Engineering department at [Company's Name]. My name is Michael Zhang, and I am eager to bring my expertise in coding and software development to your esteemed team.\n\nHaving a robust foundation in software development, I believe that I can make significant contributions to the Engineering department. Throughout my career, I have honed my skills in various programming languages and software development methodologies, which I am excited to employ at [Company's Name].\n\nI am particularly drawn to this opportunity because it aligns perfectly with my expertise and my passion for innovation and problem-solving in the field of engineering. I am confident that my skills and experiences will enable me to deliver valuable contributions to your team and help drive the success of [Company's Name].\n\nThank you for considering my application. I look forward to the possibility of discussing how I can contribute to your team.\n\nWarm regards,\n\nMichael Zhang",
+    "goldAnswers": {
+      "Applicant Name": "Michael Zhang",
+      "Position Applied For": "Software Developer",
+      "Preferred Department": "Engineering",
+      "Cover Letter": "I have a strong foundation in coding and software development, and I look forward to contributing to the Engineering team."
+    },
+    "multiPage": false,
+    "formPath": "/academic-research/job-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

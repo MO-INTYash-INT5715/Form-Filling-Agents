@@ -1,0 +1,38 @@
+{
+  "formInstance": {
+    "formId": "job_applications",
+    "formName": "Job Application for University Positions",
+    "domain": "Academic & Research",
+    "instanceIndex": 8,
+    "inputDocument": "[Your Address]  \n[City, State, ZIP Code]  \n[Email Address]  \n[Phone Number]\n\n[Date]\n\nHiring Manager  \n[Company Name]  \n[Company Address]  \n[City, State, ZIP Code]\n\nDear Hiring Manager,\n\nMy name is Olivia Liu, and I am writing to express my interest in the Content Writer position within the Marketing department at your esteemed company. With my extensive expertise in content creation, I am enthusiastic about the opportunity to join your team and contribute to crafting engaging narratives for the brand.\n\nThroughout my career, I have honed my skills in creating compelling content that resonates with target audiences. I am confident that my dedication to producing high-quality, impactful writing aligns perfectly with the goals of your Marketing department. I am eager to bring my creativity and insight to your team, collaborating to enhance brand storytelling and drive engagement.\n\nI am truly excited about the prospect of contributing to your organization's success as a Content Writer and being part of an innovative marketing team. I look forward to the possibility of discussing how my skills and experiences can further your company's goals.\n\nThank you for considering my application. I hope to hear from you soon.\n\nWarm regards,\n\nOlivia Liu",
+    "goldAnswers": {
+      "Applicant Name": "Olivia Liu",
+      "Position Applied For": "Content Writer",
+      "Preferred Department": "Marketing",
+      "Cover Letter": "With my expertise in content creation, I am excited to join the Marketing department and help craft engaging narratives for the brand."
+    },
+    "multiPage": false,
+    "formPath": "/academic-research/job-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

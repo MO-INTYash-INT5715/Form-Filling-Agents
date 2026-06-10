@@ -1,0 +1,38 @@
+{
+  "formInstance": {
+    "formId": "job_applications",
+    "formName": "Job Application for University Positions",
+    "domain": "Academic & Research",
+    "instanceIndex": 49,
+    "inputDocument": "[Your Address]  \n[City, State, ZIP Code]  \n[Email Address]  \n[Phone Number]  \n[Date]  \n\n[Employer's Name]  \n[Company's Name]  \n[Company's Address]  \n[City, State, ZIP Code]  \n\nDear [Employer's Name],  \n\nI am writing to express my enthusiastic interest in the Corporate Trainer position within your esteemed organization, particularly within the Learning & Development department. My name is Mia Thompson, and I am passionate about fostering an environment conducive to employee growth through innovative training programs.\n\nThe prospect of contributing to and enhancing the professional growth of employees at your company is an inspiring opportunity. My dedication to the Learning & Development field drives my eagerness to design and deliver dynamic training programs that align with the strategic goals of your organization.\n\nI am particularly drawn to this position because it presents the chance to work with diverse teams and implement training solutions that nurture skills and boost performance. I am keen to leverage my previous experiences and commitment to professional development to make a significant impact.\n\nThank you for considering my application. I am looking forward to the opportunity to discuss how I can contribute to the success of your Learning & Development efforts as a Corporate Trainer. Please feel free to contact me at your earliest convenience.\n\nWarm regards,  \n\nMia Thompson",
+    "goldAnswers": {
+      "Applicant Name": "Mia Thompson",
+      "Position Applied For": "Corporate Trainer",
+      "Preferred Department": "Learning & Development",
+      "Cover Letter": "I am dedicated to employee growth and eager to design and deliver training programs in the Learning & Development department."
+    },
+    "multiPage": false,
+    "formPath": "/academic-research/job-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

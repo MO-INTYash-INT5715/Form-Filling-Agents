@@ -1,0 +1,48 @@
+{
+  "formInstance": {
+    "formId": "Conference_Speaker_Application",
+    "formName": "Conference Speaker Application Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 30,
+    "inputDocument": "William Harris, representing the Global Performing Arts Network, is eager to contribute to the upcoming conference with his presentation titled \"Exploring the Role of Dance in Cultural Expression,\" under the topic area of Performing Arts. His presentation will explore the role of dance in cultural expression, examining how different cultures use dance as a medium to tell stories, express emotions, and celebrate identity. We will also discuss the importance of preserving traditional dance forms in the modern world. Participants will gain a deeper understanding of the cultural significance of dance in different societies, explore how dance serves as a form of communication and storytelling, and learn about the challenges of preserving traditional dance in the face of globalization. William Harris is a renowned dance ethnographer and choreographer with expertise in traditional and contemporary dance forms. He has worked with dance troupes around the world and contributed to numerous research projects on the global impact of dance. His previous speaking experience includes being a speaker at the International Dance Culture Forum 2023 and a workshop leader at the Traditional Dance Preservation Conference 2022. The format of his presentation will be a workshop, and his special technical requirements include a projector, sound system, and dance floor. William Harris can be contacted at william.harris24@icloud.com or via phone at 234-567-8901. He has agreed to the speaker guidelines and terms of participation.",
+    "goldAnswers": {
+      "Full Name": "William Harris",
+      "Email Address": "william.harris24@icloud.com",
+      "Phone Number": "234-567-8901",
+      "Organization/Institution": "Global Performing Arts Network",
+      "Presentation Title": "Exploring the Role of Dance in Cultural Expression",
+      "Topic Area": "Performing Arts",
+      "Presentation Abstract": "This presentation will explore the role of dance in cultural expression, examining how different cultures use dance as a medium to tell stories, express emotions, and celebrate identity. We will also discuss the importance of preserving traditional dance forms in the modern world.",
+      "Learning Objectives": "1. Understand the cultural significance of dance in different societies. 2. Explore how dance serves as a form of communication and storytelling. 3. Learn about the challenges of preserving traditional dance in the face of globalization.",
+      "Professional Biography": "William Harris is a renowned dance ethnographer and choreographer with expertise in traditional and contemporary dance forms. He has worked with dance troupes around the world and contributed to numerous research projects on the global impact of dance.",
+      "CV/Resume": "None",
+      "Previous Speaking Experience": "1. Speaker at International Dance Culture Forum 2023. 2. Workshop leader at Traditional Dance Preservation Conference 2022.",
+      "Presentation Format": "Workshop",
+      "Special Technical Requirements": "Projector, sound system, dance floor.",
+      "I agree to the speaker guidelines and terms of participation": "Yes"
+    },
+    "multiPage": true,
+    "formPath": "/arts-creative/speaker-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

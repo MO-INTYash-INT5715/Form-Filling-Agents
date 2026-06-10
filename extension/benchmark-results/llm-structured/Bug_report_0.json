@@ -25,77 +25,77 @@
     {
       "fieldId": "title",
       "fieldType": "String",
-      "predictedValue": "App crashes when opening the settings menu",
+      "predictedValue": "",
       "goldValue": "App crashes when opening the settings menu",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "severity",
       "fieldType": "Dropdown",
-      "predictedValue": "High",
+      "predictedValue": "",
       "goldValue": "High",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "environment",
       "fieldType": "String",
-      "predictedValue": "Production",
+      "predictedValue": "",
       "goldValue": "Production",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "browser",
       "fieldType": "String",
-      "predictedValue": "iOS 15.4, iPhone 12",
+      "predictedValue": "",
       "goldValue": "iOS 15.4, iPhone 12",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "steps",
       "fieldType": "Description",
-      "predictedValue": "1.Open the app. 2.Tap on the settings icon. 3.App crashes immediately.",
+      "predictedValue": "",
       "goldValue": "1. Open the app. 2. Tap on the settings icon. 3. App crashes immediately.",
       "clickAccurate": false,
-      "valueAccurate": true,
-      "bleuScore": 100
+      "valueAccurate": false,
+      "bleuScore": 0
     },
     {
       "fieldId": "expected",
       "fieldType": "Description",
-      "predictedValue": "Settings menu should open without crashing.",
+      "predictedValue": "",
       "goldValue": "Settings menu should open without crashing.",
       "clickAccurate": false,
-      "valueAccurate": true,
-      "bleuScore": 100
+      "valueAccurate": false,
+      "bleuScore": 0
     },
     {
       "fieldId": "actual",
       "fieldType": "Description",
-      "predictedValue": "App crashes immediately when settings menu is opened.",
+      "predictedValue": "",
       "goldValue": "App crashes immediately when settings menu is opened.",
       "clickAccurate": false,
-      "valueAccurate": true,
-      "bleuScore": 100
+      "valueAccurate": false,
+      "bleuScore": 0
     },
     {
       "fieldId": "reporter",
       "fieldType": "String",
-      "predictedValue": "John Williams",
+      "predictedValue": "",
       "goldValue": "John Williams",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "email",
       "fieldType": "String",
-      "predictedValue": "john.williams87@gmail.com",
+      "predictedValue": "",
       "goldValue": "john.williams87@gmail.com",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     }
   ],
   "atomicMetrics": {
@@ -105,26 +105,26 @@
       "Description": 0
     },
     "valueAccuracy": {
-      "String": 100,
-      "Dropdown": 100,
-      "Description": 100
+      "String": 0,
+      "Dropdown": 0,
+      "Description": 0
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 100
+    "overallValueAccuracy": 0
   },
   "episodicMetrics": {
-    "formCompletionRate": 100,
-    "fieldsAttempted": 9,
-    "fieldsCorrect": 9,
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
     "totalFields": 9,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 100
+    "averageValueAccuracy": 0
   },
-  "executionTimeMs": 1637,
+  "executionTimeMs": 1648,
   "errors": [],
   "submissionSucceeded": true,
-  "tokensIn": 621,
-  "tokensOut": 144,
-  "llmTimeMs": 3279,
-  "llmCalls": 1
+  "tokensIn": 0,
+  "tokensOut": 0,
+  "llmTimeMs": 0,
+  "llmCalls": 0
 }

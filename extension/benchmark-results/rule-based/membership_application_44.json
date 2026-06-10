@@ -1,0 +1,46 @@
+{
+  "formInstance": {
+    "formId": "membership_application",
+    "formName": "Association Membership Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 44,
+    "inputDocument": "Dear Professional Association Membership Committee,\n\nI am writing to express my interest in joining as a Professional Member of your esteemed organization. My name is Mia Davis, and I hold a Bachelor's degree in Information Technology. With 3 years of experience in the industry, I am currently working as an IT Support Specialist at Tech Solutions.\n\nI believe that becoming a member of your association will provide me with valuable networking opportunities, professional development resources, and access to industry best practices. By connecting with like-minded professionals, I am confident that I can further enhance my skills and contribute effectively to the field of Information Technology.\n\nMy commitment to excellence and dedication to continuous learning align with the mission and values of your association. I am eager to engage with other members, participate in events, and contribute to the community in meaningful ways.\n\nFor reference, you may contact John Smith at john.smith@example.com. I have worked closely with John at Tech Solutions and he can attest to my work ethic, professional demeanor, and passion for the field.\n\nI am excited about the possibility of joining your association and becoming an active member of the community. Thank you for considering my application. I look forward to the opportunity to contribute to and learn from the association’s vibrant network of professionals.\n\nSincerely,\nMia Davis\n555-5050\nmia.davis@example.com\nJuly 18, 1992",
+    "goldAnswers": {
+      "name": "Mia Davis",
+      "email": "mia.davis@example.com",
+      "phone": "555-5050",
+      "date_of_birth": "1992-07-18",
+      "degree": "Bachelor's in Information Technology",
+      "experience_years": 3,
+      "current_position": "IT Support Specialist at Tech Solutions",
+      "membership_type": "Professional Member",
+      "reference": {
+        "name": "John Smith",
+        "contact": "john.smith@example.com"
+      }
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/membership-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

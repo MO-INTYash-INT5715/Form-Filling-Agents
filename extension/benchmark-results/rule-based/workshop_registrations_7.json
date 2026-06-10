@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "workshop_registrations",
+    "formName": "Educational Workshop Registration",
+    "domain": "Professional & Business",
+    "instanceIndex": 7,
+    "inputDocument": "Subject: Workshop Registration Request for Continuing Education\n\nDear Workshop Coordination Team,\n\nI am writing to formally request registration for the upcoming workshop under the Digital Marketing category. My name is Phyllis Medina, and I am currently employed at Miller-Lam, where I hold the position of Ecologist. I have an Associate Degree and possess 14 years of professional experience. My primary objective in attending this workshop is to enhance my digital marketing knowledge to build stronger brand strategies and reach a wider audience. I have opted for the session scheduled on January 10, 2025, and would prefer the afternoon time slot. My preference for the delivery mode is In-Person.\n\nPlease note that my participation will be Company Sponsored, and the Billing Address to be used is as follows: 1128 Amanda Oval Suite 911, Bradychester, ME 18935. As for my Dietary Requirements, I have specified \"Other (Please specify),\" and I do not have any Accessibility Requirements.\n\nKindly, I would like to request that the workshop include more information on the practical applications of digital marketing in different industries, as noted in the section for 'Any other special requests or comments'.\n\nThank you for considering my application. I am looking forward to the opportunity to expand my expertise through your esteemed workshop.\n\nSincerely,\nPhyllis Medina\n\nContact Information:\nEmail Address: millsjeanne@york.com\nPhone Number: +1-258-925-2056x7450",
+    "goldAnswers": {
+      "Full Name": "Phyllis Medina",
+      "Email Address": "millsjeanne@york.com",
+      "Phone Number": "+1-258-925-2056x7450",
+      "Organization/Company": "Miller-Lam",
+      "Workshop Category": "Digital Marketing",
+      "Preferred Session Date": "2025/01/10",
+      "Preferred Time Slot": "afternoon",
+      "Preferred Delivery Mode": "In-Person",
+      "Highest Education Level": "Associate Degree",
+      "Years of Professional Experience": 14,
+      "Current Role/Position": "Ecologist",
+      "Dietary Requirements": "Other (Please specify)",
+      "Accessibility Requirements": "None",
+      "Payment Method": "Company Sponsored",
+      "Billing Address": "1128 Amanda Oval Suite 911\nBradychester, ME 18935",
+      "What do you hope to learn from this workshop?": "I want to enhance my digital marketing knowledge to build stronger brand strategies and reach a wider audience.",
+      "Any other special requests or comments?": "Please consider providing more information on the practical applications of digital marketing in different industries."
+    },
+    "multiPage": false,
+    "formPath": "/professional-business/workshop-registration"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

@@ -1,0 +1,45 @@
+{
+  "formInstance": {
+    "formId": "Literary_Magazine_Submission",
+    "formName": "Literary Magazine Submission Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 37,
+    "inputDocument": "**Submission Paragraph:**\n\nDear Editors,\n\nMy name is Benjamin King, and I am pleased to submit my work for consideration in your esteemed literary magazine. My piece, titled \"The Infinite Loop,\" falls under the genre of Poetry and encompasses a Word Count of 85. The Abstract/Summary of my work is as follows: \"Poems exploring the cyclical nature of life, love, and loss.\" \n\nI have selected Winter 2024 as my Preferred Issue for publication. Please be assured that this work has not been previously published, although it is a simultaneous submission. I have carefully reviewed and agree to the submission guidelines and terms of publication.\n\nShould you have any questions, please feel free to contact me at benjamin.king77@yahoo.com. Thank you for considering my submission; I look forward to the opportunity to contribute to your publication.\n\nSincerely,\n\nBenjamin King",
+    "goldAnswers": {
+      "Author Name": "Benjamin King",
+      "Email Address": "benjamin.king77@yahoo.com",
+      "Title": "The Infinite Loop",
+      "Genre": "Poetry",
+      "Word Count": 85,
+      "Abstract/Summary": "Poems exploring the cyclical nature of life, love, and loss.",
+      "Manuscript File": "None",
+      "Preferred Issue": "Winter 2024",
+      "This work has been previously published": "No",
+      "This is a simultaneous submission": "Yes",
+      "I agree to the submission guidelines and terms of publication": "Yes"
+    },
+    "multiPage": false,
+    "formPath": "/arts-creative/literary-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

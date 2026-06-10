@@ -1,0 +1,50 @@
+{
+  "formInstance": {
+    "formId": "membership_application",
+    "formName": "Association Membership Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 32,
+    "inputDocument": "Dear Professional Association Membership Committee,\n\nMy name is Ethan Wilson, and I am excited to submit my application for Professional Membership with your esteemed organization. I believe that my background and experience align well with the values and goals of your association, and I am eager to contribute to and benefit from the valuable resources and opportunities it offers.\n\nI hold a Master's Degree in Finance and am a Chartered Financial Analyst (CFA), demonstrating my commitment to excellence and continuous learning in the field. With seven years of experience as a Financial Analyst in the finance industry, currently employed at an Investment Group, I have honed my skills and expertise in areas such as financial analysis, investment management, and risk assessment.\n\nI am seeking a three-year Professional Membership to deepen my connections within the industry, stay informed about the latest trends and best practices, and engage in professional development opportunities. I believe that being a member of your association will provide me with a platform to network with like-minded professionals, access relevant resources, and enhance my professional growth.\n\nI have listed Jessica Green, my manager at the Investment Group, as my reference. She can attest to my strong work ethic, dedication to continuous improvement, and my ability to collaborate effectively with team members. I value her opinion and believe that her endorsement further reinforces my suitability for Professional Membership with your association.\n\nI am eager to contribute to the community of professionals within your organization, share my insights and expertise, and learn from the diverse perspectives and experiences of fellow members. I am confident that my background, qualifications, and dedication to professional development make me a strong candidate for Professional Membership, and I look forward to the opportunity to become an active and engaged member of your association.\n\nThank you for considering my application. I am excited about the prospect of joining your association and leveraging the benefits it offers to enhance my career growth and professional success.\n\nSincerely,\n\nEthan Wilson\nethan.wilson@yahoo.com\n555-5670\nDate of Birth: 1985/03/30",
+    "goldAnswers": {
+      "Full Name": "Ethan Wilson",
+      "Email Address": "ethan.wilson@yahoo.com",
+      "Phone Number": "555-5670",
+      "Date of Birth": "1985/03/30",
+      "Membership Level": "Professional Member",
+      "Membership Duration": "3 Years",
+      "Highest Education Level": "Master's Degree",
+      "Field of Study": "Finance",
+      "Professional Certifications": "CFA",
+      "Current Employer": "Investment Group",
+      "Job Title": "Financial Analyst",
+      "Years of Experience": 7,
+      "Industry": "Finance",
+      "Reference Name": "Jessica Green",
+      "Reference Email": "jessica.green@yahoo.com",
+      "Relationship to Reference": "Manager"
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/membership-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

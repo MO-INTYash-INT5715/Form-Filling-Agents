@@ -1,0 +1,53 @@
+{
+  "formInstance": {
+    "formId": "real_estate_rental_applications",
+    "formName": "Real Estate Rental Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 20,
+    "inputDocument": "Tiffany Davis, residing at 705 Jones Ways, Youngbury, New Mexico, 31483, hereby submits this rental application. Born on 1974/06/15, Ms. Davis may be reached via email at jwashington@mitchell.com or via phone at 001-881-077-2379x115. Currently employed as an Archivist with Orozco LLC, Ms. Davis has a monthly income of USD 13,835 and has been with the company for 6 months. Anticipating a preferred move-in date of 2025/02/16, she seeks a lease term of 6 months with a maximum monthly rent of USD 2,744. Ms. Davis's preferred area is Waterfront. According to the application, she does not have any pets. However, if she were to have any, the field 'If yes, please describe your pets' remains as 'No pets'. Additional Comments include, 'Looking for a peaceful environment.' Ms. Davis is eager to find a residence that meets her criteria and looks forward to a potential residency in a suitable and peaceful new home.",
+    "goldAnswers": {
+      "Full Name": "Tiffany Davis",
+      "Email Address": "jwashington@mitchell.com",
+      "Phone Number": "001-881-077-2379x115",
+      "Date of Birth": "1974/06/15",
+      "Street Address": "705 Jones Ways",
+      "City": "Youngbury",
+      "State": "New Mexico",
+      "ZIP Code": "31483",
+      "Current Employer": "Orozco LLC",
+      "Job Title": "Archivist",
+      "Monthly Income (USD)": 13835,
+      "Length of Employment": "6 months",
+      "Preferred Move-in Date": "2025/02/16",
+      "Preferred Lease Term": "6 months",
+      "Maximum Monthly Rent (USD)": 2744,
+      "Preferred Area": "Waterfront",
+      "Do you have any pets?": "No",
+      "If yes, please describe your pets": "No pets",
+      "Additional Comments": "Looking for a peaceful environment."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/rental-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

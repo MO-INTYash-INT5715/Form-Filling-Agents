@@ -1,0 +1,48 @@
+{
+  "formInstance": {
+    "formId": "Conference_Speaker_Application",
+    "formName": "Conference Speaker Application Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 31,
+    "inputDocument": "Olivia Smith, from the Creative Writing Foundation, is pleased to submit a conference speaker application for the upcoming event. She can be reached via email at olivia.smith56@gmail.com or by phone at 123-456-7890. Olivia is an award-winning fiction writer specializing in psychological thrillers and complex character development. She has published several best-selling novels and frequently conducts creative writing workshops. She proposes to deliver a workshop titled The Art of Writing Compelling Villains in Fiction, under the topic area of Creative Writing. \n\nThe presentation abstract highlights a comprehensive exploration of the craft of writing compelling villains in fiction, focusing on how to develop multi-dimensional antagonists that drive the plot, create tension, and enhance the emotional impact of the story. The learning objectives for participants include the opportunity to learn how to develop complex and believable villains, explore the role of antagonists in narrative structure, and understand how to balance the villain's motivations with the protagonist's journey. \n\nOlivia’s previous speaking experience includes her participation as a speaker at the Writing Compelling Antagonists Workshop 2023 and as a panelist at the Character Development Conference 2022. The proposed presentation format is a workshop, requiring special technical requirements such as a projector, computer, and handouts. Olivia has expressed her agreement with the speaker guidelines and terms of participation. Her succinct CV/Resume includes no additional details at this time.",
+    "goldAnswers": {
+      "Full Name": "Olivia Smith",
+      "Email Address": "olivia.smith56@gmail.com",
+      "Phone Number": "123-456-7890",
+      "Organization/Institution": "Creative Writing Foundation",
+      "Presentation Title": "The Art of Writing Compelling Villains in Fiction",
+      "Topic Area": "Creative Writing",
+      "Presentation Abstract": "In this presentation, we will explore the craft of writing compelling villains in fiction. We will discuss how to develop multi-dimensional antagonists that drive the plot, create tension, and enhance the emotional impact of the story.",
+      "Learning Objectives": "1. Learn how to develop complex and believable villains. 2. Explore the role of antagonists in narrative structure. 3. Understand how to balance the villain's motivations with the protagonist's journey.",
+      "Professional Biography": "Olivia Smith is an award-winning fiction writer with a focus on psychological thrillers and complex character development. She has published several best-selling novels and regularly hosts creative writing workshops.",
+      "CV/Resume": "None",
+      "Previous Speaking Experience": "1. Speaker at Writing Compelling Antagonists Workshop 2023. 2. Panelist at Character Development Conference 2022.",
+      "Presentation Format": "Workshop",
+      "Special Technical Requirements": "Projector, computer, handouts.",
+      "I agree to the speaker guidelines and terms of participation": "Yes"
+    },
+    "multiPage": true,
+    "formPath": "/arts-creative/speaker-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

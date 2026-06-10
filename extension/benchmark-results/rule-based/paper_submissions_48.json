@@ -1,0 +1,44 @@
+{
+  "formInstance": {
+    "formId": "paper_submissions",
+    "formName": "Paper Submission Form",
+    "domain": "Academic & Research",
+    "instanceIndex": 48,
+    "inputDocument": "**Paper Submission Application**\n\n---\n\n**Author Details:**\n\nSubmitted by esteemed researcher Liam James, who can be reached via email at liam.james@autotech.com, this paper marks a significant contribution to the evolving discourse on transportation technology. \n\n---\n\n**Paper Title:**\n\nThe Future of Electric Vehicles: Technology and Market Trends\n\n---\n\n**Abstract:**\n\nThis paper examines the latest advancements in electric vehicle technology and the growing market trends that are driving the shift towards sustainable transportation.\n\n---\n\n**Main Focus:**\n\nLiam James intricately lays out the burgeoning developments within the electric vehicle sector, highlighting their transformative impact on both technology and market dynamics. With an acute focus on sustainability, the paper explores pivotal trends that underscore the burgeoning transition to more environmentally conscious modes of transportation. \n\n---\n\n**Keywords:**\n\n- Electric Vehicles\n- Sustainability\n- Transportation\n\n---\n\n**Paper Category:**\n\nThis work falls under the category of Transportation Technology, reflecting its pivotal exploration of thematic trends and emerging innovations that suggest a compelling trajectory for the future of the transportation industry.\n\n--- \n\nLiam James presents this paper for your consideration, endeavoring to contribute to the ongoing academic and professional conversations surrounding the evolution and impact of electric vehicles.",
+    "goldAnswers": {
+      "Author Name": "Liam James",
+      "Email": "liam.james@autotech.com",
+      "Paper Title": "The Future of Electric Vehicles: Technology and Market Trends",
+      "Abstract": "This paper examines the latest advancements in electric vehicle technology and the growing market trends that are driving the shift towards sustainable transportation.",
+      "Keywords": [
+        "Electric Vehicles",
+        "Sustainability",
+        "Transportation"
+      ],
+      "Paper Category": "Transportation Technology"
+    },
+    "multiPage": false,
+    "formPath": "/academic-research/paper-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

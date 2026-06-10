@@ -1,0 +1,48 @@
+{
+  "formInstance": {
+    "formId": "Conference_Speaker_Application",
+    "formName": "Conference Speaker Application Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 15,
+    "inputDocument": "Noah White, representing Global Performing Arts Center, is submitting a proposal for the conference with keen enthusiasm. His presentation titled \"Cultural Exchange Through Performance Art\" falls under the topic area of Performing Arts. This presentation will explore the role of performance art in cultural exchange. We will look at how performances can bridge cultural divides, bringing together diverse audiences and promoting global understanding. The learning objectives are as follows: 1. Learn how performance art fosters cultural exchange. 2. Understand the role of theater and dance in global dialogue. 3. Explore the potential of performing arts to address cultural tensions and promote inclusivity. Noah White is a performance artist and director with a focus on intercultural theater. He has worked on collaborative projects in Europe, Asia, and the Americas. His previous speaking engagements include being a Speaker at International Performing Arts Symposium 2023 and a Panelist at Cultural Exchange in the Arts 2022. The presentation format is a Lecture, requiring a Projector and sound system to facilitate a seamless delivery. For further communication, Noah White can be reached at noah.white54@yahoo.com or through his phone number 567-890-1234. He agrees to the speaker guidelines and terms of participation, committing fully to contribute meaningfully to the conference.",
+    "goldAnswers": {
+      "Full Name": "Noah White",
+      "Email Address": "noah.white54@yahoo.com",
+      "Phone Number": "567-890-1234",
+      "Organization/Institution": "Global Performing Arts Center",
+      "Presentation Title": "Cultural Exchange Through Performance Art",
+      "Topic Area": "Performing Arts",
+      "Presentation Abstract": "This presentation will explore the role of performance art in cultural exchange. We will look at how performances can bridge cultural divides, bringing together diverse audiences and promoting global understanding.",
+      "Learning Objectives": "1. Learn how performance art fosters cultural exchange. 2. Understand the role of theater and dance in global dialogue. 3. Explore the potential of performing arts to address cultural tensions and promote inclusivity.",
+      "Professional Biography": "Noah White is a performance artist and director with a focus on intercultural theater. He has worked on collaborative projects in Europe, Asia, and the Americas.",
+      "CV/Resume": "None",
+      "Previous Speaking Experience": "1. Speaker at International Performing Arts Symposium 2023. 2. Panelist at Cultural Exchange in the Arts 2022.",
+      "Presentation Format": "Lecture",
+      "Special Technical Requirements": "Projector, sound system.",
+      "I agree to the speaker guidelines and terms of participation": "Yes"
+    },
+    "multiPage": true,
+    "formPath": "/arts-creative/speaker-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

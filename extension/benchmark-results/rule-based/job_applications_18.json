@@ -1,0 +1,38 @@
+{
+  "formInstance": {
+    "formId": "job_applications",
+    "formName": "Job Application for University Positions",
+    "domain": "Academic & Research",
+    "instanceIndex": 18,
+    "inputDocument": "[Your Address]  \n[City, State, ZIP Code]  \n[Email Address]  \n[Phone Number]  \n  \n[Date]  \n\n[Recipient Name]  \n[Company Name]  \n[Company Address]  \n[City, State, ZIP Code]  \n\nDear [Recipient Name],\n\nI am writing to express my enthusiastic interest in the position of Public Relations Officer at [Company Name], as advertised. My name is Mia Wu, and I am eager to bring my skills and experiences to your esteemed organization, specifically within the Public Relations department.\n\nWith my strong communication skills, I am excited to contribute to building and maintaining the company's public image in the Public Relations department. Throughout my career, I have honed my abilities to effectively communicate and engage with various stakeholders, ensuring that any message or campaign aligns perfectly with the organizational values and goals. I am dedicated to fostering positive relationships and strategic communications that enhance brand awareness and public perception.\n\nI truly believe that my background uniquely positions me to succeed in this role, and I am keen to bring my expertise in communication and relationship-building to [Company Name]’s Public Relations team.\n\nThank you very much for considering my application. I look forward to the opportunity to discuss how I can contribute to your organization's public relations endeavors.\n\nSincerely,  \nMia Wu",
+    "goldAnswers": {
+      "Applicant Name": "Mia Wu",
+      "Position Applied For": "Public Relations Officer",
+      "Preferred Department": "Public Relations",
+      "Cover Letter": "With my strong communication skills, I am excited to contribute to building and maintaining the company's public image in the Public Relations department."
+    },
+    "multiPage": false,
+    "formPath": "/academic-research/job-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

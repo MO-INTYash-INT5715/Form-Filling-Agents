@@ -1,0 +1,43 @@
+{
+  "formInstance": {
+    "formId": "Art_Exhibition_Submission_Form",
+    "formName": "Art Exhibition Submission Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 25,
+    "inputDocument": "Artist Chloe Wang is pleased to submit the piece titled \"Abstract Emotions\" for consideration in the upcoming art exhibition. With a professional background and a passion for art, Chloe can be reached at chloe.wang78@yahoo.com for correspondence related to this submission. The work \"Abstract Emotions\" is crafted using \"Mixed Media,\" making it a captivating fusion of bold visual elements. It carries the dimensions of 50 x 50 x 5 cm and was created in the year 2024. \n\nOf particular note is the untouched \"Artwork Description,\" which eloquently details the concept: \"Abstract Emotions is a mixed-media piece that seeks to convey the intangible nature of human feelings. The artist has used a combination of bold colors, textured papers, and splatters of paint to create a chaotic yet harmonious composition. Swirls of red might represent passion, while patches of blue could signify sadness. The overlapping layers and unexpected shapes encourage the viewer to engage with the work on an emotional level, interpreting the piece based on their own experiences and perceptions of different emotions.\"\n\nChloe expresses a preference for showcasing \"Abstract Emotions\" during the \"Spring 2024\" exhibition period. The artwork is available for sale, presenting collectors with a unique opportunity to acquire this thought-provoking piece. We appreciate your consideration of this submission and look forward to the possibility of having \"Abstract Emotions\" featured in the exhibition.",
+    "goldAnswers": {
+      "Artist Name": "Chloe Wang",
+      "Email Address": "chloe.wang78@yahoo.com",
+      "Artwork Title": "Abstract Emotions",
+      "Medium": "Mixed Media",
+      "Dimensions (in cm)": "50 x 50 x 5",
+      "Year Created": 2024,
+      "Artwork Description": "Abstract Emotions is a mixed - media piece that seeks to convey the intangible nature of human feelings. The artist has used a combination of bold colors, textured papers, and splatters of paint to create a chaotic yet harmonious composition. Swirls of red might represent passion, while patches of blue could signify sadness. The overlapping layers and unexpected shapes encourage the viewer to engage with the work on an emotional level, interpreting the piece based on their own experiences and perceptions of different emotions.",
+      "Preferred Exhibition Period": "Spring 2024",
+      "Artwork is available for sale": true
+    },
+    "multiPage": false,
+    "formPath": "/arts-creative/exhibition-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

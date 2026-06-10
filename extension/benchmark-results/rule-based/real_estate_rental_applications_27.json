@@ -1,0 +1,53 @@
+{
+  "formInstance": {
+    "formId": "real_estate_rental_applications",
+    "formName": "Real Estate Rental Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 27,
+    "inputDocument": "Stephanie Brown, born on January 16, 1984, is currently considering relocating to a new residence. With a current address at 69430 Joseph Green, Michaelport, New Mexico, 20325, Stephanie is seeking a rental property in a quiet neighborhood. She prefers a move-in date of January 31, 2025, and is looking for a lease term of 12 months. Her maximum monthly rent budget is capped at USD 3551. Stephanie is presently employed by Lopez and Sons as an Intelligence analyst, drawing a monthly income of USD 9003, and has held this position for 5 years. Stephanie, who values peaceful and residential surroundings, stresses, \"Prefer quiet and residential areas,\" as part of her additional comments. Though she does not own any pets, she wanted to clarify with, \"No pets,\" under the pets description. Interested landlords can reach her via email at nelsoncolton@hotmail.com or her phone number, 195-163-2650, to discuss potential rental opportunities further.",
+    "goldAnswers": {
+      "Full Name": "Stephanie Brown",
+      "Email Address": "nelsoncolton@hotmail.com",
+      "Phone Number": "195-163-2650",
+      "Date of Birth": "1984/01/16",
+      "Street Address": "69430 Joseph Green",
+      "City": "Michaelport",
+      "State": "New Mexico",
+      "ZIP Code": "20325",
+      "Current Employer": "Lopez and Sons",
+      "Job Title": "Intelligence analyst",
+      "Monthly Income (USD)": 9003,
+      "Length of Employment": "5 years",
+      "Preferred Move-in Date": "2025/01/31",
+      "Preferred Lease Term": "12 months",
+      "Maximum Monthly Rent (USD)": 3551,
+      "Preferred Area": "Quiet neighborhood",
+      "Do you have any pets?": "No",
+      "If yes, please describe your pets": "No pets",
+      "Additional Comments": "Prefer quiet and residential areas."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/rental-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

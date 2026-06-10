@@ -1,0 +1,45 @@
+{
+  "formInstance": {
+    "formId": "Literary_Magazine_Submission",
+    "formName": "Literary Magazine Submission Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 24,
+    "inputDocument": "Title: Stranger in the Mirror  \nAuthor Name: Lucas Davis  \nEmail Address: lucas.davis61@gmail.com  \nGenre: Non-Fiction  \nWord Count: 4700  \n\nAbstract/Summary: A psychological study on self-identity and the phenomenon of self-deception.\n\nLucas Davis respectfully submits his non-fiction work, \"Stranger in the Mirror,\" for consideration in your esteemed literary magazine. This piece, comprising 4700 words, offers a profound psychological study on self-identity and the phenomenon of self-deception. Acknowledging the vital importance of adherence to submission protocols, Lucas Davis confirms that this work has not been previously published, and this is a simultaneous submission. He fully concurs with the submission guidelines and terms of publication. While expressing a preference for the piece to be considered for your Spring 2024 issue, Lucas eagerly anticipates your evaluation and feedback.",
+    "goldAnswers": {
+      "Author Name": "Lucas Davis",
+      "Email Address": "lucas.davis61@gmail.com",
+      "Title": "Stranger in the Mirror",
+      "Genre": "Non-Fiction",
+      "Word Count": 4700,
+      "Abstract/Summary": "A psychological study on self-identity and the phenomenon of self-deception.",
+      "Manuscript File": "None",
+      "Preferred Issue": "Spring 2024",
+      "This work has been previously published": "No",
+      "This is a simultaneous submission": "Yes",
+      "I agree to the submission guidelines and terms of publication": "Yes"
+    },
+    "multiPage": false,
+    "formPath": "/arts-creative/literary-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

@@ -1,0 +1,40 @@
+{
+  "formInstance": {
+    "formId": "grant_applications",
+    "formName": "Grant or Research Funding Application",
+    "domain": "Academic & Research",
+    "instanceIndex": 49,
+    "inputDocument": "**Grant Application**\n\n**Applicant Information:**\n\n- **Full Name:** Veronica Adams  \n- **Email Address:** joe63@patton-henderson.com  \n- **Gender:** Male  \n- **Date of Birth:** 2003/07/03  \n\n---\n\n**Introduction:**\n\nDear Grant Committee,\n\nI am writing to you with a blend of excitement and determination, fueled by the desire to engage in ventures that are righteous and transformative. My name is Veronica Adams, and my quest for knowledge and innovation defines the pith of this application. Though I find the realms of paperwork and structured expressions somewhat distasteful, the substance of my request is permeated with sincerity and purpose.\n\n---\n\n**Personal Statement:**\n\nSince the dawn of my learning journey, dated July 3, 2003—well into my voyages over two decades ago—my experiences have continually sculptured my vision. The fact that I am not subscribed to the newsletter ultimately means in my world, every update comes through keen observation and the refreshing winds of real-life encounters rather than ordinary mail. Here's to swimming against the currents of conformism, allowing knowledge to trickle in as it pleases, rather than be constrained by the binding ropes of a habitual newsletter. Therein lies a fragment of my philosophy.\n\n---\n\n**Conclusion:**\n\nIn conclusion, I offer not just an application, but a partnership—community through purpose, innovation by design. Funding this application wouldn't merely be a routine approval but rather, a key contribution to a micro-revolution in spheres tethered to my ambitions.\n\nOnward to possibilities luminous as the stars, yet solid as the earth we tread.\n\nThank you for considering this grant application.\n\nWith anticipation,\n\nVeronica Adams (Male)\n\n(joe63@patton-henderson.com)",
+    "goldAnswers": {
+      "First Name": "Veronica",
+      "Last Name": "Adams",
+      "Email": "joe63@patton-henderson.com",
+      "Gender": "Male",
+      "Date of Birth": "2003/07/03",
+      "Subscribe to Newsletter": false
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/grant-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

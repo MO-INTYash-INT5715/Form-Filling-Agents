@@ -1,0 +1,56 @@
+{
+  "formInstance": {
+    "formId": "scholarship_applications",
+    "formName": "Scholarship Application for Students",
+    "domain": "Academic & Research",
+    "instanceIndex": 5,
+    "inputDocument": "[Your Name]  \n[Your Address]  \n[City, State, Zip Code]  \n[Email Address]  \n[Date]  \n\n[Scholarship Committee Name]  \n[University Name or Organization]  \n[Scholarship Address]  \n[City, State, Zip Code]  \n\nDear Scholarship Committee,\n\nI hope this letter finds you well. My name is Mark Rachael Holloway, a freshman majoring in Law at [University Name], with a Student ID of 8707836. I am writing to express my earnest intention to apply for the [Scholarship Name] Scholarship. With a GPA of 3.65, I have a strong academic foundation which I intend to build upon as I navigate my studies and prepare for a career that can positively impact society.\n\nThroughout my academic journey, I have been motivated by the belief that law should be a tool for social change. This belief has driven my passion and commitment to excel in my studies. I am proud to have published a research paper in the International Journal of Engineering and to have been a finalist in the National Robotics Championship, as well as winning the State Physics Olympiad. These achievements showcase not only my dedication to learning but also my ability to apply my knowledge in practical settings.\n\nMy financial situation, meanwhile, presents certain challenges. My family’s annual income is $46,943, and I currently receive grants to support my education. Despite this financial support, the burdens of tuition fees and related costs remain daunting. This scholarship would alleviate some of that financial pressure and allow me to dedicate more of my energy toward my academic pursuits.\n\nBeyond academics, I am actively involved in several extracurricular activities. I co-founded the Campus Startup Initiative, creating a platform that encourages entrepreneurial spirit and innovation among students. Furthermore, I volunteer at the local community center, hoping to give back to my community, and I coordinate a Youth Empowerment Program aimed at fostering leadership skills in young individuals. These experiences have taught me the importance of service and leadership, skills that I believe are essential in my field of study.\n\nAs I aspire to advance my knowledge in law and eventually impact sustainable development, the opportunity presented by this scholarship would significantly enhance my educational experience. I am deeply passionate about being part of the solution to today’s most pressing environmental challenges, and the financial support would allow me to focus more intently on my studies.\n\nI would like to express my gratitude for considering my application. If needed, I can provide an academic reference from Kelly Mendoza, who can be reached at lauren99@clark.com. I wholeheartedly believe that with the support of the [Scholarship Name] Scholarship, I will be better equipped to achieve my aspirations.\n\nThank you for your time and consideration. I look forward to the possibility of contributing to and growing within the [University Name] community.\n\nSincerely,\n\nMark Rachael Holloway  \nStudent ID: 8707836  \nMajor: Law  \nCurrent GPA: 3.65  \n[Your Contact Information]  \n[Your Phone Number]",
+    "goldAnswers": {
+      "First Name": "Mark",
+      "Middle Name": "Rachael",
+      "Last Name": "Holloway",
+      "Student ID": 8707836,
+      "Major/Field of Study": "Law",
+      "Current GPA": 3.65,
+      "Academic Year": "Freshman",
+      "Current Financial Aid": "Grants",
+      "Annual Family Income": 46943,
+      "Academic Achievements": [
+        "Published a research paper in the International Journal of Engineering",
+        "Finalist in the National Robotics Championship",
+        "Winner of the State Physics Olympiad"
+      ],
+      "Extracurricular Activities": [
+        "Co-founder of the Campus Startup Initiative",
+        "Volunteer at the local community center",
+        "Coordinator of the Youth Empowerment Program"
+      ],
+      "Statement of Purpose": "I am deeply passionate about advancing my knowledge in the field of environmental science. This scholarship will enable me to continue my studies without the pressure of financial burdens, and I plan to use the knowledge gained to make an impact in sustainable development.",
+      "Academic Reference": "Kelly Mendoza",
+      "Reference Email": "lauren99@clark.com"
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/scholarship-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

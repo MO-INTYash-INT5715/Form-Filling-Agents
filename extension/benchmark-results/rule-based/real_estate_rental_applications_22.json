@@ -1,0 +1,53 @@
+{
+  "formInstance": {
+    "formId": "real_estate_rental_applications",
+    "formName": "Real Estate Rental Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 22,
+    "inputDocument": "Carol Gonzalez is submitting this rental application to express interest in a property located Near public transport. Carol can be contacted via email at robertslaura@allen-blake.com or by phone at +1-304-364-4930. Residing at 0371 Best Alley, Thomasview, Texas, 22838, Carol is a Manufacturing systems engineer working at Keith-Curry for the past 6 months, earning a monthly income of $6729. The desired move-in date is 2025/02/16, with a preferred lease term of 24 months, and a maximum monthly rent budget of $1591. Carol is seeking a home in a peaceful environment. While the application questions indicate 'Do you have any pets?' with a response of \"Yes,\" no further explanation is provided under 'If yes, please describe your pets,' where it simply states \"No pets.\" Carol hopes this application meets the criteria for consideration.",
+    "goldAnswers": {
+      "Full Name": "Carol Gonzalez",
+      "Email Address": "robertslaura@allen-blake.com",
+      "Phone Number": "+1-304-364-4930",
+      "Date of Birth": "1989/02/05",
+      "Street Address": "0371 Best Alley",
+      "City": "Thomasview",
+      "State": "Texas",
+      "ZIP Code": "22838",
+      "Current Employer": "Keith-Curry",
+      "Job Title": "Manufacturing systems engineer",
+      "Monthly Income (USD)": 6729,
+      "Length of Employment": "6 months",
+      "Preferred Move-in Date": "2025/02/16",
+      "Preferred Lease Term": "24 months",
+      "Maximum Monthly Rent (USD)": 1591,
+      "Preferred Area": "Near public transport",
+      "Do you have any pets?": "Yes",
+      "If yes, please describe your pets": "No pets",
+      "Additional Comments": "Looking for a peaceful environment."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/rental-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

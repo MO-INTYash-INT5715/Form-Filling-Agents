@@ -21,98 +21,24 @@
     "formPath": "/academic-research/course-registration"
   },
   "agentName": "rule-based",
-  "fieldResults": [
-    {
-      "fieldId": "student_name",
-      "fieldType": "String",
-      "predictedValue": "Jessica Kennedy",
-      "goldValue": "Jessica Kennedy",
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "student_id",
-      "fieldType": "String",
-      "predictedValue": "88741153",
-      "goldValue": 88741153,
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "email",
-      "fieldType": "String",
-      "predictedValue": "wendy24@yahoo.com",
-      "goldValue": "wendy24@yahoo.com",
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "phone",
-      "fieldType": "String",
-      "predictedValue": "001-250-204-3652x75507",
-      "goldValue": "001-250-204-3652x75507",
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "semester",
-      "fieldType": "Dropdown",
-      "predictedValue": "Summer 2025",
-      "goldValue": "Summer 2025",
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "program",
-      "fieldType": "Dropdown",
-      "predictedValue": "Software Engineering",
-      "goldValue": "Software Engineering",
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "Selected Courses",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": [
-        "CS104 - Web Development"
-      ],
-      "clickAccurate": null,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "comments",
-      "fieldType": "Description",
-      "predictedValue": "No special requirements.",
-      "goldValue": "No special requirements.",
-      "clickAccurate": false,
-      "valueAccurate": false,
-      "bleuScore": 0
-    }
-  ],
+  "fieldResults": [],
   "atomicMetrics": {
-    "clickAccuracy": {
-      "String": 0,
-      "Dropdown": 0,
-      "Description": 0
-    },
-    "valueAccuracy": {
-      "String": 80,
-      "Dropdown": 100,
-      "Description": 0
-    },
+    "clickAccuracy": {},
+    "valueAccuracy": {},
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 75
+    "overallValueAccuracy": 0
   },
   "episodicMetrics": {
-    "formCompletionRate": 75,
-    "fieldsAttempted": 7,
-    "fieldsCorrect": 6,
-    "totalFields": 8,
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 75
+    "averageValueAccuracy": 0
   },
-  "executionTimeMs": 1516,
-  "errors": [],
-  "submissionSucceeded": true
+  "executionTimeMs": 0,
+  "errors": [
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/academic-research/course-registration\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/academic-research/course-registration\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  ],
+  "submissionSucceeded": false
 }

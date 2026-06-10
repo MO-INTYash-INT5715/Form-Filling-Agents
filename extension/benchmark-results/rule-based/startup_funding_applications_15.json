@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "startup_funding_applications",
+    "formName": "Startup Funding Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 15,
+    "inputDocument": "Renewify, a company founded on 2022/06/18, and operating at the Early Revenue stage, is hereby submitting a formal application for startup funding. Our founder, Steven Navarro, can be reached via email at moranjames@hotmail.com or by phone at 602-584-9562x076. Further information about the company can also be found on Steven's LinkedIn profile at https://linkedin.com/in/unorris.\n\nAligned with our strategic aims, we are seeking a funding amount of 4,101,809 USD, against which we are prepared to offer an equity share of 13 percent. Our current company valuation stands at 3,769,454 USD, and we have consistently generated a current monthly revenue of 500,000 USD. The purpose of this funding is earmarked specifically for Product Development, pivotal to bolstering our standing in the market as a subscription-based service offering premium content to its users through a recurring fee model.\n\nOur target market is primarily parents looking for eco-friendly and sustainable products for their children, and our current team size comprises 20 dedicated professionals. Renewify, accessible online via our website at http://ramirez.com/, remains committed to its growth trajectory and is eager to collaborate with investors who share our vision for sustainable product offerings. We appreciate your consideration of our application as part of your portfolio and look forward to possibly working together. Please note that we are actively seeking investors who share our vision and commitment to bringing sustainable options to our target market.",
+    "goldAnswers": {
+      "Company Name": "Renewify",
+      "Company Website": "http://ramirez.com/",
+      "Founding Date": "2022/06/18",
+      "Business Stage": "Early Revenue",
+      "Founder Name": "Steven Navarro",
+      "Email": "moranjames@hotmail.com",
+      "Phone Number": "602-584-9562x076",
+      "LinkedIn Profile": "https://linkedin.com/in/unorris",
+      "Funding Amount Required (USD)": 4101809,
+      "Equity Offered (%)": 13,
+      "Current Company Valuation (USD)": 3769454,
+      "Purpose of Funding": "Product Development",
+      "Business Model": "A subscription-based service that offers premium content to its users for a recurring fee.",
+      "Target Market": "Parents looking for eco-friendly and sustainable products for their children.",
+      "Current Monthly Revenue (USD)": 500000,
+      "Current Team Size": 20,
+      "Additional Comments": "Looking for investors who share our vision."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/startup-funding"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

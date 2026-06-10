@@ -1,0 +1,43 @@
+{
+  "formInstance": {
+    "formId": "Art_Exhibition_Submission_Form",
+    "formName": "Art Exhibition Submission Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 14,
+    "inputDocument": "Submission for Art Exhibition: \n\nI am writing to submit my artwork for consideration in your upcoming exhibition. I am Oliver Xu, and my contact email is oliver.xu2000@icloud.com. The title of the artwork I am submitting is \"Underwater World\", a piece executed in Digital Art. The dimensions of this work are 100 x 100 x 0 cm, and it was created in the year 2023.\n\nArtwork Description: This digital art piece takes the viewer on a deep-sea adventure. Schools of colorful fish swim among vibrant coral reefs, their scales glistening in the filtered sunlight. The water is depicted with a sense of fluidity, using soft, blue-green gradients. Hidden caves and crevices in the reef add an element of mystery, as if there are secrets waiting to be discovered. The piece aims to showcase the beauty and biodiversity of the underwater world, a realm that is often hidden from our sight but teeming with life.\n\nI am seeking exhibition opportunities for the Spring 2024 period. Please note that this artwork is not available for sale. Thank you for considering my submission for your esteemed exhibition.",
+    "goldAnswers": {
+      "Artist Name": "Oliver Xu",
+      "Email Address": "oliver.xu2000@icloud.com",
+      "Artwork Title": "Underwater World",
+      "Medium": "Digital Art",
+      "Dimensions (in cm)": "100 x 100 x 0",
+      "Year Created": 2023,
+      "Artwork Description": "This digital art piece takes the viewer on a deep - sea adventure. Schools of colorful fish swim among vibrant coral reefs, their scales glistening in the filtered sunlight. The water is depicted with a sense of fluidity, using soft, blue - green gradients. Hidden caves and crevices in the reef add an element of mystery, as if there are secrets waiting to be discovered. The piece aims to showcase the beauty and biodiversity of the underwater world, a realm that is often hidden from our sight but teeming with life.",
+      "Preferred Exhibition Period": "Spring 2024",
+      "Artwork is available for sale": false
+    },
+    "multiPage": false,
+    "formPath": "/arts-creative/exhibition-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

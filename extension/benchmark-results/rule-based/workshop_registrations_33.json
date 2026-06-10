@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "workshop_registrations",
+    "formName": "Educational Workshop Registration",
+    "domain": "Professional & Business",
+    "instanceIndex": 33,
+    "inputDocument": "Subject: Workshop Registration Request for Continuing Education\n\nDear Workshop Coordinator,\n\nI am writing to formally request registration for a workshop in the category of Finance & Investment. My full name is Nathan Allen, and I represent Glenn Ltd. I wish to attend a session on the date of 2025/02/03 during the afternoon time slot, with a preference for a Hybrid delivery mode. My highest education level is an Associate Degree, and I bring with me 12 years of professional experience. My current role/position is Engineer, manufacturing.\n\nI am particularly interested in this workshop because I wish to learn more about how to manage and lead teams in dynamic work environments. My expectations include gaining insights that are applicable to my experience and background.\n\nAs this workshop registration is Company Sponsored, you will find the Billing Address as follows:\n2946 Helen Unions Suite 122\nDavisfort, ND 66679\n\nPlease note my contact information for any further communication:\n- Email Address: amandafloyd@hotmail.com\n- Phone Number: (184) 631-0661x46800\n\nI have no specific Dietary Requirements or Accessibility Requirements for this workshop. However, I would like to see examples of successful leadership strategies in small and medium-sized businesses.\n\nThank you for considering my registration. I look forward to the opportunity to enhance my skills and contribute meaningfully to my field.\n\nWarm regards,\n\nNathan Allen",
+    "goldAnswers": {
+      "Full Name": "Nathan Allen",
+      "Email Address": "amandafloyd@hotmail.com",
+      "Phone Number": "(184)631-0661x46800",
+      "Organization/Company": "Glenn Ltd",
+      "Workshop Category": "Finance & Investment",
+      "Preferred Session Date": "2025/02/03",
+      "Preferred Time Slot": "afternoon",
+      "Preferred Delivery Mode": "Hybrid",
+      "Highest Education Level": "Associate Degree",
+      "Years of Professional Experience": 12,
+      "Current Role/Position": "Engineer, manufacturing",
+      "Dietary Requirements": "None",
+      "Accessibility Requirements": "None",
+      "Payment Method": "Company Sponsored",
+      "Billing Address": "2946 Helen Unions Suite 122\nDavisfort, ND 66679",
+      "What do you hope to learn from this workshop?": "I wish to learn more about how to manage and lead teams in dynamic work environments.",
+      "Any other special requests or comments?": "I would like to see examples of successful leadership strategies in small and medium-sized businesses."
+    },
+    "multiPage": false,
+    "formPath": "/professional-business/workshop-registration"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

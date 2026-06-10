@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "workshop_registrations",
+    "formName": "Educational Workshop Registration",
+    "domain": "Professional & Business",
+    "instanceIndex": 25,
+    "inputDocument": "Subject: Registration Request for Workshop on Leadership & Communication\n\nDear Workshop Coordinator,\n\nI am writing to formally request registration for the upcoming workshop in the Leadership & Communication category. Below, please find my details as required for processing the registration:\n\nFull Name: Julie Hahn  \nEmail Address: hillanthony@yahoo.com  \nPhone Number: 814.912.1698  \nOrganization/Company: Lawrence, Harrison and Ross  \n\nFor this workshop, I have selected the Preferred Session Date of January 3, 2025, with a Preferred Time Slot of 5PM. I prefer the Online delivery mode for participating in this workshop. My highest level of education is High School, and I bring with me 6 years of professional experience in my Current Role/Position as a Data scientist.\n\nTo accommodate for inclusive engagement during the workshop, please note my Dietary Requirements: Halal. I do not have any specific Accessibility Requirements. The payment for this workshop will be made using the Payment Method: Company Sponsored, and my Billing Address is:  \n030 Vasquez Crossing Suite 486  \nBradleytown, NV 05074\n\nWith regards to my expectations from attending this workshop, what do you hope to learn from this workshop? I hope to gain a deeper understanding of digital marketing strategies to improve our company's online presence. Additionally, any other special requests or comments? It would be great if we could have a session on the integration of modern technologies with traditional business models.\n\nI look forward to your confirmation of this registration and your guidance on the subsequent steps. Thank you for the opportunity to enhance my skills and knowledge in this vital area.\n\nBest regards,\n\nJulie Hahn",
+    "goldAnswers": {
+      "Full Name": "Julie Hahn",
+      "Email Address": "hillanthony@yahoo.com",
+      "Phone Number": "814.912.1698",
+      "Organization/Company": "Lawrence, Harrison and Ross",
+      "Workshop Category": "Leadership & Communication",
+      "Preferred Session Date": "2025/01/03",
+      "Preferred Time Slot": "5PM",
+      "Preferred Delivery Mode": "Online",
+      "Highest Education Level": "High School",
+      "Years of Professional Experience": 6,
+      "Current Role/Position": "Data scientist",
+      "Dietary Requirements": "Halal",
+      "Accessibility Requirements": "None",
+      "Payment Method": "Company Sponsored",
+      "Billing Address": "030 Vasquez Crossing Suite 486\nBradleytown, NV 05074",
+      "What do you hope to learn from this workshop?": "I hope to gain a deeper understanding of digital marketing strategies to improve our company's online presence.",
+      "Any other special requests or comments?": "It would be great if we could have a session on the integration of modern technologies with traditional business models."
+    },
+    "multiPage": false,
+    "formPath": "/professional-business/workshop-registration"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

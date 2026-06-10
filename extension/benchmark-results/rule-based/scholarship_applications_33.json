@@ -1,0 +1,58 @@
+{
+  "formInstance": {
+    "formId": "scholarship_applications",
+    "formName": "Scholarship Application for Students",
+    "domain": "Academic & Research",
+    "instanceIndex": 33,
+    "inputDocument": "Dear Scholarship Committee,\n\nMy name is Nathaniel Candice Miller, and I am a freshman majoring in Chemistry at your esteemed institution. I am writing to apply for the scholarship opportunity available to assist students like myself in achieving their academic and career goals.\n\nI currently hold a GPA of 3.38 and am the recipient of another scholarship for my academic pursuits. Despite this support, my annual family income is only $54,075, making it challenging to cover all the expenses associated with pursuing a degree in Chemistry. This scholarship would alleviate the financial burden on my family and allow me to focus more on my studies and future research projects.\n\nThroughout my academic journey, I have excelled in various fields, including winning the State Physics Olympiad, being a finalist in the National Robotics Championship, and publishing a research paper in the International Journal of Engineering. I have also received the Dean's List Award for Outstanding Academic Performance. These achievements showcase my dedication to academic excellence and my passion for continuous learning and exploration.\n\nIn addition to my academic achievements, I am actively involved in extracurricular activities on campus. I serve as the President of the Student Council and have organized charity events for the Red Cross. I am also a member of the Environmental Awareness Club and the University Debate Team, where I have honed my leadership, communication, and teamwork skills.\n\nMy ultimate goal is to pursue a career in computer engineering, where I can innovate and contribute to cutting-edge technologies. This scholarship will provide me with the necessary resources to further my education and conduct research in my field of interest. With the support of this scholarship, I am confident that I can achieve my long-term career goals and make a positive impact in the tech industry.\n\nI have included Brittany Avila as my academic reference, who can attest to my academic abilities, dedication, and passion for learning. Should you require any further information, please do not hesitate to contact me at fieldssteven@gmail.com.\n\nThank you for considering my application. I am grateful for the opportunity to be considered for this scholarship and am confident that with your support, I can continue to excel in my academic pursuits.\n\nSincerely,\nNathaniel Candice Miller (Student ID: 21775094)",
+    "goldAnswers": {
+      "First Name": "Nathaniel",
+      "Middle Name": "Candice",
+      "Last Name": "Miller",
+      "Student ID": 21775094,
+      "Major/Field of Study": "Chemistry",
+      "Current GPA": 3.38,
+      "Academic Year": "Freshman",
+      "Current Financial Aid": "Other Scholarship",
+      "Annual Family Income": 54075,
+      "Academic Achievements": [
+        "Winner of the State Physics Olympiad",
+        "Finalist in the National Robotics Championship",
+        "Published a research paper in the International Journal of Engineering",
+        "Received the Dean’s List Award for Outstanding Academic Performance"
+      ],
+      "Extracurricular Activities": [
+        "President of the Student Council",
+        "Organized charity events for the Red Cross",
+        "Member of the Environmental Awareness Club",
+        "Member of the University Debate Team"
+      ],
+      "Statement of Purpose": "With a strong interest in computer engineering, this scholarship will provide me the resources to further my education and conduct research in cutting-edge technologies, helping me achieve my long-term career goals of innovating in the tech industry.",
+      "Academic Reference": "Brittany Avila",
+      "Reference Email": "fieldssteven@gmail.com"
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/scholarship-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

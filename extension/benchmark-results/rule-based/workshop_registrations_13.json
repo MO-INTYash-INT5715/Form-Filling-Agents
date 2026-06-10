@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "workshop_registrations",
+    "formName": "Educational Workshop Registration",
+    "domain": "Professional & Business",
+    "instanceIndex": 13,
+    "inputDocument": "Subject: Workshop Registration Request for Paula Gibson PhD\n\nDear [Recipient's Name],\n\nI am writing to formally submit a workshop registration request on behalf of Paula Gibson PhD for the upcoming workshop under the Technology & IT category. Paula is currently affiliated with the Lyons Group and holds the position of Comptroller. Here are the details of the registration:\n\nFull Name: Paula Gibson PhD  \nEmail Address: michaeldelgado@perry.info  \nPhone Number: (080)111-1819  \nOrganization/Company: Lyons Group  \nWorkshop Category: Technology & IT  \nPreferred Session Date: 2025/02/11  \nPreferred Time Slot: 6PM  \nPreferred Delivery Mode: Online  \nHighest Education Level: PhD  \nYears of Professional Experience: 4  \nCurrent Role/Position: Comptroller  \n\nPaula has specified that her key objective for attending this workshop is as follows: \"I am interested in exploring financial tools and models that can help optimize business growth.\" This reflects her keen interest in leveraging her skills and knowledge to further the strategic goals of her organization.\n\nWhile she has mentioned \"Other (Please specify)\" in the Dietary Requirements section, there are no disclosed accessibility needs. The payment for this registration will be handled as \"Company Sponsored,\" and any correspondence or invoicing can be directed to the following Billing Address: 9037 Susan Mill, East Alexander, TN 40340.\n\nAdditionally, Paula expressed a desire for further engagement post-workshop by stating, \"It would be helpful if we could have some materials to review after the workshop to continue learning.\"\n\nThank you for considering this registration request. Should there be any need for further details or follow-up, please do not hesitate to contact me.\n\nWarm regards,\n\n[Your Name]  \n[Your Position]  \n[Your Contact Information]",
+    "goldAnswers": {
+      "Full Name": "Paula Gibson PhD",
+      "Email Address": "michaeldelgado@perry.info",
+      "Phone Number": "(080)111-1819",
+      "Organization/Company": "Lyons Group",
+      "Workshop Category": "Technology & IT",
+      "Preferred Session Date": "2025/02/11",
+      "Preferred Time Slot": "6PM",
+      "Preferred Delivery Mode": "Online",
+      "Highest Education Level": "PhD",
+      "Years of Professional Experience": 4,
+      "Current Role/Position": "Comptroller",
+      "Dietary Requirements": "Other (Please specify)",
+      "Accessibility Requirements": "None",
+      "Payment Method": "Company Sponsored",
+      "Billing Address": "9037 Susan Mill\nEast Alexander, TN 40340",
+      "What do you hope to learn from this workshop?": "I am interested in exploring financial tools and models that can help optimize business growth.",
+      "Any other special requests or comments?": "It would be helpful if we could have some materials to review after the workshop to continue learning."
+    },
+    "multiPage": false,
+    "formPath": "/professional-business/workshop-registration"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

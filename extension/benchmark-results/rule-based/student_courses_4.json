@@ -1,0 +1,46 @@
+{
+  "formInstance": {
+    "formId": "student_courses",
+    "formName": "Student Course Registration Form",
+    "domain": "Academic & Research",
+    "instanceIndex": 4,
+    "inputDocument": "Subject: Course Enrollment Request for Summer 2025\n\nDear Admissions Committee,\n\nI hope this message finds you well. My name is David Allen, and I am writing to formally submit my request for course enrollment in the upcoming Summer 2025 semester at your esteemed institution. I am eagerly anticipating the opportunity to advance my studies within the Data Science program, and I am confident that the courses offered will significantly contribute to my academic and professional growth.\n\nBelow are the details pertinent to my enrollment request:\n\n**Full Name:** David Allen  \n**Student ID:** 37641921  \n**Email:** andrew02@taylor-singh.info  \n**Phone Number:** +1-352-842-2170x57946  \n\nI am particularly interested in enrolling in the following courses for the Summer 2025 semester:\n\n1. **CS101 - Introduction to Programming**  \n2. **CS102 - Data Structures**  \n3. **CS104 - Web Development**\n\nThe comprehensive curriculum outlined in these courses aligns perfectly with my academic objectives and aspirations for my career in data science. It is my firm belief that these selected courses will provide me with the foundational skills necessary to excel in this dynamic field.\n\nMoreover, I would like to kindly bring to your attention a specific request: *Would appreciate flexibility in course timings.* This consideration is crucial for accommodating certain personal commitments, and I trust that your team can facilitate this where possible.\n\nI am genuinely enthusiastic about the prospect of being part of such an innovative and vibrant academic community. Thank you for considering my enrollment request. Please feel free to reach out to me for any further information or clarification.\n\nLooking forward to your positive response.\n\nWarm regards,\n\nDavid Allen  \nFuture Data Science Scholar  \n(Student ID: 37641921)",
+    "goldAnswers": {
+      "Full Name": "David Allen",
+      "Student ID": 37641921,
+      "Email": "andrew02@taylor-singh.info",
+      "Phone Number": "+1-352-842-2170x57946",
+      "Semester": "Summer 2025",
+      "Program": "Data Science",
+      "Selected Courses": [
+        "CS101 - Introduction to Programming",
+        "CS102 - Data Structures",
+        "CS104 - Web Development"
+      ],
+      "Special Requirements or Comments": "Would appreciate flexibility in course timings."
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/course-registration"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

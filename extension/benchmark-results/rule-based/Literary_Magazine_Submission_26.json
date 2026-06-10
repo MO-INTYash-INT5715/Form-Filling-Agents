@@ -1,0 +1,45 @@
+{
+  "formInstance": {
+    "formId": "Literary_Magazine_Submission",
+    "formName": "Literary Magazine Submission Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 26,
+    "inputDocument": "Title: A Dance With Shadows  \nAuthor: William Allen  \nEmail Address: william.allen76@aol.com  \nGenre: Poetry  \nWord Count: 95  \n\nFor consideration in the Winter 2024 issue of your esteemed literary magazine, I am pleased to submit my poem, \"A Dance With Shadows.\" The piece delves into the theme of exploring the delicate dance between light and darkness within the human soul. As requested, the abstract stands unchanged. This work has not been previously published, and I am actively submitting it to multiple publications as a simultaneous submission. Although the manuscript file for this submission is not included, I affirm that I agree to the submission guidelines and terms of publication. Thank you for considering my work.",
+    "goldAnswers": {
+      "Author Name": "William Allen",
+      "Email Address": "william.allen76@aol.com",
+      "Title": "A Dance With Shadows",
+      "Genre": "Poetry",
+      "Word Count": 95,
+      "Abstract/Summary": "Exploring the delicate dance between light and darkness within the human soul.",
+      "Manuscript File": "None",
+      "Preferred Issue": "Winter 2024",
+      "This work has been previously published": "No",
+      "This is a simultaneous submission": "Yes",
+      "I agree to the submission guidelines and terms of publication": "Yes"
+    },
+    "multiPage": false,
+    "formPath": "/arts-creative/literary-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

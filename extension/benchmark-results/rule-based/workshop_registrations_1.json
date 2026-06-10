@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "workshop_registrations",
+    "formName": "Educational Workshop Registration",
+    "domain": "Professional & Business",
+    "instanceIndex": 1,
+    "inputDocument": "To Whom It May Concern,\n\nI am writing to formally submit my registration request for the upcoming workshop within the Technology & IT category, scheduled for January 24, 2025. My name is Patrick Martinez, and I am currently serving as a Television camera operator at Sutton Ltd. With a PhD and 19 years of professional experience, I am eager to enhance my skills further through your esteemed program. \n\nI wish to attend the session scheduled at 8 PM, with a preference for the in-person delivery mode. The insights I hope to gain from this workshop align closely with my professional goals: I look forward to learning effective strategies for improving productivity and leading successful teams. Additionally, I would appreciate it if the workshop could include some real-life case studies or examples.\n\nFor logistical purposes, I have no dietary or accessibility requirements. The payment for this session will be company-sponsored, and I kindly request all billing communications be directed to the following address: 5356 Taylor Lane, Port Patricia, NC 43042.\n\nI am available for any further information required and shall be on the lookout for a confirmation of my registration. Thank you for facilitating these opportunities for professional development.\n\nBest regards,\n\nPatrick Martinez  \nEmail Address: staceysnyder@gmail.com  \nPhone Number: 452.094.8272x557",
+    "goldAnswers": {
+      "Full Name": "Patrick Martinez",
+      "Email Address": "staceysnyder@gmail.com",
+      "Phone Number": "452.094.8272x557",
+      "Organization/Company": "Sutton Ltd",
+      "Workshop Category": "Technology & IT",
+      "Preferred Session Date": "2025/01/24",
+      "Preferred Time Slot": "8PM",
+      "Preferred Delivery Mode": "In-Person",
+      "Highest Education Level": "PhD",
+      "Years of Professional Experience": 19,
+      "Current Role/Position": "Television camera operator",
+      "Dietary Requirements": "None",
+      "Accessibility Requirements": "None",
+      "Payment Method": "Company Sponsored",
+      "Billing Address": "5356 Taylor Lane\nPort Patricia, NC 43042",
+      "What do you hope to learn from this workshop?": "I look forward to learning effective strategies for improving productivity and leading successful teams.",
+      "Any other special requests or comments?": "I would appreciate it if the workshop could include some real-life case studies or examples."
+    },
+    "multiPage": false,
+    "formPath": "/professional-business/workshop-registration"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

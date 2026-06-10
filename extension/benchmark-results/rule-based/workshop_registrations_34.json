@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "workshop_registrations",
+    "formName": "Educational Workshop Registration",
+    "domain": "Professional & Business",
+    "instanceIndex": 34,
+    "inputDocument": "Subject: Workshop Registration Request for Continuing Education\n\nDear Workshop Coordination Team,\n\nI am writing to formally request registration for the upcoming workshop in the category of Finance & Investment. Please find the details of my registration request below:\n\n- **Full Name**: Gregory Chen\n- **Email Address**: jessehanson@yahoo.com\n- **Phone Number**: 356-075-7766\n- **Organization/Company**: Horn PLC\n- **Preferred Session Date**: 2025/02/06\n- **Preferred Time Slot**: 3PM\n- **Preferred Delivery Mode**: In-Person\n- **Highest Education Level**: High School\n- **Years of Professional Experience**: 8\n- **Current Role/Position**: Physiological scientist\n- **Dietary Requirements**: Vegan\n- **Accessibility Requirements**: None\n- **Payment Method**: Company Sponsored\n- **Billing Address**: 2639 Espinoza Crossroad Apt. 231  \n  Port Ryan, GA 12529\n\nRegarding my objectives for attending the workshop, I am excited to learn new skills in business management to better handle operational challenges. Additionally, I have a special interest in discussions pertaining to how to scale business operations while maintaining a strong company culture.\n\nI appreciate your consideration of my registration and look forward to your confirmation at your earliest convenience.\n\nThank you for your assistance.\n\nSincerely,\n\nGregory Chen",
+    "goldAnswers": {
+      "Full Name": "Gregory Chen",
+      "Email Address": "jessehanson@yahoo.com",
+      "Phone Number": "356-075-7766",
+      "Organization/Company": "Horn PLC",
+      "Workshop Category": "Finance & Investment",
+      "Preferred Session Date": "2025/02/06",
+      "Preferred Time Slot": "3PM",
+      "Preferred Delivery Mode": "In-Person",
+      "Highest Education Level": "High School",
+      "Years of Professional Experience": 8,
+      "Current Role/Position": "Physiological scientist",
+      "Dietary Requirements": "Vegan",
+      "Accessibility Requirements": "None",
+      "Payment Method": "Company Sponsored",
+      "Billing Address": "2639 Espinoza Crossroad Apt. 231\nPort Ryan, GA 12529",
+      "What do you hope to learn from this workshop?": "I am excited to learn new skills in business management to better handle operational challenges.",
+      "Any other special requests or comments?": "It would be great to have some discussions on how to scale business operations while maintaining a strong company culture."
+    },
+    "multiPage": false,
+    "formPath": "/professional-business/workshop-registration"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

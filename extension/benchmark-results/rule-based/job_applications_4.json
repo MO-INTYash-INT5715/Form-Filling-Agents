@@ -1,0 +1,38 @@
+{
+  "formInstance": {
+    "formId": "job_applications",
+    "formName": "Job Application for University Positions",
+    "domain": "Academic & Research",
+    "instanceIndex": 4,
+    "inputDocument": "[Your Address]  \n[City, State, ZIP Code]  \n[Email Address]  \n[Phone Number]  \n[Date]  \n\nHiring Manager  \n[Company Name]  \n[Company Address]  \n[City, State, ZIP Code]  \n\nDear Hiring Manager,\n\nMy name is Emily Zhang, and I am writing to express my strong interest in the HR Specialist position within your esteemed organization, specifically in the Human Resources department. With a deep-seated passion for fostering positive work environments and a comprehensive understanding of HR functions, I am eager to help build a positive work culture by supporting the recruitment process and employee relations in the HR department.\n\nThroughout my career, I have been driven by the belief that a collaborative and inclusive work culture is the foundation of any successful organization. My previous experiences have equipped me with the necessary skills to effectively manage recruitment and enhance employee relations, which align with the responsibilities and goals outlined for this position.\n\nIn closing, I am enthusiastic about the opportunity to contribute to your company's success as part of your Human Resources team. I look forward to the possibility of discussing how my background, skills, and enthusiasms align with the needs and vision of your department.\n\nThank you for considering my application. I hope to bring my expertise and passion for HR to your organization.\n\nWarm regards,\n\nEmily Zhang",
+    "goldAnswers": {
+      "Applicant Name": "Emily Zhang",
+      "Position Applied For": "HR Specialist",
+      "Preferred Department": "Human Resources",
+      "Cover Letter": "I am eager to help build a positive work culture by supporting the recruitment process and employee relations in the HR department."
+    },
+    "multiPage": false,
+    "formPath": "/academic-research/job-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

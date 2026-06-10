@@ -1,0 +1,45 @@
+{
+  "formInstance": {
+    "formId": "Literary_Magazine_Submission",
+    "formName": "Literary Magazine Submission Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 29,
+    "inputDocument": "Ella Parker, reachable via ella.parker52@yahoo.com, submits her work titled \"Beyond the Horizon\" for consideration in your esteemed literary magazine. The piece falls under the genre of Poetry, comprising a word count of 110. The work has not been previously published and is a simultaneous submission. The abstract/summary provided remains untouched: \"Poems of hope, dreams, and the journey beyond what is visible.\" Ella expresses a preference for this piece to be included in the Fall 2024 issue. While a manuscript file has not been attached, Ella confirms that she agrees to the submission guidelines and terms of publication.",
+    "goldAnswers": {
+      "Author Name": "Ella Parker",
+      "Email Address": "ella.parker52@yahoo.com",
+      "Title": "Beyond the Horizon",
+      "Genre": "Poetry",
+      "Word Count": 110,
+      "Abstract/Summary": "Poems of hope, dreams, and the journey beyond what is visible.",
+      "Manuscript File": "None",
+      "Preferred Issue": "Fall 2024",
+      "This work has been previously published": "No",
+      "This is a simultaneous submission": "Yes",
+      "I agree to the submission guidelines and terms of publication": "Yes"
+    },
+    "multiPage": false,
+    "formPath": "/arts-creative/literary-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

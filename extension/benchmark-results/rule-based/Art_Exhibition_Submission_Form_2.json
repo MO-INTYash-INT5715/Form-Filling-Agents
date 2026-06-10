@@ -1,0 +1,43 @@
+{
+  "formInstance": {
+    "formId": "Art_Exhibition_Submission_Form",
+    "formName": "Art Exhibition Submission Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 2,
+    "inputDocument": "Artist Celia Wang is pleased to submit her artwork for consideration in the upcoming exhibition. You can contact her at celia.wang7@hotmail.com for any further inquiries regarding this submission. The artwork titled \"Abstract Horizons\" is a mixed media piece with dimensions of 50 x 70 x 5 cm, created in the year 2024. \"Abstract Horizons\" is a captivating piece that combines various materials to explore the concept of boundaries and the unknown. Layers of colored paper, acrylic paint, and bits of fabric are collaged together, creating a textural and visually engaging composition. The use of bold colors and organic shapes evokes a sense of movement and fluidity, as if the horizons are constantly shifting and evolving. It encourages the viewer to interpret the work in their own unique way, inviting them to contemplate the vastness of possibilities. The preferred exhibition period for this piece is Spring 2024. Additionally, the artwork is available for sale.",
+    "goldAnswers": {
+      "Artist Name": "Celia Wang",
+      "Email Address": "celia.wang7@hotmail.com",
+      "Artwork Title": "Abstract Horizons",
+      "Medium": "Mixed Media",
+      "Dimensions (in cm)": "50 x 70 x 5",
+      "Year Created": 2024,
+      "Artwork Description": "Abstract Horizons is a captivating piece that combines various materials to explore the concept of boundaries and the unknown. Layers of colored paper, acrylic paint, and bits of fabric are collaged together, creating a textural and visually engaging composition. The use of bold colors and organic shapes evokes a sense of movement and fluidity, as if the horizons are constantly shifting and evolving. It encourages the viewer to interpret the work in their own unique way, inviting them to contemplate the vastness of possibilities.",
+      "Preferred Exhibition Period": "Spring 2024",
+      "Artwork is available for sale": true
+    },
+    "multiPage": false,
+    "formPath": "/arts-creative/exhibition-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

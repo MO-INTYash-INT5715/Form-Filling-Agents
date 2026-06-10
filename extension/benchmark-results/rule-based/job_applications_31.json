@@ -1,0 +1,38 @@
+{
+  "formInstance": {
+    "formId": "job_applications",
+    "formName": "Job Application for University Positions",
+    "domain": "Academic & Research",
+    "instanceIndex": 31,
+    "inputDocument": "[Your Address]  \n[City, State, Zip Code]  \n[Email Address]  \n[Phone Number]  \n[Date]\n\n[Recipient Name]  \n[Company's Name]  \n[Company's Address]  \n[City, State, Zip Code]\n\nDear [Recipient Name],\n\nI am writing to express my interest in the Operations Analyst position at [Company's Name], as advertised. My name is Charlotte Zhang, and I am passionate about joining the Operations team within your esteemed organization.\n\nWith my background in process improvement and analytics, I am excited to optimize operations and help the Operations team succeed. My skills and experience have equipped me to identify inefficiencies, develop data-driven strategies, and streamline processes to achieve organizational goals.\n\nI am particularly drawn to the Operations department because it aligns perfectly with my expertise and career aspirations. Working alongside a team committed to achieving optimal results and enhancing operational efficiency is something I am truly passionate about.\n\nI look forward to the opportunity to further discuss how I can contribute to [Company's Name] as an Operations Analyst. Thank you for considering my application. I am eager to bring my skills in process improvement and analytics to your team.\n\nSincerely,\n\nCharlotte Zhang\n\n[Attachment: Resume]",
+    "goldAnswers": {
+      "Applicant Name": "Charlotte Zhang",
+      "Position Applied For": "Operations Analyst",
+      "Preferred Department": "Operations",
+      "Cover Letter": "With my background in process improvement and analytics, I am excited to optimize operations and help the Operations team succeed."
+    },
+    "multiPage": false,
+    "formPath": "/academic-research/job-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

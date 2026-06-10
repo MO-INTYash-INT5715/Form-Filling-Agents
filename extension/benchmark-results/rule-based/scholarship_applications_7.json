@@ -1,0 +1,56 @@
+{
+  "formInstance": {
+    "formId": "scholarship_applications",
+    "formName": "Scholarship Application for Students",
+    "domain": "Academic & Research",
+    "instanceIndex": 7,
+    "inputDocument": "**Scholarship Application**\n\n**Applicant Information**  \n**Name:** Alexis Valerie Townsend  \n**Student ID:** 88351132  \n**Major/Field of Study:** Mechanical Engineering  \n**Current GPA:** 3.73  \n**Academic Year:** Sophomore  \n**Current Financial Aid:** Other Scholarship  \n\nDear Scholarship Committee,\n\nI am writing to express my earnest application for your esteemed scholarship, which I believe could greatly contribute to my academic journey and future aspirations. My name is Alexis Valerie Townsend, and I am currently pursuing a degree in Mechanical Engineering. As a dedicated sophomore with a GPA of 3.73, I have fervently committed myself to my studies and extracurricular engagements.\n\nThroughout my academic career, I have sought to excel not only in my coursework but also in various competitions and research initiatives. I am proud to have published a research paper in the **International Journal of Engineering**, showcasing my dedication to contributing valuable insights within the engineering community. Additionally, I have consistently maintained a strong academic performance, as evidenced by my inclusion on the **Dean's List** and winning **first place in the University Math Competition**. My passion for science and engineering further propelled me to achieve recognition as the **winner of the National Science Fair**, an accomplishment that solidified my commitment to advancing in the field of engineering.\n\nBeyond academics, I recognize the importance of giving back to the community. I have organized charity events for the Red Cross, demonstrating my commitment to social responsibility and leadership. Additionally, as a member of the **University Debate Team**, I have cultivated my critical thinking and public speaking skills, preparing me for the collaborative and innovative environments found in engineering.\n\nAs I advance in my studies, my interest intertwines with my desire to make significant contributions to sustainable engineering practices. My statement of purpose reflects this aspiration: “I am deeply passionate about advancing my knowledge in the field of environmental science. This scholarship will enable me to continue my studies without the pressure of financial burdens, and I plan to use the knowledge gained to make an impact in sustainable development.” This scholarship would alleviate financial stress, allowing me to focus wholeheartedly on my education and engage in additional research opportunities.\n\nI believe that education is a powerful catalyst for change, and with your support, I can continue my efforts toward becoming an engineer who prioritizes environmental sustainability. My annual family income of $95,479 helps provide a stable foundation, yet the financial assistance offered by this scholarship would be instrumental in allowing me to pursue higher educational ventures.\n\nAs part of this application, I would like to provide you with my academic reference, **Nicholas Smith**, who can speak to my determination and accomplishments. Should you need to reach him, please feel free to contact him via email at **carterchristy@williams-leonard.com**.\n\nThank you very much for considering my application. I hope to have the opportunity to demonstrate my commitment to the field of Mechanical Engineering and to contribute positively to the world around us.\n\nSincerely,  \nAlexis Valerie Townsend",
+    "goldAnswers": {
+      "First Name": "Alexis",
+      "Middle Name": "Valerie",
+      "Last Name": "Townsend",
+      "Student ID": 88351132,
+      "Major/Field of Study": "Mechanical Engineering",
+      "Current GPA": 3.73,
+      "Academic Year": "Sophomore",
+      "Current Financial Aid": "Other Scholarship",
+      "Annual Family Income": 95479,
+      "Academic Achievements": [
+        "Published a research paper in the International Journal of Engineering",
+        "Received the Dean’s List Award for Outstanding Academic Performance",
+        "First place in the University Math Competition",
+        "Winner of the National Science Fair"
+      ],
+      "Extracurricular Activities": [
+        "Organized charity events for the Red Cross",
+        "Member of the University Debate Team"
+      ],
+      "Statement of Purpose": "I am deeply passionate about advancing my knowledge in the field of environmental science. This scholarship will enable me to continue my studies without the pressure of financial burdens, and I plan to use the knowledge gained to make an impact in sustainable development.",
+      "Academic Reference": "Nicholas Smith",
+      "Reference Email": "carterchristy@williams-leonard.com"
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/scholarship-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

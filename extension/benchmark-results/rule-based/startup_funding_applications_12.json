@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "startup_funding_applications",
+    "formName": "Startup Funding Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 12,
+    "inputDocument": "Orbit Innovations is pleased to submit this Startup Funding Application to secure funding for the advancement of our business. The company, founded on 2023/05/22, is presently at the MVP stage and spearheaded by founder Erika Guerra. For additional insights into our enterprise, please refer to our website at https://www.scott.com/ or connect with Erika Guerra via LinkedIn at https://linkedin.com/in/cbrown. We wish to draw your attention to our current operations model: a marketplace for freelancers offering digital services to small businesses and startups. Our target market comprises college students and young professionals seeking affordable online learning options, and we are generating a current monthly revenue of USD 500,000, with our team size totaling 100 professionals.\n\nOrbit Innovations is requesting a funding amount of USD 1,839,507, which we intend to utilize for operational purposes, while offering an equity share of 13%. The current valuation of our company stands at USD 42,361,278. For further inquiries or discussions regarding this application, please reach out to us via email at zacharywolf@gmail.com or phone at 260.051.8629x57949. Additional insights about our readiness to expand internationally are available upon request. Thank you for considering our application.",
+    "goldAnswers": {
+      "Company Name": "Orbit Innovations",
+      "Company Website": "https://www.scott.com/",
+      "Founding Date": "2023/05/22",
+      "Business Stage": "MVP",
+      "Founder Name": "Erika Guerra",
+      "Email": "zacharywolf@gmail.com",
+      "Phone Number": "260.051.8629x57949",
+      "LinkedIn Profile": "https://linkedin.com/in/cbrown",
+      "Funding Amount Required (USD)": 1839507,
+      "Equity Offered (%)": 13,
+      "Current Company Valuation (USD)": 42361278,
+      "Purpose of Funding": "Operations",
+      "Business Model": "A marketplace for freelancers offering digital services to small businesses and startups.",
+      "Target Market": "College students and young professionals seeking affordable online learning options.",
+      "Current Monthly Revenue (USD)": 500000,
+      "Current Team Size": 100,
+      "Additional Comments": "Ready to expand internationally."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/startup-funding"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

@@ -1,0 +1,48 @@
+{
+  "formInstance": {
+    "formId": "Conference_Speaker_Application",
+    "formName": "Conference Speaker Application Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 44,
+    "inputDocument": "Lucas Williams, a choreographer and contemporary dance expert associated with the Performing Arts Academy, is submitting an application to speak at the conference on the topic of Performing Arts. As an applicant, Lucas can be reached via email at lucas.williams56@icloud.com or by phone at 890-123-4567. The proposed presentation, entitled \"The Evolution of Contemporary Dance Styles\", will provide an in-depth exploration into the evolution of contemporary dance styles. This presentation will explore the evolution of contemporary dance styles, focusing on how different genres and movements have emerged and developed over the last few decades. We will examine the influence of various cultures and how contemporary dance is shaped by globalization. The learning objectives for this session include understanding the development of contemporary dance styles, exploring the cultural influences on contemporary dance, and learning about the role of globalization in shaping modern dance.\n\nLucas Williams holds extensive credentials, with a professional biography noting that he has taught dance in several countries and choreographed for top international dance companies. In past events, Lucas has proven his expertise as a speaker at Global Dance Forum 2023 and as a workshop leader at Contemporary Dance Styles Conference 2022. This experience demonstrates not only his depth of knowledge but also his capability to engage with diverse audiences. The presentation will take the format of a workshop, requiring specific technical arrangements such as a sound system, projector, and dance floor, to fully support the participation and engagement of the attendees. Lucas has agreed to abide by the speaker guidelines and terms of participation, ensuring a professional contribution to the conference.",
+    "goldAnswers": {
+      "Full Name": "Lucas Williams",
+      "Email Address": "lucas.williams56@icloud.com",
+      "Phone Number": "890-123-4567",
+      "Organization/Institution": "Performing Arts Academy",
+      "Presentation Title": "The Evolution of Contemporary Dance Styles",
+      "Topic Area": "Performing Arts",
+      "Presentation Abstract": "This presentation will explore the evolution of contemporary dance styles, focusing on how different genres and movements have emerged and developed over the last few decades. We will examine the influence of various cultures and how contemporary dance is shaped by globalization.",
+      "Learning Objectives": "1. Understand the development of contemporary dance styles. 2. Explore the cultural influences on contemporary dance. 3. Learn about the role of globalization in shaping modern dance.",
+      "Professional Biography": "Lucas Williams is a choreographer and contemporary dance expert with a deep understanding of global dance trends. He has taught dance in several countries and choreographed for top international dance companies.",
+      "CV/Resume": "None",
+      "Previous Speaking Experience": "1. Speaker at Global Dance Forum 2023. 2. Workshop leader at Contemporary Dance Styles Conference 2022.",
+      "Presentation Format": "Workshop",
+      "Special Technical Requirements": "Sound system, projector, dance floor.",
+      "I agree to the speaker guidelines and terms of participation": "Yes"
+    },
+    "multiPage": true,
+    "formPath": "/arts-creative/speaker-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

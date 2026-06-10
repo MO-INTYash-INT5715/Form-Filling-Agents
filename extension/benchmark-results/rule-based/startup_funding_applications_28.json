@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "startup_funding_applications",
+    "formName": "Startup Funding Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 28,
+    "inputDocument": "Orbit Innovations, accessible via our Company Website at http://phillips.com/, was founded on 2021/07/01 and is currently at the Idea stage. Under the leadership of our esteemed Founder, Kelly Davis, who can be reached at ryan43@sampson-henry.net or by phone at 001-073-587-9142x32166, we are seeking a Funding Amount Required of USD 1,913,283. We are offering an Equity of 19% based on a Current Company Valuation of USD 13,554,733. The Purpose of Funding is to enhance Operations within our platform for online education offering courses in coding, data science, and business, targeting college students and young professionals seeking affordable online learning options. Our Business Model is strategically designed to meet this objective. We are proud to report a Current Monthly Revenue of USD 500,000 with a dedicated Current Team Size of 5 professionals. For additional details or insights about our organization, you may consult my LinkedIn Profile at https://linkedin.com/in/zbrown. We hope for your consideration and look forward to scaling the business with strategic investments, as indicated in the Additional Comments section.",
+    "goldAnswers": {
+      "Company Name": "Orbit Innovations",
+      "Company Website": "http://phillips.com/",
+      "Founding Date": "2021/07/01",
+      "Business Stage": "Idea",
+      "Founder Name": "Kelly Davis",
+      "Email": "ryan43@sampson-henry.net",
+      "Phone Number": "001-073-587-9142x32166",
+      "LinkedIn Profile": "https://linkedin.com/in/zbrown",
+      "Funding Amount Required (USD)": 1913283,
+      "Equity Offered (%)": 19,
+      "Current Company Valuation (USD)": 13554733,
+      "Purpose of Funding": "Operations",
+      "Business Model": "A platform for online education offering courses in coding, data science, and business.",
+      "Target Market": "College students and young professionals seeking affordable online learning options.",
+      "Current Monthly Revenue (USD)": 500000,
+      "Current Team Size": 5,
+      "Additional Comments": "Looking forward to scaling the business with strategic investments."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/startup-funding"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

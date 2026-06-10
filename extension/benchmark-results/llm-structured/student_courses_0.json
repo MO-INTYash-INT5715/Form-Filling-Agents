@@ -25,50 +25,50 @@
     {
       "fieldId": "student_name",
       "fieldType": "String",
-      "predictedValue": "Jessica Kennedy",
+      "predictedValue": "",
       "goldValue": "Jessica Kennedy",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "student_id",
       "fieldType": "String",
-      "predictedValue": "88741153",
+      "predictedValue": "",
       "goldValue": 88741153,
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "email",
       "fieldType": "String",
-      "predictedValue": "wendy24@yahoo.com",
+      "predictedValue": "",
       "goldValue": "wendy24@yahoo.com",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "phone",
       "fieldType": "String",
-      "predictedValue": "001-250-204-3652x75507",
+      "predictedValue": "",
       "goldValue": "001-250-204-3652x75507",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "semester",
       "fieldType": "Dropdown",
-      "predictedValue": "Summer 2025",
+      "predictedValue": "",
       "goldValue": "Summer 2025",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "program",
       "fieldType": "Dropdown",
-      "predictedValue": "Software Engineering",
+      "predictedValue": "",
       "goldValue": "Software Engineering",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "Selected Courses",
@@ -83,7 +83,7 @@
     {
       "fieldId": "comments",
       "fieldType": "Description",
-      "predictedValue": "No special requirements.",
+      "predictedValue": "",
       "goldValue": "No special requirements.",
       "clickAccurate": false,
       "valueAccurate": false,
@@ -97,26 +97,26 @@
       "Description": 0
     },
     "valueAccuracy": {
-      "String": 80,
-      "Dropdown": 100,
+      "String": 0,
+      "Dropdown": 0,
       "Description": 0
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 75
+    "overallValueAccuracy": 0
   },
   "episodicMetrics": {
-    "formCompletionRate": 75,
-    "fieldsAttempted": 7,
-    "fieldsCorrect": 6,
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
     "totalFields": 8,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 75
+    "averageValueAccuracy": 0
   },
-  "executionTimeMs": 1540,
+  "executionTimeMs": 1463,
   "errors": [],
   "submissionSucceeded": true,
-  "tokensIn": 766,
-  "tokensOut": 123,
-  "llmTimeMs": 3057,
-  "llmCalls": 1
+  "tokensIn": 0,
+  "tokensOut": 0,
+  "llmTimeMs": 0,
+  "llmCalls": 0
 }

@@ -1,0 +1,38 @@
+{
+  "formInstance": {
+    "formId": "job_applications",
+    "formName": "Job Application for University Positions",
+    "domain": "Academic & Research",
+    "instanceIndex": 23,
+    "inputDocument": "[Your Name]  \n[Your Address]  \n[City, State, ZIP Code]  \n[Your Email Address]  \n[Your Phone Number]  \n\n[Date]  \n\n[Recipient Name]  \n[Company Name]  \n[Company Address]  \n[City, State, ZIP Code]  \n\nDear [Recipient Name],  \n\nMy name is Ella Wang, and I am writing to express my strong interest in the Financial Analyst position within the Finance department at [Company Name]. I have a deep-seated passion for finance and analytics and am excited about the opportunity to contribute to your team’s efforts in making informed, data-driven decisions.  \n\nWith my background in finance, I have honed skills that are critical for success as a Financial Analyst. My analytical capabilities, coupled with a dedication to the field, align perfectly with your department’s needs. I am enthusiastic about the prospect of bringing my expertise to the Finance department at [Company Name], helping to drive the organizational goals forward through strategic financial insights and analysis.  \n\nI am drawn to this role because it combines my interest in finance with my passion for analytics, and I am keen to apply my knowledge in a dynamic environment like that of [Company Name]. I am confident that my proactive approach and adeptness at analyzing complex financial data will be a valuable addition to your team.  \n\nThank you for considering my application. I look forward to the opportunity to discuss how my skills and experiences can benefit the Finance department at [Company Name].  \n\nWarm regards,  \n\nElla Wang  \n\n[Your LinkedIn Profile] (if applicable)  \n\nEnclosure: Resume",
+    "goldAnswers": {
+      "Applicant Name": "Ella Wang",
+      "Position Applied For": "Financial Analyst",
+      "Preferred Department": "Finance",
+      "Cover Letter": "With a background in finance and a passion for analytics, I am eager to help the Finance department make informed, data-driven decisions."
+    },
+    "multiPage": false,
+    "formPath": "/academic-research/job-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

@@ -1,0 +1,46 @@
+{
+  "formInstance": {
+    "formId": "student_courses",
+    "formName": "Student Course Registration Form",
+    "domain": "Academic & Research",
+    "instanceIndex": 27,
+    "inputDocument": "Subject: Course Enrollment Request for Summer 2025\n\nDear Enrollment Team,\n\nI hope this message finds you well. My name is Matthew Washington, and I am writing to formally request enrollment in the upcoming Summer 2025 semester courses within the Data Science program.\n\nKindly consider this correspondence as an official enrollment request, utilizing the information supplied via the course enrollment form. It’s imperative to ensure all prerequisites and institutional enrollment procedures remain respected.\n\n**Student Information:**  \n- **Full Name:** Matthew Washington  \n- **Student ID:** 12576902  \n- **Email:** kskinner@gmail.com  \n- **Phone Number:** +1 (831) 264-8060\n\n**Program Details:**  \n- **Program Name:** Data Science  \n- **Semester:** Summer 2025\n\n**Courses Requested for Enrollment:**  \n1. **CS101 - Introduction to Programming**  \n2. **CS102 - Data Structures**  \n3. **CS103 - Database Systems**\n\nI have a particular note of importance with respect to my course schedule. It is mentioned in the form as follows: \"Would appreciate flexibility in course timings.\" Having a flexible schedule would immensely aid me in managing my other commitments during the semester.\n\nI am devoted to maintaining the standards of the Data Science program and believe these courses will significantly enhance my academic and professional abilities. \n\nPlease let me know if further information or documentation is required. I am looking forward to your positive confirmation and am eager to begin this educational journey.\n\nThank you for your assistance and consideration.\n\nWarm regards,\n\nMatthew Washington  \n[Program: Data Science, Student ID: 12576902]",
+    "goldAnswers": {
+      "Full Name": "Matthew Washington",
+      "Student ID": 12576902,
+      "Email": "kskinner@gmail.com",
+      "Phone Number": "8312648060",
+      "Semester": "Summer 2025",
+      "Program": "Data Science",
+      "Selected Courses": [
+        "CS101 - Introduction to Programming",
+        "CS102 - Data Structures",
+        "CS103 - Database Systems"
+      ],
+      "Special Requirements or Comments": "Would appreciate flexibility in course timings."
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/course-registration"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

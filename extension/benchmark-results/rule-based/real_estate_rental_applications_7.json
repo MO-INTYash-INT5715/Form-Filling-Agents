@@ -1,0 +1,53 @@
+{
+  "formInstance": {
+    "formId": "real_estate_rental_applications",
+    "formName": "Real Estate Rental Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 7,
+    "inputDocument": "Bradley Gardner is submitting this rental application to express his interest in securing a rental property. He can be reached at jwhitehead@yahoo.com or via phone at 001-867-681-7213. Born on 1994/04/04, Bradley currently resides at 9404 Patricia Islands Apt. 425, Thomasbury, Tennessee, 76601. Professionally, Bradley is employed as an Osteopath at Hughes LLC, where he earns a monthly income of $6,139 and has been working for 1 year. He has set a maximum monthly rent budget of $2,321. Bradley is seeking to move in on 2025/01/01, with a preference for a lease term of 6 months. The preferred area is \"Quiet neighborhood.\" Bradley does not have any pets: \"No pets.\" Additional Comments: \"Looking for family-friendly options.\"",
+    "goldAnswers": {
+      "Full Name": "Bradley Gardner",
+      "Email Address": "jwhitehead@yahoo.com",
+      "Phone Number": "001-867-681-7213",
+      "Date of Birth": "1994/04/04",
+      "Street Address": "9404 Patricia Islands Apt. 425",
+      "City": "Thomasbury",
+      "State": "Tennessee",
+      "ZIP Code": "76601",
+      "Current Employer": "Hughes LLC",
+      "Job Title": "Osteopath",
+      "Monthly Income (USD)": 6139,
+      "Length of Employment": "1 year",
+      "Preferred Move-in Date": "2025/01/01",
+      "Preferred Lease Term": "6 months",
+      "Maximum Monthly Rent (USD)": 2321,
+      "Preferred Area": "Quiet neighborhood",
+      "Do you have any pets?": "No",
+      "If yes, please describe your pets": "No pets",
+      "Additional Comments": "Looking for family-friendly options."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/rental-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

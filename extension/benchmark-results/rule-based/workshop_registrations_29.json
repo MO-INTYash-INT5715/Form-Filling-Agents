@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "workshop_registrations",
+    "formName": "Educational Workshop Registration",
+    "domain": "Professional & Business",
+    "instanceIndex": 29,
+    "inputDocument": "Subject: Workshop Registration Request for Continuing Education\n\nDear [Workshop Coordinator's Name],\n\nI am writing to formally request registration for the upcoming workshop under the category of Leadership & Communication, scheduled for January 27, 2025, at 10AM. My name is Clifford Taylor, and I am currently employed at Peters LLC. In my capacity as a Horticultural consultant, I am keenly interested in expanding my professional expertise through this workshop.\n\nI possess a Master's Degree and bring 13 years of professional experience to the table. Please register me for the Online session, as this mode best suits my current obligations. In accordance with the dietary requirements, I request that only Halal options be provided. Kindly note that I have no specific accessibility requirements at this time.\n\nFor the workshop fee, I am prepared to process the payment via Bank Transfer. Please direct all billing correspondence to the following address:\n\nBilling Address:\nUnit 1699 Box 1436\nDPO AE 45119\n\nThe primary objective of attending this workshop is to explore financial tools and models that can help optimize business growth. Furthermore, any practical advice on managing financial risks and investments would be beneficial. Please let me know if there is anything else required from my end for the registration process.\n\nThank you for considering my application. I look forward to your confirmation.\n\nBest regards,\n\nClifford Taylor  \nHorticultural consultant  \nEmail: morganantonio@morgan.net  \nPhone: 8212261496",
+    "goldAnswers": {
+      "Full Name": "Clifford Taylor",
+      "Email Address": "morganantonio@morgan.net",
+      "Phone Number": "8212261496",
+      "Organization/Company": "Peters LLC",
+      "Workshop Category": "Leadership & Communication",
+      "Preferred Session Date": "2025/01/27",
+      "Preferred Time Slot": "10AM",
+      "Preferred Delivery Mode": "Online",
+      "Highest Education Level": "Master's Degree",
+      "Years of Professional Experience": 13,
+      "Current Role/Position": "Horticultural consultant",
+      "Dietary Requirements": "Halal",
+      "Accessibility Requirements": "None",
+      "Payment Method": "Bank Transfer",
+      "Billing Address": "Unit 1699 Box 1436\nDPO AE 45119",
+      "What do you hope to learn from this workshop?": "I am interested in exploring financial tools and models that can help optimize business growth.",
+      "Any other special requests or comments?": "It would be beneficial to include some practical advice on managing financial risks and investments."
+    },
+    "multiPage": false,
+    "formPath": "/professional-business/workshop-registration"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

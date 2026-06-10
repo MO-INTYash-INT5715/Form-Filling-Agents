@@ -22,124 +22,24 @@
     "formPath": "/legal-compliance/contractor-onboarding"
   },
   "agentName": "rule-based",
-  "fieldResults": [
-    {
-      "fieldId": "fullName",
-      "fieldType": "String",
-      "predictedValue": "Abigail Lewis",
-      "goldValue": "Abigail Lewis",
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "businessName",
-      "fieldType": "String",
-      "predictedValue": "Abigail's Digital Marketing Solutions",
-      "goldValue": "Abigail's Digital Marketing Solutions",
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "email",
-      "fieldType": "String",
-      "predictedValue": "abigail.lewis.digital@outlook.com",
-      "goldValue": "abigail.lewis.digital@outlook.com",
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "phone",
-      "fieldType": "String",
-      "predictedValue": "555-111-2222",
-      "goldValue": "555-111-2222",
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "taxId",
-      "fieldType": "String",
-      "predictedValue": "12-1111111",
-      "goldValue": "12-1111111",
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "businessType",
-      "fieldType": "Dropdown",
-      "predictedValue": "Sole Proprietorship",
-      "goldValue": "Sole Proprietorship",
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "serviceDescription",
-      "fieldType": "Description",
-      "predictedValue": "",
-      "goldValue": "Developing and implementing comprehensive digital marketing strategies, including search engine optimization (SEO) to improve website rankings, pay-per-click (PPC) advertising campaigns on platforms like Google Ads and Bing Ads, social media management across major platforms such as Facebook, Instagram, and Twitter to increase brand awareness and engagement, and content creation for blogs, articles, and social media posts to attract and retain customers.",
-      "clickAccurate": false,
-      "valueAccurate": false,
-      "bleuScore": 0
-    },
-    {
-      "fieldId": "startDate",
-      "fieldType": "Date",
-      "predictedValue": "",
-      "goldValue": "2024/03/15",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "endDate",
-      "fieldType": "Date",
-      "predictedValue": "",
-      "goldValue": "2025/03/15",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "termsAgreed",
-      "fieldType": "Checkbox",
-      "predictedValue": "",
-      "goldValue": "Yes",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "confidentialityAgreed",
-      "fieldType": "Checkbox",
-      "predictedValue": "",
-      "goldValue": "Yes",
-      "clickAccurate": false,
-      "valueAccurate": false
-    }
-  ],
+  "fieldResults": [],
   "atomicMetrics": {
-    "clickAccuracy": {
-      "String": 0,
-      "Dropdown": 0,
-      "Description": 0,
-      "Date": 0,
-      "Checkbox": 0
-    },
-    "valueAccuracy": {
-      "String": 100,
-      "Dropdown": 100,
-      "Description": 0,
-      "Date": 0,
-      "Checkbox": 0
-    },
+    "clickAccuracy": {},
+    "valueAccuracy": {},
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 54.54545454545454
+    "overallValueAccuracy": 0
   },
   "episodicMetrics": {
-    "formCompletionRate": 54.54545454545454,
-    "fieldsAttempted": 6,
-    "fieldsCorrect": 6,
-    "totalFields": 11,
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 54.54545454545454
+    "averageValueAccuracy": 0
   },
-  "executionTimeMs": 1465,
-  "errors": [],
+  "executionTimeMs": 0,
+  "errors": [
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/legal-compliance/contractor-onboarding\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/legal-compliance/contractor-onboarding\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  ],
   "submissionSucceeded": false
 }

@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "startup_funding_applications",
+    "formName": "Startup Funding Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 19,
+    "inputDocument": "SolarFlare Energy respectfully submits this request for startup funding, confident in the company's strong foundation and promising future. Established on 2019/03/04, SolarFlare Energy is currently in the Early Revenue business stage. Spearheaded by founder Jasmin Luna, the venture operates a subscription-based service that offers premium content to its users for a recurring fee. Utilizing this model, the company targets millennials interested in fitness and healthy living, with a particular emphasis on plant-based products.\n\nGiven our robust trajectory, we require a funding amount of 3,586,403 USD to facilitate our primary goal: Hiring. The proposed equity offered stands at 28%, with a current company valuation of 31,564,447 USD. Presently, SolarFlare Energy is generating a current monthly revenue of 200,000 USD with a team size comprising 100 dedicated professionals.\n\nWe have included the following details for further engagement: email tjones@eaton.com, phone number 718.497.5796x427, and our LinkedIn profile at https://linkedin.com/in/robertsronald. More comprehensive information about our company can be accessed via our website at http://www.strickland.com/. As we continue to innovate and expand, we are eagerly seeking long-term partnerships to grow.",
+    "goldAnswers": {
+      "Company Name": "SolarFlare Energy",
+      "Company Website": "http://www.strickland.com/",
+      "Founding Date": "2019/03/04",
+      "Business Stage": "Early Revenue",
+      "Founder Name": "Jasmin Luna",
+      "Email": "tjones@eaton.com",
+      "Phone Number": "718.497.5796x427",
+      "LinkedIn Profile": "https://linkedin.com/in/robertsronald",
+      "Funding Amount Required (USD)": 3586403,
+      "Equity Offered (%)": 28,
+      "Current Company Valuation (USD)": 31564447,
+      "Purpose of Funding": "Hiring",
+      "Business Model": "A subscription-based service that offers premium content to its users for a recurring fee.",
+      "Target Market": "Millennials interested in fitness and healthy living, with a focus on plant-based products.",
+      "Current Monthly Revenue (USD)": 200000,
+      "Current Team Size": 100,
+      "Additional Comments": "We are seeking long-term partnerships to grow."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/startup-funding"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

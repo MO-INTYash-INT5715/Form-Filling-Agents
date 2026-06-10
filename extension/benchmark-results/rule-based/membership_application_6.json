@@ -1,0 +1,50 @@
+{
+  "formInstance": {
+    "formId": "membership_application",
+    "formName": "Association Membership Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 6,
+    "inputDocument": "Dear Professional Association Membership Committee,\n\nI am writing to apply for a Student Member membership within your esteemed organization. My name is Daniel Martinez, and I currently work as an intern at the Local Community College in the Education industry. I hold a Bachelor's Degree in Information Technology and have received professional certifications such as CompTIA A+.\n\nHaving zero years of experience in the field, I am eager to expand my knowledge and skills by becoming a part of your association. I believe that being a member will provide me with valuable networking opportunities, resources, and professional development that will contribute to my growth in the industry.\n\nI am excited about the potential to connect with like-minded professionals and learn from experienced individuals in the association. As a Student Member, I am committed to actively participating in events, workshops, and discussions to enhance my understanding of the latest trends and best practices in the field.\n\nI have included Prof. Anna Lee as my reference, who can attest to my dedication and enthusiasm for learning in Information Technology. Prof. Lee is an instructor at the Local Community College where I am currently interning, and I have worked closely with her on various projects related to my field of study.\n\nI am looking forward to the opportunity to contribute to and benefit from being a member of your organization. Thank you for considering my application. I am eager to join and make a positive impact within the association.\n\nWarm regards,\n\nDaniel Martinez\nEmail: daniel.martinez@yahoo.com\nPhone: 555-4567\nDate of Birth: 1995/02/14",
+    "goldAnswers": {
+      "Full Name": "Daniel Martinez",
+      "Email Address": "daniel.martinez@yahoo.com",
+      "Phone Number": "555-4567",
+      "Date of Birth": "1995/02/14",
+      "Membership Level": "Student Member",
+      "Membership Duration": "1 Year",
+      "Highest Education Level": "Bachelor's Degree",
+      "Field of Study": "Information Technology",
+      "Professional Certifications": "CompTIA A+",
+      "Current Employer": "Local Community College",
+      "Job Title": "Intern",
+      "Years of Experience": 0,
+      "Industry": "Education",
+      "Reference Name": "Prof. Anna Lee",
+      "Reference Email": "anna.lee@yahoo.com",
+      "Relationship to Reference": "Instructor"
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/membership-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

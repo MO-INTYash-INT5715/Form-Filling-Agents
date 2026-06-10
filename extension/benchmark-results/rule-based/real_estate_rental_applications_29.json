@@ -1,0 +1,53 @@
+{
+  "formInstance": {
+    "formId": "real_estate_rental_applications",
+    "formName": "Real Estate Rental Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 29,
+    "inputDocument": "Adam Nelson, whose contact details include the Email Address xhunter@gmail.com and the Phone Number 897.133.8151x99491, submits this Real Estate Rental Application with detailed insights into his background. Born on 1968/04/12, Adam currently resides at 9209 Cordova Mews, Arnoldside, Oregon, ZIP Code 27533. His professional life sees him employed at Ellis and Sons, where he holds the position of Gaffer and has been contributing to the company for 5 years, earning a Monthly Income (USD) of 9377. Adam is seeking a rental property with a Preferred Move-in Date of 2025/02/14 and has expressed a desire for a Preferred Lease Term of 24 months. The Maximum Monthly Rent (USD) he can accommodate is 2316. He has indicated a preference for the Suburbs as his Preferred Area. In terms of companions, Adam confirmed having no pets; thus, \"No pets\" remains a relevant note in his application. Adam also communicates specific preferences via Additional Comments, highlighting his inclination towards \"Prefer quiet and residential areas.\"",
+    "goldAnswers": {
+      "Full Name": "Adam Nelson",
+      "Email Address": "xhunter@gmail.com",
+      "Phone Number": "897.133.8151x99491",
+      "Date of Birth": "1968/04/12",
+      "Street Address": "9209 Cordova Mews",
+      "City": "Arnoldside",
+      "State": "Oregon",
+      "ZIP Code": "27533",
+      "Current Employer": "Ellis and Sons",
+      "Job Title": "Gaffer",
+      "Monthly Income (USD)": 9377,
+      "Length of Employment": "5 years",
+      "Preferred Move-in Date": "2025/02/14",
+      "Preferred Lease Term": "24 months",
+      "Maximum Monthly Rent (USD)": 2316,
+      "Preferred Area": "Suburbs",
+      "Do you have any pets?": "No",
+      "If yes, please describe your pets": "No pets",
+      "Additional Comments": "Prefer quiet and residential areas."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/rental-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

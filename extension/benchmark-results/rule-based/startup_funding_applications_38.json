@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "startup_funding_applications",
+    "formName": "Startup Funding Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 38,
+    "inputDocument": "Pinnacle Solutions, founded on 2022/08/07, is pleased to present this Startup Funding Application request. As we are in the Growth stage, we are seeking a funding amount of 2,243,223 USD. Our company offers a SaaS product that provides businesses with project management and team collaboration tools, targeted towards Millennials interested in fitness and healthy living, with a focus on plant-based products. Under the leadership of Leslie Fuentes, further details can be accessed through our website at https://mann-thomas.com/ and our LinkedIn Profile at https://linkedin.com/in/lynchgregory. We are currently generating a monthly revenue of 300,000 USD with a dedicated team of 5 members.\n\nOur objective is Market Expansion, for which we are willing to offer 24% equity based on a current company valuation of 17,432,001 USD. Interested investors can contact us via email at thomashaynes@foster.net or by phone at (357)876-7505. Pinnacle Solutions is looking forward to scaling the business with strategic investments, and we are excited about the potential collaborations and opportunities that this funding will enable.",
+    "goldAnswers": {
+      "Company Name": "Pinnacle Solutions",
+      "Company Website": "https://mann-thomas.com/",
+      "Founding Date": "2022/08/07",
+      "Business Stage": "Growth",
+      "Founder Name": "Leslie Fuentes",
+      "Email": "thomashaynes@foster.net",
+      "Phone Number": "(357)876-7505",
+      "LinkedIn Profile": "https://linkedin.com/in/lynchgregory",
+      "Funding Amount Required (USD)": 2243223,
+      "Equity Offered (%)": 24,
+      "Current Company Valuation (USD)": 17432001,
+      "Purpose of Funding": "Market Expansion",
+      "Business Model": "A SaaS product that provides businesses with project management and team collaboration tools.",
+      "Target Market": "Millennials interested in fitness and healthy living, with a focus on plant-based products.",
+      "Current Monthly Revenue (USD)": 300000,
+      "Current Team Size": 5,
+      "Additional Comments": "Looking forward to scaling the business with strategic investments."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/startup-funding"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

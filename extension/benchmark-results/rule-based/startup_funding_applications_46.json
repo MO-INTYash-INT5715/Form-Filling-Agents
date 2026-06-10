@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "startup_funding_applications",
+    "formName": "Startup Funding Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 46,
+    "inputDocument": "NeuroTech Labs formally submits this Startup Funding Application, detailing our request for an investment of $2,948,655 USD. Since our founding on December 1, 2019, we have progressed to the MVP stage, driven by the vision and leadership of founder Carly James. Our business endeavors are reflected on our company website: https://rice-miller.com/. The current valuation of NeuroTech Labs stands at $16,580,938 USD, and we are prepared to offer 18% equity in return for the investment. \n\nOur business model is centered around a platform for online education, focusing on courses in coding, data science, and business. With a target market comprising freelancers and small business owners who require a platform to find clients for digital work, our monthly revenue currently amounts to $100,000 USD. Our team, which is 100 strong, is committed to the growth of the company through strategic hiring, which is the primary purpose for this funding. \n\nFor further engagement, Founder Carly James can be contacted via email at dreese@gmail.com or by phone at 514.032.6849. A detailed professional profile is available on LinkedIn at https://linkedin.com/in/katieduke. We are particularly interested in establishing long-term partnerships to facilitate our growth, as noted in the additional comments of this application.",
+    "goldAnswers": {
+      "Company Name": "NeuroTech Labs",
+      "Company Website": "https://rice-miller.com/",
+      "Founding Date": "2019/12/01",
+      "Business Stage": "MVP",
+      "Founder Name": "Carly James",
+      "Email": "dreese@gmail.com",
+      "Phone Number": "514.032.6849",
+      "LinkedIn Profile": "https://linkedin.com/in/katieduke",
+      "Funding Amount Required (USD)": 2948655,
+      "Equity Offered (%)": 18,
+      "Current Company Valuation (USD)": 16580938,
+      "Purpose of Funding": "Hiring",
+      "Business Model": "A platform for online education offering courses in coding, data science, and business.",
+      "Target Market": "Freelancers and small business owners who need a platform to find clients for digital work.",
+      "Current Monthly Revenue (USD)": 100000,
+      "Current Team Size": 100,
+      "Additional Comments": "We are seeking long-term partnerships to grow."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/startup-funding"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

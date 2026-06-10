@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "workshop_registrations",
+    "formName": "Educational Workshop Registration",
+    "domain": "Professional & Business",
+    "instanceIndex": 19,
+    "inputDocument": "Subject: Workshop Registration Request\n\nDear Continuing Education Team,\n\nI am writing to formally request registration for the upcoming Workshop on Leadership & Communication. Please find below my complete details for processing the registration:\n\nFull Name: Franklin Boyd  \nEmail Address: christinefletcher@gray-smith.com  \nPhone Number: 7689252134  \n\nI am currently affiliated with Brown-Jenkins and hold the position of Health promotion specialist. My academic background includes a PhD, and I bring 18 years of professional experience to the table.\n\nFor the workshop, I would like to attend the session scheduled for the 12th of January, 2025, at 4 PM, with my preferred mode of delivery being In-Person. Please note that my dietary requirement is Vegan, and there are no accessibility requirements.\n\nThe workshop fee will be handled via Company Sponsored payment. The billing address to be used is 804 Wilson Lake Suite 932, South Graceborough, WA 94267.\n\nIn terms of learning outcomes, what I hope to learn from this workshop is to gain insights on how to manage and lead teams in dynamic work environments. Additionally, any other special requests or comments? It would be helpful if we could have some materials to review after the workshop to continue learning.\n\nThank you for considering my application. I look forward to the opportunity to enhance my skills and contribute effectively in my professional role.\n\nKind regards,\n\nFranklin Boyd",
+    "goldAnswers": {
+      "Full Name": "Franklin Boyd",
+      "Email Address": "christinefletcher@gray-smith.com",
+      "Phone Number": "7689252134",
+      "Organization/Company": "Brown-Jenkins",
+      "Workshop Category": "Leadership & Communication",
+      "Preferred Session Date": "2025/01/12",
+      "Preferred Time Slot": "4PM",
+      "Preferred Delivery Mode": "In-Person",
+      "Highest Education Level": "PhD",
+      "Years of Professional Experience": 18,
+      "Current Role/Position": "Health promotion specialist",
+      "Dietary Requirements": "Vegan",
+      "Accessibility Requirements": "None",
+      "Payment Method": "Company Sponsored",
+      "Billing Address": "804 Wilson Lake Suite 932\nSouth Graceborough, WA 94267",
+      "What do you hope to learn from this workshop?": "I wish to learn more about how to manage and lead teams in dynamic work environments.",
+      "Any other special requests or comments?": "It would be helpful if we could have some materials to review after the workshop to continue learning."
+    },
+    "multiPage": false,
+    "formPath": "/professional-business/workshop-registration"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

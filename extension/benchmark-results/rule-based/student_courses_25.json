@@ -1,0 +1,45 @@
+{
+  "formInstance": {
+    "formId": "student_courses",
+    "formName": "Student Course Registration Form",
+    "domain": "Academic & Research",
+    "instanceIndex": 25,
+    "inputDocument": "**Subject: Course Enrollment Request for Spring 2025**\n\n---\n\n**To the Enrollment Office,**\n\nI hope this message finds you well. I am reaching out to formally request enrollment in selected courses for the upcoming Spring 2025 semester, as part of my academic pursuit in the Computer Science program.\n\n**Personal Details:**\n\n- **Full Name:** Alan Marshall\n- **Student ID:** 14293687\n- **Email Address:** julie11@gmail.com\n- **Contact Number:** +1-004-544-5551x804\n\n**Academic Program:**\n\n- **Program of Study:** Computer Science\n\n**Course Selection for Spring 2025:**\n\n1. **CS101 - Introduction to Programming**\n2. **CS104 - Web Development**\n\nI am committed to advancing my skills and knowledge in these fundamental areas, which are essential components of my degree pathway.\n\n**Special Requirements:**\n\nI would like to highlight that I need additional support with coding. Ensuring clarity in this aspect will significantly enhance my learning experience.\n\nThis enrollment request encompasses all necessary information pertinent to my application. I trust that you will be able to process it accordingly and in a timely manner. Please let me know if there are any forms or additional steps that I need to complete to finalize my enrollment.\n\nThank you for your attention and assistance.\n\nKind regards,\n\nAlan Marshall  \nStudent ID: 14293687  \n[julie11@gmail.com](mailto:julie11@gmail.com)  \n+1-004-544-5551x804\n\n---",
+    "goldAnswers": {
+      "Full Name": "Alan Marshall",
+      "Student ID": 14293687,
+      "Email": "julie11@gmail.com",
+      "Phone Number": "+1-004-544-5551x804",
+      "Semester": "Spring 2025",
+      "Program": "Computer Science",
+      "Selected Courses": [
+        "CS101 - Introduction to Programming",
+        "CS104 - Web Development"
+      ],
+      "Special Requirements or Comments": "Need additional support with coding."
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/course-registration"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

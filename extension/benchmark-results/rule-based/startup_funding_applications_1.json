@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "startup_funding_applications",
+    "formName": "Startup Funding Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 1,
+    "inputDocument": "Subject: Application for Startup Funding for GreenMatrix\n\nDear [Investor's Name],\n\nI am writing to formally apply for funding on behalf of GreenMatrix. As a company in the Growth stage, we are seeking investment to support our operations. GreenMatrix was founded on 2023/10/03 by Thomas Thompson, and our main platform focuses on online education by offering courses in coding, data science, and business.\n\nCurrently, GreenMatrix operates with a team size of 20, generating a monthly revenue of USD 100,000. Our target market comprises tech companies and startups requiring cloud infrastructure and data storage solutions. We are proud to state that our current company valuation stands at USD 8,373,493.\n\nWe are seeking funding in the amount of USD 3,917,798. In return, we are offering 5% equity. This funding is crucial for us as we plan to expand internationally. For more information about our company, please visit our website at [http://www.phelps.info/](http://www.phelps.info/). You may also connect with our founder Thomas Thompson via [his LinkedIn profile](https://linkedin.com/in/andrewsbrittany). For direct queries, feel free to contact us via email at eburnett@hotmail.com or by phone at 9904623137.\n\nWe appreciate your consideration of our application and look forward to potentially working together to take GreenMatrix to greater heights.\n\nThank you for your time and attention.\n\nSincerely,\n\nThomas Thompson  \nFounder, GreenMatrix",
+    "goldAnswers": {
+      "Company Name": "GreenMatrix",
+      "Company Website": "http://www.phelps.info/",
+      "Founding Date": "2023/10/03",
+      "Business Stage": "Growth",
+      "Founder Name": "Thomas Thompson",
+      "Email": "eburnett@hotmail.com",
+      "Phone Number": "9904623137",
+      "LinkedIn Profile": "https://linkedin.com/in/andrewsbrittany",
+      "Funding Amount Required (USD)": 3917798,
+      "Equity Offered (%)": 5,
+      "Current Company Valuation (USD)": 8373493,
+      "Purpose of Funding": "Operations",
+      "Business Model": "A platform for online education offering courses in coding, data science, and business.",
+      "Target Market": "Tech companies and startups requiring cloud infrastructure and data storage solutions.",
+      "Current Monthly Revenue (USD)": 100000,
+      "Current Team Size": 20,
+      "Additional Comments": "Ready to expand internationally."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/startup-funding"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

@@ -1,0 +1,40 @@
+{
+  "formInstance": {
+    "formId": "grant_applications",
+    "formName": "Grant or Research Funding Application",
+    "domain": "Academic & Research",
+    "instanceIndex": 48,
+    "inputDocument": "**Grant Application Proposal**\n\n**Applicant Information:**\n\n- **Full Name:** Noah Benton  \n- **Email Address:** meredith49@friedman-kim.com  \n- **Gender:** Male  \n- **Date of Birth:** 2004/12/03  \n\n---\n\n**Dear Grant Committee,**\n\nI am writing to express my sincere interest in the opportunity presented by your esteemed grant program. My name is Noah Benton, and I am eager to share the details of my application with the hope of being considered for support that could significantly propel my aspirations forward. \n\nWith a steadfast commitment to my personal and professional growth, I maintain a determined and enthusiastic outlook towards the opportunities ahead. As someone who identifies as male, and having been born on December 3, 2004, I bring a unique perspective shaped by a rich array of life experiences, despite my youthful age.\n\nShould I be granted the privilege of receiving this support, I assure you no effort will be spared in maximizing its potential impact. It’s my belief that staying informed and engaged with the community is vitally important. For this reason, I actively choose to subscribe to newsletters that enhance my knowledge and keep me updated on current events and developments relevant to my field. The answer to whether I subscribe to the newsletter is a wholehearted \"yes,\" underscoring my proactive approach to being well-informed.\n\nI highly appreciate your time and consideration of this application. Your investment in emerging talents is inspiring, and I am hopeful that my commitment and vision will resonate with the objectives of your program.\n\nThank you for considering my application. I look forward to the possibility of contributing positively to your mission and our broader community.\n\nKind regards,  \n**Noah Benton**  \nMeredith49@friedman-kim.com",
+    "goldAnswers": {
+      "First Name": "Noah",
+      "Last Name": "Benton",
+      "Email": "meredith49@friedman-kim.com",
+      "Gender": "Male",
+      "Date of Birth": "2004/12/03",
+      "Subscribe to Newsletter": true
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/grant-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

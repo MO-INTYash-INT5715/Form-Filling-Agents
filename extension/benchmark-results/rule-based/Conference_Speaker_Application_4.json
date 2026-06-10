@@ -1,0 +1,48 @@
+{
+  "formInstance": {
+    "formId": "Conference_Speaker_Application",
+    "formName": "Conference Speaker Application Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 4,
+    "inputDocument": "Lucas Brown, an esteemed creative writing professor and novelist with over 10 years of experience in teaching narrative techniques, is delighted to submit an application to present at your esteemed conference. Representing the Creative Writing Workshop, Lucas is eager to deliver a workshop entitled \"Narrative Structures in Creative Writing.\" This submission falls under the topic area of Creative Writing, and the presentation will focus on different narrative structures in creative writing, including linear, non-linear, and experimental storytelling techniques. We will also discuss how to break traditional narrative forms to create more engaging and innovative stories. Participants will gain from specified learning objectives: 1. Learn about various narrative structures. 2. Discover techniques for breaking conventional storytelling rules. 3. Understand how to create compelling plots with unconventional structures. Lucas’s professional biography further reflects his expertise, as he has published several short stories and is a regular contributor to literary journals. His previous speaking experience includes the role of a speaker at the Creative Writing Conference 2022 and a workshop leader at Writing Masterclass 2021. The proposed presentation format is a workshop, with special technical requirements that include a projector and writing software for demonstration. Lucas affirms his agreement to the speaker guidelines and terms of participation. Should there be any further need for information or clarification, Lucas can be reached via email at lucas.brown72@yahoo.com or by phone at 567-890-1234.",
+    "goldAnswers": {
+      "Full Name": "Lucas Brown",
+      "Email Address": "lucas.brown72@yahoo.com",
+      "Phone Number": "567-890-1234",
+      "Organization/Institution": "Creative Writing Workshop",
+      "Presentation Title": "Narrative Structures in Creative Writing",
+      "Topic Area": "Creative Writing",
+      "Presentation Abstract": "This presentation will focus on different narrative structures in creative writing, including linear, non-linear, and experimental storytelling techniques. We will also discuss how to break traditional narrative forms to create more engaging and innovative stories.",
+      "Learning Objectives": "1. Learn about various narrative structures. 2. Discover techniques for breaking conventional storytelling rules. 3. Understand how to create compelling plots with unconventional structures.",
+      "Professional Biography": "Lucas Brown is a creative writing professor and novelist with over 10 years of experience teaching narrative techniques. He has published several short stories and is a regular contributor to literary journals.",
+      "CV/Resume": "None",
+      "Previous Speaking Experience": "1. Speaker at Creative Writing Conference 2022. 2. Workshop leader at Writing Masterclass 2021.",
+      "Presentation Format": "Workshop",
+      "Special Technical Requirements": "Projector, writing software for demonstration.",
+      "I agree to the speaker guidelines and terms of participation": "Yes"
+    },
+    "multiPage": true,
+    "formPath": "/arts-creative/speaker-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

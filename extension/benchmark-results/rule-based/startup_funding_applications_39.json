@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "startup_funding_applications",
+    "formName": "Startup Funding Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 39,
+    "inputDocument": "FutureVibe Technologies, established on 2019/03/04, is currently in its Growth stage and seeking funding to propel its business forward. The company, led by founder Nicole Roberts, can be reached through email at whoward@gilmore.com or via phone at +1-157-072-3234x12671. We also invite you to visit our company website at https://gould.com/ and our LinkedIn Profile at https://linkedin.com/in/aroberts for additional insights into our ventures and accomplishments.\n\nWe require $1,813,345 USD in funding, offering an equity stake of 21% based on our current company valuation of $5,893,179 USD. The primary purpose of this funding is to bolster our Research and Development capabilities, specifically advancing our business model—an e-commerce platform that connects buyers and sellers of handmade products. Our target market predominantly consists of tech companies and startups in need of cloud infrastructure and data storage solutions. FutureVibe Technologies has demonstrated consistent growth, with a current monthly revenue of $300,000 USD and a dedicated team of 5 professionals.\n\nWe are actively seeking strategic, long-term partnerships to sustain and accelerate our growth trajectory. Your consideration of this funding request is highly appreciated as we continue our journey to innovate and serve our industry better.",
+    "goldAnswers": {
+      "Company Name": "FutureVibe Technologies",
+      "Company Website": "https://gould.com/",
+      "Founding Date": "2019/03/04",
+      "Business Stage": "Growth",
+      "Founder Name": "Nicole Roberts",
+      "Email": "whoward@gilmore.com",
+      "Phone Number": "+1-157-072-3234x12671",
+      "LinkedIn Profile": "https://linkedin.com/in/aroberts",
+      "Funding Amount Required (USD)": 1813345,
+      "Equity Offered (%)": 21,
+      "Current Company Valuation (USD)": 5893179,
+      "Purpose of Funding": "Research and Development",
+      "Business Model": "An e-commerce platform that connects buyers and sellers of handmade products.",
+      "Target Market": "Tech companies and startups requiring cloud infrastructure and data storage solutions.",
+      "Current Monthly Revenue (USD)": 300000,
+      "Current Team Size": 5,
+      "Additional Comments": "We are seeking long-term partnerships to grow."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/startup-funding"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

@@ -1,0 +1,48 @@
+{
+  "formInstance": {
+    "formId": "Conference_Speaker_Application",
+    "formName": "Conference Speaker Application Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 49,
+    "inputDocument": "Sophia King, representing the Digital Arts Institute, is proposing a presentation for consideration at the upcoming conference. Her lecture is titled \"The Future of Augmented Reality in Digital Art,\" within the topic area of Digital Media. The presentation will discuss the rise of augmented reality (AR) in digital art, highlighting how AR is being used to create interactive and immersive experiences for viewers. We will explore the creative possibilities that AR offers to digital artists. The learning objectives are to understand the potential of augmented reality in digital art, explore how AR can be integrated into digital art projects, and learn about future trends in AR and interactive media.\n\nSophia King is a digital artist and AR specialist, creating interactive and immersive art experiences. She has worked on several AR projects that blend digital art with real-world environments. Her previous speaking experience includes being a speaker at the AR and Digital Art Conference 2023 and serving as a panelist at the Interactive Media Symposium 2022. For her presentation, she has specific technical requirements, including AR software, a projector, and a computer. She can be contacted via email at sophia.king34@gmail.com or by phone at 890-123-4567. Sophia confirms her agreement to the speaker guidelines and terms of participation.",
+    "goldAnswers": {
+      "Full Name": "Sophia King",
+      "Email Address": "sophia.king34@gmail.com",
+      "Phone Number": "890-123-4567",
+      "Organization/Institution": "Digital Arts Institute",
+      "Presentation Title": "The Future of Augmented Reality in Digital Art",
+      "Topic Area": "Digital Media",
+      "Presentation Abstract": "This presentation will discuss the rise of augmented reality (AR) in digital art, highlighting how AR is being used to create interactive and immersive experiences for viewers. We will explore the creative possibilities that AR offers to digital artists.",
+      "Learning Objectives": "1. Understand the potential of augmented reality in digital art. 2. Explore how AR can be integrated into digital art projects. 3. Learn about future trends in AR and interactive media.",
+      "Professional Biography": "Sophia King is a digital artist and AR specialist, creating interactive and immersive art experiences. She has worked on several AR projects that blend digital art with real-world environments.",
+      "CV/Resume": "None",
+      "Previous Speaking Experience": "1. Speaker at AR and Digital Art Conference 2023. 2. Panelist at Interactive Media Symposium 2022.",
+      "Presentation Format": "Lecture",
+      "Special Technical Requirements": "AR software, projector, computer.",
+      "I agree to the speaker guidelines and terms of participation": "Yes"
+    },
+    "multiPage": true,
+    "formPath": "/arts-creative/speaker-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

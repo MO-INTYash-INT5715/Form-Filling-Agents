@@ -1,0 +1,38 @@
+{
+  "formInstance": {
+    "formId": "job_applications",
+    "formName": "Job Application for University Positions",
+    "domain": "Academic & Research",
+    "instanceIndex": 42,
+    "inputDocument": "[Your Address]  \n[City, State, ZIP Code]  \n[Email Address]  \n[Phone Number]  \n[Date]  \n\nHiring Manager  \n[Company Name]  \n[Company Address]  \n[City, State, ZIP Code]  \n\nDear Hiring Manager,\n\nMy name is James Anderson, and I am writing to express my interest in the Logistics Manager position in your esteemed company. With a deep passion for enhancing logistics and a comprehensive background in supply chain optimization, I am eager to contribute my expertise to the Supply Chain department.\n\nThroughout my career, I have developed extensive experience in logistics management and supply chain processes. I am particularly drawn to this position as it aligns perfectly with my preferred department, Supply Chain. I am confident that my skills in streamlining operations will greatly benefit your team.\n\nI am enthusiastic about the opportunity to bring my unique skill set and dedication to your company. Thank you for considering my application. I look forward to discussing how I can contribute to the success of your organization.\n\nSincerely,\n\nJames Anderson",
+    "goldAnswers": {
+      "Applicant Name": "James Anderson",
+      "Position Applied For": "Logistics Manager",
+      "Preferred Department": "Supply Chain",
+      "Cover Letter": "I have extensive experience in logistics and supply chain optimization, and I am excited to streamline operations in the Supply Chain department."
+    },
+    "multiPage": false,
+    "formPath": "/academic-research/job-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

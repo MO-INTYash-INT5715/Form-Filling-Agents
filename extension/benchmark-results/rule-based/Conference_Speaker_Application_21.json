@@ -1,0 +1,48 @@
+{
+  "formInstance": {
+    "formId": "Conference_Speaker_Application",
+    "formName": "Conference Speaker Application Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 21,
+    "inputDocument": "Henry James, representing the Institute of Modern Arts, is pleased to submit his presentation application for the upcoming conference. With a commitment to exploring the Visual Arts, Henry will present on the topic \"Reimagining the Human Form: The Intersection of Art and Technology.\" The presentation will delve into how the intersection of art and technology is being utilized to reimagine the human form, as articulated in the Presentation Abstract. The Presentation Abstract highlights the way artists are leveraging digital tools to reinterpret traditional representations of the human body within a contemporary context. This session, conducted in a Lecture format, aims to achieve the following Learning Objectives: Learn how technology is influencing modern art forms, understand the role of digital media in reshaping artistic representation of the human body, and explore the ethical implications of technology in art.\n\nHenry's professional background underscores his expertise in this area. As outlined in his Professional Biography, he is a multimedia artist whose work with digital technologies expands the boundaries of visual art, having exhibited widely at several international museums. His Previous Speaking Experience, which includes being a Speaker at Digital Art Innovations Symposium 2023 and a Workshop leader at Art and Technology Expo 2022, further solidifies his ability to engage and inform an audience on this cutting-edge topic. Additionally, he acknowledges the Special Technical Requirements necessary for the presentation, namely a computer, projector, and digital art software, enhancing the delivery and engagement of the session. Henry James's contact details are available, with his Email Address being henry.james84@gmail.com and Phone Number being 123-456-7890, for any further communication regarding his application or speaking engagement. He affirms his full agreement to the speaker guidelines and terms of participation and looks forward to contributing to a successful event.",
+    "goldAnswers": {
+      "Full Name": "Henry James",
+      "Email Address": "henry.james84@gmail.com",
+      "Phone Number": "123-456-7890",
+      "Organization/Institution": "Institute of Modern Arts",
+      "Presentation Title": "Reimagining the Human Form: The Intersection of Art and Technology",
+      "Topic Area": "Visual Arts",
+      "Presentation Abstract": "This presentation explores the intersection of art and technology in reimagining the human form. We will discuss how artists use digital tools to reinterpret traditional representations of the human body in a contemporary context.",
+      "Learning Objectives": "1. Learn how technology is influencing modern art forms. 2. Understand the role of digital media in reshaping artistic representation of the human body. 3. Explore the ethical implications of technology in art.",
+      "Professional Biography": "Henry James is a multimedia artist working with digital technologies to explore the boundaries of visual art. He has exhibited his work in several international museums.",
+      "CV/Resume": "None",
+      "Previous Speaking Experience": "1. Speaker at Digital Art Innovations Symposium 2023. 2. Workshop leader at Art and Technology Expo 2022.",
+      "Presentation Format": "Lecture",
+      "Special Technical Requirements": "Computer, projector, digital art software.",
+      "I agree to the speaker guidelines and terms of participation": "Yes"
+    },
+    "multiPage": true,
+    "formPath": "/arts-creative/speaker-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

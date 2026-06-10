@@ -1,0 +1,55 @@
+{
+  "formInstance": {
+    "formId": "scholarship_applications",
+    "formName": "Scholarship Application for Students",
+    "domain": "Academic & Research",
+    "instanceIndex": 26,
+    "inputDocument": "**Scholarship Application**\n\n**Applicant Details:**\n\n**First Name:** Tamara  \n**Middle Name:** Angel  \n**Last Name:** Howe  \n**Student ID:** 41008844  \n**Major/Field of Study:** English Literature  \n**Current GPA:** 2.96  \n**Academic Year:** Sophomore  \n**Current Financial Aid:** Other Scholarship  \n**Annual Family Income:** $80,469  \n\n---\n\n**Dear Scholarship Committee,**\n\nI am writing to express my sincere interest in the scholarship opportunity available for motivated students such as myself. My name is Tamara Angel Howe, and I am currently a sophomore majoring in English Literature with a GPA of 2.96 at my university. As I embark on this critical phase of my academic and professional journey, I am eager to articulate how this scholarship will both alleviate financial burdens and enable me to fulfill my ambitions.\n\nThroughout my academic experience, I have demonstrated a commitment to excellence that is underscored by several notable achievements. I had the honor of being the winner of the State Physics Olympiad, an experience that not only sharpened my analytical skills but also instilled in me a deep appreciation for interdisciplinary studies. Additionally, securing a spot on the Dean’s List for Outstanding Academic Performance and earning first place in the University Math Competition have further solidified my resolve to excel in both my studies and extracurricular endeavors.\n\nOutside the classroom, I am passionately involved in enriching my university community and beyond. As a member of the Environmental Awareness Club, I have participated in initiatives aimed at promoting sustainable practices among my peers, fostering a sense of responsibility towards our planet. My leadership skills have also been honed through my role as the President of the Student Council, where I actively advocate for student needs and organize events that enhance campus life.\n\nAs I continue my studies in English Literature, my long-term goal is to pivot towards a career in data science. I believe that the analytical skills I have developed through interdisciplinary learning combined with a strong literary foundation will empower me to contribute effectively to tackling complex global challenges. This scholarship will be instrumental in allowing me to concentrate fully on my academic pursuits without the impending concern of financial constraints.\n\nI have great respect for the journey each student embarks upon, and I am eager to take full advantage of the opportunity this scholarship provides. It will enable me to align my academic experiences with my future career aspirations seamlessly. My academic reference, Mary McFarland, can provide further insights into my character and capabilities at her email, dmckenzie@hudson-johnson.biz.\n\nThank you for considering my application. I am thrilled about the possibility of receiving support that will allow me to fully dedicate myself to my studies and engage with my community in meaningful ways. \n\nSincerely,  \nTamara Angel Howe",
+    "goldAnswers": {
+      "First Name": "Tamara",
+      "Middle Name": "Angel",
+      "Last Name": "Howe",
+      "Student ID": 41008844,
+      "Major/Field of Study": "English Literature",
+      "Current GPA": 2.96,
+      "Academic Year": "Sophomore",
+      "Current Financial Aid": "Other Scholarship",
+      "Annual Family Income": 80469,
+      "Academic Achievements": [
+        "Winner of the State Physics Olympiad",
+        "Received the Dean’s List Award for Outstanding Academic Performance",
+        "First place in the University Math Competition"
+      ],
+      "Extracurricular Activities": [
+        "Member of the Environmental Awareness Club",
+        "President of the Student Council"
+      ],
+      "Statement of Purpose": "This scholarship will allow me to focus on my studies and complete my degree without worrying about financial constraints. It will help me pursue a career in data science, where I plan to contribute to solving global challenges.",
+      "Academic Reference": "Mary Mcfarland",
+      "Reference Email": "dmckenzie@hudson-johnson.biz"
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/scholarship-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

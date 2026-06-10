@@ -24,7 +24,7 @@ def load_agent_results(agent_name: str, base_dir: Path) -> List[Dict]:
     results = []
     for file in agent_dir.glob("*.json"):
         try:
-            with open(file, 'r') as f:
+            with open(file, 'r', encoding='utf-8') as f:
                 data = json.load(f)
                 results.append(data)
         except Exception as e:
@@ -98,7 +98,7 @@ def compute_metrics(results: List[Dict]) -> Dict:
     }
 
 def main():
-    base_dir = Path(__file__).parent.parent / "benchmark-results"
+    base_dir = Path(__file__).parent.parent / "extension" / "benchmark-results"
     
     if not base_dir.exists():
         print(f"Error: {base_dir} not found")

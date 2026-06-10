@@ -1,0 +1,44 @@
+{
+  "formInstance": {
+    "formId": "paper_submissions",
+    "formName": "Paper Submission Form",
+    "domain": "Academic & Research",
+    "instanceIndex": 6,
+    "inputDocument": "To: The Paper Submission Committee\n\nSubject: Submission for Consideration: The Evolution of Social Media in Modern Society\n\nDear Members of the Paper Submission Committee,\n\nI am writing to formally submit my paper titled \"The Evolution of Social Media in Modern Society\" for consideration in your esteemed journal. This submission falls under the Social Sciences category, which I believe aligns well with the themes and objectives outlined by your publication.\n\nMy name is Isabella Wilson, and I am deeply passionate about analyzing societal trends, particularly in how technology influences various aspects of our lives. In an era where digital presence shapes significant sectors, my paper delves into the compelling journey of social media platforms and their profound impact. \n\nThe abstract succinctly captures the essence of my research: this paper examines the influence of social media platforms on public opinion, communication, and political engagement in today's world. Through this work, I seek to unveil the multi-faceted role that these online networks play in shaping modern society.\n\nKey concepts discussed within the paper include: \n- \"Social Media\" as a transformative agent in public spheres;\n- The dynamic relationship between social media and \"Public Opinion\";\n- How \"Communication\" paradigms shift within the technological landscape.\n\nBy focusing on these keywords, my research brings to light critical interactions within social spaces that are increasingly digital yet remarkably influential.\n\nI am hopeful that my paper will contribute valuable insights to the ongoing discussions within the Social Sciences field. Should there be any need for further information or inquiries regarding my submission, I am readily available at isabella.wilson@edu.edu.\n\nThank you for considering my work for publication. I look forward to the possibility of sharing my findings with your readership and contributing to the ever-evolving discourse on social media's role in contemporary society.\n\nWarm regards,\n\nIsabella Wilson",
+    "goldAnswers": {
+      "Author Name": "Isabella Wilson",
+      "Email": "isabella.wilson@edu.edu",
+      "Paper Title": "The Evolution of Social Media in Modern Society",
+      "Abstract": "This paper examines the influence of social media platforms on public opinion, communication, and political engagement in today's world.",
+      "Keywords": [
+        "Social Media",
+        "Public Opinion",
+        "Communication"
+      ],
+      "Paper Category": "Social Sciences"
+    },
+    "multiPage": false,
+    "formPath": "/academic-research/paper-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

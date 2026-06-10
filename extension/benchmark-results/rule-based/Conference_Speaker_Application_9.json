@@ -1,0 +1,48 @@
+{
+  "formInstance": {
+    "formId": "Conference_Speaker_Application",
+    "formName": "Conference Speaker Application Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 9,
+    "inputDocument": "Chloe Martin, representing the Creative Writers Guild, is pleased to submit an application to speak at your esteemed conference. She aims to present on the topic area of Creative Writing with a focus on The Power of Dialogue in Creative Writing. Chloe's presentation will take the form of a workshop. In this presentation, we will discuss how dialogue functions in creative writing as both a storytelling device and a means of character development. We will explore techniques for writing authentic, engaging dialogue and examine how it can deepen narrative impact. Attendees will learn to understand the importance of dialogue in storytelling, learn techniques for writing realistic and engaging dialogue, and examine how dialogue can reveal character and advance the plot. Chloe Martin is an award-winning author and writing instructor specializing in character development and dialogue. She has taught creative writing for over 10 years and has published numerous short stories and novels. Her previous speaking experience includes being a guest speaker at Creative Writing Conference 2022 and workshop leader at Dialogue Writing Masterclass 2021. Special technical requirements for this workshop include a computer, projector, and handouts. For any further correspondence, Chloe can be contacted via email at chloe.martin55@gmail.com or phone at 123-567-8909. Chloe wholeheartedly agrees to the speaker guidelines and terms of participation, and she looks forward to the opportunity to contribute her expertise to your conference audience.",
+    "goldAnswers": {
+      "Full Name": "Chloe Martin",
+      "Email Address": "chloe.martin55@gmail.com",
+      "Phone Number": "123-567-8909",
+      "Organization/Institution": "Creative Writers Guild",
+      "Presentation Title": "The Power of Dialogue in Creative Writing",
+      "Topic Area": "Creative Writing",
+      "Presentation Abstract": "In this presentation, we will discuss how dialogue functions in creative writing as both a storytelling device and a means of character development. We will explore techniques for writing authentic, engaging dialogue and examine how it can deepen narrative impact.",
+      "Learning Objectives": "1. Understand the importance of dialogue in storytelling. 2. Learn techniques for writing realistic and engaging dialogue. 3. Examine how dialogue can reveal character and advance the plot.",
+      "Professional Biography": "Chloe Martin is an award-winning author and writing instructor specializing in character development and dialogue. She has taught creative writing for over 10 years and has published numerous short stories and novels.",
+      "CV/Resume": "None",
+      "Previous Speaking Experience": "1. Guest speaker at Creative Writing Conference 2022. 2. Workshop leader at Dialogue Writing Masterclass 2021.",
+      "Presentation Format": "Workshop",
+      "Special Technical Requirements": "Computer, projector, handouts.",
+      "I agree to the speaker guidelines and terms of participation": "Yes"
+    },
+    "multiPage": true,
+    "formPath": "/arts-creative/speaker-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

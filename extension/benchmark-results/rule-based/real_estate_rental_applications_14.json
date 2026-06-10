@@ -1,0 +1,53 @@
+{
+  "formInstance": {
+    "formId": "real_estate_rental_applications",
+    "formName": "Real Estate Rental Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 14,
+    "inputDocument": "Kara Price, born on 1995/01/17, currently resides at 2396 Lee Street, Woodsshire, Alabama, ZIP Code 66804. You can reach her via email at michael03@gmail.com or by phone at 372-071-1423x0988. She has been employed by Klein Inc for a duration of 10 years, working as a Forensic scientist with a monthly income of USD 9264. Kara is seeking a new rental property with a preferred move-in date of 2025/02/12 for a lease term of 12 months. The maximum monthly rent she is willing to pay is USD 2330. Her preferred area is Near parks. She owns a pet, which is a Dog, medium-sized. Kara is looking for a property that offers a peaceful environment.",
+    "goldAnswers": {
+      "Full Name": "Kara Price",
+      "Email Address": "michael03@gmail.com",
+      "Phone Number": "372-071-1423x0988",
+      "Date of Birth": "1995/01/17",
+      "Street Address": "2396 Lee Street",
+      "City": "Woodsshire",
+      "State": "Alabama",
+      "ZIP Code": "66804",
+      "Current Employer": "Klein Inc",
+      "Job Title": "Forensic scientist",
+      "Monthly Income (USD)": 9264,
+      "Length of Employment": "10 years",
+      "Preferred Move-in Date": "2025/02/12",
+      "Preferred Lease Term": "12 months",
+      "Maximum Monthly Rent (USD)": 2330,
+      "Preferred Area": "Near parks",
+      "Do you have any pets?": "Yes",
+      "If yes, please describe your pets": "Dog, medium-sized",
+      "Additional Comments": "Looking for a peaceful environment."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/rental-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

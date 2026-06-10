@@ -1,0 +1,44 @@
+{
+  "formInstance": {
+    "formId": "student_courses",
+    "formName": "Student Course Registration Form",
+    "domain": "Academic & Research",
+    "instanceIndex": 13,
+    "inputDocument": "Elaine Stevenson  \nStudent ID: 24011642  \nEmail: nicholsonstephanie@yahoo.com  \nPhone: 241.218.6900x3856  \n\n[Date]\n\nAdmissions Department  \n[Institution's Name]  \n[Institution's Address]  \n\nDear Admissions Committee,\n\nI hope this message finds you well. I am writing to formally request enrollment for the upcoming Summer 2025 semester in the esteemed Computer Science program. As a prospective student at your institution, I am looking forward to broadening my knowledge and skills in the ever-evolving field of technology and computer science.\n\nIn anticipation of the semester, I have selected CS103 - Database Systems as a critical course for my academic trajectory. I am confident that the comprehensive curriculum offered will enhance my understanding of database architectures and administration, thereby equipping me with invaluable skills for future endeavors.\n\nI would like to highlight that my Student ID is 24011642, which corresponds to my profile with you. Please allow me to kindly request any necessary materials or guidance that might assist in the enrollment process. Furthermore, I am reachable at nicholsonstephanie@yahoo.com or via telephone at 241.218.6900x3856 for any additional information or clarification you may require.\n\nI wish to emphasize my earnest dedication to commencing studies under the Computer Science program. Additionally, I would appreciate flexibility in course timings to accommodate my ongoing engagements and ensure an efficient intersection between academia and my personal and professional commitments.\n\nThank you for considering my enrollment request. I am enthusiastic about the opportunity to contribute to and benefit from the community at [Institution's Name]. Please let me know if there are further forms or procedures I must undertake to facilitate my admission.\n\nYours sincerely,\n\nElaine Stevenson\n\n---\n\nInstructions for such requests should maintain the integrity of the applicant's details while ensuring a professional presentation. Kindly let me know if further assistance is required.",
+    "goldAnswers": {
+      "Full Name": "Elaine Stevenson",
+      "Student ID": 24011642,
+      "Email": "nicholsonstephanie@yahoo.com",
+      "Phone Number": "241.218.6900x3856",
+      "Semester": "Summer 2025",
+      "Program": "Computer Science",
+      "Selected Courses": [
+        "CS103 - Database Systems"
+      ],
+      "Special Requirements or Comments": "Would appreciate flexibility in course timings."
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/course-registration"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

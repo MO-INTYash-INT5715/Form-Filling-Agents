@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "workshop_registrations",
+    "formName": "Educational Workshop Registration",
+    "domain": "Professional & Business",
+    "instanceIndex": 49,
+    "inputDocument": "Subject: Workshop Registration Request for Continuing Education\n\nDear Workshop Coordinator,\n\nI am writing to formally submit my registration for the upcoming Continuing Education workshop in the Technology & IT category. My name is Michael Frazier, and I am currently employed as a Medical secretary at Banks, Dunlap and Chavez. I am eager to participate in the session scheduled for 2025/01/24 at 9AM, with a preference for an In-Person delivery mode.\n\nI hold a PhD and bring 11 years of professional experience to this learning opportunity. With my background, I am particularly enthusiastic about acquiring new skills in business management to better handle operational challenges, as this aligns with the workshop's objectives.\n\nMy dietary requirement is Vegan, and I have no specific accessibility requirements that need to be addressed. The payment for my attendance will be Company Sponsored, with the Billing Address listed as 84490 Laura Loop, South Scott, MN 98569.\n\nAdditionally, I have noted in the comments section the importance of including some practical advice on managing financial risks and investments, which would add significant value to the workshop experience.\n\nPlease let me know if there are any forms or further documentation that need to be completed or submitted prior to the event. I am looking forward to your confirmation and am eager to participate in this beneficial workshop.\n\nThank you for your attention to my registration request.\n\nSincerely,  \nMichael Frazier  \nEmail: breweramber@yahoo.com  \nPhone: (200)051-5968x760",
+    "goldAnswers": {
+      "Full Name": "Michael Frazier",
+      "Email Address": "breweramber@yahoo.com",
+      "Phone Number": "(200)051-5968x760",
+      "Organization/Company": "Banks, Dunlap and Chavez",
+      "Workshop Category": "Technology & IT",
+      "Preferred Session Date": "2025/01/24",
+      "Preferred Time Slot": "9AM",
+      "Preferred Delivery Mode": "In-Person",
+      "Highest Education Level": "PhD",
+      "Years of Professional Experience": 11,
+      "Current Role/Position": "Medical secretary",
+      "Dietary Requirements": "Vegan",
+      "Accessibility Requirements": "None",
+      "Payment Method": "Company Sponsored",
+      "Billing Address": "84490 Laura Loop\nSouth Scott, MN 98569",
+      "What do you hope to learn from this workshop?": "I am excited to learn new skills in business management to better handle operational challenges.",
+      "Any other special requests or comments?": "It would be beneficial to include some practical advice on managing financial risks and investments."
+    },
+    "multiPage": false,
+    "formPath": "/professional-business/workshop-registration"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

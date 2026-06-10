@@ -1,0 +1,56 @@
+{
+  "formInstance": {
+    "formId": "scholarship_applications",
+    "formName": "Scholarship Application for Students",
+    "domain": "Academic & Research",
+    "instanceIndex": 18,
+    "inputDocument": "Dear Scholarship Committee,\n\nMy name is Mary Thomas Miles, and I am currently a sophomore majoring in Political Science. My student ID is 54227455, and I am writing to express my strong interest in applying for your scholarship.\n\nI come from a background where higher education was not readily accessible, and being a first-generation college student, this scholarship is crucial for me to continue my education. My current GPA is 2.69, and I am dedicated to improving it through hard work and determination. Despite facing financial challenges, I am determined to excel academically and make a positive impact both on campus and in the community.\n\nI have been fortunate to receive other scholarship support but still need additional financial aid to help cover my educational expenses. With an annual family income of $95,400, this scholarship will alleviate the financial burden on my family and allow me to fully immerse myself in my studies and extracurricular activities.\n\nMy academic achievements include being the winner of the National Science Fair, publishing a research paper in the International Journal of Engineering, and winning the State Physics Olympiad. These accomplishments have fueled my passion for academic excellence and research.\n\nOutside of the classroom, I am actively involved in various extracurricular activities. I am a member of the Environmental Awareness Club, president of the Student Council, and co-founder of the Campus Startup Initiative. These experiences have helped me develop leadership skills, teamwork, and a strong commitment to making a difference in the community.\n\nMy academic reference, Scott Manning, can attest to my dedication to my studies and involvement in extracurricular activities. His email is yburnett@gmail.com in case the committee would like to reach out for further information.\n\nIn conclusion, receiving this scholarship will enable me to focus on academic excellence while continuing to engage in community service. It will help me achieve my dream of becoming a leader in public health. I am truly grateful for your consideration and would be honored to be selected as a recipient of your scholarship.\n\nThank you for your time and consideration.\n\nSincerely,\nMary Thomas Miles",
+    "goldAnswers": {
+      "First Name": "Mary",
+      "Middle Name": "Thomas",
+      "Last Name": "Miles",
+      "Student ID": 54227455,
+      "Major/Field of Study": "Political Science",
+      "Current GPA": 2.69,
+      "Academic Year": "Sophomore",
+      "Current Financial Aid": "Other Scholarship",
+      "Annual Family Income": 95400,
+      "Academic Achievements": [
+        "Winner of the National Science Fair",
+        "Published a research paper in the International Journal of Engineering",
+        "Winner of the State Physics Olympiad"
+      ],
+      "Extracurricular Activities": [
+        "Member of the Environmental Awareness Club",
+        "President of the Student Council",
+        "Co-founder of the Campus Startup Initiative"
+      ],
+      "Statement of Purpose": "Being a first-generation college student, this scholarship is crucial for me to continue my education. It will allow me to focus on academic excellence while contributing to community service, helping me achieve my dream of becoming a leader in public health.",
+      "Academic Reference": "Scott Manning",
+      "Reference Email": "yburnett@gmail.com"
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/scholarship-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

@@ -1,0 +1,44 @@
+{
+  "formInstance": {
+    "formId": "paper_submissions",
+    "formName": "Paper Submission Form",
+    "domain": "Academic & Research",
+    "instanceIndex": 1,
+    "inputDocument": "Subject: Paper Submission for Upcoming Conference on Robotics\n\nDear Conference Organizing Committee,\n\nI hope this message finds you well. I am writing to submit my paper for consideration at the forthcoming conference focused on advances in robotics. As someone deeply invested in technological innovation, I am excited to contribute to the collaborative discourse that defines this field.\n\nMy paper, titled \"Exploring the Future of Autonomous Vehicles,\" delves into the current and future advancements within this transformative sector. The study undertakes a comprehensive examination of the evolution of autonomous vehicles, particularly concentrating on how innovations in sensor technology and machine learning algorithms are ushering in an era of safer and more efficient driving experiences.\n\nThe abstract succinctly encapsulates the scope of the paper: \"This paper discusses the evolution of autonomous vehicles, from sensor technologies to machine learning algorithms enabling safe and efficient driving.\" I believe that the discussed content will prove crucial to those interested in the paper's designated category, Robotics, as we explore how machines continue to evolve in function and capability.\n\nKey concepts such as \"Autonomous Vehicles,\" \"Self-driving,\" and \"Machine Learning\" underline the critical themes addressed in the research. Through this paper, I aim to underline important trends and present viable strategies that could redefine our transport landscapes, supported by the latest developments in machine-learning led robotics.\n\nPlease find my contact details below should you require any further information regarding my submission or would like to discuss the topic in greater depth.\n\nAuthor Name: Mark Thompson  \nEmail: mark.t@techinsight.com  \n\nThank you for considering this submission. I am looking forward to engaging with fellow experts in lively discussions that this conference promises to offer.\n\nWarm regards,\n\nMark Thompson",
+    "goldAnswers": {
+      "Author Name": "Mark Thompson",
+      "Email": "mark.t@techinsight.com",
+      "Paper Title": "Exploring the Future of Autonomous Vehicles",
+      "Abstract": "This paper discusses the evolution of autonomous vehicles, from sensor technologies to machine learning algorithms enabling safe and efficient driving.",
+      "Keywords": [
+        "Autonomous Vehicles",
+        "Self-driving",
+        "Machine Learning"
+      ],
+      "Paper Category": "Robotics"
+    },
+    "multiPage": false,
+    "formPath": "/academic-research/paper-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

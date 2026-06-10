@@ -1,0 +1,43 @@
+{
+  "formInstance": {
+    "formId": "Art_Exhibition_Submission_Form",
+    "formName": "Art Exhibition Submission Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 1,
+    "inputDocument": "Artist Benjamin Chen respectfully submits their work for consideration in your esteemed art exhibition. The submission includes \"The City Pulse,\" a piece executed in Photography. The dimensions of this work are specified as 80 x 60 x 2 cm, and it was created in 2023. Of particular note, the Artwork Description states: \"This photograph captures the vibrant energy of a bustling city street. The long exposure technique blurs the movement of cars and pedestrians, creating a sense of continuous motion. The bright neon signs and the glow of streetlights contrast with the dark, shadowy alleys, highlighting the dichotomy of light and dark in an urban environment. It showcases the liveliness and constant activity that define a modern city.\" Benjamin Chen has expressed a preference for the piece to be exhibited during Spring 2024, although it is not available for sale. Further communication may be directed to the artist via email at benjamin.chen23@yahoo.com.",
+    "goldAnswers": {
+      "Artist Name": "Benjamin Chen",
+      "Email Address": "benjamin.chen23@yahoo.com",
+      "Artwork Title": "The City Pulse",
+      "Medium": "Photography",
+      "Dimensions (in cm)": "80 x 60 x 2",
+      "Year Created": 2023,
+      "Artwork Description": "This photograph captures the vibrant energy of a bustling city street. The long exposure technique blurs the movement of cars and pedestrians, creating a sense of continuous motion. The bright neon signs and the glow of streetlights contrast with the dark, shadowy alleys, highlighting the dichotomy of light and dark in an urban environment. It showcases the liveliness and constant activity that define a modern city.",
+      "Preferred Exhibition Period": "Spring 2024",
+      "Artwork is available for sale": false
+    },
+    "multiPage": false,
+    "formPath": "/arts-creative/exhibition-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

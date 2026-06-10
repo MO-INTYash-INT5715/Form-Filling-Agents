@@ -1,0 +1,44 @@
+{
+  "formInstance": {
+    "formId": "paper_submissions",
+    "formName": "Paper Submission Form",
+    "domain": "Academic & Research",
+    "instanceIndex": 44,
+    "inputDocument": "Subject: Paper Submission for Consideration in Digital Media Category\n\nDear Editorial Team,\n\nI hope this message finds you well. My name is Noah Mitchell, and I am pleased to submit my paper for consideration in the upcoming issue of your esteemed journal within the Digital Media category. I believe my research offers insightful perspectives that align with the journal's dedication to advancing knowledge and sparking innovative discussions in this rapidly evolving field.\n\nTitled \"Augmented Reality and Virtual Reality: The Future of Digital Interaction,\" my paper explores the burgeoning influence of augmented and virtual reality technologies. The main focus is their transformative roles in the digital media, gaming, and entertainment industries. As advancements in these technologies continue to shape our interactions with digital content, understanding their potential and implications becomes increasingly significant.\n\nIn the abstract, I delve into the expanding framework of these technologies and their substantial impact on enhancing digital interaction. The research is anchored by keywords reflecting the paper’s core concepts: Augmented Reality, Virtual Reality, and Digital Interaction. These components together deliver a comprehensive overview of current trends and future possibilities shaping the landscape of digital interaction.\n\nI am excited to contribute to ongoing discussions within this field and share insights that highlight both the opportunities and challenges associated with these advanced technologies. I have attached the full manuscript for your consideration. \n\nPlease feel free to reach out to me at noah.mitchell@digitalmedia.com if there are any questions or further information you require.\n\nThank you for considering my submission. I look forward to the possibility of having my work published by your prestigious journal.\n\nWarm regards,\n\nNoah Mitchell  \n[Author Details, if needed]  \nEmail: noah.mitchell@digitalmedia.com",
+    "goldAnswers": {
+      "Author Name": "Noah Mitchell",
+      "Email": "noah.mitchell@digitalmedia.com",
+      "Paper Title": "Augmented Reality and Virtual Reality: The Future of Digital Interaction",
+      "Abstract": "This paper delves into the growing influence of augmented and virtual reality technologies in digital media, gaming, and entertainment industries.",
+      "Keywords": [
+        "Augmented Reality",
+        "Virtual Reality",
+        "Digital Interaction"
+      ],
+      "Paper Category": "Digital Media"
+    },
+    "multiPage": false,
+    "formPath": "/academic-research/paper-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

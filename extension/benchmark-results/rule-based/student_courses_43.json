@@ -1,0 +1,46 @@
+{
+  "formInstance": {
+    "formId": "student_courses",
+    "formName": "Student Course Registration Form",
+    "domain": "Academic & Research",
+    "instanceIndex": 43,
+    "inputDocument": "Subject: Course Enrollment Request for Fall 2025\n\nDear Enrollment Office,\n\nI hope this message finds you well. My name is Mackenzie Moore, and I am reaching out to formally submit a request for course enrollment for the upcoming Fall 2025 semester. As a student currently enrolled in the Information Technology program, I am eager to continue my academic journey and develop my skills further in this field.\n\n**Student Details:**\n\n- Full Name: Mackenzie Moore  \n- Student ID: 34243736  \n- Email: fjohnson@gmail.com  \n- Phone Number: +1-829-318-4927x1302  \n\n**Semester and Program:**\n\n- Semester: Fall 2025  \n- Program: Information Technology  \n\n**Courses for Enrollment:**\n\n1. CS104 - Web Development  \n2. CS102 - Data Structures  \n3. CS103 - Database Systems  \n\nI am keenly interested in enrolling in the above-listed courses, as they are instrumental to the completion of my academic program and career aspirations. \n\n**Special Requirements or Comments:**\n\nIn alignment with the guidelines of the enrollment process, I respectfully put forth the following request: \"Would appreciate flexibility in course timings.\" This consideration will greatly assist me in managing my other responsibilities efficiently.\n\nI trust in your understanding and support regarding this request. Please let me know if any additional information is required or if further steps need to be completed from my end. I look forward to the confirmation of my enrollment at your earliest convenience.\n\nThank you in advance for your attention to this matter.\n\nWarm regards,\n\nMackenzie Moore",
+    "goldAnswers": {
+      "Full Name": "Mackenzie Moore",
+      "Student ID": 34243736,
+      "Email": "fjohnson@gmail.com",
+      "Phone Number": "+1-829-318-4927x1302",
+      "Semester": "Fall 2025",
+      "Program": "Information Technology",
+      "Selected Courses": [
+        "CS104 - Web Development",
+        "CS102 - Data Structures",
+        "CS103 - Database Systems"
+      ],
+      "Special Requirements or Comments": "Would appreciate flexibility in course timings."
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/course-registration"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

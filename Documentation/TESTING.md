@@ -1,47 +1,89 @@
 # Testing & Benchmarking Guide
 
-This concise guide explains how to run and interpret the FormFactory benchmark included in this repository. For design and scaling notes, see [Report.md](Report.md).
+This guide describes the FormFactory evaluation infrastructure and details how to execute benchmarks on the form-filling agents.
 
-Quick commands
-- Quick benchmark (sanity checks):
+---
+
+## 1. Directory Structure & Layout
+
+All benchmark code is located in `extension/` and uses headless Chromium via Playwright:
+
+* **`extension/src/benchmark/`**
+  * `runner.ts` — Benchmark orchestrator that loads the dataset, triggers the selected agent, and logs results.
+  * `playwright-executor.ts` — Drives headless Chromium via Playwright to simulate user keystrokes, clicks, and selections.
+  * `evaluation.ts` — Scoring module that normalizes inputs and evaluates field value matches.
+  * `dataset-loader.ts` — Loads form schemas, fields, and gold answers.
+  * `config.ts` — Configures viewport dimensions, timeouts, and agent selection profiles.
+* **`extension/scripts/`**
+  * `run-benchmark.ts` — CLI entry point to execute benchmarks for individual agents.
+  * `ablation-study.ts` — Master CLI tool to run sequential ablation benchmarks across all agents.
+
+---
+
+## 2. CLI Reference & Execution Scripts
+
+All commands must be executed from the `extension/` directory:
+
 ```bash
-npm run test:quick
+cd extension
 ```
-- Full benchmark (all instances):
+
+### 2.1 Sanity Check Benchmarks (Quick Mode — 25 forms total)
+Quick mode evaluates 1 test case profile instance per form. Useful for local development and smoke tests.
+
 ```bash
-npm run test:full
+# Rule-Based Baseline
+npm run benchmark:rule-based:quick
+
+# LLM-Structured Agent (recommended default)
+npm run benchmark:llm-structured:quick
+
+# Model Context Protocol (MCP) Agent
+npm run benchmark:mcp-agent:quick
+
+# Vision & Multimodal Agents (requires VLM configuration)
+npm run benchmark:vlm-agent:quick
+npm run benchmark:vision-agent:quick
+
+# Run all agents sequentially (Quick Ablation Study)
+npm run ablation:quick
 ```
-- Run a single domain (e.g., `academic`):
+
+### 2.2 Full Ablation Benchmarks (Full Mode — 1,250 runs total)
+Full mode evaluates 50 test cases per form, capturing statistical variance.
+
 ```bash
-npm run test:domain -- academic
+# Full Ablation Study
+npm run ablation:full
+
+# Individual Agent Full Runs
+npm run benchmark:rule-based:full
+npm run benchmark:mcp-agent:full
 ```
 
-Key facts (summary)
-- Forms: 25 representative forms across domains
-- Instances: ~1,250 (50 per form)
-- Annotated pairs: ~13,800 field–value pairs
+### 2.3 Diagnostic Utility
+List all FormFactory form templates registered in the benchmark suite:
+```bash
+npm run benchmark:list
+```
 
-Core metrics
-- Click accuracy — fraction of actions that target the correct input element.
-- Value accuracy — field value correctness (exact match or tolerant metric for descriptions).
-- Form completion — end-to-end success rate for submitting a form correctly.
+---
 
-Interpreting results (rules of thumb)
-- Click accuracy < 20%: spatial grounding needs work (use ruler, VLMs, or heuristics).
-- Value accuracy < 50%: semantic matching or input extraction problem.
-- Form completion < 30%: multi-field coordination or dynamic form handling issues.
+## 3. Evaluation & Normalization Rules
 
-Extending the benchmark
-- Add forms in `src/benchmark/formfactory-dataset.ts` and update `test-suite.ts` mock generators.
-- Add new field types by updating dataset schema and evaluation logic in `evaluation-metrics.ts`.
+To prevent trivial differences from marking correct fills as incorrect, the scoring suite (`evaluation.ts`) applies several normalization heuristics:
 
-Best practices
-- Use the quick benchmark to iterate on agents; run the full benchmark in CI when changes stabilize.
-- Enable the ruler-enhanced scenario to measure improvements in spatial grounding.
+1. **Date Normalization:** Formats like `YYYY/MM/DD` or `MM/DD/YYYY` are coerced into ISO standard `YYYY-MM-DD` before comparison.
+2. **Numeric Normalization:** Floats and integers are converted, and trailing zeros are stripped (e.g. `250.00` and `250.0` match `250`).
+3. **Dropdown Label Matching:** Evaluates the display labels (e.g. `"Doctor Consultation"`) instead of option value attributes (e.g. `"consultation"`).
+4. **Text Normalization:** Text strings are lowercased and stripped of leading/trailing whitespace.
+5. **Descriptive Fields:** Long-form description text uses BLEU-4 scoring, marking the fill successful if the BLEU score is $\ge 30$.
 
-Troubleshooting
-- If content scripts fail to inject: check manifest host permissions and content script `matches` patterns.
-- If service worker fails: inspect the extension Service Worker console (chrome://extensions → Service worker → Inspect).
+---
 
-References
-- FormFactory paper: https://arxiv.org/abs/2506.01520
+## 4. Troubleshooting Benchmarks
+
+* **Incomplete Fills due to timeouts:** In `config.ts`, you can increase `actionTimeout` if pages are loading slowly or if the local Ollama instance is experiencing high latency.
+* **Service Worker crashes:** View Chrome extension worker panels at `chrome://extensions` and inspect the service worker logs for extension-specific background faults.
+* **Certificate / TLS errors:** If benchmark forms fail to load due to certificate warnings, run scripts prefixing with `NODE_TLS_REJECT_UNAUTHORIZED=0`.
+* **Out of Memory / Slow execution:** Ensure local Ollama services aren't sharing system resources with other high-memory containers. Switch to smaller models (like `llama3.2:3b`) to conserve memory if needed.

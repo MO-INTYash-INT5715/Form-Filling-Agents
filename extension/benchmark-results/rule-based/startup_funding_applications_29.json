@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "startup_funding_applications",
+    "formName": "Startup Funding Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 29,
+    "inputDocument": "**Startup Funding Application**\n\nOrbit Innovations, accessible online at [https://meyer.net/](https://meyer.net/), was founded on 2020/08/31 and is currently in the MVP stage. Under the leadership of Founder Nicholas Garcia, who can be reached at the email hughesjames@holden.com or via phone at 559-171-1392, the company is seeking to further its growth by raising a funding amount of USD 2,309,601. In exchange, Orbit Innovations is prepared to offer an equity stake of 11%. The current company valuation is USD 41,741,255.\n\nThe primary purpose of this funding is to support operations. Orbit Innovations operates as a platform for online education offering courses in coding, data science, and business, targeting freelancers and small business owners who need a platform to find clients for digital work. The business currently generates a monthly revenue of USD 50,000 and maintains a team size of 100. Nicholas Garcia is also available for professional connection through his LinkedIn profile at [https://linkedin.com/in/pbowman](https://linkedin.com/in/pbowman).\n\nOrbit Innovations is actively seeking long-term partnerships to grow. Your consideration and support would be invaluable in helping us achieve our goals and expand our reach within the market.",
+    "goldAnswers": {
+      "Company Name": "Orbit Innovations",
+      "Company Website": "https://meyer.net/",
+      "Founding Date": "2020/08/31",
+      "Business Stage": "MVP",
+      "Founder Name": "Nicholas Garcia",
+      "Email": "hughesjames@holden.com",
+      "Phone Number": "559-171-1392",
+      "LinkedIn Profile": "https://linkedin.com/in/pbowman",
+      "Funding Amount Required (USD)": 2309601,
+      "Equity Offered (%)": 11,
+      "Current Company Valuation (USD)": 41741255,
+      "Purpose of Funding": "Operations",
+      "Business Model": "A platform for online education offering courses in coding, data science, and business.",
+      "Target Market": "Freelancers and small business owners who need a platform to find clients for digital work.",
+      "Current Monthly Revenue (USD)": 50000,
+      "Current Team Size": 100,
+      "Additional Comments": "We are seeking long-term partnerships to grow."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/startup-funding"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

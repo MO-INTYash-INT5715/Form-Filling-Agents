@@ -1,0 +1,38 @@
+{
+  "formInstance": {
+    "formId": "job_applications",
+    "formName": "Job Application for University Positions",
+    "domain": "Academic & Research",
+    "instanceIndex": 16,
+    "inputDocument": "[Your Name]  \nAva Li  \n[Your Address]  \n[City, State, Zip Code]  \n[Email Address]  \n[Phone Number]  \n[Date]  \n\n[Employer's Name]  \n[Company's Name]  \n[Company's Address]  \n[City, State, Zip Code]  \n\nDear [Employer's Name],  \n\nI am writing to express my interest in the position of Product Manager, as advertised, within your esteemed company. My name is Ava Li, and I am eager to bring my enthusiasm and skills to the Product Development department, which aligns perfectly with my professional ambitions and interests. \n\nI am excited to manage and guide product development from concept to completion in the Product Development department. This opportunity represents a significant step to further excel at directing and pioneering innovative solutions, ensuring that the products not only meet but exceed customer expectations.\n\nThank you for considering my application. I look forward to the possibility of contributing to [Company's Name] and am eager to discuss how my background, skills, and enthusiasms align with the goals of your esteemed organization. \n\nWarm regards,\n\nAva Li  \n\n[Attachment: Resume]",
+    "goldAnswers": {
+      "Applicant Name": "Ava Li",
+      "Position Applied For": "Product Manager",
+      "Preferred Department": "Product Development",
+      "Cover Letter": "I am excited to manage and guide product development from concept to completion in the Product Development department."
+    },
+    "multiPage": false,
+    "formPath": "/academic-research/job-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

@@ -1,0 +1,38 @@
+{
+  "formInstance": {
+    "formId": "job_applications",
+    "formName": "Job Application for University Positions",
+    "domain": "Academic & Research",
+    "instanceIndex": 5,
+    "inputDocument": "[Your Address]  \n[City, State, ZIP Code]  \n[Your Email Address]  \n[Your Phone Number]  \n\n[Date]  \n\nHiring Manager  \n[Company Name]  \n[Company Address]  \n[City, State, ZIP Code]  \n\nDear Hiring Manager,\n\nI am writing to express my interest in the position of Business Analyst within the Business Strategy department, as advertised. My name is Kevin Li, and I am enthusiastic about the opportunity to contribute to your team with my set of skills and professional experiences.\n\nThroughout my career, I have honed exceptional analytical skills and strategic thinking, which I am confident will make me a valuable asset to your Business Strategy team. I have a passion for deriving insights from data and a knack for developing strategies that not only streamline operations but also enhance business growth and profitability.\n\nMy dedication to continuously improving my craft, along with my ability to adapt in a dynamic work environment, aligns well with the core values of your organization. I am particularly excited about the prospect of utilizing my strategic acumen and analytical capabilities to drive impactful results within your department.\n\nThank you for considering my application. I am looking forward to the opportunity to discuss how my experiences and vision align with the goals of your team. Please feel free to contact me at your convenience.  \n\nWarmest regards,\n\nKevin Li",
+    "goldAnswers": {
+      "Applicant Name": "Kevin Li",
+      "Position Applied For": "Business Analyst",
+      "Preferred Department": "Business Strategy",
+      "Cover Letter": "I am confident that my analytical skills and strategic thinking will make me a valuable asset to the Business Strategy team."
+    },
+    "multiPage": false,
+    "formPath": "/academic-research/job-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

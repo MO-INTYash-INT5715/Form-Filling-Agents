@@ -22,119 +22,24 @@
     "formPath": "/legal-compliance/background-check"
   },
   "agentName": "rule-based",
-  "fieldResults": [
-    {
-      "fieldId": "firstName",
-      "fieldType": "String",
-      "predictedValue": "John",
-      "goldValue": "John",
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "middleName",
-      "fieldType": "String",
-      "predictedValue": "Michael",
-      "goldValue": "Michael",
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "lastName",
-      "fieldType": "String",
-      "predictedValue": "Doe",
-      "goldValue": "Doe",
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "ssn",
-      "fieldType": "String",
-      "predictedValue": "123-45-6789",
-      "goldValue": "123-45-6789",
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "dob",
-      "fieldType": "Date",
-      "predictedValue": "",
-      "goldValue": "1985-04-15",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "streetAddress",
-      "fieldType": "String",
-      "predictedValue": "123 Elm St",
-      "goldValue": "123 Elm St",
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "city",
-      "fieldType": "String",
-      "predictedValue": "Springfield",
-      "goldValue": "Springfield",
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "state",
-      "fieldType": "String",
-      "predictedValue": "",
-      "goldValue": "IL",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "zipCode",
-      "fieldType": "String",
-      "predictedValue": "62704",
-      "goldValue": "62704",
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "authorization",
-      "fieldType": "Checkbox",
-      "predictedValue": "true",
-      "goldValue": true,
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "truthfulness",
-      "fieldType": "Checkbox",
-      "predictedValue": "true",
-      "goldValue": true,
-      "clickAccurate": false,
-      "valueAccurate": true
-    }
-  ],
+  "fieldResults": [],
   "atomicMetrics": {
-    "clickAccuracy": {
-      "String": 0,
-      "Date": 0,
-      "Checkbox": 0
-    },
-    "valueAccuracy": {
-      "String": 87.5,
-      "Date": 0,
-      "Checkbox": 100
-    },
+    "clickAccuracy": {},
+    "valueAccuracy": {},
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 81.81818181818183
+    "overallValueAccuracy": 0
   },
   "episodicMetrics": {
-    "formCompletionRate": 81.81818181818183,
-    "fieldsAttempted": 9,
-    "fieldsCorrect": 9,
-    "totalFields": 11,
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 81.81818181818183
+    "averageValueAccuracy": 0
   },
-  "executionTimeMs": 1541,
-  "errors": [],
+  "executionTimeMs": 0,
+  "errors": [
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/legal-compliance/background-check\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/legal-compliance/background-check\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  ],
   "submissionSucceeded": false
 }

@@ -1,0 +1,55 @@
+{
+  "formInstance": {
+    "formId": "scholarship_applications",
+    "formName": "Scholarship Application for Students",
+    "domain": "Academic & Research",
+    "instanceIndex": 29,
+    "inputDocument": "Dear Scholarship Committee,\n\nI am writing to apply for the scholarship opportunity available to students pursuing a degree in Business Administration. My name is Donna Christopher Perry, and I am a freshman majoring in Business Administration at your institution.\n\nI have maintained a current GPA of 3.48, and I am dedicated to achieving academic excellence in my field of study. Despite facing financial challenges, I have not let it hinder my academic pursuits. I am currently not receiving any financial aid, and my family's annual income is $24,695.\n\nIn addition to my academic achievements, which include winning the National Science Fair and securing first place in the University Math Competition, I am actively involved in various extracurricular activities. I volunteer at the local community center, co-founded the Campus Startup Initiative, and am a proud member of the Environmental Awareness Club.\n\nReceiving this scholarship would significantly alleviate the financial burden on my family and allow me to fully focus on my studies. It will help me achieve my career goals in data science, where I aspire to make a meaningful contribution to addressing global challenges.\n\nMy academic referee, Michelle Franklin, can attest to my dedication and commitment to my studies. You may contact her at gonzalezjulia@smith.com for any further information regarding my academic pursuits.\n\nI am truly grateful for your consideration and the opportunity to apply for this scholarship. Thank you for your time and consideration.\n\nSincerely,\nDonna Christopher Perry\n75262573\nBusiness Administration\nFreshman",
+    "goldAnswers": {
+      "First Name": "Donna",
+      "Middle Name": "Christopher",
+      "Last Name": "Perry",
+      "Student ID": 75262573,
+      "Major/Field of Study": "Business Administration",
+      "Current GPA": 3.48,
+      "Academic Year": "Freshman",
+      "Current Financial Aid": "None",
+      "Annual Family Income": 24695,
+      "Academic Achievements": [
+        "Winner of the National Science Fair",
+        "First place in the University Math Competition"
+      ],
+      "Extracurricular Activities": [
+        "Volunteer at the local community center",
+        "Co-founder of the Campus Startup Initiative",
+        "Member of the Environmental Awareness Club"
+      ],
+      "Statement of Purpose": "This scholarship will allow me to focus on my studies and complete my degree without worrying about financial constraints. It will help me pursue a career in data science, where I plan to contribute to solving global challenges.",
+      "Academic Reference": "Michelle Franklin",
+      "Reference Email": "gonzalezjulia@smith.com"
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/scholarship-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

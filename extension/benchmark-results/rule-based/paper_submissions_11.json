@@ -1,0 +1,44 @@
+{
+  "formInstance": {
+    "formId": "paper_submissions",
+    "formName": "Paper Submission Form",
+    "domain": "Academic & Research",
+    "instanceIndex": 11,
+    "inputDocument": "Lucas Clark  \nScienceGroup  \nlucas.c@sciencegroup.org  \n\nDear Editorial Board,\n\nI am writing to formally submit my paper for your consideration in the upcoming issue of your esteemed journal. As someone deeply committed to advancing our understanding of environmental challenges, I am hopeful that my contributions will resonate with your audience and further critical discourse in this essential area.\n\nPlease find attached my manuscript titled, \"Climate Change: The Role of Carbon Emissions in Global Warming.\" In this paper, I meticulously analyze the relationship between carbon emissions and climate change. As an urgent global issue, understanding this relationship and working towards viable solutions is essential. Consequently, the manuscript also explores practical approaches to reducing emissions on an international scale, providing unique insights into addressing a problem that transcends national borders.\n\nAn abstract accompanies the manuscript, outlining our exploration of the link between carbon emissions and global climate patterns, indicating the breadth and depth of our analysis. I believe the insights presented within the paper hold significant value to researchers, policymakers, and environmental advocates alike.\n\nStrategically aligning under the category of \"Environmental Science,\" the central themes of the paper include \"Climate Change,\" \"Carbon Emissions,\" and \"Global Warming.\" These keywords reflect the focal points of the discourse and ensure the work is contextualized effectively within existing scientific narratives and discussions.\n\nIn closing, I believe this submission will be a meaningful addition to your journal's dedication to fostering informative and insightful academic dialogues. I am grateful for your consideration and look forward to the possibility of contributing to your upcoming issue.\n\nThank you for your time and consideration.\n\nWarm regards,  \nLucas Clark",
+    "goldAnswers": {
+      "Author Name": "Lucas Clark",
+      "Email": "lucas.c@sciencegroup.org",
+      "Paper Title": "Climate Change: The Role of Carbon Emissions in Global Warming",
+      "Abstract": "We analyze the relationship between carbon emissions and climate change, and propose solutions to reduce emissions on a global scale.",
+      "Keywords": [
+        "Climate Change",
+        "Carbon Emissions",
+        "Global Warming"
+      ],
+      "Paper Category": "Environmental Science"
+    },
+    "multiPage": false,
+    "formPath": "/academic-research/paper-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

@@ -1,0 +1,43 @@
+{
+  "formInstance": {
+    "formId": "Art_Exhibition_Submission_Form",
+    "formName": "Art Exhibition Submission Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 33,
+    "inputDocument": "Artist Kyle Wang submits \"Sunset on the Prairie\" for consideration at the upcoming art exhibition. Please contact Kyle at kyle.wang2001@yahoo.com for any correspondence regarding this submission. This artwork, created in 2022, is a Painting with dimensions measuring 90 x 70 x 3 cm. The painting depicts a breathtaking sunset over a vast prairie. The sky is ablaze with colors - oranges, pinks, and purples blend together as the sun slowly dips below the horizon. The tall, golden grass of the prairie sways gently in the evening breeze, casting long shadows. In the distance, a small herd of bison can be seen, their silhouettes adding to the sense of scale and the wildness of the landscape. The artist has used broad brushstrokes to capture the expanse of the prairie and the intensity of the sunset, creating a scene that evokes a feeling of awe and a connection to the natural world. This masterpiece is available for sale and Kyle Wang prefers its exhibition during the Spring 2024 period.",
+    "goldAnswers": {
+      "Artist Name": "Kyle Wang",
+      "Email Address": "kyle.wang2001@yahoo.com",
+      "Artwork Title": "Sunset on the Prairie",
+      "Medium": "Painting",
+      "Dimensions (in cm)": "90 x 70 x 3",
+      "Year Created": 2022,
+      "Artwork Description": "The painting depicts a breathtaking sunset over a vast prairie. The sky is ablaze with colors - oranges, pinks, and purples blend together as the sun slowly dips below the horizon. The tall, golden grass of the prairie sways gently in the evening breeze, casting long shadows. In the distance, a small herd of bison can be seen, their silhouettes adding to the sense of scale and the wildness of the landscape. The artist has used broad brushstrokes to capture the expanse of the prairie and the intensity of the sunset, creating a scene that evokes a feeling of awe and a connection to the natural world.",
+      "Preferred Exhibition Period": "Spring 2024",
+      "Artwork is available for sale": true
+    },
+    "multiPage": false,
+    "formPath": "/arts-creative/exhibition-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

@@ -1,0 +1,45 @@
+{
+  "formInstance": {
+    "formId": "student_courses",
+    "formName": "Student Course Registration Form",
+    "domain": "Academic & Research",
+    "instanceIndex": 40,
+    "inputDocument": "Subject: Course Enrollment Request for Fall 2025\n\nDear Enrollment Office,\n\nI am writing to formally request enrollment for the Fall 2025 semester in the Information Technology program at your esteemed institution. My name is Doris Marshall, and I am excited about the opportunity to further my education with your distinguished faculty and exemplary resources.\n\n**Student Details:**\n- Full Name: Doris Marshall\n- Student ID: 64576752\n- Email: ronniegilbert@yahoo.com\n- Phone Number: (218) 704-9937 x973\n\n**Course Selection:**\nAfter careful consideration of my academic path and career objectives, I have selected the following courses:\n1. CS104 - Web Development\n2. CS103 - Database Systems\n\nThese courses are integral to my educational goals and will provide critical knowledge in foundational areas I wish to specialize in.\n\n**Special Requirements or Comments:**\n\"Looking forward to exploring web development.\"\n\nPlease let me know if there are any additional documents or steps required to complete my registration. I am eager to ensure all procedures are thoroughly fulfilled for a seamless enrollment process. Thank you for considering my request.\n\nI look forward to your positive response and am keen to contribute meaningfully to the academic community at your institution.\n\nWarm regards,\n\nDoris Marshall  \nStudent ID: 64576752  \nEmail: ronniegilbert@yahoo.com",
+    "goldAnswers": {
+      "Full Name": "Doris Marshall",
+      "Student ID": 64576752,
+      "Email": "ronniegilbert@yahoo.com",
+      "Phone Number": "(218)704-9937x973",
+      "Semester": "Fall 2025",
+      "Program": "Information Technology",
+      "Selected Courses": [
+        "CS104 - Web Development",
+        "CS103 - Database Systems"
+      ],
+      "Special Requirements or Comments": "Looking forward to exploring web development."
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/course-registration"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

@@ -1,0 +1,53 @@
+{
+  "formInstance": {
+    "formId": "real_estate_rental_applications",
+    "formName": "Real Estate Rental Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 40,
+    "inputDocument": "Sean Morrison, currently residing at 174 Frances Hollow Suite 999, East Eric, Alabama, ZIP Code 47842, is submitting this rental application form. You may contact him via his email todd20@hotmail.com or through his phone number at (862)990-1445x838. Sean was born on 1969/10/03 and is an Architect with Wright PLC, where he has been employed for 2 years, earning a Monthly Income (USD) of 3618. He is seeking a property with a Preferred Move-in Date of 2025/01/18 and is interested in a Preferred Lease Term of 24 months. He has set a Maximum Monthly Rent (USD) of 1104 for his potential residence. Sean Morrison is particularly interested in properties within the Preferred Area of Downtown. He confirmed that he does have pets, specifying: \"If yes, please describe your pets,\" \"Dog, medium-sized.\" Additionally, he included the following statement: \"Additional Comments,\" \"Looking for a peaceful environment.\"",
+    "goldAnswers": {
+      "Full Name": "Sean Morrison",
+      "Email Address": "todd20@hotmail.com",
+      "Phone Number": "(862)990-1445x838",
+      "Date of Birth": "1969/10/03",
+      "Street Address": "174 Frances Hollow Suite 999",
+      "City": "East Eric",
+      "State": "Alabama",
+      "ZIP Code": "47842",
+      "Current Employer": "Wright PLC",
+      "Job Title": "Architect",
+      "Monthly Income (USD)": 3618,
+      "Length of Employment": "2 years",
+      "Preferred Move-in Date": "2025/01/18",
+      "Preferred Lease Term": "24 months",
+      "Maximum Monthly Rent (USD)": 1104,
+      "Preferred Area": "Downtown",
+      "Do you have any pets?": "Yes",
+      "If yes, please describe your pets": "Dog, medium-sized",
+      "Additional Comments": "Looking for a peaceful environment."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/rental-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

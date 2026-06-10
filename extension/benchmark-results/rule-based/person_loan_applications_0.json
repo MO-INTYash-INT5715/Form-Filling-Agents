@@ -18,87 +18,24 @@
     "formPath": "/finance-banking/personal-loan"
   },
   "agentName": "rule-based",
-  "fieldResults": [
-    {
-      "fieldId": "firstName",
-      "fieldType": "String",
-      "predictedValue": "John",
-      "goldValue": "John",
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "middleName",
-      "fieldType": "String",
-      "predictedValue": "Stephen",
-      "goldValue": "Stephen",
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "lastName",
-      "fieldType": "String",
-      "predictedValue": "Tran",
-      "goldValue": "Tran",
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "loanAmount",
-      "fieldType": "NumericInput",
-      "predictedValue": "",
-      "goldValue": 28521,
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "loanTerm",
-      "fieldType": "Dropdown",
-      "predictedValue": "60 months",
-      "goldValue": "60 months",
-      "clickAccurate": false,
-      "valueAccurate": true
-    },
-    {
-      "fieldId": "employmentStatus",
-      "fieldType": "Dropdown",
-      "predictedValue": "",
-      "goldValue": "Part time",
-      "clickAccurate": false,
-      "valueAccurate": false
-    },
-    {
-      "fieldId": "monthlyIncome",
-      "fieldType": "NumericInput",
-      "predictedValue": "",
-      "goldValue": 4569,
-      "clickAccurate": false,
-      "valueAccurate": false
-    }
-  ],
+  "fieldResults": [],
   "atomicMetrics": {
-    "clickAccuracy": {
-      "String": 0,
-      "NumericInput": 0,
-      "Dropdown": 0
-    },
-    "valueAccuracy": {
-      "String": 100,
-      "NumericInput": 0,
-      "Dropdown": 50
-    },
+    "clickAccuracy": {},
+    "valueAccuracy": {},
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 57.14285714285714
+    "overallValueAccuracy": 0
   },
   "episodicMetrics": {
-    "formCompletionRate": 57.14285714285714,
-    "fieldsAttempted": 4,
-    "fieldsCorrect": 4,
-    "totalFields": 7,
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 57.14285714285714
+    "averageValueAccuracy": 0
   },
-  "executionTimeMs": 1654,
-  "errors": [],
-  "submissionSucceeded": true
+  "executionTimeMs": 0,
+  "errors": [
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/finance-banking/personal-loan\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/finance-banking/personal-loan\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  ],
+  "submissionSucceeded": false
 }

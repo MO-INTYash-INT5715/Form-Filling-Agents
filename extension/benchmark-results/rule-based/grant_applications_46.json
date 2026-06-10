@@ -1,0 +1,40 @@
+{
+  "formInstance": {
+    "formId": "grant_applications",
+    "formName": "Grant or Research Funding Application",
+    "domain": "Academic & Research",
+    "instanceIndex": 46,
+    "inputDocument": "**Grant Application**\n\n**Applicant Information:**\n\n*Name:* Paula Williams  \n*Email:* margaretherman@lopez-christian.com  \n*Gender:* Male  \n*Date of Birth:* 1981/01/03  \n\nDear Grant Committee,\n\nMy name is Paula Williams, and I am writing to apply for the grant opportunity that could greatly benefit my ongoing projects and professional development. I came across the prospect of this grant with immense interest and enthusiasm, driven by a deep commitment to the work that I do and the positive impact it offers.\n\nDespite my male gender, my identity as Paula, a name often associated with female descendants, hence brings a unique perspective that fosters diversity and inclusivity. I consistently strive to bring my authentic self into all endeavors, celebrating the richness of varied experiences and backgrounds.\n\nFurthermore, I wish to assure you that relevant communications, updates, or further promotions align well with my professional objectives. However, I have opted not to subscribe to your newsletter. This decision stems from a desire to prioritize essential communications that are directly pertinent to my immediate goals and timelines.\n\nA vital aspect of my application is the reliability and accessibility facilitated through digital communication. You can always reach me through my email, margaretherman@lopez-christian.com, for any necessary feedback or correspondence. I welcome this in the spirit of collaboration and reciprocity.\n\nI express my genuine gratitude for evaluating my application and the possibility of advancing my endeavors with your support. I am steadfastly committed to enacting meaningful change and warmly anticipate the opportunity to embark on this journey with such esteemed guidance and resources.\n\nYours sincerely,\n\nPaula Williams",
+    "goldAnswers": {
+      "First Name": "Paula",
+      "Last Name": "Williams",
+      "Email": "margaretherman@lopez-christian.com",
+      "Gender": "Male",
+      "Date of Birth": "1981/01/03",
+      "Subscribe to Newsletter": false
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/grant-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

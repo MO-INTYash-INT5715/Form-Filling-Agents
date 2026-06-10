@@ -1,0 +1,45 @@
+{
+  "formInstance": {
+    "formId": "Literary_Magazine_Submission",
+    "formName": "Literary Magazine Submission Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 16,
+    "inputDocument": "Sophia Wright is pleased to submit her work titled \"Fading Echoes\" for consideration in your esteemed literary magazine. This piece falls within the genre of Poetry and consists of a Word Count of 120. This submission is intended for the Spring 2024 issue. The Abstract/Summary of \"Fading Echoes\" is as follows: \"A poetic exploration of love, loss, and the inevitable passage of time.\" Sophia confirms that this work has not been previously published and wishes to note that this is a simultaneous submission. Although the Manuscript File is not attached at this time, Sophia agrees to the submission guidelines and terms of publication. For any further communication, she can be reached via her Email Address: sophia.wright61@icloud.com.",
+    "goldAnswers": {
+      "Author Name": "Sophia Wright",
+      "Email Address": "sophia.wright61@icloud.com",
+      "Title": "Fading Echoes",
+      "Genre": "Poetry",
+      "Word Count": 120,
+      "Abstract/Summary": "A poetic exploration of love, loss, and the inevitable passage of time.",
+      "Manuscript File": "None",
+      "Preferred Issue": "Spring 2024",
+      "This work has been previously published": "No",
+      "This is a simultaneous submission": "Yes",
+      "I agree to the submission guidelines and terms of publication": "Yes"
+    },
+    "multiPage": false,
+    "formPath": "/arts-creative/literary-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

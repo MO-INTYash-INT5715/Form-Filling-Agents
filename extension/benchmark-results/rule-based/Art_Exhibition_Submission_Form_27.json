@@ -1,0 +1,43 @@
+{
+  "formInstance": {
+    "formId": "Art_Exhibition_Submission_Form",
+    "formName": "Art Exhibition Submission Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 27,
+    "inputDocument": "Ethan Zhang is delighted to submit his artwork \"Lunar Odyssey\" for consideration in your esteemed art exhibition. You may contact him via email at ethan.zhang1997@hotmail.com. This piece is a profound example of Digital Art, with dimensions measuring 120 x 100 x 0 cm, created in the year 2023. \"Lunar Odyssey is a digital creation that takes the viewer on a journey to the moon. The lunar landscape is depicted in incredible detail, with crater - pocked terrain stretching out as far as the eye can see. A spacesuit - clad figure stands on a hilltop, looking out at the vast expanse of the moon, with the Earth in the background, a beautiful blue and white orb. The use of soft, muted colors for the moon and the bright, vivid colors for the Earth creates a stark contrast, emphasizing the difference between the two celestial bodies. It evokes a sense of wonder and the vastness of space exploration.\" Ethan prefers the artwork to be exhibited during Spring 2024 and notes that this artwork is not available for sale.",
+    "goldAnswers": {
+      "Artist Name": "Ethan Zhang",
+      "Email Address": "ethan.zhang1997@hotmail.com",
+      "Artwork Title": "Lunar Odyssey",
+      "Medium": "Digital Art",
+      "Dimensions (in cm)": "120 x 100 x 0",
+      "Year Created": 2023,
+      "Artwork Description": "Lunar Odyssey is a digital creation that takes the viewer on a journey to the moon. The lunar landscape is depicted in incredible detail, with crater - pocked terrain stretching out as far as the eye can see. A spacesuit - clad figure stands on a hilltop, looking out at the vast expanse of the moon, with the Earth in the background, a beautiful blue and white orb. The use of soft, muted colors for the moon and the bright, vivid colors for the Earth creates a stark contrast, emphasizing the difference between the two celestial bodies. It evokes a sense of wonder and the vastness of space exploration.",
+      "Preferred Exhibition Period": "Spring 2024",
+      "Artwork is available for sale": false
+    },
+    "multiPage": false,
+    "formPath": "/arts-creative/exhibition-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

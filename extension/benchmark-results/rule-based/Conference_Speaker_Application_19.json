@@ -1,0 +1,48 @@
+{
+  "formInstance": {
+    "formId": "Conference_Speaker_Application",
+    "formName": "Conference Speaker Application Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 19,
+    "inputDocument": "Ella Mitchell, affiliated with the Modern Arts Association, is applying to speak on the topic of Performing Arts. Her presentation, titled The Role of Dance in Cultural Identity, is designed to delve into the connections between dance and cultural identity, examining the ways in which various cultures articulate their traditions and values through movement. Her Presentation Abstract highlights the exploration of dance's history and evolution as a storytelling medium integral to cultural identity. Through the Learning Objectives, attendees will gain insights to understand the role of dance in cultural identity, explore the history of dance as a form of storytelling, and learn how contemporary dance is preserving cultural traditions.\n\nElla's Professional Biography demonstrates her expertise, highlighting her work as a dancer, choreographer, and cultural advocate, with numerous projects at the intersection of dance and cultural heritage. Her Previous Speaking Experience includes being a speaker at the International Dance Conference 2023 and serving as a workshop leader at the Dance and Identity Symposium 2022. Ella plans to deliver her presentation in a Lecture format and requires specific Special Technical Requirements, including a projector, sound system, and dance floor.\n\nAll inquiries regarding this application can be directed to her via email at ella.mitchell65@icloud.com or by phone at 567-890-2345. Ella confirms her commitment to the conference by agreeing to the speaker guidelines and terms of participation.",
+    "goldAnswers": {
+      "Full Name": "Ella Mitchell",
+      "Email Address": "ella.mitchell65@icloud.com",
+      "Phone Number": "567-890-2345",
+      "Organization/Institution": "Modern Arts Association",
+      "Presentation Title": "The Role of Dance in Cultural Identity",
+      "Topic Area": "Performing Arts",
+      "Presentation Abstract": "This presentation will explore the role of dance in cultural identity and how different cultures express their traditions and values through movement. We will discuss the history and evolution of dance as a form of cultural storytelling.",
+      "Learning Objectives": "1. Understand the role of dance in cultural identity. 2. Explore the history of dance as a form of storytelling. 3. Learn how contemporary dance is preserving cultural traditions.",
+      "Professional Biography": "Ella Mitchell is a dancer, choreographer, and cultural advocate. She has worked on projects that explore the intersection of dance and cultural heritage.",
+      "CV/Resume": "None",
+      "Previous Speaking Experience": "1. Speaker at International Dance Conference 2023. 2. Workshop leader at Dance and Identity Symposium 2022.",
+      "Presentation Format": "Lecture",
+      "Special Technical Requirements": "Projector, sound system, dance floor.",
+      "I agree to the speaker guidelines and terms of participation": "Yes"
+    },
+    "multiPage": true,
+    "formPath": "/arts-creative/speaker-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

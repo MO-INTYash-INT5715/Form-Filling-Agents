@@ -48,10 +48,10 @@
     {
       "fieldId": "medium",
       "fieldType": "Dropdown",
-      "predictedValue": "Painting",
+      "predictedValue": "",
       "goldValue": "Painting",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "Dimensions (in cm)",
@@ -80,18 +80,18 @@
     {
       "fieldId": "exhibition_period",
       "fieldType": "Dropdown",
-      "predictedValue": "Spring 2024",
+      "predictedValue": "",
       "goldValue": "Spring 2024",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "for_sale",
       "fieldType": "Checkbox",
-      "predictedValue": "true",
+      "predictedValue": "",
       "goldValue": true,
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     }
   ],
   "atomicMetrics": {
@@ -102,25 +102,25 @@
     },
     "valueAccuracy": {
       "String": 0,
-      "Dropdown": 100,
-      "Checkbox": 100
+      "Dropdown": 0,
+      "Checkbox": 0
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 33.33333333333333
+    "overallValueAccuracy": 0
   },
   "episodicMetrics": {
-    "formCompletionRate": 33.33333333333333,
-    "fieldsAttempted": 3,
-    "fieldsCorrect": 3,
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
     "totalFields": 9,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 33.33333333333333
+    "averageValueAccuracy": 0
   },
-  "executionTimeMs": 1656,
+  "executionTimeMs": 1654,
   "errors": [],
   "submissionSucceeded": true,
-  "tokensIn": 662,
-  "tokensOut": 215,
-  "llmTimeMs": 4951,
-  "llmCalls": 1
+  "tokensIn": 0,
+  "tokensOut": 0,
+  "llmTimeMs": 0,
+  "llmCalls": 0
 }

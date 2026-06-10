@@ -1,0 +1,45 @@
+{
+  "formInstance": {
+    "formId": "Literary_Magazine_Submission",
+    "formName": "Literary Magazine Submission Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 46,
+    "inputDocument": "Author Evelyn Green submits her piece, \"Fleeting Shadows,\" to your esteemed literary magazine. The submission, categorized under Poetry, is a concise yet impactful work with a Word Count of 80. The Abstract/Summary reads: \"A poetic reflection on fleeting moments and the beauty of impermanence.\" Evelyn, who has ensured adherence to the submission guidelines, has provided consent by confirming the agreement to the submission guidelines and terms of publication. This piece is a new creation, as indicated by the response, \"This work has been previously published: No.\" Please note that this is a simultaneous submission. While a Manuscript File has not been included, Evelyn expresses a preference for inclusion in the Summer 2024 issue. She can be reached via Email Address at evelyn.green23@icloud.com for any further communication regarding this submission.",
+    "goldAnswers": {
+      "Author Name": "Evelyn Green",
+      "Email Address": "evelyn.green23@icloud.com",
+      "Title": "Fleeting Shadows",
+      "Genre": "Poetry",
+      "Word Count": 80,
+      "Abstract/Summary": "A poetic reflection on fleeting moments and the beauty of impermanence.",
+      "Manuscript File": "None",
+      "Preferred Issue": "Summer 2024",
+      "This work has been previously published": "No",
+      "This is a simultaneous submission": "Yes",
+      "I agree to the submission guidelines and terms of publication": "Yes"
+    },
+    "multiPage": false,
+    "formPath": "/arts-creative/literary-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

@@ -1,0 +1,44 @@
+{
+  "formInstance": {
+    "formId": "paper_submissions",
+    "formName": "Paper Submission Form",
+    "domain": "Academic & Research",
+    "instanceIndex": 4,
+    "inputDocument": "Sophia Williams  \nEmail: sophia.w@engineeringuniversity.com  \n\n[Date]\n\nTo the Esteemed Members of the Conference/Paper Committee,\n\nI am writing to submit my research paper entitled \"Advanced Materials for Renewable Energy Technologies\" for your esteemed consideration. This paper is under the category of Materials Science and details groundbreaking advancements in this vital area.\n\nIn brief, the focus of the paper is on the transformative role that new materials play in enhancing the efficiency of renewable energy systems. Within the paper, I delve into the specifics of how these materials are pivotal in advancing technologies like solar cells and wind turbines. The integration of these advanced materials leads not only to increased efficiency but also promotes growth in the burgeoning field of renewable energy technologies. The results and analysis contained herein align with the overarching goal of engineering sustainable solutions to combat climate change.\n\nThe core keywords that encapsulate my paper's central themes are \"Renewable Energy,\" \"Materials Science,\" and \"Sustainability.\" These keywords reflect both the technical focus and the broader impact of the research, aiming to contribute valuable knowledge and encourage further exploration within the scientific community.\n\nThank you for considering my submission. I am looking forward to the possibility of engaging more about the insights presented in this work and am hopeful it will spark fertile discussions during your upcoming conference/session.\n\nSincerely,\n\nSophia Williams  \nMaterials Science Department  \nEngineering University  \n\nEmail: sophia.w@engineeringuniversity.com",
+    "goldAnswers": {
+      "Author Name": "Sophia Williams",
+      "Email": "sophia.w@engineeringuniversity.com",
+      "Paper Title": "Advanced Materials for Renewable Energy Technologies",
+      "Abstract": "This paper highlights the role of new materials in the development of efficient renewable energy systems, such as solar cells and wind turbines.",
+      "Keywords": [
+        "Renewable Energy",
+        "Materials Science",
+        "Sustainability"
+      ],
+      "Paper Category": "Materials Science"
+    },
+    "multiPage": false,
+    "formPath": "/academic-research/paper-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

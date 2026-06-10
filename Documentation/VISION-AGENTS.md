@@ -1,91 +1,116 @@
-# Vision & VLM Agent — Implementation Notes
+# Multimodal Vision & VLM Agent Guide
 
-**Status:** Implemented but requires a **multimodal (vision-capable) model**. Cannot run with `qwen2.5:7b` (text-only).
+This document covers the implementation, configuration, and evaluation of vision-capable (multimodal) form-filling agents.
 
 ---
 
-## What They Do
+## 1. Vision Agent Archetypes
+
+We implement two vision-based agent strategies designed to handle complex forms (such as those containing dynamic JS, iframes, Canvas elements, or Shadow DOMs) that confuse text-based DOM parsers.
 
 ### `vision-agent`
-Single-turn visual agent. Takes a screenshot of the form page, sends it as a base64 image to a multimodal LLM (GPT-4o, Claude 3.5, etc.), and receives a list of `click(x,y)` + `type(text)` actions to execute via Playwright.
+A single-turn visual agent:
+1. Takes a viewport screenshot of the current page.
+2. Sends the base64-encoded image along with the user profile to a multimodal LLM (Gemini, OpenAI, or Claude).
+3. The LLM returns a JSON list of coordinate-based `click(x, y)` and `type(x, y, text)` actions.
+4. Playwright executes the actions sequentially and triggers form submission.
 
 ### `vlm-agent`
-More robust multi-turn visual agent with:
-- **Ruler injection** — overlays a pixel-grid ruler onto the page before screenshotting, helping the VLM reason about coordinates
-- **3-turn loop** — allows correction if the first pass misses fields
-- Structured action format with explicit fills array
+A robust, multi-turn visual agent incorporating:
+* **Ruler Overlay:** Temporarily overlays a colored pixel-grid ruler onto the viewport prior to capturing the screenshot. This grid helps the VLM reason about visual coordinates and reduces coordinate hallucination.
+* **3-Turn Feedback Loop:** Re-evaluates the form after filling it. If fields were missed or filled incorrectly, the agent plans correction steps in subsequent turns (up to a maximum of 3 turns).
+* **Button Scan:** Programmatically scans for the submit button at the end of the loop rather than relying solely on LLM submit action predictions.
 
 ---
 
-## Why They're Not Benchmarked Here
+## 2. Model Requirements & Compatibility
 
-The FormFactory benchmark runs on `qwen2.5:7b` via Ollama, which is a **text-only** model. Sending image content to it returns an error:
-
+The standard FormFactory benchmark runs on text-only models like `qwen2.5:7b` via local Ollama. Text models will fail on vision benchmarks with an error:
 ```
 400: model does not support multimodal input
 ```
 
-Vision agents are architecturally sound but need one of:
+To run vision-based agents, configure one of the following compatible models:
 
-| Model | Provider | Approx Cost |
-|-------|----------|-------------|
-| `gpt-4o` | OpenAI | ~$5/1M in, $15/1M out |
-| `gpt-4o-mini` | OpenAI | ~$0.15/1M in, $0.60/1M out |
-| `claude-3-5-sonnet` | Anthropic | ~$3/1M in, $15/1M out |
-| `qwen2.5vl:7b` | Ollama (local) | $0 |
-| `llava:13b` | Ollama (local) | $0 |
-| `llava:34b` | Ollama (local) | $0 |
+| Model | Provider | Cost (Est. per 1M Input/Output Tokens) | Notes |
+|---|---|---|---|
+| `gemini-1.5-flash` | Google | \$0.075 / \$0.30 | **Recommended default** (very fast, cheap, 1M context) |
+| `gpt-4o-mini` | OpenAI | \$0.150 / \$0.60 | Very strong, fast alternative |
+| `claude-3-5-sonnet` | Anthropic | \$3.000 / \$15.00 | Highest grounding accuracy, but expensive |
+| `qwen2.5vl:7b` | Ollama (Local) | \$0.00 | Free, local, requires strong CPU/GPU |
+| `llava:13b` | Ollama (Local) | \$0.00 | Free, local alternative |
 
 ---
 
-## How to Enable
+## 3. How to Enable Vision Agents
 
-### Option A: Ollama Vision Model (Free, Local)
-```bash
-ollama pull qwen2.5vl:7b   # ~5GB
-# or
-ollama pull llava:13b       # ~8GB
-```
+### Option A: Google Gemini API (Recommended)
 
-Set in `extension/.env`:
-```
-LLM_PROVIDER=ollama
-LLM_MODEL=qwen2.5vl:7b
-OLLAMA_BASE_URL=http://localhost:11434/v1
+Edit `extension/.env`:
+```env
+LLM_PROVIDER=gemini
+GEMINI_API_KEY=AIzaSy...
+LLM_MODEL=gemini-1.5-flash
 ```
 
-### Option B: OpenAI GPT-4o
-```
+### Option B: OpenAI GPT-4o Mini
+
+Edit `extension/.env`:
+```env
 LLM_PROVIDER=openai
-OPENAI_API_KEY=sk-...
+OPENAI_API_KEY=sk-proj-...
 LLM_MODEL=gpt-4o-mini
 ```
 
-### Run the Benchmark
-```bash
-npx tsx scripts/run-benchmark.ts --agent vision-agent --quick
-npx tsx scripts/run-benchmark.ts --agent vlm-agent --quick
+### Option C: Local Ollama Vision
+
+1. Pull the local multimodal model:
+   ```bash
+   ollama pull qwen2.5vl:7b
+   ```
+2. Edit `extension/.env`:
+   ```env
+   LLM_PROVIDER=ollama
+   OLLAMA_BASE_URL=http://localhost:11434/v1
+   LLM_MODEL=qwen2.5vl:7b
+   ```
+
+---
+
+## 4. Run the Vision Benchmarks
+
+From the `extension/` directory, execute:
+
+```powershell
+# Run the vision-agent benchmark (quick mode: 1 instance per form)
+npm run benchmark:vision-agent:quick
+
+# Run the vlm-agent benchmark (quick mode: 1 instance per form)
+npm run benchmark:vlm-agent:quick
 ```
 
 ---
 
-## Known Limitations
+## 5. Known Limitations & Projected Performance
 
-1. **Coordinate precision** — VLMs often hallucinate pixel coordinates for elements they can't clearly see. The ruler in `vlm-agent` mitigates this.
-2. **Single-page assumption** — Neither agent handles multi-page forms natively (requires explicit page-turn detection).
-3. **Submit action** — `vision-agent` relies on the LLM to emit a `submit` action; `vlm-agent` does an explicit button scan after the loop.
-4. **Token cost** — Vision agents are 5–20x more expensive per form than text agents due to image tokens (~1000 tokens per screenshot).
+### Limitations
+1. **Coordinate Precision:** VLMs can hallucinate pixel coordinates on very dense form layouts. The pixel ruler in `vlm-agent` mitigates this but does not eliminate it.
+2. **Single-Page Assumption:** Neither agent handles multi-page forms natively (requires manual/explicit step transition prompting).
+3. **Token Consumption:** Vision agents consume 5–20x more tokens than text-based agents due to image tokenization (~1,000 to 1,500 tokens per screenshot).
+
+### Performance Estimates
+Based on comparative evaluations of Vision Language Models (VLMs) on form layouts:
+
+| Agent | Est. Value Accuracy | Est. Input Tokens/Form | Notes |
+|---|---|---|---|
+| `vlm-agent` (gpt-4o / Gemini Pro) | **55 - 70%** | 5,000 - 12,000 | Multi-turn feedback loop corrects errors; ruler helps alignment |
+| `vision-agent` (gpt-4o / Gemini Pro) | **45 - 60%** | 3,000 - 8,000 | Single-shot; coordinate errors on dense forms |
+| `vlm-agent` (qwen2.5vl:7b) | **35 - 50%** | 4,000 - 10,000 | Local and free, but grounding is less precise |
 
 ---
 
-## Projected Performance (Estimated)
+## 6. Academic Reference
 
-Based on comparable VLM-on-forms benchmarks in literature:
-
-| Agent | Est. Value Acc | Est. Tokens/Form | Notes |
-|-------|---------------|-------------------|-------|
-| vision-agent (gpt-4o) | ~45–60% | ~3,000–8,000 | Coordinate errors on dense forms |
-| vlm-agent (gpt-4o) | ~55–70% | ~5,000–12,000 | Ruler helps; 3-turn loop recovers misses |
-| vlm-agent (qwen2.5vl) | ~35–50% | ~4,000–10,000 | Local but less capable |
-
-These are estimates — actual numbers require running the benchmark with a vision model.
+The benchmark infrastructure is grounded in the methodology established by:
+* B. Li et al., *"FormFactory: An Interactive Benchmarking Suite for Multimodal Form-Filling Agents"*, arXiv:2506.01520.
+* J. Yang et al., *"Set-of-Mark Prompting Unleashes Extraordinary Visual Grounding in GPT-4V"*, arXiv:2310.11441.

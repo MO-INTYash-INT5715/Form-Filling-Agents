@@ -1,0 +1,54 @@
+{
+  "formInstance": {
+    "formId": "scholarship_applications",
+    "formName": "Scholarship Application for Students",
+    "domain": "Academic & Research",
+    "instanceIndex": 23,
+    "inputDocument": "**Scholarship Application**\n\n**Name:** April Harold Kelly  \n**Student ID:** 43526453  \n**Major/Field of Study:** Mathematics  \n**Current GPA:** 2.76  \n**Academic Year:** Senior  \n**Current Financial Aid:** None  \n**Annual Family Income:** $69,936  \n\nDear Scholarship Committee,\n\nI am writing to express my sincere interest in applying for the scholarship opportunity provided by your esteemed organization. My name is April Harold Kelly, a dedicated senior currently pursuing a degree in Mathematics. Although my current GPA stands at 2.76, I have consistently engaged in rigorous academic and extracurricular activities, demonstrating my commitment to both my field of study and my overall personal development.\n\nThroughout my academic journey, I have had notable achievements that underscore my passion for mathematics and its applications. I proudly secured the first place in the University Math Competition, an experience that sharpened my problem-solving skills and allowed me to utilize my mathematical knowledge in a competitive setting. Additionally, I contributed to the academic community by publishing a research paper in the International Journal of Engineering, which further strengthened my analytical and research capabilities.\n\nBeyond academics, I actively participate in extracurricular activities that enrich my university experience. As a member of the University Debate Team, I have honed my public speaking and critical thinking skills, finding that engaging in discourse and diverse perspectives enhances my own understanding of complex issues. Additionally, my involvement in the Environmental Awareness Club reflects my commitment to sustainability and social responsibility, an interest that aligns with my long-term goals.\n\nHowever, despite my dedication and achievements, I face financial challenges that could impede my continued education. My family’s annual income is $69,936, and currently, I do not receive any financial aid, placing significant pressure on me as I approach the culmination of my studies. This scholarship would alleviate some of that burden, allowing me to focus on my academic pursuits without the constraints of financial worries.\n\nMy statement of purpose encapsulates the essence of my academic journey: I am deeply passionate about advancing my knowledge in the field of environmental science. This scholarship will enable me to continue my studies without the pressure of financial burdens, allowing me to apply the insights I gain towards making a tangible impact in sustainable development.\n\nI would be genuinely grateful for the opportunity to honor this scholarship and the values it represents. I have consistently worked hard to exemplify what it means to be a conscientious student and a contributing member of my community.  \n\nFor any further information, please contact my academic reference, Lisa Taylor, at wbailey@johnson.net.\n\nThank you for considering my application. I am hopeful for the opportunity to further my education and, in doing so, contribute positively to my community and beyond. \n\nSincerely,  \nApril Harold Kelly  \n```  \n[End of Application]  \n```",
+    "goldAnswers": {
+      "First Name": "April",
+      "Middle Name": "Harold",
+      "Last Name": "Kelly",
+      "Student ID": 43526453,
+      "Major/Field of Study": "Mathematics",
+      "Current GPA": 2.76,
+      "Academic Year": "Senior",
+      "Current Financial Aid": "None",
+      "Annual Family Income": 69936,
+      "Academic Achievements": [
+        "First place in the University Math Competition",
+        "Published a research paper in the International Journal of Engineering"
+      ],
+      "Extracurricular Activities": [
+        "Member of the University Debate Team",
+        "Member of the Environmental Awareness Club"
+      ],
+      "Statement of Purpose": "I am deeply passionate about advancing my knowledge in the field of environmental science. This scholarship will enable me to continue my studies without the pressure of financial burdens, and I plan to use the knowledge gained to make an impact in sustainable development.",
+      "Academic Reference": "Lisa Taylor",
+      "Reference Email": "wbailey@johnson.net"
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/scholarship-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

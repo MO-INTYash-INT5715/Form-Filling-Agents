@@ -1,0 +1,48 @@
+{
+  "formInstance": {
+    "formId": "Conference_Speaker_Application",
+    "formName": "Conference Speaker Application Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 41,
+    "inputDocument": "Charlotte Evans, representing the Creative Writing Hub, is pleased to submit her application for the upcoming conference, presenting on \"Exploring the Art of Writing Short Stories for Anthologies\" within the Topic Area of Creative Writing. Her Presentation Abstract details the exploration of writing short stories intended specifically for anthologies, focusing on crafting engaging, self-contained narratives that align with the theme and scope of a collective work while highlighting an author's distinct voice. Attendees will achieve Learning Objectives such as learning how to write effective short stories for anthologies, understanding the balance between creativity and fitting a theme, and exploring the process of submitting stories to anthologies.\n\nCharlotte Evans boasts a Professional Biography highlighting her extensive experience as a short story writer and editor, with numerous contributions to anthologies. Her current role as an editor for a prestigious literary journal dedicated to short fiction further underscores her expertise. Despite not having a CV/Resume attached, her Previous Speaking Experience includes being a Speaker at the Short Story Writing Conference 2023 and serving as a Panelist at the Creative Writing Symposium 2022, establishing her credibility. She intends to deliver her presentation as a Workshop and requires a projector, handouts, and computer to meet her Special Technical Requirements. Charlotte unequivocally agrees to the speaker guidelines and terms of participation. Should you need to reach her, she is available via email at charlotte.evans33@aol.com or by phone at 234-567-8902.",
+    "goldAnswers": {
+      "Full Name": "Charlotte Evans",
+      "Email Address": "charlotte.evans33@aol.com",
+      "Phone Number": "234-567-8902",
+      "Organization/Institution": "Creative Writing Hub",
+      "Presentation Title": "Exploring the Art of Writing Short Stories for Anthologies",
+      "Topic Area": "Creative Writing",
+      "Presentation Abstract": "This presentation will focus on the craft of writing short stories specifically for inclusion in anthologies. We will cover how to create engaging, self-contained stories that fit within the theme and scope of a collective work, while still showcasing the author's unique voice.",
+      "Learning Objectives": "1. Learn how to write effective short stories for anthologies. 2. Understand the balance between creativity and fitting a theme. 3. Explore the process of submitting stories to anthologies.",
+      "Professional Biography": "Charlotte Evans is a short story writer and editor who has contributed to numerous anthologies. She also works as an editor for a leading literary journal that focuses on short fiction.",
+      "CV/Resume": "None",
+      "Previous Speaking Experience": "1. Speaker at Short Story Writing Conference 2023. 2. Panelist at Creative Writing Symposium 2022.",
+      "Presentation Format": "Workshop",
+      "Special Technical Requirements": "Projector, handouts, computer.",
+      "I agree to the speaker guidelines and terms of participation": "Yes"
+    },
+    "multiPage": true,
+    "formPath": "/arts-creative/speaker-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

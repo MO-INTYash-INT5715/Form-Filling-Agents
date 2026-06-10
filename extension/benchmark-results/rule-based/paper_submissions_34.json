@@ -1,0 +1,44 @@
+{
+  "formInstance": {
+    "formId": "paper_submissions",
+    "formName": "Paper Submission Form",
+    "domain": "Academic & Research",
+    "instanceIndex": 34,
+    "inputDocument": "**Paper Submission Application**\n\n**Author:**  \nSophia Brown  \nHealthTech Organization  \nEmail: sophia.brown@healthtech.org  \n\n**Application Submission for Review**\n\nTo Whom It May Concern,  \n\nI am writing to formally submit my paper, \"Telemedicine: The Future of Remote Healthcare,\" to be considered for publication within the esteemed domain of Healthcare Technology. Please find the requisite details of my submission below.\n\n**Paper Overview:**  \n\nWith the relentless advancements in technology, the integration of telemedicine is heralding a transformation in how healthcare services are delivered. The focus of my paper two-foldly captures the escalating significance of telemedicine: one, it delineates how digital health modalities are revolutionizing the accessibility and delivery system in the realm of healthcare services, and two, it details these transformations specifically within underrepresented regions (utilizing my in-depth research and data synthesis). Such evolutions are positioned to offer the communities distinct improvements through innovative remote services.  \n\n**Abstract:**  \n\nThis paper explores the growing role of telemedicine in providing accessible and efficient healthcare, particularly in underserved regions.\n\n**Keywords:**  \n\n- Telemedicine  \n- Healthcare  \n- Remote Services  \n\nPresented under the pertinent category of Healthcare Technology, the study scrutinizes and explicates the utility of telemedicine not merely as a dandy auxiliary but as a linchpin for holistic and inclusive healthcare systems globally.\n\nI sincerely hope for this submission to illuminate valuable insights supporting futuristic approaches in healing and prevention, bridging the gap fostered by conventional healthcare models. It is an endeavor backed by deep-seated research and a fervency to augment the landscape of health services universally.\n\nThank you for considering this submission, and I keenly anticipate the possibility of engaging with peers through your platform.\n\nKind regards,  \n\nSophia Brown  \nResearcher, HealthTech Organization",
+    "goldAnswers": {
+      "Author Name": "Sophia Brown",
+      "Email": "sophia.brown@healthtech.org",
+      "Paper Title": "Telemedicine: The Future of Remote Healthcare",
+      "Abstract": "This paper explores the growing role of telemedicine in providing accessible and efficient healthcare, particularly in underserved regions.",
+      "Keywords": [
+        "Telemedicine",
+        "Healthcare",
+        "Remote Services"
+      ],
+      "Paper Category": "Healthcare Technology"
+    },
+    "multiPage": false,
+    "formPath": "/academic-research/paper-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

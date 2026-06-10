@@ -1,0 +1,53 @@
+{
+  "formInstance": {
+    "formId": "real_estate_rental_applications",
+    "formName": "Real Estate Rental Application",
+    "domain": "Professional & Business",
+    "instanceIndex": 45,
+    "inputDocument": "Bradley Jenkins, currently residing at 96947 Ritter Trail, Evansfort, New Jersey, 50197, wishes to submit this rental application for your consideration. Born on 1971/04/23, Mr. Jenkins is a seasoned professional currently employed as the Chief Operating Officer at Turner-Gutierrez, where he has been successfully serving for the past 5 years. With a monthly income of USD 10,720, he confidently seeks a rental property with a maximum monthly rent of USD 3,137. He intends to relocate by the preferred move-in date of 2025/01/21, and he is looking for a lease term of 6 months. Mr. Jenkins prefers an apartment located \"Near public transport,\" ensuring easy access to work and other amenities. He does not have any pets, as indicated by his response: \"No pets.\" Moreover, he added, \"Prefer quiet and residential areas,\" which reflects his desire for a peaceful living environment. For further correspondence, please reach out to him via email at goodkeith@hotmail.com or by phone at (721)455-9059.",
+    "goldAnswers": {
+      "Full Name": "Bradley Jenkins",
+      "Email Address": "goodkeith@hotmail.com",
+      "Phone Number": "(721)455-9059",
+      "Date of Birth": "1971/04/23",
+      "Street Address": "96947 Ritter Trail",
+      "City": "Evansfort",
+      "State": "New Jersey",
+      "ZIP Code": "50197",
+      "Current Employer": "Turner-Gutierrez",
+      "Job Title": "Chief Operating Officer",
+      "Monthly Income (USD)": 10720,
+      "Length of Employment": "5 years",
+      "Preferred Move-in Date": "2025/01/21",
+      "Preferred Lease Term": "6 months",
+      "Maximum Monthly Rent (USD)": 3137,
+      "Preferred Area": "Near public transport",
+      "Do you have any pets?": "No",
+      "If yes, please describe your pets": "No pets",
+      "Additional Comments": "Prefer quiet and residential areas."
+    },
+    "multiPage": true,
+    "formPath": "/professional-business/rental-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

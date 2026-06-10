@@ -1,0 +1,51 @@
+{
+  "formInstance": {
+    "formId": "workshop_registrations",
+    "formName": "Educational Workshop Registration",
+    "domain": "Professional & Business",
+    "instanceIndex": 9,
+    "inputDocument": "Subject: Workshop Registration Request for Continuing Education\n\nDear Workshop Coordinator,\n\nI am writing to formally register for the upcoming workshop in the Business & Management category, which I believe will significantly enhance my professional development. My name is Tracy Bell, currently serving as a Marketing executive at Smith, Lopez and Garrett. I hold a Master's Degree and bring with me 8 years of professional experience, reflecting my dedication to continuous learning and growth within my field.\n\nI am particularly interested in attending the session on 2025/01/19 at 12PM. I would prefer the workshop to be conducted In-Person, as it complements my interactive learning style. My aim in participating is to further my understanding, specifically wishing to learn more about how to manage and lead teams in dynamic work environments. Additionally, I am particularly interested in understanding how to develop an effective digital marketing strategy for a startup.\n\nFor logistical purposes, please note my dietary requirement for Kosher meals. I do not have any accessibility requirements at this time. I will be settling the payment via Bank Transfer and would kindly request that any relevant billing information be sent to my Billing Address at: 9856 Tara Parks, Nicoleton, OR 93221.\n\nShould you need any more information, please feel free to contact me at hayesmarissa@carr.net or via phone at 001-815-387-6045x44798.\n\nThank you for considering my registration request. I eagerly anticipate the opportunity to learn and contribute.\n\nSincerely,\n\nTracy Bell",
+    "goldAnswers": {
+      "Full Name": "Tracy Bell",
+      "Email Address": "hayesmarissa@carr.net",
+      "Phone Number": "001-815-387-6045x44798",
+      "Organization/Company": "Smith, Lopez and Garrett",
+      "Workshop Category": "Business & Management",
+      "Preferred Session Date": "2025/01/19",
+      "Preferred Time Slot": "12PM",
+      "Preferred Delivery Mode": "In-Person",
+      "Highest Education Level": "Master's Degree",
+      "Years of Professional Experience": 8,
+      "Current Role/Position": "Marketing executive",
+      "Dietary Requirements": "Kosher",
+      "Accessibility Requirements": "None",
+      "Payment Method": "Bank Transfer",
+      "Billing Address": "9856 Tara Parks\nNicoleton, OR 93221",
+      "What do you hope to learn from this workshop?": "I wish to learn more about how to manage and lead teams in dynamic work environments.",
+      "Any other special requests or comments?": "I am particularly interested in understanding how to develop an effective digital marketing strategy for a startup."
+    },
+    "multiPage": false,
+    "formPath": "/professional-business/workshop-registration"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

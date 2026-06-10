@@ -1,0 +1,43 @@
+{
+  "formInstance": {
+    "formId": "Art_Exhibition_Submission_Form",
+    "formName": "Art Exhibition Submission Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 21,
+    "inputDocument": "Artist Wendy Chen is pleased to submit her artwork for consideration in the upcoming exhibition. She can be contacted via email at wendy.chen1998@yahoo.com. The artwork, titled \"The Ballerina's Reverie,\" is a Sculpture, meticulously created in the year 2021. It measures 50 x 40 x 40 cm. \n\nThe piece features the following Artwork Description: \"This sculpture depicts a ballerina in a moment of deep thought. Her body is gracefully poised, one leg extended and her arms gently curved. The flowing lines of her tutu and the delicate tilt of her head convey a sense of elegance and introspection. Crafted from a smooth, white marble - like material, the sculpture catches the light, highlighting the curves and contours of the ballerina's form. It represents the beauty, discipline, and inner world of a dancer, frozen in a timeless moment of reverie.\"\n\nThe artist hopes to have this artwork exhibited in Spring 2024. Furthermore, \"The Ballerina's Reverie\" is available for sale. Thank you for the opportunity to present this piece in your esteemed exhibition.",
+    "goldAnswers": {
+      "Artist Name": "Wendy Chen",
+      "Email Address": "wendy.chen1998@yahoo.com",
+      "Artwork Title": "The Ballerina's Reverie",
+      "Medium": "Sculpture",
+      "Dimensions (in cm)": "50 x 40 x 40",
+      "Year Created": 2021,
+      "Artwork Description": "This sculpture depicts a ballerina in a moment of deep thought. Her body is gracefully poised, one leg extended and her arms gently curved. The flowing lines of her tutu and the delicate tilt of her head convey a sense of elegance and introspection. Crafted from a smooth, white marble - like material, the sculpture catches the light, highlighting the curves and contours of the ballerina's form. It represents the beauty, discipline, and inner world of a dancer, frozen in a timeless moment of reverie.",
+      "Preferred Exhibition Period": "Spring 2024",
+      "Artwork is available for sale": true
+    },
+    "multiPage": false,
+    "formPath": "/arts-creative/exhibition-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

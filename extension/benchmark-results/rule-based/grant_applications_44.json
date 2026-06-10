@@ -1,0 +1,40 @@
+{
+  "formInstance": {
+    "formId": "grant_applications",
+    "formName": "Grant or Research Funding Application",
+    "domain": "Academic & Research",
+    "instanceIndex": 44,
+    "inputDocument": "[Ronald Johnson's Grant Application]\n\n---\n\n**Applicant Information:**\n\n- **Name:** Ronald Johnson  \n- **Email:** jessicamedina@garcia.com  \n- **Gender:** Male  \n- **Date of Birth:** April 30, 1993  \n\n---\n\n**Personal Statement:**\n\nGreetings Committee Members,\n\nI am Ronald Johnson, a driven individual with a deep-seated commitment to advancing my aspirations through the support of this grant. Aligning with my values and ambitions, I am writing to present my case, delineated with precision to ensure full alignment with the grant's objectives.\n\nWith meticulous attention to detail, I abide by all the parameters of the application process, confident in my ability to reflect the esteemed qualities you seek in a recipient. My journey has been marked by the intrinsic motivation that compels me to contribute meaningfully to my chosen field. Each decision and step along this path has been a testament to my dedication to excellence.\n\nI must candidly acknowledge my current stance concerning communication preferences: I do not wish to subscribe to the newsletter. This decision is a conscious one, intricately interwoven with personal priorities and the manner in which I curate information pertinent to my goals.\n\nPerhaps what defines my application beyond the raw data is the unique lens through which I view both challenges and opportunities. I am not solely surrounded by my accomplishments but am continuously shaped by every experience and the richness they bring to forming a narrative of continuous development and strategically-planned milestones.\n\nYour consideration of my application is a gateway through which I effectively channel purpose toward impactful endeavors. It serves as both an honor and a responsibility if chosen as a recipient, a challenge to steer the innovative course that this support will allow me.\n\nIn anticipation of our shared commitment to progress, I stand ready to embrace this journey and further propagate the values and mission we hold dear.\n\nWarm regards,\n\nRonald Johnson\n\n---\n\nThank you for considering my application. I look forward to any future dialogue that may stem from this introduction.\n\n[End of Grant Application]",
+    "goldAnswers": {
+      "First Name": "Ronald",
+      "Last Name": "Johnson",
+      "Email": "jessicamedina@garcia.com",
+      "Gender": "Male",
+      "Date of Birth": "1993/04/30",
+      "Subscribe to Newsletter": false
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/grant-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

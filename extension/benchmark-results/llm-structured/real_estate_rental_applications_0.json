@@ -34,87 +34,87 @@
     {
       "fieldId": "full_name",
       "fieldType": "String",
-      "predictedValue": "Amy Soto",
+      "predictedValue": "",
       "goldValue": "Amy Soto",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "email",
       "fieldType": "String",
-      "predictedValue": "arthurperez@webb.com",
+      "predictedValue": "",
       "goldValue": "arthurperez@webb.com",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "phone",
       "fieldType": "String",
-      "predictedValue": "001-601-137-0101x270",
+      "predictedValue": "",
       "goldValue": "001-601-137-0101x270",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "date_of_birth",
       "fieldType": "Date",
-      "predictedValue": "1979-05-24",
+      "predictedValue": "",
       "goldValue": "1979/05/24",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "current_street",
       "fieldType": "String",
-      "predictedValue": "325 Clark Tunnel",
+      "predictedValue": "",
       "goldValue": "325 Clark Tunnel",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "current_city",
       "fieldType": "String",
-      "predictedValue": "Christopherburgh",
+      "predictedValue": "",
       "goldValue": "Christopherburgh",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "current_state",
       "fieldType": "String",
-      "predictedValue": "Alabama",
+      "predictedValue": "",
       "goldValue": "Alabama",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "current_zip",
       "fieldType": "String",
-      "predictedValue": "37382",
+      "predictedValue": "",
       "goldValue": "37382",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "employer_name",
       "fieldType": "String",
-      "predictedValue": "Edwards PLC",
+      "predictedValue": "",
       "goldValue": "Edwards PLC",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "job_title",
       "fieldType": "String",
-      "predictedValue": "Environmental Manager",
+      "predictedValue": "",
       "goldValue": "Environmental manager",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "monthly_income",
       "fieldType": "NumericInput",
-      "predictedValue": "13,121",
+      "predictedValue": "",
       "goldValue": 13121,
       "clickAccurate": false,
       "valueAccurate": false
@@ -122,31 +122,31 @@
     {
       "fieldId": "employment_length",
       "fieldType": "String",
-      "predictedValue": "1 year",
+      "predictedValue": "",
       "goldValue": "1 year",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "preferred_move_date",
       "fieldType": "Date",
-      "predictedValue": "2025-01-26",
+      "predictedValue": "",
       "goldValue": "2025/01/26",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "lease_term",
       "fieldType": "Dropdown",
-      "predictedValue": "6 months",
+      "predictedValue": "",
       "goldValue": "6 months",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "max_rent",
       "fieldType": "NumericInput",
-      "predictedValue": "2,323",
+      "predictedValue": "",
       "goldValue": 2323,
       "clickAccurate": false,
       "valueAccurate": false
@@ -154,18 +154,18 @@
     {
       "fieldId": "preferred_area",
       "fieldType": "String",
-      "predictedValue": "Near public transport",
+      "predictedValue": "",
       "goldValue": "Near public transport",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "pets",
       "fieldType": "Dropdown",
-      "predictedValue": "No",
+      "predictedValue": "",
       "goldValue": "No",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "pet_details",
@@ -179,11 +179,11 @@
     {
       "fieldId": "additional_info",
       "fieldType": "Description",
-      "predictedValue": "Prefer quiet and residential areas",
+      "predictedValue": "",
       "goldValue": "Prefer quiet and residential areas.",
       "clickAccurate": false,
-      "valueAccurate": true,
-      "bleuScore": 100
+      "valueAccurate": false,
+      "bleuScore": 0
     }
   ],
   "atomicMetrics": {
@@ -195,28 +195,28 @@
       "Description": 0
     },
     "valueAccuracy": {
-      "String": 100,
-      "Date": 100,
+      "String": 0,
+      "Date": 0,
       "NumericInput": 0,
-      "Dropdown": 100,
-      "Description": 50
+      "Dropdown": 0,
+      "Description": 0
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 84.21052631578947
+    "overallValueAccuracy": 0
   },
   "episodicMetrics": {
-    "formCompletionRate": 84.21052631578947,
-    "fieldsAttempted": 18,
-    "fieldsCorrect": 16,
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
     "totalFields": 19,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 84.21052631578947
+    "averageValueAccuracy": 0
   },
-  "executionTimeMs": 1635,
+  "executionTimeMs": 1680,
   "errors": [],
   "submissionSucceeded": true,
-  "tokensIn": 915,
-  "tokensOut": 250,
-  "llmTimeMs": 6375,
-  "llmCalls": 1
+  "tokensIn": 0,
+  "tokensOut": 0,
+  "llmTimeMs": 0,
+  "llmCalls": 0
 }

@@ -1,0 +1,38 @@
+{
+  "formInstance": {
+    "formId": "job_applications",
+    "formName": "Job Application for University Positions",
+    "domain": "Academic & Research",
+    "instanceIndex": 9,
+    "inputDocument": "[Your Address]  \n[City, State, ZIP Code]  \n[Email Address]  \n[Phone Number]  \n[Date]  \n\nHiring Manager  \n[Company Name]  \n[Company Address]  \n[City, State, ZIP Code]  \n\nDear Hiring Manager,\n\nMy name is James Li, and I am writing to express my interest in the UI/UX Designer position within the Design department. I am passionate about creating intuitive and user-friendly designs and eager to contribute to the Design department.\n\nThroughout my career, I have developed a keen eye for detail and a deep understanding of design principles. I am highly motivated by the challenge of crafting designs that enhance user experience and meet business objectives. The opportunity to work in the Design department excites me, as it is aligned with my passion and expertise in UI/UX design.\n\nEnclosed with this letter, you will find my resume, which provides further details about my skills and experiences. I am looking forward to the possibility of discussing this exciting opportunity with you. \n\nThank you for considering my application. I hope to bring my enthusiasm for creating exceptional user interfaces to your team.\n\nWarm regards,\n\nJames Li",
+    "goldAnswers": {
+      "Applicant Name": "James Li",
+      "Position Applied For": "UI/UX Designer",
+      "Preferred Department": "Design",
+      "Cover Letter": "I am passionate about creating intuitive and user-friendly designs and eager to contribute to the Design department."
+    },
+    "multiPage": false,
+    "formPath": "/academic-research/job-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

@@ -1,0 +1,45 @@
+{
+  "formInstance": {
+    "formId": "Literary_Magazine_Submission",
+    "formName": "Literary Magazine Submission Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 42,
+    "inputDocument": "Isabella Clark, with the email address isabella.clark76@yahoo.com, is pleased to submit her work titled \"Eternal Night\" for consideration in your esteemed literary magazine. This piece falls under the genre of Fiction and has a word count of 4,900. The manuscript explores a dystopian narrative, where a future is envisioned in which darkness has engulfed the world permanently. This gripping abstract, \"A dystopian novel set in a future where darkness has covered the world permanently,\" provides a glimpse into the intense atmosphere and thematic depth of the piece. Isabella is particularly interested in featuring this work in the Summer 2024 issue. Kindly note that this work has not been previously published, though it is being submitted simultaneously to other publications. Importantly, Isabella Clark affirms her agreement to the submission guidelines and terms of publication, understanding the standards and expectations of your literary outlet. The manuscript file is currently not included, but she is eager to provide it upon request. Thank you for considering \"Eternal Night\" for your upcoming issue.",
+    "goldAnswers": {
+      "Author Name": "Isabella Clark",
+      "Email Address": "isabella.clark76@yahoo.com",
+      "Title": "Eternal Night",
+      "Genre": "Fiction",
+      "Word Count": 4900,
+      "Abstract/Summary": "A dystopian novel set in a future where darkness has covered the world permanently.",
+      "Manuscript File": "None",
+      "Preferred Issue": "Summer 2024",
+      "This work has been previously published": "No",
+      "This is a simultaneous submission": "Yes",
+      "I agree to the submission guidelines and terms of publication": "Yes"
+    },
+    "multiPage": false,
+    "formPath": "/arts-creative/literary-submission"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

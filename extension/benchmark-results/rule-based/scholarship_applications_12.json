@@ -1,0 +1,55 @@
+{
+  "formInstance": {
+    "formId": "scholarship_applications",
+    "formName": "Scholarship Application for Students",
+    "domain": "Academic & Research",
+    "instanceIndex": 12,
+    "inputDocument": "[Your Address]  \n[City, State, Zip Code]  \n[Email Address]  \n[Date]  \n\n[Scholarship Committee Name]  \n[University or Organization Name]  \n[Address]  \n[City, State, Zip Code]  \n\nDear Scholarship Committee,\n\nI am writing to apply for the scholarship opportunity that could greatly assist me in my academic journey at [University Name]. My name is Sara Sarah Aguirre, and I am currently a freshman majoring in Business Administration with a cumulative GPA of 3.77. As a dedicated student and an active member of the university community, I believe I would be a deserving recipient of your support.\n\nThroughout my academic career thus far, I have strived for excellence and am proud to share that I have received the Dean’s List Award for Outstanding Academic Performance. Additionally, I have published a research paper in the International Journal of Engineering, which reflects my commitment to scholarly contributions. I also secured first place in the University Math Competition, demonstrating my ability to excel in challenging environments.\n\nBeyond my academic endeavors, I am actively involved in extracurricular activities that foster both personal and professional growth. As a member of the University Debate Team, I have honed my critical thinking and public speaking skills, which are essential for a future in business administration. Furthermore, I have organized charity events for the Red Cross, exemplifying my belief in giving back to the community and making a positive impact on those in need.\n\nWhile I am fortunate to currently receive financial aid through another scholarship, my annual family income of $47,631 presents certain challenges that could impact my study journey. The financial support from this scholarship would alleviate the pressure of monetary concerns, allowing me to immerse myself completely in my studies and extracurricular commitments.\n\nMy passion lies not just in advancing my own education but also in utilizing the knowledge I will gain in business administration to contribute to sustainable development. I am eager to engage in projects and discussions that weave environmental consciousness into business practices, thus paving the way for a sustainable future.\n\nFor your consideration, I have provided my academic reference, Sophia Hale, who can speak to my character and accomplishments. You may reach her via email at elizabeth44@hotmail.com.\n\nThank you for considering my application. I am excited about the prospect of receiving this scholarship, which will play a vital role in my journey. I look forward to the opportunity to contribute positively to our society through my studies and future career in business.\n\nSincerely,\n\nSara Sarah Aguirre  \nStudent ID: 27811507  \nBusiness Administration Major  \n[Your Contact Information]",
+    "goldAnswers": {
+      "First Name": "Sara",
+      "Middle Name": "Sarah",
+      "Last Name": "Aguirre",
+      "Student ID": 27811507,
+      "Major/Field of Study": "Business Administration",
+      "Current GPA": 3.77,
+      "Academic Year": "Freshman",
+      "Current Financial Aid": "Other Scholarship",
+      "Annual Family Income": 47631,
+      "Academic Achievements": [
+        "Received the Dean’s List Award for Outstanding Academic Performance",
+        "Published a research paper in the International Journal of Engineering",
+        "First place in the University Math Competition"
+      ],
+      "Extracurricular Activities": [
+        "Member of the University Debate Team",
+        "Organized charity events for the Red Cross"
+      ],
+      "Statement of Purpose": "I am deeply passionate about advancing my knowledge in the field of environmental science. This scholarship will enable me to continue my studies without the pressure of financial burdens, and I plan to use the knowledge gained to make an impact in sustainable development.",
+      "Academic Reference": "Sophia Hale",
+      "Reference Email": "elizabeth44@hotmail.com"
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/scholarship-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

@@ -1,0 +1,55 @@
+{
+  "formInstance": {
+    "formId": "scholarship_applications",
+    "formName": "Scholarship Application for Students",
+    "domain": "Academic & Research",
+    "instanceIndex": 1,
+    "inputDocument": "[Your Address]  \n[City, State, Zip Code]  \n[Email Address]  \n[Date]  \n\nScholarship Committee  \n[Scholarship Organization Name]  \n[Organization Address]  \n[City, State, Zip Code]  \n\nDear Scholarship Committee,\n\nMy name is Sarah John Rubio, and I am writing to express my sincere interest in applying for your esteemed scholarship. As a freshman majoring in Sociology at [University Name], I have a current GPA of 3.59, reflecting my strong dedication to academic excellence, which I seek to further enhance with the support of this scholarship.\n\nThroughout my academic journey, I have pursued opportunities that not only challenge me but also allow me to contribute positively to my community and the academic field. I am proud to share that I recently achieved first place in the University Math Competition and was a finalist in the National Robotics Championship. Additionally, I have contributed to the academic community by publishing a research paper in the International Journal of Engineering, which has solidified my understanding of complex concepts and my passion for research.\n\nHowever, my academic achievements extend beyond the classroom. I have taken an active role in extracurricular activities that reflect my commitment to social betterment and innovation. As the co-founder of the Campus Startup Initiative, I work collaboratively with peers to foster entrepreneurial skills and promote creative solutions among students. Furthermore, I have organized charity events for the Red Cross, which allowed me to directly contribute to the well-being of those in need and to develop essential leadership and organizational skills.\n\nDespite being awarded other scholarships, I face financial constraints, as my family income is $60,273 annually. This scholarship would ease my financial burdens significantly and empower me to focus on my education rather than on financial stress. My ultimate goal is to innovate in the tech industry, where I aspire to explore cutting-edge technologies that can advance our everyday lives.\n\nIn crafting this scholarship application, I draw upon the recommendation of Nathan Mullins, who has been instrumental in supporting my academic and extracurricular endeavors. You may contact him at danieldavis@kline-townsend.com for any insights regarding my performance and contributions.\n\nThank you for considering my application. With your support, I will have the resources necessary to propel my educational journey further, and ultimately fulfill my long-term aspirations of making a tangible impact in the field of technology. \n\nSincerely,  \n\nSarah John Rubio  \nStudent ID: 39177542  \n[Contact Phone Number]  \n[Email Address]",
+    "goldAnswers": {
+      "First Name": "Sarah",
+      "Middle Name": "John",
+      "Last Name": "Rubio",
+      "Student ID": 39177542,
+      "Major/Field of Study": "Sociology",
+      "Current GPA": 3.59,
+      "Academic Year": "Freshman",
+      "Current Financial Aid": "Other Scholarship",
+      "Annual Family Income": 60273,
+      "Academic Achievements": [
+        "First place in the University Math Competition",
+        "Finalist in the National Robotics Championship",
+        "Published a research paper in the International Journal of Engineering"
+      ],
+      "Extracurricular Activities": [
+        "Organized charity events for the Red Cross",
+        "Co-founder of the Campus Startup Initiative"
+      ],
+      "Statement of Purpose": "With a strong interest in computer engineering, this scholarship will provide me the resources to further my education and conduct research in cutting-edge technologies, helping me achieve my long-term career goals of innovating in the tech industry.",
+      "Academic Reference": "Nathan Mullins",
+      "Reference Email": "danieldavis@kline-townsend.com"
+    },
+    "multiPage": true,
+    "formPath": "/academic-research/scholarship-application"
+  },
+  "agentName": "rule-based",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}
