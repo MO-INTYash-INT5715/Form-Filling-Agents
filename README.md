@@ -14,11 +14,35 @@
 ## Quick Start
 
 ```bash
-# 1. Clone and install
+# 1) Clone and install dependencies
 git clone https://github.com/MO-INTYash-INT5715/Form-Filling-Agents.git
-cd Form-Filling-Agents/extension
+cd Form-Filling-Agents
+
+# root scripts
 npm install
 
+# extension scripts
+cd extension
+npm install
+cd ..
+
+# web portal scripts
+cd web-portal
+npm install
+cd ..
+
+# 2) Start FormFactory server (separate terminal)
+cd C:\Code\formfactory
+pip install -r requirements.txt
+python app.py
+
+# 3) Install Playwright Chromium once
+cd Form-Filling-Agents
+npm run benchmark:setup
+
+# 4) Run quick benchmarks (root scripts)
+npm run benchmark:rule-based:quick
+npm run benchmark:mcp-agent:quick
 # 2. Start FormFactory server (in separate terminal)
 cd /c/Code/formfactory
 python app.py  # Flask server at localhost:5000

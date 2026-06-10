@@ -1,5 +1,9 @@
 # MCP Track: Issue Diagnosis & Resolution Guide
 
+> **Canonical merged doc:** [RUNNING_AND_BENCHMARKING.md](./RUNNING_AND_BENCHMARKING.md)
+>  
+> This file is retained as a detailed historical working note.
+
 **Date**: 2026-05-28  
 **Status**: ❌ **BLOCKED ON AUTH**
 

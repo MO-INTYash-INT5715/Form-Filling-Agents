@@ -1,5 +1,9 @@
 # Form-Filling Agents — Implementation History
 
+> **Canonical merged doc:** [PROJECT_STATUS.md](./PROJECT_STATUS.md)
+>  
+> This file is retained as a detailed historical working note.
+
 > Complete record of every phase, change, and measured impact.
 > Benchmark: **FormFactory** (25 forms, 259 fields, 8 domains, headless Chromium via Playwright)
 > Metric: **Value Accuracy** = % of fields whose filled value matches gold answer after normalization.
