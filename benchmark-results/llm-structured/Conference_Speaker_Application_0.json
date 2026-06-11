@@ -1,0 +1,171 @@
+{
+  "formInstance": {
+    "formId": "Conference_Speaker_Application",
+    "formName": "Conference Speaker Application Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 0,
+    "inputDocument": "John Adams, representing Tech Innovations Inc., submits an application to present at your conference. He can be contacted via email at john.adams56@gmail.com or phone at 123-456-7890. His presentation, titled \"The Future of Artificial Intelligence in Visual Arts,\" falls within the topic area of Visual Arts. This presentation will explore how AI is being used in the creation of visual art, including generative art algorithms and AI-based design tools. We will examine the intersection of creativity and technology and discuss the ethical implications of AI in artistic expression. The learning objectives for this presentation include understanding the role of AI in visual arts, exploring AI-generated artworks and their impact on the art world, and discussing ethical considerations in AI-driven creativity. John Adams is a renowned technologist and artist, bridging the gap between AI and visual arts. He has worked on multiple projects integrating AI with digital art, and his works have been exhibited in various international galleries. He has significant previous speaking experience, having served as a Keynote Speaker at ArtTech Symposium 2022 and as a panelist at AI and Creativity Conference 2021. The format of the presentation will be a lecture. He requires special technical requirements including a projector, internet access, and AI demo tools. John Adams has confirmed his agreement to the speaker guidelines and terms of participation.",
+    "goldAnswers": {
+      "Full Name": "John Adams",
+      "Email Address": "john.adams56@gmail.com",
+      "Phone Number": "123-456-7890",
+      "Organization/Institution": "Tech Innovations Inc.",
+      "Presentation Title": "The Future of Artificial Intelligence in Visual Arts",
+      "Topic Area": "Visual Arts",
+      "Presentation Abstract": "This presentation will explore how AI is being used in the creation of visual art, including generative art algorithms and AI-based design tools. We will examine the intersection of creativity and technology and discuss the ethical implications of AI in artistic expression.",
+      "Learning Objectives": "1. Understand the role of AI in visual arts. 2. Explore AI-generated artworks and their impact on the art world. 3. Discuss ethical considerations in AI-driven creativity.",
+      "Professional Biography": "John Adams is a renowned technologist and artist, bridging the gap between AI and visual arts. He has worked on multiple projects integrating AI with digital art, and his works have been exhibited in various international galleries.",
+      "CV/Resume": "None",
+      "Previous Speaking Experience": "1. Keynote Speaker at ArtTech Symposium 2022. 2. Panelist at AI and Creativity Conference 2021.",
+      "Presentation Format": "Lecture",
+      "Special Technical Requirements": "Projector, internet access, AI demo tools.",
+      "I agree to the speaker guidelines and terms of participation": "Yes"
+    },
+    "multiPage": true,
+    "formPath": "/arts-creative/speaker-application"
+  },
+  "agentName": "llm-structured",
+  "fieldResults": [
+    {
+      "fieldId": "Full Name",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "John Adams",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "Email Address",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "john.adams56@gmail.com",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "Phone Number",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "123-456-7890",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "organization",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Tech Innovations Inc.",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "Presentation Title",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "The Future of Artificial Intelligence in Visual Arts",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "Topic Area",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Visual Arts",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "Presentation Abstract",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "This presentation will explore how AI is being used in the creation of visual art, including generative art algorithms and AI-based design tools. We will examine the intersection of creativity and technology and discuss the ethical implications of AI in artistic expression.",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "Learning Objectives",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "1. Understand the role of AI in visual arts. 2. Explore AI-generated artworks and their impact on the art world. 3. Discuss ethical considerations in AI-driven creativity.",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "Professional Biography",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "John Adams is a renowned technologist and artist, bridging the gap between AI and visual arts. He has worked on multiple projects integrating AI with digital art, and his works have been exhibited in various international galleries.",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "CV/Resume",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "None",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "speaking_experience",
+      "fieldType": "Description",
+      "predictedValue": "",
+      "goldValue": "1. Keynote Speaker at ArtTech Symposium 2022. 2. Panelist at AI and Creativity Conference 2021.",
+      "clickAccurate": false,
+      "valueAccurate": false,
+      "bleuScore": 0
+    },
+    {
+      "fieldId": "Presentation Format",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Lecture",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "tech_requirements",
+      "fieldType": "Description",
+      "predictedValue": "",
+      "goldValue": "Projector, internet access, AI demo tools.",
+      "clickAccurate": false,
+      "valueAccurate": false,
+      "bleuScore": 0
+    },
+    {
+      "fieldId": "I agree to the speaker guidelines and terms of participation",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Yes",
+      "clickAccurate": null,
+      "valueAccurate": false
+    }
+  ],
+  "atomicMetrics": {
+    "clickAccuracy": {
+      "String": 0,
+      "Description": 0
+    },
+    "valueAccuracy": {
+      "String": 0,
+      "Description": 0
+    },
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 14,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 1818,
+  "errors": [],
+  "submissionSucceeded": true,
+  "tokensIn": 0,
+  "tokensOut": 0,
+  "llmTimeMs": 0,
+  "llmCalls": 0
+}

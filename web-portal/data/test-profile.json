@@ -63,7 +63,10 @@
     "speakerBio": "Alice Zhang is a Software Engineer at Tech Innovations Inc specializing in AI/ML systems.",
     "professionalCertifications": "AWS Certified Solutions Architect, Google Cloud Professional Data Engineer",
     "highestEducationLevel": "Bachelor's Degree",
-    "cvResume": "Available upon request",
+    "cvResume": "test-fixtures/alice-zhang-resume.pdf",
+    "cvFile": "test-fixtures/alice-zhang-resume.pdf",
+    "resumeFile": "test-fixtures/alice-zhang-resume.pdf",
+    "coverLetterFile": "test-fixtures/alice-zhang-cover-letter.pdf",
     "previousSpeakingExperience": "Workshop presenter at PyCon 2023; lightning talk at NeurIPS 2024 student day."
   },
 
@@ -106,7 +109,10 @@
     "fundingAmount": 75000,
     "fundingAmountRequired": 75000,
     "fundingAmountRequested": 75000,
-    "institution": "MIT Computer Science Department"
+    "institution": "MIT Computer Science Department",
+    "paperFile": "test-fixtures/alice-zhang-research-paper.pdf",
+    "transcriptFile": "test-fixtures/alice-zhang-transcript.pdf",
+    "recommendationLetterFile": "test-fixtures/alice-zhang-recommendation-letter.pdf"
   },
 
   "health": {
@@ -127,7 +133,8 @@
     "studyPreference": "Clinical Trial",
     "preferredStudyType": "Clinical Trial",
     "availability": "Weekdays",
-    "nameOfProcedure": "Knee Arthroscopy"
+    "nameOfProcedure": "Knee Arthroscopy",
+    "medicalBillsFile": "test-fixtures/alice-zhang-medical-bills.pdf"
   },
 
   "legal": {
@@ -179,7 +186,9 @@
     "preferredArea": "Near public transport",
     "hasPets": "No",
     "petDescription": "No pets",
-    "additionalComments": "Prefer quiet and residential areas."
+    "additionalComments": "Prefer quiet and residential areas.",
+    "idProofFile": "test-fixtures/alice-zhang-id-proof.pdf",
+    "incomeProofFile": "test-fixtures/alice-zhang-income-proof.pdf"
   },
 
   "arts": {
@@ -196,6 +205,7 @@
     "submissionCategory": "Digital Art",
     "artistBio": "Alice Zhang is a software engineer and digital artist bridging technology and creative expression.",
     "preferredExhibitionPeriod": "Spring 2025",
+    "artworkImageFile": "test-fixtures/alice-zhang-artwork.png",
     "magazineSubmissionTitle": "The Algorithm Dreams",
     "authorName": "Alice Zhang",
     "title": "The Algorithm Dreams",
@@ -206,7 +216,8 @@
     "preferredIssue": "Spring 2025",
     "previousPublications": "None",
     "previouslyPublished": false,
-    "simultaneousSubmission": false
+    "simultaneousSubmission": false,
+    "manuscriptFile": "test-fixtures/alice-zhang-manuscript.pdf"
   },
 
   "conference": {
@@ -269,7 +280,8 @@
     "businessDescription": "AutoFill AI is developing an intelligent form automation platform that reduces manual data entry by 90% using NLP and computer vision.",
     "businessModel": "SaaS subscription model with enterprise tier and usage-based pricing.",
     "revenueModel": "SaaS subscription",
-    "targetMarket": "Enterprise software companies and HR departments"
+    "targetMarket": "Enterprise software companies and HR departments",
+    "pitchDeckFile": "test-fixtures/alice-zhang-pitch-deck.pdf"
   },
 
   "manufacturing": {
@@ -311,8 +323,8 @@
     "locationDepartment": "Engineering",
     "numberOfAffectedUsers": 12,
     "preferredContactTime": "Mon-Fri 9AM-5PM",
-    "screenshots": "None",
-    "attachments": "None"
+    "screenshots": "test-fixtures/alice-zhang-screenshot.png",
+    "attachments": "test-fixtures/alice-zhang-screenshot.png"
   },
 
   "bugReport": {
@@ -322,7 +334,8 @@
     "browserPlatform": "Chrome 124, Windows 11",
     "stepsToReproduce": "1. Open the web portal. 2. Submit a URL with an iframe-embedded form. 3. Scraper throws TypeError: Cannot read property 'fields' of null.",
     "expectedBehavior": "Scraper should detect and extract fields from iframe-embedded forms.",
-    "actualBehavior": "Scraper crashes with a TypeError when encountering iframe-embedded forms."
+    "actualBehavior": "Scraper crashes with a TypeError when encountering iframe-embedded forms.",
+    "attachments": "test-fixtures/alice-zhang-screenshot.png"
   },
 
   "extra": {

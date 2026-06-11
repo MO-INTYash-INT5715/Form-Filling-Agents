@@ -4,7 +4,7 @@
     "formName": "Educational Workshop Registration",
     "domain": "Professional & Business",
     "instanceIndex": 0,
-    "inputDocument": "Subject: Workshop Registration Request - Finance & Investment\r\n\r\nDear Workshop Coordination Team,\r\n\r\nI am writing to formally request registration for the upcoming Continuing Education workshop under the Finance & Investment category. Please find my details below for your reference.\r\n\r\nFull Name: Daniel Brown  \r\nEmail Address: ahale@hotmail.com  \r\nPhone Number: 244-169-5801x7072  \r\nOrganization/Company: Wells-Wilson  \r\n\r\nAs a professional with a Master's Degree and 20 years of experience currently serving as an Armed forces training and education officer, I am eager to enroll in this program. The workshop is scheduled for my preferred session date of 2025/02/02 at 6PM, to be attended in a Hybrid delivery mode. \r\n\r\nI have been endorsed to attend this workshop through a Company Sponsored payment method, with the corresponding Billing Address as follows: USS Gonzalez, FPO AE 24907.\r\n\r\nI am particularly keen on enhancing my leadership and communication skills to manage my team more effectively. Additionally, I would like to see examples of successful leadership strategies in small and medium-sized businesses, as reflected in my response to 'What do you hope to learn from this workshop?' and 'Any other special requests or comments?' respectively. \r\n\r\nRegarding dietary requirements, I require Halal meals; however, I have no specific accessibility needs.\r\n\r\nThank you very much for considering my request. Please let me know if you require any further information or documentation.\r\n\r\nSincerely,\r\n\r\nDaniel Brown",
+    "inputDocument": "Subject: Workshop Registration Request - Finance & Investment\n\nDear Workshop Coordination Team,\n\nI am writing to formally request registration for the upcoming Continuing Education workshop under the Finance & Investment category. Please find my details below for your reference.\n\nFull Name: Daniel Brown  \nEmail Address: ahale@hotmail.com  \nPhone Number: 244-169-5801x7072  \nOrganization/Company: Wells-Wilson  \n\nAs a professional with a Master's Degree and 20 years of experience currently serving as an Armed forces training and education officer, I am eager to enroll in this program. The workshop is scheduled for my preferred session date of 2025/02/02 at 6PM, to be attended in a Hybrid delivery mode. \n\nI have been endorsed to attend this workshop through a Company Sponsored payment method, with the corresponding Billing Address as follows: USS Gonzalez, FPO AE 24907.\n\nI am particularly keen on enhancing my leadership and communication skills to manage my team more effectively. Additionally, I would like to see examples of successful leadership strategies in small and medium-sized businesses, as reflected in my response to 'What do you hope to learn from this workshop?' and 'Any other special requests or comments?' respectively. \n\nRegarding dietary requirements, I require Halal meals; however, I have no specific accessibility needs.\n\nThank you very much for considering my request. Please let me know if you require any further information or documentation.\n\nSincerely,\n\nDaniel Brown",
     "goldAnswers": {
       "Full Name": "Daniel Brown",
       "Email Address": "ahale@hotmail.com",
@@ -32,7 +32,7 @@
     {
       "fieldId": "full_name",
       "fieldType": "String",
-      "predictedValue": "Dear Workshop Coordination Team,",
+      "predictedValue": "2025/02/02",
       "goldValue": "Daniel Brown",
       "clickAccurate": false,
       "valueAccurate": false
@@ -40,7 +40,7 @@
     {
       "fieldId": "email",
       "fieldType": "String",
-      "predictedValue": "Dear Workshop Coordination Team,",
+      "predictedValue": "Wells-Wilson",
       "goldValue": "ahale@hotmail.com",
       "clickAccurate": false,
       "valueAccurate": false
@@ -48,7 +48,7 @@
     {
       "fieldId": "phone",
       "fieldType": "String",
-      "predictedValue": "Dear Workshop Coordination Team,",
+      "predictedValue": "Wells-Wilson",
       "goldValue": "244-169-5801x7072",
       "clickAccurate": false,
       "valueAccurate": false
@@ -56,7 +56,7 @@
     {
       "fieldId": "organization",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Finance & Investment",
       "goldValue": "Wells-Wilson",
       "clickAccurate": false,
       "valueAccurate": false
@@ -80,7 +80,7 @@
     {
       "fieldId": "session_time",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "Halal",
       "goldValue": "6PM",
       "clickAccurate": false,
       "valueAccurate": false
@@ -88,7 +88,7 @@
     {
       "fieldId": "delivery_mode",
       "fieldType": "Dropdown",
-      "predictedValue": "Full Name: Daniel Brown",
+      "predictedValue": "Finance & Investment",
       "goldValue": "Hybrid",
       "clickAccurate": false,
       "valueAccurate": false
@@ -96,7 +96,7 @@
     {
       "fieldId": "education_level",
       "fieldType": "Dropdown",
-      "predictedValue": "Company Sponsored",
+      "predictedValue": "Finance & Investment",
       "goldValue": "Master's Degree",
       "clickAccurate": false,
       "valueAccurate": false
@@ -104,7 +104,7 @@
     {
       "fieldId": "experience_years",
       "fieldType": "NumericInput",
-      "predictedValue": "Dear Workshop Coordination Team,",
+      "predictedValue": "2025/02/02",
       "goldValue": 20,
       "clickAccurate": false,
       "valueAccurate": false
@@ -112,7 +112,7 @@
     {
       "fieldId": "current_role",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Finance & Investment",
       "goldValue": "Armed forces training and education officer",
       "clickAccurate": false,
       "valueAccurate": false
@@ -120,7 +120,7 @@
     {
       "fieldId": "dietary_requirements",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "Finance & Investment",
       "goldValue": "Halal",
       "clickAccurate": false,
       "valueAccurate": false
@@ -128,7 +128,7 @@
     {
       "fieldId": "accessibility_needs",
       "fieldType": "Description",
-      "predictedValue": "Company Sponsored",
+      "predictedValue": "ahale@hotmail.com",
       "goldValue": "None",
       "clickAccurate": false,
       "valueAccurate": false,
@@ -137,15 +137,15 @@
     {
       "fieldId": "payment_method",
       "fieldType": "Dropdown",
-      "predictedValue": "Company Sponsored",
+      "predictedValue": "Daniel Brown",
       "goldValue": "Company Sponsored",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "billing_address",
       "fieldType": "String",
-      "predictedValue": "Company Sponsored",
+      "predictedValue": "Master's Degree",
       "goldValue": "USS Gonzalez\nFPO AE 24907",
       "clickAccurate": false,
       "valueAccurate": false
@@ -179,23 +179,23 @@
     },
     "valueAccuracy": {
       "String": 0,
-      "Dropdown": 16.666666666666664,
+      "Dropdown": 0,
       "Date": 0,
       "NumericInput": 0,
       "Description": 0
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 5.88235294117647
+    "overallValueAccuracy": 0
   },
   "episodicMetrics": {
-    "formCompletionRate": 5.88235294117647,
-    "fieldsAttempted": 12,
-    "fieldsCorrect": 1,
+    "formCompletionRate": 0,
+    "fieldsAttempted": 16,
+    "fieldsCorrect": 0,
     "totalFields": 17,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 5.88235294117647
+    "averageValueAccuracy": 0
   },
-  "executionTimeMs": 1453,
+  "executionTimeMs": 1711,
   "errors": [],
   "submissionSucceeded": false
 }

@@ -27,21 +27,10 @@ import { EmbeddingMatcherAgent } from '../src/implementations/embedding-matcher/
 import type { BenchmarkReport } from '../src/benchmark/types';
 import * as fs from 'fs';
 import * as path from 'path';
+import { estimateCost } from '../../shared/cost-model';
+import { scoreFillsAgainstGold } from '../../shared/scorer';
+import { validateModelChoice } from '../../shared/provider-utils';
 
-// ---------------------------------------------------------------------------
-// Cost model (per 1M tokens) — update as needed
-// ---------------------------------------------------------------------------
-const COST_MODEL: Record<string, { inputPer1M: number; outputPer1M: number }> = {
-  'ollama':  { inputPer1M: 0, outputPer1M: 0 },          // local — free
-  'openai':  { inputPer1M: 0.15, outputPer1M: 0.60 },    // gpt-4o-mini
-  'custom':  { inputPer1M: 0, outputPer1M: 0 },
-};
-
-function estimateCost(tokensIn: number, tokensOut: number): number {
-  const provider = process.env.LLM_PROVIDER || 'ollama';
-  const cm = COST_MODEL[provider] ?? COST_MODEL['ollama'];
-  return (tokensIn / 1_000_000) * cm.inputPer1M + (tokensOut / 1_000_000) * cm.outputPer1M;
-}
 
 // ---------------------------------------------------------------------------
 // Agent registry
@@ -69,7 +58,7 @@ const AGENT_NAMES = agentArg
   ? agentArg.split(',')
   : ['rule-based', 'embedding-matcher', 'llm-structured', 'hybrid', 'mcp-agent'];
 
-const INSTANCES = quick ? 1 : 1; // Keep 1 for speed; bump to 5+ for paper-scale
+const INSTANCES = quick ? 1 : (process.env.INSTANCES ? parseInt(process.env.INSTANCES) : 5); // default 5 for non-quick
 
 // ---------------------------------------------------------------------------
 // Main ablation loop
@@ -83,6 +72,17 @@ async function main() {
   console.log(`Provider:  ${process.env.LLM_PROVIDER || 'ollama'}`);
   console.log(`Model:     ${process.env.LLM_MODEL || 'qwen2.5:7b'}`);
   console.log(`Server:    ${serverUrl}\n`);
+
+  // Validate model choice (Bedrock limited to 10-30B)
+  {
+    const _provider = process.env.LLM_PROVIDER || 'ollama';
+    const _model = process.env.LLM_MODEL || '';
+    const vres = validateModelChoice(_provider, _model, 10, 30);
+    if (!vres.ok) {
+      console.error('Model validation failed:', vres.message);
+      process.exit(1);
+    }
+  }
 
   const reports: Record<string, BenchmarkReport> = {};
 
@@ -100,6 +100,37 @@ async function main() {
         headless: true,
       });
       reports[agentName] = report;
+
+      // Write per-instance JSONL for aggregator ingestion
+      const _provider = process.env.LLM_PROVIDER || 'ollama';
+      const _model = process.env.LLM_MODEL || 'qwen2.5:7b';
+      const ablationDir = path.join(__dirname, '../Documentation/ablation-records');
+      fs.mkdirSync(ablationDir, { recursive: true });
+      const outFile = path.join(ablationDir, `${agentName}.jsonl`);
+      const lines = report.formResults.map(fr => {
+        const tokensInInst = fr.tokensIn ?? 0;
+        const tokensOutInst = fr.tokensOut ?? 0;
+        const estCostInst = estimateCost(_provider, _model, tokensInInst, tokensOutInst);
+        const record = {
+          agent: agentName,
+          formId: fr.formInstance.formId,
+          formName: fr.formInstance.formName,
+          instanceIndex: fr.formInstance.instanceIndex,
+          tokensIn: tokensInInst,
+          tokensOut: tokensOutInst,
+          llmTimeMs: fr.llmTimeMs ?? 0,
+          llmCalls: fr.llmCalls ?? 0,
+          atomic: fr.atomicMetrics,
+          episodic: fr.episodicMetrics,
+          estimatedCostUSD: estCostInst,
+          timestamp: report.timestamp || new Date().toISOString(),
+          provider: _provider,
+          model: _model,
+        };
+        return JSON.stringify(record);
+      });
+      fs.writeFileSync(outFile, lines.join('\n') + '\n', 'utf-8');
+
       console.log(`✓ ${agentName} done — ${report.globalEpisodic.averageValueAccuracy.toFixed(1)}% value acc`);
     } catch (err) {
       console.error(`✗ ${agentName} failed:`, (err as Error).message);
@@ -138,8 +169,51 @@ async function main() {
   const rows: AblationRow[] = [];
 
   for (const [agentName, report] of Object.entries(reports)) {
-    const ep = report.globalEpisodic;
-    const at = report.globalAtomic;
+    // Recompute atomic/episodic metrics using the shared scorer so all tracks are comparable
+    const provider = process.env.LLM_PROVIDER || 'ollama';
+    const model = process.env.LLM_MODEL || 'qwen2.5:7b';
+
+    const perFormAtomic: any[] = [];
+    const perFormEpisodic: any[] = [];
+
+    for (const fr of report.formResults) {
+      const gf = fr.formInstance;
+      // Prefix field keys with formId to avoid collisions across forms
+      const fills = fr.fieldResults.map(f => ({
+        fieldId: `${gf.formId}:${f.fieldId}`,
+        label: f.fieldId,
+        type: f.fieldType,
+        value: f.predictedValue,
+        confidence: 1,
+      }));
+
+      const goldById: Record<string, string> = {};
+      for (const [k, v] of Object.entries(gf.goldAnswers || {})) {
+        goldById[`${gf.formId}:${k}`] = Array.isArray(v) ? String(v[0]) : String(v);
+      }
+
+      const metrics = scoreFillsAgainstGold(fills, goldById);
+
+      perFormAtomic.push({
+        clickAccuracy: fr.atomicMetrics.clickAccuracy,
+        valueAccuracy: metrics.perFieldType || {},
+        overallClickAccuracy: fr.atomicMetrics.overallClickAccuracy,
+        overallValueAccuracy: metrics.valueAccuracy,
+      });
+
+      perFormEpisodic.push({
+        formCompletionRate: metrics.total > 0 ? (metrics.matched / metrics.total) * 100 : 0,
+        fieldsAttempted: metrics.attempted,
+        fieldsCorrect: metrics.matched,
+        totalFields: metrics.total,
+        averageClickAccuracy: fr.episodicMetrics.averageClickAccuracy,
+        averageValueAccuracy: metrics.valueAccuracy,
+      });
+    }
+
+    const at = mergeAtomicMetrics(perFormAtomic);
+    const ep = mergeEpisodicMetrics(perFormEpisodic);
+
     const wallS = report.totalExecutionTimeMs / 1000;
     const forms = report.totalInstances;
     const fields = report.totalFields;
@@ -148,7 +222,7 @@ async function main() {
     const totalTokens = tokensIn + tokensOut;
     const llmCalls = report.totalLlmCalls ?? 0;
     const llmTimeS = (report.totalLlmTimeMs ?? 0) / 1000;
-    const cost = estimateCost(tokensIn, tokensOut);
+    const cost = estimateCost(provider, model, tokensIn, tokensOut);
     const correctFields = ep.fieldsCorrect;
 
     rows.push({

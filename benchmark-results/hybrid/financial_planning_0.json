@@ -1,0 +1,40 @@
+{
+  "formInstance": {
+    "formId": "financial_planning",
+    "formName": "Financial Planning Consultation Form",
+    "domain": "Finance & Banking",
+    "instanceIndex": 0,
+    "inputDocument": "Dear Financial Planning Team,\n\nI hope this message finds you well. My name is Benjamin Scott, and I am reaching out to request a consultation focused on estate planning. I am particularly interested in discussing the creation of a living will and managing property distribution. I am hoping to schedule this meeting on November 30, 2024, during the evening hours, ideally between 4:00 PM and 6:00 PM. Should you need to reach me for any further details, please feel free to contact me via email at ben.scott24@gmail.com. I look forward to your guidance on this matter and am eager to solidify my estate planning.\n\nThank you for your assistance.\n\nWarm regards,\n\nBenjamin Scott",
+    "goldAnswers": {
+      "Full Name": "Benjamin Scott",
+      "Email Address": "ben.scott24@gmail.com",
+      "Type of Consultation": "Estate Planning",
+      "Preferred Date": "2024/11/30",
+      "Preferred Time": "Evening (4:00 PM -6:00 PM)",
+      "Additional Comments": "Looking to discuss the creation of a living will and managing property distribution."
+    },
+    "multiPage": false,
+    "formPath": "/finance-banking/financial-planning"
+  },
+  "agentName": "hybrid",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

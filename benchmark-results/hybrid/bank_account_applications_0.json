@@ -1,0 +1,39 @@
+{
+  "formInstance": {
+    "formId": "bank_account_applications",
+    "formName": "Bank Account Opening Form",
+    "domain": "Finance & Banking",
+    "instanceIndex": 0,
+    "inputDocument": "Dear Banking Officer,\n\nI am writing to apply for a Business Account and am excited about the opportunity to manage my financial affairs more effectively. My name is George Dawson, and I was born on August 1, 1957. To establish my identity, I have included my State ID, the number of which is 2868883095. I am confident that this account will meet my business needs, and I look forward to benefiting from your bank's services and support. Thank you for considering my application.\n\nSincerely,  \nGeorge Dawson",
+    "goldAnswers": {
+      "Full Name": "George Dawson",
+      "Date of Birth": "1957/08/01",
+      "Account Type": "Business Account",
+      "ID Type": "State ID",
+      "ID Number": 2868883095
+    },
+    "multiPage": false,
+    "formPath": "/finance-banking/account-opening"
+  },
+  "agentName": "hybrid",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

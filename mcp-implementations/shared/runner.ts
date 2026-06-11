@@ -13,6 +13,8 @@
 
 import fs from "node:fs";
 import path from "node:path";
+import { estimateCost } from '../../shared/cost-model';
+import { validateModelChoice } from '../../shared/provider-utils';
 import {
   ComparisonReport,
   FillResult,
@@ -21,7 +23,7 @@ import {
   UserProfile,
 } from "./types.js";
 
-const RESULTS_ROOT = path.resolve(__dirname, "../../benchmark-results");
+const RESULTS_ROOT = path.resolve(process.cwd(), "benchmark-results");
 
 interface CliArgs { impls: string[]; runs: number; }
 
@@ -77,6 +79,17 @@ async function runOne(
 
 async function main() {
   const args = parseArgs(process.argv.slice(2));
+
+  // Validate model choice (Bedrock limited to 10-30B)
+  {
+    const _provider = process.env.LLM_PROVIDER || 'ollama';
+    const _model = process.env.LLM_MODEL || '';
+    const vres = validateModelChoice(_provider, _model, 10, 30);
+    if (!vres.ok) {
+      console.error('Model validation failed:', vres.message);
+      process.exit(1);
+    }
+  }
   const formsPath = path.resolve(__dirname, "live-forms.json");
   const profilePath = path.resolve(__dirname, "user-profile.json");
   const forms: LiveForm[] = JSON.parse(fs.readFileSync(formsPath, "utf8")).forms;
@@ -100,6 +113,34 @@ async function main() {
             path.join(dir, `${form.id}_${r}.json`),
             JSON.stringify(res, null, 2),
           );
+
+          // Also append AblationRecord JSONL for aggregator
+          try {
+            const ablationDir = path.resolve(__dirname, '../../Documentation/ablation-records');
+            fs.mkdirSync(ablationDir, { recursive: true });
+            const abRec = {
+              track: 'mcp',
+              agent: implName,
+              implementation: impl.name,
+              provider: process.env.LLM_PROVIDER || 'ollama',
+              model: process.env.LLM_MODEL || 'unknown',
+              formId: form.id,
+              instanceRun: r,
+              fieldsExpected: res.fieldsExpected,
+              fieldsAttempted: res.fieldsAttempted,
+              fieldsFilled: res.fieldsFilled,
+              accuracy: res.accuracy,
+              tokensIn: res.tokensIn ?? 0,
+              tokensOut: res.tokensOut ?? 0,
+              toolCalls: res.toolCalls ?? 0,
+              durationMs: res.durationMs,
+              success: res.success,
+              startedAt: res.startedAt,
+              finishedAt: res.finishedAt,
+              error: res.error,
+            };
+            fs.appendFileSync(path.join(ablationDir, `${implName}.jsonl`), JSON.stringify(abRec) + '\n', 'utf-8');
+          } catch (e) { /* ignore */ }
         }
       }
     } finally {
@@ -123,13 +164,20 @@ async function main() {
         failures[k] = (failures[k] ?? 0) + 1;
       }
     });
+    const tokensInTotal = rs.reduce((s, r) => s + (r.tokensIn ?? 0), 0);
+    const tokensOutTotal = rs.reduce((s, r) => s + (r.tokensOut ?? 0), 0);
+    const provider = process.env.LLM_PROVIDER || 'ollama';
+    const model = process.env.LLM_MODEL || 'qwen2.5:7b';
+    const estimatedCost = estimateCost(provider, model, tokensInTotal, tokensOutTotal);
+
     report.perImplementation[implName] = {
       runs: rs.length,
       successRate: rs.filter((r) => r.success).length / Math.max(1, rs.length),
       avgAccuracy: rs.reduce((s, r) => s + r.accuracy, 0) / Math.max(1, rs.length),
       avgDurationMs: rs.reduce((s, r) => s + r.durationMs, 0) / Math.max(1, rs.length),
       avgToolCalls: rs.reduce((s, r) => s + r.toolCalls, 0) / Math.max(1, rs.length),
-      totalTokens: rs.reduce((s, r) => s + r.tokensIn + r.tokensOut, 0),
+      totalTokens: tokensInTotal + tokensOutTotal,
+      estimatedCostUSD: estimatedCost,
       failureBreakdown: failures,
     };
   }

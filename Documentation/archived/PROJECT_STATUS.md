@@ -30,6 +30,7 @@ This document is the canonical merge for status/progress narratives from:
 1. Keep command/docs parity with actual scripts and folder structure.
 2. Continue cross-track consistency for `UserProfile` types.
 3. Benchmark remaining agents consistently with the same run modes.
+4. Execute milestone plan: `MILESTONE_MCP_BENCHMARK_PARITY.md`.
 
 ---
 

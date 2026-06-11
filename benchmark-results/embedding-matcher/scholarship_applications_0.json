@@ -4,7 +4,7 @@
     "formName": "Scholarship Application for Students",
     "domain": "Academic & Research",
     "instanceIndex": 0,
-    "inputDocument": "Dear Scholarship Selection Committee,\r\n\r\nMy name is Nicholas Anne Collins, and I am a sophomore majoring in Philosophy at your esteemed institution. I am writing to express my sincere interest in applying for the scholarship opportunity available to students in need of financial assistance. \r\n\r\nAs a first-generation college student, I have worked hard to maintain a GPA of 3.19 while balancing my academic studies with various extracurricular activities. I am the proud recipient of the Dean's List Award for Outstanding Academic Performance and was also honored to be the winner of the State Physics Olympiad. These achievements are a testament to my dedication to academic excellence and my passion for learning.\r\n\r\nIn addition to my academic accomplishments, I am actively involved in extracurricular activities that allow me to contribute to my community. I am the co-founder of the Campus Startup Initiative, where I work with fellow students to foster innovation and entrepreneurship on campus. I also serve as the President of the Student Council, where I advocate for the needs of my peers and promote a sense of unity within our student body. Furthermore, I volunteer at the local community center and serve as the Coordinator of the Youth Empowerment Program, where I mentor and support at-risk youth in my community.\r\n\r\nDespite my dedication to both my academic studies and extracurricular activities, my family's annual income of $80,303 falls short of covering the cost of my education. I currently receive financial aid from another scholarship, but additional support is needed to alleviate the financial burden on my family and enable me to fully focus on my studies and community service.\r\n\r\nI believe that receiving this scholarship will not only help me achieve my academic and career goals but will also allow me to continue making a positive impact on my community. My ultimate goal is to become a leader in public health, and this scholarship will be instrumental in helping me realize that dream.\r\n\r\nI would be honored to be considered for this scholarship opportunity and am confident that with your support, I will continue to excel academically and make valuable contributions to my community. I have attached the contact information of my academic reference, Kevin Walker, who can attest to my academic abilities and character.\r\n\r\nThank you for considering my application. I look forward to the opportunity to contribute to the campus community and make a difference in the world.\r\n\r\nSincerely,\r\nNicholas Anne Collins\r\nStudent ID: 22281229\r\nEmail: nicholascollins@email.com\r\nPhone: (555) 123-4567\r\nAcademic Reference: Kevin Walker\r\nReference Email: psolomon@yahoo.com",
+    "inputDocument": "Dear Scholarship Selection Committee,\n\nMy name is Nicholas Anne Collins, and I am a sophomore majoring in Philosophy at your esteemed institution. I am writing to express my sincere interest in applying for the scholarship opportunity available to students in need of financial assistance. \n\nAs a first-generation college student, I have worked hard to maintain a GPA of 3.19 while balancing my academic studies with various extracurricular activities. I am the proud recipient of the Dean's List Award for Outstanding Academic Performance and was also honored to be the winner of the State Physics Olympiad. These achievements are a testament to my dedication to academic excellence and my passion for learning.\n\nIn addition to my academic accomplishments, I am actively involved in extracurricular activities that allow me to contribute to my community. I am the co-founder of the Campus Startup Initiative, where I work with fellow students to foster innovation and entrepreneurship on campus. I also serve as the President of the Student Council, where I advocate for the needs of my peers and promote a sense of unity within our student body. Furthermore, I volunteer at the local community center and serve as the Coordinator of the Youth Empowerment Program, where I mentor and support at-risk youth in my community.\n\nDespite my dedication to both my academic studies and extracurricular activities, my family's annual income of $80,303 falls short of covering the cost of my education. I currently receive financial aid from another scholarship, but additional support is needed to alleviate the financial burden on my family and enable me to fully focus on my studies and community service.\n\nI believe that receiving this scholarship will not only help me achieve my academic and career goals but will also allow me to continue making a positive impact on my community. My ultimate goal is to become a leader in public health, and this scholarship will be instrumental in helping me realize that dream.\n\nI would be honored to be considered for this scholarship opportunity and am confident that with your support, I will continue to excel academically and make valuable contributions to my community. I have attached the contact information of my academic reference, Kevin Walker, who can attest to my academic abilities and character.\n\nThank you for considering my application. I look forward to the opportunity to contribute to the campus community and make a difference in the world.\n\nSincerely,\nNicholas Anne Collins\nStudent ID: 22281229\nEmail: nicholascollins@email.com\nPhone: (555) 123-4567\nAcademic Reference: Kevin Walker\nReference Email: psolomon@yahoo.com",
     "goldAnswers": {
       "First Name": "Nicholas",
       "Middle Name": "Anne",
@@ -37,7 +37,7 @@
     {
       "fieldId": "firstName",
       "fieldType": "String",
-      "predictedValue": "Dear Scholarship Selection Committee,",
+      "predictedValue": "Philosophy",
       "goldValue": "Nicholas",
       "clickAccurate": false,
       "valueAccurate": false
@@ -45,7 +45,7 @@
     {
       "fieldId": "middleName",
       "fieldType": "String",
-      "predictedValue": "Dear Scholarship Selection Committee,",
+      "predictedValue": "Philosophy",
       "goldValue": "Anne",
       "clickAccurate": false,
       "valueAccurate": false
@@ -53,7 +53,7 @@
     {
       "fieldId": "lastName",
       "fieldType": "String",
-      "predictedValue": "Dear Scholarship Selection Committee,",
+      "predictedValue": "22281229",
       "goldValue": "Collins",
       "clickAccurate": false,
       "valueAccurate": false
@@ -61,7 +61,7 @@
     {
       "fieldId": "studentId",
       "fieldType": "String",
-      "predictedValue": "Dear Scholarship Selection Committee,",
+      "predictedValue": "Collins",
       "goldValue": 22281229,
       "clickAccurate": false,
       "valueAccurate": false
@@ -69,15 +69,15 @@
     {
       "fieldId": "major",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Philosophy",
       "goldValue": "Philosophy",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "gpa",
       "fieldType": "NumericInput",
-      "predictedValue": "Dear Scholarship Selection Committee,",
+      "predictedValue": "Collins",
       "goldValue": 3.19,
       "clickAccurate": false,
       "valueAccurate": false
@@ -85,7 +85,7 @@
     {
       "fieldId": "academicYear",
       "fieldType": "Dropdown",
-      "predictedValue": "Dear Scholarship Selection Committee,",
+      "predictedValue": "Kevin Walker",
       "goldValue": "Sophomore",
       "clickAccurate": false,
       "valueAccurate": false
@@ -93,7 +93,7 @@
     {
       "fieldId": "financialAid",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "Anne",
       "goldValue": "Other Scholarship",
       "clickAccurate": false,
       "valueAccurate": false
@@ -101,7 +101,7 @@
     {
       "fieldId": "familyIncome",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "3.19",
       "goldValue": 80303,
       "clickAccurate": false,
       "valueAccurate": false
@@ -143,7 +143,7 @@
     {
       "fieldId": "reference1",
       "fieldType": "String",
-      "predictedValue": "Dear Scholarship Selection Committee,",
+      "predictedValue": "Collins",
       "goldValue": "Kevin Walker",
       "clickAccurate": false,
       "valueAccurate": false
@@ -151,7 +151,7 @@
     {
       "fieldId": "reference1Email",
       "fieldType": "String",
-      "predictedValue": "Dear Scholarship Selection Committee,",
+      "predictedValue": "22281229",
       "goldValue": "psolomon@yahoo.com",
       "clickAccurate": false,
       "valueAccurate": false
@@ -165,23 +165,23 @@
       "Description": 0
     },
     "valueAccuracy": {
-      "String": 0,
+      "String": 12.5,
       "NumericInput": 0,
       "Dropdown": 0,
       "Description": 0
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 0
+    "overallValueAccuracy": 7.142857142857142
   },
   "episodicMetrics": {
-    "formCompletionRate": 0,
-    "fieldsAttempted": 9,
-    "fieldsCorrect": 0,
+    "formCompletionRate": 7.142857142857142,
+    "fieldsAttempted": 12,
+    "fieldsCorrect": 1,
     "totalFields": 14,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 0
+    "averageValueAccuracy": 7.142857142857142
   },
-  "executionTimeMs": 1757,
+  "executionTimeMs": 1707,
   "errors": [],
   "submissionSucceeded": false
 }

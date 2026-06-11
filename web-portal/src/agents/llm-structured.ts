@@ -75,7 +75,10 @@ export class LLMStructuredAgent implements PortalAgent {
     try {
       // Dynamic import so the module loads only when needed
       const { OpenAI } = await import('openai');
-      const client = new OpenAI({ apiKey });
+      const client = new OpenAI({
+        apiKey,
+        ...(process.env.OPENAI_BASE_URL ? { baseURL: process.env.OPENAI_BASE_URL } : {}),
+      });
 
       const response = await client.chat.completions.create({
         model: this.model,

@@ -32,7 +32,7 @@
     {
       "fieldId": "company_name",
       "fieldType": "String",
-      "predictedValue": "Growth",
+      "predictedValue": "Kari Ibarra",
       "goldValue": "Pinnacle Solutions",
       "clickAccurate": false,
       "valueAccurate": false
@@ -48,7 +48,7 @@
     {
       "fieldId": "founding_date",
       "fieldType": "Date",
-      "predictedValue": "Growth",
+      "predictedValue": "https://www.haynes-morales.com/",
       "goldValue": "2020/08/29",
       "clickAccurate": false,
       "valueAccurate": false
@@ -56,18 +56,18 @@
     {
       "fieldId": "business_stage",
       "fieldType": "Dropdown",
-      "predictedValue": "Growth",
+      "predictedValue": "Kari Ibarra",
       "goldValue": "Growth",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "founder_name",
       "fieldType": "String",
-      "predictedValue": "Growth",
+      "predictedValue": "Kari Ibarra",
       "goldValue": "Kari Ibarra",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "founder_email",
@@ -80,7 +80,7 @@
     {
       "fieldId": "founder_phone",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Kari Ibarra",
       "goldValue": "1738464335",
       "clickAccurate": false,
       "valueAccurate": false
@@ -88,7 +88,7 @@
     {
       "fieldId": "linkedin_profile",
       "fieldType": "String",
-      "predictedValue": "Growth",
+      "predictedValue": "Pinnacle Solutions",
       "goldValue": "https://linkedin.com/in/kaylamills",
       "clickAccurate": false,
       "valueAccurate": false
@@ -96,7 +96,7 @@
     {
       "fieldId": "funding_amount",
       "fieldType": "NumericInput",
-      "predictedValue": "The company is presently valued at USD 1,554,377",
+      "predictedValue": "100",
       "goldValue": 4311070,
       "clickAccurate": false,
       "valueAccurate": false
@@ -112,7 +112,7 @@
     {
       "fieldId": "current_valuation",
       "fieldType": "NumericInput",
-      "predictedValue": "Growth",
+      "predictedValue": "https://www.haynes-morales.com/",
       "goldValue": 1554377,
       "clickAccurate": false,
       "valueAccurate": false
@@ -120,7 +120,7 @@
     {
       "fieldId": "funding_purpose",
       "fieldType": "Description",
-      "predictedValue": "Growth",
+      "predictedValue": "Pinnacle Solutions",
       "goldValue": "Hiring",
       "clickAccurate": false,
       "valueAccurate": false,
@@ -129,7 +129,7 @@
     {
       "fieldId": "business_model",
       "fieldType": "Description",
-      "predictedValue": "Growth",
+      "predictedValue": "Kari Ibarra",
       "goldValue": "A marketplace for freelancers offering digital services to small businesses and startups.",
       "clickAccurate": false,
       "valueAccurate": false,
@@ -138,7 +138,7 @@
     {
       "fieldId": "target_market",
       "fieldType": "Description",
-      "predictedValue": "Growth",
+      "predictedValue": "https://www.haynes-morales.com/",
       "goldValue": "Parents looking for eco-friendly and sustainable products for their children.",
       "clickAccurate": false,
       "valueAccurate": false,
@@ -147,7 +147,7 @@
     {
       "fieldId": "current_revenue",
       "fieldType": "NumericInput",
-      "predictedValue": "",
+      "predictedValue": "100",
       "goldValue": 200000,
       "clickAccurate": false,
       "valueAccurate": false
@@ -179,9 +179,9 @@
       "Description": 0
     },
     "valueAccuracy": {
-      "String": 0,
+      "String": 16.666666666666664,
       "Date": 0,
-      "Dropdown": 100,
+      "Dropdown": 0,
       "NumericInput": 0,
       "Description": 0
     },
@@ -190,13 +190,13 @@
   },
   "episodicMetrics": {
     "formCompletionRate": 5.88235294117647,
-    "fieldsAttempted": 14,
+    "fieldsAttempted": 16,
     "fieldsCorrect": 1,
     "totalFields": 17,
     "averageClickAccuracy": 0,
     "averageValueAccuracy": 5.88235294117647
   },
-  "executionTimeMs": 1470,
+  "executionTimeMs": 1821,
   "errors": [],
   "submissionSucceeded": false
 }

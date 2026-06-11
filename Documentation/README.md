@@ -1,30 +1,50 @@
-# Documentation Index
+# FFA Documentation — Overview & Quickstart
 
-This folder has been consolidated to reduce overlap while preserving all existing material.
+This documentation set is the canonical entrypoint for the Form-Filling Agents (FFA) repository. It provides a focused flow so readers understand what the project contains, how to run the ablation experiments, how the analysis is computed, and where to find results.
 
-## Canonical docs (start here)
+Quick flow
+- Read the Ablation plan: `Documentation/ABLATION-STUDY-PLAN.md`
+- Follow the quick smoke steps (section below) to validate your environment.
+- Run per-track ablation (extension, web-portal, MCP) to emit per-instance JSONL records into `Documentation/ablation-records/`.
+- Aggregate with `scripts/aggregate-ablation.ts` to produce `Documentation/ABLATION-MASTER-REPORT.md`.
 
-1. **[ARCHITECTURE_AND_WORKFLOWS.md](./ARCHITECTURE_AND_WORKFLOWS.md)**  
-   Merged architecture/workflow source of truth.
-2. **[RUNNING_AND_BENCHMARKING.md](./RUNNING_AND_BENCHMARKING.md)**  
-   Merged setup + run + benchmark command source of truth.
-3. **[PROJECT_STATUS.md](./PROJECT_STATUS.md)**  
-   Merged status/timeline source of truth.
+Where things live
+- Shared utilities: `shared/scorer.ts`, `shared/cost-model.ts` (scoring & cost model used by all tracks)
+- Per-track harnesses: `extension/`, `web-portal/`, `mcp-implementations/`
+- Aggregator: `scripts/aggregate-ablation.ts`
+- Machine-readable ablation records: `Documentation/ablation-records/*.jsonl`
+- Human-readable master report: `Documentation/ABLATION-MASTER-REPORT.md`
 
-## Deep-dive and research docs
+How analysis is computed (brief)
+- Atomic metrics: per-field-type value & click accuracy (shared/scorer.ts)
+- Episodic metrics: form completion, fields-correct, fields-attempted
+- Description fields: BLEU-4 approximation (shared/scorer)
+- Cost: tokens measured from provider responses × `shared/cost-model.ts` rates (provider:model keyed)
+- Reports aggregate mean ± 95% CI across instances (default N=5)
 
-- [Report.md](./Report.md)
-- [RESEARCH_SUMMARY.md](./RESEARCH_SUMMARY.md)
-- [VISION-AGENTS.md](./VISION-AGENTS.md)
-- [Literature_review.md](./Literature_review.md)
-- [Brainstorm.md](./Brainstorm.md)
+Quickstart (smoke)
+1) Start the FormFactory server (Flask)
+   cd C:\Code\formfactory
+   pip install -r requirements.txt
+   python app.py
 
-## Legacy docs retained for history
+2) Extension quick ablation (one instance per form)
+   cd C:\Code\FFA\extension
+   npx tsx scripts/ablation-study.ts --quick
 
-These are retained to avoid information loss and now point to canonical docs:
+3) Web-portal quick benchmark
+   cd C:\Code\FFA\web-portal
+   NODE_TLS_REJECT_UNAUTHORIZED=0 npx tsx benchmark.ts --instances 1
 
-- `Implementation.md`, `Flow.md`, `Explanation.md`, `WebPortal.md`
-- `TESTING.md`, `BENCHMARK-COMPARISON.md`, `MultiModal-Benchmark.md`
-- `Running_Local_LLM.md`, `OLLAMA-SETUP.md`, `MCP-ISSUE-DIAGNOSIS.md`
-- `STATUS.md`, `OPTIMIZATION-SUMMARY.md`, `WEB-PORTAL-TEST-RESULTS.md`, `IMPLEMENTATION-HISTORY.md`
+4) MCP quick run (playwright-mcp)
+   cd C:\Code\FFA\mcp-implementations\shared
+   npx tsx runner.ts --impls playwright-mcp --runs 1
 
+5) Aggregate results
+   cd C:\Code\FFA
+   npx tsx scripts/aggregate-ablation.ts
+
+Contact & next steps
+- The master ablation plan (detailed) is in `Documentation/ABLATION-STUDY-PLAN.md`.
+- Model selection & how to change models: `Documentation/MODEL-SELECTION.md`.
+- If you want me to run the smoke validations now, say "Run smoke tests" and I will execute them and report results.

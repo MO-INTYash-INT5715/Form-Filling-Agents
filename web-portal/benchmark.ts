@@ -24,6 +24,9 @@ import { LLMStructuredAgent }   from './src/agents/llm-structured';
 import { flattenProfile }       from './src/agents/types';
 import type { ScrapedForm }     from './src/types/index';
 import type { FlatProfile, FieldFill } from './src/agents/types';
+import { estimateCost } from '../shared/cost-model';
+import { scoreFillsAgainstGold } from '../shared/scorer';
+import { validateModelChoice } from '../shared/provider-utils';
 
 // ── Form catalogue (mirrors extension/src/benchmark/dataset-loader.ts) ──────
 
@@ -70,34 +73,16 @@ function parseArgs() {
 
 // ── Scoring ───────────────────────────────────────────────────────────────────
 
-function scoreFills(fills: FieldFill[], goldAnswers: Record<string, string>): {
+function scoreFills(fills: FieldFill[], goldAnswers: Record<string, string>, formFields?: any): {
   fillRate: number;
   valueAccuracy: number;
   matched: number;
   attempted: number;
   total: number;
 } {
-  const total = fills.length;
-  const attempted = fills.filter(f => f.value !== undefined).length;
-  const fillRate = total > 0 ? (attempted / total) * 100 : 0;
-
-  // Value accuracy: for filled fields that have a gold answer, check if
-  // filled value loosely matches (case-insensitive substring)
-  let correct = 0;
-  let scoreable = 0;
-  for (const fill of fills) {
-    if (fill.value === undefined) continue;
-    const gold = goldAnswers[fill.fieldId] ?? goldAnswers[fill.label ?? ''];
-    if (!gold) continue;
-    scoreable++;
-    const pred = fill.value.toLowerCase().trim();
-    const ref  = String(gold).toLowerCase().trim();
-    if (pred === ref || pred.includes(ref) || ref.includes(pred)) correct++;
-  }
-
-  const valueAccuracy = scoreable > 0 ? (correct / scoreable) * 100 : 0;
-
-  return { fillRate, valueAccuracy, matched: correct, attempted, total };
+  // Delegate to shared scorer for consistent metrics across tracks
+  const res = scoreFillsAgainstGold(fills, goldAnswers, formFields);
+  return { fillRate: res.fillRate, valueAccuracy: res.valueAccuracy, matched: res.matched, attempted: res.attempted, total: res.total };
 }
 
 // ── Load gold answers for a form + instance ───────────────────────────────────
@@ -130,6 +115,11 @@ interface FormBenchResult {
   matched:      number;
   attempted:    number;
   durationMs:   number;
+  // LLM telemetry (avg across instances for this form)
+  tokensInAvg?: number;
+  tokensOutAvg?: number;
+  llmTimeMsAvg?: number;
+  estimatedCostAvg?: number;
   error?:       string;
 }
 
@@ -171,12 +161,24 @@ async function runAgent(
 
     // Accumulate across requested instances (all use same profile, just averaging)
     let totalFillRate = 0, totalVA = 0, totalMatched = 0, totalAttempted = 0;
+    let totalTokensIn = 0, totalTokensOut = 0, totalLlmTimeMs = 0, totalEstimatedCost = 0;
     let runCount = 0;
 
     for (let inst = 0; inst < instances; inst++) {
       const gold = loadGoldAnswers(entry.stem, inst, dataPath);
       try {
-        const { fills } = await agent.fill(form, profile);
+        const result = await agent.fill(form, profile);
+          const fills = (result as any).fills ?? [];
+          const llmUsage = (result as any).llmUsage ?? (result as any).llm ?? null;
+          const estimatedCost = llmUsage && llmUsage.model
+            ? estimateCost(process.env.LLM_PROVIDER || 'ollama', llmUsage.model, llmUsage.promptTokens || 0, llmUsage.completionTokens || 0)
+            : 0;
+          if (llmUsage) {
+            totalTokensIn += llmUsage.promptTokens || 0;
+            totalTokensOut += llmUsage.completionTokens || 0;
+            totalLlmTimeMs += llmUsage.latencyMs || 0;
+            totalEstimatedCost += estimatedCost;
+          }
         // Map gold answers by field ID as well as label
         const goldById: Record<string, string> = {};
         for (const field of form.fields) {
@@ -184,6 +186,36 @@ async function runAgent(
           if (byLabel) goldById[field.id] = byLabel;
         }
         const score = scoreFills(fills, goldById);
+
+        // Write per-instance AblationRecord JSONL for aggregator
+        try {
+          const ablationDir = path.join(__dirname, '../Documentation/ablation-records');
+          fs.mkdirSync(ablationDir, { recursive: true });
+          const record = {
+            track: 'web-portal',
+            agent: agentName,
+            provider: process.env.LLM_PROVIDER || 'ollama',
+            model: (llmUsage && llmUsage.model) ? llmUsage.model : (process.env.LLM_MODEL || 'unknown'),
+            formId: entry.stem,
+            formName: entry.name,
+            instanceIndex: inst,
+            fieldsTotal: form.fields.length,
+            fieldsAttempted: score.attempted,
+            fieldsCorrect: score.matched,
+            valueAccuracyPct: score.valueAccuracy,
+            fillRate: score.fillRate,
+            tokensIn: llmUsage?.promptTokens || 0,
+            tokensOut: llmUsage?.completionTokens || 0,
+            llmCalls: llmUsage?.calls || (llmUsage ? 1 : 0),
+            llmTimeMs: llmUsage?.latencyMs || 0,
+            estimatedCostUSD: estimatedCost,
+            timestamp: new Date().toISOString(),
+          };
+          fs.appendFileSync(path.join(ablationDir, `${agentName}.jsonl`), JSON.stringify(record) + '\n', 'utf-8');
+        } catch (e) {
+          // ignore recording failure, keep benchmark running
+        }
+
         totalFillRate  += score.fillRate;
         totalVA        += score.valueAccuracy;
         totalMatched   += score.matched;
@@ -211,6 +243,10 @@ async function runAgent(
         matched:       Math.round(totalMatched   / runCount),
         attempted:     Math.round(totalAttempted / runCount),
         durationMs:    Date.now() - formStart,
+        tokensInAvg:   runCount > 0 ? Math.round(totalTokensIn / runCount) : 0,
+        tokensOutAvg:  runCount > 0 ? Math.round(totalTokensOut / runCount) : 0,
+        llmTimeMsAvg:  runCount > 0 ? Math.round(totalLlmTimeMs / runCount) : 0,
+        estimatedCostAvg: runCount > 0 ? totalEstimatedCost / runCount : 0,
       };
       results.push(r);
       process.stdout.write(
@@ -277,7 +313,7 @@ function printReport(
 
 async function main() {
   const { agent, serverUrl, instances, headless } = parseArgs();
-  const dataPath = 'D:/Code/formfactory';
+  const dataPath = process.env.FORMFACTORY_DATA || 'C:/Code/formfactory';
   const profilePath = path.join(__dirname, 'data', 'test-profile.json');
   const outputDir   = path.resolve(__dirname, '..', 'benchmark-results');
 
@@ -290,6 +326,17 @@ async function main() {
   console.log(`Instances: ${instances} per form`);
   console.log(`Profile:   ${Object.keys(profile).filter(k => !k.includes('[')).length} keys`);
   console.log(`Agents:    ${agent ?? 'all (rule-based, embedding-matcher, llm-structured)'}\n`);
+
+  // Validate model choice (Bedrock limited to 10-30B)
+  {
+    const _provider = process.env.LLM_PROVIDER || 'ollama';
+    const _model = process.env.LLM_MODEL || '';
+    const vres = validateModelChoice(_provider, _model, 10, 30);
+    if (!vres.ok) {
+      console.error('Model validation failed:', vres.message);
+      process.exit(1);
+    }
+  }
 
   // Check Flask is up
   try {

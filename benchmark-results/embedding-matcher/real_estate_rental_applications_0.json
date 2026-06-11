@@ -34,7 +34,7 @@
     {
       "fieldId": "full_name",
       "fieldType": "String",
-      "predictedValue": "6 months",
+      "predictedValue": "1979/05/24",
       "goldValue": "Amy Soto",
       "clickAccurate": false,
       "valueAccurate": false
@@ -42,7 +42,7 @@
     {
       "fieldId": "email",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "1979/05/24",
       "goldValue": "arthurperez@webb.com",
       "clickAccurate": false,
       "valueAccurate": false
@@ -50,7 +50,7 @@
     {
       "fieldId": "phone",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "1979/05/24",
       "goldValue": "001-601-137-0101x270",
       "clickAccurate": false,
       "valueAccurate": false
@@ -58,7 +58,7 @@
     {
       "fieldId": "date_of_birth",
       "fieldType": "Date",
-      "predictedValue": "",
+      "predictedValue": "Edwards PLC",
       "goldValue": "1979/05/24",
       "clickAccurate": false,
       "valueAccurate": false
@@ -66,7 +66,7 @@
     {
       "fieldId": "current_street",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Christopherburgh",
       "goldValue": "325 Clark Tunnel",
       "clickAccurate": false,
       "valueAccurate": false
@@ -74,7 +74,7 @@
     {
       "fieldId": "current_city",
       "fieldType": "String",
-      "predictedValue": "1 year",
+      "predictedValue": "37382",
       "goldValue": "Christopherburgh",
       "clickAccurate": false,
       "valueAccurate": false
@@ -82,7 +82,7 @@
     {
       "fieldId": "current_state",
       "fieldType": "String",
-      "predictedValue": "1 year",
+      "predictedValue": "37382",
       "goldValue": "Alabama",
       "clickAccurate": false,
       "valueAccurate": false
@@ -90,7 +90,7 @@
     {
       "fieldId": "current_zip",
       "fieldType": "String",
-      "predictedValue": "6 months",
+      "predictedValue": "Amy Soto",
       "goldValue": "37382",
       "clickAccurate": false,
       "valueAccurate": false
@@ -98,7 +98,7 @@
     {
       "fieldId": "employer_name",
       "fieldType": "String",
-      "predictedValue": "She can be reached at arthurperez@webb",
+      "predictedValue": "Christopherburgh",
       "goldValue": "Edwards PLC",
       "clickAccurate": false,
       "valueAccurate": false
@@ -106,7 +106,7 @@
     {
       "fieldId": "job_title",
       "fieldType": "String",
-      "predictedValue": "6 months",
+      "predictedValue": "Amy Soto",
       "goldValue": "Environmental manager",
       "clickAccurate": false,
       "valueAccurate": false
@@ -114,7 +114,7 @@
     {
       "fieldId": "monthly_income",
       "fieldType": "NumericInput",
-      "predictedValue": "She can be reached at arthurperez@webb",
+      "predictedValue": "37382",
       "goldValue": 13121,
       "clickAccurate": false,
       "valueAccurate": false
@@ -122,15 +122,15 @@
     {
       "fieldId": "employment_length",
       "fieldType": "String",
-      "predictedValue": "1 year",
+      "predictedValue": "arthurperez@webb.com",
       "goldValue": "1 year",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "preferred_move_date",
       "fieldType": "Date",
-      "predictedValue": "",
+      "predictedValue": "Near public transport",
       "goldValue": "2025/01/26",
       "clickAccurate": false,
       "valueAccurate": false
@@ -138,15 +138,15 @@
     {
       "fieldId": "lease_term",
       "fieldType": "Dropdown",
-      "predictedValue": "6 months",
+      "predictedValue": "arthurperez@webb.com",
       "goldValue": "6 months",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "max_rent",
       "fieldType": "NumericInput",
-      "predictedValue": "",
+      "predictedValue": "37382",
       "goldValue": 2323,
       "clickAccurate": false,
       "valueAccurate": false
@@ -154,7 +154,7 @@
     {
       "fieldId": "preferred_area",
       "fieldType": "String",
-      "predictedValue": "No pets",
+      "predictedValue": "1979/05/24",
       "goldValue": "Near public transport",
       "clickAccurate": false,
       "valueAccurate": false
@@ -162,7 +162,7 @@
     {
       "fieldId": "pets",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "Near public transport",
       "goldValue": "No",
       "clickAccurate": false,
       "valueAccurate": false
@@ -170,7 +170,7 @@
     {
       "fieldId": "pet_details",
       "fieldType": "Description",
-      "predictedValue": "No pets",
+      "predictedValue": "2025/01/26",
       "goldValue": "No pets",
       "clickAccurate": false,
       "valueAccurate": false,
@@ -179,11 +179,11 @@
     {
       "fieldId": "additional_info",
       "fieldType": "Description",
-      "predictedValue": "",
+      "predictedValue": "Prefer quiet and residential areas.",
       "goldValue": "Prefer quiet and residential areas.",
       "clickAccurate": false,
-      "valueAccurate": false,
-      "bleuScore": 0
+      "valueAccurate": true,
+      "bleuScore": 100
     }
   ],
   "atomicMetrics": {
@@ -195,24 +195,24 @@
       "Description": 0
     },
     "valueAccuracy": {
-      "String": 9.090909090909092,
+      "String": 0,
       "Date": 0,
       "NumericInput": 0,
-      "Dropdown": 50,
-      "Description": 0
+      "Dropdown": 0,
+      "Description": 50
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 10.526315789473683
+    "overallValueAccuracy": 5.263157894736842
   },
   "episodicMetrics": {
-    "formCompletionRate": 10.526315789473683,
-    "fieldsAttempted": 11,
-    "fieldsCorrect": 2,
+    "formCompletionRate": 5.263157894736842,
+    "fieldsAttempted": 19,
+    "fieldsCorrect": 1,
     "totalFields": 19,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 10.526315789473683
+    "averageValueAccuracy": 5.263157894736842
   },
-  "executionTimeMs": 1625,
+  "executionTimeMs": 1766,
   "errors": [],
-  "submissionSucceeded": true
+  "submissionSucceeded": false
 }

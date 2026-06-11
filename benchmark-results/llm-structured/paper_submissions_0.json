@@ -1,0 +1,108 @@
+{
+  "formInstance": {
+    "formId": "paper_submissions",
+    "formName": "Paper Submission Form",
+    "domain": "Academic & Research",
+    "instanceIndex": 0,
+    "inputDocument": "Dear Conference Committee,\n\nI am writing to formally submit my paper for consideration at your esteemed conference. Attached to this application, you will find my paper entitled \"Advancements in Deep Learning for Image Recognition.\" Authored by me, Alice Johnson, this paper explores recent innovations in deep learning models, with a particular emphasis on their applications in image recognition and classification.\n\nThe paper delves into cutting-edge research in the field of deep learning, aiming to contribute to the existing body of knowledge by highlighting the significant advancements and their practical implications. The insights provided in the paper demonstrate how these developments can revolutionize the scope of image recognition technologies, making them more efficient and accurate.\n\nTo assist in categorizing the submission, please note that the relevant fields of interest include \"Deep Learning,\" \"Image Recognition,\" and \"Neural Networks.\" I am confident that this paper will add substantial value to the discussions on Artificial Intelligence at the conference.\n\nFor any further correspondence, you may reach me via email at alice.johnson@university.edu. I look forward to the opportunity to present my research and engage with fellow experts in the field.\n\nThank you for considering my submission.\n\nSincerely,\n\nAlice Johnson",
+    "goldAnswers": {
+      "Author Name": "Alice Johnson",
+      "Email": "alice.johnson@university.edu",
+      "Paper Title": "Advancements in Deep Learning for Image Recognition",
+      "Abstract": "This paper explores recent innovations in deep learning models, focusing on their applications in image recognition and classification.",
+      "Keywords": [
+        "Deep Learning",
+        "Image Recognition",
+        "Neural Networks"
+      ],
+      "Paper Category": "Artificial Intelligence"
+    },
+    "multiPage": false,
+    "formPath": "/academic-research/paper-submission"
+  },
+  "agentName": "llm-structured",
+  "fieldResults": [
+    {
+      "fieldId": "author_name",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Alice Johnson",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "email",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "alice.johnson@university.edu",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "paper_title",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Advancements in Deep Learning for Image Recognition",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "abstract",
+      "fieldType": "Description",
+      "predictedValue": "",
+      "goldValue": "This paper explores recent innovations in deep learning models, focusing on their applications in image recognition and classification.",
+      "clickAccurate": false,
+      "valueAccurate": false,
+      "bleuScore": 0
+    },
+    {
+      "fieldId": "keywords",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": [
+        "Deep Learning",
+        "Image Recognition",
+        "Neural Networks"
+      ],
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "category",
+      "fieldType": "Dropdown",
+      "predictedValue": "",
+      "goldValue": "Artificial Intelligence",
+      "clickAccurate": false,
+      "valueAccurate": false
+    }
+  ],
+  "atomicMetrics": {
+    "clickAccuracy": {
+      "String": 0,
+      "Description": 0,
+      "Dropdown": 0
+    },
+    "valueAccuracy": {
+      "String": 0,
+      "Description": 0,
+      "Dropdown": 0
+    },
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 6,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 1831,
+  "errors": [],
+  "submissionSucceeded": true,
+  "tokensIn": 0,
+  "tokensOut": 0,
+  "llmTimeMs": 0,
+  "llmCalls": 0
+}

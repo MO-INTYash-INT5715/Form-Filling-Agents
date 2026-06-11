@@ -1,0 +1,45 @@
+{
+  "formInstance": {
+    "formId": "Project_Bid",
+    "formName": "Project Bid Submission Form",
+    "domain": "Construction & Manufacturing",
+    "instanceIndex": 0,
+    "inputDocument": "**Construction Project Bid Submission Report**\n\n**Project Overview**\n\nGreenfield Construction is pleased to submit a competitive bid for the proposed Office Building Renovation project. With Contractor License Number GC-203940, we not only bring expertise to this endeavor but also the highest standards of professionalism and quality. We are excited to work collaboratively to bring your vision to life, delivering a fully renovated commercial space that meets and exceeds your expectations.\n\n**Scope of Work and Detailed Work Description**\n\nOur proposal encompasses a full renovation of the commercial office building, ensuring all facets of the property are updated and optimized. We will start by completely gutting the existing infrastructure, allowing us to install updated structural components that provide long-lasting durability and compliance with modern building codes.\n\nThis renovation will include a comprehensive overhaul of the building's wiring and plumbing systems, alongside an updated HVAC installation. These upgrades ensure the property not only functions efficiently but also comfortably meets all modern standards. The interior of the office will be designed to feature contemporary layouts, providing a modern and welcoming atmosphere. The installation of upgraded fixtures will further enhance the aesthetic and functional quality of the interior spaces.\n\n**Financial and Temporal Considerations**\n\nAfter thorough examination and calculation, we propose a bid amount of $850,000. The renovation is scheduled to commence on June 1, 2024, with an expected duration of 24 weeks, leading to an estimated completion date of December 1, 2024. This timeline has been devised to ensure efficient workflow and high-quality results, minimizing any downtime for your operations.\n\n**Contact and Communication**\n\nThroughout the course of this project, communication will remain a top priority. John Parker will be your dedicated contact person, ensuring you can always reach us easily at 555-762-4923 for any inquiries or updates on the project status.\n\n**Commitment to Excellence**\n\nGreenfield Construction prides itself on adhering to strict quality standards and technical specifications, using top-grade materials to ensure all deliverables are up to par with our commitment as a trusted builder. We appreciate your consideration and look forward to the possibility of contributing to the successful upgrading of your office building.\n\nWe hope this bid meets your approval and assure you that we are prepared to meet all challenges this exciting renovation project may present. Thank you for the opportunity to propose our services for your Office Building Renovation project.",
+    "goldAnswers": {
+      "Company Name": "Greenfield Construction",
+      "Contractor License Number": "GC-203940",
+      "Project Name": "Office Building Renovation",
+      "Bid Amount ($)": 850000,
+      "Estimated Duration (weeks)": 24,
+      "Proposed Start Date": "2024/06/01",
+      "Estimated Completion Date": "2024/12/01",
+      "Scope of Work": "Full renovation of a commercial office building, including electrical and plumbing upgrades.",
+      "Detailed Work Description": "The project will involve gutting the entire office building and rebuilding it with updated structural components, new wiring, plumbing, and HVAC systems. Interior finishes will include modern office layouts and upgraded fixtures.",
+      "Contact Person": "John Parker",
+      "Phone Number": "555-762-4923"
+    },
+    "multiPage": false,
+    "formPath": "/construction-manufacturing/project-bid"
+  },
+  "agentName": "hybrid",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

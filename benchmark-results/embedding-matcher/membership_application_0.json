@@ -4,7 +4,7 @@
     "formName": "Association Membership Application",
     "domain": "Professional & Business",
     "instanceIndex": 0,
-    "inputDocument": "Dear Sir/Madam,\r\n\r\nI am writing to apply for membership with your esteemed professional association. My name is John Smith, and I currently work as a student at the University of Technology, pursuing my Bachelor's Degree in Computer Science.\r\n\r\nAs a dedicated student looking to further my career in the education industry, I believe that becoming a member of your organization would provide me with valuable resources, networking opportunities, and professional development support. I am eager to connect with like-minded individuals in the field and stay updated on the latest trends and advancements.\r\n\r\nDespite having no professional certifications and zero years of industry experience, I am determined to grow and learn within the field. With the guidance and mentorship from esteemed professionals such as Dr. Emily Johnson, a respected professor at my university, I am confident that I can bring a fresh perspective and contribute positively to the association.\r\n\r\nI am applying for a Student Member membership level with a membership duration of 1 year. I look forward to participating in workshops, seminars, and events to enhance my skills and knowledge in Computer Science. My passion for the industry drives me to constantly seek new learning opportunities and the chance to connect with experienced professionals.\r\n\r\nI am enthusiastic about the possibility of joining your association and am committed to actively engaging with its initiatives and offerings. I believe that by becoming a member, I can both benefit from and contribute to the community, ultimately furthering my career goals and aspirations.\r\n\r\nThank you for considering my application. I look forward to the opportunity to grow and develop alongside fellow members of the association.\r\n\r\nBest regards,\r\n\r\nJohn Smith\r\njohn.smith@gmail.com\r\n555-0123\r\n1990/01/15",
+    "inputDocument": "Dear Sir/Madam,\n\nI am writing to apply for membership with your esteemed professional association. My name is John Smith, and I currently work as a student at the University of Technology, pursuing my Bachelor's Degree in Computer Science.\n\nAs a dedicated student looking to further my career in the education industry, I believe that becoming a member of your organization would provide me with valuable resources, networking opportunities, and professional development support. I am eager to connect with like-minded individuals in the field and stay updated on the latest trends and advancements.\n\nDespite having no professional certifications and zero years of industry experience, I am determined to grow and learn within the field. With the guidance and mentorship from esteemed professionals such as Dr. Emily Johnson, a respected professor at my university, I am confident that I can bring a fresh perspective and contribute positively to the association.\n\nI am applying for a Student Member membership level with a membership duration of 1 year. I look forward to participating in workshops, seminars, and events to enhance my skills and knowledge in Computer Science. My passion for the industry drives me to constantly seek new learning opportunities and the chance to connect with experienced professionals.\n\nI am enthusiastic about the possibility of joining your association and am committed to actively engaging with its initiatives and offerings. I believe that by becoming a member, I can both benefit from and contribute to the community, ultimately furthering my career goals and aspirations.\n\nThank you for considering my application. I look forward to the opportunity to grow and develop alongside fellow members of the association.\n\nBest regards,\n\nJohn Smith\njohn.smith@gmail.com\n555-0123\n1990/01/15",
     "goldAnswers": {
       "Full Name": "John Smith",
       "Email Address": "john.smith@gmail.com",
@@ -31,15 +31,15 @@
     {
       "fieldId": "full_name",
       "fieldType": "String",
-      "predictedValue": "Technology",
+      "predictedValue": "John Smith",
       "goldValue": "John Smith",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "email",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Student Member",
       "goldValue": "john.smith@gmail.com",
       "clickAccurate": false,
       "valueAccurate": false
@@ -47,7 +47,7 @@
     {
       "fieldId": "phone",
       "fieldType": "String",
-      "predictedValue": "Technology",
+      "predictedValue": "John Smith",
       "goldValue": "555-0123",
       "clickAccurate": false,
       "valueAccurate": false
@@ -55,7 +55,7 @@
     {
       "fieldId": "date_of_birth",
       "fieldType": "Date",
-      "predictedValue": "Dear Sir/Madam,",
+      "predictedValue": "Student Member",
       "goldValue": "1990/01/15",
       "clickAccurate": false,
       "valueAccurate": false
@@ -63,7 +63,7 @@
     {
       "fieldId": "membership_level",
       "fieldType": "Dropdown",
-      "predictedValue": "Dear Sir/Madam,",
+      "predictedValue": "Computer Science",
       "goldValue": "Student Member",
       "clickAccurate": false,
       "valueAccurate": false
@@ -71,7 +71,7 @@
     {
       "fieldId": "membership_duration",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "University of Technology",
       "goldValue": "1 Year",
       "clickAccurate": false,
       "valueAccurate": false
@@ -79,15 +79,15 @@
     {
       "fieldId": "education_level",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "Bachelor's Degree",
       "goldValue": "Bachelor's Degree",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "field_of_study",
       "fieldType": "String",
-      "predictedValue": "Dear Sir/Madam,",
+      "predictedValue": "Student Member",
       "goldValue": "Computer Science",
       "clickAccurate": false,
       "valueAccurate": false
@@ -95,7 +95,7 @@
     {
       "fieldId": "professional_certifications",
       "fieldType": "Description",
-      "predictedValue": "Dear Sir/Madam,",
+      "predictedValue": "Computer Science",
       "goldValue": "None",
       "clickAccurate": false,
       "valueAccurate": false,
@@ -104,7 +104,7 @@
     {
       "fieldId": "current_employer",
       "fieldType": "String",
-      "predictedValue": "Dear Sir/Madam,",
+      "predictedValue": "Computer Science",
       "goldValue": "University of Technology",
       "clickAccurate": false,
       "valueAccurate": false
@@ -112,7 +112,7 @@
     {
       "fieldId": "job_title",
       "fieldType": "String",
-      "predictedValue": "Technology",
+      "predictedValue": "555-0123",
       "goldValue": "Student",
       "clickAccurate": false,
       "valueAccurate": false
@@ -120,7 +120,7 @@
     {
       "fieldId": "years_experience",
       "fieldType": "NumericInput",
-      "predictedValue": "",
+      "predictedValue": "University of Technology",
       "goldValue": 0,
       "clickAccurate": false,
       "valueAccurate": false
@@ -128,7 +128,7 @@
     {
       "fieldId": "industry",
       "fieldType": "String",
-      "predictedValue": "Technology",
+      "predictedValue": "555-0123",
       "goldValue": "Education",
       "clickAccurate": false,
       "valueAccurate": false
@@ -136,7 +136,7 @@
     {
       "fieldId": "reference_name",
       "fieldType": "String",
-      "predictedValue": "Dear Sir/Madam,",
+      "predictedValue": "Student Member",
       "goldValue": "Dr. Emily Johnson",
       "clickAccurate": false,
       "valueAccurate": false
@@ -152,7 +152,7 @@
     {
       "fieldId": "reference_relationship",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Student",
       "goldValue": "Professor",
       "clickAccurate": false,
       "valueAccurate": false
@@ -167,24 +167,24 @@
       "NumericInput": 0
     },
     "valueAccuracy": {
-      "String": 0,
+      "String": 10,
       "Date": 0,
-      "Dropdown": 0,
+      "Dropdown": 33.33333333333333,
       "Description": 0,
       "NumericInput": 0
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 0
+    "overallValueAccuracy": 12.5
   },
   "episodicMetrics": {
-    "formCompletionRate": 0,
-    "fieldsAttempted": 11,
-    "fieldsCorrect": 0,
+    "formCompletionRate": 12.5,
+    "fieldsAttempted": 16,
+    "fieldsCorrect": 2,
     "totalFields": 16,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 0
+    "averageValueAccuracy": 12.5
   },
-  "executionTimeMs": 1443,
+  "executionTimeMs": 1814,
   "errors": [],
   "submissionSucceeded": false
 }

@@ -83,7 +83,8 @@ export interface ComparisonReport {
     avgDurationMs: number;
     avgToolCalls: number;
     totalTokens: number;
-    failureBreakdown: Record<string, number>;
+  estimatedCostUSD?: number;
+  failureBreakdown: Record<string, number>;
   }>;
 }
 

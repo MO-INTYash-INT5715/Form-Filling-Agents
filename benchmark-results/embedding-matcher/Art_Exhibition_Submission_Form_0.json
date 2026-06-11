@@ -1,0 +1,122 @@
+{
+  "formInstance": {
+    "formId": "Art_Exhibition_Submission_Form",
+    "formName": "Art Exhibition Submission Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 0,
+    "inputDocument": "Artist Amanda Lee, residing at the email address amanda.lee1985@gmail.com, is pleased to submit her artwork titled \"Enchanted Forest\" for consideration in your esteemed art exhibition. This remarkable piece, rendered in the medium of Painting, measures 120 x 90 x 4 cm and was created in the year 2022. \"This painting depicts an otherworldly forest where rays of sunlight filter through the ancient trees, creating a dappled pattern on the forest floor. The rich, deep greens of the foliage contrast with the warm, golden hues of the sunlight, giving the scene an almost magical quality. Delicate wildflowers peek out from between the roots, adding splashes of color to the otherwise earthy palette. It's a representation of the tranquility and mystery that one might encounter in a hidden forest.\" Amanda Lee expresses her preference for the exhibition period to take place in Spring 2024. Moreover, the artwork is available for sale, promising a valuable acquisition for collectors and art enthusiasts alike. The artist looks forward to the opportunity to present \"Enchanted Forest\" in a setting that appropriately appreciates its intricate beauty and profound narrative.",
+    "goldAnswers": {
+      "Artist Name": "Amanda Lee",
+      "Email Address": "amanda.lee1985@gmail.com",
+      "Artwork Title": "Enchanted Forest",
+      "Medium": "Painting",
+      "Dimensions (in cm)": "120 x 90 x 4",
+      "Year Created": 2022,
+      "Artwork Description": "This painting depicts an otherworldly forest where rays of sunlight filter through the ancient trees, creating a dappled pattern on the forest floor. The rich, deep greens of the foliage contrast with the warm, golden hues of the sunlight, giving the scene an almost magical quality. Delicate wildflowers peek out from between the roots, adding splashes of color to the otherwise earthy palette. It's a representation of the tranquility and mystery that one might encounter in a hidden forest.",
+      "Preferred Exhibition Period": "Spring 2024",
+      "Artwork is available for sale": true
+    },
+    "multiPage": false,
+    "formPath": "/arts-creative/exhibition-submission"
+  },
+  "agentName": "embedding-matcher",
+  "fieldResults": [
+    {
+      "fieldId": "Artist Name",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Amanda Lee",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "Email Address",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "amanda.lee1985@gmail.com",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "Artwork Title",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Enchanted Forest",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "medium",
+      "fieldType": "Dropdown",
+      "predictedValue": "Spring 2024",
+      "goldValue": "Painting",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "Dimensions (in cm)",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "120 x 90 x 4",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "Year Created",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": 2022,
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "Artwork Description",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "This painting depicts an otherworldly forest where rays of sunlight filter through the ancient trees, creating a dappled pattern on the forest floor. The rich, deep greens of the foliage contrast with the warm, golden hues of the sunlight, giving the scene an almost magical quality. Delicate wildflowers peek out from between the roots, adding splashes of color to the otherwise earthy palette. It's a representation of the tranquility and mystery that one might encounter in a hidden forest.",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "exhibition_period",
+      "fieldType": "Dropdown",
+      "predictedValue": "Enchanted Forest",
+      "goldValue": "Spring 2024",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "for_sale",
+      "fieldType": "Checkbox",
+      "predictedValue": "Amanda Lee",
+      "goldValue": true,
+      "clickAccurate": false,
+      "valueAccurate": false
+    }
+  ],
+  "atomicMetrics": {
+    "clickAccuracy": {
+      "String": 0,
+      "Dropdown": 0,
+      "Checkbox": 0
+    },
+    "valueAccuracy": {
+      "String": 0,
+      "Dropdown": 0,
+      "Checkbox": 0
+    },
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 3,
+    "fieldsCorrect": 0,
+    "totalFields": 9,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 1868,
+  "errors": [],
+  "submissionSucceeded": true
+}

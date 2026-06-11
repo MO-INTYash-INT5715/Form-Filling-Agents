@@ -1,0 +1,43 @@
+{
+  "formInstance": {
+    "formId": "Art_Exhibition_Submission_Form",
+    "formName": "Art Exhibition Submission Form",
+    "domain": "Arts & Creative",
+    "instanceIndex": 0,
+    "inputDocument": "Artist Amanda Lee, residing at the email address amanda.lee1985@gmail.com, is pleased to submit her artwork titled \"Enchanted Forest\" for consideration in your esteemed art exhibition. This remarkable piece, rendered in the medium of Painting, measures 120 x 90 x 4 cm and was created in the year 2022. \"This painting depicts an otherworldly forest where rays of sunlight filter through the ancient trees, creating a dappled pattern on the forest floor. The rich, deep greens of the foliage contrast with the warm, golden hues of the sunlight, giving the scene an almost magical quality. Delicate wildflowers peek out from between the roots, adding splashes of color to the otherwise earthy palette. It's a representation of the tranquility and mystery that one might encounter in a hidden forest.\" Amanda Lee expresses her preference for the exhibition period to take place in Spring 2024. Moreover, the artwork is available for sale, promising a valuable acquisition for collectors and art enthusiasts alike. The artist looks forward to the opportunity to present \"Enchanted Forest\" in a setting that appropriately appreciates its intricate beauty and profound narrative.",
+    "goldAnswers": {
+      "Artist Name": "Amanda Lee",
+      "Email Address": "amanda.lee1985@gmail.com",
+      "Artwork Title": "Enchanted Forest",
+      "Medium": "Painting",
+      "Dimensions (in cm)": "120 x 90 x 4",
+      "Year Created": 2022,
+      "Artwork Description": "This painting depicts an otherworldly forest where rays of sunlight filter through the ancient trees, creating a dappled pattern on the forest floor. The rich, deep greens of the foliage contrast with the warm, golden hues of the sunlight, giving the scene an almost magical quality. Delicate wildflowers peek out from between the roots, adding splashes of color to the otherwise earthy palette. It's a representation of the tranquility and mystery that one might encounter in a hidden forest.",
+      "Preferred Exhibition Period": "Spring 2024",
+      "Artwork is available for sale": true
+    },
+    "multiPage": false,
+    "formPath": "/arts-creative/exhibition-submission"
+  },
+  "agentName": "hybrid",
+  "fieldResults": [],
+  "atomicMetrics": {
+    "clickAccuracy": {},
+    "valueAccuracy": {},
+    "overallClickAccuracy": 0,
+    "overallValueAccuracy": 0
+  },
+  "episodicMetrics": {
+    "formCompletionRate": 0,
+    "fieldsAttempted": 0,
+    "fieldsCorrect": 0,
+    "totalFields": 0,
+    "averageClickAccuracy": 0,
+    "averageValueAccuracy": 0
+  },
+  "executionTimeMs": 0,
+  "errors": [
+    "browserContext.newPage: Target page, context or browser has been closed"
+  ],
+  "submissionSucceeded": false
+}

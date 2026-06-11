@@ -35,8 +35,10 @@ export async function embedTexts(texts: string[], cfg?: EmbeddingProviderConfig)
     try {
       // Dynamic import so openai is optional at install time
       const OpenAI = (await import('openai')).OpenAI;
-      const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
-      const model = config.openaiModel || 'text-embedding-3-small';
+      const clientOpts: Record<string, string> = { apiKey: process.env.OPENAI_API_KEY! };
+      if (process.env.OPENAI_BASE_URL) clientOpts.baseURL = process.env.OPENAI_BASE_URL;
+      const client = new OpenAI(clientOpts);
+      const model = config.openaiModel || process.env.EMBEDDING_MODEL || 'text-embedding-3-small';
       const resp: any = await client.embeddings.create({ model, input: texts });
       return resp.data.map((d: any) => d.embedding as number[]);
     } catch (err) {

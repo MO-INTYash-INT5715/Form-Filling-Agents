@@ -2,7 +2,7 @@
 
 > **For AI coding agents:** Read this file at the start of every session (~800 tokens).
 
-**Last updated:** 2026-05-27
+**Last updated:** 2026-06-11
 
 ---
 
@@ -106,13 +106,13 @@ Do NOT reference bare `src/` paths — they no longer exist at root.
 
 ## Active State
 
-- **Status:** Extension architecture stable (benchmarked); web-portal scaffolded (needs end-to-end test); **MCP-implementations track is blocked by auth issues.**
-- **Current blocker:** MCP Playwright prototype ready but LLM access blocked: (1) GitHub Models token returns 401 Unauthorized, needs valid fine-grained PAT with "Models: read" scope OR switch to OpenAI, (2) SSL cert validation issue worked around with `NODE_TLS_REJECT_UNAUTHORIZED=0` (dev only). See `mcp-implementations/playwright-mcp/SETUP-ISSUES.md`.
-- **What works:** Extension agents benchmarked on FormFactory. MCP server (Playwright tools) spawns correctly and enumerates 23 tools. Types and contracts in place across all three tracks.
-- **Recommended next:** **Web Portal track** (Option B in STATUS.md) — no external blockers, can demo document-upload → profile-extraction → headless-fill end-to-end.
-- **Isolation rule (hard):** every `mcp-implementations/<name>/` folder has its own `package.json` and may only import from its own `src/` and from `mcp-implementations/shared/`. No cross-implementation imports, ever.
-- **Comparison harness:** `mcp-implementations/shared/runner.ts` drives all three and writes `benchmark-results/mcp-comparison.json`.
-- **Last significant change (2026-05-27):** Diagnosed MCP auth blockage. Created `Documentation/STATUS.md` with actionable next steps. Large repo restructure (src/ → extension/src/, added web-portal/ and mcp-implementations/) is uncommitted.
+- **Status:** Extension architecture stable (benchmarked); web-portal implementation active; MCP prototype available with provider-dependent execution reliability.
+- **What works:** Extension benchmark harness, multiple agent strategies, root and package-level benchmark scripts, and documented runbooks in `Documentation/`.
+- **Known risk areas:** MCP provider auth/scope variability and environment-specific SSL/network behavior.
+- **Recommended next milestone:** `Documentation/MILESTONE_MCP_BENCHMARK_PARITY.md`.
+- **Isolation rule (hard):** every `mcp-implementations/<name>/` folder has its own `package.json` and may only import from its own `src/` and from `mcp-implementations/shared/`. No cross-implementation imports.
+- **Comparison harness:** `mcp-implementations/shared/runner.ts` drives multi-implementation comparisons and writes to benchmark results.
+- **Docs source of truth:** `Documentation/README.md` and `Documentation/REPOSITORY_POLICIES.md`.
 
 ---
 
