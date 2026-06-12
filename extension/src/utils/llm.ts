@@ -11,6 +11,13 @@ export function getLLMClient() {
     const apiKey = process.env.GEMINI_API_KEY;
     if (!apiKey) throw new Error('GEMINI_API_KEY not set in .env');
     return new GoogleGenerativeAI(apiKey);
+  } else if (provider === 'cerebras') {
+    const apiKey = process.env.CEREBRAS_API_KEY;
+    if (!apiKey) throw new Error('CEREBRAS_API_KEY not set in .env');
+    return new OpenAI({
+      apiKey,
+      baseURL: 'https://api.cerebras.ai/v1',
+    });
   } else if (provider === 'openai' || provider === 'custom') {
     return new OpenAI({
       apiKey: process.env.OPENAI_API_KEY || '',
