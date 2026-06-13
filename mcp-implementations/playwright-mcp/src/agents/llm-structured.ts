@@ -39,12 +39,18 @@ const MAX_TURNS = parseInt(process.env.MAX_TURNS_PER_FORM ?? "20", 10);
  * only thing that changes is baseURL + apiKey.
  */
 function makeClient(): OpenAI {
-  const baseURL = process.env.LLM_BASE_URL ?? "https://models.github.ai/inference";
-  const apiKey =
+  const provider = process.env.LLM_PROVIDER || "openai";
+  let baseURL = process.env.LLM_BASE_URL ?? process.env.OPENAI_BASE_URL ?? "https://models.github.ai/inference";
+  let apiKey =
     process.env.GITHUB_TOKEN ||
     process.env.LLM_API_KEY ||
     process.env.OPENAI_API_KEY;
-  
+
+  if (provider === "cerebras") {
+    baseURL = "https://api.cerebras.ai/v1";
+    apiKey = process.env.CEREBRAS_API_KEY || apiKey;
+  }
+
   // For local Ollama, use a dummy key
   const isLocal = baseURL.includes('localhost') || baseURL.includes('127.0.0.1');
   const finalKey = apiKey || (isLocal ? 'ollama' : undefined);
@@ -70,8 +76,8 @@ function classifyError(msg: string): FillResult["failureCategory"] {
   return "other";
 }
 
-export class PlaywrightMcpAgent implements MCPFormFiller {
-  name = "playwright-mcp";
+export class LlmStructuredMcpAgent implements MCPFormFiller {
+  name = "llm-structured";
   private mcp = new PlaywrightMcpClient();
   private openai: OpenAI;
   private tools: ChatCompletionTool[] = [];
@@ -195,5 +201,5 @@ export class PlaywrightMcpAgent implements MCPFormFiller {
 }
 
 export function createFiller(): MCPFormFiller {
-  return new PlaywrightMcpAgent();
+  return new LlmStructuredMcpAgent();
 }

@@ -86,6 +86,7 @@ export interface ScrapedForm {
   title?: string;
   fields: ScrapedField[];
   scrapedAt: string;
+  screenshotBase64?: string;
 }
 
 // ── Fill Job ─────────────────────────────────────────────────────────────────

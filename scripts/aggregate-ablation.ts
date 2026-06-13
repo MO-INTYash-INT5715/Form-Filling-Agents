@@ -36,23 +36,27 @@ function aggregate() {
     process.exit(1);
   }
 
-  const byAgent: Record<string, any[]> = {};
+  const byKey: Record<string, any[]> = {};
   for (const r of records) {
-    byAgent[r.agent] = byAgent[r.agent] || [];
-    byAgent[r.agent].push(r);
+    const track = r.track || 'unknown';
+    const key = `${track}::${r.agent}`;
+    byKey[key] = byKey[key] || [];
+    byKey[key].push(r);
   }
 
-  const rows: Array<{ agent: string; forms: number; avgValueAcc: number; avgTokens: number; avgCost: number; avgLlmTimeMs: number; avgLlmcalls: number }> = [];
+  const rows: Array<{ track: string; agent: string; forms: number; avgValueAcc: number; avgTokens: number; avgCost: number; avgLlmTimeMs: number; avgLlmcalls: number }> = [];
 
-  for (const [agent, recs] of Object.entries(byAgent)) {
+  for (const [key, recs] of Object.entries(byKey)) {
+    const [track, agent] = key.split('::');
     const forms = recs.length;
-    const avgValueAcc = recs.reduce((s, r) => s + (r.episodic?.averageValueAccuracy ?? r.atomic?.overallValueAccuracy ?? 0), 0) / forms;
+    // Handle both 'episodic.averageValueAccuracy' (extension) and 'valueAccuracyPct' (web-portal/mcp)
+    const avgValueAcc = recs.reduce((s, r) => s + (r.valueAccuracyPct ?? r.episodic?.averageValueAccuracy ?? r.atomic?.overallValueAccuracy ?? 0), 0) / forms;
     const avgTokens = recs.reduce((s, r) => s + (r.tokensIn ?? 0) + (r.tokensOut ?? 0), 0) / forms;
     const avgCost = recs.reduce((s, r) => s + (r.estimatedCostUSD ?? 0), 0) / forms;
     const avgLlmTimeMs = recs.reduce((s, r) => s + (r.llmTimeMs ?? 0), 0) / forms;
     const avgLlmcalls = recs.reduce((s, r) => s + (r.llmCalls ?? 0), 0) / forms;
 
-    rows.push({ agent, forms, avgValueAcc, avgTokens, avgCost, avgLlmTimeMs, avgLlmcalls });
+    rows.push({ track, agent, forms, avgValueAcc, avgTokens, avgCost, avgLlmTimeMs, avgLlmcalls });
   }
 
   rows.sort((a, b) => b.avgValueAcc - a.avgValueAcc);
@@ -61,12 +65,12 @@ function aggregate() {
   lines.push('# Ablation Master Report');
   lines.push(`**Generated:** ${new Date().toISOString()}`);
   lines.push('');
-  lines.push('| Rank | Agent | Forms | Avg Value Acc | Avg Tokens | Avg Cost (USD) | Avg LLM ms | Avg LLM Calls |');
-  lines.push('|------|-------|-------:|-------------:|-----------:|---------------:|-----------:|--------------:|');
+  lines.push('| Rank | Track | Agent | Forms | Avg Value Acc | Avg Tokens | Avg Cost (USD) | Avg LLM ms | Avg LLM Calls |');
+  lines.push('|------|-------|-------|-------:|-------------:|-----------:|---------------:|-----------:|--------------:|');
 
   for (let i = 0; i < rows.length; i++) {
     const r = rows[i];
-    lines.push(`| ${i + 1} | ${r.agent} | ${r.forms} | ${r.avgValueAcc.toFixed(1)}% | ${Math.round(r.avgTokens).toLocaleString()} | $${r.avgCost.toFixed(5)} | ${Math.round(r.avgLlmTimeMs)} | ${r.avgLlmcalls.toFixed(1)} |`);
+    lines.push(`| ${i + 1} | ${r.track} | ${r.agent} | ${r.forms} | ${r.avgValueAcc.toFixed(1)}% | ${Math.round(r.avgTokens).toLocaleString()} | $${r.avgCost.toFixed(5)} | ${Math.round(r.avgLlmTimeMs)} | ${r.avgLlmcalls.toFixed(1)} |`);
   }
 
   lines.push('');

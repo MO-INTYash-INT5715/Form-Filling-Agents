@@ -73,11 +73,19 @@ export class LLMStructuredAgent implements PortalAgent {
     let completionTokens = 0;
 
     try {
-      // Dynamic import so the module loads only when needed
       const { OpenAI } = await import('openai');
+      const provider = process.env.LLM_PROVIDER || 'openai';
+      let finalApiKey = apiKey;
+      let finalBaseUrl = process.env.OPENAI_BASE_URL;
+
+      if (provider === 'cerebras') {
+        finalApiKey = process.env.CEREBRAS_API_KEY || apiKey;
+        finalBaseUrl = 'https://api.cerebras.ai/v1';
+      }
+
       const client = new OpenAI({
-        apiKey,
-        ...(process.env.OPENAI_BASE_URL ? { baseURL: process.env.OPENAI_BASE_URL } : {}),
+        apiKey: finalApiKey,
+        ...(finalBaseUrl ? { baseURL: finalBaseUrl } : {}),
       });
 
       const response = await client.chat.completions.create({

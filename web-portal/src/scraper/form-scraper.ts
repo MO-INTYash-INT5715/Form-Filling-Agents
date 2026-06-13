@@ -82,12 +82,14 @@ export async function scrapeForm(url: string): Promise<ScrapedForm> {
     });
 
     const title = await page.title();
+    const screenshotBuf = await page.screenshot({ type: 'jpeg', quality: 80 });
 
     return {
       url,
       title: title || undefined,
       fields,
       scrapedAt: new Date().toISOString(),
+      screenshotBase64: screenshotBuf.toString('base64'),
     };
   } finally {
     await browser.close();

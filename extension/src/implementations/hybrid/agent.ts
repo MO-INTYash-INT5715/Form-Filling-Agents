@@ -60,20 +60,57 @@ export class HybridAgent implements BenchmarkAgent {
       }
     }
 
-    // Step 2: Compute confidence scores
-    const confidence = computeFieldsConfidence(keys, extracted, instance.goldAnswers);
-
-    // Step 3: Identify low confidence/unfilled fields
+    // Step 2: Identify uncertain fields from rule-based pass
     const threshold = 0.6;
-    const uncertainFields = keys.filter(k => (confidence[k] ?? 0.0) < threshold);
+    let confidence = computeFieldsConfidence(keys, extracted, instance.goldAnswers);
+    let uncertainFields = keys.filter(k => (confidence[k] ?? 0.0) < threshold);
 
-    console.log(`[Hybrid Agent] Fast-pass filled ${keys.length - uncertainFields.length}/${keys.length} fields.`);
-    console.log(`[Hybrid Agent] Escalating ${uncertainFields.length} uncertain fields to VLM/LLM...`);
+    console.log(`[Hybrid Agent] Rule-based pass filled ${keys.length - uncertainFields.length}/${keys.length} fields.`);
 
     const finalFills = { ...extracted };
 
+    // Step 3: Embedding Matcher pass for uncertain fields
+    if (uncertainFields.length > 0) {
+      console.log(`[Hybrid Agent] Running Embedding Matcher for ${uncertainFields.length} fields...`);
+      try {
+        const { embedTexts, cosineSimilarity } = require('../embedding-matcher/embedder');
+        
+        const sentences = normalizedText.split(/[\n\.]+/).map(s => s.trim()).filter(Boolean);
+        const candidateEmbeds = await embedTexts(sentences);
+        const labelEmbeds = await embedTexts(uncertainFields);
+        
+        const embedThreshold = 0.70;
+        const newlyFilled: string[] = [];
+
+        for (let i = 0; i < uncertainFields.length; i++) {
+          const key = uncertainFields[i];
+          const labelVec = labelEmbeds[i];
+          let bestScore = -Infinity;
+          let bestIdx = -1;
+          for (let j = 0; j < candidateEmbeds.length; j++) {
+            const score = cosineSimilarity(labelVec, candidateEmbeds[j]);
+            if (score > bestScore) {
+              bestScore = score;
+              bestIdx = j;
+            }
+          }
+
+          if (bestIdx >= 0 && bestScore >= embedThreshold) {
+            finalFills[key] = sentences[bestIdx];
+            newlyFilled.push(key);
+          }
+        }
+        
+        uncertainFields = uncertainFields.filter(k => !newlyFilled.includes(k));
+        console.log(`[Hybrid Agent] Embedding Matcher filled ${newlyFilled.length} additional fields.`);
+      } catch (err) {
+        console.warn(`[Hybrid Agent] Embedding Matcher step failed or missing imports:`, err);
+      }
+    }
+
     if (uncertainFields.length > 0) {
       // Step 4: Escalate uncertain fields to LLM
+      console.log(`[Hybrid Agent] Escalating ${uncertainFields.length} uncertain fields to VLM/LLM...`);
       const systemPrompt = `You are a helper that extracts form field values from an input document.
 You are given the input document and a list of specific target fields to extract.
 You must respond with a single, valid JSON object mapping the target fields to their extracted values.

@@ -21,6 +21,8 @@ import { scrapeForm }           from './src/scraper/form-scraper';
 import { RuleBasedAgent }       from './src/agents/rule-based';
 import { EmbeddingMatcherAgent } from './src/agents/embedding-matcher';
 import { LLMStructuredAgent }   from './src/agents/llm-structured';
+import { HybridAgent }          from './src/agents/hybrid';
+import { VLMAgent }             from './src/agents/vlm-agent';
 import { flattenProfile }       from './src/agents/types';
 import type { ScrapedForm }     from './src/types/index';
 import type { FlatProfile, FieldFill } from './src/agents/types';
@@ -126,7 +128,7 @@ interface FormBenchResult {
 // ── Run one agent across all forms ────────────────────────────────────────────
 
 async function runAgent(
-  agentName: 'rule-based' | 'embedding-matcher' | 'llm-structured',
+  agentName: 'rule-based' | 'embedding-matcher' | 'llm-structured' | 'hybrid' | 'vlm-agent',
   profile:   FlatProfile,
   serverUrl: string,
   dataPath:  string,
@@ -136,6 +138,8 @@ async function runAgent(
   const agent =
     agentName === 'embedding-matcher' ? new EmbeddingMatcherAgent() :
     agentName === 'llm-structured'    ? new LLMStructuredAgent()    :
+    agentName === 'hybrid'            ? new HybridAgent()           :
+    agentName === 'vlm-agent'         ? new VLMAgent()              :
                                         new RuleBasedAgent();
 
   const results: FormBenchResult[] = [];
@@ -347,11 +351,13 @@ async function main() {
     process.exit(1);
   }
 
-  const agentsToRun: Array<'rule-based' | 'embedding-matcher' | 'llm-structured'> =
+  const agentsToRun: Array<'rule-based' | 'embedding-matcher' | 'llm-structured' | 'hybrid' | 'vlm-agent'> =
     agent === 'rule-based'       ? ['rule-based'] :
     agent === 'embedding-matcher' ? ['embedding-matcher'] :
     agent === 'llm-structured'   ? ['llm-structured'] :
-    ['rule-based', 'embedding-matcher', 'llm-structured'];
+    agent === 'hybrid'           ? ['hybrid'] :
+    agent === 'vlm-agent'        ? ['vlm-agent'] :
+    ['rule-based', 'embedding-matcher', 'llm-structured', 'hybrid', 'vlm-agent'];
 
   const summary: Record<string, { fillRate: number; valueAccuracy: number }> = {};
 

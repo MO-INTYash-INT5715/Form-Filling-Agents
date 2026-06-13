@@ -22,7 +22,7 @@ import { runBenchmark } from '../src/benchmark/runner';
 import { RuleBasedAgent } from '../src/implementations/rule-based/agent';
 import { LLMStructuredAgent } from '../src/implementations/llm-structured/agent';
 import { HybridAgent } from '../src/implementations/hybrid/agent';
-import { MCPAgent } from '../src/implementations/mcp-agent/agent';
+import { VLMAgent } from '../src/implementations/vlm-agent/agent';
 import { EmbeddingMatcherAgent } from '../src/implementations/embedding-matcher/agent';
 import type { BenchmarkReport } from '../src/benchmark/types';
 import * as fs from 'fs';
@@ -40,7 +40,7 @@ function makeAgent(name: string) {
     case 'rule-based':        return new RuleBasedAgent();
     case 'llm-structured':    return new LLMStructuredAgent();
     case 'hybrid':            return new HybridAgent();
-    case 'mcp-agent':         return new MCPAgent();
+    case 'vlm-agent':         return new VLMAgent();
     case 'embedding-matcher': return new EmbeddingMatcherAgent();
     default: throw new Error(`Unknown agent: ${name}`);
   }
@@ -56,7 +56,7 @@ const serverUrl = args.find(a => a.startsWith('--server='))?.split('=')[1] ?? 'h
 
 const AGENT_NAMES = agentArg
   ? agentArg.split(',')
-  : ['rule-based', 'embedding-matcher', 'llm-structured', 'hybrid', 'mcp-agent'];
+  : ['rule-based', 'embedding-matcher', 'llm-structured', 'hybrid', 'vlm-agent'];
 
 const INSTANCES = quick ? 1 : (process.env.INSTANCES ? parseInt(process.env.INSTANCES) : 5); // default 5 for non-quick
 
@@ -112,6 +112,7 @@ async function main() {
         const tokensOutInst = fr.tokensOut ?? 0;
         const estCostInst = estimateCost(_provider, _model, tokensInInst, tokensOutInst);
         const record = {
+          track: 'extension',
           agent: agentName,
           formId: fr.formInstance.formId,
           formName: fr.formInstance.formName,
@@ -129,7 +130,7 @@ async function main() {
         };
         return JSON.stringify(record);
       });
-      fs.writeFileSync(outFile, lines.join('\n') + '\n', 'utf-8');
+      fs.appendFileSync(outFile, lines.join('\n') + '\n', 'utf-8');
 
       console.log(`✓ ${agentName} done — ${report.globalEpisodic.averageValueAccuracy.toFixed(1)}% value acc`);
     } catch (err) {

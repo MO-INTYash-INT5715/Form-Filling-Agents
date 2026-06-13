@@ -28,7 +28,7 @@ const RESULTS_ROOT = path.resolve(process.cwd(), "benchmark-results");
 interface CliArgs { impls: string[]; runs: number; }
 
 function parseArgs(argv: string[]): CliArgs {
-  const out: CliArgs = { impls: ["playwright-mcp"], runs: 1 };
+  const out: CliArgs = { impls: ["rule-based", "embedding-matcher", "llm-structured", "hybrid", "vlm-agent"], runs: 1 };
   for (let i = 0; i < argv.length; i++) {
     if (argv[i] === "--impls") out.impls = argv[++i].split(",");
     else if (argv[i] === "--runs") out.runs = parseInt(argv[++i], 10);
@@ -37,8 +37,8 @@ function parseArgs(argv: string[]): CliArgs {
 }
 
 async function loadImpl(name: string): Promise<MCPFormFiller> {
-  // Dynamic import — each implementation lives in its own package.
-  const modPath = path.resolve(__dirname, `../${name}/src/index.ts`);
+  // Load the agent directly from playwright-mcp/src/agents
+  const modPath = path.resolve(__dirname, `../playwright-mcp/src/agents/${name}.ts`);
   if (!fs.existsSync(modPath)) {
     throw new Error(`Implementation ${name} not found at ${modPath}`);
   }
