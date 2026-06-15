@@ -1,6 +1,7 @@
 import * as dotenv from 'dotenv';
 import OpenAI from 'openai';
 import { GoogleGenerativeAI } from '@google/generative-ai';
+import { BedrockRuntimeClient } from '@aws-sdk/client-bedrock-runtime';
 
 dotenv.config();
 
@@ -28,6 +29,20 @@ export function getLLMClient() {
       apiKey: 'ollama',
       baseURL: process.env.OLLAMA_BASE_URL || 'http://localhost:11434/v1',
     });
+  } else if (provider === 'bedrock') {
+    const config: any = {
+      region: process.env.AWS_REGION || 'ap-south-1',
+    };
+    if (process.env.AWS_ACCESS_KEY_ID && process.env.AWS_SECRET_ACCESS_KEY) {
+      config.credentials = {
+        accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+        secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+      };
+      if (process.env.AWS_SESSION_TOKEN) {
+        config.credentials.sessionToken = process.env.AWS_SESSION_TOKEN;
+      }
+    }
+    return new BedrockRuntimeClient(config);
   }
 
   throw new Error(`Unsupported LLM_PROVIDER: ${provider}`);

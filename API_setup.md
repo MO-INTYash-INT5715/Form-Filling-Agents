@@ -138,24 +138,26 @@ LLM_MODEL=<bedrock-mapped-model-id>
 ```
 3. No additional MCP/web-portal code branching required.
 
-## Option B: Native Bedrock integration (direct AWS SDK)
-1. Add dependency:
+## Option B: Native Bedrock integration (direct AWS SDK) - [COMPLETED]
+1. Dependency added to package.json:
    - `@aws-sdk/client-bedrock-runtime`
-2. Create provider adapter (recommended file names):
-   - `mcp-implementations\playwright-mcp\src\llm\bedrock.ts`
-   - `web-portal\src\lib\llm\bedrock.ts`
-3. Map generic request/response into common shape:
-   - input: messages + tools + model
-   - output: text/tool calls + token usage
-4. Add env:
+2. Implemented native Bedrock handlers directly inside the structured and visual agents:
+   - `mcp-implementations\playwright-mcp\src\agents\llm-structured.ts` (supports full Converse API tool-calling loop)
+   - `web-portal\src\agents\llm-structured.ts`
+   - `web-portal\src\agents\vlm-agent.ts` (supports visual inputs with screenshots)
+   - `extension\src\utils\llm.ts` & `extension\src\implementations\llm-structured\agent.ts`
+   - `extension\src\implementations\vlm-agent\agent.ts`
+   - `extension\src\pipeline\data-parser.ts`
+3. Map generic requests and tools directly to Bedrock Converse parameters, capturing token usage (`inputTokens` / `outputTokens`).
+4. Configure in `.env`:
 ```env
-AWS_REGION=...
-AWS_ACCESS_KEY_ID=...
-AWS_SECRET_ACCESS_KEY=...
-AWS_SESSION_TOKEN=...  # optional
-LLM_MODEL=<bedrock-model-id>
+LLM_PROVIDER=bedrock
+AWS_REGION=ap-south-1
+# AWS_ACCESS_KEY_ID=... (Omit or comment out to use default AWS profile)
+# AWS_SECRET_ACCESS_KEY=...
+# AWS_SESSION_TOKEN=...  # optional
+LLM_MODEL=openai.gpt-oss-20b-1:0 # or any bedrock model ID
 ```
-5. Route by `LLM_PROVIDER=bedrock`.
 
 ---
 

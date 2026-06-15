@@ -34,6 +34,7 @@
     "ablation": "tsx --tsconfig tsconfig.scripts.json scripts/ablation-study.ts"
   },
   "dependencies": {
+    "@aws-sdk/client-bedrock-runtime": "^3.500.0",
     "dotenv": "^17.4.2",
     "next": "^14.0.0",
     "openai": "^6.39.0",

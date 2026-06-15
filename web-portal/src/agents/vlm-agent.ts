@@ -30,8 +30,10 @@ export class VLMAgent implements PortalAgent {
   }
 
   async fill(form: ScrapedForm, profile: FlatProfile): Promise<FieldFillResult> {
-    const apiKey = process.env.OPENAI_API_KEY;
-    if (!apiKey || !form.screenshotBase64) {
+    const provider = process.env.LLM_PROVIDER || 'openai';
+    const apiKey = process.env.LLM_API_KEY || process.env.OPENAI_API_KEY;
+    const hasCreds = provider === 'bedrock' || !!apiKey;
+    if (!hasCreds || !form.screenshotBase64) {
       const fallbackResult = await this.fallback.fill(form, profile);
       return { ...fallbackResult, llmFallbackUsed: true };
     }
@@ -48,39 +50,86 @@ export class VLMAgent implements PortalAgent {
     let completionTokens = 0;
 
     try {
-      const { OpenAI } = await import('openai');
-      const provider = process.env.LLM_PROVIDER || 'openai';
-      let finalApiKey = apiKey;
-      let finalBaseUrl = process.env.OPENAI_BASE_URL;
+      if (provider === 'bedrock') {
+        const { BedrockRuntimeClient, ConverseCommand } = await import('@aws-sdk/client-bedrock-runtime');
+        const config: any = {
+          region: process.env.AWS_REGION || 'ap-south-1',
+        };
+        if (process.env.AWS_ACCESS_KEY_ID && process.env.AWS_SECRET_ACCESS_KEY) {
+          config.credentials = {
+            accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+            secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+          };
+          if (process.env.AWS_SESSION_TOKEN) {
+            config.credentials.sessionToken = process.env.AWS_SESSION_TOKEN;
+          }
+        }
+        const client = new BedrockRuntimeClient(config);
+        const command = new ConverseCommand({
+          modelId: this.model,
+          messages: [
+            {
+              role: 'user',
+              content: [
+                { text: userPrompt },
+                {
+                  image: {
+                    format: 'jpeg',
+                    source: {
+                      bytes: Buffer.from(form.screenshotBase64, 'base64')
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          system: [
+            { text: systemPrompt }
+          ],
+          inferenceConfig: {
+            temperature: 0,
+            maxTokens: 1024,
+          }
+        });
+        const response = await client.send(command);
+        rawContent = response.output?.message?.content?.[0]?.text ?? '{}';
+        promptTokens = response.usage?.inputTokens ?? 0;
+        completionTokens = response.usage?.outputTokens ?? 0;
+      } else {
+        const { OpenAI } = await import('openai');
+        let finalApiKey = apiKey;
+        let finalBaseUrl = process.env.OPENAI_BASE_URL;
 
-      if (provider === 'cerebras') {
-        finalApiKey = process.env.CEREBRAS_API_KEY || apiKey;
-        finalBaseUrl = 'https://api.cerebras.ai/v1';
+        if (provider === 'cerebras') {
+          finalApiKey = process.env.CEREBRAS_API_KEY || apiKey;
+          finalBaseUrl = 'https://api.cerebras.ai/v1';
+        }
+
+        const client = new OpenAI({
+          apiKey: finalApiKey,
+          ...(finalBaseUrl ? { baseURL: finalBaseUrl } : {}),
+        });
+
+        const response = await client.chat.completions.create({
+          model: this.model,
+          response_format: { type: 'json_object' },
+          messages: [
+            { role: 'system', content: systemPrompt },
+            { role: 'user', content: [
+              { type: 'text', text: userPrompt },
+              { type: 'image_url', image_url: { url: `data:image/jpeg;base64,${form.screenshotBase64}` } }
+            ]},
+          ],
+          temperature: 0,
+          max_tokens: 1024,
+        });
+
+        rawContent = response.choices[0]?.message?.content ?? '{}';
+        promptTokens = response.usage?.prompt_tokens ?? 0;
+        completionTokens = response.usage?.completion_tokens ?? 0;
       }
-
-      const client = new OpenAI({
-        apiKey: finalApiKey,
-        ...(finalBaseUrl ? { baseURL: finalBaseUrl } : {}),
-      });
-
-      const response = await client.chat.completions.create({
-        model: this.model,
-        response_format: { type: 'json_object' },
-        messages: [
-          { role: 'system', content: systemPrompt },
-          { role: 'user', content: [
-            { type: 'text', text: userPrompt },
-            { type: 'image_url', image_url: { url: `data:image/jpeg;base64,${form.screenshotBase64}` } }
-          ]},
-        ],
-        temperature: 0,
-        max_tokens: 1024,
-      });
-
-      rawContent = response.choices[0]?.message?.content ?? '{}';
-      promptTokens = response.usage?.prompt_tokens ?? 0;
-      completionTokens = response.usage?.completion_tokens ?? 0;
     } catch (err) {
+      console.error("[VLM Agent] Error during fill:", err);
       const fallbackResult = await this.fallback.fill(form, profile);
       return {
         ...fallbackResult,

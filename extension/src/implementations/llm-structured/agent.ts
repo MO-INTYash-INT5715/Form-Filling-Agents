@@ -85,6 +85,27 @@ ${schemaPrompt}
         }
 
         responseContent = result.response.text() || '{}';
+      } else if (this.provider === 'bedrock') {
+        const { ConverseCommand } = await import('@aws-sdk/client-bedrock-runtime');
+        const command = new ConverseCommand({
+          modelId: this.model,
+          messages: [
+            { role: 'user', content: [{ text: userPrompt }] }
+          ],
+          system: [
+            { text: systemPrompt }
+          ],
+          inferenceConfig: {
+            temperature: 0,
+            maxTokens: 2048,
+          }
+        });
+        const response = await this.client.send(command);
+        responseContent = response.output?.message?.content?.[0]?.text || '{}';
+        this.lastTelemetry.llmTimeMs += Date.now() - t0;
+        this.lastTelemetry.llmCalls += 1;
+        this.lastTelemetry.tokensIn += response.usage?.inputTokens ?? 0;
+        this.lastTelemetry.tokensOut += response.usage?.outputTokens ?? 0;
       } else {
         const options: any = {
           model: this.model,

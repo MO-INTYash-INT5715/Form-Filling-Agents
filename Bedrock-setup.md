@@ -1,6 +1,11 @@
 # AWS Bedrock Setup — Issues, Fixes & Alternatives
 
+> [!NOTE]
+> **Update (June 15, 2026)**: Native AWS Bedrock integration has been fully implemented across the repository using the official `@aws-sdk/client-bedrock-runtime` library. Setting `LLM_PROVIDER=bedrock` allows you to make direct calls to Bedrock's Converse API (such as `qwen.qwen3-235b-a22b-2507-v1:0` or `openai.gpt-oss-20b-1:0`) using your standard AWS credentials (`AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, etc.), bypassing the Mantle gateway and resolving expired token issues.
+> **Important**: If you have AWS credentials configured on your system (e.g. `~/.aws/credentials`), ensure you **comment out or remove** any dummy `AWS_ACCESS_KEY_ID` variables in your `.env` files. Leaving dummy values like `your_aws_access_key_id` will override the SDK's credentials resolver and cause authentication errors, leading to the "LLM unavailable" error.
+
 > **TL;DR** — The current `.env` config is broken in four ways: the bearer token expires in ~5 minutes, the model ID uses the wrong format for Bedrock-via-Mantle, the `json_schema` structured output format is unsupported by Nova models, and the embeddings endpoint is unavailable on Mantle. Switch to the **long-term Bedrock API key** flow described in Fix 1 below, or use the working Cerebras path as an alternative.
+
 
 ---
 

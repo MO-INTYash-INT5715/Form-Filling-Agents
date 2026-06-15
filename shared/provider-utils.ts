@@ -19,12 +19,18 @@ export function validateModelChoice(
       return { ok: false, message: 'LLM_MODEL is not set. For Bedrock, set LLM_MODEL to a model identifier containing its parameter count e.g. "my-model-13b".' };
     }
 
+    // Whitelist specific large models verified by the user
+    const whitelist = ['qwen.qwen3-235b'];
+    if (whitelist.some(w => m.toLowerCase().includes(w))) {
+      return { ok: true };
+    }
+
     // Look for a pattern like "13b" or "12B" in the model string.
     const match = m.match(/(\d+)\s*[bB]\b/);
     if (!match) {
       return { ok: false, message: `Bedrock model string \"${m}\" does not include a parameter count (e.g. \"13b\"). Please set LLM_MODEL to a model in the ${minB}-${maxB}B range.` };
     }
-    const n = parseInt(match[1], 10);
+    const n = parseInt(match[1], 10);
     if (isNaN(n)) return { ok: false, message: `Could not parse numeric parameter count from model string \"${m}\".` };
     if (n < minB || n > maxB) {
       return { ok: false, message: `Model \"${m}\" appears to be ${n}B which is outside the allowed ${minB}-${maxB}B range.` };

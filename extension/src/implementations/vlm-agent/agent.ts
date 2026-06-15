@@ -92,6 +92,36 @@ ${domState}
           });
 
           reply = result.response.text() || '{}';
+        } else if (this.provider === 'bedrock') {
+          const { ConverseCommand } = await import('@aws-sdk/client-bedrock-runtime');
+          const command = new ConverseCommand({
+            modelId: this.model,
+            messages: [
+              {
+                role: 'user',
+                content: [
+                  { text: userPrompt },
+                  {
+                    image: {
+                      format: 'jpeg',
+                      source: {
+                        bytes: Buffer.from(base64Image, 'base64')
+                      }
+                    }
+                  }
+                ]
+              }
+            ],
+            system: [
+              { text: systemPrompt }
+            ],
+            inferenceConfig: {
+              temperature: 0,
+              maxTokens: 2048,
+            }
+          });
+          const response = await this.client.send(command);
+          reply = response.output?.message?.content?.[0]?.text || '{}';
         } else {
           const response = await this.client.chat.completions.create({
             model: this.model,

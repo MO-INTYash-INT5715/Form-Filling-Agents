@@ -1,17 +1,6 @@
-/**
- * The agent loop. Implements the MCPFormFiller contract from
- * ../shared/types.ts.
- *
- * Loop:
- *   1. Ask LLM what to do, given system prompt + last tool result(s).
- *   2. If LLM returns a tool call, execute it through PlaywrightMcpClient.
- *      Feed the (truncated) result back to the LLM.
- *   3. If LLM emits <<DONE>> or <<BLOCKED: ...>>, stop.
- *   4. If MAX_TURNS_PER_FORM exceeded, stop with failure.
- */
-
 import "dotenv/config";
 import OpenAI from "openai";
+import { BedrockRuntimeClient } from "@aws-sdk/client-bedrock-runtime";
 import type {
   ChatCompletionMessageParam,
   ChatCompletionTool,
@@ -79,11 +68,30 @@ function classifyError(msg: string): FillResult["failureCategory"] {
 export class LlmStructuredMcpAgent implements MCPFormFiller {
   name = "llm-structured";
   private mcp = new PlaywrightMcpClient();
-  private openai: OpenAI;
+  private openai?: OpenAI;
+  private bedrockClient?: BedrockRuntimeClient;
+  private provider: string;
   private tools: ChatCompletionTool[] = [];
 
   constructor() {
-    this.openai = makeClient();
+    this.provider = process.env.LLM_PROVIDER || "openai";
+    if (this.provider === "bedrock") {
+      const config: any = {
+        region: process.env.AWS_REGION || "ap-south-1",
+      };
+      if (process.env.AWS_ACCESS_KEY_ID && process.env.AWS_SECRET_ACCESS_KEY) {
+        config.credentials = {
+          accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+          secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+        };
+        if (process.env.AWS_SESSION_TOKEN) {
+          config.credentials.sessionToken = process.env.AWS_SESSION_TOKEN;
+        }
+      }
+      this.bedrockClient = new BedrockRuntimeClient(config);
+    } else {
+      this.openai = makeClient();
+    }
   }
 
   async init(): Promise<void> {
@@ -107,79 +115,188 @@ export class LlmStructuredMcpAgent implements MCPFormFiller {
     let blockedReason: string | null = null;
     let lastError: string | undefined;
 
-    const messages: ChatCompletionMessageParam[] = [
-      { role: "system", content: SYSTEM_PROMPT },
-      { role: "user", content: buildUserPrompt(JSON.stringify(profile, null, 2), url) },
-    ];
+    if (this.provider === "bedrock" && this.bedrockClient) {
+      const { ConverseCommand } = await import("@aws-sdk/client-bedrock-runtime");
+      const bedrockTools = this.tools.map((t) => ({
+        toolSpec: {
+          name: t.function.name,
+          description: t.function.description || undefined,
+          inputSchema: {
+            json: t.function.parameters,
+          },
+        },
+      }));
 
-    try {
-      for (let turn = 0; turn < MAX_TURNS; turn++) {
-        const resp = await this.openai.chat.completions.create({
-          model: MODEL,
-          messages,
-          tools: this.tools,
-          tool_choice: "auto",
-          temperature: 0,
-        });
-        tokensIn += resp.usage?.prompt_tokens ?? 0;
-        tokensOut += resp.usage?.completion_tokens ?? 0;
+      const bedrockMessages: any[] = [
+        {
+          role: "user",
+          content: [{ text: buildUserPrompt(JSON.stringify(profile, null, 2), url) }],
+        },
+      ];
 
-        const msg = resp.choices[0].message;
-        messages.push(msg as any);
-
-        const content = msg.content ?? "";
-        if (content.includes("<<DONE>>")) { success = true; break; }
-        const blocked = content.match(/<<BLOCKED:\s*(.+?)>>/);
-        if (blocked) { blockedReason = blocked[1]; break; }
-
-        if (!msg.tool_calls || msg.tool_calls.length === 0) {
-          // LLM produced text without a tool call and didn't signal done.
-          // Nudge it once, then break.
-          messages.push({
-            role: "user",
-            content: "Continue. Use tools, or respond with <<DONE>> if finished.",
+      try {
+        for (let turn = 0; turn < MAX_TURNS; turn++) {
+          const command = new ConverseCommand({
+            modelId: MODEL,
+            messages: bedrockMessages,
+            system: [{ text: SYSTEM_PROMPT }],
+            toolConfig: bedrockTools.length ? { tools: bedrockTools } : undefined,
+            inferenceConfig: {
+              temperature: 0,
+            },
           });
-          continue;
-        }
 
-        for (const tc of msg.tool_calls) {
-          let args: Record<string, unknown> = {};
-          try { args = JSON.parse(tc.function.arguments || "{}"); } catch { /* ignore */ }
-          try {
-            const r = await this.mcp.callTool(tc.function.name, args);
-            const text = typeof r === "string"
-              ? r
-              : JSON.stringify(r?.content ?? r);
-            messages.push({
-              role: "tool",
-              tool_call_id: tc.id,
-              content: truncate(text, MAX_SNAPSHOT_CHARS),
+          const resp = await this.bedrockClient.send(command);
+          tokensIn += resp.usage?.inputTokens ?? 0;
+          tokensOut += resp.usage?.outputTokens ?? 0;
+
+          const msg = resp.output?.message;
+          if (!msg) break;
+
+          bedrockMessages.push(msg);
+
+          let contentText = "";
+          const toolCalls: any[] = [];
+
+          if (msg.content) {
+            for (const contentItem of msg.content) {
+              if (contentItem.text) {
+                contentText += contentItem.text;
+              }
+              if (contentItem.toolUse) {
+                toolCalls.push(contentItem.toolUse);
+              }
+            }
+          }
+
+          if (contentText.includes("<<DONE>>")) {
+            success = true;
+            break;
+          }
+          const blocked = contentText.match(/<<BLOCKED:\s*(.+?)>>/);
+          if (blocked) {
+            blockedReason = blocked[1];
+            break;
+          }
+
+          if (toolCalls.length === 0) {
+            bedrockMessages.push({
+              role: "user",
+              content: [{ text: "Continue. Use tools, or respond with <<DONE>> if finished." }],
             });
-          } catch (e: any) {
-            lastError = String(e?.message ?? e);
+            continue;
+          }
+
+          const toolResults: any[] = [];
+          for (const tc of toolCalls) {
+            let args: Record<string, unknown> = tc.input || {};
+            try {
+              const r = await this.mcp.callTool(tc.name, args);
+              const text = typeof r === "string" ? r : JSON.stringify(r?.content ?? r);
+              toolResults.push({
+                toolUseId: tc.toolUseId,
+                content: [{ text: truncate(text, MAX_SNAPSHOT_CHARS) }],
+                status: "success",
+              });
+            } catch (e: any) {
+              lastError = String(e?.message ?? e);
+              toolResults.push({
+                toolUseId: tc.toolUseId,
+                content: [{ text: `ERROR: ${lastError}` }],
+                status: "error",
+              });
+            }
+          }
+
+          bedrockMessages.push({
+            role: "user",
+            content: toolResults.map((tr) => ({ toolResult: tr })),
+          });
+        }
+      } catch (e: any) {
+        lastError = String(e?.message ?? e);
+      }
+    } else if (this.openai) {
+      const messages: ChatCompletionMessageParam[] = [
+        { role: "system", content: SYSTEM_PROMPT },
+        { role: "user", content: buildUserPrompt(JSON.stringify(profile, null, 2), url) },
+      ];
+
+      try {
+        for (let turn = 0; turn < MAX_TURNS; turn++) {
+          const resp = await this.openai.chat.completions.create({
+            model: MODEL,
+            messages,
+            tools: this.tools,
+            tool_choice: "auto",
+            temperature: 0,
+          });
+          tokensIn += resp.usage?.prompt_tokens ?? 0;
+          tokensOut += resp.usage?.completion_tokens ?? 0;
+
+          const msg = resp.choices[0].message;
+          messages.push(msg as any);
+
+          const content = msg.content ?? "";
+          if (content.includes("<<DONE>>")) {
+            success = true;
+            break;
+          }
+          const blocked = content.match(/<<BLOCKED:\s*(.+?)>>/);
+          if (blocked) {
+            blockedReason = blocked[1];
+            break;
+          }
+
+          if (!msg.tool_calls || msg.tool_calls.length === 0) {
             messages.push({
-              role: "tool",
-              tool_call_id: tc.id,
-              content: `ERROR: ${lastError}`,
+              role: "user",
+              content: "Continue. Use tools, or respond with <<DONE>> if finished.",
             });
+            continue;
+          }
+
+          for (const tc of msg.tool_calls) {
+            let args: Record<string, unknown> = {};
+            try {
+              args = JSON.parse(tc.function.arguments || "{}");
+            } catch {
+              /* ignore */
+            }
+            try {
+              const r = await this.mcp.callTool(tc.function.name, args);
+              const text = typeof r === "string" ? r : JSON.stringify(r?.content ?? r);
+              messages.push({
+                role: "tool",
+                tool_call_id: tc.id,
+                content: truncate(text, MAX_SNAPSHOT_CHARS),
+              });
+            } catch (e: any) {
+              lastError = String(e?.message ?? e);
+              messages.push({
+                role: "tool",
+                tool_call_id: tc.id,
+                content: `ERROR: ${lastError}`,
+              });
+            }
           }
         }
+      } catch (e: any) {
+        lastError = String(e?.message ?? e);
       }
-    } catch (e: any) {
-      lastError = String(e?.message ?? e);
     }
 
     const finished = new Date();
     const expected = 0; // Caller fills this in based on LiveForm.expectedFields if needed.
     return {
       implementation: this.name,
-      formId: "",                 // populated by runner
+      formId: "", // populated by runner
       url,
       success,
       fieldsAttempted: this.mcp.toolCallCount,
       fieldsFilled: success ? this.mcp.toolCallCount : 0,
       fieldsExpected: expected,
-      accuracy: 0,                // computed post-hoc against expectedFields
+      accuracy: 0, // computed post-hoc against expectedFields
       durationMs: finished.getTime() - started.getTime(),
       toolCalls: this.mcp.toolCallCount,
       tokensIn,
@@ -188,8 +305,8 @@ export class LlmStructuredMcpAgent implements MCPFormFiller {
       failureCategory: blockedReason
         ? "bot-detection"
         : lastError
-          ? classifyError(lastError)
-          : undefined,
+        ? classifyError(lastError)
+        : undefined,
       startedAt: started.toISOString(),
       finishedAt: finished.toISOString(),
     };

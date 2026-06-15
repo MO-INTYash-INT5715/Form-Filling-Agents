@@ -15,8 +15,8 @@ LLM_PROVIDER=bedrock
 LLM_MODEL=my-bedrock-model-13b
 LLM_BASE_URL=https://bedrock-gateway.example.com/v1
 AWS_REGION=us-east-1
-AWS_ACCESS_KEY_ID=...
-AWS_SECRET_ACCESS_KEY=...
+# AWS_ACCESS_KEY_ID=... (Comment out if using default system credentials)
+# AWS_SECRET_ACCESS_KEY=...
 ```
 
 2) Or override on the command line for a single run:
@@ -25,7 +25,7 @@ AWS_SECRET_ACCESS_KEY=...
 LLM_PROVIDER=bedrock LLM_MODEL=my-bedrock-model-13b npx tsx extension/scripts/ablation-study.ts --quick
 ```
 
-3) If your model identifier does not include a numeric `b` suffix (e.g. `gpt-4o-mini`), the repo's guard cannot infer parameter count — either use a model identifier that includes `13b`/`12b` etc., or update `shared/provider-utils.ts` to add a whitelist entry.
+3) If your model identifier does not include a numeric `b` suffix (e.g. `gpt-4o-mini`), the repo's guard cannot infer parameter count — either use a model identifier that includes `13b`/`12b` etc., or update `shared/provider-utils.ts` to add a whitelist entry. Note that `qwen.qwen3-235b` is already whitelisted.
 
 Updating cost/pricing
 - To add provider-model pricing, edit `shared/cost-model.ts` and add a key in the form `"provider:model": { in: <USD per 1M in>, out: <USD per 1M out> }`.

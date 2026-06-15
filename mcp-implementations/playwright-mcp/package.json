@@ -11,6 +11,7 @@
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.0",
     "@playwright/mcp": "^0.0.27",
+    "@aws-sdk/client-bedrock-runtime": "^3.500.0",
     "openai": "^4.67.0",
     "dotenv": "^16.4.5"
   },
