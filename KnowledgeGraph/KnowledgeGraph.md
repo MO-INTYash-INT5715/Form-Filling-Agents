@@ -2,7 +2,7 @@
 
 > **For AI coding agents:** Read this file at the start of every session (~800 tokens).
 
-**Last updated:** 2026-06-11
+**Last updated:** 2026-06-16
 
 ---
 
@@ -99,6 +99,7 @@ Do NOT reference bare `src/` paths — they no longer exist at root.
 │
 ├── benchmark-results/         # Benchmark outputs (shared — all agents + mcp-*)
 ├── Documentation/             # All docs (Report.md, Report.tex, …)
+│   └── ABLATION-MASTER-REPORT.md # Multi-track comparative cost and accuracy ablation report
 └── KnowledgeGraph/            # This file + graph/ JSON cache
 ```
 
@@ -106,10 +107,10 @@ Do NOT reference bare `src/` paths — they no longer exist at root.
 
 ## Active State
 
-- **Status:** Extension architecture stable (benchmarked); web-portal implementation active; MCP prototype available with provider-dependent execution reliability.
-- **What works:** Extension benchmark harness, multiple agent strategies, root and package-level benchmark scripts, and documented runbooks in `Documentation/`.
-- **Known risk areas:** MCP provider auth/scope variability and environment-specific SSL/network behavior.
-- **Recommended next milestone:** `Documentation/MILESTONE_MCP_BENCHMARK_PARITY.md`.
+- **Status:** Extension architecture updated for full Bedrock/Gemini/OpenAI/Ollama multi-provider LLM support (aligned with mcp-implementations and web-portal).
+- **What works:** Parallel tracks for Extension, Web Portal, and MCP-based agents. MCP Value-Accuracy tracking and dynamic cost calculations are integrated and functional.
+- **Known risk areas:** Environment-specific `.env` configuration for Bedrock/AWS credentials across different implementation subfolders (`extension/`, `web-portal/`, `mcp-implementations/`).
+- **Recommended next milestone:** Execution of the multi-track benchmark sweep to produce full comparative metrics.
 - **Isolation rule (hard):** every `mcp-implementations/<name>/` folder has its own `package.json` and may only import from its own `src/` and from `mcp-implementations/shared/`. No cross-implementation imports.
 - **Comparison harness:** `mcp-implementations/shared/runner.ts` drives multi-implementation comparisons and writes to benchmark results.
 - **Docs source of truth:** `Documentation/README.md` and `Documentation/REPOSITORY_POLICIES.md`.

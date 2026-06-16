@@ -28,24 +28,175 @@
     "formPath": "/professional-business/startup-funding"
   },
   "agentName": "rule-based",
-  "fieldResults": [],
+  "fieldResults": [
+    {
+      "fieldId": "company_name",
+      "fieldType": "String",
+      "predictedValue": "Pinnacle Solutions",
+      "goldValue": "Pinnacle Solutions",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "company_website",
+      "fieldType": "String",
+      "predictedValue": "https://www.haynes-morales.com/",
+      "goldValue": "https://www.haynes-morales.com/",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "founding_date",
+      "fieldType": "Date",
+      "predictedValue": "2020/08/29",
+      "goldValue": "2020/08/29",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "business_stage",
+      "fieldType": "Dropdown",
+      "predictedValue": "Growth",
+      "goldValue": "Growth",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "founder_name",
+      "fieldType": "String",
+      "predictedValue": "Kari Ibarra",
+      "goldValue": "Kari Ibarra",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "founder_email",
+      "fieldType": "String",
+      "predictedValue": "devin22@gmail.com",
+      "goldValue": "devin22@gmail.com",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "founder_phone",
+      "fieldType": "String",
+      "predictedValue": "1738464335",
+      "goldValue": "1738464335",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "linkedin_profile",
+      "fieldType": "String",
+      "predictedValue": "https://linkedin.com/in/kaylamills",
+      "goldValue": "https://linkedin.com/in/kaylamills",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "funding_amount",
+      "fieldType": "NumericInput",
+      "predictedValue": "",
+      "goldValue": 4311070,
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "equity_offered",
+      "fieldType": "NumericInput",
+      "predictedValue": "8",
+      "goldValue": 8,
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "current_valuation",
+      "fieldType": "NumericInput",
+      "predictedValue": "",
+      "goldValue": 1554377,
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "funding_purpose",
+      "fieldType": "Description",
+      "predictedValue": "",
+      "goldValue": "Hiring",
+      "clickAccurate": false,
+      "valueAccurate": false,
+      "bleuScore": 0
+    },
+    {
+      "fieldId": "business_model",
+      "fieldType": "Description",
+      "predictedValue": "",
+      "goldValue": "A marketplace for freelancers offering digital services to small businesses and startups.",
+      "clickAccurate": false,
+      "valueAccurate": false,
+      "bleuScore": 0
+    },
+    {
+      "fieldId": "target_market",
+      "fieldType": "Description",
+      "predictedValue": "",
+      "goldValue": "Parents looking for eco-friendly and sustainable products for their children.",
+      "clickAccurate": false,
+      "valueAccurate": false,
+      "bleuScore": 0
+    },
+    {
+      "fieldId": "current_revenue",
+      "fieldType": "NumericInput",
+      "predictedValue": "",
+      "goldValue": 200000,
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "team_size",
+      "fieldType": "NumericInput",
+      "predictedValue": "100",
+      "goldValue": 100,
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "additional_comments",
+      "fieldType": "Description",
+      "predictedValue": "",
+      "goldValue": "Excited to take the company to the next level.",
+      "clickAccurate": false,
+      "valueAccurate": false,
+      "bleuScore": 0
+    }
+  ],
   "atomicMetrics": {
-    "clickAccuracy": {},
-    "valueAccuracy": {},
+    "clickAccuracy": {
+      "String": 0,
+      "Date": 0,
+      "Dropdown": 0,
+      "NumericInput": 0,
+      "Description": 0
+    },
+    "valueAccuracy": {
+      "String": 100,
+      "Date": 100,
+      "Dropdown": 100,
+      "NumericInput": 40,
+      "Description": 0
+    },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 0
+    "overallValueAccuracy": 58.82352941176471
   },
   "episodicMetrics": {
-    "formCompletionRate": 0,
-    "fieldsAttempted": 0,
-    "fieldsCorrect": 0,
-    "totalFields": 0,
+    "formCompletionRate": 58.82352941176471,
+    "fieldsAttempted": 10,
+    "fieldsCorrect": 10,
+    "totalFields": 17,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 0
+    "averageValueAccuracy": 58.82352941176471
   },
-  "executionTimeMs": 0,
-  "errors": [
-    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/professional-business/startup-funding\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/professional-business/startup-funding\", waiting until \"domcontentloaded\"\u001b[22m\n"
-  ],
-  "submissionSucceeded": false
+  "executionTimeMs": 1898,
+  "errors": [],
+  "submissionSucceeded": true
 }

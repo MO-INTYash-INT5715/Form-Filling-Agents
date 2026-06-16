@@ -43,7 +43,7 @@
     {
       "fieldId": "productType",
       "fieldType": "Dropdown",
-      "predictedValue": "Customized AI-Powered Sensor Array",
+      "predictedValue": "AI-powered sensor array",
       "goldValue": "Custom Product",
       "clickAccurate": false,
       "valueAccurate": false
@@ -51,11 +51,11 @@
     {
       "fieldId": "productDescription",
       "fieldType": "Description",
-      "predictedValue": "A specialized AI-powered sensor array designed to operate with high sensitivity and efficiency within a range of 5 meters, ensuring seamless integration into various robust applications.",
+      "predictedValue": "Customized AI-powered sensor array designed to operate with high sensitivity and efficiency within a range of 5 meters, measuring 200 x 150 x 50 in dimensions for seamless integration into robust applications.",
       "goldValue": "Customized AI-powered sensor array",
       "clickAccurate": false,
       "valueAccurate": false,
-      "bleuScore": 8.688218206838485
+      "bleuScore": 10.51377297031591
     },
     {
       "fieldId": "Product Specifications",
@@ -68,10 +68,10 @@
     {
       "fieldId": "quantity",
       "fieldType": "NumericInput",
-      "predictedValue": "100 units",
+      "predictedValue": "100",
       "goldValue": 100,
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "dimensions",
@@ -84,7 +84,7 @@
     {
       "fieldId": "material",
       "fieldType": "String",
-      "predictedValue": "Aluminum and silicon",
+      "predictedValue": "aluminum and silicon",
       "goldValue": "Aluminum, Silicon",
       "clickAccurate": false,
       "valueAccurate": false
@@ -92,7 +92,7 @@
     {
       "fieldId": "specifications",
       "fieldType": "Description",
-      "predictedValue": "Advanced real-time data processing capabilities, low power consumption, high data encryption standards, wireless connectivity for IoT systems.",
+      "predictedValue": "Advanced real-time data processing capabilities, low power consumption, high data encryption standards, wireless connectivity for IoT integration.",
       "goldValue": "Real-time data processing, low power consumption, high data encryption standards, wireless connectivity with IoT capabilities",
       "clickAccurate": false,
       "valueAccurate": true,
@@ -101,7 +101,7 @@
     {
       "fieldId": "qualityStandards",
       "fieldType": "String",
-      "predictedValue": "ISO 9001 and CE certification",
+      "predictedValue": "ISO 9001 and CE certified",
       "goldValue": "ISO 9001, CE certified",
       "clickAccurate": false,
       "valueAccurate": false
@@ -117,7 +117,7 @@
     {
       "fieldId": "shippingMethod",
       "fieldType": "Dropdown",
-      "predictedValue": "Express shipping",
+      "predictedValue": "express shipping",
       "goldValue": "Express",
       "clickAccurate": false,
       "valueAccurate": false
@@ -135,25 +135,25 @@
       "String": 50,
       "Dropdown": 0,
       "Description": 50,
-      "NumericInput": 0,
+      "NumericInput": 100,
       "Date": 100
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 41.66666666666667
+    "overallValueAccuracy": 50
   },
   "episodicMetrics": {
-    "formCompletionRate": 41.66666666666667,
+    "formCompletionRate": 50,
     "fieldsAttempted": 11,
-    "fieldsCorrect": 5,
+    "fieldsCorrect": 6,
     "totalFields": 12,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 41.66666666666667
+    "averageValueAccuracy": 50
   },
-  "executionTimeMs": 1473,
+  "executionTimeMs": 1787,
   "errors": [],
   "submissionSucceeded": false,
   "tokensIn": 909,
-  "tokensOut": 234,
-  "llmTimeMs": 5425,
+  "tokensOut": 225,
+  "llmTimeMs": 1992,
   "llmCalls": 1
 }

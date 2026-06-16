@@ -42,7 +42,20 @@ export class DataParser {
     try {
       let content = '{}';
 
-      if (this.provider === 'bedrock') {
+      if (this.provider === 'gemini') {
+        const model = this.client.getGenerativeModel({ model: this.model });
+        const result = await model.generateContent({
+          contents: [{
+            role: 'user',
+            parts: [{ text: prompt }]
+          }],
+          generationConfig: {
+            temperature: 0,
+            responseMimeType: 'application/json'
+          }
+        });
+        content = result.response.text() || '{}';
+      } else if (this.provider === 'bedrock') {
         const { ConverseCommand } = await import('@aws-sdk/client-bedrock-runtime');
         const command = new ConverseCommand({
           modelId: this.model,

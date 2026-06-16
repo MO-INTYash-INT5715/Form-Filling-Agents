@@ -12,11 +12,13 @@
 
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { StdioClientTransport } from "@modelcontextprotocol/sdk/client/stdio.js";
+import { FieldFill } from "../../shared/types.js";
 
 export class PlaywrightMcpClient {
   private client: Client | null = null;
   private transport: StdioClientTransport | null = null;
   public toolCallCount = 0;
+  public recordedFills: FieldFill[] = [];
 
   async start(): Promise<void> {
     // The @playwright/mcp package exposes a CLI entry point.
@@ -48,6 +50,16 @@ export class PlaywrightMcpClient {
   async callTool(name: string, args: Record<string, unknown>): Promise<any> {
     if (!this.client) throw new Error("client not started");
     this.toolCallCount++;
+
+    if (name === "playwright_fill" || name === "playwright_select" || name === "playwright_check" || name.includes("fill") || name.includes("select") || name.includes("check")) {
+       this.recordedFills.push({
+         fieldId: String(args.selector || args.locator || args.role || JSON.stringify(args)),
+         type: name.includes("select") ? "select" : name.includes("check") ? "checkbox" : "text",
+         value: name.includes("check") ? "true" : String(args.value || ""),
+         confidence: 1.0,
+       });
+    }
+
     const r = await this.client.callTool({ name, arguments: args });
     return r;
   }

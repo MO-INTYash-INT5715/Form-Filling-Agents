@@ -19,8 +19,8 @@
       "llmDriver": "OpenAI SDK for OpenAI-compatible providers, or native AWS Bedrock Converse API SDK depending on LLM_PROVIDER.",
       "browserChannel": "chrome (via MCP_BROWSER_CHANNEL env; no bundled chromium download required)",
       "files": {
-        "src/client.ts": "PlaywrightMcpClient — MCP SDK stdio wrapper, tool-call counter",
-        "src/agent.ts": "Agent loop; implements MCPFormFiller; handles <<DONE>>/<<BLOCKED>> tokens",
+        "src/client.ts": "PlaywrightMcpClient — MCP SDK stdio wrapper, tool-call counter, and FieldFill interception for value accuracy scoring",
+        "src/agents/llm-structured.ts": "Agent loop; implements MCPFormFiller; handles <<DONE>>/<<BLOCKED>> tokens, passes intercepted fields to FillResult",
         "src/prompt.ts": "SYSTEM_PROMPT + buildUserPrompt + snapshot cap",
         "src/index.ts": "CLI entry: fill --url <url> --profile <profile.json>; re-exports createFiller",
         "tests/smoke.test.ts": "Spawns server, lists tools, no LLM call"
@@ -45,10 +45,10 @@
   "shared": {
     "folder": "mcp-implementations/shared/",
     "files": {
-      "types.ts": "UserProfile, LiveForm, FillResult, ComparisonReport, MCPFormFiller",
+      "types.ts": "UserProfile, LiveForm, FillResult (with fields array for intercepted FieldFills), ComparisonReport, MCPFormFiller",
       "live-forms.json": "Curated list of live URLs to test against",
       "user-profile.json": "Sample UserProfile JSON",
-      "runner.ts": "Loads each implementation by name, runs every form N times, writes benchmark-results/mcp-<name>/<form>_<r>.json + benchmark-results/mcp-comparison.json"
+      "runner.ts": "Loads implementations, tests live forms, builds dynamic goldAnswers from profile expectedFields, computes valueAccuracyPct via shared scorer, and writes json/jsonl results."
     }
   },
   "runCommands": {

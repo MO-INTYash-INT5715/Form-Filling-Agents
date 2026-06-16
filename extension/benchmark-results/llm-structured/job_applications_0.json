@@ -19,35 +19,35 @@
     {
       "fieldId": "name",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Alice Zhang",
       "goldValue": "Alice Zhang",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "position",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Software Engineer",
       "goldValue": "Software Engineer",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "department",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Engineering",
       "goldValue": "Engineering",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "cover_letter",
       "fieldType": "Description",
-      "predictedValue": "",
+      "predictedValue": "I am writing to express my interest in the Software Engineer position at [Company's Name], as advertised. My name is Alice Zhang, and I am eager to bring my passion for software development to your esteemed organization, specifically within the Engineering department.\n\nI am enthusiastic about the opportunity to contribute my skills and expertise to [Company's Name]. The prospect of joining the Engineering department excites me, as I believe it is the perfect environment for me to grow professionally while leveraging my capabilities to add substantial value to your team.\n\nThroughout my career, I have demonstrated a strong commitment to excellence in software engineering. I am confident in my ability to tackle challenges and deliver innovative solutions that align with the company's goals. The dynamic nature of the Engineering department at [Company's Name] ideally complements my skills, and I am certain I can contribute effectively to your team's success.\n\nI look forward to the possibility of discussing my application further with you. Thank you for considering my application. I am hopeful to bring my skills and enthusiasm for software engineering to [Company's Name].",
       "goldValue": "I am passionate about software development and excited to contribute my skills to the Engineering department.",
       "clickAccurate": false,
       "valueAccurate": false,
-      "bleuScore": 0
+      "bleuScore": 2.2834487479237677
     }
   ],
   "atomicMetrics": {
@@ -56,25 +56,25 @@
       "Description": 0
     },
     "valueAccuracy": {
-      "String": 0,
+      "String": 100,
       "Description": 0
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 0
+    "overallValueAccuracy": 75
   },
   "episodicMetrics": {
-    "formCompletionRate": 0,
-    "fieldsAttempted": 0,
-    "fieldsCorrect": 0,
+    "formCompletionRate": 75,
+    "fieldsAttempted": 4,
+    "fieldsCorrect": 3,
     "totalFields": 4,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 0
+    "averageValueAccuracy": 75
   },
-  "executionTimeMs": 1770,
+  "executionTimeMs": 2108,
   "errors": [],
   "submissionSucceeded": true,
-  "tokensIn": 0,
-  "tokensOut": 0,
-  "llmTimeMs": 0,
-  "llmCalls": 0
+  "tokensIn": 557,
+  "tokensOut": 256,
+  "llmTimeMs": 2529,
+  "llmCalls": 1
 }

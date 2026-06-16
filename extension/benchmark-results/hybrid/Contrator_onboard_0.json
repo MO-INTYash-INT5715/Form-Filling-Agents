@@ -26,26 +26,26 @@
     {
       "fieldId": "fullName",
       "fieldType": "String",
-      "predictedValue": "Abigail Lewis",
+      "predictedValue": "With a Tax ID/EIN of 12-1111111, Abigail is established as a Sole Proprietorship",
       "goldValue": "Abigail Lewis",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "businessName",
       "fieldType": "String",
-      "predictedValue": "Abigail's Digital Marketing Solutions",
+      "predictedValue": "digital@outlook",
       "goldValue": "Abigail's Digital Marketing Solutions",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "email",
       "fieldType": "String",
-      "predictedValue": "abigail.lewis.digital@outlook.com",
+      "predictedValue": "digital@outlook",
       "goldValue": "abigail.lewis.digital@outlook.com",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "phone",
@@ -58,7 +58,7 @@
     {
       "fieldId": "taxId",
       "fieldType": "String",
-      "predictedValue": "of 12-1111111",
+      "predictedValue": "With a Tax ID/EIN of 12-1111111, Abigail is established as a Sole Proprietorship",
       "goldValue": "12-1111111",
       "clickAccurate": false,
       "valueAccurate": false
@@ -66,7 +66,7 @@
     {
       "fieldId": "businessType",
       "fieldType": "Dropdown",
-      "predictedValue": "soleProprietor",
+      "predictedValue": "Select business type",
       "goldValue": "Sole Proprietorship",
       "clickAccurate": false,
       "valueAccurate": false
@@ -74,11 +74,11 @@
     {
       "fieldId": "serviceDescription",
       "fieldType": "Description",
-      "predictedValue": "developing and implementing comprehensive digital marketing strategies, including search engine optimization (SEO) to improve website rankings, pay-per-click (PPC) advertising campaigns on platforms like Google Ads and Bing Ads, social media management across major platforms such as Facebook, Instagram, and Twitter to increase brand awareness and engagement, and content creation for blogs, articles, and social media posts to attract and retain customers",
+      "predictedValue": "With a Tax ID/EIN of 12-1111111, Abigail is established as a Sole Proprietorship",
       "goldValue": "Developing and implementing comprehensive digital marketing strategies, including search engine optimization (SEO) to improve website rankings, pay-per-click (PPC) advertising campaigns on platforms like Google Ads and Bing Ads, social media management across major platforms such as Facebook, Instagram, and Twitter to increase brand awareness and engagement, and content creation for blogs, articles, and social media posts to attract and retain customers.",
       "clickAccurate": false,
-      "valueAccurate": true,
-      "bleuScore": 100
+      "valueAccurate": false,
+      "bleuScore": 0
     },
     {
       "fieldId": "startDate",
@@ -99,7 +99,7 @@
     {
       "fieldId": "termsAgreed",
       "fieldType": "Checkbox",
-      "predictedValue": "false",
+      "predictedValue": "true",
       "goldValue": "Yes",
       "clickAccurate": false,
       "valueAccurate": false
@@ -107,7 +107,7 @@
     {
       "fieldId": "confidentialityAgreed",
       "fieldType": "Checkbox",
-      "predictedValue": "false",
+      "predictedValue": "true",
       "goldValue": "Yes",
       "clickAccurate": false,
       "valueAccurate": false
@@ -122,28 +122,28 @@
       "Checkbox": 0
     },
     "valueAccuracy": {
-      "String": 80,
+      "String": 20,
       "Dropdown": 0,
-      "Description": 100,
+      "Description": 0,
       "Date": 0,
       "Checkbox": 0
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 45.45454545454545
+    "overallValueAccuracy": 9.090909090909092
   },
   "episodicMetrics": {
-    "formCompletionRate": 45.45454545454545,
+    "formCompletionRate": 9.090909090909092,
     "fieldsAttempted": 9,
-    "fieldsCorrect": 5,
+    "fieldsCorrect": 1,
     "totalFields": 11,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 45.45454545454545
+    "averageValueAccuracy": 9.090909090909092
   },
-  "executionTimeMs": 25204,
+  "executionTimeMs": 32991,
   "errors": [],
   "submissionSucceeded": false,
-  "tokensIn": 554,
-  "tokensOut": 231,
-  "llmTimeMs": 23689,
+  "tokensIn": 454,
+  "tokensOut": 72,
+  "llmTimeMs": 798,
   "llmCalls": 1
 }

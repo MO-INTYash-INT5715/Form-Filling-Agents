@@ -27,24 +27,164 @@
     "formPath": "/professional-business/membership-application"
   },
   "agentName": "rule-based",
-  "fieldResults": [],
+  "fieldResults": [
+    {
+      "fieldId": "full_name",
+      "fieldType": "String",
+      "predictedValue": "John Smith",
+      "goldValue": "John Smith",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "email",
+      "fieldType": "String",
+      "predictedValue": "john.smith@gmail.com",
+      "goldValue": "john.smith@gmail.com",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "phone",
+      "fieldType": "String",
+      "predictedValue": "555-0123",
+      "goldValue": "555-0123",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "date_of_birth",
+      "fieldType": "Date",
+      "predictedValue": "",
+      "goldValue": "1990/01/15",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "membership_level",
+      "fieldType": "Dropdown",
+      "predictedValue": "Student Member",
+      "goldValue": "Student Member",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "membership_duration",
+      "fieldType": "Dropdown",
+      "predictedValue": "",
+      "goldValue": "1 Year",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "education_level",
+      "fieldType": "Dropdown",
+      "predictedValue": "Bachelor's Degree",
+      "goldValue": "Bachelor's Degree",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "field_of_study",
+      "fieldType": "String",
+      "predictedValue": "Computer Science",
+      "goldValue": "Computer Science",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "professional_certifications",
+      "fieldType": "Description",
+      "predictedValue": "",
+      "goldValue": "None",
+      "clickAccurate": false,
+      "valueAccurate": false,
+      "bleuScore": 0
+    },
+    {
+      "fieldId": "current_employer",
+      "fieldType": "String",
+      "predictedValue": "University of Technology",
+      "goldValue": "University of Technology",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "job_title",
+      "fieldType": "String",
+      "predictedValue": "Student",
+      "goldValue": "Student",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "years_experience",
+      "fieldType": "NumericInput",
+      "predictedValue": "0",
+      "goldValue": 0,
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "industry",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Education",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "reference_name",
+      "fieldType": "String",
+      "predictedValue": "Dr. Emily Johnson",
+      "goldValue": "Dr. Emily Johnson",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "reference_email",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "emily.johnson@gmail.com",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "reference_relationship",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Professor",
+      "clickAccurate": false,
+      "valueAccurate": false
+    }
+  ],
   "atomicMetrics": {
-    "clickAccuracy": {},
-    "valueAccuracy": {},
+    "clickAccuracy": {
+      "String": 0,
+      "Date": 0,
+      "Dropdown": 0,
+      "Description": 0,
+      "NumericInput": 0
+    },
+    "valueAccuracy": {
+      "String": 70,
+      "Date": 0,
+      "Dropdown": 66.66666666666666,
+      "Description": 0,
+      "NumericInput": 100
+    },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 0
+    "overallValueAccuracy": 62.5
   },
   "episodicMetrics": {
-    "formCompletionRate": 0,
-    "fieldsAttempted": 0,
-    "fieldsCorrect": 0,
-    "totalFields": 0,
+    "formCompletionRate": 62.5,
+    "fieldsAttempted": 10,
+    "fieldsCorrect": 10,
+    "totalFields": 16,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 0
+    "averageValueAccuracy": 62.5
   },
-  "executionTimeMs": 0,
-  "errors": [
-    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/professional-business/membership-application\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/professional-business/membership-application\", waiting until \"domcontentloaded\"\u001b[22m\n"
-  ],
-  "submissionSucceeded": false
+  "executionTimeMs": 2118,
+  "errors": [],
+  "submissionSucceeded": true
 }

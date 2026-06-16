@@ -90,26 +90,26 @@
     {
       "fieldId": "zipCode",
       "fieldType": "String",
-      "predictedValue": "62704",
+      "predictedValue": "I acknowledge that any false or misleading statements may lead to the rejection of my application",
       "goldValue": "62704",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "authorization",
       "fieldType": "Checkbox",
-      "predictedValue": "false",
+      "predictedValue": "true",
       "goldValue": true,
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "truthfulness",
       "fieldType": "Checkbox",
-      "predictedValue": "false",
+      "predictedValue": "true",
       "goldValue": true,
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     }
   ],
   "atomicMetrics": {
@@ -119,26 +119,26 @@
       "Checkbox": 0
     },
     "valueAccuracy": {
-      "String": 87.5,
+      "String": 75,
       "Date": 0,
-      "Checkbox": 0
+      "Checkbox": 100
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 63.63636363636363
+    "overallValueAccuracy": 72.72727272727273
   },
   "episodicMetrics": {
-    "formCompletionRate": 63.63636363636363,
+    "formCompletionRate": 72.72727272727273,
     "fieldsAttempted": 10,
-    "fieldsCorrect": 7,
+    "fieldsCorrect": 8,
     "totalFields": 11,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 63.63636363636363
+    "averageValueAccuracy": 72.72727272727273
   },
-  "executionTimeMs": 21230,
+  "executionTimeMs": 3356,
   "errors": [],
   "submissionSucceeded": false,
-  "tokensIn": 405,
-  "tokensOut": 142,
-  "llmTimeMs": 19711,
+  "tokensIn": 390,
+  "tokensOut": 95,
+  "llmTimeMs": 1210,
   "llmCalls": 1
 }

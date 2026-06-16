@@ -31,7 +31,7 @@
     {
       "fieldId": "full_name",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "smith@gmail",
       "goldValue": "John Smith",
       "clickAccurate": false,
       "valueAccurate": false
@@ -39,7 +39,7 @@
     {
       "fieldId": "email",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "smith@gmail",
       "goldValue": "john.smith@gmail.com",
       "clickAccurate": false,
       "valueAccurate": false
@@ -47,7 +47,7 @@
     {
       "fieldId": "phone",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Best regards, John Smith john",
       "goldValue": "555-0123",
       "clickAccurate": false,
       "valueAccurate": false
@@ -63,15 +63,15 @@
     {
       "fieldId": "membership_level",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "Student Member",
       "goldValue": "Student Member",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "membership_duration",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "Select Duration",
       "goldValue": "1 Year",
       "clickAccurate": false,
       "valueAccurate": false
@@ -79,7 +79,7 @@
     {
       "fieldId": "education_level",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "Select Education Level",
       "goldValue": "Bachelor's Degree",
       "clickAccurate": false,
       "valueAccurate": false
@@ -87,7 +87,7 @@
     {
       "fieldId": "field_of_study",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Best regards, John Smith john",
       "goldValue": "Computer Science",
       "clickAccurate": false,
       "valueAccurate": false
@@ -95,7 +95,7 @@
     {
       "fieldId": "professional_certifications",
       "fieldType": "Description",
-      "predictedValue": "",
+      "predictedValue": "Dear Sir/Madam, I am writing to apply for membership with your esteemed professional association",
       "goldValue": "None",
       "clickAccurate": false,
       "valueAccurate": false,
@@ -104,7 +104,7 @@
     {
       "fieldId": "current_employer",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Dear Sir/Madam, I am writing to apply for membership with your esteemed professional association",
       "goldValue": "University of Technology",
       "clickAccurate": false,
       "valueAccurate": false
@@ -112,7 +112,7 @@
     {
       "fieldId": "job_title",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "I look forward to the opportunity to grow and develop alongside fellow members of the association",
       "goldValue": "Student",
       "clickAccurate": false,
       "valueAccurate": false
@@ -128,7 +128,7 @@
     {
       "fieldId": "industry",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "smith@gmail",
       "goldValue": "Education",
       "clickAccurate": false,
       "valueAccurate": false
@@ -136,7 +136,7 @@
     {
       "fieldId": "reference_name",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "I look forward to the opportunity to grow and develop alongside fellow members of the association",
       "goldValue": "Dr. Emily Johnson",
       "clickAccurate": false,
       "valueAccurate": false
@@ -144,7 +144,7 @@
     {
       "fieldId": "reference_email",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "I look forward to the opportunity to grow and develop alongside fellow members of the association",
       "goldValue": "emily.johnson@gmail.com",
       "clickAccurate": false,
       "valueAccurate": false
@@ -152,7 +152,7 @@
     {
       "fieldId": "reference_relationship",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "mentorship from Dr. Emily Johnson, a respected professor at my university",
       "goldValue": "Professor",
       "clickAccurate": false,
       "valueAccurate": false
@@ -169,28 +169,26 @@
     "valueAccuracy": {
       "String": 0,
       "Date": 0,
-      "Dropdown": 0,
+      "Dropdown": 33.33333333333333,
       "Description": 0,
       "NumericInput": 0
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 0
+    "overallValueAccuracy": 6.25
   },
   "episodicMetrics": {
-    "formCompletionRate": 0,
-    "fieldsAttempted": 0,
-    "fieldsCorrect": 0,
+    "formCompletionRate": 6.25,
+    "fieldsAttempted": 14,
+    "fieldsCorrect": 1,
     "totalFields": 16,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 0
+    "averageValueAccuracy": 6.25
   },
-  "executionTimeMs": 678350,
-  "errors": [
-    "Form submission step failed or timed out"
-  ],
+  "executionTimeMs": 63275,
+  "errors": [],
   "submissionSucceeded": false,
-  "tokensIn": 627,
-  "tokensOut": 134,
-  "llmTimeMs": 11935,
+  "tokensIn": 501,
+  "tokensOut": 53,
+  "llmTimeMs": 930,
   "llmCalls": 1
 }

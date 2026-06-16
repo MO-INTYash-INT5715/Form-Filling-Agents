@@ -44,6 +44,15 @@ export interface LiveForm {
   notes?: string;
 }
 
+export interface FieldFill {
+  fieldId: string;
+  label?: string;
+  type: string;
+  value?: string | undefined;
+  matchedProfileKey?: string;
+  confidence: number;
+}
+
 export interface FillResult {
   implementation: string;     // "playwright-mcp" | "browser-mcp" | "skyvern-mcp"
   formId: string;
@@ -60,6 +69,7 @@ export interface FillResult {
   screenshotPath?: string;
   finalUrl?: string;
   error?: string;
+  fields?: FieldFill[];
   failureCategory?:
     | "bot-detection"
     | "captcha"

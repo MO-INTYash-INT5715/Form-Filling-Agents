@@ -171,7 +171,7 @@ ${domState}
 
         if (actionResult.action === 'submit') {
           isComplete = true;
-          await page.click('[type="submit"], button[type="submit"], input[type="submit"]', { timeout: 2000 }).catch(() => {});
+          console.log(`[VLM Agent] Agent predicted submit. Form filling finished.`);
           break;
         }
       } catch (err) {

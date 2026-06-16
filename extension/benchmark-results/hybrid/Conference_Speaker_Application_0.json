@@ -53,10 +53,10 @@
     {
       "fieldId": "organization",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Tech Innovations Inc.",
       "goldValue": "Tech Innovations Inc.",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "Presentation Title",
@@ -109,7 +109,7 @@
     {
       "fieldId": "speaking_experience",
       "fieldType": "Description",
-      "predictedValue": "",
+      "predictedValue": "com or phone at 123-456-7890",
       "goldValue": "1. Keynote Speaker at ArtTech Symposium 2022. 2. Panelist at AI and Creativity Conference 2021.",
       "clickAccurate": false,
       "valueAccurate": false,
@@ -126,7 +126,7 @@
     {
       "fieldId": "tech_requirements",
       "fieldType": "Description",
-      "predictedValue": "",
+      "predictedValue": "adams56@gmail",
       "goldValue": "Projector, internet access, AI demo tools.",
       "clickAccurate": false,
       "valueAccurate": false,
@@ -147,27 +147,25 @@
       "Description": 0
     },
     "valueAccuracy": {
-      "String": 0,
+      "String": 8.333333333333332,
       "Description": 0
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 0
+    "overallValueAccuracy": 7.142857142857142
   },
   "episodicMetrics": {
-    "formCompletionRate": 0,
-    "fieldsAttempted": 0,
-    "fieldsCorrect": 0,
+    "formCompletionRate": 7.142857142857142,
+    "fieldsAttempted": 3,
+    "fieldsCorrect": 1,
     "totalFields": 14,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 0
+    "averageValueAccuracy": 7.142857142857142
   },
-  "executionTimeMs": 503066,
-  "errors": [
-    "Form submission step failed or timed out"
-  ],
-  "submissionSucceeded": false,
-  "tokensIn": 587,
-  "tokensOut": 368,
-  "llmTimeMs": 17131,
+  "executionTimeMs": 4003,
+  "errors": [],
+  "submissionSucceeded": true,
+  "tokensIn": 493,
+  "tokensOut": 219,
+  "llmTimeMs": 1941,
   "llmCalls": 1
 }

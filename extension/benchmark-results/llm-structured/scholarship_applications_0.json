@@ -37,63 +37,63 @@
     {
       "fieldId": "firstName",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Nicholas",
       "goldValue": "Nicholas",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "middleName",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Anne",
       "goldValue": "Anne",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "lastName",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Collins",
       "goldValue": "Collins",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "studentId",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "22281229",
       "goldValue": 22281229,
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "major",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Philosophy",
       "goldValue": "Philosophy",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "gpa",
       "fieldType": "NumericInput",
-      "predictedValue": "",
+      "predictedValue": "3.19",
       "goldValue": 3.19,
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "academicYear",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "sophomore",
       "goldValue": "Sophomore",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "financialAid",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "another scholarship",
       "goldValue": "Other Scholarship",
       "clickAccurate": false,
       "valueAccurate": false
@@ -101,7 +101,7 @@
     {
       "fieldId": "familyIncome",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "$80,303",
       "goldValue": 80303,
       "clickAccurate": false,
       "valueAccurate": false
@@ -109,19 +109,19 @@
     {
       "fieldId": "achievements",
       "fieldType": "Description",
-      "predictedValue": "",
+      "predictedValue": "winner of the State Physics Olympiad",
       "goldValue": [
         "Winner of the State Physics Olympiad",
         "the Dean’s List Award for Outstanding Academic Performance"
       ],
       "clickAccurate": false,
-      "valueAccurate": false,
-      "bleuScore": 0
+      "valueAccurate": true,
+      "bleuScore": 100
     },
     {
       "fieldId": "extracurricular",
       "fieldType": "Description",
-      "predictedValue": "",
+      "predictedValue": "Coordinator of the Youth Empowerment Program",
       "goldValue": [
         "Co-founder of the Campus Startup Initiative",
         "President of the Student Council",
@@ -129,8 +129,8 @@
         "Coordinator of the Youth Empowerment Program"
       ],
       "clickAccurate": false,
-      "valueAccurate": false,
-      "bleuScore": 0
+      "valueAccurate": true,
+      "bleuScore": 100
     },
     {
       "fieldId": "Statement of Purpose",
@@ -143,18 +143,18 @@
     {
       "fieldId": "reference1",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Kevin Walker",
       "goldValue": "Kevin Walker",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "reference1Email",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "psolomon@yahoo.com",
       "goldValue": "psolomon@yahoo.com",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     }
   ],
   "atomicMetrics": {
@@ -165,29 +165,27 @@
       "Description": 0
     },
     "valueAccuracy": {
-      "String": 0,
-      "NumericInput": 0,
-      "Dropdown": 0,
-      "Description": 0
+      "String": 87.5,
+      "NumericInput": 100,
+      "Dropdown": 33.33333333333333,
+      "Description": 100
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 0
+    "overallValueAccuracy": 78.57142857142857
   },
   "episodicMetrics": {
-    "formCompletionRate": 0,
-    "fieldsAttempted": 0,
-    "fieldsCorrect": 0,
+    "formCompletionRate": 78.57142857142857,
+    "fieldsAttempted": 13,
+    "fieldsCorrect": 11,
     "totalFields": 14,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 0
+    "averageValueAccuracy": 78.57142857142857
   },
-  "executionTimeMs": 435,
-  "errors": [
-    "Form submission step failed or timed out"
-  ],
-  "submissionSucceeded": false,
-  "tokensIn": 0,
-  "tokensOut": 0,
-  "llmTimeMs": 0,
-  "llmCalls": 0
+  "executionTimeMs": 1914,
+  "errors": [],
+  "submissionSucceeded": true,
+  "tokensIn": 1099,
+  "tokensOut": 271,
+  "llmTimeMs": 2686,
+  "llmCalls": 1
 }

@@ -25,7 +25,7 @@
     {
       "fieldId": "title",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "4, iPhone 12 Steps to Reproduce: 1",
       "goldValue": "App crashes when opening the settings menu",
       "clickAccurate": false,
       "valueAccurate": false
@@ -33,7 +33,7 @@
     {
       "fieldId": "severity",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "Select severity level",
       "goldValue": "High",
       "clickAccurate": false,
       "valueAccurate": false
@@ -41,7 +41,7 @@
     {
       "fieldId": "environment",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Production Browser/Platform: iOS 15",
       "goldValue": "Production",
       "clickAccurate": false,
       "valueAccurate": false
@@ -49,7 +49,7 @@
     {
       "fieldId": "browser",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "iOS 15",
       "goldValue": "iOS 15.4, iPhone 12",
       "clickAccurate": false,
       "valueAccurate": false
@@ -57,7 +57,7 @@
     {
       "fieldId": "steps",
       "fieldType": "Description",
-      "predictedValue": "",
+      "predictedValue": "1",
       "goldValue": "1. Open the app. 2. Tap on the settings icon. 3. App crashes immediately.",
       "clickAccurate": false,
       "valueAccurate": false,
@@ -66,25 +66,25 @@
     {
       "fieldId": "expected",
       "fieldType": "Description",
-      "predictedValue": "",
+      "predictedValue": "Settings menu should open without crashing",
       "goldValue": "Settings menu should open without crashing.",
       "clickAccurate": false,
-      "valueAccurate": false,
-      "bleuScore": 0
+      "valueAccurate": true,
+      "bleuScore": 100
     },
     {
       "fieldId": "actual",
       "fieldType": "Description",
-      "predictedValue": "",
+      "predictedValue": "App crashes immediately when settings menu is opened.",
       "goldValue": "App crashes immediately when settings menu is opened.",
       "clickAccurate": false,
-      "valueAccurate": false,
-      "bleuScore": 0
+      "valueAccurate": true,
+      "bleuScore": 100
     },
     {
       "fieldId": "reporter",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "4, iPhone 12 Steps to Reproduce: 1",
       "goldValue": "John Williams",
       "clickAccurate": false,
       "valueAccurate": false
@@ -92,7 +92,7 @@
     {
       "fieldId": "email",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Open the app",
       "goldValue": "john.williams87@gmail.com",
       "clickAccurate": false,
       "valueAccurate": false
@@ -107,26 +107,24 @@
     "valueAccuracy": {
       "String": 0,
       "Dropdown": 0,
-      "Description": 0
+      "Description": 66.66666666666666
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 0
+    "overallValueAccuracy": 22.22222222222222
   },
   "episodicMetrics": {
-    "formCompletionRate": 0,
-    "fieldsAttempted": 0,
-    "fieldsCorrect": 0,
+    "formCompletionRate": 22.22222222222222,
+    "fieldsAttempted": 9,
+    "fieldsCorrect": 2,
     "totalFields": 9,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 0
+    "averageValueAccuracy": 22.22222222222222
   },
-  "executionTimeMs": 310373,
-  "errors": [
-    "Form submission step failed or timed out"
-  ],
+  "executionTimeMs": 32813,
+  "errors": [],
   "submissionSucceeded": false,
-  "tokensIn": 379,
-  "tokensOut": 73,
-  "llmTimeMs": 4476,
+  "tokensIn": 302,
+  "tokensOut": 18,
+  "llmTimeMs": 319,
   "llmCalls": 1
 }

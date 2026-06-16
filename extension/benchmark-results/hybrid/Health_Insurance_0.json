@@ -23,10 +23,10 @@
     {
       "fieldId": "policyNumber",
       "fieldType": "String",
-      "predictedValue": "A1234567890",
+      "predictedValue": "On January 15, 2024, Emily visited Dr",
       "goldValue": "A1234567890",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "policyHolder",
@@ -50,15 +50,15 @@
       "predictedValue": "250.00",
       "goldValue": 250,
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "serviceType",
       "fieldType": "Dropdown",
-      "predictedValue": "consultation",
+      "predictedValue": "Doctor Consultation",
       "goldValue": "Doctor Consultation",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "diagnosis",
@@ -72,10 +72,10 @@
     {
       "fieldId": "providerName",
       "fieldType": "String",
-      "predictedValue": "Dr. Alice Green",
+      "predictedValue": "On January 15, 2024, Emily visited Dr",
       "goldValue": "Dr. Alice Green",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "providerNumber",
@@ -95,10 +95,10 @@
       "Description": 0
     },
     "valueAccuracy": {
-      "String": 100,
+      "String": 50,
       "Date": 0,
-      "NumericInput": 0,
-      "Dropdown": 0,
+      "NumericInput": 100,
+      "Dropdown": 100,
       "Description": 100
     },
     "overallClickAccuracy": 0,
@@ -112,11 +112,11 @@
     "averageClickAccuracy": 0,
     "averageValueAccuracy": 62.5
   },
-  "executionTimeMs": 11807,
+  "executionTimeMs": 3324,
   "errors": [],
   "submissionSucceeded": false,
-  "tokensIn": 342,
-  "tokensOut": 83,
-  "llmTimeMs": 9922,
+  "tokensIn": 327,
+  "tokensOut": 72,
+  "llmTimeMs": 916,
   "llmCalls": 1
 }

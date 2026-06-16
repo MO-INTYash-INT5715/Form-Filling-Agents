@@ -50,10 +50,10 @@
     {
       "fieldId": "genre",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "Fiction",
       "goldValue": "Fiction",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "Word Count",
@@ -82,26 +82,26 @@
     {
       "fieldId": "issue",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "Spring 2024",
       "goldValue": "Spring 2024",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "previously_published",
       "fieldType": "Checkbox",
-      "predictedValue": "",
+      "predictedValue": "No",
       "goldValue": "No",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "simultaneous_submission",
       "fieldType": "Checkbox",
-      "predictedValue": "",
+      "predictedValue": "Yes",
       "goldValue": "Yes",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "I agree to the submission guidelines and terms of publication",
@@ -120,25 +120,25 @@
     },
     "valueAccuracy": {
       "String": 0,
-      "Dropdown": 0,
-      "Checkbox": 0
+      "Dropdown": 100,
+      "Checkbox": 100
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 0
+    "overallValueAccuracy": 36.36363636363637
   },
   "episodicMetrics": {
-    "formCompletionRate": 0,
-    "fieldsAttempted": 0,
-    "fieldsCorrect": 0,
+    "formCompletionRate": 36.36363636363637,
+    "fieldsAttempted": 4,
+    "fieldsCorrect": 4,
     "totalFields": 11,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 0
+    "averageValueAccuracy": 36.36363636363637
   },
-  "executionTimeMs": 1650,
+  "executionTimeMs": 2066,
   "errors": [],
   "submissionSucceeded": true,
-  "tokensIn": 0,
-  "tokensOut": 0,
-  "llmTimeMs": 0,
-  "llmCalls": 0
+  "tokensIn": 635,
+  "tokensOut": 144,
+  "llmTimeMs": 1319,
+  "llmCalls": 1
 }

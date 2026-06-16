@@ -19,7 +19,7 @@
     {
       "fieldId": "name",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Throughout my career, I have demonstrated a strong commitment to excellence in software engineering",
       "goldValue": "Alice Zhang",
       "clickAccurate": false,
       "valueAccurate": false
@@ -27,23 +27,23 @@
     {
       "fieldId": "position",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Software Engineer",
       "goldValue": "Software Engineer",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "department",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Engineering",
       "goldValue": "Engineering",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "cover_letter",
       "fieldType": "Description",
-      "predictedValue": "",
+      "predictedValue": "Throughout my career, I have demonstrated a strong commitment to excellence in software engineering",
       "goldValue": "I am passionate about software development and excited to contribute my skills to the Engineering department.",
       "clickAccurate": false,
       "valueAccurate": false,
@@ -56,27 +56,25 @@
       "Description": 0
     },
     "valueAccuracy": {
-      "String": 0,
+      "String": 66.66666666666666,
       "Description": 0
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 0
+    "overallValueAccuracy": 50
   },
   "episodicMetrics": {
-    "formCompletionRate": 0,
-    "fieldsAttempted": 0,
-    "fieldsCorrect": 0,
+    "formCompletionRate": 50,
+    "fieldsAttempted": 4,
+    "fieldsCorrect": 2,
     "totalFields": 4,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 0
+    "averageValueAccuracy": 50
   },
-  "executionTimeMs": 133748,
-  "errors": [
-    "Form submission step failed or timed out"
-  ],
-  "submissionSucceeded": false,
-  "tokensIn": 445,
-  "tokensOut": 156,
-  "llmTimeMs": 7891,
+  "executionTimeMs": 5580,
+  "errors": [],
+  "submissionSucceeded": true,
+  "tokensIn": 413,
+  "tokensOut": 21,
+  "llmTimeMs": 529,
   "llmCalls": 1
 }

@@ -17,24 +17,77 @@
     "formPath": "/academic-research/grant-application"
   },
   "agentName": "rule-based",
-  "fieldResults": [],
+  "fieldResults": [
+    {
+      "fieldId": "First Name",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Diana",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "Last Name",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Bridges",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "email",
+      "fieldType": "String",
+      "predictedValue": "wmills@shields.net",
+      "goldValue": "wmills@shields.net",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "gender",
+      "fieldType": "RadioButton",
+      "predictedValue": "Female",
+      "goldValue": "Female",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "Date of Birth",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "1951/09/28",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "Subscribe to Newsletter",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": false,
+      "clickAccurate": null,
+      "valueAccurate": false
+    }
+  ],
   "atomicMetrics": {
-    "clickAccuracy": {},
-    "valueAccuracy": {},
+    "clickAccuracy": {
+      "String": 0,
+      "RadioButton": 0
+    },
+    "valueAccuracy": {
+      "String": 20,
+      "RadioButton": 100
+    },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 0
+    "overallValueAccuracy": 33.33333333333333
   },
   "episodicMetrics": {
-    "formCompletionRate": 0,
-    "fieldsAttempted": 0,
-    "fieldsCorrect": 0,
-    "totalFields": 0,
+    "formCompletionRate": 33.33333333333333,
+    "fieldsAttempted": 2,
+    "fieldsCorrect": 2,
+    "totalFields": 6,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 0
+    "averageValueAccuracy": 33.33333333333333
   },
-  "executionTimeMs": 0,
-  "errors": [
-    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/academic-research/grant-application\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/academic-research/grant-application\", waiting until \"domcontentloaded\"\u001b[22m\n"
-  ],
+  "executionTimeMs": 2090,
+  "errors": [],
   "submissionSucceeded": false
 }

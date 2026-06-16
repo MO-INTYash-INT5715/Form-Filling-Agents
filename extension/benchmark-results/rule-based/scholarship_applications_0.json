@@ -33,24 +33,155 @@
     "formPath": "/academic-research/scholarship-application"
   },
   "agentName": "rule-based",
-  "fieldResults": [],
+  "fieldResults": [
+    {
+      "fieldId": "firstName",
+      "fieldType": "String",
+      "predictedValue": "Nicholas",
+      "goldValue": "Nicholas",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "middleName",
+      "fieldType": "String",
+      "predictedValue": "Anne",
+      "goldValue": "Anne",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "lastName",
+      "fieldType": "String",
+      "predictedValue": "Collins",
+      "goldValue": "Collins",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "studentId",
+      "fieldType": "String",
+      "predictedValue": "22281229",
+      "goldValue": 22281229,
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "major",
+      "fieldType": "String",
+      "predictedValue": "Philosophy",
+      "goldValue": "Philosophy",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "gpa",
+      "fieldType": "NumericInput",
+      "predictedValue": "3.19",
+      "goldValue": 3.19,
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "academicYear",
+      "fieldType": "Dropdown",
+      "predictedValue": "",
+      "goldValue": "Sophomore",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "financialAid",
+      "fieldType": "Dropdown",
+      "predictedValue": "",
+      "goldValue": "Other Scholarship",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "familyIncome",
+      "fieldType": "Dropdown",
+      "predictedValue": "",
+      "goldValue": 80303,
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "achievements",
+      "fieldType": "Description",
+      "predictedValue": "",
+      "goldValue": [
+        "Winner of the State Physics Olympiad",
+        "the Dean’s List Award for Outstanding Academic Performance"
+      ],
+      "clickAccurate": false,
+      "valueAccurate": false,
+      "bleuScore": 0
+    },
+    {
+      "fieldId": "extracurricular",
+      "fieldType": "Description",
+      "predictedValue": "",
+      "goldValue": [
+        "Co-founder of the Campus Startup Initiative",
+        "President of the Student Council",
+        "Volunteer at the local community center",
+        "Coordinator of the Youth Empowerment Program"
+      ],
+      "clickAccurate": false,
+      "valueAccurate": false,
+      "bleuScore": 0
+    },
+    {
+      "fieldId": "Statement of Purpose",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Being a first-generation college student, this scholarship is crucial for me to continue my education. It will allow me to focus on academic excellence while contributing to community service, helping me achieve my dream of becoming a leader in public health.",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "reference1",
+      "fieldType": "String",
+      "predictedValue": "Kevin Walker",
+      "goldValue": "Kevin Walker",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "reference1Email",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "psolomon@yahoo.com",
+      "clickAccurate": false,
+      "valueAccurate": false
+    }
+  ],
   "atomicMetrics": {
-    "clickAccuracy": {},
-    "valueAccuracy": {},
+    "clickAccuracy": {
+      "String": 0,
+      "NumericInput": 0,
+      "Dropdown": 0,
+      "Description": 0
+    },
+    "valueAccuracy": {
+      "String": 75,
+      "NumericInput": 100,
+      "Dropdown": 0,
+      "Description": 0
+    },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 0
+    "overallValueAccuracy": 50
   },
   "episodicMetrics": {
-    "formCompletionRate": 0,
-    "fieldsAttempted": 0,
-    "fieldsCorrect": 0,
-    "totalFields": 0,
+    "formCompletionRate": 50,
+    "fieldsAttempted": 7,
+    "fieldsCorrect": 7,
+    "totalFields": 14,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 0
+    "averageValueAccuracy": 50
   },
-  "executionTimeMs": 0,
-  "errors": [
-    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/academic-research/scholarship-application\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/academic-research/scholarship-application\", waiting until \"domcontentloaded\"\u001b[22m\n"
-  ],
-  "submissionSucceeded": false
+  "executionTimeMs": 1847,
+  "errors": [],
+  "submissionSucceeded": true
 }

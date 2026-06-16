@@ -21,39 +21,39 @@
     {
       "fieldId": "name",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Benjamin Scott",
       "goldValue": "Benjamin Scott",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "email",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "ben.scott24@gmail.com",
       "goldValue": "ben.scott24@gmail.com",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "consultationType",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "estate planning",
       "goldValue": "Estate Planning",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "preferredDate",
       "fieldType": "Date",
-      "predictedValue": "",
+      "predictedValue": "2024-11-30",
       "goldValue": "2024/11/30",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "preferredTime",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "4:00 PM to 6:00 PM",
       "goldValue": "Evening (4:00 PM -6:00 PM)",
       "clickAccurate": false,
       "valueAccurate": false
@@ -61,11 +61,11 @@
     {
       "fieldId": "comments",
       "fieldType": "Description",
-      "predictedValue": "",
+      "predictedValue": "I am particularly interested in discussing the creation of a living will and managing property distribution.",
       "goldValue": "Looking to discuss the creation of a living will and managing property distribution.",
       "clickAccurate": false,
-      "valueAccurate": false,
-      "bleuScore": 0
+      "valueAccurate": true,
+      "bleuScore": 58.282339541526525
     }
   ],
   "atomicMetrics": {
@@ -76,27 +76,27 @@
       "Description": 0
     },
     "valueAccuracy": {
-      "String": 0,
-      "Dropdown": 0,
-      "Date": 0,
-      "Description": 0
+      "String": 100,
+      "Dropdown": 50,
+      "Date": 100,
+      "Description": 100
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 0
+    "overallValueAccuracy": 83.33333333333334
   },
   "episodicMetrics": {
-    "formCompletionRate": 0,
-    "fieldsAttempted": 0,
-    "fieldsCorrect": 0,
+    "formCompletionRate": 83.33333333333334,
+    "fieldsAttempted": 6,
+    "fieldsCorrect": 5,
     "totalFields": 6,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 0
+    "averageValueAccuracy": 83.33333333333334
   },
-  "executionTimeMs": 1431,
+  "executionTimeMs": 2041,
   "errors": [],
   "submissionSucceeded": false,
-  "tokensIn": 0,
-  "tokensOut": 0,
-  "llmTimeMs": 0,
-  "llmCalls": 0
+  "tokensIn": 478,
+  "tokensOut": 101,
+  "llmTimeMs": 1098,
+  "llmCalls": 1
 }

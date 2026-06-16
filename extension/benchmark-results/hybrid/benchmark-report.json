@@ -1,6 +1,6 @@
 {
   "agentName": "hybrid",
-  "timestamp": "2026-05-28T10:07:48.953Z",
+  "timestamp": "2026-06-16T09:43:14.624Z",
   "config": {
     "formFactoryServerUrl": "http://localhost:5000",
     "formIds": "all",
@@ -19,23 +19,23 @@
       "Checkbox": 0
     },
     "valueAccuracy": {
-      "String": 35.36666666666667,
-      "Description": 25,
-      "Dropdown": 5.2631578947368425,
-      "NumericInput": 24.166666666666668,
+      "String": 32.02943722943723,
+      "Description": 32.407407407407405,
+      "Dropdown": 21.05263157894737,
+      "NumericInput": 43.333333333333336,
       "Date": 0,
-      "Checkbox": 0
+      "Checkbox": 50
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 21.88336304218657
+    "overallValueAccuracy": 30.143955030177946
   },
   "globalEpisodic": {
-    "formCompletionRate": 21.88336304218657,
-    "fieldsAttempted": 82,
-    "fieldsCorrect": 54,
+    "formCompletionRate": 30.143955030177946,
+    "fieldsAttempted": 196,
+    "fieldsCorrect": 74,
     "totalFields": 259,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 21.88336304218657
+    "averageValueAccuracy": 30.143955030177946
   },
   "byDomain": {
     "Academic & Research": {
@@ -49,21 +49,21 @@
           "NumericInput": 0
         },
         "valueAccuracy": {
-          "String": 10,
-          "Description": 0,
+          "String": 23.333333333333332,
+          "Description": 12.5,
           "Dropdown": 0,
           "NumericInput": 0
         },
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 6.666666666666666
+        "overallValueAccuracy": 17.619047619047617
       },
       "episodic": {
-        "formCompletionRate": 6.666666666666666,
-        "fieldsAttempted": 5,
-        "fieldsCorrect": 2,
+        "formCompletionRate": 17.619047619047617,
+        "fieldsAttempted": 29,
+        "fieldsCorrect": 6,
         "totalFields": 38,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 6.666666666666666
+        "averageValueAccuracy": 17.619047619047617
       }
     },
     "Professional & Business": {
@@ -78,22 +78,22 @@
           "Description": 0
         },
         "valueAccuracy": {
-          "String": 16.666666666666664,
+          "String": 21.96969696969697,
           "Date": 0,
-          "Dropdown": 0,
-          "NumericInput": 10,
-          "Description": 12.5
+          "Dropdown": 24.999999999999996,
+          "NumericInput": 5,
+          "Description": 29.166666666666664
         },
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 11.76470588235294
+        "overallValueAccuracy": 20.912345201238388
       },
       "episodic": {
-        "formCompletionRate": 11.76470588235294,
-        "fieldsAttempted": 12,
-        "fieldsCorrect": 8,
+        "formCompletionRate": 20.912345201238388,
+        "fieldsAttempted": 56,
+        "fieldsCorrect": 15,
         "totalFields": 69,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 11.76470588235294
+        "averageValueAccuracy": 20.912345201238388
       }
     },
     "Arts & Creative": {
@@ -107,21 +107,21 @@
           "Description": 0
         },
         "valueAccuracy": {
-          "String": 0,
-          "Dropdown": 0,
-          "Checkbox": 0,
+          "String": 2.7777777777777772,
+          "Dropdown": 50,
+          "Checkbox": 50,
           "Description": 0
         },
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 0
+        "overallValueAccuracy": 12.81866281866282
       },
       "episodic": {
-        "formCompletionRate": 0,
-        "fieldsAttempted": 0,
-        "fieldsCorrect": 0,
+        "formCompletionRate": 12.81866281866282,
+        "fieldsAttempted": 10,
+        "fieldsCorrect": 4,
         "totalFields": 34,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 0
+        "averageValueAccuracy": 12.81866281866282
       }
     },
     "Technology & Software": {
@@ -135,21 +135,21 @@
           "NumericInput": 0
         },
         "valueAccuracy": {
-          "String": 0,
+          "String": 21.428571428571427,
           "Dropdown": 0,
-          "Description": 0,
+          "Description": 83.33333333333333,
           "NumericInput": 0
         },
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 0
+        "overallValueAccuracy": 29.292929292929294
       },
       "episodic": {
-        "formCompletionRate": 0,
-        "fieldsAttempted": 0,
-        "fieldsCorrect": 0,
+        "formCompletionRate": 29.292929292929294,
+        "fieldsAttempted": 19,
+        "fieldsCorrect": 6,
         "totalFields": 20,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 0
+        "averageValueAccuracy": 29.292929292929294
       }
     },
     "Finance & Banking": {
@@ -164,22 +164,22 @@
           "Description": 0
         },
         "valueAccuracy": {
-          "String": 33.333333333333336,
-          "NumericInput": 0,
-          "Dropdown": 0,
+          "String": 55.55555555555555,
+          "NumericInput": 100,
+          "Dropdown": 33.333333333333336,
           "Date": 0,
-          "Description": 100
+          "Description": 0
         },
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 16.666666666666668
+        "overallValueAccuracy": 43.80952380952382
       },
       "episodic": {
-        "formCompletionRate": 16.666666666666668,
-        "fieldsAttempted": 3,
-        "fieldsCorrect": 3,
+        "formCompletionRate": 43.80952380952382,
+        "fieldsAttempted": 15,
+        "fieldsCorrect": 8,
         "totalFields": 18,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 16.666666666666668
+        "averageValueAccuracy": 43.80952380952382
       }
     },
     "Healthcare & Medical": {
@@ -195,23 +195,23 @@
           "Dropdown": 0
         },
         "valueAccuracy": {
-          "String": 100,
+          "String": 50,
           "Date": 0,
-          "Checkbox": 0,
-          "NumericInput": 50,
+          "Checkbox": 100,
+          "NumericInput": 100,
           "Description": 50,
-          "Dropdown": 0
+          "Dropdown": 50
         },
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 57.5
+        "overallValueAccuracy": 55
       },
       "episodic": {
-        "formCompletionRate": 57.5,
-        "fieldsAttempted": 22,
+        "formCompletionRate": 55,
+        "fieldsAttempted": 24,
         "fieldsCorrect": 15,
         "totalFields": 26,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 57.5
+        "averageValueAccuracy": 55
       }
     },
     "Legal & Compliance": {
@@ -227,23 +227,23 @@
           "Checkbox": 0
         },
         "valueAccuracy": {
-          "String": 78.05555555555556,
-          "Dropdown": 50,
-          "Description": 100,
+          "String": 53.888888888888886,
+          "Dropdown": 0,
+          "Description": 50,
           "Date": 0,
           "NumericInput": 100,
-          "Checkbox": 0
+          "Checkbox": 33.333333333333336
         },
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 54.882154882154886
+        "overallValueAccuracy": 42.08754208754209
       },
       "episodic": {
-        "formCompletionRate": 54.882154882154886,
+        "formCompletionRate": 42.08754208754209,
         "fieldsAttempted": 26,
-        "fieldsCorrect": 17,
+        "fieldsCorrect": 13,
         "totalFields": 31,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 54.882154882154886
+        "averageValueAccuracy": 42.08754208754209
       }
     },
     "Construction & Manufacturing": {
@@ -258,22 +258,22 @@
           "Dropdown": 0
         },
         "valueAccuracy": {
-          "String": 66.66666666666667,
-          "NumericInput": 25,
+          "String": 33.33333333333333,
+          "NumericInput": 50,
           "Date": 0,
-          "Description": 0,
+          "Description": 25,
           "Dropdown": 0
         },
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 39.772727272727266
+        "overallValueAccuracy": 31.06060606060606
       },
       "episodic": {
-        "formCompletionRate": 39.772727272727266,
-        "fieldsAttempted": 14,
-        "fieldsCorrect": 9,
+        "formCompletionRate": 31.06060606060606,
+        "fieldsAttempted": 17,
+        "fieldsCorrect": 7,
         "totalFields": 23,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 39.772727272727266
+        "averageValueAccuracy": 31.06060606060606
       }
     }
   },
@@ -299,7 +299,7 @@
         {
           "fieldId": "name",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "Throughout my career, I have demonstrated a strong commitment to excellence in software engineering",
           "goldValue": "Alice Zhang",
           "clickAccurate": false,
           "valueAccurate": false
@@ -307,23 +307,23 @@
         {
           "fieldId": "position",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "Software Engineer",
           "goldValue": "Software Engineer",
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         },
         {
           "fieldId": "department",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "Engineering",
           "goldValue": "Engineering",
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         },
         {
           "fieldId": "cover_letter",
           "fieldType": "Description",
-          "predictedValue": "",
+          "predictedValue": "Throughout my career, I have demonstrated a strong commitment to excellence in software engineering",
           "goldValue": "I am passionate about software development and excited to contribute my skills to the Engineering department.",
           "clickAccurate": false,
           "valueAccurate": false,
@@ -336,28 +336,26 @@
           "Description": 0
         },
         "valueAccuracy": {
-          "String": 0,
+          "String": 66.66666666666666,
           "Description": 0
         },
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 0
+        "overallValueAccuracy": 50
       },
       "episodicMetrics": {
-        "formCompletionRate": 0,
-        "fieldsAttempted": 0,
-        "fieldsCorrect": 0,
+        "formCompletionRate": 50,
+        "fieldsAttempted": 4,
+        "fieldsCorrect": 2,
         "totalFields": 4,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 0
+        "averageValueAccuracy": 50
       },
-      "executionTimeMs": 133748,
-      "errors": [
-        "Form submission step failed or timed out"
-      ],
-      "submissionSucceeded": false,
-      "tokensIn": 445,
-      "tokensOut": 156,
-      "llmTimeMs": 7891,
+      "executionTimeMs": 5580,
+      "errors": [],
+      "submissionSucceeded": true,
+      "tokensIn": 413,
+      "tokensOut": 21,
+      "llmTimeMs": 529,
       "llmCalls": 1
     },
     {
@@ -447,12 +445,12 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 3036,
+      "executionTimeMs": 2454,
       "errors": [],
       "submissionSucceeded": false,
-      "tokensIn": 465,
-      "tokensOut": 19,
-      "llmTimeMs": 1534,
+      "tokensIn": 452,
+      "tokensOut": 12,
+      "llmTimeMs": 297,
       "llmCalls": 1
     },
     {
@@ -482,15 +480,15 @@
         {
           "fieldId": "author_name",
           "fieldType": "String",
-          "predictedValue": "Alice Johnson",
+          "predictedValue": "\" I am confident that this paper will add substantial value to the discussions on Artificial Intelligence at the conference",
           "goldValue": "Alice Johnson",
           "clickAccurate": false,
-          "valueAccurate": true
+          "valueAccurate": false
         },
         {
           "fieldId": "email",
           "fieldType": "String",
-          "predictedValue": "at alice",
+          "predictedValue": "johnson@university",
           "goldValue": "alice.johnson@university.edu",
           "clickAccurate": false,
           "valueAccurate": false
@@ -515,7 +513,7 @@
         {
           "fieldId": "keywords",
           "fieldType": "String",
-          "predictedValue": "Deep Learning, Image Recognition, Neural Networks",
+          "predictedValue": "\" I am confident that this paper will add substantial value to the discussions on Artificial Intelligence at the conference",
           "goldValue": [
             "Deep Learning",
             "Image Recognition",
@@ -527,7 +525,7 @@
         {
           "fieldId": "category",
           "fieldType": "Dropdown",
-          "predictedValue": "",
+          "predictedValue": "Select a category",
           "goldValue": "Artificial Intelligence",
           "clickAccurate": false,
           "valueAccurate": false
@@ -540,27 +538,27 @@
           "Dropdown": 0
         },
         "valueAccuracy": {
-          "String": 50,
+          "String": 25,
           "Description": 0,
           "Dropdown": 0
         },
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 33.33333333333333
+        "overallValueAccuracy": 16.666666666666664
       },
       "episodicMetrics": {
-        "formCompletionRate": 33.33333333333333,
-        "fieldsAttempted": 5,
-        "fieldsCorrect": 2,
+        "formCompletionRate": 16.666666666666664,
+        "fieldsAttempted": 6,
+        "fieldsCorrect": 1,
         "totalFields": 6,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 33.33333333333333
+        "averageValueAccuracy": 16.666666666666664
       },
-      "executionTimeMs": 37130,
+      "executionTimeMs": 33239,
       "errors": [],
-      "submissionSucceeded": false,
-      "tokensIn": 407,
-      "tokensOut": 117,
-      "llmTimeMs": 5941,
+      "submissionSucceeded": true,
+      "tokensIn": 379,
+      "tokensOut": 99,
+      "llmTimeMs": 1047,
       "llmCalls": 1
     },
     {
@@ -590,7 +588,7 @@
         {
           "fieldId": "student_name",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "Thank you very much for considering my application",
           "goldValue": "Jessica Kennedy",
           "clickAccurate": false,
           "valueAccurate": false
@@ -598,7 +596,7 @@
         {
           "fieldId": "student_id",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "88741153 Email: wendy24@yahoo",
           "goldValue": 88741153,
           "clickAccurate": false,
           "valueAccurate": false
@@ -606,7 +604,7 @@
         {
           "fieldId": "email",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "wendy24@yahoo",
           "goldValue": "wendy24@yahoo.com",
           "clickAccurate": false,
           "valueAccurate": false
@@ -614,7 +612,7 @@
         {
           "fieldId": "phone",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "Warm regards, Jessica Kennedy",
           "goldValue": "001-250-204-3652x75507",
           "clickAccurate": false,
           "valueAccurate": false
@@ -622,7 +620,7 @@
         {
           "fieldId": "semester",
           "fieldType": "Dropdown",
-          "predictedValue": "",
+          "predictedValue": "Select Semester",
           "goldValue": "Summer 2025",
           "clickAccurate": false,
           "valueAccurate": false
@@ -630,7 +628,7 @@
         {
           "fieldId": "program",
           "fieldType": "Dropdown",
-          "predictedValue": "",
+          "predictedValue": "Select Program",
           "goldValue": "Software Engineering",
           "clickAccurate": false,
           "valueAccurate": false
@@ -648,7 +646,7 @@
         {
           "fieldId": "comments",
           "fieldType": "Description",
-          "predictedValue": "",
+          "predictedValue": "This course reflects a vital step towards my aspiration to excel in web development and programming",
           "goldValue": "No special requirements.",
           "clickAccurate": false,
           "valueAccurate": false,
@@ -671,21 +669,19 @@
       },
       "episodicMetrics": {
         "formCompletionRate": 0,
-        "fieldsAttempted": 0,
+        "fieldsAttempted": 7,
         "fieldsCorrect": 0,
         "totalFields": 8,
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 340466,
-      "errors": [
-        "Form submission step failed or timed out"
-      ],
-      "submissionSucceeded": false,
-      "tokensIn": 576,
-      "tokensOut": 88,
-      "llmTimeMs": 4898,
-      "llmCalls": 1
+      "executionTimeMs": 62712,
+      "errors": [],
+      "submissionSucceeded": true,
+      "tokensIn": 0,
+      "tokensOut": 0,
+      "llmTimeMs": 0,
+      "llmCalls": 0
     },
     {
       "formInstance": {
@@ -726,7 +722,7 @@
         {
           "fieldId": "firstName",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "19 while balancing my academic studies with various extracurricular activities",
           "goldValue": "Nicholas",
           "clickAccurate": false,
           "valueAccurate": false
@@ -734,15 +730,15 @@
         {
           "fieldId": "middleName",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "Anne",
           "goldValue": "Anne",
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         },
         {
           "fieldId": "lastName",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "As a first-generation college student, I have worked hard to maintain a GPA of 3",
           "goldValue": "Collins",
           "clickAccurate": false,
           "valueAccurate": false
@@ -750,7 +746,7 @@
         {
           "fieldId": "studentId",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "22281229 Email: nicholascollins@email",
           "goldValue": 22281229,
           "clickAccurate": false,
           "valueAccurate": false
@@ -758,10 +754,10 @@
         {
           "fieldId": "major",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "Philosophy",
           "goldValue": "Philosophy",
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         },
         {
           "fieldId": "gpa",
@@ -774,7 +770,7 @@
         {
           "fieldId": "academicYear",
           "fieldType": "Dropdown",
-          "predictedValue": "",
+          "predictedValue": "Select year",
           "goldValue": "Sophomore",
           "clickAccurate": false,
           "valueAccurate": false
@@ -782,7 +778,7 @@
         {
           "fieldId": "financialAid",
           "fieldType": "Dropdown",
-          "predictedValue": "",
+          "predictedValue": "Select option",
           "goldValue": "Other Scholarship",
           "clickAccurate": false,
           "valueAccurate": false
@@ -790,7 +786,7 @@
         {
           "fieldId": "familyIncome",
           "fieldType": "Dropdown",
-          "predictedValue": "",
+          "predictedValue": "Select range",
           "goldValue": 80303,
           "clickAccurate": false,
           "valueAccurate": false
@@ -798,19 +794,19 @@
         {
           "fieldId": "achievements",
           "fieldType": "Description",
-          "predictedValue": "",
+          "predictedValue": "Dean's List Award for Outstanding Academic Performance, winner of the State Physics Olympiad, GPA of 3.19",
           "goldValue": [
             "Winner of the State Physics Olympiad",
             "the Dean’s List Award for Outstanding Academic Performance"
           ],
           "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
+          "valueAccurate": true,
+          "bleuScore": 40.05274484725572
         },
         {
           "fieldId": "extracurricular",
           "fieldType": "Description",
-          "predictedValue": "",
+          "predictedValue": "Co-founder of the Campus Startup Initiative, President of the Student Council, volunteer and Coordinator of the Youth Empowerment Program at the local community center",
           "goldValue": [
             "Co-founder of the Campus Startup Initiative",
             "President of the Student Council",
@@ -819,7 +815,7 @@
           ],
           "clickAccurate": false,
           "valueAccurate": false,
-          "bleuScore": 0
+          "bleuScore": 22.934769499188125
         },
         {
           "fieldId": "Statement of Purpose",
@@ -832,7 +828,7 @@
         {
           "fieldId": "reference1",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "Kevin Walker Reference Email: psolomon@yahoo",
           "goldValue": "Kevin Walker",
           "clickAccurate": false,
           "valueAccurate": false
@@ -840,7 +836,7 @@
         {
           "fieldId": "reference1Email",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "psolomon@yahoo",
           "goldValue": "psolomon@yahoo.com",
           "clickAccurate": false,
           "valueAccurate": false
@@ -854,30 +850,28 @@
           "Description": 0
         },
         "valueAccuracy": {
-          "String": 0,
+          "String": 25,
           "NumericInput": 0,
           "Dropdown": 0,
-          "Description": 0
+          "Description": 50
         },
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 0
+        "overallValueAccuracy": 21.428571428571427
       },
       "episodicMetrics": {
-        "formCompletionRate": 0,
-        "fieldsAttempted": 0,
-        "fieldsCorrect": 0,
+        "formCompletionRate": 21.428571428571427,
+        "fieldsAttempted": 12,
+        "fieldsCorrect": 3,
         "totalFields": 14,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 0
+        "averageValueAccuracy": 21.428571428571427
       },
-      "executionTimeMs": 555972,
-      "errors": [
-        "Form submission step failed or timed out"
-      ],
-      "submissionSucceeded": false,
-      "tokensIn": 795,
-      "tokensOut": 147,
-      "llmTimeMs": 9677,
+      "executionTimeMs": 94691,
+      "errors": [],
+      "submissionSucceeded": true,
+      "tokensIn": 756,
+      "tokensOut": 171,
+      "llmTimeMs": 2117,
       "llmCalls": 1
     },
     {
@@ -914,18 +908,18 @@
         {
           "fieldId": "company_name",
           "fieldType": "String",
-          "predictedValue": "Pinnacle Solutions",
+          "predictedValue": "haynes-morales",
           "goldValue": "Pinnacle Solutions",
           "clickAccurate": false,
-          "valueAccurate": true
+          "valueAccurate": false
         },
         {
           "fieldId": "company_website",
           "fieldType": "String",
-          "predictedValue": "https://www.haynes-morales.com/",
+          "predictedValue": "haynes-morales",
           "goldValue": "https://www.haynes-morales.com/",
           "clickAccurate": false,
-          "valueAccurate": true
+          "valueAccurate": false
         },
         {
           "fieldId": "founding_date",
@@ -938,7 +932,7 @@
         {
           "fieldId": "business_stage",
           "fieldType": "Dropdown",
-          "predictedValue": "",
+          "predictedValue": "Select Stage",
           "goldValue": "Growth",
           "clickAccurate": false,
           "valueAccurate": false
@@ -946,15 +940,15 @@
         {
           "fieldId": "founder_name",
           "fieldType": "String",
-          "predictedValue": "Kari Ibarra",
+          "predictedValue": "haynes-morales",
           "goldValue": "Kari Ibarra",
           "clickAccurate": false,
-          "valueAccurate": true
+          "valueAccurate": false
         },
         {
           "fieldId": "founder_email",
           "fieldType": "String",
-          "predictedValue": "at devin22@gmail",
+          "predictedValue": "The company is presently valued at USD 1,554,377",
           "goldValue": "devin22@gmail.com",
           "clickAccurate": false,
           "valueAccurate": false
@@ -962,15 +956,15 @@
         {
           "fieldId": "founder_phone",
           "fieldType": "String",
-          "predictedValue": "1738464335",
+          "predictedValue": "haynes-morales",
           "goldValue": "1738464335",
           "clickAccurate": false,
-          "valueAccurate": true
+          "valueAccurate": false
         },
         {
           "fieldId": "linkedin_profile",
           "fieldType": "String",
-          "predictedValue": "can be accessed at https://linkedin",
+          "predictedValue": "com/in/kaylamills",
           "goldValue": "https://linkedin.com/in/kaylamills",
           "clickAccurate": false,
           "valueAccurate": false
@@ -986,10 +980,10 @@
         {
           "fieldId": "equity_offered",
           "fieldType": "NumericInput",
-          "predictedValue": "8",
+          "predictedValue": "",
           "goldValue": 8,
           "clickAccurate": false,
-          "valueAccurate": true
+          "valueAccurate": false
         },
         {
           "fieldId": "current_valuation",
@@ -1011,20 +1005,20 @@
         {
           "fieldId": "business_model",
           "fieldType": "Description",
-          "predictedValue": "marketplace for freelancers offering digital services to small businesses and startups",
+          "predictedValue": "haynes-morales",
           "goldValue": "A marketplace for freelancers offering digital services to small businesses and startups.",
           "clickAccurate": false,
-          "valueAccurate": true,
-          "bleuScore": 91.31007162822624
+          "valueAccurate": false,
+          "bleuScore": 0
         },
         {
           "fieldId": "target_market",
           "fieldType": "Description",
-          "predictedValue": "parents looking for eco-friendly and sustainable products for their children",
+          "predictedValue": "haynes-morales",
           "goldValue": "Parents looking for eco-friendly and sustainable products for their children.",
           "clickAccurate": false,
-          "valueAccurate": true,
-          "bleuScore": 100
+          "valueAccurate": false,
+          "bleuScore": 0
         },
         {
           "fieldId": "current_revenue",
@@ -1045,7 +1039,7 @@
         {
           "fieldId": "additional_comments",
           "fieldType": "Description",
-          "predictedValue": "For further queries, contact can be made via email at devin22@gmail.com or phone at 1738464335. Founder Kari Ibarra’s LinkedIn profile can be accessed at https://linkedin.com/in/kaylamills.",
+          "predictedValue": "Pinnacle Solutions operates a business model centered around a marketplace for freelancers offering digital services to small businesses and startups. The company's target market includes parents looking for eco-friendly and sustainable products for their children, a rapidly growing segment.",
           "goldValue": "Excited to take the company to the next level.",
           "clickAccurate": false,
           "valueAccurate": false,
@@ -1061,29 +1055,29 @@
           "Description": 0
         },
         "valueAccuracy": {
-          "String": 66.66666666666666,
+          "String": 0,
           "Date": 0,
           "Dropdown": 0,
-          "NumericInput": 40,
-          "Description": 50
+          "NumericInput": 20,
+          "Description": 0
         },
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 47.05882352941176
+        "overallValueAccuracy": 5.88235294117647
       },
       "episodicMetrics": {
-        "formCompletionRate": 47.05882352941176,
+        "formCompletionRate": 5.88235294117647,
         "fieldsAttempted": 12,
-        "fieldsCorrect": 8,
+        "fieldsCorrect": 1,
         "totalFields": 17,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 47.05882352941176
+        "averageValueAccuracy": 5.88235294117647
       },
-      "executionTimeMs": 48311,
+      "executionTimeMs": 33655,
       "errors": [],
       "submissionSucceeded": false,
-      "tokensIn": 636,
-      "tokensOut": 275,
-      "llmTimeMs": 16430,
+      "tokensIn": 449,
+      "tokensOut": 96,
+      "llmTimeMs": 1338,
       "llmCalls": 1
     },
     {
@@ -1122,7 +1116,7 @@
         {
           "fieldId": "full_name",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "Amy Soto, residing at 325 Clark Tunnel in Christopherburgh, Alabama, ZIP Code 37382, is seeking a new rental opportunity",
           "goldValue": "Amy Soto",
           "clickAccurate": false,
           "valueAccurate": false
@@ -1130,18 +1124,18 @@
         {
           "fieldId": "email",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "arthurperez@webb.com",
           "goldValue": "arthurperez@webb.com",
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         },
         {
           "fieldId": "phone",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "001-601-137-0101x270",
           "goldValue": "001-601-137-0101x270",
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         },
         {
           "fieldId": "date_of_birth",
@@ -1154,23 +1148,23 @@
         {
           "fieldId": "current_street",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "325 Clark Tunnel",
           "goldValue": "325 Clark Tunnel",
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         },
         {
           "fieldId": "current_city",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "Christopherburgh",
           "goldValue": "Christopherburgh",
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         },
         {
           "fieldId": "current_state",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "She can be reached at arthurperez@webb",
           "goldValue": "Alabama",
           "clickAccurate": false,
           "valueAccurate": false
@@ -1178,7 +1172,7 @@
         {
           "fieldId": "current_zip",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "Amy Soto, residing at 325 Clark Tunnel in Christopherburgh, Alabama, ZIP Code 37382, is seeking a new rental opportunity",
           "goldValue": "37382",
           "clickAccurate": false,
           "valueAccurate": false
@@ -1186,7 +1180,7 @@
         {
           "fieldId": "employer_name",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "She can be reached at arthurperez@webb",
           "goldValue": "Edwards PLC",
           "clickAccurate": false,
           "valueAccurate": false
@@ -1194,7 +1188,7 @@
         {
           "fieldId": "job_title",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "Amy Soto, residing at 325 Clark Tunnel in Christopherburgh, Alabama, ZIP Code 37382, is seeking a new rental opportunity",
           "goldValue": "Environmental manager",
           "clickAccurate": false,
           "valueAccurate": false
@@ -1210,10 +1204,10 @@
         {
           "fieldId": "employment_length",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "1 year",
           "goldValue": "1 year",
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         },
         {
           "fieldId": "preferred_move_date",
@@ -1226,7 +1220,7 @@
         {
           "fieldId": "lease_term",
           "fieldType": "Dropdown",
-          "predictedValue": "",
+          "predictedValue": "Select Term",
           "goldValue": "6 months",
           "clickAccurate": false,
           "valueAccurate": false
@@ -1242,23 +1236,23 @@
         {
           "fieldId": "preferred_area",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "Near public transport",
           "goldValue": "Near public transport",
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         },
         {
           "fieldId": "pets",
           "fieldType": "Dropdown",
-          "predictedValue": "",
+          "predictedValue": "No",
           "goldValue": "No",
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         },
         {
           "fieldId": "pet_details",
           "fieldType": "Description",
-          "predictedValue": "",
+          "predictedValue": "Amy Soto, residing at 325 Clark Tunnel in Christopherburgh, Alabama, ZIP Code 37382, is seeking a new rental opportunity",
           "goldValue": "No pets",
           "clickAccurate": false,
           "valueAccurate": false,
@@ -1267,11 +1261,11 @@
         {
           "fieldId": "additional_info",
           "fieldType": "Description",
-          "predictedValue": "",
+          "predictedValue": "Prefer quiet and residential areas.",
           "goldValue": "Prefer quiet and residential areas.",
           "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
+          "valueAccurate": true,
+          "bleuScore": 100
         }
       ],
       "atomicMetrics": {
@@ -1283,31 +1277,29 @@
           "Description": 0
         },
         "valueAccuracy": {
-          "String": 0,
+          "String": 54.54545454545454,
           "Date": 0,
           "NumericInput": 0,
-          "Dropdown": 0,
-          "Description": 0
+          "Dropdown": 50,
+          "Description": 50
         },
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 0
+        "overallValueAccuracy": 42.10526315789473
       },
       "episodicMetrics": {
-        "formCompletionRate": 0,
-        "fieldsAttempted": 0,
-        "fieldsCorrect": 0,
+        "formCompletionRate": 42.10526315789473,
+        "fieldsAttempted": 15,
+        "fieldsCorrect": 8,
         "totalFields": 19,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 0
+        "averageValueAccuracy": 42.10526315789473
       },
-      "executionTimeMs": 706646,
-      "errors": [
-        "Form submission step failed or timed out"
-      ],
-      "submissionSucceeded": false,
-      "tokensIn": 606,
-      "tokensOut": 224,
-      "llmTimeMs": 10923,
+      "executionTimeMs": 34568,
+      "errors": [],
+      "submissionSucceeded": true,
+      "tokensIn": 521,
+      "tokensOut": 172,
+      "llmTimeMs": 2086,
       "llmCalls": 1
     },
     {
@@ -1344,7 +1336,7 @@
         {
           "fieldId": "full_name",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "Daniel Brown Email Address: ahale@hotmail",
           "goldValue": "Daniel Brown",
           "clickAccurate": false,
           "valueAccurate": false
@@ -1352,7 +1344,7 @@
         {
           "fieldId": "email",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "ahale@hotmail",
           "goldValue": "ahale@hotmail.com",
           "clickAccurate": false,
           "valueAccurate": false
@@ -1360,15 +1352,15 @@
         {
           "fieldId": "phone",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "244-169-5801x7072",
           "goldValue": "244-169-5801x7072",
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         },
         {
           "fieldId": "organization",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "Sincerely, Daniel Brown",
           "goldValue": "Wells-Wilson",
           "clickAccurate": false,
           "valueAccurate": false
@@ -1376,7 +1368,7 @@
         {
           "fieldId": "workshop_type",
           "fieldType": "Dropdown",
-          "predictedValue": "",
+          "predictedValue": "Select Category",
           "goldValue": "Finance & Investment",
           "clickAccurate": false,
           "valueAccurate": false
@@ -1392,7 +1384,7 @@
         {
           "fieldId": "session_time",
           "fieldType": "Dropdown",
-          "predictedValue": "",
+          "predictedValue": "Select Time Slot",
           "goldValue": "6PM",
           "clickAccurate": false,
           "valueAccurate": false
@@ -1400,7 +1392,7 @@
         {
           "fieldId": "delivery_mode",
           "fieldType": "Dropdown",
-          "predictedValue": "",
+          "predictedValue": "Select Mode",
           "goldValue": "Hybrid",
           "clickAccurate": false,
           "valueAccurate": false
@@ -1408,10 +1400,10 @@
         {
           "fieldId": "education_level",
           "fieldType": "Dropdown",
-          "predictedValue": "",
+          "predictedValue": "Master's Degree",
           "goldValue": "Master's Degree",
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         },
         {
           "fieldId": "experience_years",
@@ -1424,15 +1416,15 @@
         {
           "fieldId": "current_role",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "Armed forces training and education officer",
           "goldValue": "Armed forces training and education officer",
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         },
         {
           "fieldId": "dietary_requirements",
           "fieldType": "Dropdown",
-          "predictedValue": "",
+          "predictedValue": "None",
           "goldValue": "Halal",
           "clickAccurate": false,
           "valueAccurate": false
@@ -1440,7 +1432,7 @@
         {
           "fieldId": "accessibility_needs",
           "fieldType": "Description",
-          "predictedValue": "",
+          "predictedValue": "no specific accessibility needs",
           "goldValue": "None",
           "clickAccurate": false,
           "valueAccurate": false,
@@ -1449,7 +1441,7 @@
         {
           "fieldId": "payment_method",
           "fieldType": "Dropdown",
-          "predictedValue": "",
+          "predictedValue": "Select Payment Method",
           "goldValue": "Company Sponsored",
           "clickAccurate": false,
           "valueAccurate": false
@@ -1457,7 +1449,7 @@
         {
           "fieldId": "billing_address",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "Regarding dietary requirements, I require Halal meals; however, I have no specific accessibility needs",
           "goldValue": "USS Gonzalez\nFPO AE 24907",
           "clickAccurate": false,
           "valueAccurate": false
@@ -1465,20 +1457,20 @@
         {
           "fieldId": "expectations",
           "fieldType": "Description",
-          "predictedValue": "",
+          "predictedValue": "enhancing my leadership and communication skills to manage my team more effectively",
           "goldValue": "I would like to improve my leadership and communication skills to manage my team more effectively.",
           "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
+          "valueAccurate": true,
+          "bleuScore": 64.74591278836638
         },
         {
           "fieldId": "special_requests",
           "fieldType": "Description",
-          "predictedValue": "",
+          "predictedValue": "see examples of successful leadership strategies in small and medium-sized businesses",
           "goldValue": "I would like to see examples of successful leadership strategies in small and medium-sized businesses.",
           "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
+          "valueAccurate": true,
+          "bleuScore": 71.65313105737893
         }
       ],
       "atomicMetrics": {
@@ -1490,31 +1482,29 @@
           "Description": 0
         },
         "valueAccuracy": {
-          "String": 0,
-          "Dropdown": 0,
+          "String": 33.33333333333333,
+          "Dropdown": 16.666666666666664,
           "Date": 0,
           "NumericInput": 0,
-          "Description": 0
+          "Description": 66.66666666666666
         },
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 0
+        "overallValueAccuracy": 29.411764705882355
       },
       "episodicMetrics": {
-        "formCompletionRate": 0,
-        "fieldsAttempted": 0,
-        "fieldsCorrect": 0,
+        "formCompletionRate": 29.411764705882355,
+        "fieldsAttempted": 15,
+        "fieldsCorrect": 5,
         "totalFields": 17,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 0
+        "averageValueAccuracy": 29.411764705882355
       },
-      "executionTimeMs": 589603,
-      "errors": [
-        "Form submission step failed or timed out"
-      ],
-      "submissionSucceeded": false,
-      "tokensIn": 651,
-      "tokensOut": 205,
-      "llmTimeMs": 13302,
+      "executionTimeMs": 155230,
+      "errors": [],
+      "submissionSucceeded": true,
+      "tokensIn": 585,
+      "tokensOut": 163,
+      "llmTimeMs": 2295,
       "llmCalls": 1
     },
     {
@@ -1550,7 +1540,7 @@
         {
           "fieldId": "full_name",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "smith@gmail",
           "goldValue": "John Smith",
           "clickAccurate": false,
           "valueAccurate": false
@@ -1558,7 +1548,7 @@
         {
           "fieldId": "email",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "smith@gmail",
           "goldValue": "john.smith@gmail.com",
           "clickAccurate": false,
           "valueAccurate": false
@@ -1566,7 +1556,7 @@
         {
           "fieldId": "phone",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "Best regards, John Smith john",
           "goldValue": "555-0123",
           "clickAccurate": false,
           "valueAccurate": false
@@ -1582,15 +1572,15 @@
         {
           "fieldId": "membership_level",
           "fieldType": "Dropdown",
-          "predictedValue": "",
+          "predictedValue": "Student Member",
           "goldValue": "Student Member",
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         },
         {
           "fieldId": "membership_duration",
           "fieldType": "Dropdown",
-          "predictedValue": "",
+          "predictedValue": "Select Duration",
           "goldValue": "1 Year",
           "clickAccurate": false,
           "valueAccurate": false
@@ -1598,7 +1588,7 @@
         {
           "fieldId": "education_level",
           "fieldType": "Dropdown",
-          "predictedValue": "",
+          "predictedValue": "Select Education Level",
           "goldValue": "Bachelor's Degree",
           "clickAccurate": false,
           "valueAccurate": false
@@ -1606,7 +1596,7 @@
         {
           "fieldId": "field_of_study",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "Best regards, John Smith john",
           "goldValue": "Computer Science",
           "clickAccurate": false,
           "valueAccurate": false
@@ -1614,7 +1604,7 @@
         {
           "fieldId": "professional_certifications",
           "fieldType": "Description",
-          "predictedValue": "",
+          "predictedValue": "Dear Sir/Madam, I am writing to apply for membership with your esteemed professional association",
           "goldValue": "None",
           "clickAccurate": false,
           "valueAccurate": false,
@@ -1623,7 +1613,7 @@
         {
           "fieldId": "current_employer",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "Dear Sir/Madam, I am writing to apply for membership with your esteemed professional association",
           "goldValue": "University of Technology",
           "clickAccurate": false,
           "valueAccurate": false
@@ -1631,7 +1621,7 @@
         {
           "fieldId": "job_title",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "I look forward to the opportunity to grow and develop alongside fellow members of the association",
           "goldValue": "Student",
           "clickAccurate": false,
           "valueAccurate": false
@@ -1647,7 +1637,7 @@
         {
           "fieldId": "industry",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "smith@gmail",
           "goldValue": "Education",
           "clickAccurate": false,
           "valueAccurate": false
@@ -1655,7 +1645,7 @@
         {
           "fieldId": "reference_name",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "I look forward to the opportunity to grow and develop alongside fellow members of the association",
           "goldValue": "Dr. Emily Johnson",
           "clickAccurate": false,
           "valueAccurate": false
@@ -1663,7 +1653,7 @@
         {
           "fieldId": "reference_email",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "I look forward to the opportunity to grow and develop alongside fellow members of the association",
           "goldValue": "emily.johnson@gmail.com",
           "clickAccurate": false,
           "valueAccurate": false
@@ -1671,7 +1661,7 @@
         {
           "fieldId": "reference_relationship",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "mentorship from Dr. Emily Johnson, a respected professor at my university",
           "goldValue": "Professor",
           "clickAccurate": false,
           "valueAccurate": false
@@ -1688,29 +1678,27 @@
         "valueAccuracy": {
           "String": 0,
           "Date": 0,
-          "Dropdown": 0,
+          "Dropdown": 33.33333333333333,
           "Description": 0,
           "NumericInput": 0
         },
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 0
+        "overallValueAccuracy": 6.25
       },
       "episodicMetrics": {
-        "formCompletionRate": 0,
-        "fieldsAttempted": 0,
-        "fieldsCorrect": 0,
+        "formCompletionRate": 6.25,
+        "fieldsAttempted": 14,
+        "fieldsCorrect": 1,
         "totalFields": 16,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 0
+        "averageValueAccuracy": 6.25
       },
-      "executionTimeMs": 678350,
-      "errors": [
-        "Form submission step failed or timed out"
-      ],
+      "executionTimeMs": 63275,
+      "errors": [],
       "submissionSucceeded": false,
-      "tokensIn": 627,
-      "tokensOut": 134,
-      "llmTimeMs": 11935,
+      "tokensIn": 501,
+      "tokensOut": 53,
+      "llmTimeMs": 930,
       "llmCalls": 1
     },
     {
@@ -1763,7 +1751,7 @@
         {
           "fieldId": "medium",
           "fieldType": "Dropdown",
-          "predictedValue": "",
+          "predictedValue": "Select Medium",
           "goldValue": "Painting",
           "clickAccurate": false,
           "valueAccurate": false
@@ -1795,18 +1783,18 @@
         {
           "fieldId": "exhibition_period",
           "fieldType": "Dropdown",
-          "predictedValue": "",
+          "predictedValue": "Spring 2024",
           "goldValue": "Spring 2024",
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         },
         {
           "fieldId": "for_sale",
           "fieldType": "Checkbox",
-          "predictedValue": "",
+          "predictedValue": "true",
           "goldValue": true,
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         }
       ],
       "atomicMetrics": {
@@ -1817,28 +1805,26 @@
         },
         "valueAccuracy": {
           "String": 0,
-          "Dropdown": 0,
-          "Checkbox": 0
+          "Dropdown": 50,
+          "Checkbox": 100
         },
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 0
+        "overallValueAccuracy": 22.22222222222222
       },
       "episodicMetrics": {
-        "formCompletionRate": 0,
-        "fieldsAttempted": 0,
-        "fieldsCorrect": 0,
+        "formCompletionRate": 22.22222222222222,
+        "fieldsAttempted": 3,
+        "fieldsCorrect": 2,
         "totalFields": 9,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 0
+        "averageValueAccuracy": 22.22222222222222
       },
-      "executionTimeMs": 377572,
-      "errors": [
-        "Form submission step failed or timed out"
-      ],
-      "submissionSucceeded": false,
-      "tokensIn": 468,
-      "tokensOut": 187,
-      "llmTimeMs": 11623,
+      "executionTimeMs": 34030,
+      "errors": [],
+      "submissionSucceeded": true,
+      "tokensIn": 421,
+      "tokensOut": 153,
+      "llmTimeMs": 1663,
       "llmCalls": 1
     },
     {
@@ -1893,7 +1879,7 @@
         {
           "fieldId": "genre",
           "fieldType": "Dropdown",
-          "predictedValue": "",
+          "predictedValue": "Select Genre",
           "goldValue": "Fiction",
           "clickAccurate": false,
           "valueAccurate": false
@@ -1925,15 +1911,15 @@
         {
           "fieldId": "issue",
           "fieldType": "Dropdown",
-          "predictedValue": "",
+          "predictedValue": "Spring 2024",
           "goldValue": "Spring 2024",
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         },
         {
           "fieldId": "previously_published",
           "fieldType": "Checkbox",
-          "predictedValue": "",
+          "predictedValue": "false",
           "goldValue": "No",
           "clickAccurate": false,
           "valueAccurate": false
@@ -1941,7 +1927,7 @@
         {
           "fieldId": "simultaneous_submission",
           "fieldType": "Checkbox",
-          "predictedValue": "",
+          "predictedValue": "false",
           "goldValue": "Yes",
           "clickAccurate": false,
           "valueAccurate": false
@@ -1963,28 +1949,26 @@
         },
         "valueAccuracy": {
           "String": 0,
-          "Dropdown": 0,
+          "Dropdown": 50,
           "Checkbox": 0
         },
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 0
+        "overallValueAccuracy": 9.090909090909092
       },
       "episodicMetrics": {
-        "formCompletionRate": 0,
-        "fieldsAttempted": 0,
-        "fieldsCorrect": 0,
+        "formCompletionRate": 9.090909090909092,
+        "fieldsAttempted": 4,
+        "fieldsCorrect": 1,
         "totalFields": 11,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 0
+        "averageValueAccuracy": 9.090909090909092
       },
-      "executionTimeMs": 401897,
-      "errors": [
-        "Form submission step failed or timed out"
-      ],
-      "submissionSucceeded": false,
-      "tokensIn": 399,
-      "tokensOut": 115,
-      "llmTimeMs": 5717,
+      "executionTimeMs": 63311,
+      "errors": [],
+      "submissionSucceeded": true,
+      "tokensIn": 318,
+      "tokensOut": 42,
+      "llmTimeMs": 699,
       "llmCalls": 1
     },
     {
@@ -2042,10 +2026,10 @@
         {
           "fieldId": "organization",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "Tech Innovations Inc.",
           "goldValue": "Tech Innovations Inc.",
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         },
         {
           "fieldId": "Presentation Title",
@@ -2098,7 +2082,7 @@
         {
           "fieldId": "speaking_experience",
           "fieldType": "Description",
-          "predictedValue": "",
+          "predictedValue": "com or phone at 123-456-7890",
           "goldValue": "1. Keynote Speaker at ArtTech Symposium 2022. 2. Panelist at AI and Creativity Conference 2021.",
           "clickAccurate": false,
           "valueAccurate": false,
@@ -2115,7 +2099,7 @@
         {
           "fieldId": "tech_requirements",
           "fieldType": "Description",
-          "predictedValue": "",
+          "predictedValue": "adams56@gmail",
           "goldValue": "Projector, internet access, AI demo tools.",
           "clickAccurate": false,
           "valueAccurate": false,
@@ -2136,28 +2120,26 @@
           "Description": 0
         },
         "valueAccuracy": {
-          "String": 0,
+          "String": 8.333333333333332,
           "Description": 0
         },
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 0
+        "overallValueAccuracy": 7.142857142857142
       },
       "episodicMetrics": {
-        "formCompletionRate": 0,
-        "fieldsAttempted": 0,
-        "fieldsCorrect": 0,
+        "formCompletionRate": 7.142857142857142,
+        "fieldsAttempted": 3,
+        "fieldsCorrect": 1,
         "totalFields": 14,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 0
+        "averageValueAccuracy": 7.142857142857142
       },
-      "executionTimeMs": 503066,
-      "errors": [
-        "Form submission step failed or timed out"
-      ],
-      "submissionSucceeded": false,
-      "tokensIn": 587,
-      "tokensOut": 368,
-      "llmTimeMs": 17131,
+      "executionTimeMs": 4003,
+      "errors": [],
+      "submissionSucceeded": true,
+      "tokensIn": 493,
+      "tokensOut": 219,
+      "llmTimeMs": 1941,
       "llmCalls": 1
     },
     {
@@ -2187,7 +2169,7 @@
         {
           "fieldId": "title",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "4, iPhone 12 Steps to Reproduce: 1",
           "goldValue": "App crashes when opening the settings menu",
           "clickAccurate": false,
           "valueAccurate": false
@@ -2195,7 +2177,7 @@
         {
           "fieldId": "severity",
           "fieldType": "Dropdown",
-          "predictedValue": "",
+          "predictedValue": "Select severity level",
           "goldValue": "High",
           "clickAccurate": false,
           "valueAccurate": false
@@ -2203,7 +2185,7 @@
         {
           "fieldId": "environment",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "Production Browser/Platform: iOS 15",
           "goldValue": "Production",
           "clickAccurate": false,
           "valueAccurate": false
@@ -2211,7 +2193,7 @@
         {
           "fieldId": "browser",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "iOS 15",
           "goldValue": "iOS 15.4, iPhone 12",
           "clickAccurate": false,
           "valueAccurate": false
@@ -2219,7 +2201,7 @@
         {
           "fieldId": "steps",
           "fieldType": "Description",
-          "predictedValue": "",
+          "predictedValue": "1",
           "goldValue": "1. Open the app. 2. Tap on the settings icon. 3. App crashes immediately.",
           "clickAccurate": false,
           "valueAccurate": false,
@@ -2228,25 +2210,25 @@
         {
           "fieldId": "expected",
           "fieldType": "Description",
-          "predictedValue": "",
+          "predictedValue": "Settings menu should open without crashing",
           "goldValue": "Settings menu should open without crashing.",
           "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
+          "valueAccurate": true,
+          "bleuScore": 100
         },
         {
           "fieldId": "actual",
           "fieldType": "Description",
-          "predictedValue": "",
+          "predictedValue": "App crashes immediately when settings menu is opened.",
           "goldValue": "App crashes immediately when settings menu is opened.",
           "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
+          "valueAccurate": true,
+          "bleuScore": 100
         },
         {
           "fieldId": "reporter",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "4, iPhone 12 Steps to Reproduce: 1",
           "goldValue": "John Williams",
           "clickAccurate": false,
           "valueAccurate": false
@@ -2254,7 +2236,7 @@
         {
           "fieldId": "email",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "Open the app",
           "goldValue": "john.williams87@gmail.com",
           "clickAccurate": false,
           "valueAccurate": false
@@ -2269,27 +2251,25 @@
         "valueAccuracy": {
           "String": 0,
           "Dropdown": 0,
-          "Description": 0
+          "Description": 66.66666666666666
         },
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 0
+        "overallValueAccuracy": 22.22222222222222
       },
       "episodicMetrics": {
-        "formCompletionRate": 0,
-        "fieldsAttempted": 0,
-        "fieldsCorrect": 0,
+        "formCompletionRate": 22.22222222222222,
+        "fieldsAttempted": 9,
+        "fieldsCorrect": 2,
         "totalFields": 9,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 0
+        "averageValueAccuracy": 22.22222222222222
       },
-      "executionTimeMs": 310373,
-      "errors": [
-        "Form submission step failed or timed out"
-      ],
+      "executionTimeMs": 32813,
+      "errors": [],
       "submissionSucceeded": false,
-      "tokensIn": 379,
-      "tokensOut": 73,
-      "llmTimeMs": 4476,
+      "tokensIn": 302,
+      "tokensOut": 18,
+      "llmTimeMs": 319,
       "llmCalls": 1
     },
     {
@@ -2321,7 +2301,7 @@
         {
           "fieldId": "requestType",
           "fieldType": "Dropdown",
-          "predictedValue": "",
+          "predictedValue": "Select request type",
           "goldValue": "Network Issue",
           "clickAccurate": false,
           "valueAccurate": false
@@ -2329,7 +2309,7 @@
         {
           "fieldId": "priority",
           "fieldType": "Dropdown",
-          "predictedValue": "",
+          "predictedValue": "Select priority level",
           "goldValue": "Urgent-System Down",
           "clickAccurate": false,
           "valueAccurate": false
@@ -2337,7 +2317,7 @@
         {
           "fieldId": "subject",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "johnson@company",
           "goldValue": "Entire office network down",
           "clickAccurate": false,
           "valueAccurate": false
@@ -2353,24 +2333,24 @@
         {
           "fieldId": "description",
           "fieldType": "Description",
-          "predictedValue": "",
+          "predictedValue": "Entire office network down. The problem began around 10:30 AM today. Employees are unable to access the internet, file servers, or any internal systems. The number of affected users is approximately 50.",
           "goldValue": "Employees are unable to access the internet, file servers, or any internal systems. The issue started around 10:30 AM today.",
           "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
+          "valueAccurate": true,
+          "bleuScore": 50.32370023805727
         },
         {
           "fieldId": "location",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "All departments",
           "goldValue": "All departments",
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         },
         {
           "fieldId": "affectedUsers",
           "fieldType": "NumericInput",
-          "predictedValue": "",
+          "predictedValue": "1",
           "goldValue": 50,
           "clickAccurate": false,
           "valueAccurate": false
@@ -2378,15 +2358,15 @@
         {
           "fieldId": "availableTime",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "Mon-Fri 9AM-5PM",
           "goldValue": "Mon-Fri 9AM-5PM",
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         },
         {
           "fieldId": "requesterName",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "Best regards, Michael Johnson",
           "goldValue": "Michael Johnson",
           "clickAccurate": false,
           "valueAccurate": false
@@ -2394,7 +2374,7 @@
         {
           "fieldId": "requesterEmail",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "Best regards, Michael Johnson",
           "goldValue": "michael.johnson@company.com",
           "clickAccurate": false,
           "valueAccurate": false
@@ -2402,10 +2382,10 @@
         {
           "fieldId": "phoneNumber",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "+1 555-9876",
           "goldValue": "+1 555-9876",
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         }
       ],
       "atomicMetrics": {
@@ -2417,29 +2397,27 @@
         },
         "valueAccuracy": {
           "Dropdown": 0,
-          "String": 0,
-          "Description": 0,
+          "String": 42.857142857142854,
+          "Description": 100,
           "NumericInput": 0
         },
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 0
+        "overallValueAccuracy": 36.36363636363637
       },
       "episodicMetrics": {
-        "formCompletionRate": 0,
-        "fieldsAttempted": 0,
-        "fieldsCorrect": 0,
+        "formCompletionRate": 36.36363636363637,
+        "fieldsAttempted": 10,
+        "fieldsCorrect": 4,
         "totalFields": 11,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 0
+        "averageValueAccuracy": 36.36363636363637
       },
-      "executionTimeMs": 404870,
-      "errors": [
-        "Form submission step failed or timed out"
-      ],
+      "executionTimeMs": 63119,
+      "errors": [],
       "submissionSucceeded": false,
-      "tokensIn": 466,
-      "tokensOut": 172,
-      "llmTimeMs": 38480,
+      "tokensIn": 368,
+      "tokensOut": 100,
+      "llmTimeMs": 1028,
       "llmCalls": 1
     },
     {
@@ -2466,39 +2444,39 @@
         {
           "fieldId": "firstName",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "John",
           "goldValue": "John",
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         },
         {
           "fieldId": "middleName",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "Stephen",
           "goldValue": "Stephen",
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         },
         {
           "fieldId": "lastName",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "Tran",
           "goldValue": "Tran",
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         },
         {
           "fieldId": "loanAmount",
           "fieldType": "NumericInput",
-          "predictedValue": "",
+          "predictedValue": "28521",
           "goldValue": 28521,
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         },
         {
           "fieldId": "loanTerm",
           "fieldType": "Dropdown",
-          "predictedValue": "",
+          "predictedValue": "Select term",
           "goldValue": "60 months",
           "clickAccurate": false,
           "valueAccurate": false
@@ -2506,7 +2484,7 @@
         {
           "fieldId": "employmentStatus",
           "fieldType": "Dropdown",
-          "predictedValue": "",
+          "predictedValue": "Select status",
           "goldValue": "Part time",
           "clickAccurate": false,
           "valueAccurate": false
@@ -2514,10 +2492,10 @@
         {
           "fieldId": "monthlyIncome",
           "fieldType": "NumericInput",
-          "predictedValue": "",
+          "predictedValue": "4569",
           "goldValue": 4569,
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         }
       ],
       "atomicMetrics": {
@@ -2527,29 +2505,27 @@
           "Dropdown": 0
         },
         "valueAccuracy": {
-          "String": 0,
-          "NumericInput": 0,
+          "String": 100,
+          "NumericInput": 100,
           "Dropdown": 0
         },
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 0
+        "overallValueAccuracy": 71.42857142857143
       },
       "episodicMetrics": {
-        "formCompletionRate": 0,
-        "fieldsAttempted": 0,
-        "fieldsCorrect": 0,
+        "formCompletionRate": 71.42857142857143,
+        "fieldsAttempted": 7,
+        "fieldsCorrect": 5,
         "totalFields": 7,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 0
+        "averageValueAccuracy": 71.42857142857143
       },
-      "executionTimeMs": 280391,
-      "errors": [
-        "Form submission step failed or timed out"
-      ],
-      "submissionSucceeded": false,
+      "executionTimeMs": 63553,
+      "errors": [],
+      "submissionSucceeded": true,
       "tokensIn": 321,
       "tokensOut": 64,
-      "llmTimeMs": 4150,
+      "llmTimeMs": 878,
       "llmCalls": 1
     },
     {
@@ -2574,10 +2550,10 @@
         {
           "fieldId": "fullName",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "George Dawson",
           "goldValue": "George Dawson",
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         },
         {
           "fieldId": "dateOfBirth",
@@ -2598,18 +2574,18 @@
         {
           "fieldId": "idType",
           "fieldType": "Dropdown",
-          "predictedValue": "",
+          "predictedValue": "State ID",
           "goldValue": "State ID",
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         },
         {
           "fieldId": "idNumber",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "2868883095",
           "goldValue": 2868883095,
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         }
       ],
       "atomicMetrics": {
@@ -2619,29 +2595,27 @@
           "Dropdown": 0
         },
         "valueAccuracy": {
-          "String": 0,
+          "String": 66.66666666666666,
           "Date": 0,
-          "Dropdown": 0
+          "Dropdown": 100
         },
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 0
+        "overallValueAccuracy": 60
       },
       "episodicMetrics": {
-        "formCompletionRate": 0,
-        "fieldsAttempted": 0,
-        "fieldsCorrect": 0,
+        "formCompletionRate": 60,
+        "fieldsAttempted": 3,
+        "fieldsCorrect": 3,
         "totalFields": 5,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 0
+        "averageValueAccuracy": 60
       },
-      "executionTimeMs": 169434,
-      "errors": [
-        "Form submission step failed or timed out"
-      ],
-      "submissionSucceeded": false,
+      "executionTimeMs": 2858,
+      "errors": [],
+      "submissionSucceeded": true,
       "tokensIn": 294,
       "tokensOut": 64,
-      "llmTimeMs": 13484,
+      "llmTimeMs": 799,
       "llmCalls": 1
     },
     {
@@ -2667,23 +2641,23 @@
         {
           "fieldId": "name",
           "fieldType": "String",
-          "predictedValue": "Benjamin Scott",
+          "predictedValue": "Warm regards, Benjamin Scott",
           "goldValue": "Benjamin Scott",
           "clickAccurate": false,
-          "valueAccurate": true
+          "valueAccurate": false
         },
         {
           "fieldId": "email",
           "fieldType": "String",
-          "predictedValue": "ben.scott24@gmail.com",
+          "predictedValue": "scott24@gmail",
           "goldValue": "ben.scott24@gmail.com",
           "clickAccurate": false,
-          "valueAccurate": true
+          "valueAccurate": false
         },
         {
           "fieldId": "consultationType",
           "fieldType": "Dropdown",
-          "predictedValue": "",
+          "predictedValue": "Select type",
           "goldValue": "Estate Planning",
           "clickAccurate": false,
           "valueAccurate": false
@@ -2699,7 +2673,7 @@
         {
           "fieldId": "preferredTime",
           "fieldType": "Dropdown",
-          "predictedValue": "",
+          "predictedValue": "Select time",
           "goldValue": "Evening (4:00 PM -6:00 PM)",
           "clickAccurate": false,
           "valueAccurate": false
@@ -2707,11 +2681,11 @@
         {
           "fieldId": "comments",
           "fieldType": "Description",
-          "predictedValue": "discussing the creation of a living will and managing property distribution",
+          "predictedValue": "I am particularly interested in discussing the creation of a living will and managing property distribution. I am hoping to schedule this meeting on November 30, 2024, during the evening hours, ideally between 4:00 PM and 6:00 PM. Should you need to reach me for any further details, please feel free to contact me via email at ben.scott24@gmail.com.",
           "goldValue": "Looking to discuss the creation of a living will and managing property distribution.",
           "clickAccurate": false,
-          "valueAccurate": true,
-          "bleuScore": 74.46697386219441
+          "valueAccurate": false,
+          "bleuScore": 14.033062979943875
         }
       ],
       "atomicMetrics": {
@@ -2722,28 +2696,28 @@
           "Description": 0
         },
         "valueAccuracy": {
-          "String": 100,
+          "String": 0,
           "Dropdown": 0,
           "Date": 0,
-          "Description": 100
+          "Description": 0
         },
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 50
+        "overallValueAccuracy": 0
       },
       "episodicMetrics": {
-        "formCompletionRate": 50,
-        "fieldsAttempted": 3,
-        "fieldsCorrect": 3,
+        "formCompletionRate": 0,
+        "fieldsAttempted": 5,
+        "fieldsCorrect": 0,
         "totalFields": 6,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 50
+        "averageValueAccuracy": 0
       },
-      "executionTimeMs": 67468,
+      "executionTimeMs": 63591,
       "errors": [],
       "submissionSucceeded": false,
-      "tokensIn": 344,
-      "tokensOut": 96,
-      "llmTimeMs": 5566,
+      "tokensIn": 265,
+      "tokensOut": 94,
+      "llmTimeMs": 1261,
       "llmCalls": 1
     },
     {
@@ -2813,26 +2787,26 @@
         {
           "fieldId": "procedureConsent",
           "fieldType": "Checkbox",
-          "predictedValue": "false",
+          "predictedValue": "true",
           "goldValue": true,
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         },
         {
           "fieldId": "questionConsent",
           "fieldType": "Checkbox",
-          "predictedValue": "false",
+          "predictedValue": "true",
           "goldValue": true,
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         },
         {
           "fieldId": "alternativesConsent",
           "fieldType": "Checkbox",
-          "predictedValue": "false",
+          "predictedValue": "true",
           "goldValue": true,
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         },
         {
           "fieldId": "emergencyName",
@@ -2860,25 +2834,25 @@
         "valueAccuracy": {
           "String": 100,
           "Date": 0,
-          "Checkbox": 0
+          "Checkbox": 100
         },
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 60
+        "overallValueAccuracy": 90
       },
       "episodicMetrics": {
-        "formCompletionRate": 60,
+        "formCompletionRate": 90,
         "fieldsAttempted": 9,
-        "fieldsCorrect": 6,
+        "fieldsCorrect": 9,
         "totalFields": 10,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 60
+        "averageValueAccuracy": 90
       },
-      "executionTimeMs": 11867,
+      "executionTimeMs": 4245,
       "errors": [],
       "submissionSucceeded": false,
       "tokensIn": 453,
-      "tokensOut": 192,
-      "llmTimeMs": 10027,
+      "tokensOut": 144,
+      "llmTimeMs": 1686,
       "llmCalls": 1
     },
     {
@@ -2906,10 +2880,10 @@
         {
           "fieldId": "fullName",
           "fieldType": "String",
-          "predictedValue": "Lily Chen",
+          "predictedValue": "**Medical Research Study Enrollment Application** --- **Applicant Information:** I am pleased to submit my enrollment application for consideration in the upcoming medical research study",
           "goldValue": "Lily Chen",
           "clickAccurate": false,
-          "valueAccurate": true
+          "valueAccurate": false
         },
         {
           "fieldId": "age",
@@ -2922,7 +2896,7 @@
         {
           "fieldId": "existingConditions",
           "fieldType": "Description",
-          "predictedValue": "Hypertension",
+          "predictedValue": "Yours sincerely, **Lily Chen**",
           "goldValue": "Hypertension",
           "clickAccurate": false,
           "valueAccurate": false,
@@ -2940,7 +2914,7 @@
         {
           "fieldId": "studyType",
           "fieldType": "Dropdown",
-          "predictedValue": "",
+          "predictedValue": "Select study type",
           "goldValue": "Clinical Trial",
           "clickAccurate": false,
           "valueAccurate": false
@@ -2948,7 +2922,7 @@
         {
           "fieldId": "availability",
           "fieldType": "Dropdown",
-          "predictedValue": "",
+          "predictedValue": "Select availability",
           "goldValue": "Weekdays",
           "clickAccurate": false,
           "valueAccurate": false
@@ -2956,18 +2930,18 @@
         {
           "fieldId": "email",
           "fieldType": "String",
-          "predictedValue": "lily.chen123@gmail.com",
+          "predictedValue": "chen123@gmail",
           "goldValue": "lily.chen123@gmail.com",
           "clickAccurate": false,
-          "valueAccurate": true
+          "valueAccurate": false
         },
         {
           "fieldId": "phone",
           "fieldType": "String",
-          "predictedValue": "(+86) 138 1234 5678",
+          "predictedValue": "chen123@gmail",
           "goldValue": "(+86) 138 1234 5678",
           "clickAccurate": false,
-          "valueAccurate": true
+          "valueAccurate": false
         }
       ],
       "atomicMetrics": {
@@ -2978,28 +2952,28 @@
           "Dropdown": 0
         },
         "valueAccuracy": {
-          "String": 100,
+          "String": 0,
           "NumericInput": 100,
           "Description": 0,
           "Dropdown": 0
         },
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 50
+        "overallValueAccuracy": 12.5
       },
       "episodicMetrics": {
-        "formCompletionRate": 50,
-        "fieldsAttempted": 6,
-        "fieldsCorrect": 4,
+        "formCompletionRate": 12.5,
+        "fieldsAttempted": 8,
+        "fieldsCorrect": 1,
         "totalFields": 8,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 50
+        "averageValueAccuracy": 12.5
       },
-      "executionTimeMs": 66490,
+      "executionTimeMs": 62532,
       "errors": [],
       "submissionSucceeded": false,
-      "tokensIn": 471,
-      "tokensOut": 86,
-      "llmTimeMs": 4887,
+      "tokensIn": 409,
+      "tokensOut": 23,
+      "llmTimeMs": 399,
       "llmCalls": 1
     },
     {
@@ -3027,10 +3001,10 @@
         {
           "fieldId": "policyNumber",
           "fieldType": "String",
-          "predictedValue": "A1234567890",
+          "predictedValue": "On January 15, 2024, Emily visited Dr",
           "goldValue": "A1234567890",
           "clickAccurate": false,
-          "valueAccurate": true
+          "valueAccurate": false
         },
         {
           "fieldId": "policyHolder",
@@ -3054,15 +3028,15 @@
           "predictedValue": "250.00",
           "goldValue": 250,
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         },
         {
           "fieldId": "serviceType",
           "fieldType": "Dropdown",
-          "predictedValue": "consultation",
+          "predictedValue": "Doctor Consultation",
           "goldValue": "Doctor Consultation",
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         },
         {
           "fieldId": "diagnosis",
@@ -3076,10 +3050,10 @@
         {
           "fieldId": "providerName",
           "fieldType": "String",
-          "predictedValue": "Dr. Alice Green",
+          "predictedValue": "On January 15, 2024, Emily visited Dr",
           "goldValue": "Dr. Alice Green",
           "clickAccurate": false,
-          "valueAccurate": true
+          "valueAccurate": false
         },
         {
           "fieldId": "providerNumber",
@@ -3099,10 +3073,10 @@
           "Description": 0
         },
         "valueAccuracy": {
-          "String": 100,
+          "String": 50,
           "Date": 0,
-          "NumericInput": 0,
-          "Dropdown": 0,
+          "NumericInput": 100,
+          "Dropdown": 100,
           "Description": 100
         },
         "overallClickAccuracy": 0,
@@ -3116,12 +3090,12 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 62.5
       },
-      "executionTimeMs": 11807,
+      "executionTimeMs": 3324,
       "errors": [],
       "submissionSucceeded": false,
-      "tokensIn": 342,
-      "tokensOut": 83,
-      "llmTimeMs": 9922,
+      "tokensIn": 327,
+      "tokensOut": 72,
+      "llmTimeMs": 916,
       "llmCalls": 1
     },
     {
@@ -3158,10 +3132,10 @@
         {
           "fieldId": "partyType",
           "fieldType": "Dropdown",
-          "predictedValue": "individual",
+          "predictedValue": "Select party type",
           "goldValue": "Individual",
           "clickAccurate": false,
-          "valueAccurate": true
+          "valueAccurate": false
         },
         {
           "fieldId": "purpose",
@@ -3207,7 +3181,7 @@
         {
           "fieldId": "termsAgreed",
           "fieldType": "Checkbox",
-          "predictedValue": "false",
+          "predictedValue": "true",
           "goldValue": "Yes",
           "clickAccurate": false,
           "valueAccurate": false
@@ -3215,7 +3189,7 @@
         {
           "fieldId": "authorityConfirm",
           "fieldType": "Checkbox",
-          "predictedValue": "false",
+          "predictedValue": "true",
           "goldValue": "Yes",
           "clickAccurate": false,
           "valueAccurate": false
@@ -3232,29 +3206,29 @@
         },
         "valueAccuracy": {
           "String": 66.66666666666666,
-          "Dropdown": 100,
+          "Dropdown": 0,
           "Description": 100,
           "Date": 0,
           "NumericInput": 100,
           "Checkbox": 0
         },
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 55.55555555555556
+        "overallValueAccuracy": 44.44444444444444
       },
       "episodicMetrics": {
-        "formCompletionRate": 55.55555555555556,
+        "formCompletionRate": 44.44444444444444,
         "fieldsAttempted": 7,
-        "fieldsCorrect": 5,
+        "fieldsCorrect": 4,
         "totalFields": 9,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 55.55555555555556
+        "averageValueAccuracy": 44.44444444444444
       },
-      "executionTimeMs": 21712,
+      "executionTimeMs": 33387,
       "errors": [],
       "submissionSucceeded": false,
       "tokensIn": 422,
-      "tokensOut": 161,
-      "llmTimeMs": 20200,
+      "tokensOut": 133,
+      "llmTimeMs": 1340,
       "llmCalls": 1
     },
     {
@@ -3349,26 +3323,26 @@
         {
           "fieldId": "zipCode",
           "fieldType": "String",
-          "predictedValue": "62704",
+          "predictedValue": "I acknowledge that any false or misleading statements may lead to the rejection of my application",
           "goldValue": "62704",
           "clickAccurate": false,
-          "valueAccurate": true
+          "valueAccurate": false
         },
         {
           "fieldId": "authorization",
           "fieldType": "Checkbox",
-          "predictedValue": "false",
+          "predictedValue": "true",
           "goldValue": true,
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         },
         {
           "fieldId": "truthfulness",
           "fieldType": "Checkbox",
-          "predictedValue": "false",
+          "predictedValue": "true",
           "goldValue": true,
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         }
       ],
       "atomicMetrics": {
@@ -3378,27 +3352,27 @@
           "Checkbox": 0
         },
         "valueAccuracy": {
-          "String": 87.5,
+          "String": 75,
           "Date": 0,
-          "Checkbox": 0
+          "Checkbox": 100
         },
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 63.63636363636363
+        "overallValueAccuracy": 72.72727272727273
       },
       "episodicMetrics": {
-        "formCompletionRate": 63.63636363636363,
+        "formCompletionRate": 72.72727272727273,
         "fieldsAttempted": 10,
-        "fieldsCorrect": 7,
+        "fieldsCorrect": 8,
         "totalFields": 11,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 63.63636363636363
+        "averageValueAccuracy": 72.72727272727273
       },
-      "executionTimeMs": 21230,
+      "executionTimeMs": 3356,
       "errors": [],
       "submissionSucceeded": false,
-      "tokensIn": 405,
-      "tokensOut": 142,
-      "llmTimeMs": 19711,
+      "tokensIn": 390,
+      "tokensOut": 95,
+      "llmTimeMs": 1210,
       "llmCalls": 1
     },
     {
@@ -3429,26 +3403,26 @@
         {
           "fieldId": "fullName",
           "fieldType": "String",
-          "predictedValue": "Abigail Lewis",
+          "predictedValue": "With a Tax ID/EIN of 12-1111111, Abigail is established as a Sole Proprietorship",
           "goldValue": "Abigail Lewis",
           "clickAccurate": false,
-          "valueAccurate": true
+          "valueAccurate": false
         },
         {
           "fieldId": "businessName",
           "fieldType": "String",
-          "predictedValue": "Abigail's Digital Marketing Solutions",
+          "predictedValue": "digital@outlook",
           "goldValue": "Abigail's Digital Marketing Solutions",
           "clickAccurate": false,
-          "valueAccurate": true
+          "valueAccurate": false
         },
         {
           "fieldId": "email",
           "fieldType": "String",
-          "predictedValue": "abigail.lewis.digital@outlook.com",
+          "predictedValue": "digital@outlook",
           "goldValue": "abigail.lewis.digital@outlook.com",
           "clickAccurate": false,
-          "valueAccurate": true
+          "valueAccurate": false
         },
         {
           "fieldId": "phone",
@@ -3461,7 +3435,7 @@
         {
           "fieldId": "taxId",
           "fieldType": "String",
-          "predictedValue": "of 12-1111111",
+          "predictedValue": "With a Tax ID/EIN of 12-1111111, Abigail is established as a Sole Proprietorship",
           "goldValue": "12-1111111",
           "clickAccurate": false,
           "valueAccurate": false
@@ -3469,7 +3443,7 @@
         {
           "fieldId": "businessType",
           "fieldType": "Dropdown",
-          "predictedValue": "soleProprietor",
+          "predictedValue": "Select business type",
           "goldValue": "Sole Proprietorship",
           "clickAccurate": false,
           "valueAccurate": false
@@ -3477,11 +3451,11 @@
         {
           "fieldId": "serviceDescription",
           "fieldType": "Description",
-          "predictedValue": "developing and implementing comprehensive digital marketing strategies, including search engine optimization (SEO) to improve website rankings, pay-per-click (PPC) advertising campaigns on platforms like Google Ads and Bing Ads, social media management across major platforms such as Facebook, Instagram, and Twitter to increase brand awareness and engagement, and content creation for blogs, articles, and social media posts to attract and retain customers",
+          "predictedValue": "With a Tax ID/EIN of 12-1111111, Abigail is established as a Sole Proprietorship",
           "goldValue": "Developing and implementing comprehensive digital marketing strategies, including search engine optimization (SEO) to improve website rankings, pay-per-click (PPC) advertising campaigns on platforms like Google Ads and Bing Ads, social media management across major platforms such as Facebook, Instagram, and Twitter to increase brand awareness and engagement, and content creation for blogs, articles, and social media posts to attract and retain customers.",
           "clickAccurate": false,
-          "valueAccurate": true,
-          "bleuScore": 100
+          "valueAccurate": false,
+          "bleuScore": 0
         },
         {
           "fieldId": "startDate",
@@ -3502,7 +3476,7 @@
         {
           "fieldId": "termsAgreed",
           "fieldType": "Checkbox",
-          "predictedValue": "false",
+          "predictedValue": "true",
           "goldValue": "Yes",
           "clickAccurate": false,
           "valueAccurate": false
@@ -3510,7 +3484,7 @@
         {
           "fieldId": "confidentialityAgreed",
           "fieldType": "Checkbox",
-          "predictedValue": "false",
+          "predictedValue": "true",
           "goldValue": "Yes",
           "clickAccurate": false,
           "valueAccurate": false
@@ -3525,29 +3499,29 @@
           "Checkbox": 0
         },
         "valueAccuracy": {
-          "String": 80,
+          "String": 20,
           "Dropdown": 0,
-          "Description": 100,
+          "Description": 0,
           "Date": 0,
           "Checkbox": 0
         },
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 45.45454545454545
+        "overallValueAccuracy": 9.090909090909092
       },
       "episodicMetrics": {
-        "formCompletionRate": 45.45454545454545,
+        "formCompletionRate": 9.090909090909092,
         "fieldsAttempted": 9,
-        "fieldsCorrect": 5,
+        "fieldsCorrect": 1,
         "totalFields": 11,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 45.45454545454545
+        "averageValueAccuracy": 9.090909090909092
       },
-      "executionTimeMs": 25204,
+      "executionTimeMs": 32991,
       "errors": [],
       "submissionSucceeded": false,
-      "tokensIn": 554,
-      "tokensOut": 231,
-      "llmTimeMs": 23689,
+      "tokensIn": 454,
+      "tokensOut": 72,
+      "llmTimeMs": 798,
       "llmCalls": 1
     },
     {
@@ -3578,10 +3552,10 @@
         {
           "fieldId": "companyName",
           "fieldType": "String",
-          "predictedValue": "Greenfield Construction",
+          "predictedValue": "The interior of the office will be designed to feature contemporary layouts, providing a modern and welcoming atmosphere",
           "goldValue": "Greenfield Construction",
           "clickAccurate": false,
-          "valueAccurate": true
+          "valueAccurate": false
         },
         {
           "fieldId": "licenseNumber",
@@ -3594,18 +3568,18 @@
         {
           "fieldId": "projectName",
           "fieldType": "String",
-          "predictedValue": "Office Building Renovation",
+          "predictedValue": "The interior of the office will be designed to feature contemporary layouts, providing a modern and welcoming atmosphere",
           "goldValue": "Office Building Renovation",
           "clickAccurate": false,
-          "valueAccurate": true
+          "valueAccurate": false
         },
         {
           "fieldId": "bidAmount",
           "fieldType": "NumericInput",
-          "predictedValue": "",
+          "predictedValue": "850000",
           "goldValue": 850000,
           "clickAccurate": false,
-          "valueAccurate": false
+          "valueAccurate": true
         },
         {
           "fieldId": "projectDuration",
@@ -3642,7 +3616,7 @@
         {
           "fieldId": "workDescription",
           "fieldType": "Description",
-          "predictedValue": "Completely gutting the existing infrastructure, installing updated structural components, overhauling wiring and plumbing systems, updating HVAC installation, designing contemporary layouts, and installing upgraded fixtures",
+          "predictedValue": "We will start by completely gutting the existing infrastructure, allowing us to install updated structural components that provide long-lasting durability and compliance with modern building codes. This renovation will include a comprehensive overhaul of the building's wiring and plumbing systems, alongside an updated HVAC installation. These upgrades ensure the property not only functions efficiently but also comfortably meets all modern standards. The interior of the office will be designed to feature contemporary layouts, providing a modern and welcoming atmosphere. The installation of upgraded fixtures will further enhance the aesthetic and functional quality of the interior spaces.",
           "goldValue": "The project will involve gutting the entire office building and rebuilding it with updated structural components, new wiring, plumbing, and HVAC systems. Interior finishes will include modern office layouts and upgraded fixtures.",
           "clickAccurate": false,
           "valueAccurate": false,
@@ -3673,28 +3647,28 @@
           "Description": 0
         },
         "valueAccuracy": {
-          "String": 83.33333333333334,
-          "NumericInput": 50,
+          "String": 50,
+          "NumericInput": 100,
           "Date": 0,
           "Description": 0
         },
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 54.54545454545454
+        "overallValueAccuracy": 45.45454545454545
       },
       "episodicMetrics": {
-        "formCompletionRate": 54.54545454545454,
-        "fieldsAttempted": 7,
-        "fieldsCorrect": 6,
+        "formCompletionRate": 45.45454545454545,
+        "fieldsAttempted": 8,
+        "fieldsCorrect": 5,
         "totalFields": 11,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 54.54545454545454
+        "averageValueAccuracy": 45.45454545454545
       },
-      "executionTimeMs": 22045,
+      "executionTimeMs": 5423,
       "errors": [],
       "submissionSucceeded": false,
-      "tokensIn": 736,
-      "tokensOut": 152,
-      "llmTimeMs": 20512,
+      "tokensIn": 742,
+      "tokensOut": 265,
+      "llmTimeMs": 3255,
       "llmCalls": 1
     },
     {
@@ -3734,15 +3708,15 @@
         {
           "fieldId": "customerNumber",
           "fieldType": "String",
-          "predictedValue": "GTI-102938",
+          "predictedValue": "Adhering to rigorous quality standards is non-negotiable for us",
           "goldValue": "GTI-102938",
           "clickAccurate": false,
-          "valueAccurate": true
+          "valueAccurate": false
         },
         {
           "fieldId": "productType",
           "fieldType": "Dropdown",
-          "predictedValue": "",
+          "predictedValue": "Select product type",
           "goldValue": "Custom Product",
           "clickAccurate": false,
           "valueAccurate": false
@@ -3750,11 +3724,11 @@
         {
           "fieldId": "productDescription",
           "fieldType": "Description",
-          "predictedValue": "A specialized AI-powered sensor array designed for high sensitivity and efficiency within a range of 5 meters, with advanced real-time data processing capabilities, low power consumption, high data encryption standards, and wireless connectivity.",
+          "predictedValue": "Adhering to rigorous quality standards is non-negotiable for us",
           "goldValue": "Customized AI-powered sensor array",
           "clickAccurate": false,
           "valueAccurate": false,
-          "bleuScore": 6.61074021019606
+          "bleuScore": 0
         },
         {
           "fieldId": "Product Specifications",
@@ -3775,15 +3749,15 @@
         {
           "fieldId": "dimensions",
           "fieldType": "String",
-          "predictedValue": "200 x 150 x 50",
+          "predictedValue": "We trust in your esteemed capability to manufacture this sophisticated product with the solicited precision and expertise",
           "goldValue": "200 x 150 x 50",
           "clickAccurate": false,
-          "valueAccurate": true
+          "valueAccurate": false
         },
         {
           "fieldId": "material",
           "fieldType": "String",
-          "predictedValue": "Aluminum and silicon",
+          "predictedValue": "We trust in your esteemed capability to manufacture this sophisticated product with the solicited precision and expertise",
           "goldValue": "Aluminum, Silicon",
           "clickAccurate": false,
           "valueAccurate": false
@@ -3791,11 +3765,11 @@
         {
           "fieldId": "specifications",
           "fieldType": "Description",
-          "predictedValue": "that distinguish these sensors",
+          "predictedValue": "Advanced real-time data processing, low power consumption, high data encryption standards, wireless connectivity for IoT integration",
           "goldValue": "Real-time data processing, low power consumption, high data encryption standards, wireless connectivity with IoT capabilities",
           "clickAccurate": false,
-          "valueAccurate": false,
-          "bleuScore": 0
+          "valueAccurate": true,
+          "bleuScore": 75.41859578343534
         },
         {
           "fieldId": "qualityStandards",
@@ -3816,7 +3790,7 @@
         {
           "fieldId": "shippingMethod",
           "fieldType": "Dropdown",
-          "predictedValue": "",
+          "predictedValue": "Select shipping method",
           "goldValue": "Express",
           "clickAccurate": false,
           "valueAccurate": false
@@ -3831,50 +3805,36 @@
           "Date": 0
         },
         "valueAccuracy": {
-          "String": 50,
+          "String": 16.666666666666664,
           "Dropdown": 0,
-          "Description": 0,
+          "Description": 50,
           "NumericInput": 0,
           "Date": 0
         },
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 25
+        "overallValueAccuracy": 16.666666666666664
       },
       "episodicMetrics": {
-        "formCompletionRate": 25,
-        "fieldsAttempted": 7,
-        "fieldsCorrect": 3,
+        "formCompletionRate": 16.666666666666664,
+        "fieldsAttempted": 9,
+        "fieldsCorrect": 2,
         "totalFields": 12,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 25
+        "averageValueAccuracy": 16.666666666666664
       },
-      "executionTimeMs": 84519,
+      "executionTimeMs": 63322,
       "errors": [],
       "submissionSucceeded": false,
-      "tokensIn": 679,
-      "tokensOut": 205,
-      "llmTimeMs": 23010,
+      "tokensIn": 623,
+      "tokensOut": 120,
+      "llmTimeMs": 1249,
       "llmCalls": 1
     }
   ],
-  "totalExecutionTimeMs": 5873416,
-  "totalTokensIn": 12528,
-  "totalTokensOut": 3756,
-  "totalLlmTimeMs": 315116,
-  "totalLlmCalls": 25,
-  "errors": [
-    "Form submission step failed or timed out",
-    "Form submission step failed or timed out",
-    "Form submission step failed or timed out",
-    "Form submission step failed or timed out",
-    "Form submission step failed or timed out",
-    "Form submission step failed or timed out",
-    "Form submission step failed or timed out",
-    "Form submission step failed or timed out",
-    "Form submission step failed or timed out",
-    "Form submission step failed or timed out",
-    "Form submission step failed or timed out",
-    "Form submission step failed or timed out",
-    "Form submission step failed or timed out"
-  ]
+  "totalExecutionTimeMs": 1021730,
+  "totalTokensIn": 10658,
+  "totalTokensOut": 2465,
+  "totalLlmTimeMs": 30080,
+  "totalLlmCalls": 24,
+  "errors": []
 }

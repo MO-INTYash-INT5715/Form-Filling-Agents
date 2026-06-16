@@ -23,24 +23,122 @@
     "formPath": "/tech-software/support-request"
   },
   "agentName": "rule-based",
-  "fieldResults": [],
+  "fieldResults": [
+    {
+      "fieldId": "requestType",
+      "fieldType": "Dropdown",
+      "predictedValue": "Network Issue",
+      "goldValue": "Network Issue",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "priority",
+      "fieldType": "Dropdown",
+      "predictedValue": "Urgent-System Down",
+      "goldValue": "Urgent-System Down",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "subject",
+      "fieldType": "String",
+      "predictedValue": "Entire office network down",
+      "goldValue": "Entire office network down",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "Brief description of the issue",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "All network access is down across the entire office.",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "description",
+      "fieldType": "Description",
+      "predictedValue": "",
+      "goldValue": "Employees are unable to access the internet, file servers, or any internal systems. The issue started around 10:30 AM today.",
+      "clickAccurate": false,
+      "valueAccurate": false,
+      "bleuScore": 0
+    },
+    {
+      "fieldId": "location",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "All departments",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "affectedUsers",
+      "fieldType": "NumericInput",
+      "predictedValue": "50",
+      "goldValue": 50,
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "availableTime",
+      "fieldType": "String",
+      "predictedValue": "Mon-Fri 9AM-5PM",
+      "goldValue": "Mon-Fri 9AM-5PM",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "requesterName",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Michael Johnson",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "requesterEmail",
+      "fieldType": "String",
+      "predictedValue": "michael.johnson@company.com",
+      "goldValue": "michael.johnson@company.com",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "phoneNumber",
+      "fieldType": "String",
+      "predictedValue": "+1 555-9876",
+      "goldValue": "+1 555-9876",
+      "clickAccurate": false,
+      "valueAccurate": true
+    }
+  ],
   "atomicMetrics": {
-    "clickAccuracy": {},
-    "valueAccuracy": {},
+    "clickAccuracy": {
+      "Dropdown": 0,
+      "String": 0,
+      "Description": 0,
+      "NumericInput": 0
+    },
+    "valueAccuracy": {
+      "Dropdown": 100,
+      "String": 57.14285714285714,
+      "Description": 0,
+      "NumericInput": 100
+    },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 0
+    "overallValueAccuracy": 63.63636363636363
   },
   "episodicMetrics": {
-    "formCompletionRate": 0,
-    "fieldsAttempted": 0,
-    "fieldsCorrect": 0,
-    "totalFields": 0,
+    "formCompletionRate": 63.63636363636363,
+    "fieldsAttempted": 7,
+    "fieldsCorrect": 7,
+    "totalFields": 11,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 0
+    "averageValueAccuracy": 63.63636363636363
   },
-  "executionTimeMs": 0,
-  "errors": [
-    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/tech-software/support-request\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/tech-software/support-request\", waiting until \"domcontentloaded\"\u001b[22m\n"
-  ],
-  "submissionSucceeded": false
+  "executionTimeMs": 2182,
+  "errors": [],
+  "submissionSucceeded": true
 }

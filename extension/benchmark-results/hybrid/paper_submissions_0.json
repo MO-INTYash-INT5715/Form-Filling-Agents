@@ -25,15 +25,15 @@
     {
       "fieldId": "author_name",
       "fieldType": "String",
-      "predictedValue": "Alice Johnson",
+      "predictedValue": "\" I am confident that this paper will add substantial value to the discussions on Artificial Intelligence at the conference",
       "goldValue": "Alice Johnson",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "email",
       "fieldType": "String",
-      "predictedValue": "at alice",
+      "predictedValue": "johnson@university",
       "goldValue": "alice.johnson@university.edu",
       "clickAccurate": false,
       "valueAccurate": false
@@ -58,7 +58,7 @@
     {
       "fieldId": "keywords",
       "fieldType": "String",
-      "predictedValue": "Deep Learning, Image Recognition, Neural Networks",
+      "predictedValue": "\" I am confident that this paper will add substantial value to the discussions on Artificial Intelligence at the conference",
       "goldValue": [
         "Deep Learning",
         "Image Recognition",
@@ -70,7 +70,7 @@
     {
       "fieldId": "category",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "Select a category",
       "goldValue": "Artificial Intelligence",
       "clickAccurate": false,
       "valueAccurate": false
@@ -83,26 +83,26 @@
       "Dropdown": 0
     },
     "valueAccuracy": {
-      "String": 50,
+      "String": 25,
       "Description": 0,
       "Dropdown": 0
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 33.33333333333333
+    "overallValueAccuracy": 16.666666666666664
   },
   "episodicMetrics": {
-    "formCompletionRate": 33.33333333333333,
-    "fieldsAttempted": 5,
-    "fieldsCorrect": 2,
+    "formCompletionRate": 16.666666666666664,
+    "fieldsAttempted": 6,
+    "fieldsCorrect": 1,
     "totalFields": 6,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 33.33333333333333
+    "averageValueAccuracy": 16.666666666666664
   },
-  "executionTimeMs": 37130,
+  "executionTimeMs": 33239,
   "errors": [],
-  "submissionSucceeded": false,
-  "tokensIn": 407,
-  "tokensOut": 117,
-  "llmTimeMs": 5941,
+  "submissionSucceeded": true,
+  "tokensIn": 379,
+  "tokensOut": 99,
+  "llmTimeMs": 1047,
   "llmCalls": 1
 }

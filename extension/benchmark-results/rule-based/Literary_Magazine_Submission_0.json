@@ -22,24 +22,119 @@
     "formPath": "/arts-creative/literary-submission"
   },
   "agentName": "rule-based",
-  "fieldResults": [],
+  "fieldResults": [
+    {
+      "fieldId": "Author Name",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Emma Thompson",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "Email Address",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "emma.thompson123@gmail.com",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "Title",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "A Journey Through Time",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "genre",
+      "fieldType": "Dropdown",
+      "predictedValue": "Fiction",
+      "goldValue": "Fiction",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "Word Count",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": 3200,
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "Abstract/Summary",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "A historical novel that delves into the life of a young woman living through wartime Europe.",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "Manuscript File",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "None",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "issue",
+      "fieldType": "Dropdown",
+      "predictedValue": "Spring 2024",
+      "goldValue": "Spring 2024",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "previously_published",
+      "fieldType": "Checkbox",
+      "predictedValue": "",
+      "goldValue": "No",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "simultaneous_submission",
+      "fieldType": "Checkbox",
+      "predictedValue": "",
+      "goldValue": "Yes",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "I agree to the submission guidelines and terms of publication",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Yes",
+      "clickAccurate": null,
+      "valueAccurate": false
+    }
+  ],
   "atomicMetrics": {
-    "clickAccuracy": {},
-    "valueAccuracy": {},
+    "clickAccuracy": {
+      "String": 0,
+      "Dropdown": 0,
+      "Checkbox": 0
+    },
+    "valueAccuracy": {
+      "String": 0,
+      "Dropdown": 100,
+      "Checkbox": 0
+    },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 0
+    "overallValueAccuracy": 18.181818181818183
   },
   "episodicMetrics": {
-    "formCompletionRate": 0,
-    "fieldsAttempted": 0,
-    "fieldsCorrect": 0,
-    "totalFields": 0,
+    "formCompletionRate": 18.181818181818183,
+    "fieldsAttempted": 2,
+    "fieldsCorrect": 2,
+    "totalFields": 11,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 0
+    "averageValueAccuracy": 18.181818181818183
   },
-  "executionTimeMs": 0,
-  "errors": [
-    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/arts-creative/literary-submission\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/arts-creative/literary-submission\", waiting until \"domcontentloaded\"\u001b[22m\n"
-  ],
-  "submissionSucceeded": false
+  "executionTimeMs": 2046,
+  "errors": [],
+  "submissionSucceeded": true
 }

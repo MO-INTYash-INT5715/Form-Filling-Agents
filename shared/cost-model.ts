@@ -15,6 +15,8 @@ export const COST_PER_1M: Record<string, { in: number; out: number }> = {
   // Bedrock / Anthropic (placeholder estimates - update when keys available)
   'bedrock:claude-3.5-sonnet': { in: 3.0, out: 15.0 },
   'bedrock:claude-3-haiku':    { in: 0.25, out: 1.25 },
+  'bedrock:qwen.qwen3-235b':   { in: 2.0, out: 6.0 },
+  'bedrock:openai.gpt-oss':    { in: 0.60, out: 0.60 },
 
   // Cerebras (approximate current pricing for llama3.1 variants)
   'cerebras:llama3.1-8b':  { in: 0.10, out: 0.10 },

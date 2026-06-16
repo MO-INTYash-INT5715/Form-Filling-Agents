@@ -65,26 +65,26 @@
     {
       "fieldId": "procedureConsent",
       "fieldType": "Checkbox",
-      "predictedValue": "false",
+      "predictedValue": "true",
       "goldValue": true,
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "questionConsent",
       "fieldType": "Checkbox",
-      "predictedValue": "false",
+      "predictedValue": "true",
       "goldValue": true,
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "alternativesConsent",
       "fieldType": "Checkbox",
-      "predictedValue": "false",
+      "predictedValue": "true",
       "goldValue": true,
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "emergencyName",
@@ -112,24 +112,24 @@
     "valueAccuracy": {
       "String": 100,
       "Date": 0,
-      "Checkbox": 0
+      "Checkbox": 100
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 60
+    "overallValueAccuracy": 90
   },
   "episodicMetrics": {
-    "formCompletionRate": 60,
+    "formCompletionRate": 90,
     "fieldsAttempted": 9,
-    "fieldsCorrect": 6,
+    "fieldsCorrect": 9,
     "totalFields": 10,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 60
+    "averageValueAccuracy": 90
   },
-  "executionTimeMs": 11867,
+  "executionTimeMs": 4245,
   "errors": [],
   "submissionSucceeded": false,
   "tokensIn": 453,
-  "tokensOut": 192,
-  "llmTimeMs": 10027,
+  "tokensOut": 144,
+  "llmTimeMs": 1686,
   "llmCalls": 1
 }

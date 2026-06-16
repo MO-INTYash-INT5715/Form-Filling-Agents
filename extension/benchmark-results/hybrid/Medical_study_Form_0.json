@@ -23,10 +23,10 @@
     {
       "fieldId": "fullName",
       "fieldType": "String",
-      "predictedValue": "Lily Chen",
+      "predictedValue": "**Medical Research Study Enrollment Application** --- **Applicant Information:** I am pleased to submit my enrollment application for consideration in the upcoming medical research study",
       "goldValue": "Lily Chen",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "age",
@@ -39,7 +39,7 @@
     {
       "fieldId": "existingConditions",
       "fieldType": "Description",
-      "predictedValue": "Hypertension",
+      "predictedValue": "Yours sincerely, **Lily Chen**",
       "goldValue": "Hypertension",
       "clickAccurate": false,
       "valueAccurate": false,
@@ -57,7 +57,7 @@
     {
       "fieldId": "studyType",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "Select study type",
       "goldValue": "Clinical Trial",
       "clickAccurate": false,
       "valueAccurate": false
@@ -65,7 +65,7 @@
     {
       "fieldId": "availability",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "Select availability",
       "goldValue": "Weekdays",
       "clickAccurate": false,
       "valueAccurate": false
@@ -73,18 +73,18 @@
     {
       "fieldId": "email",
       "fieldType": "String",
-      "predictedValue": "lily.chen123@gmail.com",
+      "predictedValue": "chen123@gmail",
       "goldValue": "lily.chen123@gmail.com",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "phone",
       "fieldType": "String",
-      "predictedValue": "(+86) 138 1234 5678",
+      "predictedValue": "chen123@gmail",
       "goldValue": "(+86) 138 1234 5678",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     }
   ],
   "atomicMetrics": {
@@ -95,27 +95,27 @@
       "Dropdown": 0
     },
     "valueAccuracy": {
-      "String": 100,
+      "String": 0,
       "NumericInput": 100,
       "Description": 0,
       "Dropdown": 0
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 50
+    "overallValueAccuracy": 12.5
   },
   "episodicMetrics": {
-    "formCompletionRate": 50,
-    "fieldsAttempted": 6,
-    "fieldsCorrect": 4,
+    "formCompletionRate": 12.5,
+    "fieldsAttempted": 8,
+    "fieldsCorrect": 1,
     "totalFields": 8,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 50
+    "averageValueAccuracy": 12.5
   },
-  "executionTimeMs": 66490,
+  "executionTimeMs": 62532,
   "errors": [],
   "submissionSucceeded": false,
-  "tokensIn": 471,
-  "tokensOut": 86,
-  "llmTimeMs": 4887,
+  "tokensIn": 409,
+  "tokensOut": 23,
+  "llmTimeMs": 399,
   "llmCalls": 1
 }

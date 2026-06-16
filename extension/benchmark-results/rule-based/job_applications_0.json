@@ -15,24 +15,62 @@
     "formPath": "/academic-research/job-application"
   },
   "agentName": "rule-based",
-  "fieldResults": [],
+  "fieldResults": [
+    {
+      "fieldId": "name",
+      "fieldType": "String",
+      "predictedValue": "Alice Zhang",
+      "goldValue": "Alice Zhang",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "position",
+      "fieldType": "String",
+      "predictedValue": "Software Engineer",
+      "goldValue": "Software Engineer",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "department",
+      "fieldType": "String",
+      "predictedValue": "Engineering",
+      "goldValue": "Engineering",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "cover_letter",
+      "fieldType": "Description",
+      "predictedValue": "",
+      "goldValue": "I am passionate about software development and excited to contribute my skills to the Engineering department.",
+      "clickAccurate": false,
+      "valueAccurate": false,
+      "bleuScore": 0
+    }
+  ],
   "atomicMetrics": {
-    "clickAccuracy": {},
-    "valueAccuracy": {},
+    "clickAccuracy": {
+      "String": 0,
+      "Description": 0
+    },
+    "valueAccuracy": {
+      "String": 100,
+      "Description": 0
+    },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 0
+    "overallValueAccuracy": 75
   },
   "episodicMetrics": {
-    "formCompletionRate": 0,
-    "fieldsAttempted": 0,
-    "fieldsCorrect": 0,
-    "totalFields": 0,
+    "formCompletionRate": 75,
+    "fieldsAttempted": 3,
+    "fieldsCorrect": 3,
+    "totalFields": 4,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 0
+    "averageValueAccuracy": 75
   },
-  "executionTimeMs": 0,
-  "errors": [
-    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/academic-research/job-application\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/academic-research/job-application\", waiting until \"domcontentloaded\"\u001b[22m\n"
-  ],
-  "submissionSucceeded": false
+  "executionTimeMs": 4641,
+  "errors": [],
+  "submissionSucceeded": true
 }

@@ -116,6 +116,29 @@ async function main() {
 
           // Also append AblationRecord JSONL for aggregator
           try {
+            const { scoreFillsAgainstGold } = await import('../../shared/scorer');
+            
+            // Build gold answers from profile and expected fields
+            const goldAnswers: Record<string, string> = {};
+            for (const fieldPath of form.expectedFields) {
+              const parts = fieldPath.split('.');
+              let val: any = profile;
+              for (const part of parts) {
+                if (val) val = val[part];
+              }
+              if (val !== undefined && val !== null) {
+                goldAnswers[fieldPath] = String(val);
+              }
+            }
+            
+            // Calculate value accuracy if we have recorded fills
+            let valueAccuracyPct = 0;
+            if (res.fields && res.fields.length > 0) {
+              const score = scoreFillsAgainstGold(res.fields, goldAnswers);
+              valueAccuracyPct = score.valueAccuracy;
+              res.accuracy = score.valueAccuracy; // update the result accuracy too
+            }
+
             const ablationDir = path.resolve(__dirname, '../../Documentation/ablation-records');
             fs.mkdirSync(ablationDir, { recursive: true });
             const abRec = {
@@ -130,6 +153,7 @@ async function main() {
               fieldsAttempted: res.fieldsAttempted,
               fieldsFilled: res.fieldsFilled,
               accuracy: res.accuracy,
+              valueAccuracyPct,
               tokensIn: res.tokensIn ?? 0,
               tokensOut: res.tokensOut ?? 0,
               toolCalls: res.toolCalls ?? 0,

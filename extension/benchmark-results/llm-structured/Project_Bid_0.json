@@ -90,7 +90,7 @@
     {
       "fieldId": "workDescription",
       "fieldType": "Description",
-      "predictedValue": "Completely gutting the existing infrastructure, installing updated structural components, overhauling wiring and plumbing systems, updating HVAC installation, designing contemporary layouts, and installing upgraded fixtures",
+      "predictedValue": "We will start by completely gutting the existing infrastructure, allowing us to install updated structural components that provide long-lasting durability and compliance with modern building codes. This renovation will include a comprehensive overhaul of the building's wiring and plumbing systems, alongside an updated HVAC installation. These upgrades ensure the property not only functions efficiently but also comfortably meets all modern standards. The interior of the office will be designed to feature contemporary layouts, providing a modern and welcoming atmosphere. The installation of upgraded fixtures will further enhance the aesthetic and functional quality of the interior spaces.",
       "goldValue": "The project will involve gutting the entire office building and rebuilding it with updated structural components, new wiring, plumbing, and HVAC systems. Interior finishes will include modern office layouts and upgraded fixtures.",
       "clickAccurate": false,
       "valueAccurate": false,
@@ -137,11 +137,11 @@
     "averageClickAccuracy": 0,
     "averageValueAccuracy": 72.72727272727273
   },
-  "executionTimeMs": 1445,
+  "executionTimeMs": 1863,
   "errors": [],
   "submissionSucceeded": false,
   "tokensIn": 961,
-  "tokensOut": 192,
-  "llmTimeMs": 4510,
+  "tokensOut": 292,
+  "llmTimeMs": 2516,
   "llmCalls": 1
 }

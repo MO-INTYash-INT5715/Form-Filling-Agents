@@ -32,10 +32,10 @@
     {
       "fieldId": "partyType",
       "fieldType": "Dropdown",
-      "predictedValue": "Individual",
+      "predictedValue": "Founder",
       "goldValue": "Individual",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "purpose",
@@ -106,28 +106,28 @@
     },
     "valueAccuracy": {
       "String": 66.66666666666666,
-      "Dropdown": 100,
+      "Dropdown": 0,
       "Description": 100,
       "Date": 100,
       "NumericInput": 100,
       "Checkbox": 100
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 88.88888888888889
+    "overallValueAccuracy": 77.77777777777779
   },
   "episodicMetrics": {
-    "formCompletionRate": 88.88888888888889,
+    "formCompletionRate": 77.77777777777779,
     "fieldsAttempted": 8,
-    "fieldsCorrect": 8,
+    "fieldsCorrect": 7,
     "totalFields": 9,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 88.88888888888889
+    "averageValueAccuracy": 77.77777777777779
   },
-  "executionTimeMs": 1444,
+  "executionTimeMs": 1669,
   "errors": [],
   "submissionSucceeded": false,
   "tokensIn": 589,
   "tokensOut": 137,
-  "llmTimeMs": 3123,
+  "llmTimeMs": 1280,
   "llmCalls": 1
 }

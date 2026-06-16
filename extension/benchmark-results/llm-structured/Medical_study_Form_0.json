@@ -65,7 +65,7 @@
     {
       "fieldId": "availability",
       "fieldType": "Dropdown",
-      "predictedValue": "Weekdays",
+      "predictedValue": "weekdays",
       "goldValue": "Weekdays",
       "clickAccurate": false,
       "valueAccurate": true
@@ -81,10 +81,10 @@
     {
       "fieldId": "phone",
       "fieldType": "String",
-      "predictedValue": "+86 138 1234 5678",
+      "predictedValue": "(+86) 138 1234 5678",
       "goldValue": "(+86) 138 1234 5678",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     }
   ],
   "atomicMetrics": {
@@ -95,27 +95,27 @@
       "Dropdown": 0
     },
     "valueAccuracy": {
-      "String": 66.66666666666666,
+      "String": 100,
       "NumericInput": 100,
       "Description": 0,
       "Dropdown": 100
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 62.5
+    "overallValueAccuracy": 75
   },
   "episodicMetrics": {
-    "formCompletionRate": 62.5,
+    "formCompletionRate": 75,
     "fieldsAttempted": 8,
-    "fieldsCorrect": 5,
+    "fieldsCorrect": 6,
     "totalFields": 8,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 62.5
+    "averageValueAccuracy": 75
   },
-  "executionTimeMs": 1436,
+  "executionTimeMs": 2122,
   "errors": [],
   "submissionSucceeded": false,
   "tokensIn": 657,
-  "tokensOut": 106,
-  "llmTimeMs": 2689,
+  "tokensOut": 104,
+  "llmTimeMs": 1129,
   "llmCalls": 1
 }

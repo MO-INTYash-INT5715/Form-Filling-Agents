@@ -22,39 +22,39 @@
     {
       "fieldId": "firstName",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "John",
       "goldValue": "John",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "middleName",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Stephen",
       "goldValue": "Stephen",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "lastName",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Tran",
       "goldValue": "Tran",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "loanAmount",
       "fieldType": "NumericInput",
-      "predictedValue": "",
+      "predictedValue": "28521",
       "goldValue": 28521,
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "loanTerm",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "Select term",
       "goldValue": "60 months",
       "clickAccurate": false,
       "valueAccurate": false
@@ -62,7 +62,7 @@
     {
       "fieldId": "employmentStatus",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "Select status",
       "goldValue": "Part time",
       "clickAccurate": false,
       "valueAccurate": false
@@ -70,10 +70,10 @@
     {
       "fieldId": "monthlyIncome",
       "fieldType": "NumericInput",
-      "predictedValue": "",
+      "predictedValue": "4569",
       "goldValue": 4569,
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     }
   ],
   "atomicMetrics": {
@@ -83,28 +83,26 @@
       "Dropdown": 0
     },
     "valueAccuracy": {
-      "String": 0,
-      "NumericInput": 0,
+      "String": 100,
+      "NumericInput": 100,
       "Dropdown": 0
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 0
+    "overallValueAccuracy": 71.42857142857143
   },
   "episodicMetrics": {
-    "formCompletionRate": 0,
-    "fieldsAttempted": 0,
-    "fieldsCorrect": 0,
+    "formCompletionRate": 71.42857142857143,
+    "fieldsAttempted": 7,
+    "fieldsCorrect": 5,
     "totalFields": 7,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 0
+    "averageValueAccuracy": 71.42857142857143
   },
-  "executionTimeMs": 280391,
-  "errors": [
-    "Form submission step failed or timed out"
-  ],
-  "submissionSucceeded": false,
+  "executionTimeMs": 63553,
+  "errors": [],
+  "submissionSucceeded": true,
   "tokensIn": 321,
   "tokensOut": 64,
-  "llmTimeMs": 4150,
+  "llmTimeMs": 878,
   "llmCalls": 1
 }

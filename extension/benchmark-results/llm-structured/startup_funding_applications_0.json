@@ -32,71 +32,71 @@
     {
       "fieldId": "company_name",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Pinnacle Solutions",
       "goldValue": "Pinnacle Solutions",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "company_website",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "https://www.haynes-morales.com/",
       "goldValue": "https://www.haynes-morales.com/",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "founding_date",
       "fieldType": "Date",
-      "predictedValue": "",
+      "predictedValue": "2020-08-29",
       "goldValue": "2020/08/29",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "business_stage",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "Growth",
       "goldValue": "Growth",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "founder_name",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Kari Ibarra",
       "goldValue": "Kari Ibarra",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "founder_email",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "devin22@gmail.com",
       "goldValue": "devin22@gmail.com",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "founder_phone",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "1738464335",
       "goldValue": "1738464335",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "linkedin_profile",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "https://linkedin.com/in/kaylamills",
       "goldValue": "https://linkedin.com/in/kaylamills",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "funding_amount",
       "fieldType": "NumericInput",
-      "predictedValue": "",
+      "predictedValue": "4,311,070",
       "goldValue": 4311070,
       "clickAccurate": false,
       "valueAccurate": false
@@ -104,15 +104,15 @@
     {
       "fieldId": "equity_offered",
       "fieldType": "NumericInput",
-      "predictedValue": "",
+      "predictedValue": "8",
       "goldValue": 8,
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "current_valuation",
       "fieldType": "NumericInput",
-      "predictedValue": "",
+      "predictedValue": "1,554,377",
       "goldValue": 1554377,
       "clickAccurate": false,
       "valueAccurate": false
@@ -120,7 +120,7 @@
     {
       "fieldId": "funding_purpose",
       "fieldType": "Description",
-      "predictedValue": "",
+      "predictedValue": "hiring",
       "goldValue": "Hiring",
       "clickAccurate": false,
       "valueAccurate": false,
@@ -129,25 +129,25 @@
     {
       "fieldId": "business_model",
       "fieldType": "Description",
-      "predictedValue": "",
+      "predictedValue": "marketplace for freelancers offering digital services to small businesses and startups",
       "goldValue": "A marketplace for freelancers offering digital services to small businesses and startups.",
       "clickAccurate": false,
-      "valueAccurate": false,
-      "bleuScore": 0
+      "valueAccurate": true,
+      "bleuScore": 91.31007162822624
     },
     {
       "fieldId": "target_market",
       "fieldType": "Description",
-      "predictedValue": "",
+      "predictedValue": "parents looking for eco-friendly and sustainable products for their children",
       "goldValue": "Parents looking for eco-friendly and sustainable products for their children.",
       "clickAccurate": false,
-      "valueAccurate": false,
-      "bleuScore": 0
+      "valueAccurate": true,
+      "bleuScore": 100
     },
     {
       "fieldId": "current_revenue",
       "fieldType": "NumericInput",
-      "predictedValue": "",
+      "predictedValue": "200,000",
       "goldValue": 200000,
       "clickAccurate": false,
       "valueAccurate": false
@@ -155,15 +155,15 @@
     {
       "fieldId": "team_size",
       "fieldType": "NumericInput",
-      "predictedValue": "",
+      "predictedValue": "100",
       "goldValue": 100,
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "additional_comments",
       "fieldType": "Description",
-      "predictedValue": "",
+      "predictedValue": "The company is seeking funding to enhance operations and expand its team, aiming to advance its marketplace platform for digital freelancers targeting small businesses and startups.",
       "goldValue": "Excited to take the company to the next level.",
       "clickAccurate": false,
       "valueAccurate": false,
@@ -179,28 +179,28 @@
       "Description": 0
     },
     "valueAccuracy": {
-      "String": 0,
-      "Date": 0,
-      "Dropdown": 0,
-      "NumericInput": 0,
-      "Description": 0
+      "String": 100,
+      "Date": 100,
+      "Dropdown": 100,
+      "NumericInput": 40,
+      "Description": 50
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 0
+    "overallValueAccuracy": 70.58823529411765
   },
   "episodicMetrics": {
-    "formCompletionRate": 0,
-    "fieldsAttempted": 0,
-    "fieldsCorrect": 0,
+    "formCompletionRate": 70.58823529411765,
+    "fieldsAttempted": 17,
+    "fieldsCorrect": 12,
     "totalFields": 17,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 0
+    "averageValueAccuracy": 70.58823529411765
   },
-  "executionTimeMs": 1649,
+  "executionTimeMs": 2202,
   "errors": [],
   "submissionSucceeded": true,
-  "tokensIn": 0,
-  "tokensOut": 0,
-  "llmTimeMs": 0,
-  "llmCalls": 0
+  "tokensIn": 919,
+  "tokensOut": 276,
+  "llmTimeMs": 2377,
+  "llmCalls": 1
 }

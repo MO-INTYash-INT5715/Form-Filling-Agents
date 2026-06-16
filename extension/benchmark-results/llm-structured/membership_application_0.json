@@ -31,71 +31,71 @@
     {
       "fieldId": "full_name",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "John Smith",
       "goldValue": "John Smith",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "email",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "john.smith@gmail.com",
       "goldValue": "john.smith@gmail.com",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "phone",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "555-0123",
       "goldValue": "555-0123",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "date_of_birth",
       "fieldType": "Date",
-      "predictedValue": "",
+      "predictedValue": "1990-01-15",
       "goldValue": "1990/01/15",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "membership_level",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "Student Member",
       "goldValue": "Student Member",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "membership_duration",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "1 year",
       "goldValue": "1 Year",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "education_level",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "Bachelor's Degree",
       "goldValue": "Bachelor's Degree",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "field_of_study",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Computer Science",
       "goldValue": "Computer Science",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "professional_certifications",
       "fieldType": "Description",
-      "predictedValue": "",
+      "predictedValue": "None",
       "goldValue": "None",
       "clickAccurate": false,
       "valueAccurate": false,
@@ -104,42 +104,42 @@
     {
       "fieldId": "current_employer",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "University of Technology",
       "goldValue": "University of Technology",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "job_title",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Student",
       "goldValue": "Student",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "years_experience",
       "fieldType": "NumericInput",
-      "predictedValue": "",
+      "predictedValue": "0",
       "goldValue": 0,
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "industry",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Education",
       "goldValue": "Education",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "reference_name",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Dr. Emily Johnson",
       "goldValue": "Dr. Emily Johnson",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "reference_email",
@@ -152,10 +152,10 @@
     {
       "fieldId": "reference_relationship",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Professor",
       "goldValue": "Professor",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     }
   ],
   "atomicMetrics": {
@@ -167,28 +167,28 @@
       "NumericInput": 0
     },
     "valueAccuracy": {
-      "String": 0,
-      "Date": 0,
-      "Dropdown": 0,
+      "String": 90,
+      "Date": 100,
+      "Dropdown": 100,
       "Description": 0,
-      "NumericInput": 0
+      "NumericInput": 100
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 0
+    "overallValueAccuracy": 87.5
   },
   "episodicMetrics": {
-    "formCompletionRate": 0,
-    "fieldsAttempted": 0,
-    "fieldsCorrect": 0,
+    "formCompletionRate": 87.5,
+    "fieldsAttempted": 15,
+    "fieldsCorrect": 14,
     "totalFields": 16,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 0
+    "averageValueAccuracy": 87.5
   },
-  "executionTimeMs": 1648,
+  "executionTimeMs": 2182,
   "errors": [],
   "submissionSucceeded": true,
-  "tokensIn": 0,
-  "tokensOut": 0,
-  "llmTimeMs": 0,
-  "llmCalls": 0
+  "tokensIn": 931,
+  "tokensOut": 169,
+  "llmTimeMs": 1868,
+  "llmCalls": 1
 }

@@ -35,20 +35,20 @@
       "valueAccurate": false
     },
     {
-      "fieldId": "Email",
+      "fieldId": "email",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "wmills@shields.net",
       "goldValue": "wmills@shields.net",
-      "clickAccurate": null,
-      "valueAccurate": false
+      "clickAccurate": false,
+      "valueAccurate": true
     },
     {
-      "fieldId": "Gender",
-      "fieldType": "String",
-      "predictedValue": "",
+      "fieldId": "gender",
+      "fieldType": "RadioButton",
+      "predictedValue": "Female",
       "goldValue": "Female",
-      "clickAccurate": null,
-      "valueAccurate": false
+      "clickAccurate": false,
+      "valueAccurate": true
     },
     {
       "fieldId": "Date of Birth",
@@ -69,27 +69,29 @@
   ],
   "atomicMetrics": {
     "clickAccuracy": {
-      "String": 0
+      "String": 0,
+      "RadioButton": 0
     },
     "valueAccuracy": {
-      "String": 0
+      "String": 20,
+      "RadioButton": 100
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 0
+    "overallValueAccuracy": 33.33333333333333
   },
   "episodicMetrics": {
-    "formCompletionRate": 0,
-    "fieldsAttempted": 0,
-    "fieldsCorrect": 0,
+    "formCompletionRate": 33.33333333333333,
+    "fieldsAttempted": 2,
+    "fieldsCorrect": 2,
     "totalFields": 6,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 0
+    "averageValueAccuracy": 33.33333333333333
   },
-  "executionTimeMs": 1457,
+  "executionTimeMs": 1994,
   "errors": [],
   "submissionSucceeded": false,
-  "tokensIn": 0,
-  "tokensOut": 0,
-  "llmTimeMs": 0,
-  "llmCalls": 0
+  "tokensIn": 658,
+  "tokensOut": 71,
+  "llmTimeMs": 843,
+  "llmCalls": 1
 }

@@ -34,7 +34,7 @@
     {
       "fieldId": "full_name",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Amy Soto, residing at 325 Clark Tunnel in Christopherburgh, Alabama, ZIP Code 37382, is seeking a new rental opportunity",
       "goldValue": "Amy Soto",
       "clickAccurate": false,
       "valueAccurate": false
@@ -42,18 +42,18 @@
     {
       "fieldId": "email",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "arthurperez@webb.com",
       "goldValue": "arthurperez@webb.com",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "phone",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "001-601-137-0101x270",
       "goldValue": "001-601-137-0101x270",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "date_of_birth",
@@ -66,23 +66,23 @@
     {
       "fieldId": "current_street",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "325 Clark Tunnel",
       "goldValue": "325 Clark Tunnel",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "current_city",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Christopherburgh",
       "goldValue": "Christopherburgh",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "current_state",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "She can be reached at arthurperez@webb",
       "goldValue": "Alabama",
       "clickAccurate": false,
       "valueAccurate": false
@@ -90,7 +90,7 @@
     {
       "fieldId": "current_zip",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Amy Soto, residing at 325 Clark Tunnel in Christopherburgh, Alabama, ZIP Code 37382, is seeking a new rental opportunity",
       "goldValue": "37382",
       "clickAccurate": false,
       "valueAccurate": false
@@ -98,7 +98,7 @@
     {
       "fieldId": "employer_name",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "She can be reached at arthurperez@webb",
       "goldValue": "Edwards PLC",
       "clickAccurate": false,
       "valueAccurate": false
@@ -106,7 +106,7 @@
     {
       "fieldId": "job_title",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Amy Soto, residing at 325 Clark Tunnel in Christopherburgh, Alabama, ZIP Code 37382, is seeking a new rental opportunity",
       "goldValue": "Environmental manager",
       "clickAccurate": false,
       "valueAccurate": false
@@ -122,10 +122,10 @@
     {
       "fieldId": "employment_length",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "1 year",
       "goldValue": "1 year",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "preferred_move_date",
@@ -138,7 +138,7 @@
     {
       "fieldId": "lease_term",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "Select Term",
       "goldValue": "6 months",
       "clickAccurate": false,
       "valueAccurate": false
@@ -154,23 +154,23 @@
     {
       "fieldId": "preferred_area",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Near public transport",
       "goldValue": "Near public transport",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "pets",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "No",
       "goldValue": "No",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "pet_details",
       "fieldType": "Description",
-      "predictedValue": "",
+      "predictedValue": "Amy Soto, residing at 325 Clark Tunnel in Christopherburgh, Alabama, ZIP Code 37382, is seeking a new rental opportunity",
       "goldValue": "No pets",
       "clickAccurate": false,
       "valueAccurate": false,
@@ -179,11 +179,11 @@
     {
       "fieldId": "additional_info",
       "fieldType": "Description",
-      "predictedValue": "",
+      "predictedValue": "Prefer quiet and residential areas.",
       "goldValue": "Prefer quiet and residential areas.",
       "clickAccurate": false,
-      "valueAccurate": false,
-      "bleuScore": 0
+      "valueAccurate": true,
+      "bleuScore": 100
     }
   ],
   "atomicMetrics": {
@@ -195,30 +195,28 @@
       "Description": 0
     },
     "valueAccuracy": {
-      "String": 0,
+      "String": 54.54545454545454,
       "Date": 0,
       "NumericInput": 0,
-      "Dropdown": 0,
-      "Description": 0
+      "Dropdown": 50,
+      "Description": 50
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 0
+    "overallValueAccuracy": 42.10526315789473
   },
   "episodicMetrics": {
-    "formCompletionRate": 0,
-    "fieldsAttempted": 0,
-    "fieldsCorrect": 0,
+    "formCompletionRate": 42.10526315789473,
+    "fieldsAttempted": 15,
+    "fieldsCorrect": 8,
     "totalFields": 19,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 0
+    "averageValueAccuracy": 42.10526315789473
   },
-  "executionTimeMs": 706646,
-  "errors": [
-    "Form submission step failed or timed out"
-  ],
-  "submissionSucceeded": false,
-  "tokensIn": 606,
-  "tokensOut": 224,
-  "llmTimeMs": 10923,
+  "executionTimeMs": 34568,
+  "errors": [],
+  "submissionSucceeded": true,
+  "tokensIn": 521,
+  "tokensOut": 172,
+  "llmTimeMs": 2086,
   "llmCalls": 1
 }

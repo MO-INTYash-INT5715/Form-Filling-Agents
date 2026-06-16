@@ -22,24 +22,122 @@
     "formPath": "/construction-manufacturing/project-bid"
   },
   "agentName": "rule-based",
-  "fieldResults": [],
+  "fieldResults": [
+    {
+      "fieldId": "companyName",
+      "fieldType": "String",
+      "predictedValue": "Greenfield Construction",
+      "goldValue": "Greenfield Construction",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "licenseNumber",
+      "fieldType": "String",
+      "predictedValue": "GC-203940",
+      "goldValue": "GC-203940",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "projectName",
+      "fieldType": "String",
+      "predictedValue": "Office Building Renovation",
+      "goldValue": "Office Building Renovation",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "bidAmount",
+      "fieldType": "NumericInput",
+      "predictedValue": "",
+      "goldValue": 850000,
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "projectDuration",
+      "fieldType": "NumericInput",
+      "predictedValue": "24",
+      "goldValue": 24,
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "startDate",
+      "fieldType": "Date",
+      "predictedValue": "",
+      "goldValue": "2024/06/01",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "completionDate",
+      "fieldType": "Date",
+      "predictedValue": "",
+      "goldValue": "2024/12/01",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "Scope of Work",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Full renovation of a commercial office building, including electrical and plumbing upgrades.",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "workDescription",
+      "fieldType": "Description",
+      "predictedValue": "",
+      "goldValue": "The project will involve gutting the entire office building and rebuilding it with updated structural components, new wiring, plumbing, and HVAC systems. Interior finishes will include modern office layouts and upgraded fixtures.",
+      "clickAccurate": false,
+      "valueAccurate": false,
+      "bleuScore": 0
+    },
+    {
+      "fieldId": "contactName",
+      "fieldType": "String",
+      "predictedValue": "John Parker",
+      "goldValue": "John Parker",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "contactPhone",
+      "fieldType": "String",
+      "predictedValue": "555-762-4923",
+      "goldValue": "555-762-4923",
+      "clickAccurate": false,
+      "valueAccurate": true
+    }
+  ],
   "atomicMetrics": {
-    "clickAccuracy": {},
-    "valueAccuracy": {},
+    "clickAccuracy": {
+      "String": 0,
+      "NumericInput": 0,
+      "Date": 0,
+      "Description": 0
+    },
+    "valueAccuracy": {
+      "String": 83.33333333333334,
+      "NumericInput": 50,
+      "Date": 0,
+      "Description": 0
+    },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 0
+    "overallValueAccuracy": 54.54545454545454
   },
   "episodicMetrics": {
-    "formCompletionRate": 0,
-    "fieldsAttempted": 0,
-    "fieldsCorrect": 0,
-    "totalFields": 0,
+    "formCompletionRate": 54.54545454545454,
+    "fieldsAttempted": 6,
+    "fieldsCorrect": 6,
+    "totalFields": 11,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 0
+    "averageValueAccuracy": 54.54545454545454
   },
-  "executionTimeMs": 0,
-  "errors": [
-    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/construction-manufacturing/project-bid\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/construction-manufacturing/project-bid\", waiting until \"domcontentloaded\"\u001b[22m\n"
-  ],
+  "executionTimeMs": 1682,
+  "errors": [],
   "submissionSucceeded": false
 }

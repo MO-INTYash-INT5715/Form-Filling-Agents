@@ -35,15 +35,15 @@
     {
       "fieldId": "customerNumber",
       "fieldType": "String",
-      "predictedValue": "GTI-102938",
+      "predictedValue": "Adhering to rigorous quality standards is non-negotiable for us",
       "goldValue": "GTI-102938",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "productType",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "Select product type",
       "goldValue": "Custom Product",
       "clickAccurate": false,
       "valueAccurate": false
@@ -51,11 +51,11 @@
     {
       "fieldId": "productDescription",
       "fieldType": "Description",
-      "predictedValue": "A specialized AI-powered sensor array designed for high sensitivity and efficiency within a range of 5 meters, with advanced real-time data processing capabilities, low power consumption, high data encryption standards, and wireless connectivity.",
+      "predictedValue": "Adhering to rigorous quality standards is non-negotiable for us",
       "goldValue": "Customized AI-powered sensor array",
       "clickAccurate": false,
       "valueAccurate": false,
-      "bleuScore": 6.61074021019606
+      "bleuScore": 0
     },
     {
       "fieldId": "Product Specifications",
@@ -76,15 +76,15 @@
     {
       "fieldId": "dimensions",
       "fieldType": "String",
-      "predictedValue": "200 x 150 x 50",
+      "predictedValue": "We trust in your esteemed capability to manufacture this sophisticated product with the solicited precision and expertise",
       "goldValue": "200 x 150 x 50",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "material",
       "fieldType": "String",
-      "predictedValue": "Aluminum and silicon",
+      "predictedValue": "We trust in your esteemed capability to manufacture this sophisticated product with the solicited precision and expertise",
       "goldValue": "Aluminum, Silicon",
       "clickAccurate": false,
       "valueAccurate": false
@@ -92,11 +92,11 @@
     {
       "fieldId": "specifications",
       "fieldType": "Description",
-      "predictedValue": "that distinguish these sensors",
+      "predictedValue": "Advanced real-time data processing, low power consumption, high data encryption standards, wireless connectivity for IoT integration",
       "goldValue": "Real-time data processing, low power consumption, high data encryption standards, wireless connectivity with IoT capabilities",
       "clickAccurate": false,
-      "valueAccurate": false,
-      "bleuScore": 0
+      "valueAccurate": true,
+      "bleuScore": 75.41859578343534
     },
     {
       "fieldId": "qualityStandards",
@@ -117,7 +117,7 @@
     {
       "fieldId": "shippingMethod",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "Select shipping method",
       "goldValue": "Express",
       "clickAccurate": false,
       "valueAccurate": false
@@ -132,28 +132,28 @@
       "Date": 0
     },
     "valueAccuracy": {
-      "String": 50,
+      "String": 16.666666666666664,
       "Dropdown": 0,
-      "Description": 0,
+      "Description": 50,
       "NumericInput": 0,
       "Date": 0
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 25
+    "overallValueAccuracy": 16.666666666666664
   },
   "episodicMetrics": {
-    "formCompletionRate": 25,
-    "fieldsAttempted": 7,
-    "fieldsCorrect": 3,
+    "formCompletionRate": 16.666666666666664,
+    "fieldsAttempted": 9,
+    "fieldsCorrect": 2,
     "totalFields": 12,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 25
+    "averageValueAccuracy": 16.666666666666664
   },
-  "executionTimeMs": 84519,
+  "executionTimeMs": 63322,
   "errors": [],
   "submissionSucceeded": false,
-  "tokensIn": 679,
-  "tokensOut": 205,
-  "llmTimeMs": 23010,
+  "tokensIn": 623,
+  "tokensOut": 120,
+  "llmTimeMs": 1249,
   "llmCalls": 1
 }

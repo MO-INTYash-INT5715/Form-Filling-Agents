@@ -16,24 +16,71 @@
     "formPath": "/finance-banking/account-opening"
   },
   "agentName": "rule-based",
-  "fieldResults": [],
+  "fieldResults": [
+    {
+      "fieldId": "fullName",
+      "fieldType": "String",
+      "predictedValue": "George Dawson",
+      "goldValue": "George Dawson",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "dateOfBirth",
+      "fieldType": "Date",
+      "predictedValue": "",
+      "goldValue": "1957/08/01",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "Account Type",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Business Account",
+      "clickAccurate": null,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "idType",
+      "fieldType": "Dropdown",
+      "predictedValue": "State ID",
+      "goldValue": "State ID",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "idNumber",
+      "fieldType": "String",
+      "predictedValue": "2868883095",
+      "goldValue": 2868883095,
+      "clickAccurate": false,
+      "valueAccurate": true
+    }
+  ],
   "atomicMetrics": {
-    "clickAccuracy": {},
-    "valueAccuracy": {},
+    "clickAccuracy": {
+      "String": 0,
+      "Date": 0,
+      "Dropdown": 0
+    },
+    "valueAccuracy": {
+      "String": 66.66666666666666,
+      "Date": 0,
+      "Dropdown": 100
+    },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 0
+    "overallValueAccuracy": 60
   },
   "episodicMetrics": {
-    "formCompletionRate": 0,
-    "fieldsAttempted": 0,
-    "fieldsCorrect": 0,
-    "totalFields": 0,
+    "formCompletionRate": 60,
+    "fieldsAttempted": 3,
+    "fieldsCorrect": 3,
+    "totalFields": 5,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 0
+    "averageValueAccuracy": 60
   },
-  "executionTimeMs": 0,
-  "errors": [
-    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/finance-banking/account-opening\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/finance-banking/account-opening\", waiting until \"domcontentloaded\"\u001b[22m\n"
-  ],
-  "submissionSucceeded": false
+  "executionTimeMs": 2053,
+  "errors": [],
+  "submissionSucceeded": true
 }

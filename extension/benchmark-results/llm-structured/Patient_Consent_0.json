@@ -125,11 +125,11 @@
     "averageClickAccuracy": 0,
     "averageValueAccuracy": 100
   },
-  "executionTimeMs": 1637,
+  "executionTimeMs": 1944,
   "errors": [],
   "submissionSucceeded": true,
   "tokensIn": 645,
-  "tokensOut": 163,
-  "llmTimeMs": 3702,
+  "tokensOut": 159,
+  "llmTimeMs": 1427,
   "llmCalls": 1
 }

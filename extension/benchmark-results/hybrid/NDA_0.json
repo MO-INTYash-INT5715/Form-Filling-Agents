@@ -32,10 +32,10 @@
     {
       "fieldId": "partyType",
       "fieldType": "Dropdown",
-      "predictedValue": "individual",
+      "predictedValue": "Select party type",
       "goldValue": "Individual",
       "clickAccurate": false,
-      "valueAccurate": true
+      "valueAccurate": false
     },
     {
       "fieldId": "purpose",
@@ -81,7 +81,7 @@
     {
       "fieldId": "termsAgreed",
       "fieldType": "Checkbox",
-      "predictedValue": "false",
+      "predictedValue": "true",
       "goldValue": "Yes",
       "clickAccurate": false,
       "valueAccurate": false
@@ -89,7 +89,7 @@
     {
       "fieldId": "authorityConfirm",
       "fieldType": "Checkbox",
-      "predictedValue": "false",
+      "predictedValue": "true",
       "goldValue": "Yes",
       "clickAccurate": false,
       "valueAccurate": false
@@ -106,28 +106,28 @@
     },
     "valueAccuracy": {
       "String": 66.66666666666666,
-      "Dropdown": 100,
+      "Dropdown": 0,
       "Description": 100,
       "Date": 0,
       "NumericInput": 100,
       "Checkbox": 0
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 55.55555555555556
+    "overallValueAccuracy": 44.44444444444444
   },
   "episodicMetrics": {
-    "formCompletionRate": 55.55555555555556,
+    "formCompletionRate": 44.44444444444444,
     "fieldsAttempted": 7,
-    "fieldsCorrect": 5,
+    "fieldsCorrect": 4,
     "totalFields": 9,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 55.55555555555556
+    "averageValueAccuracy": 44.44444444444444
   },
-  "executionTimeMs": 21712,
+  "executionTimeMs": 33387,
   "errors": [],
   "submissionSucceeded": false,
   "tokensIn": 422,
-  "tokensOut": 161,
-  "llmTimeMs": 20200,
+  "tokensOut": 133,
+  "llmTimeMs": 1340,
   "llmCalls": 1
 }

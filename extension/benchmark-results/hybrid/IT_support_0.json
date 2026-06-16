@@ -27,7 +27,7 @@
     {
       "fieldId": "requestType",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "Select request type",
       "goldValue": "Network Issue",
       "clickAccurate": false,
       "valueAccurate": false
@@ -35,7 +35,7 @@
     {
       "fieldId": "priority",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "Select priority level",
       "goldValue": "Urgent-System Down",
       "clickAccurate": false,
       "valueAccurate": false
@@ -43,7 +43,7 @@
     {
       "fieldId": "subject",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "johnson@company",
       "goldValue": "Entire office network down",
       "clickAccurate": false,
       "valueAccurate": false
@@ -59,24 +59,24 @@
     {
       "fieldId": "description",
       "fieldType": "Description",
-      "predictedValue": "",
+      "predictedValue": "Entire office network down. The problem began around 10:30 AM today. Employees are unable to access the internet, file servers, or any internal systems. The number of affected users is approximately 50.",
       "goldValue": "Employees are unable to access the internet, file servers, or any internal systems. The issue started around 10:30 AM today.",
       "clickAccurate": false,
-      "valueAccurate": false,
-      "bleuScore": 0
+      "valueAccurate": true,
+      "bleuScore": 50.32370023805727
     },
     {
       "fieldId": "location",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "All departments",
       "goldValue": "All departments",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "affectedUsers",
       "fieldType": "NumericInput",
-      "predictedValue": "",
+      "predictedValue": "1",
       "goldValue": 50,
       "clickAccurate": false,
       "valueAccurate": false
@@ -84,15 +84,15 @@
     {
       "fieldId": "availableTime",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Mon-Fri 9AM-5PM",
       "goldValue": "Mon-Fri 9AM-5PM",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "requesterName",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Best regards, Michael Johnson",
       "goldValue": "Michael Johnson",
       "clickAccurate": false,
       "valueAccurate": false
@@ -100,7 +100,7 @@
     {
       "fieldId": "requesterEmail",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Best regards, Michael Johnson",
       "goldValue": "michael.johnson@company.com",
       "clickAccurate": false,
       "valueAccurate": false
@@ -108,10 +108,10 @@
     {
       "fieldId": "phoneNumber",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "+1 555-9876",
       "goldValue": "+1 555-9876",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     }
   ],
   "atomicMetrics": {
@@ -123,28 +123,26 @@
     },
     "valueAccuracy": {
       "Dropdown": 0,
-      "String": 0,
-      "Description": 0,
+      "String": 42.857142857142854,
+      "Description": 100,
       "NumericInput": 0
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 0
+    "overallValueAccuracy": 36.36363636363637
   },
   "episodicMetrics": {
-    "formCompletionRate": 0,
-    "fieldsAttempted": 0,
-    "fieldsCorrect": 0,
+    "formCompletionRate": 36.36363636363637,
+    "fieldsAttempted": 10,
+    "fieldsCorrect": 4,
     "totalFields": 11,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 0
+    "averageValueAccuracy": 36.36363636363637
   },
-  "executionTimeMs": 404870,
-  "errors": [
-    "Form submission step failed or timed out"
-  ],
+  "executionTimeMs": 63119,
+  "errors": [],
   "submissionSucceeded": false,
-  "tokensIn": 466,
-  "tokensOut": 172,
-  "llmTimeMs": 38480,
+  "tokensIn": 368,
+  "tokensOut": 100,
+  "llmTimeMs": 1028,
   "llmCalls": 1
 }

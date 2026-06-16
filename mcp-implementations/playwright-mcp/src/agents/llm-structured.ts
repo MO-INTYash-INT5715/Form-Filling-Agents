@@ -301,6 +301,7 @@ export class LlmStructuredMcpAgent implements MCPFormFiller {
       toolCalls: this.mcp.toolCallCount,
       tokensIn,
       tokensOut,
+      fields: this.mcp.recordedFills,
       error: blockedReason ?? lastError,
       failureCategory: blockedReason
         ? "bot-detection"

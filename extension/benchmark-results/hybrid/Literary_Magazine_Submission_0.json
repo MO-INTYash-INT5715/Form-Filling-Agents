@@ -50,7 +50,7 @@
     {
       "fieldId": "genre",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "Select Genre",
       "goldValue": "Fiction",
       "clickAccurate": false,
       "valueAccurate": false
@@ -82,15 +82,15 @@
     {
       "fieldId": "issue",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "Spring 2024",
       "goldValue": "Spring 2024",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "previously_published",
       "fieldType": "Checkbox",
-      "predictedValue": "",
+      "predictedValue": "false",
       "goldValue": "No",
       "clickAccurate": false,
       "valueAccurate": false
@@ -98,7 +98,7 @@
     {
       "fieldId": "simultaneous_submission",
       "fieldType": "Checkbox",
-      "predictedValue": "",
+      "predictedValue": "false",
       "goldValue": "Yes",
       "clickAccurate": false,
       "valueAccurate": false
@@ -120,27 +120,25 @@
     },
     "valueAccuracy": {
       "String": 0,
-      "Dropdown": 0,
+      "Dropdown": 50,
       "Checkbox": 0
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 0
+    "overallValueAccuracy": 9.090909090909092
   },
   "episodicMetrics": {
-    "formCompletionRate": 0,
-    "fieldsAttempted": 0,
-    "fieldsCorrect": 0,
+    "formCompletionRate": 9.090909090909092,
+    "fieldsAttempted": 4,
+    "fieldsCorrect": 1,
     "totalFields": 11,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 0
+    "averageValueAccuracy": 9.090909090909092
   },
-  "executionTimeMs": 401897,
-  "errors": [
-    "Form submission step failed or timed out"
-  ],
-  "submissionSucceeded": false,
-  "tokensIn": 399,
-  "tokensOut": 115,
-  "llmTimeMs": 5717,
+  "executionTimeMs": 63311,
+  "errors": [],
+  "submissionSucceeded": true,
+  "tokensIn": 318,
+  "tokensOut": 42,
+  "llmTimeMs": 699,
   "llmCalls": 1
 }

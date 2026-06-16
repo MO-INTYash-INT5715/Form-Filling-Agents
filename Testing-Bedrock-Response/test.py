@@ -6,7 +6,7 @@ os.environ["SSL_CERT_FILE"] = certifi.where()
 from langchain_aws import ChatBedrockConverse
 
 llm = ChatBedrockConverse(
-    model="qwen.qwen3-235b-a22b-2507-v1:0",
+    model="openai.gpt-oss-20b-1:0",
     region_name="ap-south-1"
 )
 

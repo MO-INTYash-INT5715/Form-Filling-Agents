@@ -25,7 +25,7 @@
     {
       "fieldId": "student_name",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Thank you very much for considering my application",
       "goldValue": "Jessica Kennedy",
       "clickAccurate": false,
       "valueAccurate": false
@@ -33,7 +33,7 @@
     {
       "fieldId": "student_id",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "88741153 Email: wendy24@yahoo",
       "goldValue": 88741153,
       "clickAccurate": false,
       "valueAccurate": false
@@ -41,7 +41,7 @@
     {
       "fieldId": "email",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "wendy24@yahoo",
       "goldValue": "wendy24@yahoo.com",
       "clickAccurate": false,
       "valueAccurate": false
@@ -49,7 +49,7 @@
     {
       "fieldId": "phone",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Warm regards, Jessica Kennedy",
       "goldValue": "001-250-204-3652x75507",
       "clickAccurate": false,
       "valueAccurate": false
@@ -57,7 +57,7 @@
     {
       "fieldId": "semester",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "Select Semester",
       "goldValue": "Summer 2025",
       "clickAccurate": false,
       "valueAccurate": false
@@ -65,7 +65,7 @@
     {
       "fieldId": "program",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "Select Program",
       "goldValue": "Software Engineering",
       "clickAccurate": false,
       "valueAccurate": false
@@ -83,7 +83,7 @@
     {
       "fieldId": "comments",
       "fieldType": "Description",
-      "predictedValue": "",
+      "predictedValue": "This course reflects a vital step towards my aspiration to excel in web development and programming",
       "goldValue": "No special requirements.",
       "clickAccurate": false,
       "valueAccurate": false,
@@ -106,19 +106,17 @@
   },
   "episodicMetrics": {
     "formCompletionRate": 0,
-    "fieldsAttempted": 0,
+    "fieldsAttempted": 7,
     "fieldsCorrect": 0,
     "totalFields": 8,
     "averageClickAccuracy": 0,
     "averageValueAccuracy": 0
   },
-  "executionTimeMs": 340466,
-  "errors": [
-    "Form submission step failed or timed out"
-  ],
-  "submissionSucceeded": false,
-  "tokensIn": 576,
-  "tokensOut": 88,
-  "llmTimeMs": 4898,
-  "llmCalls": 1
+  "executionTimeMs": 62712,
+  "errors": [],
+  "submissionSucceeded": true,
+  "tokensIn": 0,
+  "tokensOut": 0,
+  "llmTimeMs": 0,
+  "llmCalls": 0
 }

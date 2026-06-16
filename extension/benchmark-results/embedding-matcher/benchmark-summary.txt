@@ -3,17 +3,17 @@
 ╚══════════════════════════════════════════════════════════════╝
 
   Agent:      embedding-matcher
-  Timestamp:  2026-05-28T08:25:19.342Z
+  Timestamp:  2026-06-16T08:32:10.789Z
   Forms:      25
   Instances:  25
   Fields:     259
-  Runtime:    37.2s
+  Runtime:    45.6s
 
 ━━━ GLOBAL METRICS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   Overall Click Accuracy:  0.00%
-  Overall Value Accuracy:  14.72%
-  Form Completion Rate:    14.72%
-  Fields Correct:          34 / 259
+  Overall Value Accuracy:  15.39%
+  Form Completion Rate:    15.39%
+  Fields Correct:          35 / 259
 
 ━━━ PER FIELD TYPE (Click / Value) ━━━━━━━━━━━━━━━━━━━━━━━━━━━
   Checkbox           Click:    0.0%  Value:   25.0%
@@ -21,11 +21,12 @@
   Description        Click:    0.0%  Value:    2.8%
   Dropdown           Click:    0.0%  Value:    9.6%
   NumericInput       Click:    0.0%  Value:    4.2%
+  RadioButton        Click:    0.0%  Value:  100.0%
   String             Click:    0.0%  Value:   18.9%
 
 ━━━ PER DOMAIN ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   Academic & Research
-    Click: 0.0%  Value: 13.9%  Completion: 13.9%  (5 inst.)
+    Click: 0.0%  Value: 17.3%  Completion: 17.3%  (5 inst.)
   Professional & Business
     Click: 0.0%  Value: 5.9%  Completion: 5.9%  (4 inst.)
   Arts & Creative

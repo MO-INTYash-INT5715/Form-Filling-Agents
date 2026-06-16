@@ -20,18 +20,18 @@
     {
       "fieldId": "fullName",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "George Dawson",
       "goldValue": "George Dawson",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "dateOfBirth",
       "fieldType": "Date",
-      "predictedValue": "",
+      "predictedValue": "1957-08-01",
       "goldValue": "1957/08/01",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "Account Type",
@@ -44,18 +44,18 @@
     {
       "fieldId": "idType",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "State ID",
       "goldValue": "State ID",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "idNumber",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "2868883095",
       "goldValue": 2868883095,
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     }
   ],
   "atomicMetrics": {
@@ -65,26 +65,26 @@
       "Dropdown": 0
     },
     "valueAccuracy": {
-      "String": 0,
-      "Date": 0,
-      "Dropdown": 0
+      "String": 66.66666666666666,
+      "Date": 100,
+      "Dropdown": 100
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 0
+    "overallValueAccuracy": 80
   },
   "episodicMetrics": {
-    "formCompletionRate": 0,
-    "fieldsAttempted": 0,
-    "fieldsCorrect": 0,
+    "formCompletionRate": 80,
+    "fieldsAttempted": 4,
+    "fieldsCorrect": 4,
     "totalFields": 5,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 0
+    "averageValueAccuracy": 80
   },
-  "executionTimeMs": 1679,
+  "executionTimeMs": 2015,
   "errors": [],
   "submissionSucceeded": true,
-  "tokensIn": 0,
-  "tokensOut": 0,
-  "llmTimeMs": 0,
-  "llmCalls": 0
+  "tokensIn": 417,
+  "tokensOut": 65,
+  "llmTimeMs": 753,
+  "llmCalls": 1
 }

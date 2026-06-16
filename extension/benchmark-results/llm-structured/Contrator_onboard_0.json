@@ -74,7 +74,7 @@
     {
       "fieldId": "serviceDescription",
       "fieldType": "Description",
-      "predictedValue": "developing and implementing comprehensive digital marketing strategies, including search engine optimization (SEO) to improve website rankings, pay-per-click (PPC) advertising campaigns on platforms like Google Ads and Bing Ads, social media management across major platforms such as Facebook, Instagram, and Twitter to increase brand awareness and engagement, and content creation for blogs, articles, and social media posts to attract and retain customers",
+      "predictedValue": "Developing and implementing comprehensive digital marketing strategies, including search engine optimization (SEO) to improve website rankings, pay-per-click (PPC) advertising campaigns on platforms like Google Ads and Bing Ads, social media management across major platforms such as Facebook, Instagram, and Twitter to increase brand awareness and engagement, and content creation for blogs, articles, and social media posts to attract and retain customers.",
       "goldValue": "Developing and implementing comprehensive digital marketing strategies, including search engine optimization (SEO) to improve website rankings, pay-per-click (PPC) advertising campaigns on platforms like Google Ads and Bing Ads, social media management across major platforms such as Facebook, Instagram, and Twitter to increase brand awareness and engagement, and content creation for blogs, articles, and social media posts to attract and retain customers.",
       "clickAccurate": false,
       "valueAccurate": true,
@@ -99,18 +99,18 @@
     {
       "fieldId": "termsAgreed",
       "fieldType": "Checkbox",
-      "predictedValue": "I agree to the terms and conditions of the contractor agreement",
+      "predictedValue": "Yes",
       "goldValue": "Yes",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "confidentialityAgreed",
       "fieldType": "Checkbox",
-      "predictedValue": "I agree to maintain confidentiality of all company information",
+      "predictedValue": "Yes",
       "goldValue": "Yes",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     }
   ],
   "atomicMetrics": {
@@ -126,24 +126,24 @@
       "Dropdown": 100,
       "Description": 100,
       "Date": 100,
-      "Checkbox": 0
+      "Checkbox": 100
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 81.81818181818183
+    "overallValueAccuracy": 100
   },
   "episodicMetrics": {
-    "formCompletionRate": 81.81818181818183,
+    "formCompletionRate": 100,
     "fieldsAttempted": 11,
-    "fieldsCorrect": 9,
+    "fieldsCorrect": 11,
     "totalFields": 11,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 81.81818181818183
+    "averageValueAccuracy": 100
   },
-  "executionTimeMs": 1453,
+  "executionTimeMs": 2091,
   "errors": [],
   "submissionSucceeded": false,
   "tokensIn": 762,
-  "tokensOut": 271,
-  "llmTimeMs": 6049,
+  "tokensOut": 249,
+  "llmTimeMs": 2093,
   "llmCalls": 1
 }

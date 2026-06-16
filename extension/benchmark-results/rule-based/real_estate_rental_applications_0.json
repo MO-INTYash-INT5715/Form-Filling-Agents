@@ -30,24 +30,189 @@
     "formPath": "/professional-business/rental-application"
   },
   "agentName": "rule-based",
-  "fieldResults": [],
+  "fieldResults": [
+    {
+      "fieldId": "full_name",
+      "fieldType": "String",
+      "predictedValue": "Amy Soto",
+      "goldValue": "Amy Soto",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "email",
+      "fieldType": "String",
+      "predictedValue": "arthurperez@webb.com",
+      "goldValue": "arthurperez@webb.com",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "phone",
+      "fieldType": "String",
+      "predictedValue": "001-601-137-0101x270",
+      "goldValue": "001-601-137-0101x270",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "date_of_birth",
+      "fieldType": "Date",
+      "predictedValue": "1979/05/24",
+      "goldValue": "1979/05/24",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "current_street",
+      "fieldType": "String",
+      "predictedValue": "325 Clark Tunnel",
+      "goldValue": "325 Clark Tunnel",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "current_city",
+      "fieldType": "String",
+      "predictedValue": "Christopherburgh",
+      "goldValue": "Christopherburgh",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "current_state",
+      "fieldType": "String",
+      "predictedValue": "Alabama",
+      "goldValue": "Alabama",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "current_zip",
+      "fieldType": "String",
+      "predictedValue": "37382",
+      "goldValue": "37382",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "employer_name",
+      "fieldType": "String",
+      "predictedValue": "Edwards PLC",
+      "goldValue": "Edwards PLC",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "job_title",
+      "fieldType": "String",
+      "predictedValue": "",
+      "goldValue": "Environmental manager",
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "monthly_income",
+      "fieldType": "NumericInput",
+      "predictedValue": "",
+      "goldValue": 13121,
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "employment_length",
+      "fieldType": "String",
+      "predictedValue": "1 year",
+      "goldValue": "1 year",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "preferred_move_date",
+      "fieldType": "Date",
+      "predictedValue": "2025/01/26",
+      "goldValue": "2025/01/26",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "lease_term",
+      "fieldType": "Dropdown",
+      "predictedValue": "6 months",
+      "goldValue": "6 months",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "max_rent",
+      "fieldType": "NumericInput",
+      "predictedValue": "",
+      "goldValue": 2323,
+      "clickAccurate": false,
+      "valueAccurate": false
+    },
+    {
+      "fieldId": "preferred_area",
+      "fieldType": "String",
+      "predictedValue": "Near public transport",
+      "goldValue": "Near public transport",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "pets",
+      "fieldType": "Dropdown",
+      "predictedValue": "No",
+      "goldValue": "No",
+      "clickAccurate": false,
+      "valueAccurate": true
+    },
+    {
+      "fieldId": "pet_details",
+      "fieldType": "Description",
+      "predictedValue": "No pets",
+      "goldValue": "No pets",
+      "clickAccurate": false,
+      "valueAccurate": false,
+      "bleuScore": 0
+    },
+    {
+      "fieldId": "additional_info",
+      "fieldType": "Description",
+      "predictedValue": "Prefer quiet and residential areas.",
+      "goldValue": "Prefer quiet and residential areas.",
+      "clickAccurate": false,
+      "valueAccurate": true,
+      "bleuScore": 100
+    }
+  ],
   "atomicMetrics": {
-    "clickAccuracy": {},
-    "valueAccuracy": {},
+    "clickAccuracy": {
+      "String": 0,
+      "Date": 0,
+      "NumericInput": 0,
+      "Dropdown": 0,
+      "Description": 0
+    },
+    "valueAccuracy": {
+      "String": 90.9090909090909,
+      "Date": 100,
+      "NumericInput": 0,
+      "Dropdown": 100,
+      "Description": 50
+    },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 0
+    "overallValueAccuracy": 78.94736842105263
   },
   "episodicMetrics": {
-    "formCompletionRate": 0,
-    "fieldsAttempted": 0,
-    "fieldsCorrect": 0,
-    "totalFields": 0,
+    "formCompletionRate": 78.94736842105263,
+    "fieldsAttempted": 16,
+    "fieldsCorrect": 15,
+    "totalFields": 19,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 0
+    "averageValueAccuracy": 78.94736842105263
   },
-  "executionTimeMs": 0,
-  "errors": [
-    "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5000/professional-business/rental-application\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5000/professional-business/rental-application\", waiting until \"domcontentloaded\"\u001b[22m\n"
-  ],
-  "submissionSucceeded": false
+  "executionTimeMs": 1889,
+  "errors": [],
+  "submissionSucceeded": true
 }

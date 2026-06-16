@@ -48,7 +48,7 @@
     {
       "fieldId": "medium",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "Select Medium",
       "goldValue": "Painting",
       "clickAccurate": false,
       "valueAccurate": false
@@ -80,18 +80,18 @@
     {
       "fieldId": "exhibition_period",
       "fieldType": "Dropdown",
-      "predictedValue": "",
+      "predictedValue": "Spring 2024",
       "goldValue": "Spring 2024",
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     },
     {
       "fieldId": "for_sale",
       "fieldType": "Checkbox",
-      "predictedValue": "",
+      "predictedValue": "true",
       "goldValue": true,
       "clickAccurate": false,
-      "valueAccurate": false
+      "valueAccurate": true
     }
   ],
   "atomicMetrics": {
@@ -102,27 +102,25 @@
     },
     "valueAccuracy": {
       "String": 0,
-      "Dropdown": 0,
-      "Checkbox": 0
+      "Dropdown": 50,
+      "Checkbox": 100
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 0
+    "overallValueAccuracy": 22.22222222222222
   },
   "episodicMetrics": {
-    "formCompletionRate": 0,
-    "fieldsAttempted": 0,
-    "fieldsCorrect": 0,
+    "formCompletionRate": 22.22222222222222,
+    "fieldsAttempted": 3,
+    "fieldsCorrect": 2,
     "totalFields": 9,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 0
+    "averageValueAccuracy": 22.22222222222222
   },
-  "executionTimeMs": 377572,
-  "errors": [
-    "Form submission step failed or timed out"
-  ],
-  "submissionSucceeded": false,
-  "tokensIn": 468,
-  "tokensOut": 187,
-  "llmTimeMs": 11623,
+  "executionTimeMs": 34030,
+  "errors": [],
+  "submissionSucceeded": true,
+  "tokensIn": 421,
+  "tokensOut": 153,
+  "llmTimeMs": 1663,
   "llmCalls": 1
 }

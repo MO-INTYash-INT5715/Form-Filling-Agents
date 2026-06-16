@@ -1,6 +1,6 @@
 {
   "agentName": "embedding-matcher",
-  "timestamp": "2026-05-28T08:25:19.342Z",
+  "timestamp": "2026-06-16T08:32:10.789Z",
   "config": {
     "formFactoryServerUrl": "http://localhost:5000",
     "formIds": "all",
@@ -13,6 +13,7 @@
     "clickAccuracy": {
       "String": 0,
       "Description": 0,
+      "RadioButton": 0,
       "Dropdown": 0,
       "NumericInput": 0,
       "Date": 0,
@@ -21,21 +22,22 @@
     "valueAccuracy": {
       "String": 18.909523809523808,
       "Description": 2.7777777777777777,
+      "RadioButton": 100,
       "Dropdown": 9.649122807017543,
       "NumericInput": 4.166666666666667,
       "Date": 7.6923076923076925,
       "Checkbox": 25
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 14.718692006308101
+    "overallValueAccuracy": 15.385358672974768
   },
   "globalEpisodic": {
-    "formCompletionRate": 14.718692006308101,
-    "fieldsAttempted": 206,
-    "fieldsCorrect": 34,
+    "formCompletionRate": 15.385358672974768,
+    "fieldsAttempted": 208,
+    "fieldsCorrect": 35,
     "totalFields": 259,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 14.718692006308101
+    "averageValueAccuracy": 15.385358672974768
   },
   "byDomain": {
     "Academic & Research": {
@@ -45,25 +47,27 @@
         "clickAccuracy": {
           "String": 0,
           "Description": 0,
+          "RadioButton": 0,
           "Dropdown": 0,
           "NumericInput": 0
         },
         "valueAccuracy": {
           "String": 19.833333333333332,
           "Description": 0,
+          "RadioButton": 100,
           "Dropdown": 0,
           "NumericInput": 0
         },
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 13.928571428571427
+        "overallValueAccuracy": 17.26190476190476
       },
       "episodic": {
-        "formCompletionRate": 13.928571428571427,
-        "fieldsAttempted": 29,
-        "fieldsCorrect": 4,
+        "formCompletionRate": 17.26190476190476,
+        "fieldsAttempted": 31,
+        "fieldsCorrect": 5,
         "totalFields": 38,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 13.928571428571427
+        "averageValueAccuracy": 17.26190476190476
       }
     },
     "Professional & Business": {
@@ -350,7 +354,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 50
       },
-      "executionTimeMs": 1805,
+      "executionTimeMs": 2135,
       "errors": [],
       "submissionSucceeded": true
     },
@@ -391,20 +395,20 @@
           "valueAccurate": false
         },
         {
-          "fieldId": "Email",
+          "fieldId": "email",
           "fieldType": "String",
-          "predictedValue": "",
+          "predictedValue": "Diana",
           "goldValue": "wmills@shields.net",
-          "clickAccurate": null,
+          "clickAccurate": false,
           "valueAccurate": false
         },
         {
-          "fieldId": "Gender",
-          "fieldType": "String",
-          "predictedValue": "",
+          "fieldId": "gender",
+          "fieldType": "RadioButton",
+          "predictedValue": "Female",
           "goldValue": "Female",
-          "clickAccurate": null,
-          "valueAccurate": false
+          "clickAccurate": false,
+          "valueAccurate": true
         },
         {
           "fieldId": "Date of Birth",
@@ -425,23 +429,25 @@
       ],
       "atomicMetrics": {
         "clickAccuracy": {
-          "String": 0
+          "String": 0,
+          "RadioButton": 0
         },
         "valueAccuracy": {
-          "String": 0
+          "String": 0,
+          "RadioButton": 100
         },
         "overallClickAccuracy": 0,
-        "overallValueAccuracy": 0
+        "overallValueAccuracy": 16.666666666666664
       },
       "episodicMetrics": {
-        "formCompletionRate": 0,
-        "fieldsAttempted": 0,
-        "fieldsCorrect": 0,
+        "formCompletionRate": 16.666666666666664,
+        "fieldsAttempted": 2,
+        "fieldsCorrect": 1,
         "totalFields": 6,
         "averageClickAccuracy": 0,
-        "averageValueAccuracy": 0
+        "averageValueAccuracy": 16.666666666666664
       },
-      "executionTimeMs": 1452,
+      "executionTimeMs": 2097,
       "errors": [],
       "submissionSucceeded": false
     },
@@ -545,7 +551,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1151,
+      "executionTimeMs": 1564,
       "errors": [],
       "submissionSucceeded": false
     },
@@ -663,7 +669,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 12.5
       },
-      "executionTimeMs": 1453,
+      "executionTimeMs": 1724,
       "errors": [],
       "submissionSucceeded": false
     },
@@ -850,7 +856,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 7.142857142857142
       },
-      "executionTimeMs": 1435,
+      "executionTimeMs": 1749,
       "errors": [],
       "submissionSucceeded": false
     },
@@ -1052,7 +1058,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 5.88235294117647
       },
-      "executionTimeMs": 1465,
+      "executionTimeMs": 1805,
       "errors": [],
       "submissionSucceeded": false
     },
@@ -1270,7 +1276,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 5.263157894736842
       },
-      "executionTimeMs": 1459,
+      "executionTimeMs": 1881,
       "errors": [],
       "submissionSucceeded": false
     },
@@ -1471,7 +1477,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1430,
+      "executionTimeMs": 1853,
       "errors": [],
       "submissionSucceeded": false
     },
@@ -1661,7 +1667,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 12.5
       },
-      "executionTimeMs": 1434,
+      "executionTimeMs": 1808,
       "errors": [],
       "submissionSucceeded": false
     },
@@ -1783,7 +1789,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1625,
+      "executionTimeMs": 1836,
       "errors": [],
       "submissionSucceeded": true
     },
@@ -1923,7 +1929,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 9.090909090909092
       },
-      "executionTimeMs": 1650,
+      "executionTimeMs": 1944,
       "errors": [],
       "submissionSucceeded": true
     },
@@ -2090,7 +2096,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 7.142857142857142
       },
-      "executionTimeMs": 1622,
+      "executionTimeMs": 1843,
       "errors": [],
       "submissionSucceeded": true
     },
@@ -2216,7 +2222,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 11.11111111111111
       },
-      "executionTimeMs": 1473,
+      "executionTimeMs": 1754,
       "errors": [],
       "submissionSucceeded": false
     },
@@ -2360,7 +2366,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 27.27272727272727
       },
-      "executionTimeMs": 1419,
+      "executionTimeMs": 1783,
       "errors": [],
       "submissionSucceeded": false
     },
@@ -2464,7 +2470,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 28.57142857142857
       },
-      "executionTimeMs": 1631,
+      "executionTimeMs": 1815,
       "errors": [],
       "submissionSucceeded": true
     },
@@ -2550,7 +2556,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 20
       },
-      "executionTimeMs": 1638,
+      "executionTimeMs": 1849,
       "errors": [],
       "submissionSucceeded": true
     },
@@ -2648,7 +2654,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 0
       },
-      "executionTimeMs": 1400,
+      "executionTimeMs": 1792,
       "errors": [],
       "submissionSucceeded": false
     },
@@ -2779,7 +2785,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 60
       },
-      "executionTimeMs": 1524,
+      "executionTimeMs": 1928,
       "errors": [],
       "submissionSucceeded": false
     },
@@ -2896,7 +2902,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 12.5
       },
-      "executionTimeMs": 1421,
+      "executionTimeMs": 1740,
       "errors": [],
       "submissionSucceeded": false
     },
@@ -3014,7 +3020,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 25
       },
-      "executionTimeMs": 1416,
+      "executionTimeMs": 1721,
       "errors": [],
       "submissionSucceeded": false
     },
@@ -3143,7 +3149,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 11.11111111111111
       },
-      "executionTimeMs": 1411,
+      "executionTimeMs": 1718,
       "errors": [],
       "submissionSucceeded": false
     },
@@ -3283,7 +3289,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 9.090909090909092
       },
-      "executionTimeMs": 1448,
+      "executionTimeMs": 1790,
       "errors": [],
       "submissionSucceeded": false
     },
@@ -3428,7 +3434,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 18.181818181818183
       },
-      "executionTimeMs": 1430,
+      "executionTimeMs": 1722,
       "errors": [],
       "submissionSucceeded": false
     },
@@ -3571,7 +3577,7 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 27.27272727272727
       },
-      "executionTimeMs": 1432,
+      "executionTimeMs": 1708,
       "errors": [],
       "submissionSucceeded": false
     },
@@ -3726,11 +3732,11 @@
         "averageClickAccuracy": 0,
         "averageValueAccuracy": 8.333333333333332
       },
-      "executionTimeMs": 1431,
+      "executionTimeMs": 1694,
       "errors": [],
       "submissionSucceeded": false
     }
   ],
-  "totalExecutionTimeMs": 37200,
+  "totalExecutionTimeMs": 45560,
   "errors": []
 }

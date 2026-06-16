@@ -35,20 +35,20 @@
       "valueAccurate": false
     },
     {
-      "fieldId": "Email",
+      "fieldId": "email",
       "fieldType": "String",
-      "predictedValue": "",
+      "predictedValue": "Diana",
       "goldValue": "wmills@shields.net",
-      "clickAccurate": null,
+      "clickAccurate": false,
       "valueAccurate": false
     },
     {
-      "fieldId": "Gender",
-      "fieldType": "String",
-      "predictedValue": "",
+      "fieldId": "gender",
+      "fieldType": "RadioButton",
+      "predictedValue": "Female",
       "goldValue": "Female",
-      "clickAccurate": null,
-      "valueAccurate": false
+      "clickAccurate": false,
+      "valueAccurate": true
     },
     {
       "fieldId": "Date of Birth",
@@ -69,23 +69,25 @@
   ],
   "atomicMetrics": {
     "clickAccuracy": {
-      "String": 0
+      "String": 0,
+      "RadioButton": 0
     },
     "valueAccuracy": {
-      "String": 0
+      "String": 0,
+      "RadioButton": 100
     },
     "overallClickAccuracy": 0,
-    "overallValueAccuracy": 0
+    "overallValueAccuracy": 16.666666666666664
   },
   "episodicMetrics": {
-    "formCompletionRate": 0,
-    "fieldsAttempted": 0,
-    "fieldsCorrect": 0,
+    "formCompletionRate": 16.666666666666664,
+    "fieldsAttempted": 2,
+    "fieldsCorrect": 1,
     "totalFields": 6,
     "averageClickAccuracy": 0,
-    "averageValueAccuracy": 0
+    "averageValueAccuracy": 16.666666666666664
   },
-  "executionTimeMs": 1452,
+  "executionTimeMs": 2097,
   "errors": [],
   "submissionSucceeded": false
 }
