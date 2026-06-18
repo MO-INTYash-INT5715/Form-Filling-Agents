@@ -64,7 +64,7 @@ export async function scrapeForm(url: string): Promise<ScrapedForm> {
           label: label || undefined,
           placeholder: (el as HTMLInputElement).placeholder || undefined,
           type: el instanceof HTMLSelectElement ? 'select' : (el as HTMLInputElement).type || 'text',
-          required: el.required,
+          required: el.required || el.getAttribute('aria-required') === 'true',
           value: (el as HTMLInputElement).value || undefined, // Capture value for radio/checkbox
         };
 

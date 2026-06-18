@@ -2,10 +2,15 @@
 
 import { useEffect, useState, Suspense } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
-import { ResultsTable } from '../../../components/dashboard/ResultsTable';
+import { ReviewPanel } from '../../../components/dashboard/ReviewPanel';
 import { Badge } from '../../../components/ui/Badge';
 import { Button } from '../../../components/ui/Button';
-import type { AgentRunRecord } from '../../../src/types/telemetry';
+import type { AgentRunRecord, VerificationRecord } from '../../../src/types/telemetry';
+
+interface FillResult {
+  record: AgentRunRecord;
+  verification: VerificationRecord;
+}
 
 function FillResultsContent() {
   const params = useSearchParams();
@@ -14,9 +19,9 @@ function FillResultsContent() {
   const runId    = params.get('runId');
   const url      = params.get('url');
 
-  const [records, setRecords]   = useState<AgentRunRecord[]>([]);
-  const [loading, setLoading]   = useState(true);
-  const [error, setError]       = useState('');
+  const [results, setResults] = useState<FillResult[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError]     = useState('');
 
   useEffect(() => {
     if (strategy === 'all' && url) {
@@ -36,7 +41,7 @@ function FillResultsContent() {
       });
       if (res.status === 401) { router.push('/'); return; }
       const data = await res.json();
-      setRecords(data.results ?? []);
+      setResults(data.results ?? []);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Error fetching results');
     } finally {
@@ -47,15 +52,33 @@ function FillResultsContent() {
   async function fetchOne(id: string) {
     setLoading(true);
     try {
-      const res = await fetch(`/api/telemetry?id=${id}`);
+      const res = await fetch(`/api/verification?runId=${id}`);
       if (res.status === 401) { router.push('/'); return; }
       if (!res.ok) { setError('Run not found'); return; }
-      const record = await res.json();
-      setRecords([record]);
+      const verification = await res.json();
+      setResults([{ record: verification, verification }]);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Error fetching run');
     } finally {
       setLoading(false);
+    }
+  }
+
+  async function handleSubmit(
+    _runId: string,
+    overrides: Record<string, string>,
+    missingSupplied: Record<string, string>
+  ) {
+    try {
+      const res = await fetch('/api/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ runId: _runId, overrides, missingSupplied }),
+      });
+      if (res.status === 401) { router.push('/'); return { success: false, error: 'Unauthorized' }; }
+      return await res.json();
+    } catch (err) {
+      return { success: false, error: err instanceof Error ? err.message : 'Submit failed' };
     }
   }
 
@@ -79,35 +102,43 @@ function FillResultsContent() {
     );
   }
 
+  // Compare view: one ReviewPanel per strategy, side-by-side
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-2xl font-bold text-gray-900">Fill Results</h1>
-          <p className="text-sm text-gray-500 mt-0.5">{url ?? records[0]?.formUrl}</p>
+          <h1 className="text-2xl font-bold text-gray-900">Compare & Verify</h1>
+          <p className="text-sm text-gray-500 mt-0.5">
+            Review each strategy side-by-side. Approve the one you want to submit.
+          </p>
         </div>
         <Button variant="secondary" onClick={() => router.push('/dashboard')}>← Dashboard</Button>
       </div>
 
-      {strategy === 'all' ? (
-        <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
-          {records.map(r => (
-            <div key={r.runId} className="card">
-              <div className="flex items-center gap-2 mb-4">
-                <Badge label={r.strategy} color={r.strategy as any} />
-                <span className="text-xs text-gray-400">{r.totalTimeMs} ms total</span>
-              </div>
-              <ResultsTable record={r} />
+      <div className="grid grid-cols-1 xl:grid-cols-3 gap-6 items-start">
+        {results.map(r => (
+          <div key={r.verification.runId} className="card">
+            <div className="flex items-center gap-2 mb-4">
+              <Badge label={r.verification.strategy} color={r.verification.strategy as any} />
+              <span className="text-xs text-gray-400">
+                {r.record.totalTimeMs ?? r.verification.createdAt} ms total
+              </span>
             </div>
-          ))}
-        </div>
-      ) : (
-        records.map(r => (
-          <div key={r.runId} className="card">
-            <ResultsTable record={r} />
+            <ReviewPanel
+              record={{
+                runId: r.verification.runId,
+                strategy: r.verification.strategy,
+                formUrl: r.verification.formUrl,
+                formTitle: r.verification.formTitle,
+                fields: r.verification.fields,
+                screenshotBase64: r.verification.screenshotBase64,
+              }}
+              onSubmit={(o, m) => handleSubmit(r.verification.runId, o, m)}
+              onCancel={() => router.push('/dashboard')}
+            />
           </div>
-        ))
-      )}
+        ))}
+      </div>
     </div>
   );
 }

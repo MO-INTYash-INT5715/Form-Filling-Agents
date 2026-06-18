@@ -14,7 +14,6 @@ export async function POST(req: NextRequest) {
     url?: string;
     strategy?: AgentStrategyName | 'all';
     profile?: Record<string, unknown>;
-    executeInBrowser?: boolean;
   };
   try {
     body = await req.json();
@@ -22,7 +21,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Invalid JSON' }, { status: 400 });
   }
 
-  const { url, strategy = 'rule-based', profile, executeInBrowser = false } = body;
+  const { url, strategy = 'rule-based', profile } = body;
 
   // Validate URL
   if (!url) {
@@ -48,11 +47,21 @@ export async function POST(req: NextRequest) {
 
   try {
     if (strategy === 'all') {
-      const results = await runAllStrategies(url, { profile, executeInBrowser });
-      return NextResponse.json({ strategy: 'all', results });
+      const results = await runAllStrategies(url, { profile });
+      return NextResponse.json({
+        strategy: 'all',
+        results: results.map(r => ({
+          record: r.record,
+          verification: r.verification,
+        })),
+      });
     } else {
-      const result = await runAgent(strategy as AgentStrategyName, url, { profile, executeInBrowser });
-      return NextResponse.json({ strategy, result });
+      const { record, verification } = await runAgent(
+        strategy as AgentStrategyName,
+        url,
+        { profile }
+      );
+      return NextResponse.json({ strategy, record, verification });
     }
   } catch (err) {
     const msg = err instanceof Error ? err.message : 'Unknown error';

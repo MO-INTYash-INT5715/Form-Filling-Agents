@@ -40,17 +40,17 @@ export default function DashboardPage() {
       if (res.status === 401) { router.push('/'); return; }
 
       const data = await res.json();
-      // Navigate to fill results page, pass strategy + first runId
-      const runId =
-        strategy === 'all'
-          ? (data.results as AgentRunRecord[])[0]?.runId
-          : (data.result as AgentRunRecord)?.runId;
 
-      const param = strategy === 'all'
-        ? `strategy=all&url=${encodeURIComponent(url)}`
-        : `runId=${runId}`;
-
-      router.push(`/dashboard/fill?${param}`);
+      if (strategy === 'all') {
+        // "Run all 3" → compare page (side-by-side ReviewPanels, refetches /api/fill)
+        router.push(`/dashboard/fill?strategy=all&url=${encodeURIComponent(url)}`);
+      } else {
+        // Single strategy → straight to review page
+        const runId = data.verification?.runId;
+        if (runId) {
+          router.push(`/dashboard/review?runId=${runId}`);
+        }
+      }
     } catch (err) {
       console.error(err);
     } finally {

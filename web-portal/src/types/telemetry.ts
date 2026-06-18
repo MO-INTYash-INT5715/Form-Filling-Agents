@@ -27,6 +27,10 @@ export interface FieldTelemetry {
   confidence: number;   // 0–1
   success: boolean;
   error?: string;
+  /** Whether the form field had the HTML `required` attribute */
+  required?: boolean;
+  /** true when required === true AND valueFilled === undefined (not in profile) */
+  isMissing?: boolean;
 }
 
 // ── One agent run record ──────────────────────────────────────────────────────
@@ -75,8 +79,29 @@ export interface ParseRecord {
   errors: string[];
 }
 
+// ── Verification record (fill → review → approve flow) ───────────────────────
+export type VerificationStatus = 'pending' | 'approved' | 'cancelled';
+
+export interface VerificationRecord {
+  runId: string;
+  strategy: AgentStrategy;
+  formUrl: string;
+  formTitle?: string;
+  /** All fields (filled, skipped, missing) */
+  fields: FieldTelemetry[];
+  /** Subset of fields where required=true AND valueFilled=undefined */
+  missingFields: FieldTelemetry[];
+  screenshotBase64?: string;
+  /** ISO 8601 timestamp of when this verification was created */
+  createdAt: string;
+  status: VerificationStatus;
+  /** ISO 8601 timestamp of approval/cancellation (null while pending) */
+  resolvedAt?: string;
+}
+
 // ── In-memory store ───────────────────────────────────────────────────────────
 export interface TelemetryStore {
   runs: AgentRunRecord[];
   parses: ParseRecord[];
+  verifications: VerificationRecord[];
 }

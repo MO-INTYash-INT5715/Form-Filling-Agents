@@ -14,6 +14,8 @@ import type {
   LLMUsage,
   ParseRecord,
   TelemetryStore,
+  VerificationRecord,
+  VerificationStatus,
 } from '../types/telemetry';
 
 // ── ID helpers ────────────────────────────────────────────────────────────────
@@ -41,7 +43,7 @@ export interface ParseHandle {
 
 // ── Singleton store (module-level, survives across requests in one process) ───
 
-const store: TelemetryStore = { runs: [], parses: [] };
+const store: TelemetryStore = { runs: [], parses: [], verifications: [] };
 
 // ── Run lifecycle ─────────────────────────────────────────────────────────────
 
@@ -162,10 +164,67 @@ export function getParses(): ParseRecord[] {
 }
 
 export function exportJson(): string {
-  return JSON.stringify({ runs: getRuns(), parses: getParses() }, null, 2);
+  return JSON.stringify({ runs: getRuns(), parses: getParses(), verifications: getVerifications() }, null, 2);
 }
 
 export function clearStore(): void {
   store.runs.length = 0;
   store.parses.length = 0;
+  store.verifications.length = 0;
+}
+
+// ── Verification lifecycle ────────────────────────────────────────────────────
+
+/**
+ * Create a pending VerificationRecord from an AgentRunRecord.
+ * Computes `missingFields` = required fields where valueFilled is undefined.
+ */
+export function createVerification(run: AgentRunRecord): VerificationRecord {
+  const missingFields = run.fields.filter(
+    f => f.required === true && f.valueFilled === undefined
+  );
+
+  // Stamp isMissing on each field
+  const missingIds = new Set(missingFields.map(f => f.fieldId));
+  const fields: FieldTelemetry[] = run.fields.map(f => ({
+    ...f,
+    isMissing: missingIds.has(f.fieldId),
+  }));
+
+  const record: VerificationRecord = {
+    runId: run.runId,
+    strategy: run.strategy,
+    formUrl: run.formUrl,
+    formTitle: run.formTitle,
+    fields,
+    missingFields: fields.filter(f => f.isMissing),
+    screenshotBase64: run.screenshotBase64,
+    createdAt: new Date().toISOString(),
+    status: 'pending',
+  };
+
+  store.verifications.push(record);
+  return record;
+}
+
+export function getVerifications(): VerificationRecord[] {
+  return [...store.verifications].sort(
+    (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+  );
+}
+
+export function getVerificationById(runId: string): VerificationRecord | undefined {
+  return store.verifications.find(v => v.runId === runId);
+}
+
+export function resolveVerification(
+  runId: string,
+  status: VerificationStatus
+): VerificationRecord | undefined {
+  const record = store.verifications.find(v => v.runId === runId);
+  if (record) {
+    record.status = status;
+    record.resolvedAt = new Date().toISOString();
+  }
+  return record;
 }
