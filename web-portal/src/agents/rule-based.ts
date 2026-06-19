@@ -220,8 +220,27 @@ export class RuleBasedAgent implements PortalAgent {
       if (!fingerprint.includes(keyword)) continue;
 
       const profileKey = KEYWORD_MAP[keyword];
-      const value = profile[profileKey];
+      let value = profile[profileKey];
+      
       if (value !== undefined) {
+        // Dropdown option matching: select the option matching case-insensitively or via substring
+        if (field.type === 'select' && field.options?.length) {
+          const matchedOpt = field.options.find(
+            opt => opt.toLowerCase() === value.toLowerCase() ||
+                   opt.toLowerCase().includes(value.toLowerCase()) ||
+                   value.toLowerCase().includes(opt.toLowerCase())
+          );
+          if (matchedOpt) {
+            value = matchedOpt;
+          }
+        }
+
+        // Checkbox normalization
+        if (field.type === 'checkbox') {
+          const isTrue = ['true', '1', 'yes', 'on', 'agree'].includes(String(value).toLowerCase());
+          value = isTrue ? 'true' : 'false';
+        }
+
         return {
           fieldId: field.id,
           label: field.label,

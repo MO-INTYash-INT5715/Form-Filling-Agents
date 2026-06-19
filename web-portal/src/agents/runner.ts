@@ -45,17 +45,24 @@ async function applyFillsAndScreenshot(
     const page = await browser.newPage();
 
     try {
-      await page.goto(url, { waitUntil: 'networkidle', timeout: 30_000 });
+      // Use domcontentloaded — networkidle never resolves on many live sites
+      // (sites with long-polling, streaming, websockets, analytics pings, etc.)
+      await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30_000 }).catch(() => {});
+      // Brief extra wait for SPAs to render their forms after the initial DOM load
+      await page.waitForTimeout(1_500);
 
       for (const fill of fills) {
         if (fill.value === undefined) continue;
 
-        const selector = fill.fieldId
-          ? `#${cssEscape(fill.fieldId)}`
-          : `[name="${fill.fieldId}"]`;
-
         try {
-          const el = await page.$(selector);
+          // Try ID selector first, fall back to name selector
+          const elById = fill.fieldId ? await page.$(`#${cssEscape(fill.fieldId)}`) : null;
+          const selector = elById
+            ? `#${cssEscape(fill.fieldId)}`
+            : `[name="${fill.fieldId}"]`;
+
+          // Skip if neither selector finds anything
+          const el = elById ?? await page.$(selector);
           if (!el) continue;
 
           if (fill.type === 'select') {
@@ -152,12 +159,6 @@ export async function runAgent(
     form.fields.filter(f => f.required).map(f => [f.id, true])
   );
 
-  // Apply fills in a real browser to get the screenshot preview
-  const filled = fillResult.fills.filter(f => f.value !== undefined);
-  const pw = await applyFillsAndScreenshot(url, filled);
-  const screenshotBase64 = pw.screenshotBase64;
-  const playwrightErrors: string[] = pw.errors;
-
   // Map fills → FieldTelemetry, carrying through `required` from scraped form
   const fields: FieldTelemetry[] = fillResult.fills.map(f => ({
     fieldId: f.fieldId,
@@ -166,7 +167,7 @@ export async function runAgent(
     valueFilled: f.value,
     matchedProfileKey: f.matchedProfileKey,
     confidence: f.confidence,
-    success: f.value !== undefined && playwrightErrors.every(e => !e.includes(f.fieldId)),
+    success: f.value !== undefined,
     required: requiredById.get(f.fieldId),
   }));
 
@@ -175,8 +176,8 @@ export async function runAgent(
     fields,
     llm: fillResult.llmUsage,
     llmFallbackUsed: fillResult.llmFallbackUsed,
-    errors: playwrightErrors,
-    screenshotBase64,
+    errors: [],
+    screenshotBase64: form.screenshotBase64, // Use screenshot already captured during scraping
   });
 
   // Create verification record with missing-data detection

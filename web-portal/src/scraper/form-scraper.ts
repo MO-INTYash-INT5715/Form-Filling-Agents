@@ -27,7 +27,11 @@ export async function scrapeForm(url: string): Promise<ScrapedForm> {
   const page = await browser.newPage();
 
   try {
-    await page.goto(url, { waitUntil: 'networkidle', timeout: 30_000 });
+    // Use domcontentloaded — networkidle never resolves on many live sites
+    // (sites with long-polling, streaming, websockets, analytics pings, etc.)
+    await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30_000 }).catch(() => {});
+    // Wait briefly for JS-driven forms to render after initial DOM load
+    await page.waitForTimeout(1_500);
 
     const fields = await page.evaluate((): ScrapedField[] => {
       const results: ScrapedField[] = [];

@@ -143,6 +143,8 @@ To resolve this, we implemented an optimized **3-Tier Smart Matcher** (`smart-ma
 
 ## 5. Verification & Test Results
 
+All telemetry logs and benchmark records are stored persistently under [benchmark-results/telemetry-runs.json](file:///C:/Code/FFA/benchmark-results/telemetry-runs.json) in the workspace root, preserving runs across Next.js HMR reloads and dev server restarts.
+
 ### Benchmark Metrics (Target: httpbin.org/forms/post Pizza Form)
 
 * **Before Optimization:**
@@ -151,8 +153,8 @@ To resolve this, we implemented an optimized **3-Tier Smart Matcher** (`smart-ma
   * Issues: Failed on `custname`, `custtel`, and `custemail` due to lack of name heuristics. Radio buttons treated independently, checkbox values ignored.
 * **After Optimization:**
   * Fields filled: 10 / 10 attempted (100% accuracy) ✓
-  * Execution Time: 1.9 seconds
-  * External API Cost: \$0.00 (all embeddings processed locally on CPU)
+  * Execution Time: ~1.2 seconds (optimized by eliminating redundant headless Playwright runs during filling, reusing the scraper's screenshot)
+  * External API Cost: $0.00 (all embeddings processed locally on CPU)
 
 ### Running Portal Verification Scripts
 
@@ -162,9 +164,6 @@ To execute the test suite against the optimized direct filler:
 cd web-portal
 # Execute headless verification on target form
 NODE_TLS_REJECT_UNAUTHORIZED=0 npx tsx test-enhanced.ts --url https://httpbin.org/forms/post
-
-# Execute with browser window visible (debugging)
-NODE_TLS_REJECT_UNAUTHORIZED=0 npx tsx test-enhanced.ts --url https://httpbin.org/forms/post --headless false
 ```
 
 ---

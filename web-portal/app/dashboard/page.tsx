@@ -45,10 +45,17 @@ export default function DashboardPage() {
         // "Run all 3" → compare page (side-by-side ReviewPanels, refetches /api/fill)
         router.push(`/dashboard/fill?strategy=all&url=${encodeURIComponent(url)}`);
       } else {
-        // Single strategy → straight to review page
-        const runId = data.verification?.runId;
-        if (runId) {
-          router.push(`/dashboard/review?runId=${runId}`);
+        // Single strategy → store verification client-side then go to review
+        const verification = data.verification;
+        if (verification?.runId) {
+          // Persist in sessionStorage so the review page doesn't need a server roundtrip.
+          // This also avoids "Verification not found" caused by Next.js HMR wiping
+          // the in-memory store, or serverless instances not sharing state.
+          sessionStorage.setItem(
+            `verification_${verification.runId}`,
+            JSON.stringify(verification)
+          );
+          router.push(`/dashboard/review?runId=${verification.runId}`);
         }
       }
     } catch (err) {

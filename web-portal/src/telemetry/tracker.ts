@@ -43,7 +43,36 @@ export interface ParseHandle {
 
 // ── Singleton store (module-level, survives across requests in one process) ───
 
-const store: TelemetryStore = { runs: [], parses: [], verifications: [] };
+// ── File storage helper ───────────────────────────────────────────────────────
+
+import { existsSync, readFileSync, writeFileSync } from 'fs';
+import { join } from 'path';
+
+const STORAGE_FILE = join(process.cwd(), '..', 'benchmark-results', 'telemetry-runs.json');
+
+function loadStore(): TelemetryStore {
+  try {
+    if (existsSync(STORAGE_FILE)) {
+      const data = readFileSync(STORAGE_FILE, 'utf-8');
+      return JSON.parse(data);
+    }
+  } catch (e) {
+    console.error('Failed to load telemetry store:', e);
+  }
+  return { runs: [], parses: [], verifications: [] };
+}
+
+function saveStore(s: TelemetryStore) {
+  try {
+    writeFileSync(STORAGE_FILE, JSON.stringify(s, null, 2), 'utf-8');
+  } catch (e) {
+    console.error('Failed to save telemetry store:', e);
+  }
+}
+
+// ── Singleton store (loaded from file on start) ───────────────────────────────────
+
+const store: TelemetryStore = loadStore();
 
 // ── Run lifecycle ─────────────────────────────────────────────────────────────
 
@@ -108,6 +137,7 @@ export function finishRun(handle: RunHandle, input: FinishRunInput): AgentRunRec
   };
 
   store.runs.push(record);
+  saveStore(store);
   return record;
 }
 
@@ -142,6 +172,7 @@ export function finishParse(handle: ParseHandle, input: FinishParseInput): Parse
     errors: input.errors ?? [],
   };
   store.parses.push(record);
+  saveStore(store);
   return record;
 }
 
@@ -171,6 +202,7 @@ export function clearStore(): void {
   store.runs.length = 0;
   store.parses.length = 0;
   store.verifications.length = 0;
+  saveStore(store);
 }
 
 // ── Verification lifecycle ────────────────────────────────────────────────────
@@ -204,6 +236,7 @@ export function createVerification(run: AgentRunRecord): VerificationRecord {
   };
 
   store.verifications.push(record);
+  saveStore(store);
   return record;
 }
 
@@ -225,6 +258,9 @@ export function resolveVerification(
   if (record) {
     record.status = status;
     record.resolvedAt = new Date().toISOString();
+    saveStore(store);
   }
   return record;
 }
+
+

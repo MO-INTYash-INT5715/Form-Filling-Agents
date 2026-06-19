@@ -44,7 +44,9 @@ This was confirmed via user Q&A to be built on the **`web-portal/` track** (Next
 ## 3. Implementation Status
 
 ### ✅ DONE — Phase 1 (The Final Goal): COMPLETE, REFINED & TYPE-CHECKED
-All code type-checks clean (`npx tsc --noEmit` in `web-portal/`). The 5 remaining TS errors are **pre-existing and unrelated** (see §5). The compare-view regression is fixed; scraper + submit selector hardened.
+All code type-checks clean (`npx tsc --noEmit` in `web-portal/`). The 5 remaining TS errors are **pre-existing and unrelated** (see §5).
+
+> **Key architectural note (post-refinement):** Verification data is stored in the **browser's `sessionStorage`** (written by `dashboard/page.tsx` after `/api/fill` responds, read by `review/page.tsx`). The server-side in-memory `VerificationRecord` store is kept for telemetry/export purposes only — it is **NOT** used in the review/submit flow. This avoids `Verification not found` errors caused by Next.js HMR wiping in-memory state, or serverless instances not sharing memory.
 
 #### Files MODIFIED (7):
 
@@ -60,13 +62,10 @@ All code type-checks clean (`npx tsc --noEmit` in `web-portal/`). The 5 remainin
 - Added: `createVerification(run)` (computes `missingFields` from `required && valueFilled===undefined`, stamps `isMissing`), `getVerifications()`, `getVerificationById(runId)`, `resolveVerification(runId, status)`.
 - Updated `clearStore()` and `exportJson()` to include verifications.
 
-**`web-portal/src/agents/runner.ts`** (full rewrite)
-- `executeWithPlaywright` renamed → `applyFillsAndScreenshot` (does NOT submit — submit is reserved for approve step).
-- `RunAgentOptions` no longer has `executeInBrowser` — Playwright now ALWAYS runs (preview needs screenshot).
-- Added `requiredById` lookup from scraped form; `required` is passed through to `FieldTelemetry`.
-- `runAgent()` now returns `RunAgentResult = { record, verification }` (was just `AgentRunRecord`).
+**`web-portal/src/agents/runner.ts`** (rewritten)
+- `applyFillsAndScreenshot()` runs headless Playwright to capture a screenshot. Uses `domcontentloaded` + 1.5s SPA wait (not `networkidle`). Selector resolution: ID first, name fallback.
+- `runAgent()` returns `RunAgentResult = { record, verification }`.
 - `runAllStrategies()` returns `RunAgentResult[]`.
-- Import added: `VerificationRecord` from telemetry types.
 
 **`web-portal/app/api/fill/route.ts`** (full rewrite)
 - Removed `executeInBrowser` from request body.
@@ -74,7 +73,8 @@ All code type-checks clean (`npx tsc --noEmit` in `web-portal/`). The 5 remainin
 - For single strategy: returns `{ strategy, record, verification }`.
 
 **`web-portal/src/scraper/form-scraper.ts`**
-- `required` flag now also honors `aria-required="true"` (line 67): `el.required || el.getAttribute('aria-required') === 'true'`. Catches forms that express required-ness via ARIA instead of the HTML attribute.
+- `required` flag honors both `el.required` and `aria-required="true"`. Catches forms that express required-ness via ARIA.
+- Uses `waitUntil: 'domcontentloaded'` + 1.5s wait (not `networkidle` — live sites with long-polling would hang forever).
 
 **`web-portal/app/dashboard/fill/page.tsx`** (full rewrite — was the compare-view regression)
 - Old code read `/api/fill` response as `AgentRunRecord[]`; new response is `{results:[{record,verification}]}`. Rewritten to consume the new shape.
@@ -86,31 +86,42 @@ All code type-checks clean (`npx tsc --noEmit` in `web-portal/`). The 5 remainin
 - `handleFill`: single strategy → `/dashboard/review?runId=...`; "all" → `/dashboard/fill?strategy=all&url=...` (compare page). No more wasted first-fetch.
 - `AgentRunRecord` import retained — still used by `recentRuns` state.
 
-**`web-portal/app/api/submit/route.ts`**
-- Submit-button selector hardened (line 67): now matches `button[type="submit"], input[type="submit"], form button:not([type="button"]):not([type="reset"])` — catches generic `<button>` inside a form that many sites use. Fallback to `form.requestSubmit()` retained.
+**`web-portal/app/api/submit/route.ts`** — **REWRITTEN for live-browser session model**
+- Auth-gated. Loads verification record.
+- **Merge priority:** `missingSupplied > overrides > original valueFilled`.
+- Launches **headed (visible) Chromium** (`headless: false`) with `--start-maximized`, realistic `userAgent`, `--disable-blink-features=AutomationControlled` to avoid bot-detection on live sites.
+- Uses `waitUntil: 'domcontentloaded'` + 2s wait (replaces `networkidle` which hangs on live sites with long-polling/streaming).
+- Selector resolution: tries `#id` first, falls back to `[name="..."]`, then JS `evaluate()` fallback for custom inputs on live sites.
+- Does **NOT** auto-submit — leaves the browser window open for user to review and submit manually.
+- Returns `{ success, fieldsApplied, fillErrors }`.
 
 #### Files CREATED (4):
 
 **`web-portal/components/dashboard/ReviewPanel.tsx`** — the core review UI.
-- Props: `{ record, onSubmit, onCancel }`. `record` is a subset shape `{ runId, strategy, formUrl, formTitle?, fields, screenshotBase64? }`.
-- State: `overrides` (editable auto-filled values), `missingSupplied` (user-typed missing values), `submitting`, `result`.
-- Renders: header → result banner (post-submit) → screenshot preview → ⚠ missing-data section (yellow card, required-field inputs) → editable filled-fields table → collapsed skipped-optional section → sticky action bar.
-- `allMissingFilled` gates the Approve button.
-- `ConfBar` helper duplicated from ResultsTable (matches existing styling).
+- Props: `{ record, onSubmit, onCancel }`. `record` is a `VerificationRecord` fetched from `/api/verification`.
+- State: `overrides` (editable auto-filled values), `missingSupplied` (user-typed missing values), `submitting`.
+- Renders: header with "Open Form & Fill Data" button → screenshot preview (base64 PNG) → ⚠ missing-data section (yellow card, required-field inputs) → editable filled-fields table.
+- `allMissingFilled` gates the action button — disabled until all `isMissing` fields have values.
+- Button label: **"Open Form & Fill Data"** — launches a headed browser, does NOT auto-submit.
 
 **`web-portal/app/dashboard/review/page.tsx`** — the review page.
-- Reads `runId` from query params; fetches `/api/verification?runId=...`.
-- `handleSubmit` POSTs `{ runId, overrides, missingSupplied }` to `/api/submit`.
+- Reads `runId` from query params.
+- Loads verification data from `sessionStorage` (key: `verification_{runId}`) — **no server fetch**.
+- Shows error if sessionStorage entry is missing (e.g. page refreshed directly).
+- On submit: merges overrides + missing values client-side, POSTs `{ formUrl, fields }` to `/api/submit`.
+- Shows green launch banner; cleans up sessionStorage entry; navigates back after 2s.
 - Wrapped in `<Suspense>` (uses `useSearchParams`).
 
 **`web-portal/app/api/verification/route.ts`** — GET endpoint.
 - Auth-gated. Returns `VerificationRecord` by `runId`, 404 if not found.
 
-**`web-portal/app/api/submit/route.ts`** — POST endpoint (the critical one).
-- Auth-gated. Loads verification, rejects if not `pending` (409).
-- **Merge priority:** `missingSupplied > overrides > original valueFilled`.
-- `applyAndSubmit()`: Playwright applies all field values (handles select/checkbox/radio/text) → clicks submit (`button[type=submit]` / `input[type=submit]`, falls back to `form.requestSubmit()`) → captures post-submit screenshot → returns `{ success, errors, screenshotBase64 }`.
-- Resolves verification to `approved` or `cancelled`.
+**`web-portal/app/api/submit/route.ts`** — POST endpoint (stateless, live-browser model).
+- Auth-gated. Accepts `{ formUrl, fields }` directly from client — **no server-side lookup**.
+- Launches headed Chromium (`headless: false`, `--start-maximized`, realistic `userAgent`, `--disable-blink-features=AutomationControlled`).
+- Uses `waitUntil: 'domcontentloaded'` + 2s SPA wait (not `networkidle`).
+- Multi-level selector fallback: `#id` → `[name=...]` → JS `evaluate()` fallback for custom inputs.
+- Does NOT auto-submit — browser stays open for user.
+- Returns `{ success, fieldsApplied, fillErrors }`.
 
 ---
 
